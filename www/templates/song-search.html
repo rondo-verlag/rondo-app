@@ -5,10 +5,14 @@
     <ion-header-bar class="bar bar-subheader item-input-inset">
         <label class="item-input-wrapper">
             <i class="icon ion-ios7-search placeholder-icon"></i>
-            <input type="search" placeholder="Suchen..." />
+            <input type="search" placeholder="Suchen..." ng-model="search.name"/>
         </label>
     </ion-header-bar>
     <ion-content>
-        
+      <div class="list">
+        <a class="item" ng-repeat="song in songs | filter:search" href="#/song/{{song.id}}">
+          {{song.name}}
+        </a>
+      </div>
     </ion-content>
 </ion-view>
