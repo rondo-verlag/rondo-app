@@ -1,0 +1,25 @@
+{t:There Is No One Like You}
+{su:ending}
+
+{gc:REPEAT 4 TIMES AD LIB:}
+There is [G]no one .[D]..
+There is [Am7]no one like you (there is no one like you)
+
+{gc:Break:}
+[Cmaj7][Em]
+[Cmaj7][Em]
+
+{gc:Solo:}
+[D][Am][C]
+[D][Em][C]
+
+{gc:REPEAT 8 TIMES AD LIB:}
+There is [G]no one .[D]..
+There is [Am7]no one like you (there is no one like you)
+
+{gc:End:}
+[Em]
+
+{c:Michael J. Pritzl}
+{c:The Violet Burning}
+{c:(c)1992 The Violet Burning}

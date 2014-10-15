@@ -1,0 +1,26 @@
+{t:Oh Lead Me}
+{gc:Tuning: Dropped D (DADGBE)}
+{gc:Intro: D2-A2 (2x)}
+Oh [D2]lead me [A2]
+To the [G/B]place where I can find[D2] you
+Oh [A2]lead me [G/B]
+To the [D2]place where you'll [A2]be
+
+[D2] Lead me to the [A2]cross
+Where we first met [D2]
+Draw me to my [A2]knees
+So we can talk [D2]
+Let me feel your [A2]breath
+Let me know you're [Bm(add11)]here [Bm(add11)/A]with [Em7]me
+
+{gc:Repeats, ends on D2}
+{c:Martin Smith}
+{c:(c)1992 Curious? Music U.K.}
+{sot}
+D2          000230
+A2          x02200
+G/B         020033
+Bm(add11)   x24430
+Bm(add11)/A x04430
+Em7         022003
+{eot}

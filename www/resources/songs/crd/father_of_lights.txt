@@ -1,0 +1,25 @@
+{title:Father of Lights}
+[A]Father of lights, You de[D]light in Your ch[A]ildren
+[A]Father of lights, You de[D]light in Your ch[A]ildren
+
+{start_of_chorus}
+Every [A]good and perfect [E]gift comes from You[D]
+Every [A]good and perfect [E]gift comes from You[D]
+Every [A]good and perfect [E]gift comes from You[D]
+Father of [A]lights[D][A][D]
+{end_of_chorus}
+
+[A]Father of lights, You never cha[D]nge
+You have no tu[A]rning
+[A]Father of lights, You never cha[D]nge
+You have no tu[A]rning
+
+{gc:Chorus}
+{gc:Guitar Solo:}
+[D][A][D][A]
+[F#m][D][A]
+[G][D]
+{gc:Chorus}
+
+{comment:John Barnett}
+{comment:(c)1991 Mercy Publishing}
