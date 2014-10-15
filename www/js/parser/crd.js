@@ -25,13 +25,13 @@ CRD_Parser = {
       return ["PARAGRAPH"];
     });
 
-    lexer.addRule(/\{[a-z_]+}/, function (lexeme) {
+    lexer.addRule(/\{[A-Za-z_]+}/, function (lexeme) {
       var tag = lexeme.substring(0,lexeme.length-1).substring(1);
       this.yytext = tag;
       return "TAG";
     });
 
-    lexer.addRule(/\{[a-z]+:[^}\n]+}/, function (lexeme) {
+    lexer.addRule(/\{[A-Za-z]+:[^}\n]+}/, function (lexeme) {
       var definition = lexeme.substring(0,lexeme.length-1).substring(1);
       var parts = definition.split(/:(.+)/);
       this.yytext = [parts[0], parts[1]];
