@@ -33,6 +33,9 @@ Songbook.directive('songtext', function() {
         });
         html += '<div class="paragraph p_'+para.type+'">' + paragraph_html + '</div>';
       });
+      if(angular.isDefined(data.meta.comment)){
+        html += '<div class="comment">'+data.meta.comment+'</div>';
+      }
     } else {
       html = 'Loading...';
     }

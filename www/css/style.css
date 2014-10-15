@@ -1,13 +1,18 @@
-.songtext .line {
-  margin-top: 15px; }
-.songtext .chord {
-  color: red;
-  position: absolute;
-  display: inline-block;
-  margin-top: -15px; }
-.songtext .paragraph {
-  margin-bottom: 40px; }
-.songtext .p_chorus {
-  font-weight: bold; }
+.songtext {
+  font-size: 1.3em; }
+  .songtext .line {
+    margin-top: 1em; }
+  .songtext .chord {
+    color: red;
+    position: absolute;
+    display: inline-block;
+    margin-top: -1em; }
+  .songtext .paragraph {
+    margin: 3em 0; }
+  .songtext .p_chorus {
+    font-weight: bold; }
+  .songtext .comment {
+    white-space: pre;
+    color: #BBB; }
 
 /*# sourceMappingURL=style.css.map */

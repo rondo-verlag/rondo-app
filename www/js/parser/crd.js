@@ -45,6 +45,20 @@ CRD_Parser = {
     });
 
     // ----- Build Structure -----
+    var tag_map = {
+      't': 'title',
+      'su': 'subtitle',
+      'soc': 'start_of_chorus',
+      'eoc': 'end_of_chorus',
+      'c': 'comment',
+      'sot': 'start_of_tab',
+      'eot': 'end_of_tab',
+      'gc': 'guitar_comment',
+      'ns': 'new_song',
+      'np': 'new_page',
+      'npp': 'new_physical_page',
+      'colb': 'column_break'
+    };
     var opening_tags = {
       'start_of_chorus': 'chorus',
       'soc': 'chorus',
@@ -75,7 +89,15 @@ CRD_Parser = {
 
       switch (token) {
         case "DEFINITION":
-          structure.meta[value[0]] = value[1];
+          var tag = value[0];
+          if(typeof tag_map[tag] !== 'undefined'){
+            tag = tag_map[tag];
+          }
+          if(typeof structure.meta[tag] === 'undefined'){
+            structure.meta[tag] = value[1];
+          } else {
+            structure.meta[tag] += "\n" + value[1];
+          }
           break;
         case "STRING":
           current_line.text += value;
