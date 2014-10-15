@@ -2,21 +2,18 @@
  * View controller for the song detail page.
  *
  */
-Songbook.controller("SongDetailController", function($scope, $stateParams, $http) {
+Songbook.controller("SongDetailController", function ($scope, $stateParams, $http) {
   $scope.songId = $stateParams.songId;
-  $scope.songtext = 'Loading...';
+  $scope.data = {};
 
   $http({
     method: 'GET',
-    url: '/songbook-app/www/resources/songs/'+$scope.songId+'.json'
+    url: '/songbook-app/www/resources/songs/json/' + $scope.songId + '.txt'
   }).
-      success(function(data, status, headers, config) {
-        $scope.songtext = data;
+      success(function (data, status, headers, config) {
+        $scope.data = data;
       }).
-      error(function(data, status, headers, config) {
-
+      error(function (data, status, headers, config) {
+        // do something
       });
-
-
-
 });

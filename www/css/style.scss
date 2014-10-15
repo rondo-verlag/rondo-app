@@ -1,1 +1,19 @@
 // Custom SASS Styles
+
+.songtext {
+  .line {
+    margin-top: 15px;
+  }
+  .chord {
+    color: red;
+    position: absolute;
+    display: inline-block;
+    margin-top: -15px;
+  }
+  .paragraph {
+    margin-bottom: 40px;
+  }
+  .p_chorus {
+    font-weight: bold;
+  }
+}

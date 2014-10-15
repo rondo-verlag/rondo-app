@@ -1,3 +1,13 @@
-
+.songtext .line {
+  margin-top: 15px; }
+.songtext .chord {
+  color: red;
+  position: absolute;
+  display: inline-block;
+  margin-top: -15px; }
+.songtext .paragraph {
+  margin-bottom: 40px; }
+.songtext .p_chorus {
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
