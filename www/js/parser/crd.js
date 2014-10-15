@@ -5,19 +5,6 @@ Syntax Reference: http://tenbyten.com/software/songsgen/help/HtmlHelp/files_refe
 
 //var lexer = new Lexer;
 var Lexer = require('lex');
-var fs = require('fs')
-
-fs.readFile('www/js/parser/__example.txt', 'utf8', function (err,data) {
-  if (err) {
-    return console.log(err);
-  }
-  //console.log(data);
-  var structure = CRD_Parser.parse(data);
-
-  var json = JSON.stringify(structure)
-  console.log(require('util').inspect(structure, true, 10));
-
-});
 
 CRD_Parser = {
   parse: function(input){
@@ -145,3 +132,5 @@ CRD_Parser = {
     return structure;
   }
 }
+
+if (typeof module === "object" && typeof module.exports === "object") module.exports = CRD_Parser;
