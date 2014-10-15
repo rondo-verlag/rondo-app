@@ -58,11 +58,11 @@ CRD_Parser = {
       'eot': 'tab'
     };
     var structure = {
-      'meta': [],
+      'meta': {},
       'paragraphs': []
     }
     var current_paragraph = {'type':'default','lines':[]};
-    var current_line = {'text': '', 'chords': []};
+    var current_line = {'text': '', 'chords': {}};
     var open_tags = ['default'];
     var token;
     while(true) {
@@ -75,20 +75,20 @@ CRD_Parser = {
 
       switch (token) {
         case "DEFINITION":
-          structure.meta.push({'attribute': value[0], 'value': value[1]});
+          structure.meta[value[0]] = value[1];
           break;
         case "STRING":
           current_line.text += value;
           break;
         case "CHORD":
-          current_line.chords.push([current_line.text.length, value]);
+          current_line.chords[current_line.text.length] = value;
           break;
         case "NEWLINE":
           if (current_line.text != ''){
             current_paragraph.lines.push(current_line);
             current_line = {
               'text': '',
-              'chords': []
+              'chords': {}
             };
           }
           break;
@@ -97,7 +97,7 @@ CRD_Parser = {
             current_paragraph.lines.push(current_line);
             current_line = {
               'text': '',
-              'chords': []
+              'chords': {}
             };
           }
           if (current_paragraph.lines.length > 0) {
