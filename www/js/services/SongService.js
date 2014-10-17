@@ -1,8 +1,33 @@
 Songbook.factory("SongService", function($cordovaFile, $http, $q){
+    var SONG_INDEX_NAME = "song-index.json";
+
+    var saveSongIndex = function(songIndex) {
+        var deferred = $q.defer();
+
+
+        $cordovaFile.createFile(SONG_INDEX_NAME, true)
+            .then(function() {
+                $cordovaFile.writeFile(SONG_INDEX_NAME, JSON.stringify(songIndex))
+                    .then(function() {
+                        deferred.resolve();
+                    }, function(err) {
+                        deferred.reject(err);
+                    })
+            }, function(err) {
+                deferred.reject(err);
+            });
+
+        return deferred.promise;
+    };
+
     var loadBundledIndex = function(deferred) {
-        $http.get("resources/songs/json/song-index.json")
+        $http.get("resources/songs/json/" + SONG_INDEX_NAME)
             .then(function(response){
-                deferred.resolve(angular.fromJson(response.data));
+                var songIndex = angular.fromJson(response.data);
+
+                deferred.resolve(songIndex);
+                // Additionally try to write the file to the persistent store
+                saveSongIndex(songIndex);
             },
             deferred.reject
         );
@@ -11,7 +36,7 @@ Songbook.factory("SongService", function($cordovaFile, $http, $q){
     var loadSongIndex = function() {
         var deferred = $q.defer();
 
-        $cordovaFile.readAsText("song-index.json")
+        $cordovaFile.readAsText(SONG_INDEX_NAME)
             .then(function(result){
                 deferred.resolve(angular.fromJson(result));
             }, function(error){
@@ -35,10 +60,17 @@ Songbook.factory("SongService", function($cordovaFile, $http, $q){
             var deferred = $q.defer();
             loadBundledIndex(deferred);
             return deferred.promise;
-        }
+        };
+
+        saveSongIndex = function() {
+            var deferred = $q.defer();
+            deferred.reject();
+            return deferred.promise;
+        };
     }
 
     return {
-        getSongIndex : loadSongIndex
+        getSongIndex : loadSongIndex,
+        saveSongIndex : saveSongIndex
     };
 });
