@@ -3,13 +3,20 @@
 .songtext {
   font-size: 1.3em;
   .line {
-    margin-top: 1em;
+    line-height: 2.2em;
+    .bl {
+      float: left;
+      height: 2.5em;
+    }
   }
   .chord {
     color: red;
-    position: absolute;
-    display: inline-block;
-    margin-top: -1em;
+    display: block;
+    height: 1em;
+  }
+  .empty-chord {
+    height: 1em;
+    display: block;
   }
   .paragraph {
     margin: 3em 0;

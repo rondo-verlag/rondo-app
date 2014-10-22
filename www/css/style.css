@@ -1,12 +1,17 @@
 .songtext {
   font-size: 1.3em; }
   .songtext .line {
-    margin-top: 1em; }
+    line-height: 2.2em; }
+    .songtext .line .bl {
+      float: left;
+      height: 2.5em; }
   .songtext .chord {
     color: red;
-    position: absolute;
-    display: inline-block;
-    margin-top: -1em; }
+    display: block;
+    height: 1em; }
+  .songtext .empty-chord {
+    height: 1em;
+    display: block; }
   .songtext .paragraph {
     margin: 3em 0; }
   .songtext .p_chorus {
