@@ -2,7 +2,7 @@
  * View controller for the searchable song list.
  *
  */
-Songbook.controller("SongSearchController", function($scope, $window, $ionicPlatform, $filter, SongService) {
+Songbook.controller("SongSearchController", function($scope, $window, $ionicPlatform, $ionicModal, $filter, SongService) {
     /*
      * Estimate the number of songs which can be displayed on the screen.
      * 1 Row is a bit more than 50px:
@@ -55,6 +55,17 @@ Songbook.controller("SongSearchController", function($scope, $window, $ionicPlat
         setMoreSongsAvailable();
         $scope.$broadcast('scroll.infiniteScrollComplete');
     };
+
+    /*
+     * Section: Modal Settings view when tapping the button
+     */
+    $ionicModal.fromTemplateUrl("templates/settings.html")
+        .then(function(modal){
+            $scope.settingsDialog = modal;
+        });
+    $scope.$on('$destroy', function() {
+        $scope.settingsDialog.remove();
+    });
 
     // Wait for ionic to be ready before searching for songs
     $ionicPlatform.ready(function(){
