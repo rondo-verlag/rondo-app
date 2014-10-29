@@ -9,7 +9,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
 
   $http({
     method: 'GET',
-    url: 'resources/songs/json/' + $scope.songId + '.json'
+    url: 'resources/songs/json/' + $scope.songId
   }).
       success(function (data, status, headers, config) {
         $scope.data = data;
