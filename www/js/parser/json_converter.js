@@ -21,8 +21,7 @@ fs.exists(file, function(exists) {
       var json = JSON.stringify(structure)
       //console.log(require('util').inspect(structure, true, 10));
       //console.log(json);
-
-      var newfile = basepath + 'json/' + filename;
+      var newfile = basepath + 'json/' + filename.substr(0, filename.lastIndexOf(".")) + ".json";
       fs.writeFile(newfile, json, function(err) {
         if(err) {
           console.log(err);

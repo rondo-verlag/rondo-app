@@ -13,7 +13,7 @@
     height: 1em;
     display: block; }
   .songtext .paragraph {
-    margin: 3em 0; }
+    margin-bottom: 3em; }
   .songtext .p_chorus {
     font-weight: bold; }
   .songtext .comment {

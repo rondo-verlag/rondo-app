@@ -1,5 +1,5 @@
 Songbook.factory("SongService", function($cordovaFile, $http, $q){
-    var BUNDLED_RESOURCE_DIR= "resources/songs/json/";
+    var BUNDLED_RESOURCE_DIR= "resources/songs/";
     var SONG_INDEX_NAME = "song-index.json";
 
     var saveSongIndex = function(songIndex) {

@@ -55,8 +55,6 @@ Songbook.directive('songtext', function() {
       if(angular.isDefined(data.meta.comment)){
         html += '<div class="comment">'+data.meta.comment+'</div>';
       }
-    } else {
-      html = 'Loading...';
     }
     element.html('<div class="songtext">'+html+'</div>');
   }

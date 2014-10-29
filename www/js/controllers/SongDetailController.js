@@ -9,7 +9,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
 
   $http({
     method: 'GET',
-    url: 'resources/songs/json/' + $scope.songId + '.txt'
+    url: 'resources/songs/json/' + $scope.songId + '.json'
   }).
       success(function (data, status, headers, config) {
         $scope.data = data;
@@ -18,6 +18,8 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         }
       }).
       error(function (data, status, headers, config) {
-        // do something
+        $scope.title = 'Ouch!';
+        $scope.errormsg = 'Song konnte nicht geladen werden...';
+        $scope.data = {}
       });
 });
