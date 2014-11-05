@@ -1,5 +1,5 @@
 
-Songbook.directive('songtext', function() {
+Songbook.directive('songtext', function($compile, $ionicPopover) {
   return {
     restrict: 'E',
     scope: {
@@ -11,6 +11,37 @@ Songbook.directive('songtext', function() {
   function link(scope, element, attrs) {
     scope.$watch("songdata",function(newValue,oldValue) {
       updateView(newValue, element);
+      $compile(element.contents())(scope);
+    });
+    $ionicPopover.fromTemplateUrl('templates/chord-popover.html', {
+      scope: scope
+    }).then(function(popover) {
+      scope.popover = popover;
+    });
+
+    scope.openPopover = function(event) {
+      console.log(event.target.innerText);
+      scope.selectedChord = event.target.innerText;
+      scope.popover.show(event);
+    };
+
+    scope.closePopover = function() {
+      scope.popover.hide();
+    };
+
+    //Cleanup the popover when we're done with it!
+    scope.$on('$destroy', function() {
+      scope.popover.remove();
+    });
+
+    // Execute action on hide popover
+    scope.$on('popover.hidden', function() {
+      // Execute action
+    });
+
+    // Execute action on remove popover
+    scope.$on('popover.removed', function() {
+      // Execute action
     });
   }
   function updateView(data, element){
@@ -61,7 +92,7 @@ Songbook.directive('songtext', function() {
   function wrapBlockHtml(html, chord){
     var chord_html = '<span class="empty-chord"></span>';
     if (chord){
-      chord_html = '<span class="chord">'+chord+'</span>';
+      chord_html = '<span class="chord" ng-click="openPopover($event)">'+chord+'</span>';
     }
     return '<div class="bl">'+chord_html+html+'</div>';
   }

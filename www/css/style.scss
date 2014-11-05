@@ -13,6 +13,7 @@
     color: red;
     display: block;
     height: 1em;
+    cursor: pointer;
   }
   .empty-chord {
     height: 1em;
@@ -27,5 +28,20 @@
   .comment {
     white-space: pre;
     color: #BBB
+  }
+}
+
+.popover.chord-popover {
+  width: 80px;
+  height: 100px;
+
+  .content {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.3em;
+
+    img {
+      margin-left: 5px;
+    }
   }
 }

@@ -8,7 +8,8 @@
   .songtext .chord {
     color: red;
     display: block;
-    height: 1em; }
+    height: 1em;
+    cursor: pointer; }
   .songtext .empty-chord {
     height: 1em;
     display: block; }
@@ -19,5 +20,15 @@
   .songtext .comment {
     white-space: pre;
     color: #BBB; }
+
+.popover.chord-popover {
+  width: 80px;
+  height: 100px; }
+  .popover.chord-popover .content {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.3em; }
+    .popover.chord-popover .content img {
+      margin-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */
