@@ -1,4 +1,4 @@
-var Songbook = angular.module("songbook", ['ionic', 'ui.router', 'ngCordova']);
+var Songbook = angular.module("songbook", ['ionic', 'ui.router', 'ngCordova', 'ngStorage']);
 
 Songbook.run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {

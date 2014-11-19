@@ -4,6 +4,7 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
         scope: {
             'scrollSpeed': '=',
             'scrollEnabled': '=?',
+            'scrollElement': '@?',
             'scrollName' : '@',
             'scrollStyle': '@?',
             'scrollClass': '@?'
@@ -50,14 +51,18 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
 
     function addScrollView(scope, element, attrs) {
         // Wrap everything inside an ion-scroll directive
-        var child = "<ion-scroll delegate-handle='" + attrs.scrollName + "'";
+        if (angular.isUndefined(attrs.scrollElement)) {
+            attrs.scrollElement = "ion-scroll";
+        }
+
+        var child = "<" + attrs.scrollElement + " delegate-handle='" + attrs.scrollName + "'";
         if (angular.isDefined(attrs.scrollStyle)) {
             child += " style='" + attrs.scrollStyle + "'";
         }
         if (angular.isDefined(attrs.scrollClass)) {
             child += " class='" + attrs.scrollClass + "'";
         }
-        child += "></ion-scroll>";
+        child += "></" + attrs.scrollElement + ">";
         var innerElement = angular.element(child);
         innerElement.append(element.contents());
         element.append(innerElement);

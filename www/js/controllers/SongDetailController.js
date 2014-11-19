@@ -2,10 +2,14 @@
  * View controller for the song detail page.
  *
  */
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http) {
+Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService) {
   $scope.songId = $stateParams.songId;
   $scope.title = $stateParams.songId;
   $scope.data = {};
+
+  $scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
+  $scope.scrollSpeed = SettingsService.getScrollSettings().speed;
+  $scope.scroll = false;
 
   $scope.toggleFullscreen = function(){
     var body = angular.element(document.querySelectorAll('body'));
@@ -16,7 +20,7 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
       body.addClass('fullscreen');
       StatusBar.hide();
     }
-  }
+  };
 
   $http({
     method: 'GET',
