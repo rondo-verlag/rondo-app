@@ -1,3 +1,10 @@
+body {
+  color: #ffffff;
+  background: #000000; }
+
+::-webkit-input-placeholder {
+  color: #333; }
+
 .songtext {
   font-size: 1.3em; }
   .songtext .line {
@@ -6,7 +13,7 @@
       float: left;
       height: 2.5em; }
   .songtext .chord {
-    color: red;
+    color: #888;
     display: block;
     height: 1em;
     cursor: pointer; }
@@ -23,7 +30,9 @@
 
 .popover.chord-popover {
   width: 80px;
-  height: 100px; }
+  height: 100px;
+  background: #dddddd;
+  color: #000000; }
   .popover.chord-popover .content {
     padding: 0.5em;
     text-align: center;

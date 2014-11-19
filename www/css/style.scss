@@ -1,5 +1,18 @@
 // Custom SASS Styles
 
+
+// Some Basic Theme overrides
+body {
+  color: #ffffff;
+  background: #000000;
+}
+
+::-webkit-input-placeholder {
+  color: #333;
+}
+
+
+// Components
 .songtext {
   font-size: 1.3em;
   .line {
@@ -10,7 +23,7 @@
     }
   }
   .chord {
-    color: red;
+    color: #888;
     display: block;
     height: 1em;
     cursor: pointer;
@@ -34,6 +47,8 @@
 .popover.chord-popover {
   width: 80px;
   height: 100px;
+  background: #dddddd;
+  color: #000000;
 
   .content {
     padding: 0.5em;
