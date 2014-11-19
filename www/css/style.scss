@@ -45,3 +45,18 @@
     }
   }
 }
+
+.has-header,
+.nav-bar {
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+
+.fullscreen {
+  .nav-bar {
+    top: -80px;
+  }
+  .has-header {
+    top: 0;
+  }
+}

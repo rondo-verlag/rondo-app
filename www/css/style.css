@@ -31,4 +31,14 @@
     .popover.chord-popover .content img {
       margin-left: 5px; }
 
+.has-header,
+.nav-bar {
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s; }
+
+.fullscreen .nav-bar {
+  top: -80px; }
+.fullscreen .has-header {
+  top: 0; }
+
 /*# sourceMappingURL=style.css.map */
