@@ -4,6 +4,7 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
         scope: {
             'scrollSpeed': '=',
             'scrollEnabled': '=?',
+            'infinite': '@?',
             'scrollElement': '@?',
             'scrollName' : '@',
             'scrollStyle': '@?',
@@ -12,6 +13,7 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
         link: function(scope, element, attrs) {
             addScrollView(scope, element, attrs);
 
+            var infinite = angular.isUndefined(attrs.infinite) || (attrs.infinite == 'true');
             var enabled = angular.isUndefined(attrs.scrollEnabled) || attrs.scrollEnabled;
             var speed = attrs.scrollSpeed;
 
@@ -27,7 +29,7 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
 
             var direction = 1;
             var lastPosition = -1;
-            var changedDirection = false;
+            var changedDirection = true;
 
             var doScroll = function() {
                 if (enabled) {
@@ -43,7 +45,9 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
                     }
                     lastPosition = currentPosition;
 
-                    $timeout(doScroll, 100);
+                    if (infinite || direction == 1) {
+                        $timeout(doScroll, 100);
+                    }
                 }
             };
         }
