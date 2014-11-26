@@ -1,1 +1,73 @@
-{"meta":{"title":"Geisterreiter"},"paragraphs":[{"type":"default","lines":[{"text":"Es war in einer Regennacht, Wind pfiff durch die Prärie, die Cowboys sassen dichtgedrängt, nur Whisky wärmte sie. Ja Kerle sind es, hart und zäh, für sie gilt nur die Faust und Sturm und Wind und Wolkenbruch sind über sie gebraust. Yippi ai eeh, yippi ai ooh, die Nachtgeister ziehen vorbei. ","chords":{"3":"Dm","33":"Am","61":"Dm","117":"Dm","177":"B","213":"Dm","232":"Dm","241":"F","246":"Dm","264":"B","287":"Dm"}}]},{"type":"default","lines":[{"text":"Da tritt der Teufel in den Kreis und winkt dem einen zu,","chords":{}},{"text":"der wendet sich verzweifelt um und sucht beim Himmel Ruh,","chords":{}},{"text":"zu den Sternen will er flüchten, zu Sonne will er fliehn,","chords":{}},{"text":"doch alle Sternen werden bleich, die Sonne will verglühn.","chords":{}},{"text":"Ref. ","chords":{}},{"text":"Da öffnet sich der Himmel weit und Reiter kommen aus Höhn,","chords":{}},{"text":"und Feuer bricht aus Pferdenüstern, rauhe Winde wehn,","chords":{}},{"text":"der tote Cowboy wird genommen, keiner hat gefragt,","chords":{}},{"text":"und donnernd geht es himmelwärts in wilder toller Jagd.","chords":{}},{"text":"Ref. ","chords":{}}]}]}
+{
+  "meta": {
+    "title": "Geisterreiter"
+  },
+  "paragraphs": [
+    {
+      "type": "default",
+      "lines": [
+        {
+          "text": "Es war in einer Regennacht, Wind pfiff durch die Prärie, die Cowboys sassen dichtgedrängt, nur Whisky wärmte sie. Ja Kerle sind es, hart und zäh, für sie gilt nur die Faust und Sturm und Wind und Wolkenbruch sind über sie gebraust. Yippi ai eeh, yippi ai ooh, die Nachtgeister ziehen vorbei. ",
+          "chords": {
+            "3": "Dm",
+            "33": "Am",
+            "61": "Dm",
+            "117": "Dm",
+            "177": "B",
+            "213": "Dm",
+            "232": "Dm",
+            "241": "F",
+            "246": "Dm",
+            "264": "B",
+            "287": "Dm"
+          }
+        }
+      ]
+    },
+    {
+      "type": "default",
+      "lines": [
+        {
+          "text": "Da tritt der Teufel in den Kreis und winkt dem einen zu,",
+          "chords": {}
+        },
+        {
+          "text": "der wendet sich verzweifelt um und sucht beim Himmel Ruh,",
+          "chords": {}
+        },
+        {
+          "text": "zu den Sternen will er flüchten, zu Sonne will er fliehn,",
+          "chords": {}
+        },
+        {
+          "text": "doch alle Sternen werden bleich, die Sonne will verglühn.",
+          "chords": {}
+        },
+        {
+          "text": "Ref. ",
+          "chords": {}
+        },
+        {
+          "text": "Da öffnet sich der Himmel weit und Reiter kommen aus Höhn,",
+          "chords": {}
+        },
+        {
+          "text": "und Feuer bricht aus Pferdenüstern, rauhe Winde wehn,",
+          "chords": {}
+        },
+        {
+          "text": "der tote Cowboy wird genommen, keiner hat gefragt,",
+          "chords": {}
+        },
+        {
+          "text": "und donnernd geht es himmelwärts in wilder toller Jagd.",
+          "chords": {}
+        },
+        {
+          "text": "Ref. ",
+          "chords": {}
+        }
+      ]
+    }
+  ]
+}

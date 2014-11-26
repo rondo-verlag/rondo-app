@@ -1,1 +1,125 @@
-{"meta":{"title":"Über den Wolken"},"paragraphs":[{"type":"default","lines":[{"text":"Wind NordOst Startbahn null drei bis hier hör' ich die Motoren und der nasse Asphalt bebt. Wie ein Schleierstaub der Regen bis sie abhebt und sie schwebt der Sonne entgegen. Über den Wolden muss die Freiheit wohl grenzenlos sein alle Ängste alle Sorgen sagt man, blieben darunter verborgen und dann würde, was hier gross und wichtig erscheint, plötzlich nichtig und klein. ","chords":{"0":"G","28":"Am","33":"D7","57":"G","85":"Am","91":"D7","117":"G","146":"Am","154":"D7","167":"G","183":"Am","190":"D7","213":"G","246":"Am","263":"D7","283":"G","299":"C","325":"G","344":"Am","366":"G"}}]},{"type":"default","lines":[{"text":"Ich seh ihr noch lange nach, ","chords":{}},{"text":"seh', sie die Wolken erklimmen, ","chords":{}},{"text":"bis die Lichter nach und nach","chords":{}},{"text":"ganz im Regengrau verschwimmen. ","chords":{}},{"text":"Meine Augen haben schon","chords":{}},{"text":"jenen winz'gen Punkt verloren. ","chords":{}},{"text":"Nur von fern klingt monoton","chords":{}},{"text":"das Summen der Motoren.                  Ref. ","chords":{}},{"text":"Dann ist alles still, ich geh'","chords":{}},{"text":"Regen durchdringt meine Jacke","chords":{}},{"text":"irgend jemand kocht Kaffee","chords":{}},{"text":"in der Luftaufsichtsbaracke.","chords":{}},{"text":"In den Pfützen schwimmt Benzin","chords":{}},{"text":"schillernd wie ein Regenbogen.","chords":{}},{"text":"Wolgen spiegeln sich darin.","chords":{}},{"text":"Ich wär gern mitgeflogen.                    Ref. ","chords":{}}]}]}
+{
+  "meta": {
+    "title": "Über den Wolken"
+  },
+  "paragraphs": [
+    {
+      "type": "default",
+      "lines": [
+        {
+          "text": "Wind NordOst Startbahn null drei bis hier hör' ich die Motoren ",
+          "chords": {
+            "0": "G",
+            "28": "Am",
+            "33": "D7",
+            "57": "G"
+          }
+        },
+        {
+          "text": "Wie ein Pfeil zieht sie vorbei und es dröhnt in meinen Ohren ",
+          "chords": {
+            "0": "G",
+            "27": "Am",
+            "31": "D7",
+            "55": "G"
+          }
+        },
+        {
+          "text": "und der nasse Asphalt bebt. Wie ein Schleierstaub der Regen bis sie abhebt und sie schwebt der Sonne entgegen. ",
+          "chords": {
+            "22": "Am",
+            "28": "D7",
+            "54": "G",
+            "83": "Am",
+            "91": "D7",
+            "104": "G"
+          }
+        },
+        {
+          "text": "Über den Wolden muss die Freiheit wohl grenzenlos sein alle Ängste alle Sorgen sagt man, blieben darunter verborgen und dann würde, was hier gross und wichtig erscheint, plötzlich nichtig und klein. ",
+          "chords": {
+            "9": "Am",
+            "16": "D7",
+            "39": "G",
+            "72": "Am",
+            "89": "D7",
+            "109": "G",
+            "125": "C",
+            "151": "G",
+            "170": "Am/D7",
+            "192": "G"
+          }
+        }
+      ]
+    },
+    {
+      "type": "default",
+      "lines": [
+        {
+          "text": "Ich seh ihr noch lange nach, ",
+          "chords": {}
+        },
+        {
+          "text": "seh', sie die Wolken erklimmen, ",
+          "chords": {}
+        },
+        {
+          "text": "bis die Lichter nach und nach",
+          "chords": {}
+        },
+        {
+          "text": "ganz im Regengrau verschwimmen. ",
+          "chords": {}
+        },
+        {
+          "text": "Meine Augen haben schon",
+          "chords": {}
+        },
+        {
+          "text": "jenen winz'gen Punkt verloren. ",
+          "chords": {}
+        },
+        {
+          "text": "Nur von fern klingt monoton",
+          "chords": {}
+        },
+        {
+          "text": "das Summen der Motoren.                  Ref. ",
+          "chords": {}
+        },
+        {
+          "text": "Dann ist alles still, ich geh'",
+          "chords": {}
+        },
+        {
+          "text": "Regen durchdringt meine Jacke",
+          "chords": {}
+        },
+        {
+          "text": "irgend jemand kocht Kaffee",
+          "chords": {}
+        },
+        {
+          "text": "in der Luftaufsichtsbaracke.",
+          "chords": {}
+        },
+        {
+          "text": "In den Pfützen schwimmt Benzin",
+          "chords": {}
+        },
+        {
+          "text": "schillernd wie ein Regenbogen.",
+          "chords": {}
+        },
+        {
+          "text": "Wolgen spiegeln sich darin.",
+          "chords": {}
+        },
+        {
+          "text": "Ich wär gern mitgeflogen.                    Ref. ",
+          "chords": {}
+        }
+      ]
+    }
+  ]
+}

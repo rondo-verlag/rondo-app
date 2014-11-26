@@ -21,7 +21,7 @@ var MusicXML2JSON = function(inputFile, outputFile) {
 
       var parser = new xml2js.Parser({'strict': false});
       parser.parseString(fileData.substring(0, fileData.length), function (err, result) {
-        json = JSON.stringify(result);
+        json = JSON.stringify(result, undefined, 2);
         console.log('Result:', result, err, result["SCORE-PARTWISE"]["WORK"][0]['WORK-TITLE']);
       });
 

@@ -15,39 +15,72 @@ var MusicJSON2JSON = function(song) {
   structure.meta.title = song['WORK'][0]['WORK-TITLE'][0];
 
   var measures = song['PART'][0]['MEASURE'];
-  var text_from_notes = '';
-  var chords_from_notes = {};
+  var text_from_notes = ['','','','','','','','','',''];
+  var chords_from_notes = [{},{},{},{},{},{},{},{},{},{}];
+  var lines_from_notes = [];
   measures.forEach(function(measure) {
+    var resetLine = false;
 
     // Chords
     if (measure['HARMONY']){
-      var step = measure['HARMONY'][0]['ROOT'][0]['ROOT-STEP'][0];
-      var kind_type = measure['HARMONY'][0]['KIND'];
-      var kind = '';
-      if (kind_type == 'minor'){
-        kind = 'm';
-      }
-      if (kind_type == 'dominant'){
-        kind = '7';
-      }
-      var chord = step + kind;
-      chords_from_notes[text_from_notes.length] = chord;
-      //text_from_notes += '[' + chord + ']';
+      measure['HARMONY'].forEach(function(harmony) {
+        var step = harmony['ROOT'][0]['ROOT-STEP'][0];
+        var kind_type = harmony['KIND'];
+        var kind = '';
+        if (kind_type == 'minor') {
+          kind = 'm';
+        }
+        if (kind_type == 'dominant') {
+          kind = '7';
+        }
+        // TODO: multiple
+        var chord = step + kind;
+        text_from_notes.forEach(function(text, i) {
+          if (chords_from_notes[i][text.length]){
+            chords_from_notes[i][text.length] = chords_from_notes[i][text.length] + '/' + chord;
+          } else {
+            chords_from_notes[i][text.length] = chord;
+          }
+        });
+      });
     }
 
     // Texte in den Noten
     if (measure['NOTE']){
       measure['NOTE'].forEach(function(note) {
         if (note['LYRIC']){
-          var hasSpace = false;
-          if (note['LYRIC'][0]['SYLLABIC'] == 'single' || note['LYRIC'][0]['SYLLABIC'] == 'end'){
-            hasSpace = true;
-          }
-          text_from_notes += note['LYRIC'][0]['TEXT'][0] + (hasSpace?' ':'');
+          note['LYRIC'].forEach(function(lyric, i) {
+            var hasSpace = false;
+            if (lyric['SYLLABIC'] == 'single' || lyric['SYLLABIC'] == 'end'){
+              hasSpace = true;
+            }
+            text_from_notes[i] += lyric['TEXT'][0] + (hasSpace?' ':'');
+          });
+        }
+
+        if (note['REST']){
+          //resetLine = true;
         }
       });
     }
 
+    // BARLINE
+    if (measure['BARLINE']){
+      resetLine = true;
+    }
+
+    if (resetLine){
+      text_from_notes.forEach(function(text, i) {
+        if (text_from_notes[i].length > 0){
+          lines_from_notes.push({
+            text: text_from_notes[i],
+            chords: chords_from_notes[i]
+          });
+          text_from_notes[i] = '';
+          chords_from_notes[i] = {};
+        }
+      })
+    }
 
     // Lyrics als Text
     if (measure['DIRECTION'] && measure['DIRECTION'][0]['DIRECTION-TYPE'][0]['WORDS']){
@@ -69,19 +102,16 @@ var MusicJSON2JSON = function(song) {
   structure.paragraphs.unshift(
       {
         type: 'default',
-        lines: [{
-          text: text_from_notes,
-          chords: chords_from_notes
-        }]
+        lines: lines_from_notes
       }
   );
 
   console.log(song);
   console.log(structure);
 
-  console.log(JSON.stringify(structure));
+  console.log(JSON.stringify(structure, undefined, 2));
 
-  return JSON.stringify(structure);
+  return JSON.stringify(structure, undefined, 2);
 }
 
 
