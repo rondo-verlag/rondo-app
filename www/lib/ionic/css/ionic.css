@@ -3973,7 +3973,7 @@ a.subdued {
     color: #ddd; }
 
 .tabs-striped .tabs {
-  background-color: white;
+  background-color: #000;
   background-image: none;
   border: none;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
