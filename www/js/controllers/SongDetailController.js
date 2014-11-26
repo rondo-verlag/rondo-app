@@ -15,10 +15,14 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     var body = angular.element(document.querySelectorAll('body'));
     if (body.hasClass('fullscreen')){
       body.removeClass('fullscreen');
-      StatusBar.show();
+      if (StatusBar){
+        StatusBar.show();
+      }
     } else {
       body.addClass('fullscreen');
-      StatusBar.hide();
+      if (StatusBar){
+        StatusBar.hide();
+      }
     }
   };
 
