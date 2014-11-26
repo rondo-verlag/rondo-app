@@ -47,7 +47,7 @@ Songbook.directive('songtext', function($compile, $ionicPopover) {
   function updateView(data, element){
     //console.log(data);
     var html = '';
-    if (typeof data.paragraphs !== 'undefined' && data.paragraphs.length > 0){
+    if (typeof data !== 'undefined' && typeof data.paragraphs !== 'undefined' && data.paragraphs.length > 0){
       angular.forEach(data.paragraphs, function(para) {
         //console.log(para);
         var paragraph_html = '';
