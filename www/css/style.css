@@ -45,9 +45,15 @@ body {
   -webkit-transition: top 0.5s;
   transition: top 0.5s; }
 
+.tabs {
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s; }
+
 .fullscreen .nav-bar {
   top: -80px; }
 .fullscreen .has-header {
   top: 0; }
+.fullscreen .tabs {
+  bottom: -80px; }
 
 /*# sourceMappingURL=style.css.map */

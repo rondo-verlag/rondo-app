@@ -67,11 +67,19 @@ body {
   transition: top 0.5s;
 }
 
+.tabs {
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
+}
+
 .fullscreen {
   .nav-bar {
     top: -80px;
   }
   .has-header {
     top: 0;
+  }
+  .tabs {
+    bottom: -80px;
   }
 }
