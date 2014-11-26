@@ -1,0 +1,1629 @@
+{
+  "SCORE-PARTWISE": {
+    "$": {"VERSION": "3.0"},
+    "WORK": [{"WORK-TITLE": ["S' Zündhölzli"]}],
+    "IDENTIFICATION": [
+      {
+        "RIGHTS": ["Copyright © "],
+        "ENCODING": [
+          {
+            "ENCODING-DATE": ["2014-11-24"],
+            "ENCODER": ["Demian Holderegger"],
+            "SOFTWARE": [
+              "Sibelius 7.1.3",
+              "Direct export, not from Dolet"
+            ],
+            "ENCODING-DESCRIPTION": ["Sibelius / MusicXML 3.0"],
+            "SUPPORTS": [
+              {"$": {"ELEMENT": "print", "TYPE": "yes", "VALUE": "yes", "ATTRIBUTE": "new-system"}},
+              {"$": {"ELEMENT": "print", "TYPE": "yes", "VALUE": "yes", "ATTRIBUTE": "new-page"}},
+              {"$": {"ELEMENT": "accidental", "TYPE": "yes"}},
+              {"$": {"ELEMENT": "beam", "TYPE": "yes"}},
+              {"$": {"ELEMENT": "stem", "TYPE": "yes"}}
+            ]
+          }
+        ]
+      }
+    ],
+    "DEFAULTS": [
+      {
+        "SCALING": [{"MILLIMETERS": ["210"], "TENTHS": ["1200"]}],
+        "PAGE-LAYOUT": [
+          {
+            "PAGE-HEIGHT": ["1697"],
+            "PAGE-WIDTH": ["1200"],
+            "PAGE-MARGINS": [
+              {
+                "$": {"TYPE": "both"},
+                "LEFT-MARGIN": ["72"],
+                "RIGHT-MARGIN": ["72"],
+                "TOP-MARGIN": ["72"],
+                "BOTTOM-MARGIN": ["72"]
+              }
+            ]
+          }
+        ],
+        "SYSTEM-LAYOUT": [
+          {
+            "SYSTEM-MARGINS": [{"LEFT-MARGIN": ["94"], "RIGHT-MARGIN": ["0"]}],
+            "SYSTEM-DISTANCE": ["92"]
+          }
+        ],
+        "APPEARANCE": [
+          {
+            "LINE-WIDTH": [
+              {"_": "0.9375", "$": {"TYPE": "stem"}},
+              {"_": "5", "$": {"TYPE": "beam"}},
+              {"_": "0.9375", "$": {"TYPE": "staff"}},
+              {"_": "1.5625", "$": {"TYPE": "light barline"}},
+              {"_": "5", "$": {"TYPE": "heavy barline"}},
+              {"_": "1.5625", "$": {"TYPE": "leger"}},
+              {"_": "1.5625", "$": {"TYPE": "ending"}},
+              {"_": "1.25", "$": {"TYPE": "wedge"}},
+              {"_": "0.9375", "$": {"TYPE": "enclosure"}},
+              {"_": "1.25", "$": {"TYPE": "tuplet bracket"}},
+              {"_": "5", "$": {"TYPE": "bracket"}},
+              {"_": "1.5625", "$": {"TYPE": "dashes"}},
+              {"_": "0.9375", "$": {"TYPE": "extend"}},
+              {"_": "1.5625", "$": {"TYPE": "octave shift"}},
+              {"_": "1.5625", "$": {"TYPE": "pedal"}},
+              {"_": "1.5625", "$": {"TYPE": "slur middle"}},
+              {"_": "0.625", "$": {"TYPE": "slur tip"}},
+              {"_": "1.5625", "$": {"TYPE": "tie middle"}},
+              {"_": "0.625", "$": {"TYPE": "tie tip"}}
+            ],
+            "NOTE-SIZE": [
+              {"_": "75", "$": {"TYPE": "cue"}},
+              {"_": "60", "$": {"TYPE": "grace"}}
+            ]
+          }
+        ],
+        "MUSIC-FONT": [{"$": {"FONT-FAMILY": "Opus Std", "FONT-SIZE": "19.8425"}}],
+        "LYRIC-FONT": [{"$": {"FONT-FAMILY": "Plantin MT Std", "FONT-SIZE": "11.4715"}}],
+        "LYRIC-LANGUAGE": [{"$": {"XML:LANG": "de"}}]
+      }
+    ],
+    "CREDIT": [
+      {
+        "$": {"PAGE": "1"},
+        "CREDIT-WORDS": [
+          {
+            "_": "S' Zündhölzli",
+            "$": {
+              "DEFAULT-X": "600",
+              "DEFAULT-Y": "155",
+              "FONT-FAMILY": "Plantin MT Std",
+              "FONT-STYLE": "normal",
+              "FONT-SIZE": "22.0128",
+              "FONT-WEIGHT": "normal",
+              "JUSTIFY": "center",
+              "VALIGN": "middle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {"PAGE": "2"},
+        "CREDIT-WORDS": [
+          {
+            "_": "2",
+            "$": {
+              "DEFAULT-X": "72",
+              "DEFAULT-Y": "1624",
+              "FONT-STYLE": "normal",
+              "FONT-WEIGHT": "normal",
+              "JUSTIFY": "left",
+              "VALIGN": "middle"
+            }
+          }
+        ]
+      },
+      {
+        "$": {"PAGE": "1"},
+        "CREDIT-WORDS": [
+          {
+            "_": "\n\n\n\nD'UNO hätt interveniert\nund d'UNO Gägner sofort o\nfür ir Schwyz dr Fride z'rette \nwäre beid mit Panzer cho\ns'hätt sich usdehnt natina\nuf Europa Afrika\ns'hätt e Wältchrieg gäh und \nd'Mönschheit wär jitzt nümme da\n\nI han es Zündhölzli azündt\nund das het e Flamme gäh\nund i ha für d'Zigarette\nwelle Füür vom Hölzli näh\naber ds Hölzli isch dervo-\ngspickt und uf e Teppich cho-\ngottseidank dass i's vom \nTeppich wider furt ha gno",
+            "$": {
+              "DEFAULT-X": "181",
+              "DEFAULT-Y": "1495",
+              "FONT-FAMILY": "Plantin MT Std",
+              "FONT-STYLE": "normal",
+              "FONT-SIZE": "11.9365",
+              "FONT-WEIGHT": "normal",
+              "JUSTIFY": "left",
+              "VALIGN": "middle"
+            }
+          }
+        ]
+      }
+    ],
+    "PART-LIST": [
+      {
+        "SCORE-PART": [
+          {
+            "$": {"ID": "P1"},
+            "PART-NAME": ["Akustische Gitarre"],
+            "PART-NAME-DISPLAY": [{"DISPLAY-TEXT": ["Akustische Gitarre"]}],
+            "PART-ABBREVIATION": ["A.-Git."],
+            "PART-ABBREVIATION-DISPLAY": [{"DISPLAY-TEXT": ["A.-Git."]}],
+            "SCORE-INSTRUMENT": [
+              {
+                "$": {"ID": "P1-I1"},
+                "INSTRUMENT-NAME": ["Acoustic Guitar (2)"],
+                "INSTRUMENT-SOUND": ["pluck.guitar.steel-string"],
+                "SOLO": [""]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "PART": [
+      {
+        "$": {"ID": "P1"},
+        "MEASURE": [
+          {
+            "$": {"NUMBER": "0", "WIDTH": "139"},
+            "PRINT": [
+              {
+                "$": {"NEW-PAGE": "yes"},
+                "SYSTEM-LAYOUT": [
+                  {
+                    "SYSTEM-MARGINS": [{"LEFT-MARGIN": ["0"], "RIGHT-MARGIN": ["0"]}],
+                    "TOP-SYSTEM-DISTANCE": ["218"]
+                  }
+                ]
+              }
+            ],
+            "ATTRIBUTES": [
+              {
+                "DIVISIONS": ["256"],
+                "KEY": [{"$": {"COLOR": "#000000"}, "FIFTHS": ["0"], "MODE": ["major"]}],
+                "TIME": [{"$": {"COLOR": "#000000"}, "BEATS": ["4"], "BEAT-TYPE": ["4"]}],
+                "STAVES": ["1"],
+                "CLEF": [{"$": {"NUMBER": "1", "COLOR": "#000000"}, "SIGN": ["G"], "LINE": ["2"]}],
+                "STAFF-DETAILS": [{"$": {"NUMBER": "1", "PRINT-OBJECT": "yes"}}],
+                "TRANSPOSE": [{"DIATONIC": ["0"], "CHROMATIC": ["0"], "OCTAVE-CHANGE": ["-1"]}]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "76", "DEFAULT-Y": "-44"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["I"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "107", "DEFAULT-Y": "-44"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["han"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "1", "WIDTH": "345"},
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["C"]}],
+                "KIND": ["major"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "15", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["es"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "60", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["Zünd"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "113", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["middle"],
+                    "TEXT": ["höl"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "144", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["zli"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "176", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["a"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "219", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["zündt"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "276", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["F"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["und"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "313", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["es"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "2", "WIDTH": "284"},
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["G"]}],
+                "KIND": ["dominant"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "15", "DEFAULT-Y": "-42"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["het"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "46", "DEFAULT-Y": "-42"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["e"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "85", "DEFAULT-Y": "-42"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["Flam"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "136", "DEFAULT-Y": "-42"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["me"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "177", "DEFAULT-Y": "-45"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["gäh"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "221", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["und"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "253", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["i"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "3", "WIDTH": "285"},
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["A"]}],
+                "KIND": ["minor"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "15", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["ha"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "46", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["für"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "88", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["d'Zi"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "128", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["middle"],
+                    "TEXT": ["ga"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "159", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["middle"],
+                    "TEXT": ["ret"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "191", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["te"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "222", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["wel"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "254", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["le"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "4", "WIDTH": "548"},
+            "PRINT": [
+              {
+                "$": {"NEW-SYSTEM": "yes"},
+                "SYSTEM-LAYOUT": [
+                  {
+                    "SYSTEM-MARGINS": [{"LEFT-MARGIN": ["0"], "RIGHT-MARGIN": ["0"]}],
+                    "SYSTEM-DISTANCE": ["92"]
+                  }
+                ]
+              }
+            ],
+            "ATTRIBUTES": [{"STAFF-DETAILS": [{"$": {"NUMBER": "1", "PRINT-OBJECT": "yes"}}]}],
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["E"]}],
+                "KIND": ["major"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "57", "DEFAULT-Y": "-52"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["Füür"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "124", "DEFAULT-Y": "-52"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["vom"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "190", "DEFAULT-Y": "-52"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "continue", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["Hölz"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "257", "DEFAULT-Y": "-52"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["li"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "323", "DEFAULT-Y": "-55"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["näh"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "415", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["a"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "482", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["ber"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "5", "WIDTH": "506"},
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["F"]}],
+                "KIND": ["major"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "15", "DEFAULT-Y": "10"},
+                "PITCH": [{"STEP": ["A"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["s'Hölz"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "81", "DEFAULT-Y": "9"},
+                "PITCH": [{"STEP": ["G"], "ALTER": ["1"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "ACCIDENTAL": ["sharp"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["li"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "148", "DEFAULT-Y": "9"},
+                "PITCH": [{"STEP": ["A"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["isch"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "214", "DEFAULT-Y": "-55"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["der"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "281", "DEFAULT-Y": "-50"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["vo"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "373", "DEFAULT-Y": "-55"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["gspickt"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "439", "DEFAULT-Y": "10"},
+                "PITCH": [{"STEP": ["A"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["und"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "6", "WIDTH": "395"},
+            "PRINT": [
+              {
+                "$": {"NEW-SYSTEM": "yes"},
+                "SYSTEM-LAYOUT": [
+                  {
+                    "SYSTEM-MARGINS": [{"LEFT-MARGIN": ["0"], "RIGHT-MARGIN": ["0"]}],
+                    "SYSTEM-DISTANCE": ["92"]
+                  }
+                ]
+              }
+            ],
+            "ATTRIBUTES": [{"STAFF-DETAILS": [{"$": {"NUMBER": "1", "PRINT-OBJECT": "yes"}}]}],
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["C"]}],
+                "KIND": ["major"],
+                "STAFF": ["1"]
+              }
+            ],
+            "DIRECTION": [
+              {
+                "DIRECTION-TYPE": [
+                  {
+                    "WORDS": [
+                      {
+                        "_": "Ja mer weiss was cha passiere",
+                        "$": {
+                          "DEFAULT-Y": "-220",
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "wenn mer nid ufpasst mit Füür",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und für d'gluet ar Zigarette",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "isch e Teppich doch de z'tüür",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und vom Teppich hätt o grus",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "chönne ds Füür i ds ganze Hus",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und wär weis was da nid alles ",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "no wär worde drus",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "S'hätt e Brand gäh im Quartier ",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und s'hetti d'Füürwehr müesse cho",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "hätti ghorned i de Strasse",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und dr Schluuch vom Wage gno",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und si hätte Wasser gsprützt",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und das hätt de glych nüt gnützt",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "und die ganzi Stadt hät brönnt",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "es hätt se nüt meh gschützt",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "Und d'Lüt wäre umegsprunge ",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "i dr Angscht um Hab und Guet",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "hätte gmeint s'heig eine Füür gleit",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "hätte ds Sturmgwehr gno ir Wuet",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "alls hätt brüelet: wär isch tschuld?",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "ds ganze Land i eim Tumult",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "dass mer gschosse hätt ",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      },
+                      {
+                        "_": "uf d'Bundesrät am Renderpult",
+                        "$": {
+                          "JUSTIFY": "left",
+                          "VALIGN": "middle",
+                          "FONT-FAMILY": "Plantin MT Std",
+                          "FONT-STYLE": "normal",
+                          "FONT-SIZE": "11.4715",
+                          "FONT-WEIGHT": "normal"
+                        }
+                      }
+                    ]
+                  }
+                ], "VOICE": ["1"], "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "57", "DEFAULT-Y": "2"},
+                "PITCH": [{"STEP": ["G"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["uf"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "102", "DEFAULT-Y": "2"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["e"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "147", "DEFAULT-Y": "5"},
+                "PITCH": [{"STEP": ["G"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["up"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["Tep"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "197", "DEFAULT-Y": "-50"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["pich"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "244", "DEFAULT-Y": "-40"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["cho"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "306", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["und"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "351", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["es"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "7", "WIDTH": "380"},
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["F"]}],
+                "KIND": ["major"],
+                "STAFF": ["1"]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["G"]}],
+                "KIND": ["dominant"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "15", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["F"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["het"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "60", "DEFAULT-Y": "-39"},
+                "PITCH": [{"STEP": ["E"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["no"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "106", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["fasch"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "151", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["es"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "196", "DEFAULT-Y": "-52"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["Loch"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "240", "DEFAULT-Y": "-52"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["in"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "285", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["D"], "OCTAVE": ["5"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "begin", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["Tep"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "335", "DEFAULT-Y": "-49"},
+                "PITCH": [{"STEP": ["B"], "OCTAVE": ["4"]}],
+                "DURATION": ["128"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["eighth"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "BEAM": [{"_": "end", "$": {"NUMBER": "1"}}],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["pich"]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$": {"NUMBER": "8", "WIDTH": "278"},
+            "HARMONY": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-Y": "25"},
+                "ROOT": [{"ROOT-STEP": ["C"]}],
+                "KIND": ["major"],
+                "STAFF": ["1"]
+              }
+            ],
+            "NOTE": [
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "15", "DEFAULT-Y": "-50"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["single"],
+                    "TEXT": ["gä"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "77", "DEFAULT-Y": "-50"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["begin"],
+                    "TEXT": ["der"]
+                  }
+                ]
+              },
+              {
+                "$": {"COLOR": "#000000", "DEFAULT-X": "139", "DEFAULT-Y": "-50"},
+                "PITCH": [{"STEP": ["C"], "OCTAVE": ["5"]}],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STEM": ["down"],
+                "STAFF": ["1"],
+                "LYRIC": [
+                  {
+                    "$": {"DEFAULT-Y": "-80", "NUMBER": "part1verse1", "COLOR": "#000000"},
+                    "SYLLABIC": ["end"],
+                    "TEXT": ["vo"]
+                  }
+                ]
+              },
+              {
+                "$": {"DEFAULT-X": "201"},
+                "REST": [""],
+                "DURATION": ["256"],
+                "INSTRUMENT": [{"$": {"ID": "P1-I1"}}],
+                "VOICE": ["1"],
+                "TYPE": ["quarter"],
+                "STAFF": ["1"]
+              }
+            ],
+            "BARLINE": [{"BAR-STYLE": ["light-heavy"]}]
+          }
+        ]
+      }
+    ]
+  }
+}

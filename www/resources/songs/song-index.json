@@ -1,5 +1,25 @@
 [
   {
+    "id": "Donna Donna.json",
+    "name": "Donna Donna"
+  },
+  {
+    "id": "Geisterreiter.json",
+    "name": "Geisterreiter"
+  },
+  {
+    "id": "Morning has broken.json",
+    "name": "Morning has broken"
+  },
+  {
+    "id": "S Elli.json",
+    "name": "S' Elli"
+  },
+  {
+    "id": "S Zuendhoelzli.json",
+    "name": "S' Zündhölzli"
+  },
+  {
     "id": "all_creatures.json",
     "name": "All Creatures Of Our God And King"
   },
@@ -786,6 +806,10 @@
   {
     "id": "true_love.json",
     "name": "True Love"
+  },
+  {
+    "id": "ueber den Wolken.json",
+    "name": "Über den Wolken"
   },
   {
     "id": "undone.json",
