@@ -45,14 +45,14 @@ Songbook.directive('songtext', function($compile, $ionicPopover) {
     });
   }
   function updateView(data, element){
-    console.log(data);
+    //console.log(data);
     var html = '';
     if (typeof data.paragraphs !== 'undefined' && data.paragraphs.length > 0){
       angular.forEach(data.paragraphs, function(para) {
-        console.log(para);
+        //console.log(para);
         var paragraph_html = '';
         angular.forEach(para.lines, function(line) {
-          console.log(line);
+          //console.log(line);
           var line_html = '';
           var line_chord = '';
           var blocks = [];
