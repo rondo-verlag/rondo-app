@@ -5,6 +5,8 @@
 Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService) {
   $scope.songId = $stateParams.songId;
   $scope.title = $stateParams.songId;
+  $scope.midiFile = false;
+  $scope.playingSong = false;
   $scope.data = {};
 
   $scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
@@ -26,6 +28,30 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     }
   };
 
+  $scope.playSong = function() {
+      MIDI.loadPlugin({
+          soundfontUrl: "lib/MIDI/soundfonts/",
+          callback: function () {
+              MIDI.Player.loadFile("resources/songs/midi/" + $scope.midiFile, function () {
+                  MIDI.Player.start();
+                  MIDI.Player.addListener(function (data) {
+                      console.log(data);
+                      $scope.playingSong = !(data.now == data.end);
+                      if (!$scope.playingSong) {
+                          MIDI.Player.removeListener();
+                      }
+                  });
+              });
+          }
+      });
+    $scope.playingSong = true;
+  };
+
+  $scope.stopSong = function() {
+      MIDI.Player.stop();
+      $scope.playingSong = false;
+  };
+
   $http({
     method: 'GET',
     url: 'resources/songs/json/' + $scope.songId
@@ -34,6 +60,10 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
         $scope.data = data;
         if (angular.isDefined(data.meta.title)){
           $scope.title = data.meta.title;
+        }
+
+        if (angular.isString(data.meta.midiFile)) {
+            $scope.midiFile = data.meta.midiFile;
         }
       }).
       error(function (data, status, headers, config) {
