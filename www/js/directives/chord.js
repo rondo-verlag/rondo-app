@@ -9,7 +9,6 @@ Songbook.directive('chord', function() {
     link: link
   };
   function link(scope, element, attrs) {
-
     var chord_chart = {
       'C': {
         name: "C Major",
@@ -109,8 +108,6 @@ Songbook.directive('chord', function() {
       }
     };
 
-    console.log(chord_chart[attrs.chordname]);
-
     if (typeof chord_chart[attrs.chordname] !== 'undefined'){
       var paper = Raphael(element[0], 120, 120);
       var chord = new ChordBox(paper, 10, 10);
@@ -118,9 +115,6 @@ Songbook.directive('chord', function() {
       // TODO: different chords
       chord.setChord(chord_chart[attrs.chordname].chord);
       chord.draw();
-      //console.log(chord_chart, attrs);
     }
-
   }
-
 });
