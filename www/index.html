@@ -17,6 +17,10 @@
     <script src="lib/hammerjs/hammer.min.js"></script>
     <script src="lib/angular-hammer/angular-hammer.js"></script>
 
+    <!-- chords library -->
+    <script src="lib/raphael/raphael-min.js"></script>
+    <script src="lib/vexchords/js/chord.js"></script>
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
@@ -25,10 +29,12 @@
     <script src="js/services/SongService.js"></script>
     <script src="js/services/SettingsService.js"></script>
     <script src="js/controllers/SongSearchController.js"></script>
+    <script src="js/controllers/ChordListController.js"></script>
     <script src="js/controllers/SettingsController.js"></script>
     <script src="js/controllers/SongDetailController.js"></script>
-    <script src="js/directives/songtext.js"></script>
     <script src="js/directives/autoscroll.js"></script>
+    <script src="js/directives/chord.js"></script>
+    <script src="js/directives/songtext.js"></script>
   </head>
   <body ng-app="songbook" animation="slide-left-right-ios7">
     <ion-nav-bar class="bar-negative nav-title-slide-ios7">

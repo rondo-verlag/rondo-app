@@ -56,4 +56,10 @@ body {
 .fullscreen .tabs {
   bottom: -80px; }
 
+chord {
+  background: white;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 5px 10px 5px 0px; }
+
 /*# sourceMappingURL=style.css.map */

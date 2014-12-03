@@ -19,19 +19,25 @@ Songbook.run(function ($ionicPlatform) {
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
     // Set up the various states which the app can be in.
-  $stateProvider.state("search", {
-    url: "/",
-    templateUrl: "templates/song-search.html",
-    controller: "SongSearchController"
-  });
+    $stateProvider.state("search", {
+        url: "/",
+        templateUrl: "templates/song-search.html",
+        controller: "SongSearchController"
+    });
 
-  $stateProvider.state("song", {
-    url: "/song/:songId",
-    templateUrl: "templates/song-detail.html",
-    controller: "SongDetailController"
-  });
+    $stateProvider.state("song", {
+        url: "/song/:songId",
+        templateUrl: "templates/song-detail.html",
+        controller: "SongDetailController"
+    });
 
-    // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/');
+    $stateProvider.state("chords", {
+        url: "/song/:songId/chords",
+        templateUrl: "templates/chord-list.html",
+        controller: "ChordListController"
+    });
+
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/');
 });
 
