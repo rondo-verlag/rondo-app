@@ -7,7 +7,8 @@
     <div class="tabs tabs-light" ng-show="scrollEnabled || midiFile">
         <a class="tab-item icon ion-ios7-play" ng-click="scroll = true" ng-hide="scroll">&nbsp;Scrollen</a>
         <a class="tab-item icon ion-ios7-pause" ng-click="scroll = false" ng-show="scroll">&nbsp;Anhalten</a>
-        <a class="tab-item icon ion-ios7-musical-notes" ng-click="playSong()" ng-show="midiFile && !playingSong">&nbsp;Anhören</a>
+        <a class="tab-item icon ion-volume-medium" ng-click="playSong()" ng-show="midiFile && !playingSong">&nbsp;Anhören</a>
         <a class="tab-item icon ion-ios7-pause" ng-click="stopSong()" ng-show="playingSong">&nbsp;Anhalten</a>
+        <a class="tab-item icon ion-ios7-musical-notes" ui-sref="chords({ songId: songId })">&nbsp;Akkorde</a>
     </div>
 </ion-view>
