@@ -2,15 +2,8 @@
   <div class="padding has-header has-tabs">
     <br>
     <h3>Akkorde</h3>
-    <span id="chord_element"></span>
-    <chord chordname="A"></chord>
-    <chord chordname="D"></chord>
-    <chord chordname="Am"></chord>
-    <chord chordname="A"></chord>
-    <chord chordname="D"></chord>
-    <chord chordname="Am"></chord>
-    <chord chordname="A"></chord>
-    <chord chordname="D"></chord>
-    <chord chordname="Am"></chord>
+    <span ng-repeat="chord in chords">
+      <chord chordname="{{chord.name}}"></chord>
+    </span>
   </div>
 </ion-view>

@@ -3,9 +3,8 @@ Songbook.directive('chord', function() {
   return {
     restrict: 'E',
     scope: {
-      chordname: '='
+      chordname: '@'
     },
-    template: '<span class="chord"></span>',
     link: link
   };
   function link(scope, element, attrs) {
@@ -115,6 +114,7 @@ Songbook.directive('chord', function() {
       // TODO: different chords
       chord.setChord(chord_chart[attrs.chordname].chord);
       chord.draw();
+      element.prepend('<div class="chord-title">' + chord_chart[attrs.chordname].name + '</div>');
     }
   }
 });
