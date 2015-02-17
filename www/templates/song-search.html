@@ -1,15 +1,16 @@
-<ion-view title="Songs">
+<ion-view title="RONDO">
     <ion-nav-buttons side="right">
-        <button class="button button-clear button-icon icon ion-wrench" ng-click="settingsDialog.show()"></button>
+        <button class="button button-clear button-icon icon ion-gear-a" ng-click="settingsDialog.show()"></button>
     </ion-nav-buttons>
-    <ion-header-bar class="bar bar-subheader item-input-inset">
+    <ion-header-bar class="bar bar-subheader bar-dark item-input-inset rondo-bar-search">
         <label class="item-input-wrapper">
             <i class="icon ion-ios7-search placeholder-icon"></i>
             <input type="search" placeholder="Suchen..." ng-model="search.name" ng-change="runSearch(search)"/>
+
         </label>
     </ion-header-bar>
     <ion-content>
-        <ion-list>
+        <ion-list class="rondo-list">
             <ion-item ng-repeat="song in songs" type="item-link" href="#/song/{{song.id}}">
                 {{song.name}}
             </ion-item>

@@ -28,6 +28,11 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     }
   };
 
+  $scope.toggleChords = function(){
+    var body = angular.element(document.querySelectorAll('body'));
+    body.toggleClass('rondo-show-chords');
+  }
+
   $scope.playSong = function() {
       MIDI.loadPlugin({
           soundfontUrl: "lib/MIDI/soundfonts/",

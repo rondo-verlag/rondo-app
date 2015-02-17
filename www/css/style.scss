@@ -9,6 +9,7 @@ body {
 
 ::-webkit-input-placeholder {
   color: #333;
+  font-size: 16px;
 }
 
 input[type='range']::-webkit-slider-thumb {
@@ -24,17 +25,18 @@ input[type='range']::-webkit-slider-thumb {
     .bl {
       float: left;
       height: 2.5em;
+      transition: height 0.1s;
     }
+  }
+  .chord,
+  .empty-chord {
+    height: 1em;
+    transition: height 0.1s;
+    display: block;
   }
   .chord {
     color: #888;
-    display: block;
-    height: 1em;
     cursor: pointer;
-  }
-  .empty-chord {
-    height: 1em;
-    display: block;
   }
   .paragraph {
     margin-bottom: 3em;
@@ -45,6 +47,18 @@ input[type='range']::-webkit-slider-thumb {
   .comment {
     white-space: pre;
     color: #BBB
+  }
+}
+
+.rondo-show-chords {
+  .chord,
+  .empty-chord {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .songtext .line .bl {
+    height: 1.5em;
   }
 }
 
@@ -77,11 +91,12 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .fullscreen {
-  .nav-bar {
+  ion-header-bar {
     top: -80px;
   }
   .has-header {
     top: 0;
+    bottom: 0;
   }
   .tabs {
     bottom: -80px;
@@ -99,5 +114,35 @@ chord {
     text-align: center;
     padding-top: 10px;
     font-size: 16px;
+  }
+}
+
+.song-image {
+  width: 100%;
+}
+
+.song-title {
+  text-transform: uppercase;
+  font-size: 140%;
+}
+
+// Song List & Search
+.rondo-bar-search {
+  background: #ffffff !important;
+
+  label {
+    background: #ffffff;
+    border: 1px solid black;
+  }
+}
+
+.rondo-list {
+  .item {
+    border: none;
+
+    .item-content {
+      padding: 8px 16px;
+      text-transform: uppercase;
+    }
   }
 }
