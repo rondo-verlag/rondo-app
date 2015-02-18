@@ -16,11 +16,11 @@ input[type='range']::-webkit-slider-thumb {
     .songtext .line .bl {
       float: left;
       height: 2.5em;
-      transition: height 0.1s; }
+      transition: height 0.2s; }
   .songtext .chord,
   .songtext .empty-chord {
     height: 1em;
-    transition: height 0.1s;
+    transition: height 0.2s;
     display: block; }
   .songtext .chord {
     color: #888;
@@ -28,7 +28,7 @@ input[type='range']::-webkit-slider-thumb {
   .songtext .paragraph {
     margin-bottom: 3em; }
   .songtext .p_chorus {
-    font-weight: bold; }
+    font-style: italic; }
   .songtext .comment {
     white-space: pre;
     color: #BBB; }
@@ -92,11 +92,15 @@ chord {
   .rondo-bar-search label {
     background: #ffffff;
     border: 1px solid black; }
+    .rondo-bar-search label .placeholder-icon {
+      color: #000000;
+      font-size: 140%; }
+    .rondo-bar-search label input {
+      text-transform: uppercase; }
 
 .rondo-list .item {
   border: none; }
   .rondo-list .item .item-content {
-    padding: 8px 16px;
-    text-transform: uppercase; }
+    padding: 8px 16px; }
 
 /*# sourceMappingURL=style.css.map */

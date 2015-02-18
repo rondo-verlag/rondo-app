@@ -25,13 +25,13 @@ input[type='range']::-webkit-slider-thumb {
     .bl {
       float: left;
       height: 2.5em;
-      transition: height 0.1s;
+      transition: height 0.2s;
     }
   }
   .chord,
   .empty-chord {
     height: 1em;
-    transition: height 0.1s;
+    transition: height 0.2s;
     display: block;
   }
   .chord {
@@ -42,7 +42,7 @@ input[type='range']::-webkit-slider-thumb {
     margin-bottom: 3em;
   }
   .p_chorus {
-    font-weight: bold;
+    font-style: italic;
   }
   .comment {
     white-space: pre;
@@ -133,6 +133,15 @@ chord {
   label {
     background: #ffffff;
     border: 1px solid black;
+
+    .placeholder-icon {
+      color: #000000;
+      font-size: 140%;
+    }
+
+    input {
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -142,7 +151,6 @@ chord {
 
     .item-content {
       padding: 8px 16px;
-      text-transform: uppercase;
     }
   }
 }

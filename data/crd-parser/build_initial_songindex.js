@@ -8,13 +8,18 @@ fs.readdir(BASEPATH + 'json/', function (err, files) {
   //console.log(files);
   for (var i = 0; i < files.length; i++) {
     var file = files[i];
-    console.log(file);
+    //console.log(file);
     if (file.substr(-4) === "json"){
       var obj = JSON.parse(fs.readFileSync(BASEPATH + 'json/' + file, 'utf8'));
-      console.log(obj.meta.title);
+      //console.log(obj.meta.title);
+      var title = (obj.meta.title ? obj.meta.title : file);
+      if (Math.random() < 0.85){
+        title = title.toUpperCase();
+      }
       songindex.push({
         id: file,
-        name: (obj.meta.title ? obj.meta.title : file )
+        name: title,
+        page: Math.ceil(Math.random()*250)
       });
     }
 

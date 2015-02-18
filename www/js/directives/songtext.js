@@ -92,7 +92,8 @@ Songbook.directive('songtext', function($compile, $ionicPopover) {
   function wrapBlockHtml(html, chord){
     var chord_html = '<span class="empty-chord"></span>';
     if (chord){
-      chord_html = '<span class="chord" ng-click="openPopover($event)">'+chord+'</span>';
+      //chord_html = '<span class="chord" ng-click="openPopover($event)">'+chord+'</span>';
+      chord_html = '<span class="chord">'+chord+'</span>';
     }
     return '<div class="bl">'+chord_html+html+'</div>';
   }
