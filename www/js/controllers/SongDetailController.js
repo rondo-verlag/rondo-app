@@ -28,10 +28,15 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     }
   };
 
+  $scope.doPinch = function(){
+    console.log('pinching');
+    //alert('pinching');
+  };
+
   $scope.toggleChords = function(){
     var body = angular.element(document.querySelectorAll('body'));
     body.toggleClass('rondo-show-chords');
-  }
+  };
 
   $scope.playSong = function() {
       MIDI.loadPlugin({
