@@ -14,3 +14,18 @@ $ ionic plugin add org.apache.cordova.console
 $ ionic plugin add org.apache.cordova.device
 $ ionic plugin add org.apache.cordova.file
 ```
+
+## TODO
+ * Settings Screen?
+ * Icons
+ * Navigation Konzept
+ * Verhalten Menü beim Scrollen
+ * Geschwindigkeit einstellen (pro Song?)
+ * Text Zoom
+ * Songs:
+   * Songs mit Text ohne Akkorde
+   * Rondo Seitenzahl
+   * Bilder
+   * Alle möglichen Akkorde auflisten
+ * MIDI abspielen
+ * Bezahlfunktion

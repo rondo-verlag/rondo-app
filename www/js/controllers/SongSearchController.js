@@ -4,6 +4,9 @@
  */
 Songbook.controller("SongSearchController", function($scope, $ionicPlatform, $ionicModal, SongService) {
   $scope.songs = [];
+  $scope.search = {
+      name: ''
+  };
 
   /*
    * Section: Modal Settings view when tapping the button
@@ -27,7 +30,7 @@ Songbook.controller("SongSearchController", function($scope, $ionicPlatform, $io
     $scope.aboutDialog.remove();
   });
 
-  // Wait for ionic to be ready before searching for songs
+  // load songs
   $ionicPlatform.ready(function(){
       SongService.getSongIndex()
           .then(function(songIndex) {
