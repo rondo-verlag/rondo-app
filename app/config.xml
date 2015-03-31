@@ -2,11 +2,11 @@
 <widget id="com.ionicframework.songbookapp732914" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Rondo</name>
   <description>
-        Rondo Singbuch App
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
+      Rondo Singbuch App
+  </description>
+  <author email="demian.holderegger@gmail.com" href="http://rondo-verlag.ch/">
+      Rondo Verlag
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
