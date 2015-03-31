@@ -5,12 +5,12 @@ namespace RondoBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Songs
+ * Song
  *
  * @ORM\Table(name="songs")
  * @ORM\Entity
  */
-class Songs
+class Song
 {
     /**
      * @var string
@@ -90,7 +90,7 @@ class Songs
      * Set title
      *
      * @param string $title
-     * @return Songs
+     * @return Song
      */
     public function setTitle($title)
     {
@@ -113,7 +113,7 @@ class Songs
      * Set text
      *
      * @param string $text
-     * @return Songs
+     * @return Song
      */
     public function setText($text)
     {
@@ -136,7 +136,7 @@ class Songs
      * Set image
      *
      * @param string $image
-     * @return Songs
+     * @return Song
      */
     public function setImage($image)
     {
@@ -159,7 +159,7 @@ class Songs
      * Set pagerondored
      *
      * @param integer $pagerondored
-     * @return Songs
+     * @return Song
      */
     public function setPagerondored($pagerondored)
     {
@@ -182,7 +182,7 @@ class Songs
      * Set pagerondoblue
      *
      * @param integer $pagerondoblue
-     * @return Songs
+     * @return Song
      */
     public function setPagerondoblue($pagerondoblue)
     {
@@ -205,7 +205,7 @@ class Songs
      * Set pagerondogreen
      *
      * @param integer $pagerondogreen
-     * @return Songs
+     * @return Song
      */
     public function setPagerondogreen($pagerondogreen)
     {
@@ -228,7 +228,7 @@ class Songs
      * Set islicensefree
      *
      * @param boolean $islicensefree
-     * @return Songs
+     * @return Song
      */
     public function setIslicensefree($islicensefree)
     {
@@ -251,7 +251,7 @@ class Songs
      * Set copyrightinfo
      *
      * @param string $copyrightinfo
-     * @return Songs
+     * @return Song
      */
     public function setCopyrightinfo($copyrightinfo)
     {
@@ -274,7 +274,7 @@ class Songs
      * Set status
      *
      * @param integer $status
-     * @return Songs
+     * @return Song
      */
     public function setStatus($status)
     {
