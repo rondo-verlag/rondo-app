@@ -46,6 +46,7 @@ DirectoryIndex app.php
     # We only want to let Apache serve files and not directories.
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule .? - [L]
+    RewriteRule ^(.*)$ app_dev.php [QSA,L]
 
     # Rewrite all other queries to the front controller.
     RewriteRule .? %{ENV:BASE}/app.php [L]
