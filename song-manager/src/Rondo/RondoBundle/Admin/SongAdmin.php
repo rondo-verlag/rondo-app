@@ -17,11 +17,15 @@ class SongAdmin extends Admin
 	protected function configureFormFields(FormMapper $formMapper)
 	{
 		$formMapper
-			->add('title', 'text', array('label' => 'Song Title'))
-			->add('text', 'text')
-			->add('copyrightInfo', 'text')
-			->add('isLicenseFree', 'checkbox')
-			->add('status')
+			->add('title', 'text', array('label' => 'Titel'))
+			->add('text', 'textarea', array(
+				'label' => 'Sontext mit Akkorden',
+				'attr' => array('rows' => '15'),
+				'required' => false
+			))
+			->add('copyrightInfo', 'text', array('required' => false))
+			->add('isLicenseFree', 'checkbox', array('required' => false, 'label' => 'Lizenzfrei'))
+			->add('status', 'choice', array('choices' => array(1 => 'Neu', 2 => 'In Bearbeitung', 3 => 'Fertig')))
 		;
 	}
 
@@ -31,8 +35,6 @@ class SongAdmin extends Admin
 		$datagridMapper
 			->add('id')
 			->add('title')
-			//->add('isLicenseFree')
-			->add('status')
 		;
 	}
 
@@ -41,8 +43,8 @@ class SongAdmin extends Admin
 	{
 		$listMapper
 			->addIdentifier('id')
-			->addIdentifier('title')
-			->add('isLicenseFree')
+			->addIdentifier('title', 'text', array('label' => 'Titel'))
+			->add('isLicenseFree', 'boolean', array('label' => 'Lizenzfrei'))
 			->add('status')
 		;
 	}
