@@ -1,3 +1,0 @@
-rondo_homepage:
-    path:     /rondo/{name}
-    defaults: { _controller: RondoBundle:Default:index }

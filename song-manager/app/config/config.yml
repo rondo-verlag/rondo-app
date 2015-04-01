@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: @RondoBundle/Resources/config/admin.yml }
 
 framework:
     #esi:             ~
@@ -76,10 +77,21 @@ easy_admin:
     site_name: "Rondo Admin"
     entities:
         "Lied":
-            class: RondoBundle\Entity\Song
+            class: Rondo\RondoBundle\Entity\Song
             list:
                 fields:
                     - 'id'
                     - { property: 'title', label: 'Titel' }
                     - { property: 'isLicenseFree', label: 'Lizenzfrei', type: 'boolean' }
                     - 'status'
+
+sonata_admin:
+    title: Rondo Admin
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # Enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        # Your other blocks

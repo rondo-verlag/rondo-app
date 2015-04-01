@@ -1,6 +1,6 @@
 <?php
 
-namespace RondoBundle\DependencyInjection;
+namespace Rondo\RondoBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

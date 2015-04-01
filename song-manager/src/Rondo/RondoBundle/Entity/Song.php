@@ -1,6 +1,6 @@
 <?php
 
-namespace RondoBundle\Entity;
+namespace Rondo\RondoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

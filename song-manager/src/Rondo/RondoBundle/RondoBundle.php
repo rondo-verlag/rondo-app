@@ -1,6 +1,6 @@
 <?php
 
-namespace RondoBundle;
+namespace Rondo\RondoBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
