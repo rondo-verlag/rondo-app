@@ -3,6 +3,7 @@
 namespace Rondo\RondoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Song
@@ -74,6 +75,12 @@ class Song
      * @ORM\Column(name="status", type="integer", nullable=false)
      */
     private $status;
+	/**
+	 * @var integer
+	 *
+	 * @ORM\Column(name="updated", type="integer", nullable=true)
+	 */
+	private $updated;
 
     /**
      * @var integer
@@ -85,6 +92,39 @@ class Song
     private $id;
 
 
+
+	/**
+	 * Updates the hash value to force the preUpdate and postUpdate events to fire
+	 */
+	public function refreshUpdated() {
+		$this->setUpdated(time());
+	}
+
+
+	private $imageUploaded;
+
+	/**
+	 * Sets imageUploaded.
+	 *
+	 * @param UploadedFile $imageUploaded
+	 */
+	public function setImageUploaded(UploadedFile $imageUploaded = null)
+	{
+		$this->imageUploaded = $imageUploaded;
+
+		$fileContent = file_get_contents($imageUploaded->getPathname());
+		$this->setImage($fileContent);
+	}
+
+	/**
+	 * Get imageUploaded.
+	 *
+	 * @return UploadedFile
+	 */
+	public function getImageUploaded()
+	{
+		return $this->imageUploaded;
+	}
 
     /**
      * Set title
@@ -140,8 +180,12 @@ class Song
      */
     public function setImage($image)
     {
-        $this->image = $image;
+		// convert to png
+		ob_start();
+		imagepng(imagecreatefromstring($image));
+		$image = ob_get_clean();
 
+        $this->image = $image;
         return $this;
     }
 
@@ -292,6 +336,29 @@ class Song
     {
         return $this->status;
     }
+
+	/**
+	 * Set updated
+	 *
+	 * @param integer $updated
+	 * @return Song
+	 */
+	public function setUpdated($updated)
+	{
+		$this->updated = $updated;
+
+		return $this;
+	}
+
+	/**
+	 * Get updated
+	 *
+	 * @return integer
+	 */
+	public function getUpdated()
+	{
+		return $this->updated;
+	}
 
     /**
      * Get id

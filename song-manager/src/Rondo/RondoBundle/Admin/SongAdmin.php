@@ -10,9 +10,6 @@ use Sonata\AdminBundle\Form\FormMapper;
 class SongAdmin extends Admin
 {
 
-	//protected $baseRouteName = 'RondoBundle\Admin\SongAdmin';
-	//protected $baseRoutePattern = 'song';
-
 	// Fields to be shown on create/edit forms
 	protected function configureFormFields(FormMapper $formMapper)
 	{
@@ -24,6 +21,7 @@ class SongAdmin extends Admin
 				'required' => false
 			))
 			->add('copyrightInfo', 'text', array('required' => false))
+			->add('imageUploaded', 'file', array('required' => false))
 			->add('isLicenseFree', 'checkbox', array('required' => false, 'label' => 'Lizenzfrei'))
 			->add('status', 'choice', array('choices' => array(1 => 'Neu', 2 => 'In Bearbeitung', 3 => 'Fertig')))
 		;
@@ -47,5 +45,10 @@ class SongAdmin extends Admin
 			->add('isLicenseFree', 'boolean', array('label' => 'Lizenzfrei'))
 			->add('status')
 		;
+	}
+
+	public function uploadAction()
+	{
+		var_dump($this);
 	}
 }

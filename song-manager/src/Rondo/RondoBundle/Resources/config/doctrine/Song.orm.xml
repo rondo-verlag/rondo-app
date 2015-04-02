@@ -13,5 +13,6 @@
     <field name="islicensefree" type="boolean" column="isLicenseFree" nullable="false"/>
     <field name="copyrightinfo" type="text" column="copyrightInfo" nullable="true"/>
     <field name="status" type="integer" column="status" nullable="false"/>
+    <field name="updated" type="integer" column="updated" nullable="true"/>
   </entity>
 </doctrine-mapping>
