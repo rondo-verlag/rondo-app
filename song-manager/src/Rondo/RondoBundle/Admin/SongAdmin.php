@@ -17,12 +17,13 @@ class SongAdmin extends Admin
 			->add('title', 'text', array('label' => 'Titel'))
 			->add('text', 'textarea', array(
 				'label' => 'Sontext mit Akkorden',
+				'help'=>'Songtext im <a href="http://en.wikipedia.org/wiki/Guitar_chord_file_format" target="_blank">CRD Format</a>',
 				'attr' => array('rows' => '15'),
 				'required' => false
 			))
+			->add('isLicenseFree', 'checkbox', array('required' => false, 'label' => 'Lizenzfrei'))
 			->add('copyrightInfo', 'text', array('required' => false))
 			->add('imageUploaded', 'file', array('required' => false))
-			->add('isLicenseFree', 'checkbox', array('required' => false, 'label' => 'Lizenzfrei'))
 			->add('status', 'choice', array('choices' => array(1 => 'Neu', 2 => 'In Bearbeitung', 3 => 'Fertig')))
 		;
 	}
