@@ -41,6 +41,26 @@ class ApiController extends FOSRestController {
 	}
 
 	/**
+	 * Get song html by Id
+	 *
+	 * @param int $id Song Id
+	 * @return array data
+	 */
+	public function getSongHtmlAction($id)
+	{
+		$repository = $this->getDoctrine()->getRepository('RondoBundle:Song');
+		$entity = $repository->find($id);
+
+		if (!$entity) {
+			throw $this->createNotFoundException('No Song with ID '.$id);
+		}
+
+		$html = $this->crd2html($entity->getText());
+
+		return $this->handleView($this->view($html, 200));
+	}
+
+	/**
 	 * Put action
 	 * @var Request $request
 	 * @var integer $id Id of the entity
@@ -108,6 +128,12 @@ class ApiController extends FOSRestController {
 		return $this->handleView($this->view($crd, 200));
 	}
 
+	private function crd2html($crd_string){
+		$html = str_replace('[','<b>', $crd_string);
+		$html = str_replace(']','</b>', $html);
+		$html = str_replace("\n",'<br>', $html);
+		return $html;
+	}
 
 	private function xml2crd($xml_string){
 

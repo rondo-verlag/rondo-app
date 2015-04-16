@@ -1,4 +1,4 @@
-RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $location, FileUploader) {
+RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $location, $sce, FileUploader) {
 	console.log('Song', $routeParams.songId);
 
 	$scope.song = {};
@@ -17,6 +17,14 @@ RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $loc
 		$http.get("/api/songs/"+$routeParams.songId)
 			.success(function(data, status, headers, config) {
 				$scope.song = data;
+			})
+			.error(function(data, status, headers, config) {
+				console.log("AJAX failed!");
+			});
+
+		$http.get("/api/songs/"+$routeParams.songId+"/html")
+			.success(function(data, status, headers, config) {
+				$scope.preview = $sce.trustAsHtml(data);
 			})
 			.error(function(data, status, headers, config) {
 				console.log("AJAX failed!");
