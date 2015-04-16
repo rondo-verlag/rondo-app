@@ -73,17 +73,17 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-easy_admin:
-    site_name: "Rondo Admin"
-    entities:
-        "Lied":
-            class: Rondo\RondoBundle\Entity\Song
-            list:
-                fields:
-                    - 'id'
-                    - { property: 'title', label: 'Titel' }
-                    - { property: 'isLicenseFree', label: 'Lizenzfrei', type: 'boolean' }
-                    - 'status'
+#easy_admin:
+#    site_name: "Rondo Admin"
+#    entities:
+#        "Lied":
+#            class: Rondo\RondoBundle\Entity\Song
+#            list:
+#                fields:
+#                    - 'id'
+#                    - { property: 'title', label: 'Titel' }
+#                    - { property: 'isLicenseFree', label: 'Lizenzfrei', type: 'boolean' }
+#                    - 'status'
 
 sonata_admin:
     title: Rondo Admin
@@ -95,3 +95,8 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts:   [admin]
         # Your other blocks
+
+fos_rest:
+    routing_loader:
+        default_format:       json
+        include_format:       false

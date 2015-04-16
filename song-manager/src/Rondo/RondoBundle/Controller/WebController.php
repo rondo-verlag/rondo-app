@@ -5,12 +5,10 @@ namespace Rondo\RondoBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class WebController extends Controller
 {
-	/*
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('RondoBundle:Default:index.html.twig', array('name' => $name));
+        return $this->render('RondoBundle:Default:index.html.twig');
     }
-	*/
 }

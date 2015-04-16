@@ -1,0 +1,19 @@
+<div class="container-fluid">
+	<div ng-controller="SongListCtrl">
+		<h1>Lieder</h1>
+		<table class="table table-striped">
+			<tr>
+				<th>ID</th>
+				<th>Titel</th>
+				<th>Lizenzfrei</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr ng-repeat="song in list">
+				<td>{{song.id}}</td>
+				<td>{{song.title}}</td>
+				<td>{{song.islicensefree}}</td>
+				<td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
+			</tr>
+		</table>
+	</div>
+</div>

@@ -1,3 +1,8 @@
-#rondo_homepage:
-#    path:     /rondo/{name}
-#    defaults: { _controller: RondoBundle:Default:index }
+rondo_web:
+    path:     /
+    defaults: { _controller: RondoBundle:Web:index }
+
+rondo_api:
+    type: rest
+    prefix: /api
+    resource: "Rondo\RondoBundle\Controller\ApiController"

@@ -21,8 +21,14 @@ class AppKernel extends Kernel
 			// Rondo Bundle
 			new Rondo\RondoBundle\RondoBundle(),
 
+			// REST Bundle
+			new FOS\RestBundle\FOSRestBundle(),
+
+			// Serializer
+			new JMS\SerializerBundle\JMSSerializerBundle(),
+
 			// EasyAdmin
-			new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
+			//new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
 
 			// Sonata Admin
 			new Sonata\CoreBundle\SonataCoreBundle(),

@@ -1,1 +1,5 @@
-Hello {{ name }}!
+{% extends '::angular.html.twig' %}
+{% block title %}Rondo Admin{% endblock %}
+{% block body %}
+    <div ng-view></div>
+{% endblock %}

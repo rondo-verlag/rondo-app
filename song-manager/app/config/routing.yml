@@ -17,9 +17,9 @@ _sonata_admin:
     prefix: /admin
 
 # redirecting the root
-root:
-    path: /
-    defaults:
-        _controller: FrameworkBundle:Redirect:urlRedirect
-        path: /admin
-        permanent: true
+#root:
+#    path: /
+#    defaults:
+#        _controller: FrameworkBundle:Redirect:urlRedirect
+#        path: /admin
+#        permanent: true
