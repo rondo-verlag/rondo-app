@@ -30,7 +30,7 @@ Songbook.controller("ChordListController", function ($scope, $rootScope, $docume
           }
         })
       })
-    })
+    });
     return chords_obj;
   }
 });

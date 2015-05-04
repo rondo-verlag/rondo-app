@@ -13,29 +13,23 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
   $scope.scrollSpeed = SettingsService.getScrollSettings().speed;
   $scope.scroll = false;
 
-  $scope.toggleFullscreen = function(){
-    var body = angular.element(document.querySelectorAll('body'));
-    if (body.hasClass('fullscreen')){
-      body.removeClass('fullscreen');
-      if (StatusBar){
-        StatusBar.show();
-      }
-    } else {
-      body.addClass('fullscreen');
-      if (StatusBar){
-        StatusBar.hide();
-      }
-    }
-  };
+  var bodyElement = angular.element(document.querySelectorAll('body'));
 
   $scope.doPinch = function(){
     console.log('pinching');
     //alert('pinching');
   };
 
+  $scope.onScrollUp = function(){
+    bodyElement.removeClass('fullscreen');
+  };
+
+  $scope.onScrollDown = function(){
+    bodyElement.addClass('fullscreen');
+  };
+
   $scope.toggleChords = function(){
-    var body = angular.element(document.querySelectorAll('body'));
-    body.toggleClass('rondo-show-chords');
+    bodyElement.toggleClass('rondo-show-chords');
   };
 
   $scope.playSong = function() {

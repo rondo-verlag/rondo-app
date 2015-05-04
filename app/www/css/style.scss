@@ -29,19 +29,16 @@ input[type='range']::-webkit-slider-thumb {
     line-height: 2.2em;
     .bl {
       float: left;
-      height: 2.5em;
-      transition: height 0.2s;
+      height: 1.5em;
+      transition: all .2s;
     }
   }
   .chord,
   .empty-chord {
-    height: 1em;
-    transition: height 0.2s;
+    height: 0;
+    overflow: hidden;
     display: block;
-  }
-  .chord {
-    color: #888;
-    cursor: pointer;
+    transition: all .2s;
   }
   .paragraph {
     margin-bottom: 3em;
@@ -55,15 +52,48 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
+.rondo-book-index {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  .book {
+    border-radius: 15px;
+    padding: 2px 8px;
+  }
+
+  .book-red {
+    background: red;
+    color: white;
+  }
+  .book-blue {
+    background: blue;
+    color: white;
+  }
+  .book-green {
+    background: #59ffee;
+    color: black;
+  }
+
+}
+
+
 .rondo-show-chords {
   .chord,
   .empty-chord {
-    height: 0;
-    overflow: hidden;
+    height: 1.2em;
+    overflow: visible;
   }
 
   .songtext .line .bl {
-    height: 1.5em;
+    height: 2.5em;
+  }
+
+  .songtext {
+    color: #888;
+
+    .chord {
+      color: #FFF;
+    }
   }
 }
 

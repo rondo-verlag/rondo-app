@@ -1,18 +1,40 @@
-<ion-view title="" hm-doubletap="toggleFullscreen()" hm-pinch="doPinch()">
-    <autoscroll scroll-element="ion-content" infinite="false" scroll-class="has-header has-tabs" scroll-name="songtext" scroll-speed="scrollSpeed" scroll-enabled="scroll">
-        <img src="resources/images/beispiel.png" class="song-image"/>
-        <div class="padding">
-          <h3 class="song-title">{{title}}</h3>
-          {{errormsg}}
-          <songtext songdata="data"></songtext>
-        </div>
-    </autoscroll>
-    <div class="tabs tabs-light">
-        <a class="tab-item icon ion-ios7-play" ng-click="scroll = true" ng-hide="scroll">&nbsp;Scrollen</a>
-        <a class="tab-item icon ion-ios7-pause" ng-click="scroll = false" ng-show="scroll">&nbsp;Anhalten</a>
-        <a class="tab-item icon ion-volume-medium" ng-click="playSong()" ng-show="midiFile && !playingSong">&nbsp;Anhören</a>
-        <a class="tab-item icon ion-ios7-pause" ng-click="stopSong()" ng-show="playingSong">&nbsp;Anhalten</a>
-        <a class="tab-item icon ion-information-circled" ng-click="toggleChords()">&nbsp;Akkorde</a>
-        <a class="tab-item icon ion-ios7-musical-notes" ui-sref="chords({ songId: songId })">&nbsp;Liste</a>
+<ion-view title="" hm-pinch="doPinch()">
+
+  <ion-nav-buttons side="right">
+    <img src="img/rondo_button_white.png" width="36" height="36" ui-sref="about" >
+  </ion-nav-buttons>
+
+  <autoscroll on-drag-down="onScrollUp()" on-drag-up="onScrollDown()" scroll-element="ion-content" infinite="false" scroll-class="has-header has-tabs" scroll-name="songtext" scroll-speed="scrollSpeed" scroll-enabled="scroll">
+    <div class="rondo-book-index">
+      <span class="book book-blue">132</span>
+      <span class="book book-red">132</span>
+      <span class="book book-green">58</span>
     </div>
+    <img src="resources/images/beispiel.png" class="song-image"/>
+    <div class="padding">
+      <h3 class="song-title">{{title}}</h3>
+      {{errormsg}}
+      <songtext songdata="data"></songtext>
+    </div>
+  </autoscroll>
+  <div class="tabs tabs-light tabs-icon-only">
+      <a class="tab-item" ng-click="scroll = true" ng-hide="scroll">
+        <i class="icon ion-code-download"></i>
+      </a>
+      <a class="tab-item" ng-click="scroll = false" ng-show="scroll">
+        <i class="icon ion-ios7-pause"></i>
+      </a>
+      <a class="tab-item" ng-click="playSong()" ng-show="midiFile && !playingSong">
+        <i class="icon ion-play"></i>
+      </a>
+      <a class="tab-item" ng-click="stopSong()" ng-show="playingSong">
+        <i class="icon ion-ios7-pause"></i>
+      </a>
+      <a class="tab-item" ng-click="toggleChords()">
+        <i class="icon ion-levels"></i>
+      </a>
+      <a class="tab-item" ui-sref="chords({ songId: songId })">
+        <i class="icon ion-grid"></i>
+      </a>
+  </div>
 </ion-view>
