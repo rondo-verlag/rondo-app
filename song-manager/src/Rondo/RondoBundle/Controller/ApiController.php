@@ -129,9 +129,10 @@ class ApiController extends FOSRestController {
 	}
 
 	private function crd2html($crd_string){
-		$html = str_replace('[','<b>', $crd_string);
-		$html = str_replace(']','</b>', $html);
+		$html = str_replace('[','<span  class="chord">', $crd_string);
+		$html = str_replace(']','</span>', $html);
 		$html = str_replace("\n",'<br>', $html);
+
 		return $html;
 	}
 

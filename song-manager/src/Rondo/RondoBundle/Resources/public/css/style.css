@@ -1,0 +1,8 @@
+.preview {
+	width: 320px;
+	height: 500px;
+	background: #000000;
+	color: white;
+	padding: 10px;
+	overflow-y: scroll;
+}
