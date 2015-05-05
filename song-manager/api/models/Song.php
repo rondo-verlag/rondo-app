@@ -59,7 +59,11 @@ class Song
 	}
 
 	private function crd2html($crd_string){
-		$tokens = CrdParser::run($crd_string);
+		try {
+			$tokens = CrdParser::run($crd_string);
+		} catch(Exception $e){
+			return $e->getMessage();
+		}
 
 		$html  = '<div class="paragraph">';
 		$html .= '<div class="line">';

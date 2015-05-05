@@ -23,8 +23,7 @@ class CrdParser {
 		while($offset < strlen($source)) {
 			$result = static::_match($source, $offset);
 			if($result === false) {
-				var_dump($tokens);
-				throw new Exception("Unable to parse at char " . ($offset+1) . ': "'.substr($source, $offset, 20).'..."');
+				throw new Exception("Zeichen " . ($offset+1) . ': Ungültiger Text: "'.substr($source, $offset, 20).'..."');
 			}
 			$tokens[] = $result;
 			$offset += strlen($result['match']);
