@@ -3,6 +3,7 @@
     "license": "proprietary",
     "type": "project",
     "require": {
-        "slim/slim": "~2.0"
+        "slim/slim": "~2.0",
+        "doctrine/dbal": "~2.5"
     }
 }

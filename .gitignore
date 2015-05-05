@@ -3,3 +3,4 @@ platforms/
 plugins/
 .idea
 data/sibelius/all
+song-manager/api/_conf.php
