@@ -4,7 +4,7 @@ RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $loc
 	$scope.song = {};
 
 	$scope.uploader = new FileUploader({
-		url: '/api/songs/'+$routeParams.songId+'/musicxmlfiles'
+		url: 'api/index.php/songs/'+$routeParams.songId+'/musicxmlfiles'
 	});
 
 	$scope.uploader.onCompleteItem = function(item){
@@ -14,7 +14,7 @@ RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $loc
 	};
 
 	var loadData = function(){
-		$http.get("/api/songs/"+$routeParams.songId)
+		$http.get("api/index.php/songs/"+$routeParams.songId)
 			.success(function(data, status, headers, config) {
 				$scope.song = data;
 			})
@@ -22,7 +22,7 @@ RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $loc
 				console.log("AJAX failed!");
 			});
 
-		$http.get("/api/songs/"+$routeParams.songId+"/html")
+		$http.get("api/index.php/songs/"+$routeParams.songId+"/html")
 			.success(function(data, status, headers, config) {
 				$scope.preview = $sce.trustAsHtml(data);
 			})
@@ -37,7 +37,7 @@ RondoApp.controller('SongDetailCtrl', function($scope, $http, $routeParams, $loc
 		console.log($scope.song);
 		//$location.path('/songs/'+id);
 
-		$http.put("/api/songs/"+$routeParams.songId, $scope.song)
+		$http.put("api/index.php/songs/"+$routeParams.songId, $scope.song)
 			.success(function(data, status, headers, config) {
 				console.log('success!');
 				loadData();

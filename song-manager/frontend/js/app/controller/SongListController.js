@@ -1,7 +1,7 @@
 RondoApp.controller('SongListCtrl', function($scope, $http, $location) {
 	$scope.list = {};
 
-	$http.get("/api/songs")
+	$http.get("api/index.php/songs")
 		.success(function(data, status, headers, config) {
 			$scope.list = data;
 		})
