@@ -19,14 +19,12 @@ input[type='range']::-webkit-slider-thumb {
     line-height: 2.2em; }
     .songtext .line .bl {
       float: left;
-      height: 1.5em;
-      transition: all .2s; }
+      height: 1.5em; }
   .songtext .chord,
   .songtext .empty-chord {
     height: 0;
     overflow: hidden;
-    display: block;
-    transition: all .2s; }
+    display: block; }
   .songtext .paragraph {
     margin-bottom: 3em; }
   .songtext .p_chorus {

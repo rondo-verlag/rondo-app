@@ -21,6 +21,10 @@ Update Ionic if needed:
 npm install -g ionic
 ```
 
+## Known Bugs
+ * Search Bar weg wenn man zurück kommt vom Lied im Fullscreen Mode
+ * Autoscroll funktioniert nicht
+ * Statusbar ist auf iOS transparent
 
 ## TODO
  * Settings Screen?
@@ -38,3 +42,5 @@ npm install -g ionic
     * Alle möglichen Akkorde auflisten
  * MIDI abspielen
  * Bezahlfunktion
+ 
+ 

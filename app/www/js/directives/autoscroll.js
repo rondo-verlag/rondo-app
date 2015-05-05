@@ -29,21 +29,27 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
 
             var direction = 1;
             var lastPosition = -1;
-            var changedDirection = true;
+
+            var setEnabledState = function(state){
+                enabled = state;
+                scope.scrollEnabled = state;
+            };
 
             var doScroll = function() {
                 if (enabled) {
                     var scrollHandle = $ionicScrollDelegate.$getByHandle(attrs.scrollName);
-                    scrollHandle.scrollBy(0, speed * 5 * direction, true);
 
+                    var lastPosition = scrollHandle.getScrollPosition().top;
+                    scrollHandle.scrollBy(0, speed * 5 * direction, true);
                     var currentPosition = scrollHandle.getScrollPosition().top;
-                    if (!changedDirection && Math.ceil(Math.abs(lastPosition * 10 - currentPosition * 10)) < 5) {
-                        direction *= -1;
-                        changedDirection = true;
-                    } else {
-                        changedDirection = false;
+
+                    if (Math.ceil(Math.abs(lastPosition * 10 - currentPosition * 10)) < 5) {
+                      // end reached
+                      setEnabledState(false);
+                      debugger;
                     }
-                    lastPosition = currentPosition;
+                    //lastPosition = currentPosition;
+
 
                     if (infinite || direction == 1) {
                         $timeout(doScroll, 100);
@@ -71,5 +77,5 @@ Songbook.directive('autoscroll', function($compile, $timeout, $ionicPlatform, $i
         innerElement.append(element.contents());
         element.append(innerElement);
         $compile(innerElement)(scope);
-    };
+    }
 });

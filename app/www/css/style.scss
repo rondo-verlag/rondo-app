@@ -30,7 +30,7 @@ input[type='range']::-webkit-slider-thumb {
     .bl {
       float: left;
       height: 1.5em;
-      transition: all .2s;
+      //transition: all .2s;
     }
   }
   .chord,
@@ -38,7 +38,7 @@ input[type='range']::-webkit-slider-thumb {
     height: 0;
     overflow: hidden;
     display: block;
-    transition: all .2s;
+    //transition: all .2s;
   }
   .paragraph {
     margin-bottom: 3em;
