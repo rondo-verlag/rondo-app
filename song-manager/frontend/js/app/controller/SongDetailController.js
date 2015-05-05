@@ -2,6 +2,7 @@ RondoApp.controller('SongDetailCtrl', function ($scope, $http, $routeParams, $lo
   console.log('Song', $routeParams.songId);
 
   $scope.song = {};
+  $scope.showAccords = true;
 
   $scope.uploader = new FileUploader({
     url: 'api/index.php/songs/' + $routeParams.songId + '/musicxmlfiles'

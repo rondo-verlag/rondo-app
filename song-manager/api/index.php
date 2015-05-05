@@ -4,6 +4,7 @@ require '../vendor/autoload.php';
 
 require '_conf.php';
 require 'models/Song.php';
+require 'models/CrdParser.php';
 
 
 use Doctrine\DBAL\DriverManager;
@@ -37,6 +38,15 @@ $app->get('/songs/:songId/html', function ($songId) use ($app) {
 	$app->contentType('text/html');
 	$song = new Song($songId);
 	echo $song->getHtml();
+});
+
+// testing only
+$app->get('/songs/:songId/crd', function ($songId) use ($app) {
+	$app->contentType('text/html');
+
+	$song = new Song($songId);
+	$result = CrdParser::run($song->getData()['text']);
+	var_dump($result);
 });
 
 $app->get('/songs/:songId/image.png', function ($songId) use ($app) {

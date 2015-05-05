@@ -40,6 +40,9 @@ input[type='range']::-webkit-slider-thumb {
     display: block;
     //transition: all .2s;
   }
+  .chord ~ .empty-chord {
+    display: none;
+  }
   .paragraph {
     margin-bottom: 3em;
   }

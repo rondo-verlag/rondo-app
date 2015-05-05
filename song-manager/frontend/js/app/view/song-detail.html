@@ -1,65 +1,74 @@
 <div class="container-fluid">
-	<div ng-controller="SongDetailCtrl">
-		<div class="row">
-			<div class="col-sm-8">
-				<form class="form-horizontal">
-					<div class="form-group">
-						<div class="col-sm-2 control-label"><br><br><a href="#/songs">&laquo; zurück zur Liste</a> </div>
-						<div class="col-sm-10">
-							<h1>{{song.title}}&nbsp;</h1>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="inputTitle" class="col-sm-3 control-label">Titel</label>
-						<div class="col-sm-9">
-							<input type="text" ng-model="song.title" class="form-control" id="inputTitle" placeholder="Titel">
-						</div>
-					</div>
+  <div ng-controller="SongDetailCtrl">
+    <div class="row">
+      <div class="col-sm-8">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-2 control-label"><br><br><a href="#/songs">&laquo; zurück zur Liste</a></div>
+            <div class="col-sm-10">
+              <h1>{{song.title}}&nbsp;</h1>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputTitle" class="col-sm-3 control-label">Titel</label>
 
-					<div class="form-group">
-						<label for="text" class="col-sm-3 control-label">Text</label>
-						<div class="col-sm-9">
-							<textarea id="text" class="form-control" rows="6" ng-model="song.text"></textarea>
-						</div>
-					</div>
+            <div class="col-sm-9">
+              <input type="text" ng-model="song.title" class="form-control" id="inputTitle" placeholder="Titel">
+            </div>
+          </div>
 
-					<div class="form-group">
-						<label for="inputMusicXMLFile" class="col-sm-3 control-label">MusicXML Datei hochladen</label>
-						<div class="col-sm-3">
-							<input type="file" id="inputMusicXMLFile" nv-file-select uploader="uploader"/>
-						</div>
-						<div class="col-sm-3">
-					<span ng-repeat="item in uploader.queue">
-						<button ng-click="item.upload()" class="btn btn-xs btn-success">Hochladen</button>
-					</span>
-						</div>
-					</div>
+          <div class="form-group">
+            <label for="text" class="col-sm-3 control-label">Text</label>
 
-					<div class="form-group">
-						<div class="col-sm-offset-3 col-sm-9">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" ng-model="song.isLicenseFree" ng-true-value="'1'" ng-false-value="'0'"> Lizenzfrei
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-3 col-sm-9">
-							<button type="submit" class="btn btn-success" ng-click="save()">Speichern</button>
-							<button type="submit" class="btn btn-default" ng-click="showList()">&laquo; zur Liste</button>
-						</div>
-					</div>
-				</form>
+            <div class="col-sm-9">
+              <textarea id="text" class="form-control" rows="6" ng-model="song.text"></textarea>
+            </div>
+          </div>
 
-			</div>
-			<div class="col-sm-4">
-				<b>Vorschau</b>
-				<div class="preview">
-					<div ng-bind-html="preview"></div>
-				</div>
-			</div>
-		</div>
+          <div class="form-group">
+            <label for="inputMusicXMLFile" class="col-sm-3 control-label">MusicXML Datei hochladen</label>
 
-	</div>
+            <div class="col-sm-3">
+              <input type="file" id="inputMusicXMLFile" nv-file-select uploader="uploader"/>
+            </div>
+            <div class="col-sm-3">
+            <span ng-repeat="item in uploader.queue">
+              <button ng-click="item.upload()" class="btn btn-xs btn-success">Hochladen</button>
+            </span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="song.isLicenseFree" ng-true-value="'1'" ng-false-value="'0'">
+                  Lizenzfrei
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">
+              <button type="submit" class="btn btn-success" ng-click="save()">Speichern</button>
+              <button type="submit" class="btn btn-default" ng-click="showList()">&laquo; zur Liste</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-sm-4">
+        <br>
+        <b>Vorschau</b>
+
+        <div class="preview" ng-class="{ 'rondo-show-chords': showAccords }">
+          <div ng-bind-html="preview"></div>
+        </div>
+        <label>
+          <input type="checkbox" ng-model="showAccords"> Akkorde anzeigen
+        </label>
+      </div>
+    </div>
+
+  </div>
 </div>

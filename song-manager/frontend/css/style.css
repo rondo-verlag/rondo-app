@@ -3,6 +3,49 @@
 	height: 500px;
 	background: #000000;
 	color: white;
-	padding: 10px;
 	overflow-y: scroll;
+	border-radius: 4px;
+	box-shadow: 1px 1px 10px black;
+	margin: 10px 0;
 }
+
+.preview .padding {
+	padding: 10px;
+}
+
+.preview .song-image {
+	width: 100%;
+}
+
+.songtext {
+	font-size: 1.3em; }
+.songtext .line {
+	line-height: 2.2em; }
+.songtext .line .bl {
+	float: left;
+	height: 1.5em; }
+.songtext .chord,
+.songtext .empty-chord {
+	height: 0;
+	overflow: hidden;
+	display: block; }
+.songtext .chord ~ .empty-chord {
+	display: none; }
+.songtext .paragraph {
+	margin-bottom: 3em; }
+.songtext .p_chorus {
+	font-style: italic; }
+.songtext .comment {
+	white-space: pre;
+	color: #BBB; }
+
+.rondo-show-chords .chord,
+.rondo-show-chords .empty-chord {
+	height: 1.2em;
+	overflow: visible; }
+.rondo-show-chords .songtext .line .bl {
+	height: 2.5em; }
+.rondo-show-chords .songtext {
+	color: #888; }
+.rondo-show-chords .songtext .chord {
+	color: #FFF; }

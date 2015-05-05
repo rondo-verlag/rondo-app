@@ -59,9 +59,39 @@ class Song
 	}
 
 	private function crd2html($crd_string){
-		$html = str_replace('[','<span  class="chord">', $crd_string);
-		$html = str_replace(']','</span>', $html);
-		$html = str_replace("\n",'<br>', $html);
+		$tokens = CrdParser::run($crd_string);
+
+		$html  = '<div class="paragraph">';
+		$html .= '<div class="line">';
+		$html .= '<div class="bl">';
+
+		foreach($tokens as $token){
+			//var_dump($token);
+			switch($token['token']){
+				case 'T_CHORD':
+					// remove brackets
+					$chord = substr($token['match'],1,-1);
+					$html .= '<span class="chord">'.$chord.'</span>';
+					break;
+				case 'T_NEWLINE':
+					$html .= '</div></div><div class="line"><div class="bl">';
+					break;
+				case 'T_PARAGRAPH':
+					$html .= '</div></div></div><div class="paragraph"><div class="line"><div class="bl">';
+					break;
+				case 'T_STRING':
+					$html .= '<span class="empty-chord"></span>'.$token['match'].'&nbsp;</div><div class="bl">';
+					break;
+				case 'T_WHITESPACE':
+					break;
+				default:
+					$html .= $token['match'];
+			}
+		}
+
+		$html .= '</div>';
+		$html .= '</div>';
+		$html .= '</div>';
 
 		return $html;
 	}
