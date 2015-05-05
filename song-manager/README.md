@@ -1,4 +1,4 @@
 song-manager
 ============
 
-A Symfony project created on March 31, 2015, 4:49 pm.
+Frontend to manage music xml files for the Rondo App.
