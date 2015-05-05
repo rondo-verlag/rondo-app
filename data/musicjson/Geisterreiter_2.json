@@ -1,0 +1,1520 @@
+{
+	"@attributes": {"version": "3.0"},
+	"work": {"work-title": "Geisterreiter"},
+	"identification": {
+		"rights": "Copyright \u00a9 ",
+		"encoding": {
+			"encoding-date": "2014-11-24",
+			"encoder": "Demian Holderegger",
+			"software": [
+				"Sibelius 7.1.3",
+				"Direct export, not from Dolet"
+			],
+			"encoding-description": "Sibelius \/ MusicXML 3.0",
+			"supports": [
+				{
+					"@attributes": {
+						"element": "print",
+						"type": "yes",
+						"value": "yes",
+						"attribute": "new-system"
+					}
+				},
+				{"@attributes": {"element": "print", "type": "yes", "value": "yes", "attribute": "new-page"}},
+				{"@attributes": {"element": "accidental", "type": "yes"}},
+				{"@attributes": {"element": "beam", "type": "yes"}},
+				{"@attributes": {"element": "stem", "type": "yes"}}
+			]
+		}
+	},
+	"defaults": {
+		"scaling": {"millimeters": "210", "tenths": "1200"},
+		"page-layout": {
+			"page-height": "1697",
+			"page-width": "1200",
+			"page-margins": {
+				"@attributes": {"type": "both"},
+				"left-margin": "72",
+				"right-margin": "72",
+				"top-margin": "72",
+				"bottom-margin": "72"
+			}
+		},
+		"system-layout": {"system-margins": {"left-margin": "94", "right-margin": "0"}, "system-distance": "92"},
+		"appearance": {
+			"line-width": [
+				"0.9375",
+				"5",
+				"0.9375",
+				"1.5625",
+				"5",
+				"1.5625",
+				"1.5625",
+				"1.25",
+				"0.9375",
+				"1.25",
+				"5",
+				"1.5625",
+				"0.9375",
+				"1.5625",
+				"1.5625",
+				"1.5625",
+				"0.625",
+				"1.5625",
+				"0.625"
+			],
+			"note-size": [
+				"75",
+				"60"
+			]
+		},
+		"music-font": {"@attributes": {"font-family": "Opus Std", "font-size": "19.8425"}},
+		"lyric-font": {"@attributes": {"font-family": "Plantin MT Std", "font-size": "11.4715"}},
+		"lyric-language": []
+	},
+	"credit": {"@attributes": {"page": "1"}, "credit-words": "Geisterreiter"},
+	"part-list": {
+		"score-part": {
+			"@attributes": {"id": "P1"},
+			"part-name": "Akustische Gitarre",
+			"part-name-display": {"display-text": "Akustische Gitarre"},
+			"part-abbreviation": "A.-Git.",
+			"part-abbreviation-display": {"display-text": "A.-Git."},
+			"score-instrument": {
+				"@attributes": {"id": "P1-I1"},
+				"instrument-name": "Acoustic Guitar (2)",
+				"instrument-sound": "pluck.guitar.steel-string",
+				"solo": [],
+				"virtual-instrument": {"virtual-library": "General MIDI", "virtual-name": "Acoustic Guitar (steel)"}
+			}
+		}
+	},
+	"part": {
+		"@attributes": {"id": "P1"},
+		"comment": [
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[]
+		],
+		"measure": [
+			{
+				"@attributes": {"number": "0", "width": "166"},
+				"print": {
+					"@attributes": {"new-page": "yes"},
+					"system-layout": {
+						"system-margins": {"left-margin": "0", "right-margin": "0"},
+						"top-system-distance": "218"
+					}
+				},
+				"attributes": {
+					"divisions": "256",
+					"key": {"@attributes": {"color": "#000000"}, "fifths": "-1", "mode": "minor"},
+					"time": {"@attributes": {"color": "#000000"}, "beats": "4", "beat-type": "4"},
+					"staves": "1",
+					"clef": {"@attributes": {"number": "1", "color": "#000000"}, "sign": "G", "line": "2"},
+					"staff-details": {"@attributes": {"number": "1", "print-object": "yes"}},
+					"transpose": {"diatonic": "0", "chromatic": "0", "octave-change": "-1"}
+				},
+				"note": {
+					"@attributes": {"color": "#000000", "default-x": "87", "default-y": "-20"},
+					"pitch": {"step": "A", "octave": "3"},
+					"duration": "256",
+					"instrument": {"@attributes": {"id": "P1-I1"}},
+					"voice": "1",
+					"type": "quarter",
+					"stem": "up",
+					"staff": "1",
+					"lyric": {
+						"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+						"syllabic": "single",
+						"text": "Es"
+					}
+				}
+			},
+			{
+				"@attributes": {"number": "1", "width": "481"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "war"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "71", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "in"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "128", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "ei"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "185", "default-y": "-10"},
+						"pitch": {"step": "E", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "ner"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "242", "default-y": "2"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Re"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "299", "default-y": "2"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "middle",
+							"text": "gen"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "357", "default-y": "2"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "nacht,"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "424", "default-y": "2"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "Wind"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "2", "width": "407"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "A"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-17"},
+						"pitch": {"step": "C", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "pfiff"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "73", "default-y": "-17"},
+						"pitch": {"step": "C", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "durch"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "130", "default-y": "-15"},
+						"pitch": {"step": "C", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "die"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "187", "default-y": "-20"},
+						"pitch": {"step": "A", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Pr\u00e4"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "244", "default-y": "-15"},
+						"pitch": {"step": "C", "octave": "4"},
+						"duration": "384",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"dot": [],
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "rie,"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "350", "default-y": "-20"},
+						"pitch": {"step": "A", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "die"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "3", "width": "449"},
+				"print": {
+					"@attributes": {"new-system": "yes"},
+					"system-layout": {
+						"system-margins": {"left-margin": "0", "right-margin": "0"},
+						"system-distance": "92"
+					}
+				},
+				"attributes": {"staff-details": {"@attributes": {"number": "1", "print-object": "yes"}}},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "68", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Cow"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "124", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "boys"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "169", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "sas"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "210", "default-y": "-10"},
+						"pitch": {"step": "E", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "sen"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "260"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "dicht"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "305"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "middle",
+							"text": "ge"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "362"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "dr\u00e4ngt,"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "423"},
+						"pitch": {"step": "G", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "nur"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "4", "width": "269"},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "12"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Whis"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "61", "default-y": "12"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "ky"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "109", "default-y": "12"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "w\u00e4rm"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "156", "default-y": "12"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "te"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "189", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "384",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"dot": [],
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "sie."
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "236", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "Ja"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "5", "width": "336"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "19"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Ker"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "51", "default-y": "19"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "le"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "89", "default-y": "19"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "sind"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "131", "default-y": "19"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "es,"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "172", "default-y": "17"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "hart"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "220", "default-y": "17"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "und"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "268", "default-y": "17"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "z\u00e4h,"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "311", "default-y": "17"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "f\u00fcr"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "6", "width": "345"},
+				"print": {
+					"@attributes": {"new-system": "yes"},
+					"system-layout": {
+						"system-margins": {"left-margin": "0", "right-margin": "0"},
+						"system-distance": "92"
+					}
+				},
+				"attributes": {"staff-details": {"@attributes": {"number": "1", "print-object": "yes"}}},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "68", "default-y": "9"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "sie"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "107", "default-y": "9"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "gilt"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "145", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "nur"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "184"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "die"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "235", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "384",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"dot": [],
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "Faust"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "307", "default-y": "-20"},
+						"pitch": {"step": "A", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "und"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "7", "width": "433"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "B"},
+					"kind": "major",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "Sturm"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "74", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "und"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "130", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "Wind"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "185", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "und"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "232"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Wol"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "279"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "middle",
+							"text": "ken"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "336"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "bruch"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "394"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "sind"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "8", "width": "276"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-5"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "begin",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "\u00fc"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "53", "default-y": "-5"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "ber"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "92", "default-y": "-5"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "continue",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "sie"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "130", "default-y": "-5"},
+						"pitch": {"step": "C", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"beam": "end",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "ge"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "185", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "512",
+						"tie": {"@attributes": {"type": "start"}},
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"stem": "up",
+						"staff": "1",
+						"notations": {"tied": {"@attributes": {"type": "start"}}},
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "braust.",
+							"extend": []
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "9", "width": "339"},
+				"print": {
+					"@attributes": {"new-system": "yes"},
+					"system-layout": {
+						"system-margins": {"left-margin": "0", "right-margin": "0"},
+						"system-distance": "92"
+					}
+				},
+				"attributes": {"staff-details": {"@attributes": {"number": "1", "print-object": "yes"}}},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "68", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "512",
+						"tie": {"@attributes": {"type": "stop"}},
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"stem": "up",
+						"staff": "1",
+						"notations": {"tied": {"@attributes": {"type": "stop"}}}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "179", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Yi"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "226", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "ppi"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "292", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "ai"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "10", "width": "168"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "F"},
+					"kind": "major",
+					"staff": "1"
+				},
+				"note": {
+					"@attributes": {"color": "#000000", "default-x": "15"},
+					"pitch": {"step": "C", "octave": "5"},
+					"duration": "1024",
+					"tie": {"@attributes": {"type": "start"}},
+					"instrument": {"@attributes": {"id": "P1-I1"}},
+					"voice": "1",
+					"type": "whole",
+					"staff": "1",
+					"notations": {"tied": {"@attributes": {"type": "start"}}},
+					"lyric": {
+						"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+						"syllabic": "single",
+						"text": "eeh,",
+						"extend": []
+					}
+				}
+			},
+			{
+				"@attributes": {"number": "11", "width": "285"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-50"},
+						"pitch": {"step": "C", "octave": "5"},
+						"duration": "512",
+						"tie": {"@attributes": {"type": "stop"}},
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"stem": "down",
+						"staff": "1",
+						"notations": {"tied": {"@attributes": {"type": "stop"}}}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "125", "default-y": "-45"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "down",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "yi"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "173", "default-y": "-45"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "down",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "ppi"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "238", "default-y": "-45"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "down",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "ai"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "12", "width": "261"},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-45"},
+						"pitch": {"step": "D", "octave": "5"},
+						"duration": "128",
+						"tie": {"@attributes": {"type": "start"}},
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "eighth",
+						"stem": "down",
+						"staff": "1",
+						"notations": {"tied": {"@attributes": {"type": "start"}}},
+						"lyric": {
+							"@attributes": {"default-y": "-80", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "ooh,",
+							"extend": []
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "62", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "384",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"dot": [],
+						"stem": "up",
+						"staff": "1"
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "150", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "512",
+						"tie": {"@attributes": {"type": "start"}},
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"stem": "up",
+						"staff": "1",
+						"notations": {"tied": {"@attributes": {"type": "start"}}}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "13", "width": "287"},
+				"print": {
+					"@attributes": {"new-system": "yes"},
+					"system-layout": {
+						"system-margins": {"left-margin": "0", "right-margin": "0"},
+						"system-distance": "92"
+					}
+				},
+				"attributes": {"staff-details": {"@attributes": {"number": "1", "print-object": "yes"}}},
+				"direction": {
+					"direction-type": {
+						"words": [
+							"Da tritt der Teufel in den Kreis und winkt dem einen zu,",
+							"der wendet sich verzweifelt um und sucht beim Himmel Ruh,",
+							"zu den Sternen will er fl\u00fcchten, zu Sonne will er fliehn,",
+							"doch alle Sternen werden bleich, die Sonne will vergl\u00fchn.",
+							"Ref. ",
+							"Da \u00f6ffnet sich der Himmel weit und Reiter kommen aus H\u00f6hn,",
+							"und Feuer bricht aus Pferden\u00fcstern, rauhe Winde wehn,",
+							"der tote Cowboy wird genommen, keiner hat gefragt,",
+							"und donnernd geht es himmelw\u00e4rts in wilder toller Jagd.",
+							"Ref. "
+						]
+					}, "voice": "1", "staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "68", "default-y": "10"},
+						"pitch": {"step": "A", "octave": "4"},
+						"duration": "768",
+						"tie": {"@attributes": {"type": "stop"}},
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"dot": [],
+						"stem": "up",
+						"staff": "1",
+						"notations": {"tied": {"@attributes": {"type": "stop"}}}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "215", "default-y": "-20"},
+						"pitch": {"step": "A", "octave": "3"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "single",
+							"text": "die"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "14", "width": "283"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "B"},
+					"kind": "major",
+					"staff": "1"
+				},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "512",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "Nacht"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "138", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "middle",
+							"text": "geis"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "210", "default-y": "-20"},
+						"pitch": {"step": "B", "alter": "-1", "octave": "3"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "ter"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "15", "width": "283"},
+				"note": [
+					{
+						"@attributes": {"color": "#000000", "default-x": "15"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "512",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "half",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "zie"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "138"},
+						"pitch": {"step": "F", "octave": "4"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "end",
+							"text": "hen"
+						}
+					},
+					{
+						"@attributes": {"color": "#000000", "default-x": "210", "default-y": "-10"},
+						"pitch": {"step": "D", "octave": "4"},
+						"duration": "256",
+						"instrument": {"@attributes": {"id": "P1-I1"}},
+						"voice": "1",
+						"type": "quarter",
+						"stem": "up",
+						"staff": "1",
+						"lyric": {
+							"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+							"syllabic": "begin",
+							"text": "vor"
+						}
+					}
+				]
+			},
+			{
+				"@attributes": {"number": "16", "width": "200"},
+				"harmony": {
+					"@attributes": {"color": "#000000", "default-y": "25"},
+					"root": {"root-step": "D"},
+					"kind": "minor",
+					"staff": "1"
+				},
+				"note": {
+					"@attributes": {"color": "#000000", "default-x": "15"},
+					"pitch": {"step": "D", "octave": "4"},
+					"duration": "1024",
+					"instrument": {"@attributes": {"id": "P1-I1"}},
+					"voice": "1",
+					"type": "whole",
+					"staff": "1",
+					"lyric": {
+						"@attributes": {"default-y": "-86", "number": "part1verse1", "color": "#000000"},
+						"syllabic": "end",
+						"text": "bei."
+					}
+				},
+				"barline": {"bar-style": "light-heavy"}
+			}
+		]
+	}
+}
