@@ -6,10 +6,14 @@ class Song
 	private $data;
 	private $DB;
 
-	function __construct($id) {
-		$this->id = $id;
+	function __construct($id = null) {
 		$this->DB = $GLOBALS['DB'];
-		$this->data = $this->DB->fetchAssoc("SELECT * FROM songs WHERE id = ?", array($id));
+		if (!is_null($id)){
+			$this->id = $id;
+			$this->data = $this->DB->fetchAssoc("SELECT * FROM songs WHERE id = ?", array($id));
+		} else {
+			$this->data = array();
+		}
 	}
 
 	public function setImage($image){
@@ -17,14 +21,19 @@ class Song
 		ob_start();
 		imagepng(imagecreatefromstring($image));
 		$image = ob_get_clean();
-
-		$this->image = $image;
+		
+		$this->data['image'] = $image;
 		return $this;
 	}
 
 	public function printImage(){
-		$img = imagecreatefromstring($this->data['image']);
-		imagepng($img);
+		if ($this->data['image']){
+			$img = imagecreatefromstring($this->data['image']);
+			imagepng($img);
+		} else {
+			header("HTTP/1.0 404 Not Found");
+			die();
+		}
 	}
 
 
@@ -38,12 +47,23 @@ class Song
 
 	public function setData($data){
 		$this->data = $data;
+
+		// data validation
+		$this->data['pageRondoRed'] = (intval($this->data['pageRondoRed']) > 0 ? intval($this->data['pageRondoRed']) : null);
+		$this->data['pageRondoBlue'] = (intval($this->data['pageRondoBlue']) > 0 ? intval($this->data['pageRondoBlue']) : null);
+		$this->data['pageRondoGreen'] = (intval($this->data['pageRondoGreen']) > 0 ? intval($this->data['pageRondoGreen']) : null);
+
+		return $this;
+	}
+
+	public function setTitle($title){
+		$this->data['title'] = $title;
 		return $this;
 	}
 
 	public function getHtml(){
 		$html = '<div>
-			<img src="api/index.php/songs/'.$this->data['id'].'/image.png" class="song-image"/>
+			<img src="api/index.php/songs/'.$this->data['id'].'/image.png?_t='.time().'" class="song-image"/>
 			<div class="padding">
 			  <h3 class="song-title">'.$this->data['title'].'</h3>
 			  <div class="songtext">'.$this->crd2html($this->data['text']).'</div>
@@ -53,9 +73,18 @@ class Song
 	}
 
 	public function save(){
-		unset($this->data['image']);
-		$this->DB->update('songs', $this->data, array('id' => $this->id));
-		return $this;
+		if(is_null($this->id)){
+			$this->DB->insert('songs', $this->data);
+			$this->id = $this->DB->lastInsertId();
+			return $this;
+		} else {
+			// prevent image from beeing reset
+			if (!$this->data['image']){
+				unset($this->data['image']);
+			}
+			$this->DB->update('songs', $this->data, array('id' => $this->id));
+			return $this;
+		}
 	}
 
 	private function crd2html($crd_string){
@@ -100,6 +129,12 @@ class Song
 		return $html;
 	}
 
+	public function loadFromXml($xml_string){
+		$text = $this->xml2crd($xml_string);
+		$this->data['text'] = $text;
+		$this->data['rawXML'] = $xml_string;
+	}
+
 	private function xml2crd($xml_string){
 
 		$xml = simplexml_load_string($xml_string);
@@ -107,7 +142,7 @@ class Song
 		$array = json_decode($json,TRUE);
 
 		// Write Debug File
-		file_put_contents(__DIR__ . '/../../../../../data/musicjson/tmp.json', json_encode($array));
+		//file_put_contents(__DIR__ . '/../../../../../data/musicjson/tmp.json', json_encode($array));
 
 		$song = $array;
 		$measures = $array['part']['measure'];
@@ -187,6 +222,9 @@ class Song
 				}
 			}
 		}
+
+		// remove tabs
+		$output = trim(preg_replace('/\t+/', ' ', $output));
 
 		return $output;
 	}

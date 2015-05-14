@@ -26,6 +26,24 @@
           </div>
 
           <div class="form-group">
+            <label for="inputTitle" class="col-sm-3 control-label">Seitenzahlen</label>
+
+            <div class="col-sm-2">
+              <span class="label label-danger">Rot</span>
+              <input type="text" ng-model="song.pageRondoRed" class="form-control" placeholder="Seitenzahl">
+            </div>
+            <div class="col-sm-2">
+              <span class="label label-primary">Blau</span>
+              <input type="text" ng-model="song.pageRondoBlue" class="form-control" placeholder="Seitenzahl">
+            </div>
+            <div class="col-sm-2">
+              <span class="label label-success" style="background: #99FF99;">Grün</span>
+              <input type="text" ng-model="song.pageRondoGreen" class="form-control" placeholder="Seitenzahl">
+            </div>
+          </div>
+
+          <!--
+          <div class="form-group">
             <label for="inputMusicXMLFile" class="col-sm-3 control-label">MusicXML Datei hochladen</label>
 
             <div class="col-sm-3">
@@ -35,6 +53,24 @@
             <span ng-repeat="item in uploader.queue">
               <button ng-click="item.upload()" class="btn btn-xs btn-success">Hochladen</button>
             </span>
+            </div>
+          </div>
+          -->
+
+          <div class="form-group">
+            <label for="inputImage" class="col-sm-3 control-label">Titelbild hochladen</label>
+
+            <div class="col-sm-3">
+              <input type="file" name="file" id="inputImage" onchange="angular.element(this).scope().uploadFile(this.files)"/>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Infos</label>
+
+            <div class="col-sm-9">
+              <textarea id="copyrightInfo" class="form-control" rows="2" ng-model="song.copyrightInfo"></textarea>
             </div>
           </div>
 

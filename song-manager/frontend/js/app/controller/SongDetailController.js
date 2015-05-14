@@ -34,6 +34,23 @@ RondoApp.controller('SongDetailCtrl', function ($scope, $http, $routeParams, $lo
   };
   loadData();
 
+  $scope.uploadFile = function(files) {
+    var fd = new FormData();
+    //Take the first selected file
+    fd.append("file", files[0]);
+
+    $http.post("api/index.php/songs/" + $routeParams.songId + "/image.png", fd, {
+      withCredentials: true,
+      headers: {'Content-Type': undefined },
+      transformRequest: angular.identity
+    }).success(function(){
+      loadData();
+    }).error(function(){
+      loadData();
+    });
+
+  };
+
 
   $scope.save = function () {
     console.log($scope.song);

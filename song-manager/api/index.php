@@ -55,4 +55,28 @@ $app->get('/songs/:songId/image.png', function ($songId) use ($app) {
 	$song->printImage();
 });
 
+$app->post('/songs/:songId/image.png', function ($songId) use ($app) {
+	$song = new Song($songId);
+	$imgdata = file_get_contents($_FILES['file']['tmp_name']);
+	$song->setImage($imgdata);
+	$song->save();
+});
+
+$app->get('/import', function () use ($app) {
+	$app->contentType('text/html');
+
+	$path = '../../data/sibelius/converted-xml';
+	$files = scandir($path);
+
+	foreach($files as $file){
+		if (substr($file, -4) === '.xml'){
+			$data = file_get_contents($path.'/'.$file);
+			$song = new Song();
+			$song->loadFromXml($data);
+			$song->setTitle(trim($file, '.xml'));
+			$song->save();
+		}
+	}
+});
+
 $app->run();
