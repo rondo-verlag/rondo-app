@@ -18,6 +18,14 @@
           </div>
 
           <div class="form-group">
+            <label for="alternativeTitles" class="col-sm-3 control-label">Weitere Titel</label>
+            <div class="col-sm-9">
+              <textarea id="alternativeTitles" class="form-control" rows="2" ng-model="song.alternativeTitles"></textarea>
+              <span class="small">Alternative Titel unter denen das Lied aufgelistet wird (Erste Zeile, Refrain etc.). Ein Titel pro Zeile.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
             <label for="text" class="col-sm-3 control-label">Text</label>
 
             <div class="col-sm-9">
@@ -64,7 +72,6 @@
               <input type="file" name="file" id="inputImage" onchange="angular.element(this).scope().uploadFile(this.files)"/>
             </div>
           </div>
-
 
           <div class="form-group">
             <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Infos</label>
