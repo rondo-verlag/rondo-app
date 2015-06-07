@@ -79,4 +79,21 @@ $app->get('/import', function () use ($app) {
 	}
 });
 
+// for testing purposes
+$app->get('/import/:filename', function ($filename) use ($app) {
+	$app->contentType('text/html');
+
+	$path = '../../data/sibelius/converted-xml';
+
+	if (substr($filename, -4) === '.xml' && file_exists($path.'/'.$filename)){
+		$data = file_get_contents($path.'/'.$filename);
+		$song = new Song();
+		$song->loadFromXml($data);
+		$song->save();
+	} else {
+		throw new Exception('File does not exist: '.$path.'/'.$filename);
+	}
+
+});
+
 $app->run();
