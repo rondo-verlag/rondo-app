@@ -96,4 +96,45 @@ $app->get('/import/:filename', function ($filename) use ($app) {
 
 });
 
+// export json index for app
+$app->get('/export/index', function () use ($app, &$DB) {
+	$path = '../../data/export/song-index.json';
+	$index = [];
+
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen FROM songs");
+
+	foreach($songs as $song){
+		$alternativeTitles = $song['alternativeTitles'];
+		$song['title'] = strtoupper($song['title']);
+		unset($song['alternativeTitles']);
+		$index[] = $song;
+
+		// alternative titel
+		if (strlen($alternativeTitles) > 0){
+			$titles = explode("\n", $alternativeTitles);
+			foreach($titles as $title){
+				$song['title'] = $title;
+				$index[] = $song;
+			}
+		}
+	}
+
+	$json = json_encode($index, JSON_PRETTY_PRINT);
+	file_put_contents($path, $json);
+	echo $json;
+});
+
+// export json index for app
+$app->get('/export/html', function () use ($app, &$DB) {
+	$path = '../../data/export/html/';
+
+	$songIds = $DB->fetchAll("SELECT id FROM songs");
+
+	foreach($songIds as $songId){
+		$song = new Song($songId['id']);
+		$html = $song->getHtml();
+		file_put_contents($path.$songId['id'].'.html', $html);
+	}
+});
+
 $app->run();

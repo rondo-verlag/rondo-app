@@ -2,13 +2,13 @@
   <ion-header-bar class="bar bar-header bar-dark item-input-inset rondo-bar-search">
     <label class="item-input-wrapper">
       <i class="icon ion-ios7-search placeholder-icon"></i>
-      <input type="search" placeholder="Suchen..." ng-model="search.name"/>
+      <input type="search" placeholder="Suchen..." ng-model="search.title"/>
     </label>
   </ion-header-bar>
   <ion-content>
     <ion-list class="rondo-list">
       <ion-item collection-repeat="song in songs | filter:search" type="item-link" item-height="36" item-width="100%" ui-sref="song({songId: song.id})">
-        {{song.name}}
+        {{song.title}}
       </ion-item>
     </ion-list>
   </ion-content>
