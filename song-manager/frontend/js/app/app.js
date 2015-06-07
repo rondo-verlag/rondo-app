@@ -1,4 +1,4 @@
-var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload']);
+var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload','RondoAppFilters']);
 
 RondoApp.config(['$routeProvider',
 	function($routeProvider) {
