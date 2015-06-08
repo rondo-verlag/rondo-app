@@ -17,13 +17,17 @@ $app->config('debug', true);
 $app->response->headers->set('Content-Type', 'application/json');
 
 $app->get('/songs', function () use(&$DB) {
-	$songs = $DB->fetchAll("SELECT * FROM songs");
+	$songs = $DB->fetchAll("SELECT id, title, isLicenseFree FROM songs");
 	echo json_encode($songs);
 });
 
 $app->get('/songs/:songId', function ($songId) {
 	$song = new Song($songId);
-	echo json_encode($song->getData());
+	$data = $song->getData();
+	unset($data['image']);
+	unset($data['rawSIB']);
+	unset($data['rawXML']);
+	echo json_encode($data);
 });
 
 $app->put('/songs/:songId', function ($songId) use ($app) {
