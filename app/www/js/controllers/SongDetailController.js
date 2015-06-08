@@ -8,6 +8,7 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
   $scope.midiFile = false;
   $scope.playingSong = false;
   $scope.data = {};
+  $scope.songFile = 'resources/songs/html/' + $scope.songId + '.html';
 
   $scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
   $scope.scrollSpeed = SettingsService.getScrollSettings().speed;
@@ -58,17 +59,18 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
 
   $http({
     method: 'GET',
-    url: 'resources/songs/json/' + $scope.songId
+    url: 'resources/songs/html/' + $scope.songId
   }).
       success(function (data, status, headers, config) {
         $scope.data = data;
+        /*
         if (angular.isDefined(data.meta.title)){
           $scope.title = data.meta.title;
         }
 
         if (angular.isString(data.meta.midiFile)) {
             $scope.midiFile = data.meta.midiFile;
-        }
+        }*/
       }).
       error(function (data, status, headers, config) {
         $scope.title = 'Ouch!';

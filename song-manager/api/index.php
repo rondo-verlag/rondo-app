@@ -126,14 +126,26 @@ $app->get('/export/index', function () use ($app, &$DB) {
 
 // export json index for app
 $app->get('/export/html', function () use ($app, &$DB) {
-	$path = '../../data/export/html/';
+	$path = '../../data/export/';
 
 	$songIds = $DB->fetchAll("SELECT id FROM songs");
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
-		$html = $song->getHtml();
-		file_put_contents($path.$songId['id'].'.html', $html);
+
+		// generate html
+		$html = $song->getHtml(true);
+		file_put_contents($path.'html/'.$songId['id'].'.html', $html);
+
+		// generate image
+		$data = $song->getData();
+		if ($data['image']){
+			// convert to png
+			ob_start();
+			imagepng(imagecreatefromstring($data['image']));
+			$image = ob_get_clean();
+			file_put_contents($path.'images/'.$songId['id'].'.png', $image);
+		}
 	}
 });
 

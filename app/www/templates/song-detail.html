@@ -7,6 +7,10 @@
   <!--<autoscroll on-drag-down="onScrollUp()" on-drag-up="onScrollDown()" scroll-element="ion-content" infinite="false" scroll-class="has-header has-tabs" scroll-name="songtext" scroll-speed="scrollSpeed" scroll-enabled="scroll">
     -->
   <ion-content overflow-scroll="true" on-drag-down="onScrollUp()" on-drag-up="onScrollDown()" class="has-header has-tabs" scrollbar-x="false" scrollbar-y="false">
+
+    <ng-include src="songFile"></ng-include>
+
+    <!--
     <div class="rondo-book-index">
       <span class="book book-blue">132</span>
       <span class="book book-red">132</span>
@@ -14,10 +18,10 @@
     </div>
     <img src="resources/images/beispiel.png" class="song-image"/>
     <div class="padding">
-      <h3 class="song-title">{{title}}</h3>
       {{errormsg}}
       <songtext songdata="data"></songtext>
     </div>
+    -->
   </ion-content>
 
   <div class="tabs tabs-light tabs-icon-only">

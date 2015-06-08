@@ -21,7 +21,6 @@ class Song
 		ob_start();
 		imagepng(imagecreatefromstring($image));
 		$image = ob_get_clean();
-		
 		$this->data['image'] = $image;
 		return $this;
 	}
@@ -61,9 +60,22 @@ class Song
 		return $this;
 	}
 
-	public function getHtml(){
+	public function getHtml($export = false){
+		if ($this->data['image']){
+			if ($export == true){
+				// app export
+				$imgurl = 'resources/songs/images/'.$this->data['id'].'.png?_t='.time();
+			} else {
+				// song-manager preview
+				$imgurl = 'api/index.php/songs/'.$this->data['id'].'/image.png?_t='.time();
+			}
+			$image = '<img src="'.$imgurl.'" class="song-image"/>';
+		} else {
+			$image = '';
+		}
+
 		$html = '<div>
-			<img src="api/index.php/songs/'.$this->data['id'].'/image.png?_t='.time().'" class="song-image"/>
+			'.$image.'
 			<div class="padding">
 			  <h3 class="song-title">'.$this->data['title'].'</h3>
 			  <div class="songtext">'.$this->crd2html($this->data['text']).'</div>
@@ -181,6 +193,7 @@ class Song
 
 				// Texte
 				if (isset($measure['note'])) {
+					//var_dump($measure['note']);
 					if(isset($measure['note']['@attributes'])){
 						$arr = array($measure['note']);
 					} else {
@@ -189,21 +202,30 @@ class Song
 
 					foreach ($arr as $note) {
 						if (isset($note['lyric'])){
-							$hasSpace = false;
-							if(isset($note['lyric']['syllabic'])){
-								if ($note['lyric']['syllabic'] == 'single' || $note['lyric']['syllabic'] == 'end'){
-									$hasSpace = true;
+							if(isset($note['lyric']['syllabic']) or isset($note['lyric']['text'])){
+
+								$hasSpace = false;
+								if(isset($note['lyric']['syllabic'])){
+									if ($note['lyric']['syllabic'] == 'single' or $note['lyric']['syllabic'] == 'end'){
+										$hasSpace = true;
+									}
 								}
+
+								if (isset($note['lyric']['text'])){
+									$output .= $note['lyric']['text'] . ($hasSpace?' ':'');
+								}
+							} else {
+								var_dump($note['lyric']);
+
 							}
 
-							if (isset($note['lyric']['text'])){
-								$output .= $note['lyric']['text'] . ($hasSpace?' ':'');
-							}
-							//var_dump($note['lyric']);
+							var_dump($note['lyric']);
 
 						}
 					}
 				}
+
+				echo '--------------';
 
 				// BARLINE = newline
 				if (isset($measure['barline'])){
