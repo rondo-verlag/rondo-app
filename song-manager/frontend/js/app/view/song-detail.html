@@ -29,7 +29,7 @@
             <label for="text" class="col-sm-3 control-label">Text</label>
 
             <div class="col-sm-9">
-              <textarea id="text" class="form-control" rows="6" ng-model="song.text"></textarea>
+              <textarea id="text" class="form-control" rows="15" ng-model="song.text"></textarea>
             </div>
           </div>
 
@@ -74,14 +74,6 @@
           </div>
 
           <div class="form-group">
-            <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Infos</label>
-
-            <div class="col-sm-9">
-              <textarea id="copyrightInfo" class="form-control" rows="2" ng-model="song.copyrightInfo"></textarea>
-            </div>
-          </div>
-
-          <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
               <div class="checkbox">
                 <label>
@@ -91,6 +83,23 @@
               </div>
             </div>
           </div>
+
+          <div class="form-group">
+            <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Infos</label>
+
+            <div class="col-sm-9">
+              <textarea id="copyrightInfo" class="form-control" rows="2" ng-model="song.copyrightInfo"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="comments" class="col-sm-3 control-label">Kommentar / Status</label>
+
+            <div class="col-sm-9">
+              <textarea id="comments" class="form-control" rows="4" ng-model="song.comments"></textarea>
+            </div>
+          </div>
+
           <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
               <button type="submit" class="btn btn-success" ng-click="save()">Speichern</button>

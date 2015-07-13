@@ -91,7 +91,7 @@ class Song
 			return $this;
 		} else {
 			// prevent image from beeing reset
-			if (!$this->data['image']){
+			if (isset($this->data['image']) && !$this->data['image']){
 				unset($this->data['image']);
 			}
 			$this->DB->update('songs', $this->data, array('id' => $this->id));
