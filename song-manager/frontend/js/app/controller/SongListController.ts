@@ -3,7 +3,7 @@ module rondo {
   'use strict';
 
   export interface ISongListScope extends ng.IScope {
-    list: {};
+    list: Array<ISong>;
     editSong(int): void;
   }
 
@@ -17,10 +17,10 @@ module rondo {
       private $http: ng.IHttpService,
       private $location: ng.ILocationService
     ) {
-      $scope.list = {};
+      $scope.list = null;
 
       $http.get("api/index.php/songs")
-        .success(function(data, status, headers, config) {
+        .success(function(data: Array<ISong>, status, headers, config) {
           $scope.list = data;
         })
         .error(function(data, status, headers, config) {

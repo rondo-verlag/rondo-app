@@ -1,8 +1,22 @@
-angular.module('RondoAppFilters', []).filter('yesno', function () {
-    return function (input) {
-        return (input == 1 ? 'Ja' : 'Nein');
-    };
-});
+/// <reference path="../references.ts" />
+var rondo;
+(function (rondo) {
+    'use strict';
+})(rondo || (rondo = {}));
+/// <reference path="../references.ts" />
+var rondo;
+(function (rondo) {
+    var filters;
+    (function (filters) {
+        'use strict';
+        function yesno() {
+            return function (input) {
+                return (input == 1 ? 'Ja' : 'Nein');
+            };
+        }
+        filters.yesno = yesno;
+    })(filters = rondo.filters || (rondo.filters = {}));
+})(rondo || (rondo = {}));
 /// <reference path="../references.ts" />
 var rondo;
 (function (rondo) {
@@ -17,7 +31,7 @@ var rondo;
             this.$sce = $sce;
             this.FileUploader = FileUploader;
             var self = this;
-            $scope.song = {};
+            $scope.song = null;
             $scope.showAccords = true;
             this.loadData();
             $scope.uploader = new FileUploader({
@@ -45,10 +59,12 @@ var rondo;
             $scope.save = function () {
                 console.log($scope.song);
                 //$location.path('/songs/'+id);
-                $http.put("api/index.php/songs/" + $routeParams.songId, $scope.song).success(function (data, status, headers, config) {
+                $http.put("api/index.php/songs/" + $routeParams.songId, $scope.song)
+                    .success(function (data, status, headers, config) {
                     console.log('success!');
                     self.loadData();
-                }).error(function (data, status, headers, config) {
+                })
+                    .error(function (data, status, headers, config) {
                     console.log("AJAX failed!", data, status);
                     self.loadData();
                 });
@@ -59,24 +75,23 @@ var rondo;
         }
         SongDetailCtrl.prototype.loadData = function () {
             var self = this;
-            this.$http.get("api/index.php/songs/" + this.$routeParams.songId).success(function (data, status, headers, config) {
+            this.$http.get("api/index.php/songs/" + this.$routeParams.songId)
+                .success(function (data, status, headers, config) {
                 self.$scope.song = data;
-            }).error(function (data, status, headers, config) {
+            })
+                .error(function (data, status, headers, config) {
                 console.log("AJAX failed!");
             });
-            this.$http.get("api/index.php/songs/" + this.$routeParams.songId + "/html").success(function (data, status, headers, config) {
+            this.$http.get("api/index.php/songs/" + this.$routeParams.songId + "/html")
+                .success(function (data, status, headers, config) {
                 self.$scope.preview = self.$sce.trustAsHtml(data);
-            }).error(function (data, status, headers, config) {
+            })
+                .error(function (data, status, headers, config) {
                 console.log("AJAX failed!");
             });
         };
         SongDetailCtrl.$inject = [
-            '$scope',
-            '$http',
-            '$routeParams',
-            '$location',
-            '$sce',
-            'FileUploader'
+            '$scope', '$http', '$routeParams', '$location', '$sce', 'FileUploader'
         ];
         return SongDetailCtrl;
     })();
@@ -90,10 +105,12 @@ var rondo;
             this.$scope = $scope;
             this.$http = $http;
             this.$location = $location;
-            $scope.list = {};
-            $http.get("api/index.php/songs").success(function (data, status, headers, config) {
+            $scope.list = null;
+            $http.get("api/index.php/songs")
+                .success(function (data, status, headers, config) {
                 $scope.list = data;
-            }).error(function (data, status, headers, config) {
+            })
+                .error(function (data, status, headers, config) {
                 console.log("AJAX failed!");
             });
             $scope.editSong = function (id) {
@@ -102,41 +119,46 @@ var rondo;
             };
         }
         SongListCtrl.$inject = [
-            '$scope',
-            '$http',
-            '$location'
+            '$scope', '$http', '$location'
         ];
         return SongListCtrl;
     })();
     rondo.SongListCtrl = SongListCtrl;
 })(rondo || (rondo = {}));
 /// <reference path="../typings/tsd.d.ts" />
-/// <reference path="filters.ts"/>
+/// <reference path="models/Song.ts" />
+/// <reference path="filters/filters.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
 /// <reference path="app.ts"/> 
 /// <reference path="references.ts" />
 /**
- * The main TodoMVC app module.
+ * The main RondoApp module.
  *
- * @type {angular.Module}
+ * @type {angular.IModule}
  */
 var rondo;
 (function (rondo) {
     'use strict';
-    var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload', 'RondoAppFilters']);
+    var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload']);
     RondoApp.controller('SongDetailCtrl', rondo.SongDetailCtrl);
     RondoApp.controller('SongListCtrl', rondo.SongListCtrl);
-    RondoApp.config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/songs', {
-            templateUrl: 'frontend/js/app/view/song-list.html',
-            controller: 'SongListCtrl'
-        }).when('/songs/:songId', {
-            templateUrl: 'frontend/js/app/view/song-detail.html',
-            controller: 'SongDetailCtrl'
-        }).otherwise({
-            redirectTo: '/songs'
-        });
-    }]);
+    RondoApp.filter("yesno", rondo.filters.yesno);
+    RondoApp.config(['$routeProvider',
+        function ($routeProvider) {
+            $routeProvider.
+                when('/songs', {
+                templateUrl: 'frontend/js/app/view/song-list.html',
+                controller: 'SongListCtrl'
+            }).
+                when('/songs/:songId', {
+                templateUrl: 'frontend/js/app/view/song-detail.html',
+                controller: 'SongDetailCtrl'
+            }).
+                otherwise({
+                redirectTo: '/songs'
+            });
+        }
+    ]);
 })(rondo || (rondo = {}));
 //# sourceMappingURL=app.js.map

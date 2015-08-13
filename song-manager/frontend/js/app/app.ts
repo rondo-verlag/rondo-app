@@ -2,17 +2,18 @@
 
 
 /**
- * The main TodoMVC app module.
+ * The main RondoApp module.
  *
- * @type {angular.Module}
+ * @type {angular.IModule}
  */
 module rondo {
   'use strict';
 
-  var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload','RondoAppFilters']);
+  var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload']);
 
-  RondoApp.controller('SongDetailCtrl', SongDetailCtrl)
-  RondoApp.controller('SongListCtrl', SongListCtrl)
+  RondoApp.controller('SongDetailCtrl', SongDetailCtrl);
+  RondoApp.controller('SongListCtrl', SongListCtrl);
+  RondoApp.filter("yesno", rondo.filters.yesno);
 
   RondoApp.config(['$routeProvider',
     function($routeProvider) {

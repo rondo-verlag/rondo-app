@@ -3,7 +3,7 @@
 module rondo {
   'use strict';
   export interface ISongDetailScope extends ng.IScope {
-    song: any;
+    song: rondo.ISong;
     showAccords: boolean;
     uploader: any;
     uploadFile(Object): void;
@@ -34,7 +34,7 @@ module rondo {
 
       var self = this;
 
-      $scope.song = {};
+      $scope.song = null;
       $scope.showAccords = true;
 
       this.loadData();
@@ -91,7 +91,7 @@ module rondo {
     loadData() {
       var self = this;
       this.$http.get("api/index.php/songs/" + this.$routeParams.songId)
-        .success(function (data, status, headers, config) {
+        .success(function (data: rondo.ISong, status, headers, config) {
           self.$scope.song = data;
 
 
