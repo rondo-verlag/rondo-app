@@ -1,15 +1,21 @@
 
 module rondo {
   'use strict';
+
+  export interface ISongListScope extends ng.IScope {
+    list: {};
+    editSong(int): void;
+  }
+
   export class SongListCtrl {
     public static $inject = [
       '$scope', '$http', '$location'
     ];
 
     constructor(
-      private $scope,
-      private $http,
-      private $location
+      private $scope: ISongListScope,
+      private $http: ng.IHttpService,
+      private $location: ng.ILocationService
     ) {
       $scope.list = {};
 

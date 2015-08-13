@@ -13,6 +13,9 @@
     },
     "angular-file-upload/angular-file-upload.d.ts": {
       "commit": "3b0f362204ea965952dafdb682a5274d527ef9d0"
+    },
+    "angularjs/angular-route.d.ts": {
+      "commit": "338f9db37074d197764e95a487ddb865c5f2d73c"
     }
   }
 }

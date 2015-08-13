@@ -2,6 +2,20 @@
 
 module rondo {
   'use strict';
+  export interface ISongDetailScope extends ng.IScope {
+    song: any;
+    showAccords: boolean;
+    uploader: any;
+    uploadFile(Object): void;
+    save(): void;
+    showList(): void;
+    preview: any;
+  }
+
+  export interface ISongDetailRouteParams extends angular.route.IRouteParamsService {
+    songId: any;
+  }
+
   export class SongDetailCtrl {
 
     public static $inject = [
@@ -9,11 +23,11 @@ module rondo {
     ];
 
     constructor(
-      private $scope: rondo.ISongDetailControllerScope,
-      private $http,
-      private $routeParams,
+      private $scope: rondo.ISongDetailScope,
+      private $http: ng.IHttpService,
+      private $routeParams: ISongDetailRouteParams,
       private $location: ng.ILocationService,
-      private $sce,
+      private $sce: ng.ISCEService,
       private FileUploader
     ) {
       //console.log('Song', $routeParams.songId);
@@ -94,8 +108,6 @@ module rondo {
           console.log("AJAX failed!");
         });
     }
-
-
 
   }
 }

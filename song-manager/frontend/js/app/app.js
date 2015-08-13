@@ -1,4 +1,3 @@
-/// <reference path="references.ts" />
 angular.module('RondoAppFilters', []).filter('yesno', function () {
     return function (input) {
         return (input == 1 ? 'Ja' : 'Nein');
@@ -112,7 +111,6 @@ var rondo;
     rondo.SongListCtrl = SongListCtrl;
 })(rondo || (rondo = {}));
 /// <reference path="../typings/tsd.d.ts" />
-/// <reference path="interfaces.ts"/>
 /// <reference path="filters.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
