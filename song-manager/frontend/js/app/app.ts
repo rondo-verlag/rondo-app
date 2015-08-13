@@ -14,9 +14,10 @@ module rondo {
   RondoApp.controller('SongDetailCtrl', SongDetailCtrl);
   RondoApp.controller('SongListCtrl', SongListCtrl);
   RondoApp.filter("yesno", rondo.filters.yesno);
+  RondoApp.directive("status", rondo.directives.status);
 
   RondoApp.config(['$routeProvider',
-    function($routeProvider) {
+    function($routeProvider: angular.route.IRouteProvider) {
       $routeProvider.
         when('/songs', {
           templateUrl: 'frontend/js/app/view/song-list.html',

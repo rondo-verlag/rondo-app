@@ -6,12 +6,14 @@
 				<th>ID</th>
 				<th>Titel</th>
 				<th>Lizenzfrei</th>
+				<th>Status</th>
 				<th>&nbsp;</th>
 			</tr>
 			<tr ng-repeat="song in list">
 				<td>{{song.id}}</td>
 				<td>{{song.title}}</td>
 				<td>{{song.isLicenseFree | yesno}}</td>
+				<td><status status="song.status"></status></td>
 				<td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
 			</tr>
 		</table>

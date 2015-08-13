@@ -17,16 +17,26 @@ $app->config('debug', true);
 $app->response->headers->set('Content-Type', 'application/json');
 
 $app->get('/songs', function () use(&$DB) {
-	$songs = $DB->fetchAll("SELECT id, title, isLicenseFree FROM songs");
+	$songs = $DB->fetchAll("SELECT id, title, isLicenseFree, status FROM songs");
 	echo json_encode($songs);
 });
 
 $app->get('/songs/:songId', function ($songId) {
 	$song = new Song($songId);
 	$data = $song->getData();
-	unset($data['image']);
-	unset($data['rawSIB']);
-	unset($data['rawXML']);
+
+	function startsWithRaw($haystack, $needle = "raw") {
+		// search backwards starting from haystack length characters from the end
+		return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
+	}
+
+	foreach($data as $fieldname => $value){
+		if (startsWithRaw($fieldname)){
+			$data[$fieldname.'Size'] = strlen($data[$fieldname]);
+			unset($data[$fieldname]);
+		}
+	}
+
 	echo json_encode($data);
 });
 
@@ -53,16 +63,37 @@ $app->get('/songs/:songId/crd', function ($songId) use ($app) {
 	var_dump($result);
 });
 
-$app->get('/songs/:songId/image.png', function ($songId) use ($app) {
-	$app->contentType('image/png');
+$app->get('/songs/:songId/raw/:rawType', function ($songId, $rawType) use ($app) {
+	$ext = pathinfo($rawType, PATHINFO_EXTENSION);
+	$fieldname = pathinfo($rawType, PATHINFO_FILENAME);
 	$song = new Song($songId);
-	$song->printImage();
+	$data = $song->getRawData($fieldname);
+	if (!$data){
+		header("HTTP/1.0 404 Not Found");
+		die();
+	} else {
+		switch($ext){
+			case 'png':
+				$app->contentType('image/png');
+				break;
+			case 'pdf':
+				$app->contentType('application/pdf');
+				break;
+			case 'mid':
+			case 'midi':
+				$app->contentType('audio/midi');
+				break;
+			default:
+				$app->contentType('application/octet-stream');
+		}
+		echo $data;
+	}
 });
 
-$app->post('/songs/:songId/image.png', function ($songId) use ($app) {
+$app->post('/songs/:songId/:rawType', function ($songId, $rawType) use ($app) {
 	$song = new Song($songId);
-	$imgdata = file_get_contents($_FILES['file']['tmp_name']);
-	$song->setImage($imgdata);
+	$rawdata = file_get_contents($_FILES['file']['tmp_name']);
+	$song->setRawData($rawType, $rawdata);
 	$song->save();
 });
 
@@ -143,10 +174,10 @@ $app->get('/export/html', function () use ($app, &$DB) {
 
 		// generate image
 		$data = $song->getData();
-		if ($data['image']){
+		if ($data['rawImage']){
 			// convert to png
 			ob_start();
-			imagepng(imagecreatefromstring($data['image']));
+			imagepng(imagecreatefromstring($data['rawImage']));
 			$image = ob_get_clean();
 			file_put_contents($path.'images/'.$songId['id'].'.png', $image);
 		}

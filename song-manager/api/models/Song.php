@@ -16,26 +16,6 @@ class Song
 		}
 	}
 
-	public function setImage($image){
-		// convert to png
-		ob_start();
-		imagepng(imagecreatefromstring($image));
-		$image = ob_get_clean();
-		$this->data['image'] = $image;
-		return $this;
-	}
-
-	public function printImage(){
-		if ($this->data['image']){
-			$img = imagecreatefromstring($this->data['image']);
-			imagepng($img);
-		} else {
-			header("HTTP/1.0 404 Not Found");
-			die();
-		}
-	}
-
-
 	public function getId(){
 		return $this->id;
 	}
@@ -52,7 +32,28 @@ class Song
 		$this->data['pageRondoBlue'] = (intval($this->data['pageRondoBlue']) > 0 ? intval($this->data['pageRondoBlue']) : null);
 		$this->data['pageRondoGreen'] = (intval($this->data['pageRondoGreen']) > 0 ? intval($this->data['pageRondoGreen']) : null);
 
+		// do not set raw data here, use setRawData()
+		foreach($this->data as $fieldname => $val){
+			if ($this->startsWithRaw($fieldname)){
+				unset($this->data[$fieldname]);
+			}
+		}
+
 		return $this;
+	}
+
+	public function setRawData($fieldname, $data){
+		if ($this->startsWithRaw($fieldname)){
+			$this->data[$fieldname] = $data;
+		}
+		return $this;
+	}
+
+	public function getRawData($fieldname){
+		if(isset($this->data[$fieldname])){
+			return $this->data[$fieldname];
+		}
+		return null;
 	}
 
 	public function setTitle($title){
@@ -61,13 +62,13 @@ class Song
 	}
 
 	public function getHtml($export = false){
-		if ($this->data['image']){
+		if ($this->data['rawImage']){
 			if ($export == true){
 				// app export
 				$imgurl = 'resources/songs/images/'.$this->data['id'].'.png?_t='.time();
 			} else {
 				// song-manager preview
-				$imgurl = 'api/index.php/songs/'.$this->data['id'].'/image.png?_t='.time();
+				$imgurl = 'api/index.php/songs/'.$this->data['id'].'/raw/rawImage.png?_t='.time();
 			}
 			$image = '<img src="'.$imgurl.'" class="song-image"/>';
 		} else {
@@ -91,12 +92,17 @@ class Song
 			return $this;
 		} else {
 			// prevent image from beeing reset
-			if (isset($this->data['image']) && !$this->data['image']){
-				unset($this->data['image']);
+			if (isset($this->data['rawImage']) && !$this->data['rawImage']){
+				unset($this->data['rawImage']);
 			}
 			$this->DB->update('songs', $this->data, array('id' => $this->id));
 			return $this;
 		}
+	}
+
+	private function startsWithRaw($haystack, $needle = "raw") {
+		// search backwards starting from haystack length characters from the end
+		return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
 	}
 
 	private function crd2html($crd_string){

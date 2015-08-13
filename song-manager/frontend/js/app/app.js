@@ -20,10 +20,27 @@ var rondo;
 /// <reference path="../references.ts" />
 var rondo;
 (function (rondo) {
+    var directives;
+    (function (directives) {
+        'use strict';
+        function status() {
+            return {
+                templateUrl: 'frontend/js/app/directives/status.html',
+                scope: {
+                    status: '='
+                },
+                restrict: 'E'
+            };
+        }
+        directives.status = status;
+    })(directives = rondo.directives || (rondo.directives = {}));
+})(rondo || (rondo = {}));
+/// <reference path="../references.ts" />
+var rondo;
+(function (rondo) {
     'use strict';
     var SongDetailCtrl = (function () {
         function SongDetailCtrl($scope, $http, $routeParams, $location, $sce, FileUploader) {
-            //console.log('Song', $routeParams.songId);
             this.$scope = $scope;
             this.$http = $http;
             this.$routeParams = $routeParams;
@@ -38,15 +55,14 @@ var rondo;
                 url: 'api/index.php/songs/' + $routeParams.songId + '/musicxmlfiles'
             });
             $scope.uploader.onCompleteItem = function (item) {
-                console.log('asdadsd', item);
                 $scope.uploader.clearQueue();
                 self.loadData();
             };
-            $scope.uploadFile = function (files) {
+            $scope.uploadFile = function (files, type) {
                 var fd = new FormData();
                 //Take the first selected file
                 fd.append("file", files[0]);
-                $http.post("api/index.php/songs/" + $routeParams.songId + "/image.png", fd, {
+                $http.post("api/index.php/songs/" + $routeParams.songId + "/" + type, fd, {
                     withCredentials: true,
                     headers: { 'Content-Type': undefined },
                     transformRequest: angular.identity
@@ -57,11 +73,9 @@ var rondo;
                 });
             };
             $scope.save = function () {
-                console.log($scope.song);
-                //$location.path('/songs/'+id);
+                //console.log($scope.song);
                 $http.put("api/index.php/songs/" + $routeParams.songId, $scope.song)
                     .success(function (data, status, headers, config) {
-                    console.log('success!');
                     self.loadData();
                 })
                     .error(function (data, status, headers, config) {
@@ -97,6 +111,7 @@ var rondo;
     })();
     rondo.SongDetailCtrl = SongDetailCtrl;
 })(rondo || (rondo = {}));
+/// <reference path="../references.ts" />
 var rondo;
 (function (rondo) {
     'use strict';
@@ -105,7 +120,7 @@ var rondo;
             this.$scope = $scope;
             this.$http = $http;
             this.$location = $location;
-            $scope.list = null;
+            $scope.list = [];
             $http.get("api/index.php/songs")
                 .success(function (data, status, headers, config) {
                 $scope.list = data;
@@ -114,7 +129,6 @@ var rondo;
                 console.log("AJAX failed!");
             });
             $scope.editSong = function (id) {
-                console.log(id);
                 $location.path('/songs/' + id);
             };
         }
@@ -128,6 +142,7 @@ var rondo;
 /// <reference path="../typings/tsd.d.ts" />
 /// <reference path="models/Song.ts" />
 /// <reference path="filters/filters.ts"/>
+/// <reference path="directives/status.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
 /// <reference path="app.ts"/> 
@@ -144,6 +159,7 @@ var rondo;
     RondoApp.controller('SongDetailCtrl', rondo.SongDetailCtrl);
     RondoApp.controller('SongListCtrl', rondo.SongListCtrl);
     RondoApp.filter("yesno", rondo.filters.yesno);
+    RondoApp.directive("status", rondo.directives.status);
     RondoApp.config(['$routeProvider',
         function ($routeProvider) {
             $routeProvider.

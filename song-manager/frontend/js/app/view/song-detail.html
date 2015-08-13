@@ -6,7 +6,7 @@
           <div class="form-group">
             <div class="col-sm-2 control-label"><br><br><a href="#/songs">&laquo; zurück zur Liste</a></div>
             <div class="col-sm-10">
-              <h1>{{song.title}}&nbsp;</h1>
+              <h1>{{song.title}}&nbsp; <status status="song.status" style="font-size: 14px"></status></h1>
             </div>
           </div>
           <div class="form-group">
@@ -65,13 +65,7 @@
           </div>
           -->
 
-          <div class="form-group">
-            <label for="inputImage" class="col-sm-3 control-label">Titelbild hochladen</label>
 
-            <div class="col-sm-3">
-              <input type="file" name="file" id="inputImage" onchange="angular.element(this).scope().uploadFile(this.files)"/>
-            </div>
-          </div>
 
           <div class="form-group">
             <div class="col-sm-offset-3 col-sm-9">
@@ -92,8 +86,24 @@
             </div>
           </div>
 
+
+
+
           <div class="form-group">
-            <label for="comments" class="col-sm-3 control-label">Kommentar / Status</label>
+            <label for="comments" class="col-sm-3 control-label">Status</label>
+
+            <div class="col-sm-9">
+              <select ng-model="song.status">
+                <option value="NEW">Neu</option>
+                <option value="INPROGRESS">In Arbeit</option>
+                <option value="DONE">Fertig</option>
+              </select>
+              <status status="song.status"></status>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="comments" class="col-sm-3 control-label">Kommentar zum Status</label>
 
             <div class="col-sm-9">
               <textarea id="comments" class="form-control" rows="4" ng-model="song.comments"></textarea>
@@ -111,7 +121,7 @@
       </div>
       <div class="col-sm-4">
         <br>
-        <b>Vorschau</b>
+        <h4>Vorschau</h4>
 
         <div class="preview" ng-class="{ 'rondo-show-chords': showAccords }">
           <div ng-bind-html="preview"></div>
@@ -119,6 +129,57 @@
         <label>
           <input type="checkbox" ng-model="showAccords"> Akkorde anzeigen
         </label>
+
+        <br>
+        <br>
+        <h4>Dateien hochladen</h4>
+
+        <form>
+          <div class="form-group">
+            <label for="inputImage" class="control-label">Titelbild</label>
+            <input type="file" name="file" id="inputImage" onchange="angular.element(this).scope().uploadFile(this.files, 'rawImage')"/>
+            <div ng-if="song.rawImageSize > 0">
+              <br>
+              <i class="glyphicon glyphicon-ok-sign" style="color: green;"></i> <a href="api/index.php/songs/{{song.id}}/raw/rawImage.png" target="_blank">Download</a>
+              {{song.rawImageSize / 1048576 | number : 2}} MB
+            </div>
+            <div ng-if="song.rawImageSize == 0" class="text-muted"><br><i class="glyphicon glyphicon-remove-sign" style="color: red;"></i> Keine Datei hochgeladen</div>
+          </div>
+
+          <div class="form-group">
+            <label for="sibeliusFile" class="control-label">Sibelius Datei</label>
+            <input type="file" name="file" id="sibeliusFile" onchange="angular.element(this).scope().uploadFile(this.files, 'rawSIB')"/>
+            <div ng-if="song.rawSIBSize > 0">
+              <br>
+              <i class="glyphicon glyphicon-ok-sign" style="color: green;"></i> <a href="api/index.php/songs/{{song.id}}/raw/rawSIB.sib" target="_blank">Download</a>
+              {{song.rawSIBSize / 1048576 | number : 2}} MB
+            </div>
+            <div ng-if="song.rawSIBSize == 0" class="text-muted"><br><i class="glyphicon glyphicon-remove-sign" style="color: red;"></i> Keine Datei hochgeladen</div>
+          </div>
+
+          <div class="form-group">
+            <label for="notesFile" class="control-label">Noten PDF</label>
+            <input type="file" name="file" id="notesFile" onchange="angular.element(this).scope().uploadFile(this.files, 'rawNotesPDF')"/>
+            <div ng-if="song.rawNotesPDFSize > 0">
+              <br>
+              <i class="glyphicon glyphicon-ok-sign" style="color: green;"></i> <a href="api/index.php/songs/{{song.id}}/raw/rawNotesPDF.pdf" target="_blank">Download</a>
+              {{song.rawNotesPDFSize / 1048576 | number : 2}} MB
+            </div>
+            <div ng-if="song.rawNotesPDFSize == 0" class="text-muted"><br><i class="glyphicon glyphicon-remove-sign" style="color: red;"></i> Keine Datei hochgeladen</div>
+          </div>
+
+          <div class="form-group">
+            <label for="midiFile" class="control-label">Midi Datei</label>
+            <input type="file" name="file" id="midiFile" onchange="angular.element(this).scope().uploadFile(this.files, 'rawMidi')"/>
+            <div ng-if="song.rawMidiSize > 0">
+              <br>
+              <i class="glyphicon glyphicon-ok-sign" style="color: green;"></i> <a href="api/index.php/songs/{{song.id}}/raw/rawMidi.mid" target="_blank">Download</a>
+              {{song.rawMidiSize / 1048576 | number : 2}} MB
+            </div>
+            <div ng-if="song.rawMidiSize == 0" class="text-muted"><br><i class="glyphicon glyphicon-remove-sign" style="color: red;"></i> Keine Datei hochgeladen</div>
+          </div>
+        </form>
+
       </div>
     </div>
 

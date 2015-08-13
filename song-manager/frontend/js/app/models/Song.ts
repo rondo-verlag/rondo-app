@@ -4,9 +4,10 @@ module rondo {
   'use strict';
 
   export interface ISong {
-    id: number;
+    id: string;
     title: string;
-    isLicenseFree: number;
+    isLicenseFree: string;
+    status: string;
     alternativeTitles?: string;
     text?: string;
     pageRondoRed?: string;
@@ -14,5 +15,10 @@ module rondo {
     pageRondoGreen?: string;
     copyrightInfo?: string;
     comments?: string;
+    rawImageSize?: number;
+    rawMidiSize?: number;
+    rawNotesPDFSize?: number;
+    rawSIBSize?: number;
+    rawXMLSize?: number;
   }
 }

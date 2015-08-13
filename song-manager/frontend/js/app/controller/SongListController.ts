@@ -1,3 +1,4 @@
+/// <reference path="../references.ts" />
 
 module rondo {
   'use strict';
@@ -17,7 +18,7 @@ module rondo {
       private $http: ng.IHttpService,
       private $location: ng.ILocationService
     ) {
-      $scope.list = null;
+      $scope.list = [];
 
       $http.get("api/index.php/songs")
         .success(function(data: Array<ISong>, status, headers, config) {
@@ -27,8 +28,7 @@ module rondo {
           console.log("AJAX failed!");
         });
 
-      $scope.editSong = function(id){
-        console.log(id);
+      $scope.editSong = function(id: string){
         $location.path('/songs/'+id);
       }
     }

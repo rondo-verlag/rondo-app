@@ -1,0 +1,12 @@
+<span class="song-status" ng-switch on="status">
+  <span ng-switch-when="NEW" style="color: red;">
+    <i class="glyphicon glyphicon-asterisk" ></i> Neu
+  </span>
+  <span ng-switch-when="INPROGRESS" style="color: orange;">
+    <i class="glyphicon glyphicon-option-horizontal"></i> In Arbeit
+  </span>
+  <span ng-switch-when="DONE" style="color: green;">
+    <i class="glyphicon glyphicon-ok-sign"></i> Fertig
+  </span>
+  <span ng-switch-default>{{status}}</span>
+</span>

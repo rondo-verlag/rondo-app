@@ -6,7 +6,7 @@ module rondo {
     song: rondo.ISong;
     showAccords: boolean;
     uploader: any;
-    uploadFile(Object): void;
+    uploadFile(Object, string): void;
     save(): void;
     showList(): void;
     preview: any;
@@ -30,8 +30,6 @@ module rondo {
       private $sce: ng.ISCEService,
       private FileUploader
     ) {
-      //console.log('Song', $routeParams.songId);
-
       var self = this;
 
       $scope.song = null;
@@ -44,17 +42,16 @@ module rondo {
       });
 
       $scope.uploader.onCompleteItem = function (item) {
-        console.log('asdadsd', item);
         $scope.uploader.clearQueue();
         self.loadData();
       };
 
-      $scope.uploadFile = function(files) {
+      $scope.uploadFile = function(files, type: string) {
         var fd = new FormData();
         //Take the first selected file
         fd.append("file", files[0]);
 
-        $http.post("api/index.php/songs/" + $routeParams.songId + "/image.png", fd, {
+        $http.post("api/index.php/songs/" + $routeParams.songId + "/"+type, fd, {
           withCredentials: true,
           headers: {'Content-Type': undefined },
           transformRequest: angular.identity
@@ -67,14 +64,10 @@ module rondo {
       };
 
       $scope.save = function () {
-        console.log($scope.song);
-        //$location.path('/songs/'+id);
-
-
+        //console.log($scope.song);
 
         $http.put("api/index.php/songs/" + $routeParams.songId, $scope.song)
           .success(function (data, status, headers, config) {
-            console.log('success!');
             self.loadData();
           })
           .error(function (data, status, headers, config) {
@@ -93,8 +86,6 @@ module rondo {
       this.$http.get("api/index.php/songs/" + this.$routeParams.songId)
         .success(function (data: rondo.ISong, status, headers, config) {
           self.$scope.song = data;
-
-
         })
         .error(function (data, status, headers, config) {
           console.log("AJAX failed!");
