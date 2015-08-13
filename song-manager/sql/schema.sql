@@ -2,17 +2,19 @@ CREATE TABLE `songs` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL DEFAULT '',
   `text` longtext,
-  `alternativeTitles` longtext,
+  `alternativeTitles` varchar(1000) DEFAULT '',
   `pageRondoRed` int(11) DEFAULT NULL,
   `pageRondoBlue` int(11) DEFAULT NULL,
   `pageRondoGreen` int(11) DEFAULT NULL,
   `isLicenseFree` tinyint(1) NOT NULL DEFAULT '0',
   `copyrightInfo` text,
   `comments` text,
-  `status` int(11) NOT NULL DEFAULT '0',
+  `status` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
   `updated` int(11) DEFAULT NULL,
-  `image` mediumblob,
+  `rawImage` longblob,
   `rawXML` longblob,
   `rawSIB` longblob,
+  `rawNotesPDF` longblob,
+  `rawMidi` longblob,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=541 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
