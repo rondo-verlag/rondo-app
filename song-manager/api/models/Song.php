@@ -163,7 +163,11 @@ class Song
 		//file_put_contents(__DIR__ . '/../../../../../data/musicjson/tmp.json', json_encode($array));
 
 		$song = $array;
-		$measures = $array['part']['measure'];
+		if(isset($array['part']['measure'])){
+			$measures = $array['part']['measure'];
+		} else {
+			$measures = $array['part'][0]['measure'];
+		}
 
 		$output = '';
 
@@ -225,7 +229,7 @@ class Song
 
 							}
 
-							var_dump($note['lyric']);
+							//var_dump($note['lyric']);
 
 						}
 					}

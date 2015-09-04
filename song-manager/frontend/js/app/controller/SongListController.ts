@@ -5,6 +5,7 @@ module rondo {
 
   export interface ISongListScope extends ng.IScope {
     list: Array<ISong>;
+    search: String;
     editSong(int): void;
   }
 
@@ -19,6 +20,7 @@ module rondo {
       private $location: ng.ILocationService
     ) {
       $scope.list = [];
+      $scope.search = "";
 
       $http.get("api/index.php/songs")
         .success(function(data: Array<ISong>, status, headers, config) {

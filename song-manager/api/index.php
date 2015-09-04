@@ -100,11 +100,12 @@ $app->post('/songs/:songId/:rawType', function ($songId, $rawType) use ($app) {
 $app->get('/import', function () use ($app) {
 	$app->contentType('text/html');
 
-	$path = '../../data/sibelius/converted-xml';
+	$path = '../../data/sibelius_export/converted-xml';
 	$files = scandir($path);
 
 	foreach($files as $file){
 		if (substr($file, -4) === '.xml'){
+			var_dump($file);
 			$data = file_get_contents($path.'/'.$file);
 			$song = new Song();
 			$song->loadFromXml($data);
@@ -118,12 +119,13 @@ $app->get('/import', function () use ($app) {
 $app->get('/import/:filename', function ($filename) use ($app) {
 	$app->contentType('text/html');
 
-	$path = '../../data/sibelius/converted-xml';
+	$path = '../../data/sibelius_export/converted-xml';
 
 	if (substr($filename, -4) === '.xml' && file_exists($path.'/'.$filename)){
 		$data = file_get_contents($path.'/'.$filename);
 		$song = new Song();
 		$song->loadFromXml($data);
+		$song->setTitle(trim($filename, '.xml'));
 		$song->save();
 	} else {
 		throw new Exception('File does not exist: '.$path.'/'.$filename);

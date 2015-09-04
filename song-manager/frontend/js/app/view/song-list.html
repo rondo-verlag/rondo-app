@@ -1,21 +1,25 @@
 <div class="container-fluid">
-	<div ng-controller="SongListCtrl">
-		<h1>Lieder</h1>
-		<table class="table table-striped">
-			<tr>
-				<th>ID</th>
-				<th>Titel</th>
-				<th>Lizenzfrei</th>
-				<th>Status</th>
-				<th>&nbsp;</th>
-			</tr>
-			<tr ng-repeat="song in list">
-				<td>{{song.id}}</td>
-				<td>{{song.title}}</td>
-				<td>{{song.isLicenseFree | yesno}}</td>
-				<td><status status="song.status"></status></td>
-				<td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
-			</tr>
-		</table>
-	</div>
+  <div ng-controller="SongListCtrl">
+    <h1>Rondo Lieder</h1>
+    <div class="form-group">
+      <input type="text" class="form-control" ng-model="search" placeholder="Suchen...">
+    </div>
+    <table class="table table-striped">
+      <tr>
+        <th>ID</th>
+        <th>Titel</th>
+        <th>Lizenzfrei</th>
+        <th>Status</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr ng-repeat="song in filtered = (list | filter:search)" ng-dblclick="editSong(song.id)">
+        <td>{{song.id}}</td>
+        <td>{{song.title}}</td>
+        <td>{{song.isLicenseFree | yesno}}</td>
+        <td><status status="song.status"></status></td>
+        <td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
+      </tr>
+    </table>
+    <p class="text-muted">{{filtered.length}} Lieder gefunden</p>
+  </div>
 </div>

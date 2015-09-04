@@ -121,6 +121,7 @@ var rondo;
             this.$http = $http;
             this.$location = $location;
             $scope.list = [];
+            $scope.search = "";
             $http.get("api/index.php/songs")
                 .success(function (data, status, headers, config) {
                 $scope.list = data;
