@@ -20,7 +20,8 @@
 .songtext {
 	font-size: 1.3em; }
 .songtext .line {
-	line-height: 2.2em; }
+	line-height: 2.2em;
+	clear: both; }
 .songtext .line .bl {
 	float: left;
 	height: 1.5em; }
@@ -49,3 +50,5 @@
 	color: #888; }
 .rondo-show-chords .songtext .chord {
 	color: #FFF; }
+.rondo-show-chords .songtext .paragraph {
+	margin-bottom: 4.5em; }
