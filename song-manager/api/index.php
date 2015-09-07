@@ -109,7 +109,8 @@ $app->get('/import', function () use ($app) {
 			$data = file_get_contents($path.'/'.$file);
 			$song = new Song();
 			$song->loadFromXml($data);
-			$song->setTitle(trim($file, '.xml'));
+			$title = trim(str_replace('.xml', '', $file));
+			$song->setTitle($title);
 			$song->save();
 		}
 	}
@@ -125,12 +126,74 @@ $app->get('/import/:filename', function ($filename) use ($app) {
 		$data = file_get_contents($path.'/'.$filename);
 		$song = new Song();
 		$song->loadFromXml($data);
-		$song->setTitle(trim($filename, '.xml'));
+		$title = trim(str_replace('.xml', '', $filename));
+		$song->setTitle($title);
 		$song->save();
 	} else {
 		throw new Exception('File does not exist: '.$path.'/'.$filename);
 	}
 
+});
+
+$app->get('/importpng', function () use ($app, &$DB) {
+	$app->contentType('text/html');
+
+	$path = '../../data/sibelius_export/converted-png';
+	$files = scandir($path);
+
+	foreach($files as $file){
+		if (substr($file, -4) === '.png'){
+			//var_dump($file);
+
+
+			$songtitle = substr($file, 0, -4);
+			$songtitle = str_replace('_0001','',$songtitle);
+			//var_dump($songtitle);
+			$ids = $DB->fetchAll("SELECT id FROM songs WHERE title = ?", array($songtitle));
+			if(isset($ids[0]['id'])){
+				var_dump($ids[0]['id']);
+				$second_file = str_replace('_0001','_0002',$file);
+				if ($file != $second_file && file_exists($path.'/'.$second_file)){
+
+					// concat image 0001 and 0002 into a single image
+					$image1 = imagecreatefrompng($path.'/'.$file);
+					$image2 = imagecreatefrompng($path.'/'.$second_file);
+
+					$w1 = imagesx($image1);
+					$h1 = imagesy($image1);
+					$w2 = imagesx($image2);
+					$h2 = imagesy($image2);
+
+					$newWidth = max($w1, $w2);
+					$newHeight = $h1 + $h2;
+					$newImage = imagecreatetruecolor($newWidth, $newHeight);
+					$white = imagecolorallocate($newImage, 255, 255, 255);
+					imagefill($newImage, 0, 0, $white);
+
+					imagecopyresampled($newImage, $image1, 0, 0, 0, 0, $w1, $h1, $w1, $h1);
+					imagecopyresampled($newImage, $image2, 0, $h1, 0, 0, $w2, $h2, $w2, $h2);
+
+					ob_start();
+					imagejpeg($newImage);
+					$data = ob_get_clean();
+
+				} else {
+					$data = file_get_contents($path.'/'.$file);
+				}
+
+				$song = new Song($ids[0]['id']);
+				$song->setRawData('rawNotesPNG', $data);
+				$song->save();
+			} else {
+				var_dump("no song found for $songtitle");
+			}
+
+/*
+			$song = new Song();
+			$song->save();
+*/
+		}
+	}
 });
 
 // export json index for app

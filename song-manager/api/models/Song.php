@@ -116,13 +116,23 @@ class Song
 		$html .= '<div class="line">';
 		$html .= '<div class="bl">';
 
+		$last_token = null;
+
 		foreach($tokens as $token){
 			//var_dump($token);
+
+			if ($last_token == 'T_CHORD' && $last_token != $token['token']){
+				$html .= '</span>';
+			}
+
 			switch($token['token']){
 				case 'T_CHORD':
+					if ($last_token != 'T_CHORD'){
+						$html .= '<span class="chord">';
+					}
 					// remove brackets
 					$chord = substr($token['match'],1,-1);
-					$html .= '<span class="chord">'.$chord.'</span>';
+					$html .= '<span>'.$chord.'</span>';
 					break;
 				case 'T_NEWLINE':
 					$html .= '</div></div><div class="line"><div class="bl">';
@@ -134,10 +144,12 @@ class Song
 					$html .= '<span class="empty-chord"></span>'.$token['match'].'&nbsp;</div><div class="bl">';
 					break;
 				case 'T_WHITESPACE':
+					$html .= '</div><div class="bl">';
 					break;
 				default:
 					$html .= $token['match'];
 			}
+			$last_token = $token['token'];
 		}
 
 		$html .= '</div>';
@@ -169,6 +181,8 @@ class Song
 			$measures = $array['part'][0]['measure'];
 		}
 
+		$notelyrics = [];
+		$textlyrics = [];
 		$output = '';
 
 		//var_dump($xml_string);
@@ -176,6 +190,7 @@ class Song
 
 			foreach ($measures as $measure){
 
+				$current_chord = '';
 				// Chords
 				if (isset($measure['harmony'])){
 					if(isset($measure['harmony']['@attributes'])){
@@ -196,7 +211,11 @@ class Song
 							if ($kind_type == 'dominant') {
 								$kind = '7';
 							}
-							$output .= '['.$step.$kind.']';
+							$current_chord .= '['.$step.$kind.']';
+							// add chord to existing lines
+							foreach($notelyrics as $lnr => $val){
+								$notelyrics[$lnr] .= $current_chord;
+							}
 						}
 					}
 				}
@@ -212,21 +231,30 @@ class Song
 
 					foreach ($arr as $note) {
 						if (isset($note['lyric'])){
-							if(isset($note['lyric']['syllabic']) or isset($note['lyric']['text'])){
+							// make array if only one lyric is available to process as usual
+							if(isset($note['lyric']['syllabic']) or isset($note['lyric']['text'])) {
+								$lyrictemp = $note['lyric'];
+								$note['lyric'] = [];
+								$note['lyric'][0] = $lyrictemp;
+							}
 
+							var_dump($note['lyric']);
+							foreach($note['lyric'] as $lyrics){
 								$hasSpace = false;
-								if(isset($note['lyric']['syllabic'])){
-									if ($note['lyric']['syllabic'] == 'single' or $note['lyric']['syllabic'] == 'end'){
+								if (isset($lyrics['syllabic'])) {
+									if ($lyrics['syllabic'] == 'single' or $lyrics['syllabic'] == 'end') {
 										$hasSpace = true;
 									}
 								}
 
-								if (isset($note['lyric']['text'])){
-									$output .= $note['lyric']['text'] . ($hasSpace?' ':'');
+								if (isset($lyrics['text'])) {
+									$versenr = $lyrics['@attributes']['number'];
+									if(!isset($notelyrics[$versenr])){
+										// initialize with current chord
+										$notelyrics[$versenr] = $current_chord;
+									}
+									$notelyrics[$versenr] .= $lyrics['text'] . ($hasSpace ? ' ' : '');
 								}
-							} else {
-								var_dump($note['lyric']);
-
 							}
 
 							//var_dump($note['lyric']);
@@ -239,7 +267,10 @@ class Song
 
 				// BARLINE = newline
 				if (isset($measure['barline'])){
-					$output .= "\n";
+					foreach($notelyrics as $lnr => $val){
+						$notelyrics[$lnr] .= "\n";
+					}
+					//$output .= "\n";
 				}
 
 
@@ -254,9 +285,16 @@ class Song
 				}
 			}
 		}
+		//var_dump($notelyrics);
+		$notesoutput = '';
+		foreach($notelyrics as $line){
+			$notesoutput .= $line."\n\n";
+		}
+		$output = $notesoutput.$output;
 
 		// remove tabs
 		$output = trim(preg_replace('/\t+/', ' ', $output));
+		var_dump($output);
 
 		return $output;
 	}

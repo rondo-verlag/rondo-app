@@ -10,6 +10,8 @@ module rondo {
     save(): void;
     showList(): void;
     preview: any;
+    prevSongId: number;
+    nextSongId: number;
   }
 
   export interface ISongDetailRouteParams extends angular.route.IRouteParamsService {
@@ -34,6 +36,8 @@ module rondo {
 
       $scope.song = null;
       $scope.showAccords = true;
+      $scope.prevSongId = parseInt($routeParams.songId) - 1;
+      $scope.nextSongId = parseInt($routeParams.songId) + 1;
 
       this.loadData();
 
