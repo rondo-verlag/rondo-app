@@ -132,19 +132,43 @@ $app->get('/import/:filename', function ($filename) use ($app) {
 	} else {
 		throw new Exception('File does not exist: '.$path.'/'.$filename);
 	}
+});
 
+$app->get('/importsib', function () use ($app, &$DB) {
+	$app->contentType('text/html');
+	ini_set('max_execution_time', 300);
+
+	$path = '../../data/sibelius_export/all';
+	$files = scandir($path);
+
+	foreach($files as $file){
+		if (substr($file, -4) === '.sib'){
+			$songtitle = substr($file, 0, -4);
+			$songtitle = str_replace('_0001','',$songtitle);
+			//var_dump($songtitle);
+			$ids = $DB->fetchAll("SELECT id FROM songs WHERE title = ?", array($songtitle));
+			if(isset($ids[0]['id'])){
+				var_dump($ids[0]['id']);
+				$data = file_get_contents($path.'/'.$file);
+				$song = new Song($ids[0]['id']);
+				$song->setRawData('rawSIB', $data);
+				$song->save();
+			} else {
+				var_dump("no song found for $songtitle");
+			}
+		}
+	}
 });
 
 $app->get('/importpng', function () use ($app, &$DB) {
 	$app->contentType('text/html');
+	ini_set('max_execution_time', 300);
 
 	$path = '../../data/sibelius_export/converted-png';
 	$files = scandir($path);
 
 	foreach($files as $file){
 		if (substr($file, -4) === '.png'){
-			//var_dump($file);
-
 
 			$songtitle = substr($file, 0, -4);
 			$songtitle = str_replace('_0001','',$songtitle);
@@ -187,11 +211,6 @@ $app->get('/importpng', function () use ($app, &$DB) {
 			} else {
 				var_dump("no song found for $songtitle");
 			}
-
-/*
-			$song = new Song();
-			$song->save();
-*/
 		}
 	}
 });

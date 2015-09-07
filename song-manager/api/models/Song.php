@@ -238,7 +238,7 @@ class Song
 								$note['lyric'][0] = $lyrictemp;
 							}
 
-							var_dump($note['lyric']);
+							//var_dump($note['lyric']);
 							foreach($note['lyric'] as $lyrics){
 								$hasSpace = false;
 								if (isset($lyrics['syllabic'])) {
