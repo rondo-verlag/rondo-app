@@ -26,7 +26,9 @@
             <label for="alternativeTitles" class="col-sm-3 control-label">Weitere Titel</label>
             <div class="col-sm-9">
               <textarea id="alternativeTitles" class="form-control" rows="2" ng-model="song.alternativeTitles"></textarea>
-              <span class="small">Alternative Titel unter denen das Lied aufgelistet wird (Erste Zeile, Refrain etc.). Ein Titel pro Zeile.</span>
+              <span class="small">
+                Alternative Titel unter denen das Lied aufgelistet wird (Erste Zeile, Refrain etc.). Ein Titel pro Zeile. <br>
+                Erster Buchstabe gross, ansonsten wie Text</span>
             </div>
           </div>
 
@@ -35,6 +37,11 @@
 
             <div class="col-sm-9">
               <textarea id="text" class="form-control" rows="15" ng-model="song.text"></textarea>
+              <span class="small">
+                Moll-Akkorde in deutscher Notation (z.B. "Hm" und nicht "h")<br>
+                Strophen nicht nummerieren<br>
+                Ref. (ohne Doppelpunkt) wird immer wiederholt (nicht nur Wort «Ref.», sondern gesamter Text)
+              </span>
             </div>
           </div>
 
