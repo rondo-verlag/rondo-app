@@ -15,6 +15,7 @@ module rondo {
   RondoApp.controller('SongListCtrl', SongListCtrl);
   RondoApp.filter("yesno", rondo.filters.yesno);
   RondoApp.directive("status", rondo.directives.status);
+  RondoApp.directive("license", rondo.directives.license);
 
   RondoApp.config(['$routeProvider',
     function($routeProvider: angular.route.IRouteProvider) {

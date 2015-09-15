@@ -17,7 +17,7 @@ $app->config('debug', true);
 $app->response->headers->set('Content-Type', 'application/json');
 
 $app->get('/songs', function () use(&$DB) {
-	$songs = $DB->fetchAll("SELECT id, title, isLicenseFree, status FROM songs");
+	$songs = $DB->fetchAll("SELECT id, title, license, status FROM songs");
 	echo json_encode($songs);
 });
 

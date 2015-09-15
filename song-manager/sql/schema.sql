@@ -6,8 +6,8 @@ CREATE TABLE `songs` (
   `pageRondoRed` int(11) DEFAULT NULL,
   `pageRondoBlue` int(11) DEFAULT NULL,
   `pageRondoGreen` int(11) DEFAULT NULL,
-  `isLicenseFree` tinyint(1) NOT NULL DEFAULT '0',
   `copyrightInfo` text,
+  `license` enum('UNKNOWN','FREE','LICENSED') NOT NULL DEFAULT 'UNKNOWN',
   `comments` text,
   `status` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
   `updated` int(11) DEFAULT NULL,
@@ -15,6 +15,7 @@ CREATE TABLE `songs` (
   `rawXML` longblob,
   `rawSIB` longblob,
   `rawNotesPDF` longblob,
+  `rawNotesPNG` longblob,
   `rawMidi` longblob,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

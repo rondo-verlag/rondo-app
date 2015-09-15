@@ -6,7 +6,7 @@ module rondo {
   export interface ISong {
     id: string;
     title: string;
-    isLicenseFree: string;
+    license: string;
     status: string;
     alternativeTitles?: string;
     text?: string;

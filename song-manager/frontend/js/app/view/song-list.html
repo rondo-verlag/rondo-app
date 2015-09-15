@@ -15,7 +15,7 @@
       <tr ng-repeat="song in filtered = (list | filter:search)" ng-dblclick="editSong(song.id)">
         <td>{{song.id}}</td>
         <td>{{song.title}}</td>
-        <td>{{song.isLicenseFree | yesno}}</td>
+        <td><license license="song.license"></license></td>
         <td><status status="song.status"></status></td>
         <td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
       </tr>
