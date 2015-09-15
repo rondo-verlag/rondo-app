@@ -33,7 +33,8 @@
 .songtext .chord ~ .empty-chord {
 	display: none; }
 .songtext .paragraph {
-	margin-bottom: 3em; }
+	padding-bottom: 2.5em;
+	overflow: hidden; }
 .songtext .p_chorus {
 	font-style: italic; }
 .songtext .comment {
@@ -51,4 +52,4 @@
 .rondo-show-chords .songtext .chord {
 	color: #FFF; }
 .rondo-show-chords .songtext .paragraph {
-	margin-bottom: 4.5em; }
+	padding-bottom: 3.5em; }
