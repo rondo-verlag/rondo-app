@@ -164,6 +164,7 @@
         <form>
           <div class="form-group">
             <label for="inputImage" class="control-label">Titelbild</label>
+            1242 x 660 px<br>
             <input type="file" name="file" id="inputImage" onchange="angular.element(this).scope().uploadFile(this.files, 'rawImage')"/>
             <div ng-if="song.rawImageSize > 0">
               <br>
