@@ -5,7 +5,7 @@
 Songbook.controller("SongSearchController", function($scope, $ionicPlatform, $ionicModal, SongService) {
   $scope.songs = [];
   $scope.search = {
-      name: ''
+      title: ''
   };
 
   // load songs
