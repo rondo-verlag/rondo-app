@@ -217,7 +217,7 @@ $app->get('/importpng', function () use ($app, &$DB) {
 
 // export json index for app
 $app->get('/export/index', function () use ($app, &$DB) {
-	$path = '../../data/export/song-index.json';
+	$path = '../../app/www/resources/songs/song-index.json';
 	$index = [];
 
 	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen
@@ -251,7 +251,7 @@ $app->get('/export/index', function () use ($app, &$DB) {
 // export html files & images for app
 $app->get('/export/html', function () use ($app, &$DB) {
 	umask(0);
-	$path = '../../data/export/';
+	$path = '../../app/www/resources/songs/';
 
 	$songIds = $DB->fetchAll("SELECT id FROM songs
 		WHERE license = 'FREE'
