@@ -220,11 +220,14 @@ $app->get('/export/index', function () use ($app, &$DB) {
 	$path = '../../data/export/song-index.json';
 	$index = [];
 
-	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen FROM songs");
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen
+		FROM songs
+		WHERE license = 'FREE'
+		/*AND status = 'DONE'*/");
 
 	foreach($songs as $song){
 		$alternativeTitles = $song['alternativeTitles'];
-		$song['title'] = strtoupper($song['title']);
+		$song['title'] = strtoupper(normalizer_normalize($song['title'], Normalizer::FORM_C ));
 		unset($song['alternativeTitles']);
 		$index[] = $song;
 
@@ -239,22 +242,29 @@ $app->get('/export/index', function () use ($app, &$DB) {
 	}
 
 	$json = json_encode($index, JSON_PRETTY_PRINT);
+	umask(0);
 	file_put_contents($path, $json);
+	chmod($path, 0777);
 	echo $json;
 });
 
-// export json index for app
+// export html files & images for app
 $app->get('/export/html', function () use ($app, &$DB) {
+	umask(0);
 	$path = '../../data/export/';
 
-	$songIds = $DB->fetchAll("SELECT id FROM songs");
+	$songIds = $DB->fetchAll("SELECT id FROM songs
+		WHERE license = 'FREE'
+		/*AND status = 'DONE'*/");
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
 
 		// generate html
 		$html = $song->getHtml(true);
-		file_put_contents($path.'html/'.$songId['id'].'.html', $html);
+		$filepath = $path.'html/'.$songId['id'].'.html';
+		file_put_contents($filepath, $html);
+		chmod($filepath, 0777);
 
 		// generate image
 		$data = $song->getData();
@@ -263,9 +273,12 @@ $app->get('/export/html', function () use ($app, &$DB) {
 			ob_start();
 			imagepng(imagecreatefromstring($data['rawImage']));
 			$image = ob_get_clean();
-			file_put_contents($path.'images/'.$songId['id'].'.png', $image);
+			$imagepath = $path.'images/'.$songId['id'].'.png';
+			file_put_contents($imagepath, $image);
+			chmod($imagepath, 0777);
 		}
 	}
+	echo count($songIds)." Songs exportiert.";
 });
 
 $app->run();
