@@ -141,10 +141,10 @@ class Song
 					$html .= '</div></div></div><div class="paragraph"><div class="line"><div class="bl">';
 					break;
 				case 'T_STRING':
-					$html .= '<span class="empty-chord"></span>'.$token['match'].'&nbsp;</div><div class="bl">';
+					$html .= '<span class="empty-chord"></span>'.$token['match'].'</div><div class="bl">';
 					break;
 				case 'T_WHITESPACE':
-					$html .= '</div><div class="bl">';
+					$html .= '&nbsp;</div><div class="bl">';
 					break;
 				default:
 					$html .= $token['match'];
