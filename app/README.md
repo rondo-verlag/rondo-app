@@ -15,11 +15,26 @@ $ ionic plugin add org.apache.cordova.device
 $ ionic plugin add org.apache.cordova.file
 ```
 
-# Update
-Update Ionic if needed:
-```bash
-npm install -g ionic
-```
+## Useful commands
+
+Update Ionic:
+
+    npm install -g ionic
+    ionic lib update
+
+Upload App to Ionic View:
+
+    ionic upload
+
+Building Android APK:
+
+    ionic build android
+
+Building Ionic SCSS (to apply dark theme):
+
+    cd app/www/lib/ionic/scss
+    scss --no-cache --update ionic.scss:../css/ionic.css
+
 
 ## Known Bugs
  * Search Bar weg wenn man zurück kommt vom Lied im Fullscreen Mode
