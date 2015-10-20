@@ -227,7 +227,7 @@ $app->get('/export/index', function () use ($app, &$DB) {
 
 	foreach($songs as $song){
 		$alternativeTitles = $song['alternativeTitles'];
-		$song['title'] = strtoupper(normalizer_normalize($song['title'], Normalizer::FORM_C ));
+		$song['title'] = strtoupper(normalizer_normalize($song['title'], Normalizer::FORM_KD));
 		unset($song['alternativeTitles']);
 		$index[] = $song;
 
