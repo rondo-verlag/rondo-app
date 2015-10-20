@@ -122,16 +122,6 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
-.nav-bar {
-  -webkit-transition: top 0.5s;
-  transition: top 0.5s;
-}
-
-.tabs {
-  -webkit-transition: bottom 0.5s;
-  transition: bottom 0.5s;
-}
-
 .fullscreen {
   ion-header-bar {
     top: -80px;
@@ -139,20 +129,33 @@ input[type='range']::-webkit-slider-thumb {
   .tabs {
     bottom: -80px;
   }
+
 }
 
-.has-header {
-  top: 0;
-}
-.has-tabs {
-  bottom: 0;
-}
+.song-detail {
+  .nav-bar {
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+  }
 
-.header-placeholder {
-  height: 44px;
-}
-.tabs-placeholder {
-  height: 49px;
+  .tabs {
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+  }
+
+  .has-header {
+    top: 0;
+  }
+  .has-tabs {
+    bottom: 0;
+  }
+
+  .header-placeholder {
+    height: 44px;
+  }
+  .tabs-placeholder {
+    height: 49px;
+  }
 }
 
 chord {
@@ -178,21 +181,40 @@ chord {
   font-size: 140%;
 }
 
+.page-numbers {
+  line-height: 25px;
+  height: 25px;
+  margin-top: -35px;
+  margin-bottom: 10px;
+  padding-top: 0;
+  .rondo-red {
+    color: red;
+  }
+  .rondo-blue {
+    color: blue;
+  }
+  .rondo-green {
+    color: #99FF99;
+  }
+}
+
 // Song List & Search
 .rondo-bar-search {
-  background: #ffffff !important;
-
   label {
-    background: #ffffff;
-    border: 1px solid black;
+    background: #4A4A4A;
+    border: 0;
 
     .placeholder-icon {
-      color: #000000;
+      color: #CCC;
       font-size: 140%;
     }
 
     input {
       text-transform: uppercase;
+      color: #FFF;
+    }
+    input::-webkit-input-placeholder {
+      color: #CCC;
     }
   }
 }

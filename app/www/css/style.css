@@ -78,29 +78,24 @@ input[type='range']::-webkit-slider-thumb {
     .popover.chord-popover .content img {
       margin-left: 5px; }
 
-.nav-bar {
-  -webkit-transition: top 0.5s;
-  transition: top 0.5s; }
-
-.tabs {
-  -webkit-transition: bottom 0.5s;
-  transition: bottom 0.5s; }
-
 .fullscreen ion-header-bar {
   top: -80px; }
 .fullscreen .tabs {
   bottom: -80px; }
 
-.has-header {
+.song-detail .nav-bar {
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s; }
+.song-detail .tabs {
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s; }
+.song-detail .has-header {
   top: 0; }
-
-.has-tabs {
+.song-detail .has-tabs {
   bottom: 0; }
-
-.header-placeholder {
+.song-detail .header-placeholder {
   height: 44px; }
-
-.tabs-placeholder {
+.song-detail .tabs-placeholder {
   height: 49px; }
 
 chord {
@@ -121,16 +116,30 @@ chord {
   text-transform: uppercase;
   font-size: 140%; }
 
-.rondo-bar-search {
-  background: #ffffff !important; }
-  .rondo-bar-search label {
-    background: #ffffff;
-    border: 1px solid black; }
-    .rondo-bar-search label .placeholder-icon {
-      color: #000000;
-      font-size: 140%; }
-    .rondo-bar-search label input {
-      text-transform: uppercase; }
+.page-numbers {
+  line-height: 25px;
+  height: 25px;
+  margin-top: -35px;
+  margin-bottom: 10px;
+  padding-top: 0; }
+  .page-numbers .rondo-red {
+    color: red; }
+  .page-numbers .rondo-blue {
+    color: blue; }
+  .page-numbers .rondo-green {
+    color: #99FF99; }
+
+.rondo-bar-search label {
+  background: #4A4A4A;
+  border: 0; }
+  .rondo-bar-search label .placeholder-icon {
+    color: #CCC;
+    font-size: 140%; }
+  .rondo-bar-search label input {
+    text-transform: uppercase;
+    color: #FFF; }
+  .rondo-bar-search label input::-webkit-input-placeholder {
+    color: #CCC; }
 
 .rondo-list .item {
   border: none; }
