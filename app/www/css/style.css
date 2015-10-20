@@ -28,7 +28,8 @@ input[type='range']::-webkit-slider-thumb {
   .songtext .chord ~ .empty-chord {
     display: none; }
   .songtext .paragraph {
-    margin-bottom: 3em; }
+    padding-bottom: 2.5em;
+    overflow: hidden; }
   .songtext .p_chorus {
     font-style: italic; }
   .songtext .comment {
@@ -62,6 +63,8 @@ input[type='range']::-webkit-slider-thumb {
   color: #888; }
   .rondo-show-chords .songtext .chord {
     color: #FFF; }
+  .rondo-show-chords .songtext .paragraph {
+    padding-bottom: 3.5em; }
 
 .popover.chord-popover {
   width: 80px;

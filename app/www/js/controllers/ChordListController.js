@@ -2,19 +2,13 @@
  * View controller for the chord list page.
  *
  */
-Songbook.controller("ChordListController", function ($scope, $rootScope, $document, $stateParams, $http, SettingsService) {
+Songbook.controller("ChordListController", function ($scope, $rootScope, $document, $stateParams, $http, SongService) {
   $scope.songId = $stateParams.songId;
-  $scope.chords = [];
+  $scope.data = [];
 
-  $http({
-    method: 'GET',
-    url: 'resources/songs/json/' + $scope.songId
-  }).
-      success(function (data, status, headers, config) {
-        $scope.chords = extractChords(data);
-      }).
-      error(function (data, status, headers, config) {
-        // error handling...
+  SongService.getSongInfo($scope.songId)
+      .then( function(data){
+        $scope.data = data;
       });
 
   function extractChords(data){

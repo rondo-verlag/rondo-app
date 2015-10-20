@@ -30,10 +30,13 @@ Building Android APK:
 
     ionic build android
 
-Building Ionic SCSS (to apply dark theme):
+Building App SCSS:
 
-    cd app/www/lib/ionic/scss
-    scss --no-cache --update ionic.scss:../css/ionic.css
+    sass --no-cache --update www/css/style.scss:www/css/style.css
+
+Building Ionic SCSS (e.g. apply dark theme):
+
+    scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css
 
 
 ## Known Bugs

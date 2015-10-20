@@ -159,6 +159,25 @@ class Song
 		return $html;
 	}
 
+	public function getChordList(){
+		try {
+			$tokens = CrdParser::run($this->data['text']);
+		} catch(Exception $e){
+			return $e->getMessage();
+		}
+
+		$list = [];
+
+		foreach($tokens as $token){
+			if ($token['token'] == 'T_CHORD'){
+				$list[] = substr($token['match'],1,-1);
+			}
+		}
+		$list = array_unique($list);
+		sort($list);
+		return $list;
+	}
+
 	public function loadFromXml($xml_string){
 		$text = $this->xml2crd($xml_string);
 		$this->data['text'] = $text;

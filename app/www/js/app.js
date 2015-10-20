@@ -18,7 +18,7 @@ Songbook.run(function ($ionicPlatform) {
       $stateProvider.state("search", {
         url: "/",
         templateUrl: "templates/song-search.html",
-        controller: "SongSearchController"
+        controller: "SongListController"
       });
 
       $stateProvider.state("song", {

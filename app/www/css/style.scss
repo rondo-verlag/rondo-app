@@ -44,7 +44,8 @@ input[type='range']::-webkit-slider-thumb {
     display: none;
   }
   .paragraph {
-    margin-bottom: 3em;
+    padding-bottom: 2.5em;
+    overflow: hidden;
   }
   .p_chorus {
     font-style: italic;
@@ -96,6 +97,10 @@ input[type='range']::-webkit-slider-thumb {
 
     .chord {
       color: #FFF;
+    }
+
+    .paragraph {
+      padding-bottom: 3.5em;
     }
   }
 }

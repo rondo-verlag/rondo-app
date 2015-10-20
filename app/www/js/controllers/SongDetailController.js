@@ -2,12 +2,13 @@
  * View controller for the song detail page.
  *
  */
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService) {
+Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService) {
   $scope.songId = $stateParams.songId;
   $scope.title = $stateParams.songId;
   $scope.midiFile = false;
   $scope.playingSong = false;
   $scope.data = {};
+  $scope.info = {};
   $scope.songFile = 'resources/songs/html/' + $scope.songId + '.html';
 
   $scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
@@ -57,6 +58,11 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
       $scope.playingSong = false;
   };
 
+  SongService.getSongInfo($scope.songId)
+      .then( function(data){
+        $scope.info = data;
+      });
+
   $http({
     method: 'GET',
     url: 'resources/songs/html/' + $scope.songId
@@ -77,4 +83,5 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
         $scope.errormsg = 'Song konnte nicht geladen werden...';
         $scope.data = {}
       });
+
 });

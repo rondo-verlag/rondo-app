@@ -2,7 +2,7 @@
  * View controller for the searchable song list.
  *
  */
-Songbook.controller("SongSearchController", function($scope, $ionicPlatform, $ionicModal, SongService) {
+Songbook.controller("SongListController", function($scope, $ionicPlatform, $ionicModal, SongService) {
   $scope.songs = [];
   $scope.search = {
       title: ''
