@@ -122,7 +122,6 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
-.has-header,
 .nav-bar {
   -webkit-transition: top 0.5s;
   transition: top 0.5s;
@@ -137,13 +136,23 @@ input[type='range']::-webkit-slider-thumb {
   ion-header-bar {
     top: -80px;
   }
-  .has-header {
-    top: 0;
-    bottom: 0;
-  }
   .tabs {
     bottom: -80px;
   }
+}
+
+.has-header {
+  top: 0;
+}
+.has-tabs {
+  bottom: 0;
+}
+
+.header-placeholder {
+  height: 44px;
+}
+.tabs-placeholder {
+  height: 49px;
 }
 
 chord {
