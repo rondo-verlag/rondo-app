@@ -8,7 +8,7 @@
   </ion-header-bar>
   <ion-content>
     <ion-list class="rondo-list">
-      <ion-item collection-repeat="song in songs | filter:search" type="item-link" item-height="36" item-width="100%" ui-sref="song({songId: song.id})">
+      <ion-item collection-repeat="song in songs | filter:search" type="item-link" item-height="36" item-width="100%" ui-sref="song({songId: song.id})" ion-track-tap="Open Song" ion-track-data="{songId: song.id, title: song.title}">
         {{song.title}}
       </ion-item>
     </ion-list>

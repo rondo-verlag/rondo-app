@@ -1,12 +1,13 @@
-var Songbook = angular.module("songbook", ['ionic', 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
+var Songbook = angular.module("songbook", ['ionic','ionic.service.core', 'ionic.service.analytics','ionic.service.core', 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
 
-Songbook.run(function ($ionicPlatform) {
+Songbook.run(function ($ionicPlatform, $ionicAnalytics) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
+        $ionicAnalytics.register();
     });
 })
 
