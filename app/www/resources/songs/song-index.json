@@ -102,7 +102,6 @@
         "pageRondoBlue": null,
         "pageRondoGreen": "68",
         "chords": [
-            "A",
             "A7",
             "D"
         ],
@@ -113,13 +112,14 @@
         "title": "ARCHE NOAH",
         "pageRondoRed": null,
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "60",
         "chords": [
             "Am",
             "C",
             "C7",
-            "D",
+            "Dm",
             "F",
+            "Fm",
             "G7"
         ],
         "alternative": false
@@ -198,9 +198,9 @@
     {
         "id": "24",
         "title": "CARAMBA",
-        "pageRondoRed": null,
+        "pageRondoRed": "38",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "38",
         "chords": [
             "D7",
             "G"
@@ -210,9 +210,9 @@
     {
         "id": "26",
         "title": "CHEVALIERS DE LA TABLE RONDE",
-        "pageRondoRed": null,
+        "pageRondoRed": "70",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "70",
         "chords": [
             "A",
             "A7",
@@ -222,11 +222,25 @@
         "alternative": false
     },
     {
+        "id": "31",
+        "title": "DE GR\u00d6SCHT",
+        "pageRondoRed": "208",
+        "pageRondoBlue": "78",
+        "pageRondoGreen": "208",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
         "id": "32",
         "title": "DE T\u00d6FF VOM POLIZISCHT",
-        "pageRondoRed": null,
+        "pageRondoRed": "30",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "30",
         "chords": [
             "A",
             "D",
@@ -250,16 +264,31 @@
     },
     {
         "id": "38",
-        "title": "DU BISCH E CHEIBE NETTI",
-        "pageRondoRed": null,
+        "title": "I BIN EN ITALIANO",
+        "pageRondoRed": "64",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "64",
         "chords": [
-            "A7",
+            "A",
             "E",
-            "E7"
+            "E7",
+            "H7"
         ],
         "alternative": false
+    },
+    {
+        "id": "38",
+        "title": "Du bisch e cheibe netti",
+        "pageRondoRed": "64",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "64",
+        "chords": [
+            "A",
+            "E",
+            "E7",
+            "H7"
+        ],
+        "alternative": true
     },
     {
         "id": "39",
@@ -282,10 +311,11 @@
         "id": "41",
         "title": "EINE SEEFAHRT",
         "pageRondoRed": "10",
-        "pageRondoBlue": null,
+        "pageRondoBlue": "62",
         "pageRondoGreen": "10",
         "chords": [
             "A",
+            "D",
             "E"
         ],
         "alternative": false
@@ -346,9 +376,9 @@
     {
         "id": "47",
         "title": "FR\u00dcH AM MORGEN",
-        "pageRondoRed": null,
+        "pageRondoRed": "24",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "24",
         "chords": [
             "D",
             "G"
@@ -367,6 +397,45 @@
             "D",
             "Em",
             "Hm"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "50",
+        "title": "GOOD NIGHT, LADIES",
+        "pageRondoRed": "102",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "102",
+        "chords": [
+            "C",
+            "D7",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "51",
+        "title": "HANG DOWN YOUR HEAD, TOM DOOLEY",
+        "pageRondoRed": "88",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "152",
+        "chords": [
+            "D7",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "55",
+        "title": "HERING UND FLUNDER",
+        "pageRondoRed": "9",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "265",
+        "chords": [
+            "C",
+            "D",
+            "D7",
+            "G"
         ],
         "alternative": false
     },
@@ -400,6 +469,21 @@
         "alternative": false
     },
     {
+        "id": "61",
+        "title": "ICH KENNE EUROPAS ZONEN",
+        "pageRondoRed": "80",
+        "pageRondoBlue": "82",
+        "pageRondoGreen": "80",
+        "chords": [
+            "C",
+            "D7",
+            "Em",
+            "G",
+            "H7"
+        ],
+        "alternative": false
+    },
+    {
         "id": "62",
         "title": "ICH KENNE EINEN COWBOY",
         "pageRondoRed": "195",
@@ -413,22 +497,23 @@
     },
     {
         "id": "63",
-        "title": "IN EINEM POLENSTA\u0308DTCHEN",
-        "pageRondoRed": null,
+        "title": "IN EINEM POLENST\u00c4DTCHEN",
+        "pageRondoRed": "43",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "46",
         "chords": [
             "A",
-            "E"
+            "E",
+            "H7"
         ],
         "alternative": false
     },
     {
         "id": "64",
         "title": "IN EINER BAR",
-        "pageRondoRed": null,
+        "pageRondoRed": "37",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "37",
         "chords": [
             "D7",
             "G"
@@ -447,6 +532,18 @@
             "D",
             "D7",
             "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "66",
+        "title": "JOSHUA FOUGHT THE BATTLE OF JERICHO",
+        "pageRondoRed": "108",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "108",
+        "chords": [
+            "A7",
+            "Dm"
         ],
         "alternative": false
     },
@@ -470,6 +567,7 @@
         "pageRondoBlue": null,
         "pageRondoGreen": "232",
         "chords": [
+            "Am",
             "C",
             "Em",
             "F",
@@ -482,7 +580,7 @@
         "id": "72",
         "title": "L' INVERNO \u00c8 PASSATO",
         "pageRondoRed": "66",
-        "pageRondoBlue": null,
+        "pageRondoBlue": "94",
         "pageRondoGreen": "66",
         "chords": [
             "D7",
@@ -506,11 +604,12 @@
     {
         "id": "82",
         "title": "MAN ST\u00dcRZTE SICH ZUR SONNTAGSZEIT",
-        "pageRondoRed": null,
+        "pageRondoRed": "54",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "54",
         "chords": [
             "C",
+            "G",
             "G7"
         ],
         "alternative": false
@@ -611,16 +710,56 @@
         "alternative": true
     },
     {
-        "id": "99",
-        "title": "OH WA\u0308NN DE SA\u0308NN",
-        "pageRondoRed": null,
+        "id": "98",
+        "title": "OH SUSANNA",
+        "pageRondoRed": "82",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "82",
+        "chords": [
+            "A7",
+            "D",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "99",
+        "title": "OH W\u00c4NN DE S\u00c4NN",
+        "pageRondoRed": "76",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "76",
         "chords": [
             "A",
             "Am",
             "E",
-            "E7"
+            "E7",
+            "H7"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "100",
+        "title": "OLD MAC DONALD",
+        "pageRondoRed": "79",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "79",
+        "chords": [
+            "C",
+            "D7",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "103",
+        "title": "PFADI ROCK'N'ROLL",
+        "pageRondoRed": "90",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "90",
+        "chords": [
+            "A",
+            "E",
+            "H7"
         ],
         "alternative": false
     },
@@ -694,11 +833,15 @@
     {
         "id": "117",
         "title": "SCARBOROUGH FAIR",
-        "pageRondoRed": null,
+        "pageRondoRed": "158",
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "158",
         "chords": [
-
+            "B",
+            "C",
+            "Dm",
+            "F",
+            "G"
         ],
         "alternative": false
     },
@@ -709,7 +852,6 @@
         "pageRondoBlue": "108",
         "pageRondoGreen": "32",
         "chords": [
-            "A",
             "A7",
             "D",
             "G",
@@ -718,11 +860,39 @@
         "alternative": false
     },
     {
-        "id": "126",
-        "title": "S\u00d6LLE MER DE B\u00d6LLE",
+        "id": "121",
+        "title": "SINGING I I",
+        "pageRondoRed": "87",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "78",
+        "chords": [
+            "C",
+            "D7",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "125",
+        "title": "SONG OF THE INTERNATIONAL YEAR OF THE CHILD",
         "pageRondoRed": null,
         "pageRondoBlue": null,
-        "pageRondoGreen": null,
+        "pageRondoGreen": "184",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "F",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "126",
+        "title": "S\u00d6LLE MER DE B\u00d6LLE",
+        "pageRondoRed": "25",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "25",
         "chords": [
             "C",
             "Dm"
@@ -776,9 +946,21 @@
         "pageRondoBlue": null,
         "pageRondoGreen": "24",
         "chords": [
-            "(Am7)",
             "C",
             "Dm"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "145",
+        "title": "WIEGENDE WELLEN",
+        "pageRondoRed": "45",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "179",
+        "chords": [
+            "A7",
+            "D",
+            "G"
         ],
         "alternative": false
     },
@@ -789,10 +971,9 @@
         "pageRondoBlue": null,
         "pageRondoGreen": "49",
         "chords": [
-            "B",
-            "C",
-            "C7",
-            "F"
+            "A7",
+            "D",
+            "G"
         ],
         "alternative": false
     },
