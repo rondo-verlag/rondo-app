@@ -260,7 +260,8 @@ $app->get('/export/index', function () use ($app, &$DB) {
 			'pageRondoRed' => $song['pageRondoRed'],
 			'pageRondoBlue' => $song['pageRondoBlue'],
 			'pageRondoGreen' => $song['pageRondoGreen'],
-			'chords' => $chords
+			'chords' => $chords,
+			'alternative' => false
 		];
 
 		// alternative titel
@@ -273,7 +274,8 @@ $app->get('/export/index', function () use ($app, &$DB) {
 					'pageRondoRed' => $song['pageRondoRed'],
 					'pageRondoBlue' => $song['pageRondoBlue'],
 					'pageRondoGreen' => $song['pageRondoGreen'],
-					'chords' => $chords
+					'chords' => $chords,
+					'alternative' => true
 				];
 			}
 		}

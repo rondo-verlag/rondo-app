@@ -13,8 +13,13 @@ input[type='range']::-webkit-slider-thumb {
   text-decoration: none;
   color: inherit; }
 
+.bar {
+  border-bottom: 1px solid transparent;
+  background: none; }
+
 .songtext {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  letter-spacing: 1px; }
   .songtext .line {
     line-height: 2.2em; }
     .songtext .line .bl {
@@ -114,7 +119,8 @@ chord {
 
 .song-title {
   text-transform: uppercase;
-  font-size: 140%; }
+  font-size: 140%;
+  letter-spacing: 2px; }
 
 .page-numbers {
   line-height: 25px;
@@ -136,7 +142,6 @@ chord {
     color: #CCC;
     font-size: 140%; }
   .rondo-bar-search label input {
-    text-transform: uppercase;
     color: #FFF; }
   .rondo-bar-search label input::-webkit-input-placeholder {
     color: #CCC; }
@@ -144,6 +149,7 @@ chord {
 .rondo-list .item {
   border: none; }
   .rondo-list .item .item-content {
-    padding: 8px 16px; }
+    padding: 8px 16px;
+    letter-spacing: 1px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,3 +8,4 @@ data/sibelius_export
 app/www/resources/songs/html/*.html
 app/www/resources/songs/images/*.png
 app/.io-config.json
+app/www/css/.sass-cache

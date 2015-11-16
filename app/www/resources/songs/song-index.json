@@ -10,7 +10,8 @@
             "Em",
             "G",
             "Hm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "1",
@@ -23,7 +24,8 @@
             "Em",
             "G",
             "Hm"
-        ]
+        ],
+        "alternative": true
     },
     {
         "id": "2",
@@ -36,7 +38,8 @@
             "C",
             "F",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "3",
@@ -48,7 +51,8 @@
             "C",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "7",
@@ -60,7 +64,8 @@
             "C",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "8",
@@ -73,7 +78,8 @@
             "D",
             "E",
             "E7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "9",
@@ -86,7 +92,8 @@
             "C7",
             "F",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "12",
@@ -98,7 +105,8 @@
             "A",
             "A7",
             "D"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "15",
@@ -113,7 +121,8 @@
             "D",
             "F",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "16",
@@ -126,7 +135,8 @@
             "Em",
             "G",
             "H7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "17",
@@ -139,7 +149,8 @@
             "C7",
             "F",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "18",
@@ -152,7 +163,8 @@
             "D",
             "E",
             "H7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "18",
@@ -165,7 +177,8 @@
             "D",
             "E",
             "H7"
-        ]
+        ],
+        "alternative": true
     },
     {
         "id": "21",
@@ -179,7 +192,8 @@
             "C",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "24",
@@ -190,7 +204,8 @@
         "chords": [
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "26",
@@ -203,7 +218,8 @@
             "A7",
             "D",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "32",
@@ -215,7 +231,8 @@
             "A",
             "D",
             "E"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "33",
@@ -228,7 +245,8 @@
             "A7",
             "D",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "38",
@@ -240,7 +258,8 @@
             "A7",
             "E",
             "E7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "39",
@@ -256,7 +275,8 @@
             "Em",
             "Fism",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "41",
@@ -267,7 +287,8 @@
         "chords": [
             "A",
             "E"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "42",
@@ -280,7 +301,8 @@
             "D",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "43",
@@ -293,7 +315,8 @@
             "F",
             "G",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "44",
@@ -304,7 +327,8 @@
         "chords": [
             "D",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "45",
@@ -316,7 +340,8 @@
             "A",
             "D",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "47",
@@ -327,7 +352,8 @@
         "chords": [
             "D",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "49",
@@ -341,7 +367,8 @@
             "D",
             "Em",
             "Hm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "56",
@@ -354,7 +381,8 @@
             "D7",
             "Dm",
             "Gm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "59",
@@ -368,7 +396,8 @@
             "D",
             "E",
             "F"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "62",
@@ -379,7 +408,8 @@
         "chords": [
             "C",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "63",
@@ -390,7 +420,8 @@
         "chords": [
             "A",
             "E"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "64",
@@ -401,7 +432,8 @@
         "chords": [
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "65",
@@ -415,7 +447,8 @@
             "D",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "68",
@@ -427,7 +460,8 @@
             "C",
             "C7",
             "F"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "71",
@@ -441,7 +475,8 @@
             "F",
             "G",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "72",
@@ -452,7 +487,8 @@
         "chords": [
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "81",
@@ -464,7 +500,8 @@
             "C",
             "F",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "82",
@@ -475,7 +512,8 @@
         "chords": [
             "C",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "85",
@@ -486,7 +524,8 @@
         "chords": [
             "A7",
             "D"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "86",
@@ -499,7 +538,8 @@
             "F",
             "G",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "87",
@@ -511,7 +551,8 @@
             "A7",
             "E",
             "H7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "93",
@@ -526,7 +567,8 @@
             "D",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "94",
@@ -539,7 +581,8 @@
             "D7",
             "Em",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "96",
@@ -551,7 +594,8 @@
             "Am",
             "Em",
             "H7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "96",
@@ -563,7 +607,8 @@
             "Am",
             "Em",
             "H7"
-        ]
+        ],
+        "alternative": true
     },
     {
         "id": "99",
@@ -576,7 +621,8 @@
             "Am",
             "E",
             "E7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "107",
@@ -587,7 +633,8 @@
         "chords": [
             "C",
             "G7"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "108",
@@ -598,7 +645,8 @@
         "chords": [
             "A7",
             "Dm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "112",
@@ -610,7 +658,8 @@
             "A7",
             "D",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "116",
@@ -624,7 +673,8 @@
             "Dm",
             "F",
             "Gm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "116",
@@ -638,7 +688,8 @@
             "Dm",
             "F",
             "Gm"
-        ]
+        ],
+        "alternative": true
     },
     {
         "id": "117",
@@ -648,7 +699,8 @@
         "pageRondoGreen": null,
         "chords": [
 
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "120",
@@ -662,7 +714,8 @@
             "D",
             "G",
             "Hm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "126",
@@ -673,7 +726,8 @@
         "chords": [
             "C",
             "Dm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "127",
@@ -686,7 +740,8 @@
             "D",
             "Em",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "129",
@@ -698,7 +753,8 @@
             "Am",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "141",
@@ -710,7 +766,8 @@
             "C",
             "D7",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "142",
@@ -722,7 +779,8 @@
             "(Am7)",
             "C",
             "Dm"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "154",
@@ -735,7 +793,8 @@
             "C",
             "C7",
             "F"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "155",
@@ -747,7 +806,8 @@
             "C",
             "F",
             "G"
-        ]
+        ],
+        "alternative": false
     },
     {
         "id": "156",
@@ -759,6 +819,7 @@
             "B",
             "C7",
             "F"
-        ]
+        ],
+        "alternative": false
     }
 ]

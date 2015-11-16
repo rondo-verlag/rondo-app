@@ -2,7 +2,7 @@
  * View controller for the song detail page.
  *
  */
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService) {
+Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher) {
   $scope.songId = $stateParams.songId;
   $scope.title = $stateParams.songId;
   $scope.midiFile = false;
@@ -28,6 +28,24 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
 
   $scope.onScrollDown = function(){
     bodyElement.addClass('fullscreen');
+  };
+
+  $scope.onSwipeLeft = function(){
+    SongService.getNextSongId($scope.songId).then(
+        function(newSongId){
+          $ionicViewSwitcher.nextDirection('forward');
+          $state.go('song', {songId: newSongId})
+        }
+    );
+  };
+
+  $scope.onSwipeRight = function(){
+    SongService.getPreviousSongId($scope.songId).then(
+        function(newSongId){
+          $ionicViewSwitcher.nextDirection('back');
+          $state.go('song', {songId: newSongId})
+        }
+    );
   };
 
   $scope.toggleChords = function(){

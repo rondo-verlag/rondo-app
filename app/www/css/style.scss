@@ -21,10 +21,16 @@ input[type='range']::-webkit-slider-thumb {
   color: inherit;
 }
 
+.bar {
+  border-bottom: 1px solid transparent;
+  background: none;
+}
+
 
 // Components
 .songtext {
   font-size: 1.3em;
+  letter-spacing: 1px;
   .line {
     line-height: 2.2em;
     .bl {
@@ -179,6 +185,7 @@ chord {
 .song-title {
   text-transform: uppercase;
   font-size: 140%;
+  letter-spacing: 2px;
 }
 
 .page-numbers {
@@ -210,7 +217,6 @@ chord {
     }
 
     input {
-      text-transform: uppercase;
       color: #FFF;
     }
     input::-webkit-input-placeholder {
@@ -225,6 +231,8 @@ chord {
 
     .item-content {
       padding: 8px 16px;
+      letter-spacing: 1px;
+
     }
   }
 }
