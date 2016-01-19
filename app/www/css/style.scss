@@ -245,6 +245,19 @@ chord {
       color: #CCC;
     }
   }
+
+  .clear-search {
+    color: #CCC;
+    font-size: 140%;
+    position: absolute;
+    top: 7px;
+    right: 68px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
+  }
 }
 
 .rondo-list {

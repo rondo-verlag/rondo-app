@@ -20,7 +20,7 @@ Songbook.run(function ($ionicPlatform) {
     // Set up the various states which the app can be in.
     $stateProvider.state("search", {
         url: "/",
-        templateUrl: "templates/song-search.html",
+        templateUrl: "templates/song-list.html",
         controller: "SongListController"
     });
     $stateProvider.state("song", {
