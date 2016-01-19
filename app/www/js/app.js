@@ -83,11 +83,7 @@ Songbook.controller("SettingsController", function ($scope, SettingsService) {
         SettingsService.saveScrollSettings($scope.scroll);
     }, true);
 });
-/*
- * View controller for the song detail page.
- *
- */
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate) {
+Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
     $scope.songId = $stateParams.songId;
     $scope.title = $stateParams.songId;
     $scope.midiFile = false;
@@ -125,19 +121,19 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     };
     $scope.startAutoScroll = function () {
         $scope.scroll = true;
-        scrollTimer = setInterval(function () {
+        scrollTimer = $interval(function () {
             if (lastScrollPosition == $ionicScrollDelegate.getScrollPosition().top) {
                 $scope.stopAutoScroll();
             }
             else {
                 lastScrollPosition = $ionicScrollDelegate.getScrollPosition().top;
-                $ionicScrollDelegate.scrollBy(0, 10, false);
+                $ionicScrollDelegate.scrollBy(0, 1, false);
             }
         }, 100);
     };
     $scope.stopAutoScroll = function () {
         $scope.scroll = false;
-        clearInterval(scrollTimer);
+        $interval.cancel(scrollTimer);
     };
     $scope.toggleChords = function () {
         bodyElement.toggleClass('rondo-show-chords');

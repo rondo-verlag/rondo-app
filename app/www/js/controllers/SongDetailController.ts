@@ -2,7 +2,8 @@
  * View controller for the song detail page.
  *
  */
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate) {
+import IIntervalService = angular.IIntervalService;
+Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
   $scope.songId = $stateParams.songId;
   $scope.title = $stateParams.songId;
   $scope.midiFile = false;
@@ -15,7 +16,7 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
   $scope.scrollSpeed = SettingsService.getScrollSettings().speed;
   $scope.scroll = false;
   var scrollTimer;
-  var lastScrollPosition = -1;
+  var lastScrollPosition:number = -1;
 
   var bodyElement = angular.element(document.querySelectorAll('body'));
 
@@ -52,19 +53,19 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
 
   $scope.startAutoScroll = function(){
     $scope.scroll = true;
-    scrollTimer = setInterval(function(){
+    scrollTimer = $interval(() => {
       if(lastScrollPosition == $ionicScrollDelegate.getScrollPosition().top){
         $scope.stopAutoScroll();
       } else {
         lastScrollPosition = $ionicScrollDelegate.getScrollPosition().top;
-        $ionicScrollDelegate.scrollBy(0, 10, false);
+        $ionicScrollDelegate.scrollBy(0, 1, false);
       }
     }, 100);
   };
 
   $scope.stopAutoScroll = function(){
     $scope.scroll = false;
-    clearInterval(scrollTimer);
+    $interval.cancel(scrollTimer);
   };
 
   $scope.toggleChords = function(){
