@@ -3,7 +3,7 @@
  *
  */
 import IIntervalService = angular.IIntervalService;
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
+Songbook.controller("SongDetailController", function ($scope, $stateParams, $http:angular.IHttpService, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
   $scope.songId = $stateParams.songId;
   $scope.midiFile = false;
   $scope.playingSong = false;
@@ -125,9 +125,14 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
         // do whatever
     }
 
-    // cache next song
+    // cache songs
     SongService.getNextSongId($scope.songId).then((id) => {
       $http.get('resources/songs/html/' + id + '.html', { cache: true});
+      $http.get('resources/songs/images/' + id + '.png', { cache: true});
+    });
+    SongService.getPreviousSongId($scope.songId).then((id) => {
+      $http.get('resources/songs/html/' + id + '.html', { cache: true});
+      $http.get('resources/songs/images/' + id + '.png', { cache: true});
     });
 
   });

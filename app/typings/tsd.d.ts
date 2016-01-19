@@ -22,3 +22,4 @@
 /// <reference path="cordova/plugins/WebSQL.d.ts" />
 /// <reference path="ionic/ionic.d.ts" />
 /// <reference path="jquery/jquery.d.ts" />
+/// <reference path="angular-ui-router/angular-ui-router.d.ts" />

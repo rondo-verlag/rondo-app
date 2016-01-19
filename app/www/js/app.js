@@ -46,6 +46,11 @@ Songbook.run(function ($ionicPlatform) {
  */
 Songbook.controller("AboutController", function ($scope, SettingsService) {
 });
+/**
+ * View controller for the main app.
+ */
+Songbook.controller("AppController", function ($scope) {
+});
 /*
  * View controller for the chord list page.
  *
@@ -83,7 +88,7 @@ Songbook.controller("SettingsController", function ($scope, SettingsService) {
         SettingsService.saveScrollSettings($scope.scroll);
     }, true);
 });
-Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
+Songbook.controller("SongDetailController", function ($scope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
     $scope.songId = $stateParams.songId;
     $scope.midiFile = false;
     $scope.playingSong = false;
@@ -185,9 +190,14 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     $scope.$on("$ionicView.afterEnter", function (scopes, states) {
         if (states.fromCache && states.stateName == "song") {
         }
-        // cache next song
+        // cache songs
         SongService.getNextSongId($scope.songId).then(function (id) {
             $http.get('resources/songs/html/' + id + '.html', { cache: true });
+            $http.get('resources/songs/images/' + id + '.png', { cache: true });
+        });
+        SongService.getPreviousSongId($scope.songId).then(function (id) {
+            $http.get('resources/songs/html/' + id + '.html', { cache: true });
+            $http.get('resources/songs/images/' + id + '.png', { cache: true });
         });
     });
 });
@@ -553,6 +563,7 @@ Songbook.factory("SongService", function ($http, $q) {
 /// <reference path="../../typings/songbook-app.d.ts" />
 /// <reference path="songbook.ts" />
 /// <reference path="controllers/AboutController.ts" />
+/// <reference path="controllers/AppController.ts" />
 /// <reference path="controllers/ChordListController.ts" />
 /// <reference path="controllers/SettingsController.ts" />
 /// <reference path="controllers/SongDetailController.ts" />
