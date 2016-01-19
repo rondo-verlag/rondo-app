@@ -138,17 +138,19 @@ chord {
   letter-spacing: 2px; }
 
 .page-numbers {
-  line-height: 25px;
-  height: 25px;
-  margin-top: -35px;
-  margin-bottom: 10px;
-  padding-top: 0; }
+  line-height: 32px;
+  font-size: 110%; }
+  .page-numbers span {
+    margin: 0 !important; }
   .page-numbers .rondo-red {
     color: red; }
   .page-numbers .rondo-blue {
     color: blue; }
   .page-numbers .rondo-green {
     color: #99FF99; }
+
+ion-content .page-numbers {
+  display: none; }
 
 .rondo-bar-search label {
   background: #4A4A4A;

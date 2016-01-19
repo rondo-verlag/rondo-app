@@ -211,11 +211,11 @@ chord {
 }
 
 .page-numbers {
-  line-height: 25px;
-  height: 25px;
-  margin-top: -35px;
-  margin-bottom: 10px;
-  padding-top: 0;
+  line-height: 32px;
+  font-size: 110%;
+  span {
+    margin: 0 !important;
+  }
   .rondo-red {
     color: red;
   }
@@ -225,6 +225,9 @@ chord {
   .rondo-green {
     color: #99FF99;
   }
+}
+ion-content .page-numbers {
+  display: none;
 }
 
 // Song List & Search

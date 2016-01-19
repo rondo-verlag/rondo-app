@@ -85,12 +85,12 @@ Songbook.controller("SettingsController", function ($scope, SettingsService) {
 });
 Songbook.controller("SongDetailController", function ($scope, $rootScope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
     $scope.songId = $stateParams.songId;
-    $scope.title = $stateParams.songId;
     $scope.midiFile = false;
     $scope.playingSong = false;
     $scope.data = {};
     $scope.info = {};
     $scope.songFile = 'resources/songs/html/' + $scope.songId + '.html';
+    $scope.rondoPages = '';
     $scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
     $scope.scrollSpeed = SettingsService.getScrollSettings().speed;
     $scope.scroll = false;
@@ -163,6 +163,17 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     SongService.getSongInfo($scope.songId)
         .then(function (data) {
         $scope.info = data;
+        var pages = [];
+        if (data.pageRondoGreen) {
+            pages.push('<span class="rondo-green">' + data.pageRondoGreen + '</span>');
+        }
+        if (data.pageRondoBlue) {
+            pages.push('<span class="rondo-blue">' + data.pageRondoBlue + '</span>');
+        }
+        if (data.pageRondoRed) {
+            pages.push('<span class="rondo-red">' + data.pageRondoRed + '</span>');
+        }
+        $scope.rondoPages = pages.join('&nbsp;|&nbsp;');
     });
     $http({
         method: 'GET',
@@ -171,16 +182,11 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
         success(function (data, status, headers, config) {
         $scope.data = data;
         /*
-        if (angular.isDefined(data.meta.title)){
-          $scope.title = data.meta.title;
-        }
-
         if (angular.isString(data.meta.midiFile)) {
             $scope.midiFile = data.meta.midiFile;
         }*/
     }).
         error(function (data, status, headers, config) {
-        $scope.title = 'Ouch!';
         $scope.errormsg = 'Song konnte nicht geladen werden...';
         $scope.data = {};
     });
