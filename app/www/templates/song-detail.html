@@ -4,7 +4,7 @@
   </ion-nav-buttons>
   <ion-content overflow-scroll="true" on-drag-down="onScrollUp()" on-drag-up="onScrollDown()" class="has-tabs has-header" scrollbar-x="false" scrollbar-y="false" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
     <div class="header-placeholder"></div>
-    <ng-include src="songFile"></ng-include>
+    <div ng-bind-html="songFile"></div>
     <div class="tabs-placeholder"></div>
   </ion-content>
 

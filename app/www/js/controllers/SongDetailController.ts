@@ -9,10 +9,10 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
   $scope.playingSong = false;
   $scope.data = {};
   $scope.info = {};
-  $scope.songFile = 'resources/songs/html/' + $scope.songId + '.html';
+  $scope.songFile = '';//'resources/songs/html/' + $scope.songId + '.html';
   $scope.rondoPages = '';
-  $scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
-  $scope.scrollSpeed = SettingsService.getScrollSettings().speed;
+  //$scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
+  //$scope.scrollSpeed = SettingsService.getScrollSettings().speed;
   $scope.scroll = false;
   var scrollTimer;
   var lastScrollPosition:number = -1;
@@ -95,6 +95,8 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
     $scope.playingSong = false;
   };
 
+  // -- load data
+
   SongService.getSongInfo($scope.songId)
     .then( function(data){
       $scope.info = data;
@@ -111,20 +113,26 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
       $scope.rondoPages = pages.join('&nbsp;|&nbsp;')
     });
 
-  $http({
-    method: 'GET',
-    url: 'resources/songs/html/' + $scope.songId
-  }).
-      success(function (data, status, headers, config) {
-        $scope.data = data;
-        /*
-        if (angular.isString(data.meta.midiFile)) {
-            $scope.midiFile = data.meta.midiFile;
-        }*/
-      }).
-      error(function (data, status, headers, config) {
-        $scope.errormsg = 'Song konnte nicht geladen werden...';
-        $scope.data = {}
-      });
+  // get from cache if possible
+  $http.get('resources/songs/html/' + $scope.songId + '.html', { cache: true})
+    .then((response) => {
+      $scope.songFile = response.data;
+    });
+
+  // when animations are done
+  $scope.$on( "$ionicView.afterEnter", function( scopes, states ) {
+    if(states.fromCache && states.stateName == "song" ) {
+        // do whatever
+    }
+
+    // cache next song
+    SongService.getNextSongId($scope.songId).then((id) => {
+      $http.get('resources/songs/html/' + id + '.html', { cache: true});
+    });
+
+  });
+
+
+
 
 });
