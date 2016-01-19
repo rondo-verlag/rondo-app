@@ -1,6 +1,14 @@
+@font-face {
+  font-family: Medien;
+  src: url("fonts/NN_Medien_Regular_Demo.otf") format("opentype"); }
+@font-face {
+  font-family: Medien;
+  font-weight: bold;
+  src: url("fonts/NN_Medien_Bold_Demo.otf") format("opentype"); }
 body {
   color: #ffffff;
-  background: #000000; }
+  background: #000000;
+  font-family: Medien; }
 
 ::-webkit-input-placeholder {
   color: #333;

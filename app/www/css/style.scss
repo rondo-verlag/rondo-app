@@ -1,10 +1,23 @@
 // Custom SASS Styles
 
 
+// Fonts
+@font-face {
+  font-family: Medien;
+  src: url("fonts/NN_Medien_Regular_Demo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Medien;
+  font-weight: bold;
+  src: url("fonts/NN_Medien_Bold_Demo.otf") format("opentype");
+}
+
 // Some Basic Theme overrides
 body {
   color: #ffffff;
   background: #000000;
+  font-family: Medien;
 }
 
 ::-webkit-input-placeholder {
@@ -25,7 +38,6 @@ input[type='range']::-webkit-slider-thumb {
   border-bottom: 1px solid transparent;
   background: none;
 }
-
 
 // Components
 .songtext {
