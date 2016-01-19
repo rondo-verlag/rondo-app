@@ -7,10 +7,10 @@
   </ion-content>
 
   <div class="tabs tabs-light tabs-icon-only">
-      <a class="tab-item" ng-click="scroll = true" ng-hide="scroll">
+      <a class="tab-item" ng-click="startAutoScroll()" ng-hide="scroll">
         <i class="icon ion-code-download"></i>
       </a>
-      <a class="tab-item" ng-click="scroll = false" ng-show="scroll">
+      <a class="tab-item" ng-click="stopAutoScroll()" ng-show="scroll">
         <i class="icon ion-ios-pause"></i>
       </a>
       <a class="tab-item" ng-click="playSong()" ng-show="midiFile && !playingSong">
