@@ -13,6 +13,12 @@
   src: url("fonts/NN_Medien_Bold_Demo.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Medien;
+  font-style: italic;
+  src: url("fonts/NN_Medien_Italic_Demo.otf") format("opentype");
+}
+
 // Some Basic Theme overrides
 body {
   color: #ffffff;

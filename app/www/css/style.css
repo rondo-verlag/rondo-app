@@ -5,6 +5,10 @@
   font-family: Medien;
   font-weight: bold;
   src: url("fonts/NN_Medien_Bold_Demo.otf") format("opentype"); }
+@font-face {
+  font-family: Medien;
+  font-style: italic;
+  src: url("fonts/NN_Medien_Italic_Demo.otf") format("opentype"); }
 body {
   color: #ffffff;
   background: #000000;
