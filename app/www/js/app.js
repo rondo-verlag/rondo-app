@@ -7,6 +7,12 @@ Songbook.run(function ($ionicPlatform) {
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
+        $ionicPlatform.onHardwareBackButton(function() {
+            angular.element(document.querySelectorAll('body')).removeClass('fullscreen');
+        });
+        $ionicPlatform.on("resume", function(event) {
+            angular.element(document.querySelectorAll('body')).removeClass('fullscreen');
+        });
     });
 })
 
