@@ -98,10 +98,16 @@ input[type='range']::-webkit-slider-thumb {
     .popover.chord-popover .content img {
       margin-left: 5px; }
 
-.fullscreen ion-header-bar {
+.rondo-fullscreen ion-header-bar {
   top: -80px; }
-.fullscreen .tabs {
+.rondo-fullscreen .tabs {
   bottom: -80px; }
+
+.header-placeholder {
+  height: 44px; }
+
+.tabs-placeholder {
+  height: 49px; }
 
 .song-detail .nav-bar {
   -webkit-transition: top 0.5s;
@@ -113,10 +119,11 @@ input[type='range']::-webkit-slider-thumb {
   top: 0; }
 .song-detail .has-tabs {
   bottom: 0; }
-.song-detail .header-placeholder {
-  height: 44px; }
-.song-detail .tabs-placeholder {
-  height: 49px; }
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-header,
+.platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
+  top: 20px;
+  position: absolute; }
 
 chord {
   background: white;

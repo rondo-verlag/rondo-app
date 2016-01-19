@@ -1,3 +1,4 @@
+var appVersion = "0.0.0";
 var Songbook = angular.module("songbook", ['ionic', 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
 Songbook.run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
@@ -7,10 +8,13 @@ Songbook.run(function ($ionicPlatform) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
         $ionicPlatform.onHardwareBackButton(function () {
-            angular.element(document.querySelectorAll('body')).removeClass('fullscreen');
+            angular.element(document.querySelectorAll('body')).removeClass('rondo-fullscreen');
         });
         $ionicPlatform.on("resume", function (event) {
-            angular.element(document.querySelectorAll('body')).removeClass('fullscreen');
+            angular.element(document.querySelectorAll('body')).removeClass('rondo-fullscreen');
+        });
+        cordova.getAppVersion(function (version) {
+            appVersion = version;
         });
     });
 })
@@ -45,6 +49,7 @@ Songbook.run(function ($ionicPlatform) {
  * View controller for the (modal) about view.
  */
 Songbook.controller("AboutController", function ($scope, SettingsService) {
+    $scope.app_version = appVersion;
 });
 /**
  * View controller for the main app.
@@ -107,10 +112,10 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         //alert('pinching');
     };
     $scope.onScrollUp = function () {
-        bodyElement.removeClass('fullscreen');
+        bodyElement.removeClass('rondo-fullscreen');
     };
     $scope.onScrollDown = function () {
-        bodyElement.addClass('fullscreen');
+        bodyElement.addClass('rondo-fullscreen');
     };
     $scope.onSwipeLeft = function () {
         SongService.getNextSongId($scope.songId).then(function (newSongId) {

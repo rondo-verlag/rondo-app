@@ -1,3 +1,4 @@
+var appVersion = "0.0.0";
 var Songbook = angular.module("songbook", ['ionic', 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
 
 Songbook.run(function ($ionicPlatform) {
@@ -8,10 +9,13 @@ Songbook.run(function ($ionicPlatform) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
         $ionicPlatform.onHardwareBackButton(function() {
-            angular.element(document.querySelectorAll('body')).removeClass('fullscreen');
+            angular.element(document.querySelectorAll('body')).removeClass('rondo-fullscreen');
         });
         $ionicPlatform.on("resume", function(event) {
-            angular.element(document.querySelectorAll('body')).removeClass('fullscreen');
+            angular.element(document.querySelectorAll('body')).removeClass('rondo-fullscreen');
+        });
+        cordova.getAppVersion(function(version) {
+            appVersion = version;
         });
     });
 })

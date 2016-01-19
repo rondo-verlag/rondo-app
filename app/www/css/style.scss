@@ -150,14 +150,20 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
-.fullscreen {
+.rondo-fullscreen {
   ion-header-bar {
     top: -80px;
   }
   .tabs {
     bottom: -80px;
   }
+}
 
+.header-placeholder {
+  height: 44px;
+}
+.tabs-placeholder {
+  height: 49px;
 }
 
 .song-detail {
@@ -177,12 +183,13 @@ input[type='range']::-webkit-slider-thumb {
   .has-tabs {
     bottom: 0;
   }
+}
 
-  .header-placeholder {
-    height: 44px;
-  }
-  .tabs-placeholder {
-    height: 49px;
+.platform-ios.platform-cordova:not(.fullscreen) {
+  .has-header,
+  .bar-subheader {
+    top: 20px;
+    position: absolute;
   }
 }
 

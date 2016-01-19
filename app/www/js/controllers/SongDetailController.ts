@@ -25,11 +25,11 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
   };
 
   $scope.onScrollUp = function(){
-    bodyElement.removeClass('fullscreen');
+    bodyElement.removeClass('rondo-fullscreen');
   };
 
   $scope.onScrollDown = function(){
-    bodyElement.addClass('fullscreen');
+    bodyElement.addClass('rondo-fullscreen');
   };
 
   $scope.onSwipeLeft = function(){
