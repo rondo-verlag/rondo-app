@@ -74,20 +74,9 @@ class Song
 		} else {
 			$image = '';
 		}
-		$numbers = [];
-		if ($this->data['pageRondoGreen']){
-			$numbers[] = '<span class="rondo-green">'.$this->data['pageRondoGreen'].'</span>';
-		}
-		if ($this->data['pageRondoBlue']){
-			$numbers[] = '<span class="rondo-blue">'.$this->data['pageRondoBlue'].'</span>';
-		}
-		if ($this->data['pageRondoRed']){
-			$numbers[] = '<span class="rondo-red">'.$this->data['pageRondoRed'].'</span>';
-		}
 
 		$html = '<div>
 			'.$image.'
-			<div class="padding page-numbers">'.implode(' | ', $numbers).'</div>
 			<div class="padding">
 			  <h3 class="song-title">'.$this->data['title'].'</h3>
 			  <div class="songtext">'.$this->crd2html($this->data['text']).'</div>
