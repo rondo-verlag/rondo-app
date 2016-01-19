@@ -10,3 +10,4 @@ app/www/resources/songs/images/*.png
 app/.io-config.json
 app/www/css/.sass-cache
 app/www/js/app.js.map
+app/www/css/style.css.map
