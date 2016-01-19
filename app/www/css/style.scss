@@ -17,7 +17,11 @@
 body {
   color: #ffffff;
   background: #000000;
-  font-family: Medien;
+  font-family: Medien, "Helvetica Neue", Verdana, sans-serif;
+}
+
+input, button, select, textarea {
+  font-family: Medien, "Helvetica Neue", Verdana, sans-serif;;
 }
 
 ::-webkit-input-placeholder {
