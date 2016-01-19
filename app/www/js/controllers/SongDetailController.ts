@@ -57,7 +57,7 @@ Songbook.controller("SongDetailController", function ($scope, $rootScope, $state
         $scope.stopAutoScroll();
       } else {
         lastScrollPosition = $ionicScrollDelegate.getScrollPosition().top;
-        $ionicScrollDelegate.scrollBy(0, 30, false);
+        $ionicScrollDelegate.scrollBy(0, 10, false);
       }
     }, 100);
   };

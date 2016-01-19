@@ -6,8 +6,13 @@
 
   // Variables
   "mixins",
+
+
+  // === Custom Theme for Rondo App ===
   //"variables",
-  "darktheme_variables.scss",
+  "darktheme_variables",
+  // ==================================
+
 
   // Base
   "reset",
@@ -28,6 +33,7 @@
   "list",
   "badge",
   "slide-box",
+  "slides",
   "refresher",
   "spinner",
 
