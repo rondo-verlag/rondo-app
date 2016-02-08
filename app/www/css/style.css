@@ -1,14 +1,14 @@
 @font-face {
   font-family: Medien;
-  src: url("fonts/NN_Medien/NN_Medien_Regular.otf") format("opentype"); }
+  src: url("fonts/NN_Medien_Demo/NN_Medien_Regular_Demo.otf") format("opentype"); }
 @font-face {
   font-family: Medien;
   font-weight: bold;
-  src: url("fonts/NN_Medien/NN_Medien_Bold.otf") format("opentype"); }
+  src: url("fonts/NN_Medien_Demo/NN_Medien_Bold_Demo.otf") format("opentype"); }
 @font-face {
   font-family: Medien;
   font-style: italic;
-  src: url("fonts/NN_Medien/NN_Medien_Italic.otf") format("opentype"); }
+  src: url("fonts/NN_Medien_Demo/NN_Medien_Italic_Demo.otf") format("opentype"); }
 body {
   color: #ffffff;
   background: #000000;
@@ -44,7 +44,8 @@ input[type='range']::-webkit-slider-thumb {
   .songtext .empty-chord {
     height: 0;
     overflow: hidden;
-    display: block; }
+    display: block;
+    max-width: 8px; }
   .songtext .chord ~ .empty-chord {
     display: none; }
   .songtext .paragraph {
