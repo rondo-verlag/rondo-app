@@ -120,8 +120,10 @@ input[type='range']::-webkit-slider-thumb {
 .song-detail .has-tabs {
   bottom: 0; }
 
-.platform-ios.platform-cordova:not(.fullscreen) .has-header,
-.platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
+.platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .has-header,
+.platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .has-subheader
+.bar-header,
+.platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .bar-subheader {
   top: 20px;
   position: absolute; }
 

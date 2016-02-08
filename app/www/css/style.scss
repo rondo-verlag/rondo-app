@@ -185,8 +185,10 @@ input[type='range']::-webkit-slider-thumb {
   }
 }
 
-.platform-ios.platform-cordova:not(.fullscreen) {
+.platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder {
   .has-header,
+  .has-subheader
+  .bar-header,
   .bar-subheader {
     top: 20px;
     position: absolute;
