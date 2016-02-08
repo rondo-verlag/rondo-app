@@ -177,12 +177,16 @@ ion-content .page-numbers {
   font-size: 140%;
   position: absolute;
   top: 7px;
-  right: 68px;
+  right: 60px;
   display: block;
   height: 30px;
   width: 30px;
   text-align: center;
   padding-top: 5px; }
+.rondo-bar-search .about-icon {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 7px; }
 
 .rondo-list .item {
   border: none; }
