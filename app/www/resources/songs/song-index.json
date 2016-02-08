@@ -117,6 +117,7 @@
             "Am",
             "C",
             "C7",
+            "D",
             "Dm",
             "F",
             "Fm",
@@ -609,7 +610,6 @@
         "pageRondoGreen": "54",
         "chords": [
             "C",
-            "G",
             "G7"
         ],
         "alternative": false

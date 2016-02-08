@@ -284,7 +284,7 @@ $app->get('/export/index', function () use ($app, &$DB) {
 	$json = json_encode($index, JSON_PRETTY_PRINT);
 	umask(0);
 	file_put_contents($path, $json);
-	chmod($path, 0777);
+	@chmod($path, 0777);
 	echo $json;
 });
 
