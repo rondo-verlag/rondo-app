@@ -13,9 +13,11 @@ Songbook.run(function ($ionicPlatform) {
         $ionicPlatform.on("resume", function (event) {
             angular.element(document.querySelectorAll('body')).removeClass('rondo-fullscreen');
         });
-        cordova.getAppVersion(function (version) {
-            appVersion = version;
-        });
+        if (window.cordova) {
+            cordova.getAppVersion(function (version) {
+                appVersion = version;
+            });
+        }
     });
 })
     .config(function ($stateProvider, $urlRouterProvider) {
@@ -214,12 +216,6 @@ Songbook.controller("SongListController", function ($scope, $ionicPlatform, $ion
     $scope.songs = [];
     $scope.search = {
         title: ''
-    };
-    $scope.clearSearch = function () {
-        $scope.search.title = '';
-        $timeout(function () {
-            document.getElementById('song-search-input').focus();
-        }, 10);
     };
     // load songs
     $ionicPlatform.ready(function () {

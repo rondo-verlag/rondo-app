@@ -38,8 +38,33 @@ input, button, select, textarea {
   font-size: 16px;
 }
 
-input[type='range']::-webkit-slider-thumb {
-  border: 1px solid #aaa;
+::-webkit-search-cancel-button {   /* select all "X" buttons in search inputs */
+    -webkit-appearance: none;      /* hide the default "X" button */
+}
+
+::-webkit-search-cancel-button:after {  /* generate content after all "X" buttons */
+    content: '';    /* required for :after content to show */
+    display: block;
+
+    /*
+     * Setup dimensions for the custom icon.  Note that these dimensions seem to
+     * affect positioning.
+     */
+    width: 20px;
+    height: 20px;
+
+    /*
+     * Base64 encoded custom "X" icon
+     * Natively 30x30, but downscaled for highres screens
+     */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;     /* setup all the background tweaks for our custom icon */
+    background-size: 20px;            /* icon size */
+    background-position: top left;    /* note: this positioning will need to be tweaked for iOS */
+}
+
+input[type='search'] {
+  -webkit-appearance: searchfield;
 }
 
 .invisible-link {
@@ -261,19 +286,6 @@ ion-content .page-numbers {
     input::-webkit-input-placeholder {
       color: #CCC;
     }
-  }
-
-  .clear-search {
-    color: #CCC;
-    font-size: 140%;
-    position: absolute;
-    top: 7px;
-    right: 60px;
-    display: block;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    padding-top: 5px;
   }
 
   .about-icon {

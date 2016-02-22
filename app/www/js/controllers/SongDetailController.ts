@@ -137,7 +137,4 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
 
   });
 
-
-
-
 });
