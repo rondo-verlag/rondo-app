@@ -70,6 +70,7 @@ input[type='range']::-webkit-slider-thumb {
     overflow: hidden;
     display: block;
     max-width: 8px;
+    white-space: nowrap;
     //transition: all .2s;
   }
   .chord ~ .empty-chord {
