@@ -150,6 +150,9 @@ input[type='search'] {
 .rondo-custom-back-button {
   padding: 0 !important; }
 
+.bar-header {
+  background: black; }
+
 .platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .has-header,
 .platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .has-subheader
 .bar-header,
@@ -215,7 +218,9 @@ ion-content .page-numbers {
 .rondo-bar-search .about-icon {
   display: inline-block;
   padding-left: 10px;
-  padding-top: 7px; }
+  padding-top: 7px;
+  padding-right: 12px;
+  margin-right: -12px; }
 
 .rondo-list .item {
   border: none; }

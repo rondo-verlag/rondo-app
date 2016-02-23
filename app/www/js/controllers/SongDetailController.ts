@@ -3,16 +3,16 @@
  *
  */
 import IIntervalService = angular.IIntervalService;
-Songbook.controller("SongDetailController", function ($scope, $stateParams, $http:angular.IHttpService, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
+Songbook.controller("SongDetailController", function ($scope, $stateParams, $http:angular.IHttpService, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval, $timeout) {
   $scope.songId = $stateParams.songId;
+  $scope.songTitle = '';
   $scope.midiFile = false;
   $scope.playingSong = false;
   $scope.data = {};
   $scope.info = {};
-  $scope.songFile = '';//'resources/songs/html/' + $scope.songId + '.html';
+  $scope.songFile = '';
+  $scope.includeFile = 'resources/songs/html/' + $scope.songId + '.html';
   $scope.rondoPages = '';
-  //$scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
-  //$scope.scrollSpeed = SettingsService.getScrollSettings().speed;
   $scope.scroll = false;
   var scrollTimer;
   var lastScrollPosition:number = -1;
@@ -102,11 +102,16 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     $scope.playingSong = false;
   };
 
+  $scope.$on('$ionicView.beforeLeave', function(){
+    $scope.onScrollUp();
+  });
+
   // -- load data
 
   SongService.getSongInfo($scope.songId)
     .then( function(data){
       $scope.info = data;
+      $scope.songTitle = data.title;
       var pages = [];
       if(data.pageRondoGreen){
         pages.push('<span class="rondo-green">'+data.pageRondoGreen+'</span>');
@@ -119,13 +124,16 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
       }
       $scope.rondoPages = pages.join('&nbsp;|&nbsp;')
     });
-
-  // get from cache if possible
-  $http.get('resources/songs/html/' + $scope.songId + '.html', { cache: true})
-    .then((response) => {
-      $scope.songFile = response.data;
-    });
-
+/*
+  $timeout(()=>{
+    // get from cache if possible
+    $http.get('resources/songs/html/' + $scope.songId + '.html')
+      .then((response) => {
+        $scope.songFile = response.data;
+      });
+  }, 100);
+*/
+/*
   // when animations are done
   $scope.$on( "$ionicView.afterEnter", function( scopes, states ) {
     if(states.fromCache && states.stateName == "song" ) {
@@ -142,6 +150,6 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
       $http.get('resources/songs/images/' + id + '.png', { cache: true});
     });
 
-  });
+  });*/
 
 });

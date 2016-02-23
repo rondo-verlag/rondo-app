@@ -62,6 +62,11 @@ class Song
 	}
 
 	public function getHtml($export = false){
+		if($export){
+			// only export songtext for the app
+			return $this->crd2html($this->data['text']);
+		}
+
 		if ($this->data['rawImage']){
 			if ($export == true){
 				// app export

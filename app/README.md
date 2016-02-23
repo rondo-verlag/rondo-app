@@ -10,7 +10,7 @@ $ mkdir plugins
 $ ionic platform android
 $ ionic platform ios
 $ ionic plugin add com.ionic.keyboard
-$ ionic plugin add org.apache.cordova.console
+$ ionic plugin add cordova-plugin-console
 $ ionic plugin add org.apache.cordova.file
 $ cordova plugin add cordova-plugin-device
 $ ionic add ionic-platform-web-client
@@ -22,8 +22,15 @@ $ cordova prepare
 
 Update Ionic:
 
-    npm install -g ionic
+    sudo npm install -g ionic
     ionic lib update
+    
+    sudo npm update -g ionic
+    sudo npm update -g cordova
+
+updates a project to use the latest version of cordova (3.4.0 to 3.4.1):
+
+    cordova platform update [platform] 
 
 Upload App to Ionic View:
 
@@ -41,27 +48,6 @@ Building Ionic SCSS (e.g. apply dark theme):
 
     scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css
 
+Compile iOS App for Test Flight:
 
-## Known Bugs
- * Search Bar weg wenn man zurück kommt vom Lied im Fullscreen Mode
- * Autoscroll funktioniert nicht
- * Statusbar ist auf iOS transparent
-
-## TODO
- * Settings Screen?
- * Icons
- * App Icon
- * Splash Screen
- * Navigation Konzept
- * Verhalten Menü beim Scrollen
- * Geschwindigkeit einstellen (pro Song?)
- * Text Zoom
- * Songs:
-    * Songs mit Textteilen ohne Akkorde
-    * Rondo Seitenzahl
-    * Bilder
-    * Alle möglichen Akkorde auflisten
- * MIDI abspielen
- * Bezahlfunktion
- 
- 
+    XCode > Product > Archive

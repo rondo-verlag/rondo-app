@@ -100,16 +100,16 @@ Songbook.controller("SettingsController", function ($scope, SettingsService) {
         SettingsService.saveScrollSettings($scope.scroll);
     }, true);
 });
-Songbook.controller("SongDetailController", function ($scope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval) {
+Songbook.controller("SongDetailController", function ($scope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval, $timeout) {
     $scope.songId = $stateParams.songId;
+    $scope.songTitle = '';
     $scope.midiFile = false;
     $scope.playingSong = false;
     $scope.data = {};
     $scope.info = {};
-    $scope.songFile = ''; //'resources/songs/html/' + $scope.songId + '.html';
+    $scope.songFile = '';
+    $scope.includeFile = 'resources/songs/html/' + $scope.songId + '.html';
     $scope.rondoPages = '';
-    //$scope.scrollEnabled = SettingsService.getScrollSettings().enabled;
-    //$scope.scrollSpeed = SettingsService.getScrollSettings().speed;
     $scope.scroll = false;
     var scrollTimer;
     var lastScrollPosition = -1;
@@ -183,10 +183,14 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         MIDI.Player.stop();
         $scope.playingSong = false;
     };
+    $scope.$on('$ionicView.beforeLeave', function () {
+        $scope.onScrollUp();
+    });
     // -- load data
     SongService.getSongInfo($scope.songId)
         .then(function (data) {
         $scope.info = data;
+        $scope.songTitle = data.title;
         var pages = [];
         if (data.pageRondoGreen) {
             pages.push('<span class="rondo-green">' + data.pageRondoGreen + '</span>');
@@ -199,25 +203,33 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         }
         $scope.rondoPages = pages.join('&nbsp;|&nbsp;');
     });
-    // get from cache if possible
-    $http.get('resources/songs/html/' + $scope.songId + '.html', { cache: true })
-        .then(function (response) {
-        $scope.songFile = response.data;
-    });
-    // when animations are done
-    $scope.$on("$ionicView.afterEnter", function (scopes, states) {
-        if (states.fromCache && states.stateName == "song") {
+    /*
+      $timeout(()=>{
+        // get from cache if possible
+        $http.get('resources/songs/html/' + $scope.songId + '.html')
+          .then((response) => {
+            $scope.songFile = response.data;
+          });
+      }, 100);
+    */
+    /*
+      // when animations are done
+      $scope.$on( "$ionicView.afterEnter", function( scopes, states ) {
+        if(states.fromCache && states.stateName == "song" ) {
+            // do whatever
         }
+    
         // cache songs
-        SongService.getNextSongId($scope.songId).then(function (id) {
-            $http.get('resources/songs/html/' + id + '.html', { cache: true });
-            $http.get('resources/songs/images/' + id + '.png', { cache: true });
+        SongService.getNextSongId($scope.songId).then((id) => {
+          $http.get('resources/songs/html/' + id + '.html', { cache: true});
+          $http.get('resources/songs/images/' + id + '.png', { cache: true});
         });
-        SongService.getPreviousSongId($scope.songId).then(function (id) {
-            $http.get('resources/songs/html/' + id + '.html', { cache: true });
-            $http.get('resources/songs/images/' + id + '.png', { cache: true });
+        SongService.getPreviousSongId($scope.songId).then((id) => {
+          $http.get('resources/songs/html/' + id + '.html', { cache: true});
+          $http.get('resources/songs/images/' + id + '.png', { cache: true});
         });
-    });
+    
+      });*/
 });
 /*
  * View controller for the searchable song list.
