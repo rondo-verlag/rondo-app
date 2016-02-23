@@ -6,6 +6,7 @@ Songbook.run(function ($ionicPlatform) {
         // for form inputs)
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+            cordova.plugins.Keyboard.disableScroll(true);
         }
         $ionicPlatform.onHardwareBackButton(function () {
             angular.element(document.querySelectorAll('body')).removeClass('rondo-fullscreen');
@@ -130,6 +131,10 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
             $ionicViewSwitcher.nextDirection('back');
             $state.go('song', { songId: newSongId });
         });
+    };
+    $scope.backToSonglist = function () {
+        $ionicViewSwitcher.nextDirection('back');
+        $state.go('search');
     };
     $scope.startAutoScroll = function () {
         window.plugins.insomnia.keepAwake();

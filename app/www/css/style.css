@@ -147,6 +147,9 @@ input[type='search'] {
 .song-detail .has-tabs {
   bottom: 0; }
 
+.rondo-custom-back-button {
+  padding: 0 !important; }
+
 .platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .has-header,
 .platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder .has-subheader
 .bar-header,

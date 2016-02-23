@@ -50,6 +50,11 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     );
   };
 
+  $scope.backToSonglist = function(){
+    $ionicViewSwitcher.nextDirection('back');
+    $state.go('search');
+  };
+
   $scope.startAutoScroll = function(){
     window.plugins.insomnia.keepAwake();
     $scope.scroll = true;

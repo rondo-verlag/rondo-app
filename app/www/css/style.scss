@@ -216,6 +216,11 @@ input[type='search'] {
   }
 }
 
+// remove padding that the button looks equal to the default back button
+.rondo-custom-back-button {
+  padding: 0 !important;
+}
+
 .platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder {
   .has-header,
   .has-subheader
