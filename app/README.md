@@ -13,6 +13,8 @@ $ ionic plugin add com.ionic.keyboard
 $ ionic plugin add org.apache.cordova.console
 $ ionic plugin add org.apache.cordova.device
 $ ionic plugin add org.apache.cordova.file
+$ cordova plugin add https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.
+$ cordova prepare
 ```
 
 ## Useful commands

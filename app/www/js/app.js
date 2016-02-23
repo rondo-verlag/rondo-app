@@ -132,6 +132,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         });
     };
     $scope.startAutoScroll = function () {
+        window.plugins.insomnia.keepAwake();
         $scope.scroll = true;
         scrollTimer = $interval(function () {
             if (lastScrollPosition == $ionicScrollDelegate.getScrollPosition().top) {
@@ -144,6 +145,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         }, 100);
     };
     $scope.stopAutoScroll = function () {
+        window.plugins.insomnia.allowSleepAgain();
         $scope.scroll = false;
         $interval.cancel(scrollTimer);
     };
