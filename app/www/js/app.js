@@ -17,6 +17,9 @@ Songbook.run(function ($ionicPlatform, $ionicAnalytics) {
         if (window.cordova) {
             cordova.getAppVersion(function (version) {
                 appVersion = version;
+                $ionicAnalytics.setGlobalProperties({
+                    app_version: version
+                });
             });
         }
         $ionicAnalytics.register();
