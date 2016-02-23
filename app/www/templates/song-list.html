@@ -2,7 +2,7 @@
   <ion-header-bar class="bar bar-header bar-negative item-input-inset rondo-bar-search">
         <label class="item-input-wrapper">
           <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" placeholder="Suchen..." ng-model="search.title" id="song-search-input"/>
+          <input type="search" placeholder="Suchen..." ng-model="search.title" id="song-search-input" autocorrect="off" autocapitalize="off"/>
         </label>
         <span class="clear-search" ng-show="search.title" ng-click="clearSearch()"><i class="icon ion-close-round"></i></span>
         <span class="about-icon" ui-sref="about">
