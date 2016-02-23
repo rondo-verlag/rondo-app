@@ -11,6 +11,8 @@ use Doctrine\DBAL\DriverManager;
 
 $DB = DriverManager::getConnection($SQL_CREDENTIALS, new \Doctrine\DBAL\Configuration());
 
+define ('EOL', PHP_EOL);
+
 
 $app = new \Slim\Slim();
 $app->config('debug', true);

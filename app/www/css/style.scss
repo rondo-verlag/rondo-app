@@ -38,29 +38,26 @@ input, button, select, textarea {
   font-size: 16px;
 }
 
-::-webkit-search-cancel-button {   /* select all "X" buttons in search inputs */
-    -webkit-appearance: none;      /* hide the default "X" button */
+// credits: http://davidbcalhoun.com/2012/more-fun-with-webkit-pseudoelements-webkit-search-cancel-button-or-pseudoclass-inception/
+::-webkit-search-cancel-button {   // select all "X" buttons in search inputs
+    -webkit-appearance: none;      // hide the default "X" button
 }
 
-::-webkit-search-cancel-button:after {  /* generate content after all "X" buttons */
-    content: '';    /* required for :after content to show */
+::-webkit-search-cancel-button:after {  // generate content after all "X" buttons
+    content: '';    // required for :after content to show
     display: block;
 
-    /*
-     * Setup dimensions for the custom icon.  Note that these dimensions seem to
-     * affect positioning.
-     */
+    // Setup dimensions for the custom icon.  Note that these dimensions seem to
+    // affect positioning.
     width: 20px;
     height: 20px;
 
-    /*
-     * Base64 encoded custom "X" icon
-     * Natively 30x30, but downscaled for highres screens
-     */
+    // Base64 encoded custom "X" icon
+    // Natively 30x30, but downscaled for highres screens
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
-    background-repeat: no-repeat;     /* setup all the background tweaks for our custom icon */
-    background-size: 20px;            /* icon size */
-    background-position: top left;    /* note: this positioning will need to be tweaked for iOS */
+    background-repeat: no-repeat;     // setup all the background tweaks for our custom icon
+    background-size: 20px;            // icon size
+    background-position: top left;    // note: this positioning will need to be tweaked for iOS
 }
 
 input[type='search'] {
@@ -94,7 +91,8 @@ input[type='search'] {
     height: 0;
     overflow: hidden;
     display: block;
-    max-width: 8px;
+    //max-width: 8px;
+    width: 0;
     white-space: nowrap;
     //transition: all .2s;
   }
@@ -144,6 +142,7 @@ input[type='search'] {
   .empty-chord {
     height: 1.2em;
     overflow: visible;
+    width: auto;
   }
 
   .songtext .line .bl {
@@ -151,7 +150,7 @@ input[type='search'] {
   }
 
   .songtext {
-    color: #888;
+    color: #999;
 
     .chord {
       color: #FFF;

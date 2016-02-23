@@ -112,14 +112,20 @@ class Song
 			return $e->getMessage();
 		}
 
-		$html  = '<div class="paragraph">';
-		$html .= '<div class="line">';
+		$html  = '<div class="paragraph">'.EOL;
+		$html .= '<div class="line">'.EOL;
 		$html .= '<div class="bl">';
 
 		$last_token = null;
 
-		foreach($tokens as $token){
+		foreach($tokens as $idx => $token){
 			//var_dump($token);
+
+			if(isset($tokens[$idx+1])){
+				$next_token = $tokens[$idx+1]['token'];
+			} else {
+				$next_token = null;
+			}
 
 			if ($last_token == 'T_CHORD' && $last_token != $token['token']){
 				$html .= '</span>';
@@ -135,16 +141,19 @@ class Song
 					$html .= '<span>'.$chord.'</span>';
 					break;
 				case 'T_NEWLINE':
-					$html .= '</div></div><div class="line"><div class="bl">';
+					$html .= '</div></div>'.EOL.'<div class="line">'.EOL.'<div class="bl">';
 					break;
 				case 'T_PARAGRAPH':
-					$html .= '</div></div></div><div class="paragraph"><div class="line"><div class="bl">';
+					$html .= '</div></div></div>'.EOL.EOL.'<div class="paragraph"><div class="line">'.EOL.'<div class="bl">';
 					break;
 				case 'T_STRING':
-					$html .= '<span class="empty-chord"></span>'.$token['match'].'</div><div class="bl">';
+					$space = ($next_token == 'T_WHITESPACE' ? '&nbsp;' : '');
+					$html .= '<span class="empty-chord"></span>'.$token['match'].$space.'</div>'.EOL.'<div class="bl">';
 					break;
 				case 'T_WHITESPACE':
-					$html .= '&nbsp;</div><div class="bl">';
+					if($last_token == 'T_CHORD'){
+						$html .= ' </div>'.EOL.'<div class="bl">';
+					}
 					break;
 				default:
 					$html .= $token['match'];

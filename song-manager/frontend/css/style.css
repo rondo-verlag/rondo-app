@@ -18,38 +18,41 @@
 }
 
 .songtext {
-	font-size: 1.3em; }
-.songtext .line {
-	line-height: 2.2em;
-	clear: both; }
-.songtext .line .bl {
-	float: left;
-	height: 1.5em; }
-.songtext .chord,
-.songtext .empty-chord {
-	height: 0;
-	overflow: hidden;
-	display: block; }
-.songtext .chord ~ .empty-chord {
-	display: none; }
-.songtext .paragraph {
-	padding-bottom: 2.5em;
-	overflow: hidden; }
-.songtext .p_chorus {
-	font-style: italic; }
-.songtext .comment {
-	white-space: pre;
-	color: #BBB; }
+  font-size: 1.3em;
+  letter-spacing: 1px; }
+  .songtext .line {
+    line-height: 2.2em; }
+    .songtext .line .bl {
+      float: left;
+      height: 1.5em; }
+  .songtext .chord,
+  .songtext .empty-chord {
+    height: 0;
+    overflow: hidden;
+    display: block;
+    width: 0;
+    white-space: nowrap; }
+  .songtext .chord ~ .empty-chord {
+    display: none; }
+  .songtext .paragraph {
+    padding-bottom: 2.5em;
+    overflow: hidden; }
+  .songtext .p_chorus {
+    font-style: italic; }
+  .songtext .comment {
+    white-space: pre;
+    color: #BBB; }
 
 .rondo-show-chords .chord,
 .rondo-show-chords .empty-chord {
-	height: 1.2em;
-	overflow: visible; }
+  height: 1.2em;
+  overflow: visible;
+  width: auto; }
 .rondo-show-chords .songtext .line .bl {
-	height: 2.5em; }
+  height: 2.5em; }
 .rondo-show-chords .songtext {
-	color: #888; }
-.rondo-show-chords .songtext .chord {
-	color: #FFF; }
-.rondo-show-chords .songtext .paragraph {
-	padding-bottom: 3.5em; }
+  color: #999; }
+  .rondo-show-chords .songtext .chord {
+    color: #FFF; }
+  .rondo-show-chords .songtext .paragraph {
+    padding-bottom: 3.5em; }
