@@ -38,6 +38,7 @@ input, button, select, textarea {
   font-size: 16px;
 }
 
+/*
 // credits: http://davidbcalhoun.com/2012/more-fun-with-webkit-pseudoelements-webkit-search-cancel-button-or-pseudoclass-inception/
 ::-webkit-search-cancel-button {   // select all "X" buttons in search inputs
     -webkit-appearance: none;      // hide the default "X" button
@@ -63,6 +64,7 @@ input, button, select, textarea {
 input[type='search'] {
   -webkit-appearance: searchfield;
 }
+*/
 
 .invisible-link {
   text-decoration: none;
@@ -285,6 +287,19 @@ ion-content .page-numbers {
     input::-webkit-input-placeholder {
       color: #CCC;
     }
+  }
+
+  .clear-search {
+    color: #CCC;
+    font-size: 140%;
+    position: absolute;
+    top: 7px;
+    right: 60px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 5px;
   }
 
   .about-icon {

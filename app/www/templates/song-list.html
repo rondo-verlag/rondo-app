@@ -4,6 +4,7 @@
           <i class="icon ion-search placeholder-icon"></i>
           <input type="search" placeholder="Suchen..." ng-model="search.title" id="song-search-input"/>
         </label>
+        <span class="clear-search" ng-show="search.title" ng-click="clearSearch()"><i class="icon ion-close-round"></i></span>
         <span class="about-icon" ui-sref="about">
           <img src="img/rondo_button_white.png" width="36" height="36">
         </span>

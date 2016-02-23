@@ -8,6 +8,13 @@ Songbook.controller("SongListController", function ($scope, $ionicPlatform, $ion
     title: ''
   };
 
+  $scope.clearSearch = function(){
+    $scope.search.title = '';
+    $timeout(()=>{
+      document.getElementById('song-search-input').focus();
+    }, 500)
+  };
+
   // load songs
   $ionicPlatform.ready(function () {
     SongService.getSongIndex()
