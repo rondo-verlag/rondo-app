@@ -12,6 +12,7 @@ module rondo {
     preview: any;
     prevSongId: number;
     nextSongId: number;
+    showSavedIcon: boolean;
   }
 
   export interface ISongDetailRouteParams extends angular.route.IRouteParamsService {
@@ -21,7 +22,7 @@ module rondo {
   export class SongDetailCtrl {
 
     public static $inject = [
-      '$scope', '$http', '$routeParams', '$location', '$sce', 'FileUploader'
+      '$scope', '$http', '$routeParams', '$location', '$sce', 'FileUploader', '$timeout'
     ];
 
     constructor(
@@ -30,7 +31,8 @@ module rondo {
       private $routeParams: ISongDetailRouteParams,
       private $location: ng.ILocationService,
       private $sce: ng.ISCEService,
-      private FileUploader
+      private FileUploader,
+      private $timeout: ng.ITimeoutService
     ) {
       var self = this;
 
@@ -38,6 +40,7 @@ module rondo {
       $scope.showAccords = true;
       $scope.prevSongId = parseInt($routeParams.songId) - 1;
       $scope.nextSongId = parseInt($routeParams.songId) + 1;
+      $scope.showSavedIcon = false;
 
       this.loadData();
 
@@ -73,6 +76,10 @@ module rondo {
         $http.put("api/index.php/songs/" + $routeParams.songId, $scope.song)
           .success(function (data, status, headers, config) {
             self.loadData();
+            $scope.showSavedIcon = true;
+            $timeout(()=>{
+              $scope.showSavedIcon = false;
+            }, 3000);
           })
           .error(function (data, status, headers, config) {
             console.log("AJAX failed!", data, status);

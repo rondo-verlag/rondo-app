@@ -58,18 +58,20 @@ var rondo;
 (function (rondo) {
     'use strict';
     var SongDetailCtrl = (function () {
-        function SongDetailCtrl($scope, $http, $routeParams, $location, $sce, FileUploader) {
+        function SongDetailCtrl($scope, $http, $routeParams, $location, $sce, FileUploader, $timeout) {
             this.$scope = $scope;
             this.$http = $http;
             this.$routeParams = $routeParams;
             this.$location = $location;
             this.$sce = $sce;
             this.FileUploader = FileUploader;
+            this.$timeout = $timeout;
             var self = this;
             $scope.song = null;
             $scope.showAccords = true;
             $scope.prevSongId = parseInt($routeParams.songId) - 1;
             $scope.nextSongId = parseInt($routeParams.songId) + 1;
+            $scope.showSavedIcon = false;
             this.loadData();
             $scope.uploader = new FileUploader({
                 url: 'api/index.php/songs/' + $routeParams.songId + '/musicxmlfiles'
@@ -97,6 +99,10 @@ var rondo;
                 $http.put("api/index.php/songs/" + $routeParams.songId, $scope.song)
                     .success(function (data, status, headers, config) {
                     self.loadData();
+                    $scope.showSavedIcon = true;
+                    $timeout(function () {
+                        $scope.showSavedIcon = false;
+                    }, 3000);
                 })
                     .error(function (data, status, headers, config) {
                     console.log("AJAX failed!", data, status);
@@ -125,7 +131,7 @@ var rondo;
             });
         };
         SongDetailCtrl.$inject = [
-            '$scope', '$http', '$routeParams', '$location', '$sce', 'FileUploader'
+            '$scope', '$http', '$routeParams', '$location', '$sce', 'FileUploader', '$timeout'
         ];
         return SongDetailCtrl;
     })();
