@@ -50,4 +50,5 @@ Building Ionic SCSS (e.g. apply dark theme):
 
 Compile iOS App for Test Flight:
 
-    XCode > Product > Archive
+    XCode > Product > Archive and then upload the App
+    Manage Apps on https://itunesconnect.apple.com

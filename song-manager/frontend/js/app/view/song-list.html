@@ -6,13 +6,13 @@
     </div>
     <table class="table table-striped">
       <tr>
-        <th>ID</th>
-        <th>Titel</th>
-        <th>Lizenzfrei</th>
-        <th>Status</th>
+        <th ng-click="orderBy = 'id'; orderReversed = !orderReversed">ID</th>
+        <th ng-click="orderBy = 'title'; orderReversed = !orderReversed">Titel</th>
+        <th ng-click="orderBy = 'license'; orderReversed = !orderReversed">Lizenzfrei</th>
+        <th ng-click="orderBy = 'status'; orderReversed = !orderReversed">Status</th>
         <th>&nbsp;</th>
       </tr>
-      <tr ng-repeat="song in filtered = (list | filter:search)" ng-dblclick="editSong(song.id)">
+      <tr ng-repeat="song in filtered = (list | filter:search | orderBy : orderBy : orderReversed )" ng-dblclick="editSong(song.id)">
         <td>{{song.id}}</td>
         <td>{{song.title}}</td>
         <td><license license="song.license"></license></td>

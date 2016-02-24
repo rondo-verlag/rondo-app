@@ -142,6 +142,8 @@ var rondo;
             this.$location = $location;
             $scope.list = [];
             $scope.search = "";
+            $scope.orderBy = 'title';
+            $scope.orderReversed = false;
             $http.get("api/index.php/songs")
                 .success(function (data, status, headers, config) {
                 $scope.list = data;

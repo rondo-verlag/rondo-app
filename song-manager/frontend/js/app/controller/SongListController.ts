@@ -6,6 +6,8 @@ module rondo {
   export interface ISongListScope extends ng.IScope {
     list: Array<ISong>;
     search: String;
+    orderBy: String;
+    orderReversed: boolean;
     editSong(int): void;
   }
 
@@ -21,6 +23,8 @@ module rondo {
     ) {
       $scope.list = [];
       $scope.search = "";
+      $scope.orderBy = 'title';
+      $scope.orderReversed = false;
 
       $http.get("api/index.php/songs")
         .success(function(data: Array<ISong>, status, headers, config) {
