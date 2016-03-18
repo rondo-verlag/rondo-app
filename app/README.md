@@ -36,9 +36,8 @@ Upload App to Ionic View:
 
     ionic upload
 
-Building Android APK:
 
-    ionic build android
+    
 
 Building App SCSS:
 
@@ -48,7 +47,21 @@ Building Ionic SCSS (e.g. apply dark theme):
 
     scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css
 
+
+Building Android APK:
+
+    ionic build android
+
+Release Android Version:
+
+    cordova build --release android
+    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk rondoapp
+    ~/Library/Android/sdk/build-tools/23.0.2/zipalign -v 4 /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk Rondo.apk
+    
+
 Compile iOS App for Test Flight:
 
+    ionic build ios
+    Then open Project in XCode
     XCode > Product > Archive and then upload the App
     Manage Apps on https://itunesconnect.apple.com
