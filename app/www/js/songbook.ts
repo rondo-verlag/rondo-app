@@ -1,11 +1,11 @@
 var appVersion = "0.0.0";
-var Songbook = angular.module("songbook", ['ionic', 'ionic.service.core', 'ionic.service.analytics', 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
+var Songbook = angular.module("songbook", ['ionic', /*'ionic.service.core', 'ionic.service.analytics',*/ 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
 
 interface Cordova {
   getAppVersion(callback: Function): Function;
 }
 
-Songbook.run(function ($ionicPlatform, $ionicAnalytics) {
+Songbook.run(function ($ionicPlatform/*, /*$ionicAnalytics*/) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -22,12 +22,12 @@ Songbook.run(function ($ionicPlatform, $ionicAnalytics) {
         if (window.cordova){
             cordova.getAppVersion(function(version) {
                 appVersion = version;
-                $ionicAnalytics.setGlobalProperties({
-                  app_version: version,
-                });
+                //$ionicAnalytics.setGlobalProperties({
+                //  app_version: version,
+                //});
             });
         }
-        $ionicAnalytics.register();
+        //$ionicAnalytics.register();
     });
 })
 

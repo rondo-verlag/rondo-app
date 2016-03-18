@@ -8273,7 +8273,7 @@ input:checked + .checkbox-icon:after {
     background: #f8f8f8;
     color: #eee; }
   .item-select.item-stable:after, .item-select.item-stable .input-label {
-    color: #656565; }
+    color: #666666; }
   .item-select.item-positive select {
     background: #387ef5;
     color: #fff; }
