@@ -164,6 +164,9 @@ a.invisible-link {
   top: 20px;
   position: absolute; }
 
+.tabs.tabs-light {
+  background: black; }
+
 chord {
   background: white;
   display: inline-block;
