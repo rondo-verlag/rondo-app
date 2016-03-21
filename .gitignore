@@ -2,7 +2,6 @@ node_modules/
 platforms/
 plugins/
 .idea
-data/sibelius/all
 song-manager/api/_conf.php
 data/sibelius_export
 app/www/resources/songs/html/*.html
@@ -11,5 +10,5 @@ app/.io-config.json
 app/www/css/.sass-cache
 app/www/js/app.js.map
 app/www/css/style.css.map
-app/my-release-key.keystore
+app/keystore/*.keystore
 app/Rondo.apk
