@@ -297,7 +297,7 @@ $app->get('/export/html', function () use ($app, &$DB) {
 
 	$songIds = $DB->fetchAll("SELECT id FROM songs
 		WHERE license = 'FREE'
-		/*AND status = 'DONE'*/");
+		AND status = 'DONE'");
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
@@ -321,6 +321,35 @@ $app->get('/export/html', function () use ($app, &$DB) {
 		}
 	}
 	echo count($songIds)." Songs exportiert.";
+});
+
+// export html files & images as zip
+$app->get('/export/zip', function () use ($app, &$DB) {
+	# create a new zipstream object
+	$zip = new ZipStream\ZipStream('data.zip');
+
+	$songIds = $DB->fetchAll("SELECT id FROM songs
+		WHERE license = 'FREE'
+		AND status = 'DONE'");
+
+	foreach($songIds as $songId){
+		$song = new Song($songId['id']);
+
+		// generate html
+		$html = $song->getHtml(true);
+		$zip->addFile('html/'.$songId['id'].'.html', $html);
+
+		// generate image
+		$data = $song->getData();
+		if ($data['rawImage']){
+			$zip->addFile('images/'.$songId['id'].'.png', $data['rawImage']);
+		}
+	}
+
+	// TODO: song index
+
+	# finish the zip stream
+	$zip->finish();
 });
 
 $app->run();

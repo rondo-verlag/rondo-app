@@ -4,6 +4,7 @@
     "type": "project",
     "require": {
         "slim/slim": "~2.0",
-        "doctrine/dbal": "~2.5"
+        "doctrine/dbal": "~2.5",
+        "maennchen/zipstream-php": "^0.3.1"
     }
 }
