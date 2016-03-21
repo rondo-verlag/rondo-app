@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        }
+    },
+    "dependent_plugins": {}
+}
