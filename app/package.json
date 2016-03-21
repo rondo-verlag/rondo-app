@@ -21,6 +21,7 @@
     "ios"
   ],
   "scripts": {
+    "emulate-ios": "ionic emulate ios --target='iPhone-4s'",
     "build-ios": "ionic build ios",
     "build-android": "ionic build android",
     "build-ionic-css": "scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css",
