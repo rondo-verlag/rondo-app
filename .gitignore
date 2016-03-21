@@ -2,7 +2,7 @@
 node_modules/
 /app/platforms/*
 !/app/platforms/platforms.json
-/app/plugins/
+/app/plugins/*
 !/app/plugins/android.json
 !/app/plugins/ios.json
 !/app/plugins/fetch.json

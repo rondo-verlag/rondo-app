@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="ch.rondo.songbookapp" version="0.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ch.rondo.songbookapp" version="0.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Rondo</name>
   <description>
       Rondo Singbuch App
@@ -8,13 +8,12 @@
       Rondo Verlag
   </author>
   <content src="index.html"/>
-  <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="SplashScreenDelay" value="5000"/>
   <preference name="StatusBarBackgroundColor" value="#000000"/>
   <preference name="StatusBarStyle" value="blackopaque"/>
   <platform name="android">
@@ -67,5 +66,10 @@
   </platform>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
   <plugin name="cordova-plugin-whitelist" spec="~1.2.1"/>
+  <access origin="*"/>
   <allow-intent href="mailto:*"/>
+  <allow-navigation href="*" />
+  <access origin="mailto:*" launch-external="yes"/>
+  <access origin="http://*" launch-external="yes" />
+  <access origin="https://*" launch-external="yes" />
 </widget>

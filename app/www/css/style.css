@@ -48,7 +48,11 @@ input[type='search'] {
   -webkit-appearance: searchfield;
 }
 */
-.invisible-link {
+a {
+  color: inherit;
+  text-decoration: underline; }
+
+a.invisible-link {
   text-decoration: none;
   color: inherit; }
 

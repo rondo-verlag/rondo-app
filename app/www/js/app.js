@@ -57,6 +57,9 @@ Songbook.run(function ($ionicPlatform /*, $ionicAnalytics*/) {
  */
 Songbook.controller("AboutController", function ($scope, SettingsService) {
     $scope.app_version = appVersion;
+    $scope.launchBrowser = function (url) {
+        window.open(url, '_system');
+    };
 });
 /**
  * View controller for the main app.

@@ -27,6 +27,9 @@
         },
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },
     "dependent_plugins": {}
