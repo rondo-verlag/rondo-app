@@ -5,7 +5,7 @@ interface Cordova {
   getAppVersion(callback: Function): Function;
 }
 
-Songbook.run(function ($ionicPlatform/*, /*$ionicAnalytics*/) {
+Songbook.run(function ($ionicPlatform/*, $ionicAnalytics*/) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
