@@ -381,6 +381,7 @@
         "pageRondoBlue": null,
         "pageRondoGreen": "24",
         "chords": [
+            "C",
             "D",
             "G"
         ],
@@ -663,7 +664,6 @@
             "A7",
             "Am",
             "C",
-            "D",
             "D7",
             "G"
         ],
@@ -783,6 +783,7 @@
         "pageRondoGreen": "187",
         "chords": [
             "A7",
+            "D",
             "Dm"
         ],
         "alternative": false
@@ -987,35 +988,6 @@
             "C",
             "F",
             "G"
-        ],
-        "alternative": false
-    },
-    {
-        "id": "156",
-        "title": "DOWN BY THE RIVERSIDE",
-        "pageRondoRed": "112",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "112",
-        "chords": [
-            "B",
-            "C7",
-            "F"
-        ],
-        "alternative": false
-    },
-    {
-        "id": "157",
-        "title": "-- DEMO SONG --",
-        "pageRondoRed": null,
-        "pageRondoBlue": null,
-        "pageRondoGreen": null,
-        "chords": [
-            "A",
-            "Am",
-            "Em",
-            "F",
-            "G",
-            "Hm"
         ],
         "alternative": false
     }
