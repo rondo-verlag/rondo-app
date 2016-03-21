@@ -286,7 +286,7 @@ $app->get('/export/html', function () use ($app, &$DB) {
 // export html files & images as zip
 $app->get('/export/zip', function () use ($app, &$DB) {
 	# create a new zipstream object
-	$zip = new ZipStream\ZipStream('data.zip');
+	$zip = new ZipStream\ZipStream('rondo_data_'.date('Y-m-d').'.zip');
 
 	$songIds = $DB->fetchAll("SELECT id FROM songs
 		WHERE license = 'FREE'
@@ -306,7 +306,11 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 		}
 	}
 
-	// TODO: song index
+	// song index
+	$songIndex = new SongIndex();
+	$index = $songIndex->getSongIndex();
+	$json = json_encode($index, JSON_PRETTY_PRINT);
+	$zip->addFile('song-index.json', $json);
 
 	# finish the zip stream
 	$zip->finish();
