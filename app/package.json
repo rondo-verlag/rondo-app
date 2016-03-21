@@ -19,5 +19,12 @@
   ],
   "cordovaPlatforms": [
     "ios"
-  ]
+  ],
+  "scripts": {
+    "build-ios": "ionic build ios",
+    "build-android": "ionic build android",
+    "build-ionic-css": "scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css",
+    "build-app-css": "sass --no-cache --update www/css/style.scss:www/css/style.css",
+    "android-release": "cordova build --release android && jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore keystore/android-release-key.keystore /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk rondoapp && ~/Library/Android/sdk/build-tools/23.0.2/zipalign -v 4 /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk build/Rondo.apk"
+  }
 }

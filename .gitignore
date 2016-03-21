@@ -11,4 +11,4 @@ app/www/css/.sass-cache
 app/www/js/app.js.map
 app/www/css/style.css.map
 app/keystore/*.keystore
-app/Rondo.apk
+app/build/*.apk
