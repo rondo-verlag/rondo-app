@@ -163,6 +163,33 @@ $app->get('/importsib', function () use ($app, &$DB) {
 	}
 });
 
+$app->get('/importnotespdf', function () use ($app, &$DB) {
+	$app->contentType('text/html');
+	ini_set('max_execution_time', 300);
+
+	$path = '../../data/Dateien_ohne_Texte';
+	$files = scandir($path);
+
+	foreach($files as $file){
+		if (substr($file, -4) === '.pdf'){
+			$songtitle = substr($file, 0, -4);
+			$songtitle = str_replace('_0001','',$songtitle);
+			$songtitle = normalizer_normalize($songtitle);
+			//var_dump($songtitle);
+			$ids = $DB->fetchAll("SELECT id FROM songs WHERE title = ?", array($songtitle));
+			if(isset($ids[0]['id'])){
+				var_dump($ids[0]['id']);
+				$data = file_get_contents($path.'/'.$file);
+				$song = new Song($ids[0]['id']);
+				$song->setRawData('rawNotesPDF', $data);
+				$song->save();
+			} else {
+				var_dump("no song found for $songtitle");
+			}
+		}
+	}
+});
+
 $app->get('/importpng', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
@@ -303,6 +330,12 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 		$data = $song->getData();
 		if ($data['rawImage']){
 			$zip->addFile('images/'.$songId['id'].'.png', $data['rawImage']);
+		}
+
+		// generate pdf
+		$data = $song->getData();
+		if ($data['rawNotesPDF']){
+			$zip->addFile('pdfs/'.$songId['id'].'.pdf', $data['rawNotesPDF']);
 		}
 	}
 
