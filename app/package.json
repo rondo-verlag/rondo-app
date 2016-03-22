@@ -15,17 +15,28 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "ionic-plugin-keyboard"
+    "cordova-plugin-app-version",
+    "cordova-plugin-device",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-insomnia",
+    "cordova-plugin-screen-orientation",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-whitelist",
+    "ionic-plugin-keyboard",
+    "org.apache.cordova.console"
   ],
   "cordovaPlatforms": [
-    "ios"
+    "ios",
+    "android"
   ],
   "scripts": {
-    "emulate-ios": "ionic emulate ios --target='iPhone-4s'",
-    "build-ios": "ionic build ios",
-    "build-android": "ionic build android",
+    "postinstall": "ionic state restore",
     "build-ionic-css": "scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css",
     "build-app-css": "sass --no-cache --update www/css/style.scss:www/css/style.css",
+    "ios-emulate": "ionic emulate ios --target='iPhone-4s'",
+    "ios-build": "ionic build ios",
+    "android-build": "ionic build android",
+    "android-run": "ionic run android",
     "android-release": "cordova build --release android && jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore keystore/android-release-key.keystore /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk rondoapp && rm build/Rondo.apk && ~/Library/Android/sdk/build-tools/23.0.2/zipalign -v 4 /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk build/Rondo.apk"
   }
 }

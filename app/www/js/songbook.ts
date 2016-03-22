@@ -60,6 +60,12 @@ Songbook.run(function ($ionicPlatform/*, $ionicAnalytics*/) {
         controller: "AboutController"
       });
 
+      $stateProvider.state("notes", {
+        url: "/song/:songId/notes",
+        templateUrl: "templates/notes.html",
+        controller: "NotesController"
+      });
+
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/');
 });

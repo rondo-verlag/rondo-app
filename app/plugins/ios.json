@@ -30,6 +30,9 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },
     "dependent_plugins": {}
