@@ -19,8 +19,8 @@
         <td>{{song.title}}</td>
         <td><license license="song.license"></license></td>
         <td><status status="song.status"></status></td>
-        <td>{{song.hasImage}}</td>
-        <td>{{song.hasNotesPDF}}</td>
+        <td><yesno state="song.hasImage"></yesno></td>
+        <td><yesno state="song.hasNotesPDF"></yesno></td>
         <td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
       </tr>
     </table>

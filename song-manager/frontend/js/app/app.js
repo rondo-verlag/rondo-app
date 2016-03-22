@@ -23,6 +23,24 @@ var rondo;
     var directives;
     (function (directives) {
         'use strict';
+        function license() {
+            return {
+                templateUrl: 'frontend/js/app/directives/license.html',
+                scope: {
+                    license: '='
+                },
+                restrict: 'E'
+            };
+        }
+        directives.license = license;
+    })(directives = rondo.directives || (rondo.directives = {}));
+})(rondo || (rondo = {}));
+/// <reference path="../references.ts" />
+var rondo;
+(function (rondo) {
+    var directives;
+    (function (directives) {
+        'use strict';
         function status() {
             return {
                 templateUrl: 'frontend/js/app/directives/status.html',
@@ -41,16 +59,16 @@ var rondo;
     var directives;
     (function (directives) {
         'use strict';
-        function license() {
+        function yesno() {
             return {
-                templateUrl: 'frontend/js/app/directives/license.html',
+                templateUrl: 'frontend/js/app/directives/yesno.html',
                 scope: {
-                    license: '='
+                    state: '='
                 },
                 restrict: 'E'
             };
         }
-        directives.license = license;
+        directives.yesno = yesno;
     })(directives = rondo.directives || (rondo.directives = {}));
 })(rondo || (rondo = {}));
 /// <reference path="../references.ts" />
@@ -171,8 +189,9 @@ var rondo;
 /// <reference path="../typings/tsd.d.ts" />
 /// <reference path="models/Song.ts" />
 /// <reference path="filters/filters.ts"/>
-/// <reference path="directives/status.ts"/>
 /// <reference path="directives/license.ts"/>
+/// <reference path="directives/status.ts"/>
+/// <reference path="directives/yesno.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
 /// <reference path="app.ts"/> 
@@ -191,6 +210,7 @@ var rondo;
     RondoApp.filter("yesno", rondo.filters.yesno);
     RondoApp.directive("status", rondo.directives.status);
     RondoApp.directive("license", rondo.directives.license);
+    RondoApp.directive("yesno", rondo.directives.yesno);
     RondoApp.config(['$routeProvider',
         function ($routeProvider) {
             $routeProvider.
