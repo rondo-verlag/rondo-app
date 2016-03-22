@@ -87,6 +87,10 @@ a.invisible-link {
   letter-spacing: 1px;
   .line {
     line-height: 2.2em;
+    .word {
+      float: left;
+      height: 1.5em;
+    }
     .bl {
       float: left;
       height: 1.5em;
@@ -152,8 +156,11 @@ a.invisible-link {
     width: auto;
   }
 
-  .songtext .line .bl {
-    height: 2.5em;
+  .songtext .line {
+    .word,
+    .bl {
+      height: 2.5em;
+    }
   }
 
   .songtext {

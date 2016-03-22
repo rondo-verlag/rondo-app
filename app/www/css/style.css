@@ -65,6 +65,9 @@ a.invisible-link {
   letter-spacing: 1px; }
   .songtext .line {
     line-height: 2.2em; }
+    .songtext .line .word {
+      float: left;
+      height: 1.5em; }
     .songtext .line .bl {
       float: left;
       height: 1.5em; }
@@ -108,6 +111,7 @@ a.invisible-link {
   height: 1.2em;
   overflow: visible;
   width: auto; }
+.rondo-show-chords .songtext .line .word,
 .rondo-show-chords .songtext .line .bl {
   height: 2.5em; }
 .rondo-show-chords .songtext {

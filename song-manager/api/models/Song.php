@@ -62,7 +62,7 @@ class Song
 	}
 
 	public function getHtml($export = false){
-		if($export){
+		if($export || false){
 			// only export songtext for the app
 			return $this->crd2html($this->data['text']);
 		}
@@ -80,13 +80,15 @@ class Song
 			$image = '';
 		}
 
-		$html = '<div>
-			'.$image.'
-			<div class="padding">
-			  <h3 class="song-title">'.$this->data['title'].'</h3>
-			  <div class="songtext">'.$this->crd2html($this->data['text']).'</div>
-			</div>
-		</div>';
+		$html = '<div>'.EOL
+			.$image.EOL
+			.'<div class="padding">'.EOL
+			.'  <h3 class="song-title">'.$this->data['title'].'</h3>'.EOL
+			.'  <div class="songtext">'.EOL.EOL
+			.$this->crd2html($this->data['text']).EOL
+			.'  </div>'.EOL
+			.'</div>'.EOL
+			.'</div>';
 		return $html;
 	}
 
@@ -118,7 +120,8 @@ class Song
 		}
 
 		$html  = '<div class="paragraph">'.EOL;
-		$html .= '<div class="line">'.EOL;
+		$html .= '  <div class="line">'.EOL;
+		$html .= '    <div class="word">';
 		$html .= '<div class="bl">';
 
 		$last_token = null;
@@ -146,18 +149,33 @@ class Song
 					$html .= '<span>'.$chord.'</span>';
 					break;
 				case 'T_NEWLINE':
-					$html .= '</div></div>'.EOL.'<div class="line">'.EOL.'<div class="bl">';
+					$html .= '</div>';
+					$html .= '</div>'.EOL;
+					$html .= '  </div>'.EOL;
+					$html .= '  <div class="line">'.EOL;
+					$html .= '    <div class="word"><div class="bl">';
 					break;
 				case 'T_PARAGRAPH':
-					$html .= '</div></div></div>'.EOL.EOL.'<div class="paragraph"><div class="line">'.EOL.'<div class="bl">';
+					$html .= '</div>';
+					$html .= '</div>'.EOL;
+					$html .= '  </div>'.EOL;
+					$html .= '</div>'.EOL;
+					$html .= '<div class="paragraph">'.EOL;
+					$html .= '  <div class="line">'.EOL;
+					$html .= '    <div class="word"><div class="bl">';
 					break;
 				case 'T_STRING':
-					$space = ($next_token == 'T_WHITESPACE' ? '&nbsp;' : '');
-					$html .= '<span class="empty-chord"></span>'.$token['match'].$space.'</div>'.EOL.'<div class="bl">';
+					$isWordEnd = ($next_token == 'T_WHITESPACE');
+					$emptyToken = ($last_token != 'T_CHORD' ? '<span class="empty-chord"></span>' : '');
+					if($isWordEnd){
+						$html .= $emptyToken.$token['match'].'&nbsp;</div></div>'.EOL.'    <div class="word"><div class="bl">';
+					} else {
+						$html .= $emptyToken.$token['match'].'</div><div class="bl">';
+					}
 					break;
 				case 'T_WHITESPACE':
 					if($last_token == 'T_CHORD'){
-						$html .= ' </div>'.EOL.'<div class="bl">';
+						$html .= ' </div></div>'.EOL.'    <div class="word"><div class="bl">';
 					}
 					break;
 				default:
@@ -166,9 +184,15 @@ class Song
 			$last_token = $token['token'];
 		}
 
+		// clean html
+		$html = str_replace('    <div class="word"><div class="bl"></div></div>'.EOL,'',$html);
+		$html = str_replace('<div class="bl"></div>','',$html);
+
+
 		$html .= '</div>';
-		$html .= '</div>';
-		$html .= '</div>';
+		$html .= '</div>'.EOL;
+		$html .= '  </div>'.EOL;
+		$html .= '</div>'.EOL;
 
 		return $html;
 	}
