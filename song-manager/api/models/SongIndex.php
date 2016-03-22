@@ -9,6 +9,18 @@ class SongIndex {
 	}
 
 	public function getSongIndex(){
+		$songs = $this->DB->fetchAll("SELECT 
+				 id, title, license, status, 
+				 (rawImage IS NOT NULL) AS hasImage,
+				 (rawSIB IS NOT NULL) AS hasSIB,
+				 (rawMidi IS NOT NULL) AS hasMidi,
+				 (rawNotesPDF IS NOT NULL) AS hasNotesPDF
+				FROM songs");
+
+		return $songs;
+	}
+
+	public function getSongIndexForApp(){
 		$index = [];
 
 		$songs = $this->DB->fetchAll("SELECT id

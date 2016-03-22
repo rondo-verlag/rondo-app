@@ -10,6 +10,8 @@
         <th ng-click="orderBy = 'title'; orderReversed = !orderReversed">Titel</th>
         <th ng-click="orderBy = 'license'; orderReversed = !orderReversed">Lizenzfrei</th>
         <th ng-click="orderBy = 'status'; orderReversed = !orderReversed">Status</th>
+        <th ng-click="orderBy = 'hasImage'; orderReversed = !orderReversed">Bild</th>
+        <th ng-click="orderBy = 'hasNotesPDF'; orderReversed = !orderReversed">Noten</th>
         <th>&nbsp;</th>
       </tr>
       <tr ng-repeat="song in filtered = (list | filter:search | orderBy : orderBy : orderReversed )" ng-dblclick="editSong(song.id)">
@@ -17,6 +19,8 @@
         <td>{{song.title}}</td>
         <td><license license="song.license"></license></td>
         <td><status status="song.status"></status></td>
+        <td>{{song.hasImage}}</td>
+        <td>{{song.hasNotesPDF}}</td>
         <td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
       </tr>
     </table>

@@ -20,8 +20,8 @@ $app->config('debug', true);
 $app->response->headers->set('Content-Type', 'application/json');
 
 $app->get('/songs', function () use(&$DB) {
-	$songs = $DB->fetchAll("SELECT id, title, license, status FROM songs");
-	echo json_encode($songs, JSON_NUMERIC_CHECK);
+	$si = new SongIndex();
+	echo json_encode($si->getSongIndex(), JSON_NUMERIC_CHECK);
 });
 
 $app->get('/songs/:songId', function ($songId) {
@@ -268,7 +268,7 @@ $app->get('/export/listchords', function () use ($app, &$DB) {
 $app->get('/export/index', function () use ($app, &$DB) {
 	$path = '../../app/www/resources/songs/song-index.json';
 	$songIndex = new SongIndex();
-	$index = $songIndex->getSongIndex();
+	$index = $songIndex->getSongIndexForApp();
 
 	$json = json_encode($index, JSON_PRETTY_PRINT);
 	umask(0);
@@ -341,7 +341,7 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 
 	// song index
 	$songIndex = new SongIndex();
-	$index = $songIndex->getSongIndex();
+	$index = $songIndex->getSongIndexForApp();
 	$json = json_encode($index, JSON_PRETTY_PRINT);
 	$zip->addFile('song-index.json', $json);
 
