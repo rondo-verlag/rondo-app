@@ -63,6 +63,13 @@ class SongIndex {
 				}
 			}
 		}
+		usort($index, function($a, $b) {
+			if (strtoupper($a['title']) < strtoupper($b['title'])) {
+				return -1;
+			} else {
+				return 1;
+			}
+		});
 		return $index;
 	}
 }
