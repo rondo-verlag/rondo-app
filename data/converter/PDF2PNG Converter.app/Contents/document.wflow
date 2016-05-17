@@ -18,6 +18,108 @@
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>fileNames</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Angegebene Finder-Objekte abfragen</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>fileNames</key>
+					<array/>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SpecifiedFiles</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>SpecifiedFilesAction</string>
+				<key>InputUUID</key>
+				<string>63082AEB-903F-4C97-8CE5-B9EE831AD90B</string>
+				<key>Keywords</key>
+				<array>
+					<string>Datei</string>
+					<string>Auswählen</string>
+					<string>Suchen</string>
+					<string>Abfragen</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>B0F0CD40-6596-4225-AFEF-E6C72FBC70A9</string>
+				<key>UUID</key>
+				<string>42E9E445-49B7-4688-A1DE-4DE84EDF1A2C</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>fileNames</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>415.500000:308.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/German.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
 					<false/>
 					<key>Types</key>
 					<array>
@@ -152,7 +254,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>423.000000:271.000000</string>
+				<string>415.500000:509.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Render PDF Pages as Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -272,7 +374,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>423.000000:374.000000</string>
+				<string>415.500000:612.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Move Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -282,12 +384,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>ECB66945-34DC-4D54-AC1E-2C936107BFF4</key>
+		<key>7CB262DF-1648-437E-B076-387408B4A8E4</key>
 		<dict>
 			<key>from</key>
 			<string>97BEEE92-A810-4495-B1FA-E6809B73C33C - 97BEEE92-A810-4495-B1FA-E6809B73C33C</string>
 			<key>to</key>
 			<string>9FE531BA-360D-4AF0-AE00-BEC2B526DAC1 - 9FE531BA-360D-4AF0-AE00-BEC2B526DAC1</string>
+		</dict>
+		<key>9399EAAE-9CCB-483C-BEB1-494947CF5017</key>
+		<dict>
+			<key>from</key>
+			<string>42E9E445-49B7-4688-A1DE-4DE84EDF1A2C - 42E9E445-49B7-4688-A1DE-4DE84EDF1A2C</string>
+			<key>to</key>
+			<string>97BEEE92-A810-4495-B1FA-E6809B73C33C - 97BEEE92-A810-4495-B1FA-E6809B73C33C</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
