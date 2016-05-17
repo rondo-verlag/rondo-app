@@ -9,13 +9,25 @@
   font-family: Medien;
   font-style: italic;
   src: url("fonts/NN_Medien_Demo/NN_Medien_Italic_Demo.otf") format("opentype"); }
+@font-face {
+  font-family: Vectora;
+  src: url("fonts/Vectora/VectoraLTStd-Roman.otf") format("opentype"); }
+@font-face {
+  font-family: Vectora;
+  font-weight: bold;
+  src: url("fonts/Vectora/VectoraLTStd-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: Vectora;
+  font-style: italic;
+  src: url("fonts/Vectora/VectoraLTStd-Italic.otf") format("opentype"); }
 body {
   color: #ffffff;
   background: #000000;
-  font-family: Medien, "Helvetica Neue", Verdana, sans-serif; }
+  font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
+  letter-spacing: 2px; }
 
 input, button, select, textarea {
-  font-family: Medien, "Helvetica Neue", Verdana, sans-serif; }
+  font-family: Vectora, "Helvetica Neue", Verdana, sans-serif; }
 
 ::-webkit-input-placeholder {
   color: #333;
@@ -62,7 +74,7 @@ a.invisible-link {
 
 .songtext {
   font-size: 1.3em;
-  letter-spacing: 1px; }
+  letter-spacing: 2px; }
   .songtext .line {
     line-height: 2.2em; }
     .songtext .line .word {
@@ -237,6 +249,6 @@ ion-content .page-numbers {
   border: none; }
   .rondo-list .item .item-content {
     padding: 8px 16px;
-    letter-spacing: 1px; }
+    letter-spacing: 2px; }
 
 /*# sourceMappingURL=style.css.map */

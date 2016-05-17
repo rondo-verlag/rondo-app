@@ -1,7 +1,7 @@
 // Custom SASS Styles
 
 
-// Fonts
+// Medien Font
 @font-face {
   font-family: Medien;
   //src: url("fonts/NN_Medien/NN_Medien_Regular.otf") format("opentype");
@@ -22,15 +22,34 @@
   src: url("fonts/NN_Medien_Demo/NN_Medien_Italic_Demo.otf") format("opentype");
 }
 
+// Vectora Font
+@font-face {
+  font-family: Vectora;
+  src: url("fonts/Vectora/VectoraLTStd-Roman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Vectora;
+  font-weight: bold;
+  src: url("fonts/Vectora/VectoraLTStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Vectora;
+  font-style: italic;
+  src: url("fonts/Vectora/VectoraLTStd-Italic.otf") format("opentype");
+}
+
 // Some Basic Theme overrides
 body {
   color: #ffffff;
   background: #000000;
-  font-family: Medien, "Helvetica Neue", Verdana, sans-serif;
+  font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
+  letter-spacing: 2px;
 }
 
 input, button, select, textarea {
-  font-family: Medien, "Helvetica Neue", Verdana, sans-serif;
+  font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -84,7 +103,7 @@ a.invisible-link {
 // Components
 .songtext {
   font-size: 1.3em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   .line {
     line-height: 2.2em;
     .word {
@@ -343,7 +362,7 @@ ion-content .page-numbers {
 
     .item-content {
       padding: 8px 16px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
 
     }
   }
