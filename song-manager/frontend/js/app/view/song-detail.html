@@ -33,6 +33,17 @@
           </div>
 
           <div class="form-group">
+            <label for="inputInterpret" class="col-sm-3 control-label">Interpret</label>
+
+            <div class="col-sm-9">
+              <input type="text" ng-model="song.interpret" class="form-control" id="inputInterpret">
+              <span class="small">
+                Bandname oder Künstler, damit in der App danach gesucht werden kann.
+              </span>
+            </div>
+          </div>
+
+          <div class="form-group">
             <label for="text" class="col-sm-3 control-label">Text</label>
 
             <div class="col-sm-9">
@@ -68,46 +79,6 @@
             </div>
           </div>
 
-          <!--
-          <div class="form-group">
-            <label for="inputMusicXMLFile" class="col-sm-3 control-label">MusicXML Datei hochladen</label>
-
-            <div class="col-sm-3">
-              <input type="file" id="inputMusicXMLFile" nv-file-select uploader="uploader"/>
-            </div>
-            <div class="col-sm-3">
-            <span ng-repeat="item in uploader.queue">
-              <button ng-click="item.upload()" class="btn btn-xs btn-success">Hochladen</button>
-            </span>
-            </div>
-          </div>
-          -->
-
-
-          <div class="form-group">
-            <label for="license" class="col-sm-3 control-label">Lizenz</label>
-
-            <div class="col-sm-9">
-              <select ng-model="song.license" id="license">
-                <option value="UNKNOWN">Unbekannt</option>
-                <option value="LICENSED">Lizenziert</option>
-                <option value="FREE">Frei</option>
-              </select>
-              <license license="song.license"></license>
-            </div>
-          </div>
-
-
-          <div class="form-group">
-            <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Infos</label>
-
-            <div class="col-sm-9">
-              <textarea id="copyrightInfo" class="form-control" rows="2" ng-model="song.copyrightInfo"></textarea>
-            </div>
-          </div>
-
-
-
 
           <div class="form-group">
             <label for="status" class="col-sm-3 control-label">Status</label>
@@ -127,6 +98,71 @@
 
             <div class="col-sm-9">
               <textarea id="comments" class="form-control" rows="4" ng-model="song.comments"></textarea>
+            </div>
+          </div>
+
+          <!--
+          <div class="form-group">
+            <label for="inputMusicXMLFile" class="col-sm-3 control-label">MusicXML Datei hochladen</label>
+
+            <div class="col-sm-3">
+              <input type="file" id="inputMusicXMLFile" nv-file-select uploader="uploader"/>
+            </div>
+            <div class="col-sm-3">
+            <span ng-repeat="item in uploader.queue">
+              <button ng-click="item.upload()" class="btn btn-xs btn-success">Hochladen</button>
+            </span>
+            </div>
+          </div>
+          -->
+
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
+              <h4>Copyright</h4>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="license" class="col-sm-3 control-label">Lizenz</label>
+
+            <div class="col-sm-9">
+              <select ng-model="song.license" id="license">
+                <option value="UNKNOWN">Unbekannt</option>
+                <option value="LICENSED">Lizenziert</option>
+                <option value="FREE">Frei</option>
+              </select>
+              <license license="song.license"></license>
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="copyrightInfo" class="col-sm-3 control-label">Text in der App</label>
+
+            <div class="col-sm-9">
+              <textarea id="copyrightInfo" class="form-control" rows="2" ng-model="song.copyrightInfo"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="copyrightContact" class="col-sm-3 control-label">Halter / Kontakt</label>
+
+            <div class="col-sm-9">
+              <textarea id="copyrightContact" class="form-control" rows="4" ng-model="song.copyrightContact"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="copyrightStatus" class="col-sm-3 control-label">Copyright Status</label>
+
+            <div class="col-sm-9">
+              <select ng-model="song.copyrightStatus" id="copyrightStatus">
+                <option value="NEW">Neu</option>
+                <option value="INPROGRESS">In Arbeit</option>
+                <option value="DONE">Fertig</option>
+              </select>
+              <status status="song.copyrightStatus"></status>
             </div>
           </div>
 
