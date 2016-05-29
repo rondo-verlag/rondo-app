@@ -6,7 +6,6 @@
     "ionic-platform-web-client": "~0.2.1"
   },
   "dependencies": {
-    "angular-hammer": "monospaced/angular-hammer#~1.2.4",
-    "raphael": "~2.1.2"
+    "angular-hammer": "monospaced/angular-hammer#~1.2.4"
   }
 }
