@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'rondo';
     src:
-        url('fonts/rondo.ttf?yqenl3') format('truetype'),
-        url('fonts/rondo.woff?yqenl3') format('woff'),
-        url('fonts/rondo.svg?yqenl3#rondo') format('svg');
+        url('fonts/rondo/rondo.ttf?yqenl3') format('truetype'),
+        url('fonts/rondo/rondo.woff?yqenl3') format('woff'),
+        url('fonts/rondo/rondo.svg?yqenl3#rondo') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 [class^="rondo-icon-"], [class*=" rondo-icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'rondo' !important;
+    font-family: 'rondo', Vectora, Medien, "Helvetica Neue", Verdana, sans-serif !important;
     speak: none;
     font-style: normal;
     font-weight: normal;

@@ -57,63 +57,8 @@ input, button, select, textarea {
   font-size: 16px;
 }
 
-
 // Rondo Icon Font
-@font-face {
-    font-family: 'rondo';
-    src:
-        url('fonts/rondo/rondo.ttf?jxg6pp') format('truetype'),
-        url('fonts/rondo/rondo.woff?jxg6pp') format('woff'),
-        url('fonts/rondo/rondo.svg?jxg6pp#rondo') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class^="rondo-icon-"], [class*=" rondo-icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'rondo', Vectora, Medien, "Helvetica Neue", Verdana, sans-serif !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.rondo-icon-notes:before {
-    content: "\e900";
-}
-.rondo-icon-midi:before {
-    content: "\e901";
-}
-.rondo-icon-chords:before {
-    content: "\e902";
-}
-.rondo-icon-library:before {
-    content: "\e903";
-}
-.rondo-icon-stop:before {
-    content: "\e904";
-}
-.rondo-icon-play:before {
-    content: "\e905";
-}
-.rondo-icon-logo:before {
-    content: "\e906";
-}
-.rondo-icon-arrow:before {
-    content: "\e907";
-}
-.rondo-icon-search:before {
-    content: "\e908";
-}
-
-
-
+@import "rondo-icons";
 
 
 /*
@@ -348,6 +293,10 @@ chord {
   }
 }
 
+.chord-list {
+  font-size: 1000%;
+}
+
 .song-image {
   width: 100%;
 }
@@ -387,6 +336,10 @@ ion-content .page-numbers {
     .placeholder-icon {
       color: #CCC;
       font-size: 140%;
+    }
+
+    .placeholder-icon:first-child {
+      padding-right: 0;
     }
 
     input {
