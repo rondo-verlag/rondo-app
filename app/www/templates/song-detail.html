@@ -1,8 +1,6 @@
 <ion-view title="" hm-pinch="doPinch()" class="song-detail has-header-placeholder" hide-back-button="true">
   <ion-nav-buttons side="left">
-    <button class="button button-icon icon ion-ios-arrow-back rondo-custom-back-button" ng-click="backToSonglist()">
-      zur&#xFC;ck
-    </button>
+    <button class="button button-icon icon rondo-icon-arrow rondo-custom-back-button" ng-click="backToSonglist()"></button>
   </ion-nav-buttons>
   <ion-nav-buttons side="right">
     <span ng-bind-html="rondoPages" class="page-numbers"></span>
@@ -24,25 +22,25 @@
 
   <div class="tabs tabs-light tabs-icon-only">
       <a class="tab-item" ng-click="startAutoScroll()" ng-if="!scroll">
-        <i class="icon ion-code-download"></i>
+        <i class="icon rondo-icon-play"></i>
       </a>
       <a class="tab-item" ng-click="stopAutoScroll()" ng-if="scroll">
-        <i class="icon ion-ios-pause"></i>
+        <i class="icon rondo-icon-stop"></i>
       </a>
       <a class="tab-item" ng-click="playSong()" ng-show="midiFile && !playingSong">
-        <i class="icon ion-play"></i>
+        <i class="icon rondo-icon-midi"></i>
       </a>
       <a class="tab-item" ng-click="stopSong()" ng-show="playingSong">
-        <i class="icon ion-ios7-pause"></i>
+        <i class="icon rondo-icon-midi"></i>
       </a>
       <a class="tab-item" ng-click="toggleChords()">
-        <i class="icon ion-levels"></i>
+        <i class="icon rondo-icon-chords"></i>
       </a>
       <a class="tab-item" ui-sref="chords({ songId: songId })">
-        <i class="icon ion-grid"></i>
+        <i class="icon rondo-icon-library"></i>
       </a>
       <a class="tab-item" ui-sref="notes({ songId: songId })">
-        <i class="icon ion-music-note"></i>
+        <i class="icon rondo-icon-notes"></i>
       </a>
   </div>
 </ion-view>
