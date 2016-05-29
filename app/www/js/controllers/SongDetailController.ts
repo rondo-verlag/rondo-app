@@ -55,8 +55,18 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     $state.go('search');
   };
 
+  var getScrollTimeout = function(){
+    if(bodyElement.hasClass('rondo-show-chords')){
+      return 40
+    } else {
+      return 80;
+    }
+  };
+
   $scope.startAutoScroll = function(){
-    window.plugins.insomnia.keepAwake();
+    if(window.plugins !== undefined){
+      window.plugins.insomnia.keepAwake();
+    }
     $scope.scroll = true;
     scrollTimer = $interval(() => {
       if(lastScrollPosition == $ionicScrollDelegate.getScrollPosition().top){
@@ -65,11 +75,13 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         lastScrollPosition = $ionicScrollDelegate.getScrollPosition().top;
         $ionicScrollDelegate.scrollBy(0, 1, false);
       }
-    }, 100);
+    }, getScrollTimeout());
   };
 
   $scope.stopAutoScroll = function(){
-    window.plugins.insomnia.allowSleepAgain();
+    if(window.plugins !== undefined) {
+      window.plugins.insomnia.allowSleepAgain();
+    }
     $scope.scroll = false;
     $interval.cancel(scrollTimer);
   };
