@@ -295,10 +295,10 @@ Songbook.controller("SongListController", function ($scope, $ionicPlatform, $ion
     $scope.query = '';
     $scope.songsearch = function (row) {
         return (angular.lowercase(row.title).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-            angular.lowercase(row.interpret).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
-            row.pageRondoRed == $scope.query ||
-            row.pageRondoBlue == $scope.query ||
-            row.pageRondoGreen == $scope.query);
+            !row.alternative && angular.lowercase(row.interpret).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
+            !row.alternative && row.pageRondoRed == $scope.query ||
+            !row.alternative && row.pageRondoBlue == $scope.query ||
+            !row.alternative && row.pageRondoGreen == $scope.query);
     };
     $scope.clearSearch = function () {
         $scope.query = '';

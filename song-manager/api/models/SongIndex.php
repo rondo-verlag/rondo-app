@@ -58,7 +58,7 @@ class SongIndex {
 						'pageRondoRed' => $song['pageRondoRed'],
 						'pageRondoBlue' => $song['pageRondoBlue'],
 						'pageRondoGreen' => $song['pageRondoGreen'],
-						'interpret' => "", // when filtering, we don't want one song multiple times
+						'interpret' => $song['interpret'],
 						'chords' => $chords,
 						'alternative' => true
 					];
