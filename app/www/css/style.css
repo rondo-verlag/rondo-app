@@ -282,14 +282,15 @@ a.invisible-link {
 .song-detail .tabs {
   -webkit-transition: bottom 0.5s;
   transition: bottom 0.5s; }
-  .song-detail .tabs .icon {
-    color: #fff; }
 .song-detail .tab-item {
   opacity: 1; }
 .song-detail .has-header {
   top: 0; }
 .song-detail .has-tabs {
   bottom: 0; }
+
+.browser-link {
+  padding: 12px 0; }
 
 .rondo-custom-back-button {
   padding: 0 !important; }
