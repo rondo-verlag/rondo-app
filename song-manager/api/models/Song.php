@@ -70,10 +70,10 @@ class Song
 		if ($this->data['rawImage']){
 			if ($export == true){
 				// app export
-				$imgurl = 'resources/songs/images/'.$this->data['id'].'.png?_t='.time();
+				$imgurl = 'resources/songs/images/'.$this->data['id'].'.gif?_t='.time();
 			} else {
 				// song-manager preview
-				$imgurl = 'api/index.php/songs/'.$this->data['id'].'/raw/rawImage.png?_t='.time();
+				$imgurl = 'api/index.php/songs/'.$this->data['id'].'/raw/rawImage.gif?_t='.time();
 			}
 			$image = '<img src="'.$imgurl.'" class="song-image"/>';
 		} else {

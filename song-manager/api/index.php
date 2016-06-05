@@ -79,6 +79,9 @@ $app->get('/songs/:songId/raw/:rawType', function ($songId, $rawType) use ($app)
 			case 'png':
 				$app->contentType('image/png');
 				break;
+			case 'gif':
+				$app->contentType('image/gif');
+				break;
 			case 'pdf':
 				$app->contentType('application/pdf');
 				break;
@@ -298,11 +301,11 @@ $app->get('/export/html', function () use ($app, &$DB) {
 		// generate image
 		$data = $song->getData();
 		if ($data['rawImage']){
-			// convert to png
+			// convert to gif
 			ob_start();
-			imagepng(imagecreatefromstring($data['rawImage']));
+			imagegif(imagecreatefromstring($data['rawImage']));
 			$image = ob_get_clean();
-			$imagepath = $path.'images/'.$songId['id'].'.png';
+			$imagepath = $path.'images/'.$songId['id'].'.gif';
 			file_put_contents($imagepath, $image);
 			chmod($imagepath, 0777);
 		}
@@ -329,7 +332,11 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 		// generate image
 		$data = $song->getData();
 		if ($data['rawImage']){
-			$zip->addFile('images/'.$songId['id'].'.png', $data['rawImage']);
+			// convert to gif
+			ob_start();
+			imagegif(imagecreatefromstring($data['rawImage']));
+			$image = ob_get_clean();
+			$zip->addFile('images/'.$songId['id'].'.gif', $image);
 		}
 
 		// generate pdf
