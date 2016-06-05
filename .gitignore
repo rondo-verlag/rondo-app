@@ -9,7 +9,7 @@ node_modules/
 /song-manager/api/_conf.php
 /data/sibelius_export
 /app/www/resources/songs/html/*.html
-/app/www/resources/songs/images/*.png
+/app/www/resources/songs/images/*.gif
 /app/www/resources/songs/notes/*.png
 /app/www/resources/songs/pdfs/*.pdf
 /app/.io-config.json
