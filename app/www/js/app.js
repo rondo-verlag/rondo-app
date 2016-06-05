@@ -147,6 +147,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     $scope.songTitle = '';
     $scope.midiFile = false;
     $scope.playingSong = false;
+    $scope.app_version = appVersion;
     $scope.data = {};
     $scope.info = {};
     $scope.songFile = '';
@@ -321,12 +322,12 @@ Songbook.directive('browserlink', function ($compile, $ionicPopover) {
             url: '@'
         },
         transclude: true,
-        template: '<a ng-click="launchBrowser(\'{{url}}\')" class="browser-link"><ng-transclude></ng-transclude></a>',
+        template: '<a ng-click="launchBrowser()" class="browser-link"><ng-transclude></ng-transclude></a>',
         link: link
     };
     function link(scope, element, attrs) {
-        scope.launchBrowser = function (url) {
-            window.open(url, '_system');
+        scope.launchBrowser = function () {
+            window.open(scope.url, '_system');
         };
     }
 });

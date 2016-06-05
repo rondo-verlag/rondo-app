@@ -8,6 +8,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
   $scope.songTitle = '';
   $scope.midiFile = false;
   $scope.playingSong = false;
+  $scope.app_version = appVersion;
   $scope.data = {};
   $scope.info = {};
   $scope.songFile = '';

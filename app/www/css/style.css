@@ -292,6 +292,11 @@ a.invisible-link {
 .browser-link {
   padding: 12px 0; }
 
+.report-error-link a {
+  color: #444;
+  text-decoration: none;
+  font-size: 90%; }
+
 .rondo-custom-back-button {
   padding: 0 !important; }
 
@@ -307,17 +312,6 @@ a.invisible-link {
 
 .tabs.tabs-light {
   background: black; }
-
-chord {
-  background: white;
-  display: inline-block;
-  border-radius: 10px;
-  margin: 5px 10px 5px 0px; }
-  chord .chord-title {
-    color: black;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 16px; }
 
 .chord-list {
   font-size: 1000%; }

@@ -14,6 +14,10 @@
         <h3 class="song-title">{{songTitle}}</h3>
         <div class="songtext">
           <ng-include src="includeFile"></ng-include>
+          <br>
+          <div class="report-error-link">
+            <browserlink url="mailto:app@rondo-verlag.ch?subject=Feedback zum Lied {{songTitle}} (Rondo App {{app_version}})">Fehler gefunden?</browserlink>
+          </div>
         </div>
       </div>
     </div>
