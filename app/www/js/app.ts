@@ -14,7 +14,5 @@
 /// <reference path="directives/chord.ts" />
 /// <reference path="directives/songtext.ts" />
 
-/// <reference path="filters/parenthesis.ts" />
-
 /// <reference path="services/SettingsService.ts" />
 /// <reference path="services/SongService.ts" />

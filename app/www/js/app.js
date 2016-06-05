@@ -522,13 +522,6 @@ Songbook.directive('songtext', function ($compile, $ionicPopover) {
         return '<div class="bl">' + chord_html + html + '</div>';
     }
 });
-Songbook.filter('parenthesis', function () {
-    return function (input) {
-        if (input)
-            return '(' + input + ')';
-        return '';
-    };
-});
 Songbook.factory("SettingsService", function ($localStorage) {
     var getSettings = function (name, defaults) {
         return function () {
@@ -667,7 +660,6 @@ Songbook.factory("SongService", function ($http, $q) {
 /// <reference path="controllers/SongListController.ts" />
 /// <reference path="directives/chord.ts" />
 /// <reference path="directives/songtext.ts" />
-/// <reference path="filters/parenthesis.ts" />
 /// <reference path="services/SettingsService.ts" />
 /// <reference path="services/SongService.ts" />
 //# sourceMappingURL=app.js.map
