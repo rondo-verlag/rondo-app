@@ -35,7 +35,7 @@ input, button, select, textarea {
 
 @font-face {
   font-family: 'rondo';
-  src: url("fonts/rondo/rondo.ttf?yqenl3") format("truetype"), url("fonts/rondo/rondo.woff?yqenl3") format("woff"), url("fonts/rondo/rondo.svg?yqenl3#rondo") format("svg");
+  src: url("fonts/rondo/rondo.woff?yqenl3") format("woff"), url("fonts/rondo/rondo.ttf?yqenl3") format("truetype");
   font-weight: normal;
   font-style: normal; }
 [class^="rondo-icon-"], [class*=" rondo-icon-"] {
