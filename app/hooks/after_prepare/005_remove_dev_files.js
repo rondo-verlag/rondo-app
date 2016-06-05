@@ -29,7 +29,16 @@ var filesToDelete = [
     "css/style.css.map",
     "js/app.ts",
     "js/app.js.map",
-    "js/songbook.ts"
+    "js/songbook.ts",
+    "lib/ionic/js/ionic.js",
+    "lib/ionic/js/ionic.bundle.js",
+    "lib/ionic/js/ionic-angular.js",
+    "lib/ionic/js/angular/angular.js",
+    "lib/ionic/js/angular/angular-animate.js",
+    "lib/ionic/js/angular/angular.js",
+    "lib/ionic/js/angular-ui/angular-ui-router.js",
+    "lib/ionic/fonts/ionicons.svg"
+
 ];
 
 var iosPlatformsDir = "platforms/ios/www/";
@@ -80,7 +89,7 @@ function processFiles(dir) {
             file = dir + '/' + file;
             fs.stat(file, function(err, stat) {
                 if(!stat){
-                  console.log('ERROR processing folder: ' + file);
+                  console.log('No files in folder, skipping: ' + file);
                   return;
                 }
                 if(!stat.isDirectory()) {
