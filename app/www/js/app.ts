@@ -11,5 +11,7 @@
 /// <reference path="controllers/SongDetailController.ts" />
 /// <reference path="controllers/SongListController.ts" />
 
+/// <reference path="directives/browserlink.ts" />
+
 /// <reference path="services/SettingsService.ts" />
 /// <reference path="services/SongService.ts" />

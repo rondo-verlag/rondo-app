@@ -314,6 +314,22 @@ Songbook.controller("SongListController", function ($scope, $ionicPlatform, $ion
         });
     });
 });
+Songbook.directive('browserlink', function ($compile, $ionicPopover) {
+    return {
+        restrict: 'E',
+        scope: {
+            url: '@'
+        },
+        transclude: true,
+        template: '<a ng-click="launchBrowser(\'{{url}}\')" class="browser-link"><ng-transclude></ng-transclude></a>',
+        link: link
+    };
+    function link(scope, element, attrs) {
+        scope.launchBrowser = function (url) {
+            window.open(url, '_system');
+        };
+    }
+});
 Songbook.factory("SettingsService", function ($localStorage) {
     var getSettings = function (name, defaults) {
         return function () {
@@ -450,6 +466,7 @@ Songbook.factory("SongService", function ($http, $q) {
 /// <reference path="controllers/SettingsController.ts" />
 /// <reference path="controllers/SongDetailController.ts" />
 /// <reference path="controllers/SongListController.ts" />
+/// <reference path="directives/browserlink.ts" />
 /// <reference path="services/SettingsService.ts" />
 /// <reference path="services/SongService.ts" />
 //# sourceMappingURL=app.js.map
