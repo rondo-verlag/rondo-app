@@ -84,6 +84,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     }
     $scope.scroll = false;
     $interval.cancel(scrollTimer);
+    lastScrollPosition = -1;
   };
 
   $scope.toggleChords = function(){
