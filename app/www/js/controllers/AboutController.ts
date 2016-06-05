@@ -1,5 +1,5 @@
 /**
- * View controller for the (modal) about view.
+ * View controller for the about view.
  */
 Songbook.controller("AboutController", function($scope, SettingsService) {
   $scope.app_version = appVersion;

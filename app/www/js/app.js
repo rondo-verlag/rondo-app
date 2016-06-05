@@ -58,7 +58,7 @@ Songbook.run(function ($ionicPlatform /*, $ionicAnalytics*/) {
     $urlRouterProvider.otherwise('/');
 });
 /**
- * View controller for the (modal) about view.
+ * View controller for the about view.
  */
 Songbook.controller("AboutController", function ($scope, SettingsService) {
     $scope.app_version = appVersion;
@@ -291,11 +291,15 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
  */
 Songbook.controller("SongListController", function ($scope, $ionicPlatform, $ionicModal, SongService, $timeout) {
     $scope.songs = [];
-    $scope.search = {
-        title: ''
+    $scope.query = '';
+    $scope.songsearch = function (row) {
+        return (angular.lowercase(row.title).indexOf(angular.lowercase($scope.query) || '') !== -1 ||
+            row.pageRondoRed == $scope.query ||
+            row.pageRondoBlue == $scope.query ||
+            row.pageRondoGreen == $scope.query);
     };
     $scope.clearSearch = function () {
-        $scope.search.title = '';
+        $scope.query = '';
         $timeout(function () {
             document.getElementById('song-search-input').focus();
         }, 500);
