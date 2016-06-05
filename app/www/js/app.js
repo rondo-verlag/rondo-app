@@ -133,15 +133,6 @@ Songbook.controller("NotesController", function ($scope, $rootScope, $document, 
       });
       */
 });
-/**
- * View controller for the (modal) settings view.
- */
-Songbook.controller("SettingsController", function ($scope, SettingsService) {
-    $scope.scroll = SettingsService.getScrollSettings();
-    $scope.$watch("scroll", function () {
-        SettingsService.saveScrollSettings($scope.scroll);
-    }, true);
-});
 Songbook.controller("SongDetailController", function ($scope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval, $timeout) {
     $scope.songId = $stateParams.songId;
     $scope.songTitle = '';
