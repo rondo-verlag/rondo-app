@@ -5,13 +5,13 @@ Songbook.directive('browserlink', function($compile, $ionicPopover) {
       url: '@'
     },
     transclude: true,
-    template: '<a ng-click="launchBrowser(\'{{url}}\')" class="browser-link"><ng-transclude></ng-transclude></a>',
+    template: '<a ng-click="launchBrowser()" class="browser-link"><ng-transclude></ng-transclude></a>',
     link: link
   };
 
   function link(scope, element, attrs) {
-    scope.launchBrowser = function(url:string) {
-      window.open(url, '_system');
+    scope.launchBrowser = function() {
+      window.open(scope.url, '_system');
     };
   }
 });
