@@ -5,6 +5,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "103",
         "pageRondoGreen": "186",
+        "interpret": "",
         "chords": [
             "D",
             "Em",
@@ -19,6 +20,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "103",
         "pageRondoGreen": "186",
+        "interpret": "",
         "chords": [
             "D",
             "Em",
@@ -33,6 +35,7 @@
         "pageRondoRed": "127",
         "pageRondoBlue": null,
         "pageRondoGreen": "125",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -47,6 +50,7 @@
         "pageRondoRed": "103",
         "pageRondoBlue": null,
         "pageRondoGreen": "103",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -60,6 +64,7 @@
         "pageRondoRed": "15",
         "pageRondoBlue": null,
         "pageRondoGreen": "16",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -73,6 +78,7 @@
         "pageRondoRed": "233",
         "pageRondoBlue": null,
         "pageRondoGreen": "233",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -87,6 +93,7 @@
         "pageRondoRed": "123",
         "pageRondoBlue": null,
         "pageRondoGreen": "255",
+        "interpret": "",
         "chords": [
             "C",
             "C7",
@@ -101,6 +108,7 @@
         "pageRondoRed": "68",
         "pageRondoBlue": null,
         "pageRondoGreen": "68",
+        "interpret": "",
         "chords": [
             "A7",
             "D"
@@ -113,6 +121,7 @@
         "pageRondoRed": "60",
         "pageRondoBlue": null,
         "pageRondoGreen": "60",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -131,6 +140,7 @@
         "pageRondoRed": "158",
         "pageRondoBlue": null,
         "pageRondoGreen": "158",
+        "interpret": "",
         "chords": [
             "B",
             "C",
@@ -146,6 +156,7 @@
         "pageRondoRed": "124",
         "pageRondoBlue": "158",
         "pageRondoGreen": "123",
+        "interpret": "",
         "chords": [
             "D7",
             "Em",
@@ -160,6 +171,7 @@
         "pageRondoRed": "153",
         "pageRondoBlue": null,
         "pageRondoGreen": "254",
+        "interpret": "",
         "chords": [
             "C",
             "C7",
@@ -174,6 +186,7 @@
         "pageRondoRed": "63",
         "pageRondoBlue": null,
         "pageRondoGreen": "63",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -188,6 +201,7 @@
         "pageRondoRed": "14",
         "pageRondoBlue": "142",
         "pageRondoGreen": "14",
+        "interpret": "",
         "chords": [
             "A",
             "A7",
@@ -203,6 +217,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "144",
         "pageRondoGreen": "144",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -218,6 +233,7 @@
         "pageRondoRed": "38",
         "pageRondoBlue": null,
         "pageRondoGreen": "38",
+        "interpret": "",
         "chords": [
             "D7",
             "G"
@@ -230,6 +246,7 @@
         "pageRondoRed": "70",
         "pageRondoBlue": null,
         "pageRondoGreen": "70",
+        "interpret": "",
         "chords": [
             "A",
             "A7",
@@ -239,39 +256,12 @@
         "alternative": false
     },
     {
-        "id": "31",
-        "title": "DE GR\u00d6SCHT",
-        "pageRondoRed": "208",
-        "pageRondoBlue": "78",
-        "pageRondoGreen": "208",
-        "chords": [
-            "Am",
-            "C",
-            "F",
-            "G"
-        ],
-        "alternative": false
-    },
-    {
-        "id": "31",
-        "title": "De Summervogel seit zum Jumbojet",
-        "pageRondoRed": "208",
-        "pageRondoBlue": "78",
-        "pageRondoGreen": "208",
-        "chords": [
-            "Am",
-            "C",
-            "F",
-            "G"
-        ],
-        "alternative": true
-    },
-    {
         "id": "32",
         "title": "DE T\u00d6FF VOM POLIZISCHT",
         "pageRondoRed": "30",
         "pageRondoBlue": null,
         "pageRondoGreen": "30",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -285,6 +275,7 @@
         "pageRondoRed": "12",
         "pageRondoBlue": null,
         "pageRondoGreen": "11",
+        "interpret": "",
         "chords": [
             "(A7)",
             "A7",
@@ -299,6 +290,7 @@
         "pageRondoRed": "64",
         "pageRondoBlue": null,
         "pageRondoGreen": "64",
+        "interpret": "",
         "chords": [
             "A",
             "E",
@@ -313,6 +305,7 @@
         "pageRondoRed": "127",
         "pageRondoBlue": null,
         "pageRondoGreen": "125",
+        "interpret": "",
         "chords": [
             "A",
             "A7",
@@ -330,6 +323,7 @@
         "pageRondoRed": "10",
         "pageRondoBlue": "62",
         "pageRondoGreen": "10",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -343,6 +337,7 @@
         "pageRondoRed": "60",
         "pageRondoBlue": null,
         "pageRondoGreen": "60",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -361,6 +356,7 @@
         "pageRondoRed": "236",
         "pageRondoBlue": null,
         "pageRondoGreen": "236",
+        "interpret": "",
         "chords": [
             "C",
             "D",
@@ -375,6 +371,7 @@
         "pageRondoRed": "90",
         "pageRondoBlue": null,
         "pageRondoGreen": "90",
+        "interpret": "",
         "chords": [
             "A",
             "E",
@@ -389,6 +386,7 @@
         "pageRondoRed": "18",
         "pageRondoBlue": null,
         "pageRondoGreen": "18",
+        "interpret": "",
         "chords": [
             "C",
             "F",
@@ -403,6 +401,7 @@
         "pageRondoRed": "17",
         "pageRondoBlue": null,
         "pageRondoGreen": "19",
+        "interpret": "",
         "chords": [
             "D",
             "G"
@@ -415,6 +414,7 @@
         "pageRondoRed": "248",
         "pageRondoBlue": null,
         "pageRondoGreen": "248",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -428,6 +428,7 @@
         "pageRondoRed": "24",
         "pageRondoBlue": null,
         "pageRondoGreen": "24",
+        "interpret": "",
         "chords": [
             "C",
             "D",
@@ -441,6 +442,7 @@
         "pageRondoRed": "116",
         "pageRondoBlue": null,
         "pageRondoGreen": "141",
+        "interpret": "",
         "chords": [
             "A",
             "A7",
@@ -456,6 +458,7 @@
         "pageRondoRed": "108",
         "pageRondoBlue": null,
         "pageRondoGreen": "108",
+        "interpret": "",
         "chords": [
             "A7",
             "Dm"
@@ -468,6 +471,7 @@
         "pageRondoRed": "102",
         "pageRondoBlue": null,
         "pageRondoGreen": "102",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -481,6 +485,7 @@
         "pageRondoRed": "88",
         "pageRondoBlue": null,
         "pageRondoGreen": "152",
+        "interpret": "",
         "chords": [
             "D7",
             "G"
@@ -493,6 +498,7 @@
         "pageRondoRed": "9",
         "pageRondoBlue": null,
         "pageRondoGreen": "265",
+        "interpret": "",
         "chords": [
             "C",
             "D",
@@ -507,6 +513,7 @@
         "pageRondoRed": "119",
         "pageRondoBlue": null,
         "pageRondoGreen": "119",
+        "interpret": "",
         "chords": [
             "A7",
             "D7",
@@ -521,6 +528,7 @@
         "pageRondoRed": "160",
         "pageRondoBlue": null,
         "pageRondoGreen": "160",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -536,6 +544,7 @@
         "pageRondoRed": "153",
         "pageRondoBlue": null,
         "pageRondoGreen": "254",
+        "interpret": "",
         "chords": [
             "C",
             "C7",
@@ -550,6 +559,7 @@
         "pageRondoRed": "64",
         "pageRondoBlue": null,
         "pageRondoGreen": "64",
+        "interpret": "",
         "chords": [
             "A",
             "E",
@@ -564,6 +574,7 @@
         "pageRondoRed": "82",
         "pageRondoBlue": null,
         "pageRondoGreen": "82",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -577,6 +588,7 @@
         "pageRondoRed": "123",
         "pageRondoBlue": null,
         "pageRondoGreen": "255",
+        "interpret": "",
         "chords": [
             "C",
             "C7",
@@ -591,6 +603,7 @@
         "pageRondoRed": "195",
         "pageRondoBlue": null,
         "pageRondoGreen": "195",
+        "interpret": "",
         "chords": [
             "C",
             "G7"
@@ -603,6 +616,7 @@
         "pageRondoRed": "80",
         "pageRondoBlue": "82",
         "pageRondoGreen": "80",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -618,6 +632,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "103",
         "pageRondoGreen": "186",
+        "interpret": "",
         "chords": [
             "D",
             "Em",
@@ -632,6 +647,7 @@
         "pageRondoRed": "43",
         "pageRondoBlue": null,
         "pageRondoGreen": "46",
+        "interpret": "",
         "chords": [
             "A",
             "E",
@@ -645,6 +661,7 @@
         "pageRondoRed": "9",
         "pageRondoBlue": null,
         "pageRondoGreen": "265",
+        "interpret": "",
         "chords": [
             "C",
             "D",
@@ -659,6 +676,7 @@
         "pageRondoRed": "37",
         "pageRondoBlue": null,
         "pageRondoGreen": "37",
+        "interpret": "",
         "chords": [
             "D7",
             "G"
@@ -671,6 +689,7 @@
         "pageRondoRed": "28",
         "pageRondoBlue": null,
         "pageRondoGreen": "28",
+        "interpret": "",
         "chords": [
             "A",
             "A7",
@@ -686,6 +705,7 @@
         "pageRondoRed": "108",
         "pageRondoBlue": null,
         "pageRondoGreen": "108",
+        "interpret": "",
         "chords": [
             "A7",
             "Dm"
@@ -698,6 +718,7 @@
         "pageRondoRed": "126",
         "pageRondoBlue": null,
         "pageRondoGreen": "124",
+        "interpret": "",
         "chords": [
             "C",
             "C7",
@@ -711,6 +732,7 @@
         "pageRondoRed": "115",
         "pageRondoBlue": null,
         "pageRondoGreen": "232",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -723,10 +745,11 @@
     },
     {
         "id": "72",
-        "title": "L' INVERNO \u00c8 PASSATO",
+        "title": "L'INVERNO \u00c8 PASSATO",
         "pageRondoRed": "66",
         "pageRondoBlue": "94",
         "pageRondoGreen": "66",
+        "interpret": "",
         "chords": [
             "D7",
             "G"
@@ -739,6 +762,7 @@
         "pageRondoRed": "88",
         "pageRondoBlue": null,
         "pageRondoGreen": "152",
+        "interpret": "",
         "chords": [
             "D7",
             "G"
@@ -751,6 +775,7 @@
         "pageRondoRed": "11",
         "pageRondoBlue": null,
         "pageRondoGreen": "12",
+        "interpret": "",
         "chords": [
             "C",
             "F",
@@ -764,6 +789,7 @@
         "pageRondoRed": "54",
         "pageRondoBlue": null,
         "pageRondoGreen": "54",
+        "interpret": "",
         "chords": [
             "C",
             "G7"
@@ -776,6 +802,7 @@
         "pageRondoRed": "29",
         "pageRondoBlue": null,
         "pageRondoGreen": "29",
+        "interpret": "",
         "chords": [
             "A7",
             "D"
@@ -788,6 +815,7 @@
         "pageRondoRed": "47",
         "pageRondoBlue": null,
         "pageRondoGreen": "188",
+        "interpret": "",
         "chords": [
             "C",
             "F",
@@ -802,6 +830,7 @@
         "pageRondoRed": "94",
         "pageRondoBlue": null,
         "pageRondoGreen": "94",
+        "interpret": "",
         "chords": [
             "A7",
             "E",
@@ -815,6 +844,7 @@
         "pageRondoRed": "72",
         "pageRondoBlue": null,
         "pageRondoGreen": "72",
+        "interpret": "",
         "chords": [
             "A7",
             "Am",
@@ -830,6 +860,7 @@
         "pageRondoRed": "104",
         "pageRondoBlue": null,
         "pageRondoGreen": "104",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -844,6 +875,7 @@
         "pageRondoRed": "65",
         "pageRondoBlue": "70",
         "pageRondoGreen": "65",
+        "interpret": "",
         "chords": [
             "Am",
             "Em",
@@ -857,6 +889,7 @@
         "pageRondoRed": "82",
         "pageRondoBlue": null,
         "pageRondoGreen": "82",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -870,6 +903,7 @@
         "pageRondoRed": "76",
         "pageRondoBlue": null,
         "pageRondoGreen": "76",
+        "interpret": "",
         "chords": [
             "A",
             "Am",
@@ -885,6 +919,7 @@
         "pageRondoRed": "79",
         "pageRondoBlue": null,
         "pageRondoGreen": "79",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -898,6 +933,7 @@
         "pageRondoRed": "90",
         "pageRondoBlue": null,
         "pageRondoGreen": "90",
+        "interpret": "",
         "chords": [
             "A",
             "E",
@@ -912,6 +948,7 @@
         "pageRondoRed": "118",
         "pageRondoBlue": null,
         "pageRondoGreen": "118",
+        "interpret": "",
         "chords": [
             "C",
             "G7"
@@ -924,6 +961,7 @@
         "pageRondoRed": "189",
         "pageRondoBlue": null,
         "pageRondoGreen": "187",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -937,6 +975,7 @@
         "pageRondoRed": "30",
         "pageRondoBlue": null,
         "pageRondoGreen": "33",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -950,6 +989,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "144",
         "pageRondoGreen": "144",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -965,6 +1005,7 @@
         "pageRondoRed": "158",
         "pageRondoBlue": null,
         "pageRondoGreen": "158",
+        "interpret": "",
         "chords": [
             "B",
             "C",
@@ -980,6 +1021,7 @@
         "pageRondoRed": "124",
         "pageRondoBlue": "158",
         "pageRondoGreen": "123",
+        "interpret": "",
         "chords": [
             "D7",
             "Em",
@@ -994,6 +1036,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": null,
         "pageRondoGreen": "184",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -1009,6 +1052,7 @@
         "pageRondoRed": "87",
         "pageRondoBlue": null,
         "pageRondoGreen": "78",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -1022,6 +1066,7 @@
         "pageRondoRed": "32",
         "pageRondoBlue": "108",
         "pageRondoGreen": "32",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -1036,6 +1081,7 @@
         "pageRondoRed": "87",
         "pageRondoBlue": null,
         "pageRondoGreen": "78",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -1049,6 +1095,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": null,
         "pageRondoGreen": "184",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -1064,6 +1111,7 @@
         "pageRondoRed": "212",
         "pageRondoBlue": null,
         "pageRondoGreen": "212",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -1078,6 +1126,7 @@
         "pageRondoRed": "192",
         "pageRondoBlue": null,
         "pageRondoGreen": "192",
+        "interpret": "",
         "chords": [
             "Am",
             "D7",
@@ -1091,6 +1140,7 @@
         "pageRondoRed": "25",
         "pageRondoBlue": null,
         "pageRondoGreen": "25",
+        "interpret": "",
         "chords": [
             "C",
             "Dm"
@@ -1103,6 +1153,7 @@
         "pageRondoRed": "160",
         "pageRondoBlue": null,
         "pageRondoGreen": "160",
+        "interpret": "",
         "chords": [
             "Am",
             "C",
@@ -1118,6 +1169,7 @@
         "pageRondoRed": "65",
         "pageRondoBlue": "70",
         "pageRondoGreen": "65",
+        "interpret": "",
         "chords": [
             "Am",
             "Em",
@@ -1131,6 +1183,7 @@
         "pageRondoRed": "63",
         "pageRondoBlue": null,
         "pageRondoGreen": "63",
+        "interpret": "",
         "chords": [
             "A",
             "D",
@@ -1145,6 +1198,7 @@
         "pageRondoRed": "226",
         "pageRondoBlue": null,
         "pageRondoGreen": "226",
+        "interpret": "",
         "chords": [
             "C",
             "D7",
@@ -1158,6 +1212,7 @@
         "pageRondoRed": "24",
         "pageRondoBlue": null,
         "pageRondoGreen": "24",
+        "interpret": "",
         "chords": [
             "C",
             "Dm"
@@ -1170,6 +1225,7 @@
         "pageRondoRed": "116",
         "pageRondoBlue": null,
         "pageRondoGreen": "141",
+        "interpret": "",
         "chords": [
             "A",
             "A7",
@@ -1185,6 +1241,7 @@
         "pageRondoRed": "45",
         "pageRondoBlue": null,
         "pageRondoGreen": "179",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -1198,6 +1255,7 @@
         "pageRondoRed": "49",
         "pageRondoBlue": null,
         "pageRondoGreen": "49",
+        "interpret": "",
         "chords": [
             "A7",
             "D",
@@ -1211,6 +1269,7 @@
         "pageRondoRed": "7",
         "pageRondoBlue": null,
         "pageRondoGreen": "6",
+        "interpret": "",
         "chords": [
             "C",
             "F",
