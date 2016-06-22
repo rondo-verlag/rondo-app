@@ -267,10 +267,13 @@ a.invisible-link {
   padding: 12px 0;
 }
 
-.report-error-link a {
+.report-error-link {
   color: #444;
-  text-decoration: none;
-  font-size: 90%;
+  a {
+    color: #444;
+    text-decoration: none;
+    font-size: 90%;
+  }
 }
 
 // remove padding that the button looks equal to the default back button
@@ -386,8 +389,15 @@ ion-content .page-numbers {
 
     .item-content {
       padding: 8px 16px;
-      letter-spacing: 2px;
-
     }
+  }
+
+  .main-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .alt-title {
+    letter-spacing: 1px;
   }
 }

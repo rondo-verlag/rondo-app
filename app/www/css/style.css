@@ -295,10 +295,12 @@ a.invisible-link {
 .browser-link {
   padding: 12px 0; }
 
-.report-error-link a {
-  color: #444;
-  text-decoration: none;
-  font-size: 90%; }
+.report-error-link {
+  color: #444; }
+  .report-error-link a {
+    color: #444;
+    text-decoration: none;
+    font-size: 90%; }
 
 .rondo-custom-back-button {
   padding: 0 !important; }
@@ -378,7 +380,11 @@ ion-content .page-numbers {
 .rondo-list .item {
   border: none; }
   .rondo-list .item .item-content {
-    padding: 8px 16px;
-    letter-spacing: 2px; }
+    padding: 8px 16px; }
+.rondo-list .main-title {
+  font-weight: bold;
+  letter-spacing: 2px; }
+.rondo-list .alt-title {
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=style.css.map */

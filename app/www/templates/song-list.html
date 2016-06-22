@@ -12,7 +12,8 @@
   <ion-content>
     <ion-list class="rondo-list">
       <ion-item collection-repeat="song in songs | filter: songsearch" type="item-link" item-height="36" item-width="100%" ui-sref="song({songId: song.id})" ion-track-tap="Open Song" ion-track-data="{songId: song.id, title: song.title}">
-        {{song.title}}
+        <span ng-if="!song.alternative" class="main-title">{{song.title}}</span>
+        <span ng-if="song.alternative" class="alt-title">{{song.title}}</span>
       </ion-item>
     </ion-list>
   </ion-content>
