@@ -24,10 +24,13 @@ body {
   color: #ffffff;
   background: #000000;
   font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 1px; }
 
-input, button, select, textarea {
+input, button, select, textarea, h1, h2, h3, h4, h5 {
   font-family: Vectora, "Helvetica Neue", Verdana, sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold; }
 
 ::-webkit-input-placeholder {
   color: #333;
@@ -191,7 +194,7 @@ a.invisible-link {
 
 .songtext {
   font-size: 1.3em;
-  letter-spacing: 2px; }
+  letter-spacing: 1px; }
   .songtext .line {
     line-height: 2.2em; }
     .songtext .line .word {
@@ -348,7 +351,8 @@ ion-content .page-numbers {
   .rondo-bar-search label .placeholder-icon:first-child {
     padding-right: 0; }
   .rondo-bar-search label input {
-    color: #FFF; }
+    color: #FFF;
+    letter-spacing: 1px; }
   .rondo-bar-search label input::-webkit-input-placeholder {
     color: #CCC; }
 .rondo-bar-search .clear-search {

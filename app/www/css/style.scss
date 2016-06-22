@@ -45,11 +45,15 @@ body {
   color: #ffffff;
   background: #000000;
   font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-input, button, select, textarea {
+input, button, select, textarea, h1, h2, h3, h4, h5 {
   font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
 }
 
 ::-webkit-input-placeholder {
@@ -107,7 +111,7 @@ a.invisible-link {
 // Components
 .songtext {
   font-size: 1.3em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   .line {
     line-height: 2.2em;
     .word {
@@ -343,6 +347,7 @@ ion-content .page-numbers {
 
     input {
       color: #FFF;
+      letter-spacing: 1px;
     }
     input::-webkit-input-placeholder {
       color: #CCC;
