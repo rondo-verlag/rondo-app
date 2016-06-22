@@ -1,3 +1,2 @@
 # exclude licensed font files
-NN_Medien/*
-Vectora/*
+Vectora/*.otf
