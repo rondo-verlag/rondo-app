@@ -84,9 +84,12 @@ Songbook.controller("ChordListController", function ($scope, $rootScope, $docume
         addFBarChordIfNeeded($scope.data.chords);
     });
     function addFBarChordIfNeeded(chords) {
-        var fIndex = chords.indexOf("F");
-        if (fIndex >= 0) {
-            chords.splice(fIndex + 1, 0, "F-bar");
+        var fBarIndex = chords.indexOf("F-bar");
+        if (fBarIndex < 0) {
+            var fIndex = chords.indexOf("F");
+            if (fIndex >= 0) {
+                chords.splice(fIndex + 1, 0, "F-bar");
+            }
         }
     }
 });
