@@ -1,10 +1,7 @@
 <ion-view title="">
   <ion-content class="padding has-header">
     <div class="chord-list">
-      <span ng-repeat="chord in data.chords">
-        <i class="rondo-icon-chord-{{chord}}"></i>
-        <i ng-if="chord =='F'" class="rondo-icon-chord-F-bar"></i>
-      </span>
+      <i ng-repeat="chord in data.chords" class="rondo-icon-chord-{{chord}}"></i>
     </div>
   </ion-content>
 </ion-view>

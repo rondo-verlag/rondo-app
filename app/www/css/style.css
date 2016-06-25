@@ -319,7 +319,10 @@ a.invisible-link {
   background: black; }
 
 .chord-list {
-  font-size: 1000%; }
+  font-size: 35vw; }
+  .chord-list i {
+    width: 33%;
+    display: inline-block; }
 
 .song-image {
   width: 100%; }

@@ -81,22 +81,13 @@ Songbook.controller("ChordListController", function ($scope, $rootScope, $docume
     SongService.getSongInfo($scope.songId)
         .then(function (data) {
         $scope.data = data;
+        addFBarChordIfNeeded($scope.data.chords);
     });
-    function extractChords(data) {
-        var chords = [];
-        var chords_obj = [];
-        angular.forEach(data.paragraphs, function (para) {
-            angular.forEach(para.lines, function (line) {
-                angular.forEach(line.chords, function (chord) {
-                    console.log(chord);
-                    if (chords.indexOf(chord) <= -1) {
-                        chords.push(chord);
-                        chords_obj.push({ "name": chord });
-                    }
-                });
-            });
-        });
-        return chords_obj;
+    function addFBarChordIfNeeded(chords) {
+        var fIndex = chords.indexOf("F");
+        if (fIndex >= 0) {
+            chords.splice(fIndex + 1, 0, "F-bar");
+        }
     }
 });
 /*
@@ -455,7 +446,6 @@ Songbook.factory("SongService", function ($http, $q) {
 /// <reference path="controllers/AppController.ts" />
 /// <reference path="controllers/ChordListController.ts" />
 /// <reference path="controllers/NotesController.ts" />
-/// <reference path="controllers/SettingsController.ts" />
 /// <reference path="controllers/SongDetailController.ts" />
 /// <reference path="controllers/SongListController.ts" />
 /// <reference path="directives/browserlink.ts" />
