@@ -103,7 +103,7 @@ $app->post('/songs/:songId/:rawType', function ($songId, $rawType) use ($app) {
 	$song->save();
 });
 
-$app->get('/import', function () use ($app) {
+$app->get('/import/xml', function () use ($app) {
 	$app->contentType('text/html');
 
 	$path = '../../data/sibelius_export/converted-xml';
@@ -123,7 +123,7 @@ $app->get('/import', function () use ($app) {
 });
 
 // for testing purposes
-$app->get('/import/:filename', function ($filename) use ($app) {
+$app->get('/import/xml/:filename', function ($filename) use ($app) {
 	$app->contentType('text/html');
 
 	$path = '../../data/sibelius_export/converted-xml';
@@ -140,7 +140,7 @@ $app->get('/import/:filename', function ($filename) use ($app) {
 	}
 });
 
-$app->get('/importsib', function () use ($app, &$DB) {
+$app->get('/import/sib', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
 
@@ -166,7 +166,7 @@ $app->get('/importsib', function () use ($app, &$DB) {
 	}
 });
 
-$app->get('/importmidi', function () use ($app, &$DB) {
+$app->get('/import/midi', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
 
@@ -192,7 +192,7 @@ $app->get('/importmidi', function () use ($app, &$DB) {
 	}
 });
 
-$app->get('/importnotespdf', function () use ($app, &$DB) {
+$app->get('/import/notespdf', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
 
@@ -219,7 +219,7 @@ $app->get('/importnotespdf', function () use ($app, &$DB) {
 	}
 });
 
-$app->get('/importpng', function () use ($app, &$DB) {
+$app->get('/import/png', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
 
