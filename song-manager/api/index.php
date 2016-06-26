@@ -166,6 +166,32 @@ $app->get('/importsib', function () use ($app, &$DB) {
 	}
 });
 
+$app->get('/importmidi', function () use ($app, &$DB) {
+	$app->contentType('text/html');
+	ini_set('max_execution_time', 300);
+
+	$path = '../../data/sibelius_export/midi';
+	$files = scandir($path);
+
+	foreach($files as $file){
+		if (substr($file, -4) === '.mid'){
+			$songtitle = substr($file, 0, -4);
+			$songtitle = normalizer_normalize($songtitle);
+			//var_dump($songtitle);
+			$ids = $DB->fetchAll("SELECT id FROM songs WHERE title = ?", array($songtitle));
+			if(isset($ids[0]['id'])){
+				var_dump($ids[0]['id']);
+				$data = file_get_contents($path.'/'.$file);
+				$song = new Song($ids[0]['id']);
+				$song->setRawData('rawMidi', $data);
+				$song->save();
+			} else {
+				var_dump("no song found for $songtitle");
+			}
+		}
+	}
+});
+
 $app->get('/importnotespdf', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
@@ -329,8 +355,9 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 		$html = $song->getHtml(true);
 		$zip->addFile('html/'.$songId['id'].'.html', $html);
 
-		// generate image
 		$data = $song->getData();
+
+		// generate image
 		if ($data['rawImage']){
 			// convert to gif
 			ob_start();
@@ -340,9 +367,13 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 		}
 
 		// generate pdf
-		$data = $song->getData();
 		if ($data['rawNotesPDF']){
 			$zip->addFile('pdfs/'.$songId['id'].'.pdf', $data['rawNotesPDF']);
+		}
+
+		// generate midi
+		if ($data['rawMidi']){
+			$zip->addFile('midi/'.$songId['id'].'.mid', $data['rawMidi']);
 		}
 	}
 
