@@ -32,17 +32,14 @@
       <a class="tab-item" ng-click="stopAutoScroll()" ng-if="scroll">
         <i class="icon rondo-icon-stop"></i>
       </a>
-      <a class="tab-item" ng-click="playSong()" ng-show="midiFile && !playingSong">
-        <i class="icon rondo-icon-midi"></i>
-      </a>
-      <a class="tab-item" ng-click="stopSong()" ng-show="playingSong">
-        <i class="icon rondo-icon-midi"></i>
-      </a>
       <a class="tab-item" ng-click="toggleChords()">
         <i class="icon rondo-icon-chords"></i>
       </a>
       <a class="tab-item" ui-sref="chords({ songId: songId })">
         <i class="icon rondo-icon-library"></i>
+      </a>
+      <a class="tab-item" ng-click="toggleSong()">
+        <i class="icon rondo-icon-midi"></i>
       </a>
       <a class="tab-item" ui-sref="notes({ songId: songId })">
         <i class="icon rondo-icon-notes"></i>

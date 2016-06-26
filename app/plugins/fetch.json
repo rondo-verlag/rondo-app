@@ -78,5 +78,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-midi-player": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-midi-player"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

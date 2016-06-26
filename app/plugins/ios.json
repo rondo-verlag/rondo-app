@@ -33,6 +33,9 @@
         },
         "cordova-plugin-screen-orientation": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-midi-player": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },
     "dependent_plugins": {}

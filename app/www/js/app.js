@@ -127,10 +127,13 @@ Songbook.controller("NotesController", function ($scope, $rootScope, $document, 
       });
       */
 });
+/*
+ * View controller for the song detail page.
+ *
+ */
 Songbook.controller("SongDetailController", function ($scope, $stateParams, $http, SettingsService, SongService, $state, $ionicViewSwitcher, $ionicScrollDelegate, $interval, $timeout) {
     $scope.songId = $stateParams.songId;
     $scope.songTitle = '';
-    $scope.midiFile = false;
     $scope.playingSong = false;
     $scope.app_version = appVersion;
     $scope.data = {};
@@ -141,9 +144,11 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     $scope.scroll = false;
     var scrollTimer;
     var lastScrollPosition = -1;
+    var songInitialized = false;
+    var songInitializeTriesLeft = 20;
     var bodyElement = angular.element(document.querySelectorAll('body'));
     $scope.doPinch = function () {
-        console.log('pinching');
+        //console.log('pinching');
         //alert('pinching');
     };
     $scope.onScrollUp = function () {
@@ -156,17 +161,20 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         SongService.getNextSongId($scope.songId).then(function (newSongId) {
             $ionicViewSwitcher.nextDirection('forward');
             $state.go('song', { songId: newSongId });
+            $scope.stopSong();
         });
     };
     $scope.onSwipeRight = function () {
         SongService.getPreviousSongId($scope.songId).then(function (newSongId) {
             $ionicViewSwitcher.nextDirection('back');
             $state.go('song', { songId: newSongId });
+            $scope.stopSong();
         });
     };
     $scope.backToSonglist = function () {
         $ionicViewSwitcher.nextDirection('back');
         $state.go('search');
+        $scope.stopSong();
     };
     var getScrollTimeout = function () {
         if (bodyElement.hasClass('rondo-show-chords')) {
@@ -202,30 +210,71 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     $scope.toggleChords = function () {
         bodyElement.toggleClass('rondo-show-chords');
     };
+    // Ugly hack:
+    // songInitialized is needed for iOS, because it fails to play sometimes for unknown reason.
+    // if that happens, we just try to play again...
     $scope.playSong = function () {
-        MIDI.loadPlugin({
-            soundfontUrl: "lib/MIDI/soundfonts/",
-            callback: function () {
-                MIDI.Player.loadFile("resources/songs/midi/" + $scope.midiFile, function () {
-                    MIDI.Player.start();
-                    MIDI.Player.addListener(function (data) {
-                        console.log(data);
-                        $scope.playingSong = !(data.now == data.end);
-                        if (!$scope.playingSong) {
-                            MIDI.Player.removeListener();
-                        }
-                    });
+        if (!songInitialized || !$scope.playingSong) {
+            window.MidiPlayer.setup(window.MidiPlayer.getPathFromAsset("resources/songs/midi/" + $scope.songId + ".mid"), ["1", "2", "3", "4", "5"], function () {
+                console.log('RONDO: Song initialized...');
+                $scope.$apply(function () {
+                    $scope.playingSong = true;
                 });
-            }
-        });
-        $scope.playingSong = true;
+                window.MidiPlayer.play();
+            }, function (data) {
+                console.log("RONDO: Error occured:", data);
+                $scope.playingSong = false;
+            }, function (data) {
+                console.log("RONDO: Status Updates: ", data);
+                if (data == 2) {
+                    // 2: started playing
+                    songInitialized = true;
+                }
+                if (data == 3) {
+                    // 3: stopped playing
+                    $scope.stopSong();
+                }
+                if (data <= 0) {
+                    // 0: someting went wrong
+                    if (!songInitialized) {
+                        // try again if we are not yet initialized
+                        if (songInitializeTriesLeft > 0) {
+                            songInitializeTriesLeft--;
+                            $scope.playSong();
+                        }
+                    }
+                    else {
+                        // song stopped manually
+                        songInitialized = false;
+                        songInitializeTriesLeft = 20;
+                        if ($scope.playingSong) {
+                            // song stopped because its at the end (ios only)
+                            $scope.$apply(function () {
+                                $scope.stopSong();
+                            });
+                        }
+                    }
+                }
+            });
+        }
     };
     $scope.stopSong = function () {
-        MIDI.Player.stop();
+        console.log("RONDO: Stopping song...");
         $scope.playingSong = false;
+        window.MidiPlayer.stop();
+        window.MidiPlayer.release();
+    };
+    $scope.toggleSong = function () {
+        if ($scope.playingSong) {
+            $scope.stopSong();
+        }
+        else {
+            $scope.playSong();
+        }
     };
     $scope.$on('$ionicView.beforeLeave', function () {
         $scope.onScrollUp();
+        $scope.stopSong();
     });
     // -- load data
     SongService.getSongInfo($scope.songId)
@@ -244,33 +293,6 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         }
         $scope.rondoPages = pages.join('&nbsp;|&nbsp;');
     });
-    /*
-      $timeout(()=>{
-        // get from cache if possible
-        $http.get('resources/songs/html/' + $scope.songId + '.html')
-          .then((response) => {
-            $scope.songFile = response.data;
-          });
-      }, 100);
-    */
-    /*
-      // when animations are done
-      $scope.$on( "$ionicView.afterEnter", function( scopes, states ) {
-        if(states.fromCache && states.stateName == "song" ) {
-            // do whatever
-        }
-    
-        // cache songs
-        SongService.getNextSongId($scope.songId).then((id) => {
-          $http.get('resources/songs/html/' + id + '.html', { cache: true});
-          $http.get('resources/songs/images/' + id + '.png', { cache: true});
-        });
-        SongService.getPreviousSongId($scope.songId).then((id) => {
-          $http.get('resources/songs/html/' + id + '.html', { cache: true});
-          $http.get('resources/songs/images/' + id + '.png', { cache: true});
-        });
-    
-      });*/
 });
 /*
  * View controller for the searchable song list.
