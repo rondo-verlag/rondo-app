@@ -12,6 +12,7 @@ node_modules/
 /app/www/resources/songs/images/*.gif
 /app/www/resources/songs/notes/*.png
 /app/www/resources/songs/pdfs/*.pdf
+/app/www/resources/songs/midi/*.mid
 /app/.io-config.json
 /app/www/css/.sass-cache
 /app/www/js/app.js.map
