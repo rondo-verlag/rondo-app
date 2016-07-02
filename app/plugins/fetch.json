@@ -79,18 +79,19 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-midi-player": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-midi-player"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-queries-schemes": {
         "source": {
             "type": "registry",
             "id": "cordova-plugin-queries-schemes"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-midi-player": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/demianh/MidiFilePlayer.git",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}
