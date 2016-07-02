@@ -9,12 +9,7 @@ songbook-app
 $ mkdir plugins
 $ ionic platform android
 $ ionic platform ios
-$ ionic plugin add com.ionic.keyboard
-$ ionic plugin add cordova-plugin-console
-$ ionic plugin add org.apache.cordova.file
-$ cordova plugin add cordova-plugin-device
 $ ionic add ionic-platform-web-client
-$ cordova plugin add https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.
 $ cordova prepare
 ```
 
