@@ -6,6 +6,7 @@ node_modules/
 !/app/plugins/android.json
 !/app/plugins/ios.json
 !/app/plugins/fetch.json
+!/app/plugins/cordova-plugin-queries-schemes/plugin.xml
 /song-manager/api/_conf.php
 /data/sibelius_export
 /app/www/resources/songs/html/*.html

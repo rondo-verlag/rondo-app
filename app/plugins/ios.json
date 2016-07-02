@@ -36,6 +36,9 @@
         },
         "cordova-plugin-midi-player": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-queries-schemes": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },
     "dependent_plugins": {}
