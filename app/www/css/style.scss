@@ -171,7 +171,6 @@ a.invisible-link {
     background: #59ffee;
     color: black;
   }
-
 }
 
 
@@ -336,6 +335,10 @@ a.invisible-link {
 }
 ion-content .page-numbers {
   display: none;
+}
+
+.midi-playing {
+  color: #555 !important;
 }
 
 // Song List & Search

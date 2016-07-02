@@ -39,7 +39,7 @@
         <i class="icon rondo-icon-library"></i>
       </a>
       <a class="tab-item" ng-click="toggleSong()">
-        <i class="icon rondo-icon-midi"></i>
+        <i class="icon rondo-icon-midi" ng-class="{'midi-playing': playingSong}"></i>
       </a>
       <a class="tab-item" ui-sref="notes({ songId: songId })">
         <i class="icon rondo-icon-notes"></i>

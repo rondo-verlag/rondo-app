@@ -347,6 +347,9 @@ a.invisible-link {
 ion-content .page-numbers {
   display: none; }
 
+.midi-playing {
+  color: #555 !important; }
+
 .rondo-bar-search label {
   background: #4A4A4A;
   border: 0; }
