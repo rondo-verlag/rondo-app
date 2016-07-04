@@ -9,7 +9,8 @@ CREATE TABLE `songs` (
   `pageRondoGreen` int(11) DEFAULT NULL,
   `copyrightInfo` text,
   `copyrightContact` varchar(1000) DEFAULT '',
-  `copyrightStatus` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
+  `copyrightStatusApp` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
+  `copyrightStatusBook` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
   `license` enum('UNKNOWN','FREE','LICENSED') NOT NULL DEFAULT 'UNKNOWN',
   `comments` text,
   `status` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
@@ -20,5 +21,6 @@ CREATE TABLE `songs` (
   `rawNotesPDF` longblob,
   `rawNotesPNG` longblob,
   `rawMidi` longblob,
+  `rawCopyrightPDF` longblob,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

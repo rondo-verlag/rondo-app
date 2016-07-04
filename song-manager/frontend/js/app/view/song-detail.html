@@ -141,7 +141,7 @@
             <label for="copyrightInfo" class="col-sm-3 control-label">Text in der App</label>
 
             <div class="col-sm-9">
-              <textarea id="copyrightInfo" class="form-control" rows="2" ng-model="song.copyrightInfo"></textarea>
+              <textarea id="copyrightInfo" class="form-control" rows="3" ng-model="song.copyrightInfo"></textarea>
             </div>
           </div>
 
@@ -149,20 +149,33 @@
             <label for="copyrightContact" class="col-sm-3 control-label">Halter / Kontakt</label>
 
             <div class="col-sm-9">
-              <textarea id="copyrightContact" class="form-control" rows="4" ng-model="song.copyrightContact"></textarea>
+              <textarea id="copyrightContact" class="form-control" rows="5" ng-model="song.copyrightContact"></textarea>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="copyrightStatus" class="col-sm-3 control-label">Copyright Status</label>
+            <label for="copyrightStatusApp" class="col-sm-3 control-label">Copyright Status App</label>
 
             <div class="col-sm-9">
-              <select ng-model="song.copyrightStatus" id="copyrightStatus">
+              <select ng-model="song.copyrightStatusApp" id="copyrightStatusApp">
                 <option value="NEW">Neu</option>
                 <option value="INPROGRESS">In Arbeit</option>
                 <option value="DONE">Fertig</option>
               </select>
-              <status status="song.copyrightStatus"></status>
+              <status status="song.copyrightStatusApp"></status>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="copyrightStatusBook" class="col-sm-3 control-label">Copyright Status Buch</label>
+
+            <div class="col-sm-9">
+              <select ng-model="song.copyrightStatusBook" id="copyrightStatusBook">
+                <option value="NEW">Neu</option>
+                <option value="INPROGRESS">In Arbeit</option>
+                <option value="DONE">Fertig</option>
+              </select>
+              <status status="song.copyrightStatusBook"></status>
             </div>
           </div>
 
@@ -241,6 +254,17 @@
               {{song.rawMidiSize / 1048576 | number : 2}} MB
             </div>
             <div ng-if="song.rawMidiSize == 0" class="text-muted"><br><i class="glyphicon glyphicon-remove-sign" style="color: red;"></i> Keine Datei hochgeladen</div>
+          </div>
+
+          <div class="form-group">
+            <label for="copyrightFile" class="control-label">Copyright Vertrag</label>
+            <input type="file" name="file" id="copyrightFile" onchange="angular.element(this).scope().uploadFile(this.files, 'rawCopyrightPDF')"/>
+            <div ng-if="song.rawCopyrightPDFSize > 0">
+              <br>
+              <i class="glyphicon glyphicon-ok-sign" style="color: green;"></i> <a href="api/index.php/songs/{{song.id}}/raw/rawCopyrightPDF.pdf" target="_blank">Download</a>
+              {{song.rawCopyrightPDFSize / 1048576 | number : 2}} MB
+            </div>
+            <div ng-if="song.rawCopyrightPDFSize == 0" class="text-muted"><br><i class="glyphicon glyphicon-remove-sign" style="color: red;"></i> Keine Datei hochgeladen</div>
           </div>
         </form>
 
