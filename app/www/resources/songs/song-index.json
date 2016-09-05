@@ -277,7 +277,6 @@
         "pageRondoGreen": "11",
         "interpret": "",
         "chords": [
-            "(A7)",
             "A7",
             "D",
             "G"
@@ -376,7 +375,7 @@
             "A",
             "E",
             "H7",
-            "und E"
+            "undE"
         ],
         "alternative": true
     },
@@ -938,7 +937,7 @@
             "A",
             "E",
             "H7",
-            "und E"
+            "undE"
         ],
         "alternative": false
     },

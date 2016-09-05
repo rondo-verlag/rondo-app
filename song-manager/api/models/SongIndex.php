@@ -35,7 +35,14 @@ class SongIndex {
 			$title_uc = mb_convert_case($song['title'], MB_CASE_UPPER, "UTF-8");
 
 			// accords
-			$chords = $model->getChordList();
+			$uncleaned_chords = $model->getChordList();
+			$chords = [];
+			foreach ($uncleaned_chords as $chord) {
+				$cleaned = preg_replace("/[^A-Za-z0-9]/", '', $chord);
+				if (!in_array($cleaned, $chords)){
+					$chords[] = $cleaned;
+				}
+			}
 
 			$index[] = [
 				'id' => $song['id'],
