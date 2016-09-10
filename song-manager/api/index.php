@@ -306,6 +306,23 @@ $app->get('/export/index', function () use ($app, &$DB) {
 	echo $json;
 });
 
+// export json index for app
+$app->get('/export/indesign.xml', function () use ($app, &$DB) {
+	$xml = '';
+	$songs = $DB->fetchAll("SELECT id FROM songs ORDER BY pageRondoGreen ASC");
+
+	foreach($songs as $song_id) {
+		$song = new Song($song_id['id']);
+		$xml .= $song->getXML();
+	}
+	$xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'.PHP_EOL.'<Rondo>'.$xml.'</Rondo>';
+
+	$app->response->headers->set('Content-Disposition', 'attachment; filename=indesign.xml');
+	$app->response->headers->set('Content-Type', 'application/xml');
+
+	echo $xml;
+});
+
 // export html files & images for app
 $app->get('/export/html', function () use ($app, &$DB) {
 	umask(0);

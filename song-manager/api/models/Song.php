@@ -61,6 +61,15 @@ class Song
 		return $this;
 	}
 
+	public function getXML(){
+		$xml  = '<Titel>'.$this->data['title'].'</Titel>';
+		$xml .= '<Text>'.$this->crd2text($this->data['text']).'</Text>';
+		$xml .= '<Copy>'.$this->data['copyrightInfo'].'</Copy>';
+		$xml  = '<Lied AlteSeitennummer="'.$this->data['pageRondoGreen'].'" Titel="'.$this->data['title'].'">'.$xml.'</Lied>';
+		$xml = str_replace('&','&amp;',$xml);
+		return $xml;
+	}
+
 	public function getHtml($export = false){
 		if($export || false){
 			// only export songtext for the app
@@ -110,6 +119,37 @@ class Song
 	private function startsWithRaw($haystack, $needle = "raw") {
 		// search backwards starting from haystack length characters from the end
 		return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
+	}
+
+	private function crd2text($crd_string) {
+		try {
+			$tokens = CrdParser::run($crd_string);
+		} catch(Exception $e){
+			return $e->getMessage();
+		}
+		$text = '';
+		foreach($tokens as $idx => $token){
+			switch($token['token']){
+				case 'T_CHORD':
+					break;
+				case 'T_NEWLINE':
+					$text .= PHP_EOL;
+					break;
+				case 'T_PARAGRAPH':
+					$text .= PHP_EOL;
+					$text .= PHP_EOL;
+					break;
+				case 'T_STRING':
+					$text .= $token['match'];
+					break;
+				case 'T_WHITESPACE':
+					$text .= ' ';
+					break;
+				default:
+					$text .= $token['match'];
+			}
+		}
+		return $text;
 	}
 
 	private function crd2html($crd_string){
