@@ -4,49 +4,10 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"AppVersion\"><param name=\"android-package\" value=\"uk.co.whiteoctober.cordova.AppVersion\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Insomnia\"><param name=\"android-package\" value=\"nl.xservices.plugins.Insomnia\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
+        "files": {}
     },
     "installed_plugins": {
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.ionicframework.songbookapp732914"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
         "cordova-plugin-app-version": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-insomnia": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "cordova-plugin-device": {
@@ -55,15 +16,40 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-screen-orientation": {
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-midi-player": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "cordova-plugin-queries-schemes": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-midi-player": {
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "org.apache.cordova.console": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        }
+    }
 }
