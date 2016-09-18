@@ -13,7 +13,7 @@ Songbook.controller("ChordListController", function ($scope, $rootScope, $docume
       });
 
   $ionicPlatform.ready(function() {
-      var media_path = "/android_asset/www/resources/songs/mp3-chords/";
+      var media_path = "/android_asset/www/resources/mp3-chords/";
       var media;
 
       $scope.playMedia = function(chord: string) {
