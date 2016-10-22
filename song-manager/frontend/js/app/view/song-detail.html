@@ -138,7 +138,7 @@
 
 
           <div class="form-group">
-            <label for="copyrightInfo" class="col-sm-3 control-label">Text in der App</label>
+            <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Text (App & Buch)</label>
 
             <div class="col-sm-9">
               <textarea id="copyrightInfo" class="form-control" rows="3" ng-model="song.copyrightInfo"></textarea>
@@ -161,6 +161,7 @@
                 <option value="NEW">Neu</option>
                 <option value="INPROGRESS">In Arbeit</option>
                 <option value="DONE">Fertig</option>
+                <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
               </select>
               <status status="song.copyrightStatusApp"></status>
             </div>
@@ -174,6 +175,7 @@
                 <option value="NEW">Neu</option>
                 <option value="INPROGRESS">In Arbeit</option>
                 <option value="DONE">Fertig</option>
+                <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
               </select>
               <status status="song.copyrightStatusBook"></status>
             </div>
