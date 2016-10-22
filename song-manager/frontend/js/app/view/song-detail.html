@@ -136,48 +136,65 @@
             </div>
           </div>
 
+          <div ng-if="song.license == 'LICENSED'">
 
-          <div class="form-group">
-            <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Text (App & Buch)</label>
 
-            <div class="col-sm-9">
-              <textarea id="copyrightInfo" class="form-control" rows="3" ng-model="song.copyrightInfo"></textarea>
+            <div class="form-group" ng-if="song.license == 'LICENSED'">
+              <label for="license" class="col-sm-3 control-label">Lizenz-Typ</label>
+
+              <div class="col-sm-9">
+                <select ng-model="song.license_type" id="license-type">
+                  <option value="UNKNOWN">Unbekannt</option>
+                  <option value="ONE_TIME">Einmalig</option>
+                  <option value="ANNUAL">Jährlich</option>
+                </select>
+                <licensetype license="song.license_type"></licensetype>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="copyrightContact" class="col-sm-3 control-label">Halter / Kontakt</label>
 
-            <div class="col-sm-9">
-              <textarea id="copyrightContact" class="form-control" rows="5" ng-model="song.copyrightContact"></textarea>
+            <div class="form-group">
+              <label for="copyrightInfo" class="col-sm-3 control-label">Copyright Text (App & Buch)</label>
+
+              <div class="col-sm-9">
+                <textarea id="copyrightInfo" class="form-control" rows="3" ng-model="song.copyrightInfo"></textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="copyrightStatusApp" class="col-sm-3 control-label">Copyright Status App</label>
+            <div class="form-group">
+              <label for="copyrightContact" class="col-sm-3 control-label">Halter / Kontakt</label>
 
-            <div class="col-sm-9">
-              <select ng-model="song.copyrightStatusApp" id="copyrightStatusApp">
-                <option value="NEW">Neu</option>
-                <option value="INPROGRESS">In Arbeit</option>
-                <option value="DONE">Fertig</option>
-                <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
-              </select>
-              <status status="song.copyrightStatusApp"></status>
+              <div class="col-sm-9">
+                <textarea id="copyrightContact" class="form-control" rows="5" ng-model="song.copyrightContact"></textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="copyrightStatusBook" class="col-sm-3 control-label">Copyright Status Buch</label>
+            <div class="form-group">
+              <label for="copyrightStatusApp" class="col-sm-3 control-label">Copyright Status App</label>
 
-            <div class="col-sm-9">
-              <select ng-model="song.copyrightStatusBook" id="copyrightStatusBook">
-                <option value="NEW">Neu</option>
-                <option value="INPROGRESS">In Arbeit</option>
-                <option value="DONE">Fertig</option>
-                <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
-              </select>
-              <status status="song.copyrightStatusBook"></status>
+              <div class="col-sm-9">
+                <select ng-model="song.copyrightStatusApp" id="copyrightStatusApp">
+                  <option value="NEW">Neu</option>
+                  <option value="INPROGRESS">In Arbeit</option>
+                  <option value="DONE">Fertig</option>
+                  <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
+                </select>
+                <status status="song.copyrightStatusApp"></status>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="copyrightStatusBook" class="col-sm-3 control-label">Copyright Status Buch</label>
+
+              <div class="col-sm-9">
+                <select ng-model="song.copyrightStatusBook" id="copyrightStatusBook">
+                  <option value="NEW">Neu</option>
+                  <option value="INPROGRESS">In Arbeit</option>
+                  <option value="DONE">Fertig</option>
+                  <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
+                </select>
+                <status status="song.copyrightStatusBook"></status>
+              </div>
             </div>
           </div>
 

@@ -12,6 +12,7 @@ CREATE TABLE `songs` (
   `copyrightStatusApp` enum('NEW','INPROGRESS','DONE','NO_LICENSE') NOT NULL DEFAULT 'NEW',
   `copyrightStatusBook` enum('NEW','INPROGRESS','DONE','NO_LICENSE') NOT NULL DEFAULT 'NEW',
   `license` enum('UNKNOWN','FREE','LICENSED','LICENSED_BOOK_ONLY') NOT NULL DEFAULT 'UNKNOWN',
+  `license_type` enum('UNKNOWN','ONE_TIME','ANNUAL') NOT NULL DEFAULT 'UNKNOWN',
   `comments` text,
   `status` enum('NEW','INPROGRESS','DONE') NOT NULL DEFAULT 'NEW',
   `updated` int(11) DEFAULT NULL,

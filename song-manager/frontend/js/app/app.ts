@@ -16,6 +16,7 @@ module rondo {
   RondoApp.filter("yesno", rondo.filters.yesno);
   RondoApp.directive("status", rondo.directives.status);
   RondoApp.directive("license", rondo.directives.license);
+  RondoApp.directive("licensetype", rondo.directives.licensetype);
   RondoApp.directive("yesno", rondo.directives.yesno);
 
   RondoApp.config(['$routeProvider',

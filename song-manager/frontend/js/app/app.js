@@ -41,6 +41,24 @@ var rondo;
     var directives;
     (function (directives) {
         'use strict';
+        function licensetype() {
+            return {
+                templateUrl: 'frontend/js/app/directives/licensetype.html',
+                scope: {
+                    license: '='
+                },
+                restrict: 'E'
+            };
+        }
+        directives.licensetype = licensetype;
+    })(directives = rondo.directives || (rondo.directives = {}));
+})(rondo || (rondo = {}));
+/// <reference path="../references.ts" />
+var rondo;
+(function (rondo) {
+    var directives;
+    (function (directives) {
+        'use strict';
         function status() {
             return {
                 templateUrl: 'frontend/js/app/directives/status.html',
@@ -190,6 +208,7 @@ var rondo;
 /// <reference path="models/Song.ts" />
 /// <reference path="filters/filters.ts"/>
 /// <reference path="directives/license.ts"/>
+/// <reference path="directives/licensetype.ts"/>
 /// <reference path="directives/status.ts"/>
 /// <reference path="directives/yesno.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
@@ -210,6 +229,7 @@ var rondo;
     RondoApp.filter("yesno", rondo.filters.yesno);
     RondoApp.directive("status", rondo.directives.status);
     RondoApp.directive("license", rondo.directives.license);
+    RondoApp.directive("licensetype", rondo.directives.licensetype);
     RondoApp.directive("yesno", rondo.directives.yesno);
     RondoApp.config(['$routeProvider',
         function ($routeProvider) {
