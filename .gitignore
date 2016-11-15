@@ -20,3 +20,5 @@ node_modules/
 /app/www/css/style.css.map
 /app/keystore/*.keystore
 /app/build/*.apk
+/data/Backups
+/data/InDesign
