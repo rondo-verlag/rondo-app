@@ -13,6 +13,7 @@ module rondo {
     pageRondoRed?: string;
     pageRondoBlue?: string;
     pageRondoGreen?: string;
+    pageRondo2017?: string;
     copyrightInfo?: string;
     comments?: string;
     rawImageSize?: number;

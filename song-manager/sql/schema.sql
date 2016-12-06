@@ -7,6 +7,7 @@ CREATE TABLE `songs` (
   `pageRondoRed` int(11) DEFAULT NULL,
   `pageRondoBlue` int(11) DEFAULT NULL,
   `pageRondoGreen` int(11) DEFAULT NULL,
+  `pageRondo2017` int(11) DEFAULT NULL,
   `copyrightInfo` text,
   `copyrightContact` varchar(1000) DEFAULT '',
   `copyrightStatusApp` enum('NEW','INPROGRESS','DONE','NO_LICENSE') NOT NULL DEFAULT 'NEW',

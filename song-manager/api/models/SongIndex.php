@@ -50,6 +50,7 @@ class SongIndex {
 				'pageRondoRed' => $song['pageRondoRed'],
 				'pageRondoBlue' => $song['pageRondoBlue'],
 				'pageRondoGreen' => $song['pageRondoGreen'],
+				'pageRondo2017' => $song['pageRondo2017'],
 				'interpret' => $song['interpret'],
 				'chords' => $chords,
 				'alternative' => false
@@ -65,6 +66,7 @@ class SongIndex {
 						'pageRondoRed' => $song['pageRondoRed'],
 						'pageRondoBlue' => $song['pageRondoBlue'],
 						'pageRondoGreen' => $song['pageRondoGreen'],
+						'pageRondo2017' => $song['pageRondo2017'],
 						'interpret' => $song['interpret'],
 						'chords' => $chords,
 						'alternative' => true
