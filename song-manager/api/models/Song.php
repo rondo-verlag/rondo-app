@@ -62,9 +62,24 @@ class Song
 	}
 
 	public function getXML(){
-		$xml  = '<Titel>'.$this->data['title'].'</Titel>';
-		$xml .= '<Text>'.$this->crd2text($this->data['text']).'</Text>';
-		$xml .= '<Copy>'.$this->data['copyrightInfo'].'</Copy>';
+		$text = $this->crd2text($this->data['text']);
+
+		$paragraphs = explode(PHP_EOL.PHP_EOL, $text);
+
+		$new_paragraphs = [];
+		foreach ($paragraphs as $para) {
+			if ($this->startsWithRaw($para, 'Ref.')) {
+				$new_paragraphs[] = '<Ref>'.$para.'</Ref>';
+			} else {
+				$new_paragraphs[] = $para;
+			}
+		}
+
+		$text = implode(PHP_EOL.PHP_EOL, $new_paragraphs);
+
+		$xml  = '<Titel>'.$this->data['title'].PHP_EOL.'</Titel>'.PHP_EOL;
+		$xml .= '<Text>'.$text.'</Text>'.PHP_EOL;
+		$xml .= '<Copy>'.$this->data['copyrightInfo'].PHP_EOL.'</Copy>'.PHP_EOL;
 		$xml  = '<Lied AlteSeitennummer="'.$this->data['pageRondoGreen'].'" Titel="'.$this->data['title'].'">'.$xml.'</Lied>';
 		$xml = str_replace('&','&amp;',$xml);
 		return $xml;

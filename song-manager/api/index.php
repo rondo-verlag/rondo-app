@@ -315,7 +315,7 @@ $app->get('/export/indesign.xml', function () use ($app, &$DB) {
 		$song = new Song($song_id['id']);
 		$xml .= $song->getXML();
 	}
-	$xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'.PHP_EOL.'<Rondo>'.$xml.'</Rondo>';
+	$xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'.PHP_EOL.'<Rondo>'.PHP_EOL.$xml.PHP_EOL.'</Rondo>';
 
 	$app->response->headers->set('Content-Disposition', 'attachment; filename=indesign.xml');
 	$app->response->headers->set('Content-Type', 'application/xml');
