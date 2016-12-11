@@ -83,4 +83,5 @@
     <plugin name="cordova-plugin-screen-orientation" spec="~1.4.0" />
     <plugin name="cordova-plugin-queries-schemes" spec="~0.1.1" />
     <plugin name="cordova-plugin-midi-player" spec="https://github.com/demianh/MidiFilePlayer.git" />
+    <plugin name="cordova-plugin-media" spec="~2.4.0" />
 </widget>
