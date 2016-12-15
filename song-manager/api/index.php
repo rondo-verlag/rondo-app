@@ -323,6 +323,40 @@ $app->get('/export/indesign.xml', function () use ($app, &$DB) {
 	echo $xml;
 });
 
+
+// export json index for app
+$app->get('/export/indesign.zip', function () use ($app, &$DB) {
+	$xml = '';
+
+	# create a new zipstream object
+	$zip = new ZipStream\ZipStream('rondo_indesign_'.date('Y-m-d').'.zip');
+
+	$songIds = $DB->fetchAll("SELECT id FROM songs
+		WHERE license = 'FREE'
+		AND status = 'DONE'");
+
+	foreach($songIds as $songId){
+		$song = new Song($songId['id']);
+		$xml .= $song->getXML();
+
+		$data = $song->getData();
+
+		// generate pdf
+		if ($data['rawNotesPDF']){
+			$zip->addFile('pdf/noten_'.$songId['id'].'.pdf', $data['rawNotesPDF']);
+		}
+	}
+
+	$xml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'.PHP_EOL.'<Rondo>'.PHP_EOL.$xml.PHP_EOL.'</Rondo>';
+
+
+	$zip->addFile('rondo.xml', $xml);
+
+	# finish the zip stream
+	$zip->finish();
+
+});
+
 // export html files & images for app
 $app->get('/export/html', function () use ($app, &$DB) {
 	umask(0);

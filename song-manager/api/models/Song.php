@@ -79,6 +79,7 @@ class Song
 		$text = implode(PHP_EOL.PHP_EOL, $new_paragraphs);
 
 		$xml  = '<Titel>'.$this->data['title'].PHP_EOL.'</Titel>'.PHP_EOL;
+		$xml .= '<img href="pdf/noten_'.$this->data['id'].'.pdf"/>'.PHP_EOL;
 		$xml .= '<Text>'.$text.'</Text>'.PHP_EOL;
 		$xml .= '<Copy>'.$this->data['copyrightInfo'].PHP_EOL.'</Copy>'.PHP_EOL;
 		$xml  = '<Lied AlteSeitennummer="'.$this->data['pageRondoGreen'].'" Titel="'.$this->data['title'].'">'.$xml.'</Lied>';
