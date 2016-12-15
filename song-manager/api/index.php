@@ -326,6 +326,8 @@ $app->get('/export/indesign.xml', function () use ($app, &$DB) {
 
 // export json index for app
 $app->get('/export/indesign.zip', function () use ($app, &$DB) {
+	$app->response->headers->set('Content-Type', 'application/zip');
+
 	$xml = '';
 
 	# create a new zipstream object
@@ -343,7 +345,7 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 
 		// generate pdf
 		if ($data['rawNotesPDF']){
-			$zip->addFile('pdf/noten_'.$songId['id'].'.pdf', $data['rawNotesPDF']);
+			$zip->addFile('noten_'.$songId['id'].'.pdf', $data['rawNotesPDF']);
 		}
 	}
 
