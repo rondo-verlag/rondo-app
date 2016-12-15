@@ -345,7 +345,7 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 
 		// generate pdf
 		if ($data['rawNotesPDF']){
-			$zip->addFile('noten_'.$songId['id'].'.pdf', $data['rawNotesPDF']);
+			$zip->addFile('pdf/noten_'.$songId['id'].'.pdf', $data['rawNotesPDF']);
 		}
 	}
 
