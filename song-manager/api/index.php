@@ -333,9 +333,7 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 	# create a new zipstream object
 	$zip = new ZipStream\ZipStream('rondo_indesign_'.date('Y-m-d').'.zip');
 
-	$songIds = $DB->fetchAll("SELECT id FROM songs
-		WHERE license = 'FREE'
-		AND status = 'DONE'");
+	$songIds = $DB->fetchAll("SELECT id FROM songs ORDER BY pageRondoGreen ASC");
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
