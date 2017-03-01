@@ -40,7 +40,7 @@ $app->get('/songs/:songId', function ($songId) {
 		}
 	}
 
-	echo json_encode($data);
+	echo json_encode($data, JSON_NUMERIC_CHECK);
 });
 
 $app->put('/songs/:songId', function ($songId) use ($app) {

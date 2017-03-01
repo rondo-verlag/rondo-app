@@ -31,7 +31,8 @@ class Song
 		$this->data['pageRondoRed'] = (intval($this->data['pageRondoRed']) > 0 ? intval($this->data['pageRondoRed']) : null);
 		$this->data['pageRondoBlue'] = (intval($this->data['pageRondoBlue']) > 0 ? intval($this->data['pageRondoBlue']) : null);
 		$this->data['pageRondoGreen'] = (intval($this->data['pageRondoGreen']) > 0 ? intval($this->data['pageRondoGreen']) : null);
-		$this->data['pageRondo2017'] = (intval($this->data['pageRondo2017']) > 0 ? intval($this->data['pageRondo2017']) : null);
+		$this->data['releaseApp2017'] = $this->data['releaseApp2017'] ? 1 : 0;
+		$this->data['releaseBook2017'] = $this->data['releaseBook2017'] ? 1 : 0;
 
 		// do not set raw data here, use setRawData()
 		foreach($this->data as $fieldname => $val){

@@ -63,7 +63,7 @@
           </div>
 
           <div class="form-group">
-            <label for="inputTitle" class="col-sm-3 control-label">Seitenzahlen</label>
+            <label class="col-sm-3 control-label">Seitenzahlen</label>
 
             <div class="col-sm-2">
               <span class="label label-danger">Rot</span>
@@ -80,6 +80,17 @@
             <div class="col-sm-2">
               <span class="label label-success" style="background: orange;">2017</span>
               <input type="text" ng-model="song.pageRondo2017" class="form-control" placeholder="Seitenzahl">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Auflagen</label>
+
+            <div class="col-sm-2">
+              <label><input type="checkbox" ng-model="song.releaseBook2017" ng-true-value="1" ng-false-value="0"> Rondo 2017</label>
+            </div>
+            <div class="col-sm-2">
+              <label><input type="checkbox" ng-model="song.releaseApp2017" ng-true-value="1" ng-false-value="0"> App 2017</label>
             </div>
           </div>
 

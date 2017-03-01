@@ -10,7 +10,7 @@ class SongIndex {
 
 	public function getSongIndex(){
 		$songs = $this->DB->fetchAll("SELECT 
-				 id, title, license, status, copyrightStatusApp, copyrightStatusBook,
+				 id, title, license, status, copyrightStatusApp, copyrightStatusBook, releaseApp2017, releaseBook2017,
 				 (rawImage IS NOT NULL) AS hasImage,
 				 (rawSIB IS NOT NULL) AS hasSIB,
 				 (rawMidi IS NOT NULL) AS hasMidi,
