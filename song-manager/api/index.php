@@ -438,4 +438,40 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 	$zip->finish();
 });
 
+$app->get('/export/bookindex.csv', function () use ($app, &$DB) {
+
+	setlocale(LC_CTYPE, 'de_DE.UTF8');
+
+	$sortable = [];
+	$songs = $DB->fetchAll("SELECT title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017 FROM songs WHERE releaseBook2017 = 1");
+
+	foreach ($songs as $song) {
+
+		// add song by main title
+		$song['isMainTitle'] = 1;
+		$sortable[mb_strtoupper($song['title'])] = $song;
+
+		// add songs by alternative titles
+		$song['isMainTitle'] = 0;
+		if (strlen($song['alternativeTitles'])) {
+			$titles = explode("\n", $song['alternativeTitles']);
+			foreach ($titles as $title) {
+				if (strlen(trim($title))) {
+					$sortable[trim($title)] = $song;
+				}
+			}
+		}
+	}
+
+	ksort($sortable, SORT_STRING | SORT_FLAG_CASE);
+
+	$app->response->headers->set('Content-Disposition', 'attachment; filename=bookindex.csv');
+	$app->response->headers->set('Content-Type', 'text/csv');
+
+	echo '"Liedtitel","Seite 2017","Seite Grün","Seite Blau","Seite Rot","Haupttitel"' . "\n";
+	foreach ($sortable as $title => $song) {
+		echo '"'.$title.'",'.$song['pageRondo2017'].','.$song['pageRondoGreen'].','.$song['pageRondoBlue'].','.$song['pageRondoRed'].','.($song['isMainTitle'] ? '"Ja"' : '"Nein"') . "\n";
+	}
+});
+
 $app->run();
