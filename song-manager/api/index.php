@@ -306,10 +306,10 @@ $app->get('/export/index', function () use ($app, &$DB) {
 	echo $json;
 });
 
-// export json index for app
+// export xml index for indesign
 $app->get('/export/indesign.xml', function () use ($app, &$DB) {
 	$xml = '';
-	$songs = $DB->fetchAll("SELECT id FROM songs ORDER BY pageRondoGreen ASC");
+	$songs = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2017 = 1 ORDER BY pageRondoGreen ASC");
 
 	foreach($songs as $song_id) {
 		$song = new Song($song_id['id']);
@@ -324,7 +324,7 @@ $app->get('/export/indesign.xml', function () use ($app, &$DB) {
 });
 
 
-// export json index for app
+// export indesign files with notes
 $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 	$app->response->headers->set('Content-Type', 'application/zip');
 
@@ -333,7 +333,7 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 	# create a new zipstream object
 	$zip = new ZipStream\ZipStream('rondo_indesign_'.date('Y-m-d').'.zip');
 
-	$songIds = $DB->fetchAll("SELECT id FROM songs ORDER BY pageRondoGreen ASC");
+	$songIds = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2017 = 1 ORDER BY pageRondoGreen ASC");
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
