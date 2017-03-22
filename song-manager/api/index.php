@@ -172,6 +172,7 @@ $app->get('/import/midi', function () use ($app, &$DB) {
 
 	$path = '../../data/sibelius_export/midi';
 	$files = scandir($path);
+	$count = 0;
 
 	foreach($files as $file){
 		if (substr($file, -4) === '.mid'){
@@ -185,11 +186,13 @@ $app->get('/import/midi', function () use ($app, &$DB) {
 				$song = new Song($ids[0]['id']);
 				$song->setRawData('rawMidi', $data);
 				$song->save();
+				$count++;
 			} else {
-				var_dump("no song found for $songtitle");
+				var_dump("no song found for: $songtitle");
 			}
 		}
 	}
+	var_dump("Files imported: $count");
 });
 
 $app->get('/import/notespdf', function () use ($app, &$DB) {
@@ -198,6 +201,7 @@ $app->get('/import/notespdf', function () use ($app, &$DB) {
 
 	$path = '../../data/Dateien_ohne_Texte';
 	$files = scandir($path);
+	$count = 0;
 
 	foreach($files as $file){
 		if (substr($file, -4) === '.pdf'){
@@ -212,11 +216,13 @@ $app->get('/import/notespdf', function () use ($app, &$DB) {
 				$song = new Song($ids[0]['id']);
 				$song->setRawData('rawNotesPDF', $data);
 				$song->save();
+				$count++;
 			} else {
-				var_dump("no song found for $songtitle");
+				var_dump("no song found for: $songtitle");
 			}
 		}
 	}
+	var_dump("Files imported: $count");
 });
 
 $app->get('/import/png', function () use ($app, &$DB) {
@@ -362,9 +368,8 @@ $app->get('/export/html', function () use ($app, &$DB) {
 	umask(0);
 	$path = '../../app/www/resources/songs/';
 
-	$songIds = $DB->fetchAll("SELECT id FROM songs
-		WHERE license = 'FREE'
-		AND status = 'DONE'");
+	$songIndex = new SongIndex();
+	$songIds = $songIndex->getAppSongIds();
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
@@ -395,9 +400,8 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 	# create a new zipstream object
 	$zip = new ZipStream\ZipStream('rondo_data_'.date('Y-m-d').'.zip');
 
-	$songIds = $DB->fetchAll("SELECT id FROM songs
-		WHERE license = 'FREE'
-		AND status = 'DONE'");
+	$songIndex = new SongIndex();
+	$songIds = $songIndex->getAppSongIds();
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
@@ -429,7 +433,6 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 	}
 
 	// song index
-	$songIndex = new SongIndex();
 	$index = $songIndex->getSongIndexForApp();
 	$json = json_encode($index, JSON_PRETTY_PRINT);
 	$zip->addFile('song-index.json', $json);

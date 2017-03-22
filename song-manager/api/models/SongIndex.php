@@ -20,13 +20,18 @@ class SongIndex {
 		return $songs;
 	}
 
+	public function getAppSongIds() {
+		return $this->DB->fetchAll("SELECT id
+			FROM songs
+			WHERE (license = 'FREE' OR license_type = 'FREE')
+			AND status = 'DONE'
+			AND releaseApp2017 = 1");
+	}
+
 	public function getSongIndexForApp(){
 		$index = [];
 
-		$songs = $this->DB->fetchAll("SELECT id
-			FROM songs
-			WHERE license = 'FREE'
-			AND status = 'DONE'");
+		$songs = $this->getAppSongIds();
 
 		foreach($songs as $song_id){
 			$model = new Song($song_id['id']);

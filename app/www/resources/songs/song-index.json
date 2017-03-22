@@ -5,10 +5,13 @@
         "pageRondoRed": null,
         "pageRondoBlue": "103",
         "pageRondoGreen": "186",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
+            "A",
             "D",
             "Em",
+            "Fism",
             "G",
             "Hm"
         ],
@@ -20,29 +23,17 @@
         "pageRondoRed": null,
         "pageRondoBlue": "103",
         "pageRondoGreen": "186",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
+            "A",
             "D",
             "Em",
+            "Fism",
             "G",
             "Hm"
         ],
         "alternative": true
-    },
-    {
-        "id": "2",
-        "title": "ABENDSTILLE \u00dcBERALL",
-        "pageRondoRed": "127",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "125",
-        "interpret": "",
-        "chords": [
-            "Am",
-            "C",
-            "F",
-            "G"
-        ],
-        "alternative": false
     },
     {
         "id": "3",
@@ -50,6 +41,7 @@
         "pageRondoRed": "103",
         "pageRondoBlue": null,
         "pageRondoGreen": "103",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -64,11 +56,12 @@
         "pageRondoRed": "15",
         "pageRondoBlue": null,
         "pageRondoGreen": "16",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "C",
-            "D7",
-            "G"
+            "A",
+            "E",
+            "H7"
         ],
         "alternative": false
     },
@@ -78,6 +71,7 @@
         "pageRondoRed": "233",
         "pageRondoBlue": null,
         "pageRondoGreen": "233",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -93,6 +87,7 @@
         "pageRondoRed": "123",
         "pageRondoBlue": null,
         "pageRondoGreen": "255",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -108,6 +103,7 @@
         "pageRondoRed": "68",
         "pageRondoBlue": null,
         "pageRondoGreen": "68",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -121,6 +117,7 @@
         "pageRondoRed": "60",
         "pageRondoBlue": null,
         "pageRondoGreen": "60",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -140,11 +137,12 @@
         "pageRondoRed": "158",
         "pageRondoBlue": null,
         "pageRondoGreen": "158",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "B",
+            "Am",
             "C",
-            "Dm",
+            "D",
             "F",
             "G"
         ],
@@ -156,6 +154,7 @@
         "pageRondoRed": "124",
         "pageRondoBlue": "158",
         "pageRondoGreen": "123",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "D7",
@@ -171,6 +170,7 @@
         "pageRondoRed": "153",
         "pageRondoBlue": null,
         "pageRondoGreen": "254",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -186,12 +186,13 @@
         "pageRondoRed": "63",
         "pageRondoBlue": null,
         "pageRondoGreen": "63",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "A",
+            "A7",
+            "C",
             "D",
-            "E",
-            "H7"
+            "G"
         ],
         "alternative": false
     },
@@ -201,6 +202,7 @@
         "pageRondoRed": "14",
         "pageRondoBlue": "142",
         "pageRondoGreen": "14",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -217,6 +219,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "144",
         "pageRondoGreen": "144",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -233,10 +236,11 @@
         "pageRondoRed": "38",
         "pageRondoBlue": null,
         "pageRondoGreen": "38",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "D7",
-            "G"
+            "E",
+            "H7"
         ],
         "alternative": false
     },
@@ -246,6 +250,7 @@
         "pageRondoRed": "70",
         "pageRondoBlue": null,
         "pageRondoGreen": "70",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -256,11 +261,61 @@
         "alternative": false
     },
     {
+        "id": "28",
+        "title": "D CHINDER VOM KOLUMBUS",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "130",
+        "pageRondo2017": null,
+        "interpret": "Peter Reber",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "31",
+        "title": "DE GR\u00d6SCHT",
+        "pageRondoRed": "208",
+        "pageRondoBlue": "78",
+        "pageRondoGreen": "208",
+        "pageRondo2017": null,
+        "interpret": "A. Steingruber",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
+        "id": "31",
+        "title": "De Summervogel seit zum Jumbojet",
+        "pageRondoRed": "208",
+        "pageRondoBlue": "78",
+        "pageRondoGreen": "208",
+        "pageRondo2017": null,
+        "interpret": "A. Steingruber",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": true
+    },
+    {
         "id": "32",
         "title": "DE T\u00d6FF VOM POLIZISCHT",
         "pageRondoRed": "30",
         "pageRondoBlue": null,
         "pageRondoGreen": "30",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -270,11 +325,27 @@
         "alternative": false
     },
     {
+        "id": "155",
+        "title": "DIE AFFEN",
+        "pageRondoRed": "7",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "6",
+        "pageRondo2017": null,
+        "interpret": "",
+        "chords": [
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": false
+    },
+    {
         "id": "33",
         "title": "DIE NACHT IST OHNE ENDE",
         "pageRondoRed": "12",
         "pageRondoBlue": null,
         "pageRondoGreen": "11",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -289,6 +360,7 @@
         "pageRondoRed": "64",
         "pageRondoBlue": null,
         "pageRondoGreen": "64",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -304,6 +376,7 @@
         "pageRondoRed": "127",
         "pageRondoBlue": null,
         "pageRondoGreen": "125",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -322,6 +395,7 @@
         "pageRondoRed": "10",
         "pageRondoBlue": "62",
         "pageRondoGreen": "10",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -336,6 +410,7 @@
         "pageRondoRed": "60",
         "pageRondoBlue": null,
         "pageRondoGreen": "60",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -355,10 +430,9 @@
         "pageRondoRed": "236",
         "pageRondoBlue": null,
         "pageRondoGreen": "236",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "C",
-            "D",
             "D7",
             "G"
         ],
@@ -370,12 +444,12 @@
         "pageRondoRed": "90",
         "pageRondoBlue": null,
         "pageRondoGreen": "90",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
             "E",
-            "H7",
-            "undE"
+            "H7"
         ],
         "alternative": true
     },
@@ -385,9 +459,11 @@
         "pageRondoRed": "18",
         "pageRondoBlue": null,
         "pageRondoGreen": "18",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
+            "C7",
             "F",
             "G",
             "G7"
@@ -400,22 +476,9 @@
         "pageRondoRed": "17",
         "pageRondoBlue": null,
         "pageRondoGreen": "19",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "D",
-            "G"
-        ],
-        "alternative": false
-    },
-    {
-        "id": "45",
-        "title": "EVERYONE KNOWS IT",
-        "pageRondoRed": "248",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "248",
-        "interpret": "",
-        "chords": [
-            "A",
             "D",
             "G"
         ],
@@ -427,9 +490,9 @@
         "pageRondoRed": "24",
         "pageRondoBlue": null,
         "pageRondoGreen": "24",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "C",
             "D",
             "G"
         ],
@@ -441,12 +504,14 @@
         "pageRondoRed": "116",
         "pageRondoBlue": null,
         "pageRondoGreen": "141",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
             "A7",
             "D",
             "Em",
+            "G",
             "Hm"
         ],
         "alternative": false
@@ -457,6 +522,7 @@
         "pageRondoRed": "108",
         "pageRondoBlue": null,
         "pageRondoGreen": "108",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -465,42 +531,15 @@
         "alternative": true
     },
     {
-        "id": "50",
-        "title": "GOOD NIGHT, LADIES",
-        "pageRondoRed": "102",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "102",
-        "interpret": "",
-        "chords": [
-            "C",
-            "D7",
-            "G"
-        ],
-        "alternative": false
-    },
-    {
-        "id": "51",
-        "title": "HANG DOWN YOUR HEAD, TOM DOOLEY",
-        "pageRondoRed": "88",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "152",
-        "interpret": "",
-        "chords": [
-            "D7",
-            "G"
-        ],
-        "alternative": false
-    },
-    {
         "id": "55",
         "title": "HERING UND FLUNDER",
         "pageRondoRed": "9",
         "pageRondoBlue": null,
         "pageRondoGreen": "265",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
-            "D",
             "D7",
             "G"
         ],
@@ -512,6 +551,7 @@
         "pageRondoRed": "119",
         "pageRondoBlue": null,
         "pageRondoGreen": "119",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -527,6 +567,7 @@
         "pageRondoRed": "160",
         "pageRondoBlue": null,
         "pageRondoGreen": "160",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -543,6 +584,7 @@
         "pageRondoRed": "153",
         "pageRondoBlue": null,
         "pageRondoGreen": "254",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -558,6 +600,7 @@
         "pageRondoRed": "64",
         "pageRondoBlue": null,
         "pageRondoGreen": "64",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -573,6 +616,7 @@
         "pageRondoRed": "82",
         "pageRondoBlue": null,
         "pageRondoGreen": "82",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -587,6 +631,7 @@
         "pageRondoRed": "123",
         "pageRondoBlue": null,
         "pageRondoGreen": "255",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -602,6 +647,7 @@
         "pageRondoRed": "195",
         "pageRondoBlue": null,
         "pageRondoGreen": "195",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -615,6 +661,7 @@
         "pageRondoRed": "80",
         "pageRondoBlue": "82",
         "pageRondoGreen": "80",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -631,28 +678,17 @@
         "pageRondoRed": null,
         "pageRondoBlue": "103",
         "pageRondoGreen": "186",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
+            "A",
             "D",
             "Em",
+            "Fism",
             "G",
             "Hm"
         ],
         "alternative": true
-    },
-    {
-        "id": "63",
-        "title": "IN EINEM POLENST\u00c4DTCHEN",
-        "pageRondoRed": "43",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "46",
-        "interpret": "",
-        "chords": [
-            "A",
-            "E",
-            "H7"
-        ],
-        "alternative": false
     },
     {
         "id": "55",
@@ -660,10 +696,10 @@
         "pageRondoRed": "9",
         "pageRondoBlue": null,
         "pageRondoGreen": "265",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
-            "D",
             "D7",
             "G"
         ],
@@ -675,6 +711,7 @@
         "pageRondoRed": "37",
         "pageRondoBlue": null,
         "pageRondoGreen": "37",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "D7",
@@ -688,6 +725,7 @@
         "pageRondoRed": "28",
         "pageRondoBlue": null,
         "pageRondoGreen": "28",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -704,6 +742,7 @@
         "pageRondoRed": "108",
         "pageRondoBlue": null,
         "pageRondoGreen": "108",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -717,11 +756,11 @@
         "pageRondoRed": "126",
         "pageRondoBlue": null,
         "pageRondoGreen": "124",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "C",
-            "C7",
-            "F"
+            "E",
+            "H7"
         ],
         "alternative": false
     },
@@ -731,6 +770,7 @@
         "pageRondoRed": "115",
         "pageRondoBlue": null,
         "pageRondoGreen": "232",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -748,6 +788,7 @@
         "pageRondoRed": "66",
         "pageRondoBlue": "94",
         "pageRondoGreen": "66",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "D7",
@@ -756,24 +797,12 @@
         "alternative": false
     },
     {
-        "id": "51",
-        "title": "Listen the bells are ringing",
-        "pageRondoRed": "88",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "152",
-        "interpret": "",
-        "chords": [
-            "D7",
-            "G"
-        ],
-        "alternative": true
-    },
-    {
         "id": "81",
         "title": "LUSTIG IST DAS ZIGEUNERLEBEN",
         "pageRondoRed": "11",
         "pageRondoBlue": null,
         "pageRondoGreen": "12",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -788,6 +817,7 @@
         "pageRondoRed": "54",
         "pageRondoBlue": null,
         "pageRondoGreen": "54",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -801,6 +831,7 @@
         "pageRondoRed": "29",
         "pageRondoBlue": null,
         "pageRondoGreen": "29",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -814,12 +845,12 @@
         "pageRondoRed": "47",
         "pageRondoBlue": null,
         "pageRondoGreen": "188",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
             "F",
-            "G",
-            "G7"
+            "G"
         ],
         "alternative": false
     },
@@ -829,6 +860,7 @@
         "pageRondoRed": "94",
         "pageRondoBlue": null,
         "pageRondoGreen": "94",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -843,6 +875,7 @@
         "pageRondoRed": "72",
         "pageRondoBlue": null,
         "pageRondoGreen": "72",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -859,12 +892,12 @@
         "pageRondoRed": "104",
         "pageRondoBlue": null,
         "pageRondoGreen": "104",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "C",
-            "D7",
-            "Em",
-            "G"
+            "A",
+            "E",
+            "H7"
         ],
         "alternative": false
     },
@@ -874,6 +907,7 @@
         "pageRondoRed": "65",
         "pageRondoBlue": "70",
         "pageRondoGreen": "65",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -888,6 +922,7 @@
         "pageRondoRed": "82",
         "pageRondoBlue": null,
         "pageRondoGreen": "82",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -902,6 +937,7 @@
         "pageRondoRed": "76",
         "pageRondoBlue": null,
         "pageRondoGreen": "76",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
@@ -918,6 +954,7 @@
         "pageRondoRed": "79",
         "pageRondoBlue": null,
         "pageRondoGreen": "79",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -932,12 +969,12 @@
         "pageRondoRed": "90",
         "pageRondoBlue": null,
         "pageRondoGreen": "90",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
             "E",
-            "H7",
-            "undE"
+            "H7"
         ],
         "alternative": false
     },
@@ -947,6 +984,7 @@
         "pageRondoRed": "118",
         "pageRondoBlue": null,
         "pageRondoGreen": "118",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -960,10 +998,10 @@
         "pageRondoRed": "189",
         "pageRondoBlue": null,
         "pageRondoGreen": "187",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
-            "D",
             "Dm"
         ],
         "alternative": false
@@ -974,6 +1012,7 @@
         "pageRondoRed": "30",
         "pageRondoBlue": null,
         "pageRondoGreen": "33",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
@@ -988,6 +1027,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "144",
         "pageRondoGreen": "144",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -1004,11 +1044,12 @@
         "pageRondoRed": "158",
         "pageRondoBlue": null,
         "pageRondoGreen": "158",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "B",
+            "Am",
             "C",
-            "Dm",
+            "D",
             "F",
             "G"
         ],
@@ -1020,6 +1061,7 @@
         "pageRondoRed": "124",
         "pageRondoBlue": "158",
         "pageRondoGreen": "123",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "D7",
@@ -1030,32 +1072,34 @@
         "alternative": true
     },
     {
-        "id": "125",
-        "title": "See a child standing there",
-        "pageRondoRed": null,
-        "pageRondoBlue": null,
-        "pageRondoGreen": "184",
-        "interpret": "",
-        "chords": [
-            "Am",
-            "C",
-            "Dm",
-            "F",
-            "G"
-        ],
-        "alternative": true
-    },
-    {
         "id": "121",
         "title": "She was eating Bircherm\u00fcesli",
         "pageRondoRed": "87",
         "pageRondoBlue": null,
         "pageRondoGreen": "78",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
             "D7",
             "G"
+        ],
+        "alternative": true
+    },
+    {
+        "id": "28",
+        "title": "Si hei Wind i de Haar",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "130",
+        "pageRondo2017": null,
+        "interpret": "Peter Reber",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G",
+            "G7"
         ],
         "alternative": true
     },
@@ -1065,41 +1109,26 @@
         "pageRondoRed": "32",
         "pageRondoBlue": "108",
         "pageRondoGreen": "32",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A7",
             "D",
-            "G",
-            "Hm"
-        ],
-        "alternative": false
-    },
-    {
-        "id": "121",
-        "title": "SINGING I I",
-        "pageRondoRed": "87",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "78",
-        "interpret": "",
-        "chords": [
-            "C",
-            "D7",
             "G"
         ],
         "alternative": false
     },
     {
-        "id": "125",
-        "title": "SONG OF THE INTERNATIONAL YEAR OF THE CHILD",
-        "pageRondoRed": null,
+        "id": "121",
+        "title": "SINGING AYE AYE",
+        "pageRondoRed": "87",
         "pageRondoBlue": null,
-        "pageRondoGreen": "184",
+        "pageRondoGreen": "78",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "Am",
             "C",
-            "Dm",
-            "F",
+            "D7",
             "G"
         ],
         "alternative": false
@@ -1110,9 +1139,11 @@
         "pageRondoRed": "212",
         "pageRondoBlue": null,
         "pageRondoGreen": "212",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
+            "A7",
             "D",
             "Em",
             "G"
@@ -1125,11 +1156,12 @@
         "pageRondoRed": "192",
         "pageRondoBlue": null,
         "pageRondoGreen": "192",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "Am",
-            "D7",
-            "G"
+            "A",
+            "E",
+            "H7"
         ],
         "alternative": false
     },
@@ -1139,6 +1171,7 @@
         "pageRondoRed": "25",
         "pageRondoBlue": null,
         "pageRondoGreen": "25",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -1152,6 +1185,7 @@
         "pageRondoRed": "160",
         "pageRondoBlue": null,
         "pageRondoGreen": "160",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -1168,6 +1202,7 @@
         "pageRondoRed": "65",
         "pageRondoBlue": "70",
         "pageRondoGreen": "65",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "Am",
@@ -1182,12 +1217,13 @@
         "pageRondoRed": "63",
         "pageRondoBlue": null,
         "pageRondoGreen": "63",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
-            "A",
+            "A7",
+            "C",
             "D",
-            "E",
-            "H7"
+            "G"
         ],
         "alternative": true
     },
@@ -1197,11 +1233,13 @@
         "pageRondoRed": "226",
         "pageRondoBlue": null,
         "pageRondoGreen": "226",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
             "D7",
-            "G"
+            "G",
+            "G7"
         ],
         "alternative": false
     },
@@ -1211,6 +1249,7 @@
         "pageRondoRed": "24",
         "pageRondoBlue": null,
         "pageRondoGreen": "24",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "C",
@@ -1224,29 +1263,34 @@
         "pageRondoRed": "116",
         "pageRondoBlue": null,
         "pageRondoGreen": "141",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
             "A",
             "A7",
             "D",
             "Em",
+            "G",
             "Hm"
         ],
         "alternative": true
     },
     {
-        "id": "145",
-        "title": "WIEGENDE WELLEN",
-        "pageRondoRed": "45",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "179",
-        "interpret": "",
+        "id": "137",
+        "title": "Wind Nord-Ost Startbahn null drei",
+        "pageRondoRed": "218",
+        "pageRondoBlue": "64",
+        "pageRondoGreen": "218",
+        "pageRondo2017": null,
+        "interpret": "Reinhard Mey",
         "chords": [
-            "A7",
+            "Am",
+            "Am7",
+            "C",
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": true
     },
     {
         "id": "154",
@@ -1254,8 +1298,10 @@
         "pageRondoRed": "49",
         "pageRondoBlue": null,
         "pageRondoGreen": "49",
+        "pageRondo2017": null,
         "interpret": "",
         "chords": [
+            "A",
             "A7",
             "D",
             "G"
@@ -1263,15 +1309,18 @@
         "alternative": false
     },
     {
-        "id": "155",
-        "title": "ZWEI AFFEN",
-        "pageRondoRed": "7",
-        "pageRondoBlue": null,
-        "pageRondoGreen": "6",
-        "interpret": "",
+        "id": "137",
+        "title": "\u00dcBER DEN WOLKEN",
+        "pageRondoRed": "218",
+        "pageRondoBlue": "64",
+        "pageRondoGreen": "218",
+        "pageRondo2017": null,
+        "interpret": "Reinhard Mey",
         "chords": [
+            "Am",
+            "Am7",
             "C",
-            "F",
+            "D",
             "G"
         ],
         "alternative": false
