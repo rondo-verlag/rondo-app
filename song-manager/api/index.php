@@ -199,30 +199,56 @@ $app->get('/import/notespdf', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	ini_set('max_execution_time', 300);
 
+	$files = [];
 	$path = '../../data/Dateien_ohne_Texte';
-	$files = scandir($path);
+	$iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path));
+	$regexIterator = new RegexIterator($iterator, '/^.+\.pdf$/i', RecursiveRegexIterator::GET_MATCH);
+	foreach($regexIterator as $file){
+		$filepath = $file[0];
+		$filename = basename($filepath);
+		$files[] = [
+			'filepath' => $filepath,
+			'filename' => $filename
+		];
+	}
+
+
+	//$files = scandir($path);
 	$count = 0;
+	$count_err = 0;
+	$imported_ids = [];
 
 	foreach($files as $file){
-		if (substr($file, -4) === '.pdf'){
-			$songtitle = substr($file, 0, -4);
+		if (substr($file['filename'], -4) === '.pdf'){
+			$songtitle = substr($file['filename'], 0, -4);
 			$songtitle = str_replace('_0001','',$songtitle);
 			$songtitle = normalizer_normalize($songtitle);
 			//var_dump($songtitle);
 			$ids = $DB->fetchAll("SELECT id FROM songs WHERE title = ?", array($songtitle));
 			if(isset($ids[0]['id'])){
 				var_dump($ids[0]['id']);
-				$data = file_get_contents($path.'/'.$file);
+				$imported_ids[] = $ids[0]['id'];
+				$data = file_get_contents($path.'/'.$file['filepath']);
 				$song = new Song($ids[0]['id']);
 				$song->setRawData('rawNotesPDF', $data);
 				$song->save();
 				$count++;
 			} else {
-				var_dump("no song found for: $songtitle");
+				var_dump("no song found for: $songtitle '" . $file['filepath'] . "'");
+				$count_err++;
 			}
 		}
 	}
+	var_dump("Imported IDS:", implode(',', $imported_ids));
 	var_dump("Files imported: $count");
+	var_dump("Errors: $count_err");
+
+	var_dump("Not imported:");
+	$not_imported = $DB->fetchAll("SELECT * FROM songs WHERE id NOT IN (".implode(',', $imported_ids).")");
+	foreach ($not_imported as $song) {
+		var_dump($song['id'] . ' - ' . $song['title']);
+	}
+
 });
 
 $app->get('/import/png', function () use ($app, &$DB) {
