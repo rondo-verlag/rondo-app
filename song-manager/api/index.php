@@ -503,4 +503,86 @@ $app->get('/export/bookindex.csv', function () use ($app, &$DB) {
 	}
 });
 
+$app->get('/validate', function () use ($app, &$DB) {
+	ini_set('max_execution_time', 300);
+	$app->contentType('text/html');
+	echo '<pre>';
+
+	function invalid($msg, $data = []) {
+		echo '<b style="display: inline-block; width: 300px; overflow: hidden">'.$data['title'].':</b>';
+		echo $msg.'<br>';
+	}
+
+	$available_chord_icons = ["A","A7","Am","Am7","B","C","C7","D","D7","Dm","E","E7","Em","F-bar","F","Fis","Fism","Fm","G","G7","Gm","H7","Hm","Hm7"];
+
+	$songIds = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2017 = 1 or releaseApp2017 = 1 order by title ASC");
+	foreach ($songIds as $songId) {
+		$song = new Song($songId['id']);
+		$data = $song->getData();
+
+		// validate pdf
+		if (!$data['rawNotesPDF']) {
+			invalid('Kein PDF', $data);
+		}
+
+		// validate songtext
+		//if (strpos($data['text'], '   ') !== false) {
+		//	invalid('Drei oder mehr aufeinanderfolgende Leerzeichen in Songtext', $data);
+		//}
+		//if (strpos($data['text'], "\n\n\n") !== false) {
+		//	invalid('Drei oder mehr aufeinanderfolgende Zeilenumbrüche in Songtext', $data);
+		//}
+
+		// validate page number
+		if (!$data['pageRondo2017']) {
+			invalid('Keine Seitenzahl für Buch 2017', $data);
+		}
+
+		// validate license status
+		if ($data['license'] == 'UNKNOWN') {
+			invalid('Lizenz is UNKNOWN', $data);
+		}
+
+		// validate song status
+		if ($data['status'] != 'DONE') {
+			invalid('Lied Status ist noch nicht gut: '.$data['status'], $data);
+		}
+
+		// App only
+		if ($data['releaseApp2017']) {
+
+			// validate files
+			if (!$data['rawImage']) {
+				invalid('Kein App Bild', $data);
+			}
+			if (!$data['rawMidi']) {
+				invalid('Kein Midi', $data);
+			}
+
+			// validate chords
+			$chords = $song->getClearedChordList();
+			foreach ($chords as $chord) {
+				if (!in_array($chord, $available_chord_icons)) {
+					invalid('Akkord verwendet der keine Zeichnung hat: '. $chord, $data);
+				}
+			}
+
+			// validate license status
+			if ($data['license'] != 'FREE' && $data['copyrightStatusApp'] != 'DONE') {
+				invalid('Copyright Status für App noch nicht gut: ' . $data['copyrightStatusApp'], $data);
+			}
+		}
+
+
+		// Book only
+		if ($data['releaseBook2017']) {
+			// validate license status
+			if ($data['license'] != 'FREE' && $data['copyrightStatusBook'] != 'DONE') {
+				invalid('Copyright Status für Buch noch nicht gut: ' . $data['copyrightStatusBook'], $data);
+			}
+		}
+
+	}
+});
+
 $app->run();
