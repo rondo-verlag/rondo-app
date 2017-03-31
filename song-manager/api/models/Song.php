@@ -275,6 +275,23 @@ class Song
 		return $list;
 	}
 
+	public function getClearedChordList() {
+		$uncleaned_chords = $this->getChordList();
+		$list = [];
+		foreach ($uncleaned_chords as $chord) {
+			$cleaned = preg_replace("/[^A-Za-z0-9\/]/", '', $chord);
+			$splitted = explode('/',$cleaned);
+			foreach ($splitted as $split){
+				if (!in_array($split, $list)){
+					$list[] = $split;
+				}
+			}
+		}
+		$list = array_unique($list);
+		sort($list);
+		return $list;
+	}
+
 	public function loadFromXml($xml_string){
 		$text = $this->xml2crd($xml_string);
 		$this->data['text'] = $text;
