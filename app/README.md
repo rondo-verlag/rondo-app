@@ -2,7 +2,8 @@ songbook-app
 ============
 
 ## Workspace setup
-Install Node.JS with NPM, iOS SDK and Android SDK.
+
+Requirements: Node.JS with NPM, iOS SDK and Android SDK.
 
 Install Ionic and Cordova globally:
 ```bash
@@ -13,6 +14,11 @@ npm install -g cordova
 Install JavaScript Libraries:
 ```bash
 npm install
+```
+
+Now you can run the app in your browser:
+```bash
+ionic serve
 ```
 
 
@@ -34,6 +40,10 @@ Upload App to Ionic View:
 
     ionic upload
 
+Building App TypeScript
+
+    npm run build-js
+
 Building App SCSS:
 
     sass --no-cache --update www/css/style.scss:www/css/style.css
@@ -42,17 +52,13 @@ Building Ionic SCSS (e.g. apply dark theme):
 
     scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css
 
-
 Building Android APK:
 
     ionic cordova build android
 
-Release Android Version:
+Generate Android Release Version:
 
-    cordova build --release android
-    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore keystore/android-release-key.keystore /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk rondoapp
-    rm build/Rondo.apk && ~/Library/Android/sdk/build-tools/23.0.2/zipalign -v 4 /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk build/Rondo.apk
-    
+    npm run android-release
 
 Compile iOS App for Test Flight:
 

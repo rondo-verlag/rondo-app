@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "removeComments": false,
+        "sourceMap": true,
+        "outFile": "www/js/app.js"
+    },
+    "files": [
+        "www/js/app.ts"
+    ]
+}

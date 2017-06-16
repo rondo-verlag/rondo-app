@@ -22,7 +22,8 @@
         "gulp-minify-css": "^0.3.0",
         "gulp-rename": "^1.2.0",
         "gulp-sass": "^3.0.0",
-        "ionic-plugin-keyboard": "^1.0.9"
+        "ionic-plugin-keyboard": "^1.0.9",
+        "typescript": "^2.3.4"
     },
     "devDependencies": {
         "@ionic/cli-plugin-cordova": "1.4.0",
@@ -49,6 +50,7 @@
     ],
     "scripts": {
         "postinstall": "ionic state restore",
+        "build-js": "node_modules/typescript/bin/tsc",
         "build-ionic-css": "scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css",
         "build-app-css": "sass --no-cache --update www/css/style.scss:www/css/style.css",
         "ios-emulate": "ionic emulate ios --target='iPhone-4s'",
