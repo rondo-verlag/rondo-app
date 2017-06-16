@@ -2,16 +2,19 @@ songbook-app
 ============
 
 ## Workspace setup
-1. Install iOS SDK, Android SDK and [Ionic](http://ionicframework.com/getting-started/)
-2. Initialize project platforms and plugins
+Install Node.JS with NPM, iOS SDK and Android SDK.
 
+Install Ionic and Cordova globally:
 ```bash
-$ mkdir plugins
-$ ionic platform android
-$ ionic platform ios
-$ ionic add ionic-platform-web-client
-$ cordova prepare
+npm install -g ionic
+npm install -g cordova
 ```
+
+Install JavaScript Libraries:
+```bash
+npm install
+```
+
 
 ## Useful commands
 
@@ -42,7 +45,7 @@ Building Ionic SCSS (e.g. apply dark theme):
 
 Building Android APK:
 
-    ionic build android
+    ionic cordova build android
 
 Release Android Version:
 
@@ -53,7 +56,7 @@ Release Android Version:
 
 Compile iOS App for Test Flight:
 
-    ionic build ios
-    Then open Project in XCode
+    ionic cordova build ios
+    Then open Project in XCode (/platforms/ios/Rondo.xcodeproj)
     XCode > Product > Archive and then upload the App
     Manage Apps on https://itunesconnect.apple.com

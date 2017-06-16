@@ -1,4 +1,8 @@
 {
   "name": "songbook-app",
-  "app_id": "fff006c6"
+  "app_id": "fff006c6",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ]
 }

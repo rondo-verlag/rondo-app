@@ -9,9 +9,8 @@
     },
     "cordova-plugin-app-version": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/whiteoctober/cordova-plugin-app-version.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-app-version@https://github.com/whiteoctober/cordova-plugin-app-version.git"
         },
         "is_top_level": true,
         "variables": {}
@@ -26,9 +25,8 @@
     },
     "cordova-plugin-insomnia": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-insomnia@https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git"
         },
         "is_top_level": true,
         "variables": {}
@@ -84,16 +82,15 @@
     "cordova-plugin-queries-schemes": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-queries-schemes"
+            "id": "cordova-plugin-queries-schemes@~0.1.1"
         },
         "is_top_level": true,
         "variables": {}
     },
     "cordova-plugin-midi-player": {
         "source": {
-            "type": "git",
-            "url": "https://github.com/demianh/MidiFilePlayer.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-midi-player@https://github.com/demianh/MidiFilePlayer.git"
         },
         "is_top_level": true,
         "variables": {}
@@ -101,7 +98,7 @@
     "cordova-plugin-file": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-file"
+            "id": "cordova-plugin-file@^4.0.0"
         },
         "is_top_level": false,
         "variables": {}
@@ -109,7 +106,7 @@
     "cordova-plugin-compat": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-compat"
+            "id": "cordova-plugin-compat@^1.0.0"
         },
         "is_top_level": false,
         "variables": {}
@@ -117,9 +114,11 @@
     "cordova-plugin-media": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-media"
+            "id": "cordova-plugin-media@~2.4.0"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "MICROPHONE_USAGE_DESCRIPTION": " "
+        }
     }
 }
