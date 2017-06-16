@@ -46,7 +46,7 @@ Building App TypeScript
 
 Building App SCSS:
 
-    sass --no-cache --update www/css/style.scss:www/css/style.css
+    npm run build-app-css
 
 Building Ionic SCSS (e.g. apply dark theme):
 
