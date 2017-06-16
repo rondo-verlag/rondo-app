@@ -1,5 +1,5 @@
 var appVersion = "0.0.0";
-var Songbook = angular.module("songbook", ['ionic', 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
+var Songbook = angular.module("songbook", ['ionic', /*'ionic.service.core', 'ionic.service.analytics',*/ 'ui.router', 'ngCordova', 'ngStorage', 'hmTouchEvents']);
 Songbook.run(function ($ionicPlatform /*, $ionicAnalytics*/) {
     $ionicPlatform.ready(function () {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -308,6 +308,9 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         $scope.info = data;
         $scope.songTitle = data.title;
         var pages = [];
+        if (data.pageRondo2017) {
+            pages.push('<span class="rondo-orange">' + data.pageRondo2017 + '</span>');
+        }
         if (data.pageRondoGreen) {
             pages.push('<span class="rondo-green">' + data.pageRondoGreen + '</span>');
         }

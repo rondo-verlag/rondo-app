@@ -1,25 +1,31 @@
 @font-face {
   font-family: Medien;
   src: url("fonts/NN_Medien_Demo/NN_Medien_Regular_Demo.otf") format("opentype"); }
+
 @font-face {
   font-family: Medien;
   font-weight: bold;
   src: url("fonts/NN_Medien_Demo/NN_Medien_Bold_Demo.otf") format("opentype"); }
+
 @font-face {
   font-family: Medien;
   font-style: italic;
   src: url("fonts/NN_Medien_Demo/NN_Medien_Italic_Demo.otf") format("opentype"); }
+
 @font-face {
   font-family: Vectora;
   src: url("fonts/Vectora/VectoraLTStd-Roman.otf") format("opentype"); }
+
 @font-face {
   font-family: Vectora;
   font-weight: bold;
   src: url("fonts/Vectora/VectoraLTStd-Bold.otf") format("opentype"); }
+
 @font-face {
   font-family: Vectora;
   font-style: italic;
   src: url("fonts/Vectora/VectoraLTStd-Italic.otf") format("opentype"); }
+
 body {
   color: #ffffff;
   background: #000000;
@@ -41,6 +47,7 @@ h1, h2, h3, h4, h5 {
   src: url("fonts/rondo/rondo.woff?yqenl3") format("woff"), url("fonts/rondo/rondo.ttf?yqenl3") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 [class^="rondo-icon-"], [class*=" rondo-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'rondo', Vectora, Medien, "Helvetica Neue", Verdana, sans-serif !important;
@@ -237,15 +244,20 @@ a.invisible-link {
   .rondo-book-index .book-green {
     background: #59ffee;
     color: black; }
+  .rondo-book-index .book-orange {
+    background: orange;
+    color: black; }
 
 .rondo-show-chords .chord,
 .rondo-show-chords .empty-chord {
   height: 1.2em;
   overflow: visible;
   width: auto; }
+
 .rondo-show-chords .songtext .line .word,
 .rondo-show-chords .songtext .line .bl {
   height: 2.5em; }
+
 .rondo-show-chords .songtext {
   color: #999; }
   .rondo-show-chords .songtext .chord {
@@ -267,6 +279,7 @@ a.invisible-link {
 
 .rondo-fullscreen ion-header-bar {
   top: -80px; }
+
 .rondo-fullscreen .tabs {
   bottom: -80px; }
 
@@ -282,13 +295,17 @@ a.invisible-link {
 .song-detail .nav-bar {
   -webkit-transition: top 0.5s;
   transition: top 0.5s; }
+
 .song-detail .tabs {
   -webkit-transition: bottom 0.5s;
   transition: bottom 0.5s; }
+
 .song-detail .tab-item {
   opacity: 1; }
+
 .song-detail .has-header {
   top: 0; }
+
 .song-detail .has-tabs {
   bottom: 0; }
 
@@ -343,6 +360,8 @@ a.invisible-link {
     color: #0099ff; }
   .page-numbers .rondo-green {
     color: #99FF99; }
+  .page-numbers .rondo-orange {
+    color: orange; }
 
 ion-content .page-numbers {
   display: none; }
@@ -363,6 +382,7 @@ ion-content .page-numbers {
     letter-spacing: 1px; }
   .rondo-bar-search label input::-webkit-input-placeholder {
     color: #CCC; }
+
 .rondo-bar-search .clear-search {
   color: #CCC;
   font-size: 140%;
@@ -374,6 +394,7 @@ ion-content .page-numbers {
   width: 30px;
   text-align: center;
   padding-top: 5px; }
+
 .rondo-bar-search .about-icon {
   display: inline-block;
   padding-left: 10px;
@@ -387,9 +408,11 @@ ion-content .page-numbers {
   border: none; }
   .rondo-list .item .item-content {
     padding: 8px 16px; }
+
 .rondo-list .main-title {
   font-weight: bold;
   letter-spacing: 2px; }
+
 .rondo-list .alt-title {
   letter-spacing: 1px; }
 

@@ -182,6 +182,9 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
       $scope.info = data;
       $scope.songTitle = data.title;
       var pages = [];
+      if(data.pageRondo2017){
+        pages.push('<span class="rondo-orange">'+data.pageRondo2017+'</span>');
+      }
       if(data.pageRondoGreen){
         pages.push('<span class="rondo-green">'+data.pageRondoGreen+'</span>');
       }
