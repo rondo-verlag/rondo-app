@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>419</string>
+	<string>428</string>
 	<key>AMApplicationVersion</key>
-	<string>2.6</string>
+	<string>2.7</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -100,14 +100,12 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>415.500000:308.000000</string>
+				<string>309.000000:308.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/German.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -127,7 +125,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>541</string>
+				<string>570.3</string>
 				<key>AMApplication</key>
 				<array>
 					<string>PDF</string>
@@ -170,7 +168,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.apple.action.imagepdf</string>
 				<key>CFBundleVersion</key>
-				<string>541</string>
+				<string>570.3</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -254,7 +252,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>415.500000:509.000000</string>
+				<string>309.000000:509.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Render PDF Pages as Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -311,7 +309,7 @@
 					<key>replaceExisting</key>
 					<true/>
 					<key>toDirectory</key>
-					<string>~/projects/demianh/songbook-app/app/www/resources/songs/notes</string>
+					<string>~/projects/songbook-app/app/www/resources/songs/notes</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.MoveFiles</string>
@@ -374,7 +372,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>415.500000:612.000000</string>
+				<string>309.000000:612.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Move Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -384,14 +382,14 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>7CB262DF-1648-437E-B076-387408B4A8E4</key>
+		<key>C06BF50F-7C38-4D94-A67D-A6D88B14D834</key>
 		<dict>
 			<key>from</key>
 			<string>97BEEE92-A810-4495-B1FA-E6809B73C33C - 97BEEE92-A810-4495-B1FA-E6809B73C33C</string>
 			<key>to</key>
 			<string>9FE531BA-360D-4AF0-AE00-BEC2B526DAC1 - 9FE531BA-360D-4AF0-AE00-BEC2B526DAC1</string>
 		</dict>
-		<key>9399EAAE-9CCB-483C-BEB1-494947CF5017</key>
+		<key>D9F72EE3-E8EC-4EEC-8484-8BD4BF41E907</key>
 		<dict>
 			<key>from</key>
 			<string>42E9E445-49B7-4688-A1DE-4DE84EDF1A2C - 42E9E445-49B7-4688-A1DE-4DE84EDF1A2C</string>
