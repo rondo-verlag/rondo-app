@@ -72,13 +72,14 @@
     <access launch-external="yes" origin="mailto:*" />
     <access launch-external="yes" origin="http://*" />
     <access launch-external="yes" origin="https://*" />
+    <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-app-version" spec="git+https://github.com/whiteoctober/cordova-plugin-app-version.git" />
     <plugin name="cordova-plugin-console" spec="^1.0.7" />
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.3.0" />
     <plugin name="cordova-plugin-insomnia" spec="git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git" />
-    <plugin name="cordova-plugin-media" spec="^2.4.1">
+    <plugin name="cordova-plugin-media" spec="^3.0.1">
         <variable name="MICROPHONE_USAGE_DESCRIPTION" value=" " />
     </plugin>
     <plugin name="cordova-plugin-midi-player" spec="git+https://github.com/demianh/MidiFilePlayer.git" />

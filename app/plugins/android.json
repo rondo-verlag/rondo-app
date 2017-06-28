@@ -10,6 +10,9 @@
         "cordova-plugin-app-version": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
@@ -17,6 +20,9 @@
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-media": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "cordova-plugin-midi-player": {
@@ -35,12 +41,6 @@
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-media": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },

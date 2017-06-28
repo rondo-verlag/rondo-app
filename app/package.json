@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "songbook-app: An Ionic project",
     "dependencies": {
+        "cordova-android": "^6.2.3",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-app-version": "git+https://github.com/whiteoctober/cordova-plugin-app-version.git",
         "cordova-plugin-compat": "^1.1.0",
@@ -11,7 +12,7 @@
         "cordova-plugin-file": "^4.3.3",
         "cordova-plugin-inappbrowser": "^1.3.0",
         "cordova-plugin-insomnia": "git+https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin.git",
-        "cordova-plugin-media": "^2.4.1",
+        "cordova-plugin-media": "^3.0.1",
         "cordova-plugin-midi-player": "git+https://github.com/demianh/MidiFilePlayer.git",
         "cordova-plugin-queries-schemes": "^0.1.5",
         "cordova-plugin-screen-orientation": "^1.4.3",
@@ -33,30 +34,14 @@
         "gulp-util": "^2.2.14",
         "shelljs": "^0.3.0"
     },
-    "cordovaPlugins": [
-        "cordova-plugin-app-version",
-        "cordova-plugin-device",
-        "cordova-plugin-inappbrowser",
-        "cordova-plugin-insomnia",
-        "cordova-plugin-screen-orientation",
-        "cordova-plugin-statusbar",
-        "cordova-plugin-whitelist",
-        "cordova-plugin-console",
-        "ionic-plugin-keyboard"
-    ],
-    "cordovaPlatforms": [
-        "ios",
-        "android"
-    ],
     "scripts": {
-        "postinstall": "ionic state restore",
         "build-js": "node_modules/typescript/bin/tsc",
         "build-ionic-css": "scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css",
         "build-app-css": "node_modules/node-sass/bin/node-sass www/css/style.scss www/css/style.css --source-map true",
-        "ios-emulate": "ionic emulate ios --target='iPhone-4s'",
-        "ios-build": "ionic build ios",
-        "android-build": "ionic build android",
-        "android-run": "ionic run android",
+        "ios-emulate": "ionic cordova emulate ios --target='iPhone-4s'",
+        "ios-build": "ionic cordova build ios",
+        "android-build": "ionic cordova build android",
+        "android-run": "ionic cordova run android",
         "android-release": "cordova build --release android && jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore keystore/android-release-key.keystore /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk rondoapp && rm build/Rondo.apk && ~/Library/Android/sdk/build-tools/23.0.2/zipalign -v 4 /Users/demian/projects/demianh/songbook-app/app/platforms/android/build/outputs/apk/android-release-unsigned.apk build/Rondo.apk"
     },
     "cordova": {
@@ -77,6 +62,7 @@
             "ionic-plugin-keyboard": {}
         },
         "platforms": [
+            "android",
             "ios"
         ]
     }

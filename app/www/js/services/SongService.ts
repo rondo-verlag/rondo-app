@@ -66,7 +66,6 @@ Songbook.factory("SongService", function ($http, $q) {
     getSongIndexWithoutAlternatives().then(function (songs) {
       angular.forEach(songs, function (value, key) {
         if (value.id == currentSongId) {
-          //console.log(value.id, currentSongId, key, songs[key]);
           key++;
           if (songs[key] == undefined) {
             deferred.resolve(songs[0].id);
@@ -83,7 +82,6 @@ Songbook.factory("SongService", function ($http, $q) {
   var getPreviousSongId = function (currentSongId) {
     var deferred = $q.defer();
     getSongIndex().then(function (songs) {
-      console.log(songs);
       angular.forEach(songs, function (value, key) {
         if (value.id == currentSongId) {
           key--;

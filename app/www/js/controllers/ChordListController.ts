@@ -15,7 +15,7 @@ Songbook.controller("ChordListController", function ($scope, $rootScope, $docume
   $ionicPlatform.ready(function() {
 
     // Path on iOS (not working :/ )
-    let media_path = "www/resources/mp3-chords/";
+    let media_path = "resources/mp3-chords/";
 
     // Path on Android
     if(ionic.Platform.isAndroid()) {

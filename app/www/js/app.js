@@ -85,7 +85,7 @@ Songbook.controller("ChordListController", function ($scope, $rootScope, $docume
     });
     $ionicPlatform.ready(function () {
         // Path on iOS (not working :/ )
-        var media_path = "www/resources/mp3-chords/";
+        var media_path = "resources/mp3-chords/";
         // Path on Android
         if (ionic.Platform.isAndroid()) {
             media_path = cordova.file.applicationDirectory + "www/resources/mp3-chords/";
@@ -242,7 +242,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
     $scope.playSong = function () {
         if (!songInitialized || !$scope.playingSong) {
             window.MidiPlayer.setup(window.MidiPlayer.getPathFromAsset("resources/songs/midi/" + $scope.songId + ".mid"), ["1", "2", "3", "4", "5"], function () {
-                console.log('RONDO: Song initialized...');
+                //console.log('RONDO: Song initialized...');
                 $scope.$apply(function () {
                     $scope.playingSong = true;
                 });
@@ -251,7 +251,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
                 console.log("RONDO: Error occured:", data);
                 $scope.playingSong = false;
             }, function (data) {
-                console.log("RONDO: Status Updates: ", data);
+                //console.log("RONDO: Status Updates: ", data);
                 if (data == 2) {
                     // 2: started playing
                     songInitialized = true;
@@ -285,7 +285,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         }
     };
     $scope.stopSong = function () {
-        console.log("RONDO: Stopping song...");
+        //console.log("RONDO: Stopping song...");
         $scope.playingSong = false;
         window.MidiPlayer.stop();
         window.MidiPlayer.release();
@@ -453,7 +453,6 @@ Songbook.factory("SongService", function ($http, $q) {
         getSongIndexWithoutAlternatives().then(function (songs) {
             angular.forEach(songs, function (value, key) {
                 if (value.id == currentSongId) {
-                    //console.log(value.id, currentSongId, key, songs[key]);
                     key++;
                     if (songs[key] == undefined) {
                         deferred.resolve(songs[0].id);
@@ -470,7 +469,6 @@ Songbook.factory("SongService", function ($http, $q) {
     var getPreviousSongId = function (currentSongId) {
         var deferred = $q.defer();
         getSongIndex().then(function (songs) {
-            console.log(songs);
             angular.forEach(songs, function (value, key) {
                 if (value.id == currentSongId) {
                     key--;

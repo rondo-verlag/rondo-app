@@ -110,7 +110,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
         window.MidiPlayer.getPathFromAsset("resources/songs/midi/" + $scope.songId + ".mid"),
         ["1", "2", "3", "4", "5"],
         () => {
-          console.log('RONDO: Song initialized...');
+          //console.log('RONDO: Song initialized...');
           $scope.$apply(() => {
             $scope.playingSong = true;
           });
@@ -121,7 +121,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
           $scope.playingSong = false;
         },
         (data) => {
-          console.log("RONDO: Status Updates: ", data);
+          //console.log("RONDO: Status Updates: ", data);
           if(data == 2){
             // 2: started playing
             songInitialized = true;
@@ -156,7 +156,7 @@ Songbook.controller("SongDetailController", function ($scope, $stateParams, $htt
   };
 
   $scope.stopSong = function() {
-    console.log("RONDO: Stopping song...");
+    //console.log("RONDO: Stopping song...");
     $scope.playingSong = false;
     window.MidiPlayer.stop();
     window.MidiPlayer.release();
