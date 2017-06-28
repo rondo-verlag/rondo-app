@@ -277,17 +277,11 @@ class Song
 
 	public function getClearedChordList() {
 		$uncleaned_chords = $this->getChordList();
-		$list = [];
+		$cleaned = [];
 		foreach ($uncleaned_chords as $chord) {
-			$cleaned = preg_replace("/[^A-Za-z0-9\/]/", '', $chord);
-			$splitted = explode('/',$cleaned);
-			foreach ($splitted as $split){
-				if (!in_array($split, $list)){
-					$list[] = $split;
-				}
-			}
+			$cleaned[] = preg_replace("/[^A-Za-z0-9\/]/", '', $chord);
 		}
-		$list = array_unique($list);
+		$list = array_unique($cleaned);
 		sort($list);
 		return $list;
 	}
