@@ -18,24 +18,6 @@
         "alternative": false
     },
     {
-        "id": "1",
-        "title": "A hundred miles",
-        "pageRondoRed": null,
-        "pageRondoBlue": "103",
-        "pageRondoGreen": "186",
-        "pageRondo2017": "186",
-        "interpret": "",
-        "chords": [
-            "A",
-            "D",
-            "Em",
-            "Fism",
-            "G",
-            "Hm"
-        ],
-        "alternative": true
-    },
-    {
         "id": "3",
         "title": "ALL NIGHT, ALL DAY",
         "pageRondoRed": "103",
@@ -504,7 +486,7 @@
         "pageRondoRed": "116",
         "pageRondoBlue": null,
         "pageRondoGreen": "141",
-        "pageRondo2017": "152",
+        "pageRondo2017": "184",
         "interpret": "",
         "chords": [
             "A",
@@ -1263,7 +1245,7 @@
         "pageRondoRed": "116",
         "pageRondoBlue": null,
         "pageRondoGreen": "141",
-        "pageRondo2017": "152",
+        "pageRondo2017": "184",
         "interpret": "",
         "chords": [
             "A",
