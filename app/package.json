@@ -38,7 +38,7 @@
         "build-js": "node_modules/typescript/bin/tsc",
         "build-ionic-css": "scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css",
         "build-app-css": "node_modules/node-sass/bin/node-sass www/css/style.scss www/css/style.css --source-map true",
-        "ios-emulate": "ionic cordova emulate ios --target='iPhone-4s'",
+        "ios-emulate": "ionic cordova emulate ios",
         "ios-build": "ionic cordova build ios",
         "android-build": "ionic cordova build android",
         "android-run": "ionic cordova run android",
