@@ -534,7 +534,7 @@ $app->get('/validate', function () use ($app, &$DB) {
 		//}
 
 		// validate page number
-		if (!$data['pageRondo2017']) {
+		if ($data['releaseBook2017'] && !$data['pageRondo2017']) {
 			invalid('Keine Seitenzahl für Buch 2017', $data);
 		}
 
