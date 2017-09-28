@@ -8,11 +8,13 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SongIndexServiceProvider } from '../providers/song-index-service/song-index-service';
+import {SongSearchPipe} from "../pipes/song-search/song-search";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    SongSearchPipe
   ],
   imports: [
     BrowserModule,

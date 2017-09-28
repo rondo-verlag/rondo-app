@@ -10,6 +10,7 @@ import { SongIndexServiceProvider } from "../../providers/song-index-service/son
 export class HomePage {
 
   private songs = [];
+  private query: string = '';
 
   constructor(public navCtrl: NavController, public songIndexService: SongIndexServiceProvider) {
     this.loadSongs();
@@ -21,5 +22,12 @@ export class HomePage {
       this.songs = data;
     });
   }
+
+  public clearSearch() {
+    this.query = '';
+    /*$timeout(()=>{
+      document.getElementById('song-search-input').focus();
+    }, 500)*/
+  };
 
 }
