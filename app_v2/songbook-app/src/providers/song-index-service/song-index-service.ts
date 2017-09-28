@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SongIndexServiceProvider {
 
-  private data = null;
+  private data: ISong[] = null;
 
   constructor(public http: Http) {
     console.log('Hello SongIndexServiceProvider Provider');

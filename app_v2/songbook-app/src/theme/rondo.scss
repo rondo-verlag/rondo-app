@@ -17,6 +17,7 @@
 }
 
 // Some Basic Theme overrides
+// --------------------------
 body {
   //font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
   letter-spacing: 1px;
@@ -51,7 +52,22 @@ a.invisible-link {
   background: none;
 }
 
-// Components
+.item-block {
+  min-height: 37px !important;
+
+  .label {
+    margin: 0 8px 0 0;
+    padding: 6px 0;
+  }
+}
+
+.header .icon {
+  color: white !important;
+}
+
+
+// Rondo Components
+// ----------------
 .songtext {
   font-size: 1.3em;
   letter-spacing: 1px;
@@ -222,9 +238,8 @@ a.invisible-link {
   }
 }
 
-// remove padding that the button looks equal to the default back button
-.rondo-custom-back-button {
-  padding: 0 !important;
+.rondo-back-button {
+  font-size: 28px !important;
 }
 
 .bar-header {
@@ -289,6 +304,10 @@ ion-content .page-numbers {
 
 .midi-playing {
   color: #555 !important;
+}
+
+.about-page {
+  line-height: 20px;
 }
 
 // Song List & Search

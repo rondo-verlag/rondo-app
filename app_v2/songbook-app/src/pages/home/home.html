@@ -4,8 +4,8 @@
           <i class="icon rondo-icon-search placeholder-icon"></i>
           <input type="search" [(ngModel)]="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
         </label>
-        <span class="clear-search" [hidden]="!query" ng-click="clearSearch()"><i class="icon ion-close-round"></i></span>
-        <span class="about-icon" ui-sref="about">
+        <span class="clear-search" [hidden]="!query" (click)="clearSearch()"><ion-icon name="close-circle"></ion-icon></span>
+        <span class="about-icon" [navPush]="aboutPage">
           <i class="rondo-icon-logo"></i>
         </span>
   </ion-navbar>
@@ -13,7 +13,7 @@
 
 <ion-content>
   <ion-list no-lines class="rondo-list">
-    <button ion-item *ngFor="let song of songs | songSearch:query" (click)="openSong(song.id)">
+    <button ion-item detail-none *ngFor="let song of songs | songSearch:query" [navPush]="songPage" [navParams]="{song: song}">
       <span *ngIf="!song.alternative" class="main-title">{{song.title}}</span>
       <span *ngIf="song.alternative" class="alt-title">{{song.title}}</span>
     </button>

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button (click)="navCtrl.pop()" class="rondo-back-button">
+        <i class="icon rondo-icon-arrow"></i>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <span style="color: red">Seitenzahlen</span>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content *ngIf="section == 'text'">
+  <div>
+    <img [src]="'/assets/songdata/songs/images/' + song.id + '.gif'" class="song-image"/>
+    <div padding>
+      <h3 class="song-title">{{song.title}}</h3>
+      <div class="songtext">
+        <div src="includeFile"></div>
+        <br>
+        <div class="report-error-link">
+          &mdash;<br>
+          <!--<browserlink url="mailto:app@rondo-verlag.ch?subject=Feedback zum Lied {{songTitle}} (Rondo App {{app_version}})">
+            Fehler gefunden?
+          </browserlink>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
+<ion-content *ngIf="section == 'notes'" padding>
+  <ion-scroll class="has-header" zooming="true" delegate-handle="notesscroller" direction="xy" style="width: 100%; height: 100%">
+    <img id="page" [src]="'/assets/songdata/songs/notes/'+song.id+'.png'" style="width: 100%">
+  </ion-scroll>
+</ion-content>
+
+
+<ion-content *ngIf="section == 'chords'" padding>
+    <div class="chord-list">
+      <i *ngFor="let chord of song.chords" class="rondo-icon-chord-{{chord}}" (click)="playMedia(chord)"></i>
+    </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <a (click)="section='text'">Text</a>
+    <a (click)="section='chords'">Akkorde</a>
+    <a (click)="section='notes'">Noten</a>
+  </ion-toolbar>
+</ion-footer>

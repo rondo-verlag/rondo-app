@@ -9,11 +9,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SongIndexServiceProvider } from '../providers/song-index-service/song-index-service';
 import {SongSearchPipe} from "../pipes/song-search/song-search";
+import {AboutPage} from "../pages/about/about";
+import {SongPage} from "../pages/song/song";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    AboutPage,
+    SongPage,
     SongSearchPipe
   ],
   imports: [
@@ -24,7 +28,9 @@ import {SongSearchPipe} from "../pipes/song-search/song-search";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    AboutPage,
+    SongPage,
   ],
   providers: [
     StatusBar,
