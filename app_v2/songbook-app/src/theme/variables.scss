@@ -41,7 +41,6 @@ $colors: (
   dark:       #222
 );
 
-
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -70,7 +69,7 @@ $colors: (
 // so that the above variables are used and Ionic's
 // default are overridden.
 
-@import "ionic.theme.default";
+@import "ionic.theme.dark";
 
 
 // Ionicons
@@ -84,5 +83,59 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+//@import "roboto";
+//@import "noto-sans";
+
+
+// Import Rondo Styles
+// --------------------------------------------------
+
+@import "rondo-icons";
+@import "rondo";
+
+$font-family-base: Vectora, "Helvetica Neue", Verdana, sans-serif;
+$font-family-ios-base: Vectora, "Helvetica Neue", Verdana, sans-serif;
+$font-family-md-base: Vectora, "Helvetica Neue", Verdana, sans-serif;
+$font-family-wp-base: Vectora, "Helvetica Neue", Verdana, sans-serif;
+
+$list-ios-header-letter-spacing: 1;
+
+$background-color: #000;
+
+
+$colors: (
+
+  primary:    #007aff,
+  secondary:  #32db64,
+  danger:     #d91e18,
+  light:      #f4f4f4,
+  dark:       #222,
+
+) !default;
+
+
+$text-color:                 #fff;
+$link-color:                 color($colors, primary);
+$background-color:           #000;
+$subdued-text-color:         #666;
+
+$font-family-base:           Vectora, "Helvetica Neue", Verdana, sans-serif;
+$font-size-base:             1.4rem; // 1.4rem == 14px
+
+$content-padding:            16px;
+$content-margin:             16px;
+
+$toolbar-background:         #000;
+$toolbar-border-color:       #000;
+$toolbar-text-color:         $text-color;
+$toolbar-active-color:       $link-color;
+$toolbar-inactive-color:     #000;
+
+$tabs-background:            #000;
+$tabs-border-color:          #000;
+$tabs-tab-color-inactive:    #000;
+$tabs-tab-color-active:      $link-color;
+
+$list-text-color:            $text-color;
+$list-background-color:      #000;
+$list-border-color:          #000;

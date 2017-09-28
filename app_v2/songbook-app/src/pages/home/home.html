@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Rondo v2
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-list no-lines class="rondo-list">
+    <button ion-item *ngFor="let song of songs" (click)="openSong(song.id)">
+      <span *ngIf="!song.alternative" class="main-title">{{song.title}}</span>
+      <span *ngIf="song.alternative" class="alt-title">{{song.title}}</span>
+    </button>
+  </ion-list>
 </ion-content>
