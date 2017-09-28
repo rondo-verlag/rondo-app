@@ -6,19 +6,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { SongIndexServiceProvider } from '../providers/song-index-service/song-index-service';
+import { SonglistPage } from '../pages/songlist/songlist';
 import {SongSearchPipe} from "../pipes/song-search/song-search";
 import {AboutPage} from "../pages/about/about";
 import {SongPage} from "../pages/song/song";
+import { SongHtmlProvider } from '../providers/song-html/song-html';
+import { SongIndexProvider } from '../providers/song-index/song-index';
+import {BrowserlinkComponent} from "../components/browserlink/browserlink";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
+    SonglistPage,
     AboutPage,
     SongPage,
-    SongSearchPipe
+    SongSearchPipe,
+    BrowserlinkComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import {SongPage} from "../pages/song/song";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
+    SonglistPage,
     AboutPage,
     SongPage,
   ],
@@ -36,7 +39,8 @@ import {SongPage} from "../pages/song/song";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    SongIndexServiceProvider
+    SongHtmlProvider,
+    SongIndexProvider
   ]
 })
 export class AppModule {}

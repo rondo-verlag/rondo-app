@@ -3,12 +3,22 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+import { SonglistPage } from '../pages/songlist/songlist';
+
+let appVersion: any;
+let window: {
+  cordova: Cordova;
+};
+
+interface Cordova {
+  getAppVersion(callback: Function): Function;
+}
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = SonglistPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -16,6 +26,13 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+/*
+      if (window.cordova){
+        window.cordova.getAppVersion(function(version) {
+          appVersion = version;
+        });
+      }
+      */
     });
   }
 }

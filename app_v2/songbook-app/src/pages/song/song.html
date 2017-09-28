@@ -6,7 +6,7 @@
       </button>
     </ion-buttons>
     <ion-buttons right>
-      <span style="color: red">Seitenzahlen</span>
+      <span [innerHTML]="pageNumbers" class="page-numbers"></span>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -18,13 +18,13 @@
     <div padding>
       <h3 class="song-title">{{song.title}}</h3>
       <div class="songtext">
-        <div src="includeFile"></div>
+        <div [innerHTML]="songtext"></div>
         <br>
         <div class="report-error-link">
           &mdash;<br>
-          <!--<browserlink url="mailto:app@rondo-verlag.ch?subject=Feedback zum Lied {{songTitle}} (Rondo App {{app_version}})">
+          <browserlink url="mailto:app@rondo-verlag.ch?subject=Feedback zum Lied {{song.title}} (Rondo App {{app_version}})">
             Fehler gefunden?
-          </browserlink>-->
+          </browserlink>
         </div>
       </div>
     </div>
