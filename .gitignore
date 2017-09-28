@@ -23,3 +23,9 @@ node_modules/
 /data/Backups
 /data/InDesign
 /data/Dateien_ohne_Texte
+
+/app_v2/songbook-app/src/assets/songdata/songs/html/*.html
+/app_v2/songbook-app/src/assets/songdata/songs/images/*.gif
+/app_v2/songbook-app/src/assets/songdata/songs/notes/*.png
+/app_v2/songbook-app/src/assets/songdata/songs/pdfs/*.pdf
+/app_v2/songbook-app/src/assets/songdata/songs/midi/*.mid
