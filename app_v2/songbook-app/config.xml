@@ -84,6 +84,7 @@
     </platform>
     <allow-navigation href="http://10.0.0.121:8101" />
     <allow-navigation href="http://10.0.0.121:8100" />
+    <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-app-version" spec="^0.1.9" />
     <plugin name="cordova-plugin-device" spec="^1.1.4" />

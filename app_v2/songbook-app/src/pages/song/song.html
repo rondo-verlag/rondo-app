@@ -14,7 +14,7 @@
 
 <ion-content *ngIf="section == 'text'" id="rondo_scrollable" (ionScroll)="onScroll($event)" (click)="exitFullscreen()">
   <div>
-    <img [src]="'/assets/songdata/songs/images/' + song.id + '.gif'" class="song-image"/>
+    <img [src]="'assets/songdata/songs/images/' + song.id + '.gif'" class="song-image"/>
     <div padding>
       <h3 class="song-title">{{song.title}}</h3>
       <div class="songtext">
@@ -34,7 +34,7 @@
 
 <ion-content *ngIf="section == 'notes'" (click)="exitFullscreen()">
   <ion-scroll class="has-header" zooming="true" delegate-handle="notesscroller" direction="xy" style="width: 100%; height: 100%">
-    <img id="page" [src]="'/assets/songdata/songs/notes/'+song.id+'.png'" style="width: 100%">
+    <img id="page" [src]="'assets/songdata/songs/notes/'+song.id+'.png'" style="width: 100%">
   </ion-scroll>
 </ion-content>
 

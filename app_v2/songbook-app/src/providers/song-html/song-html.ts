@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SongHtmlProvider {
 
-  private data = [];
+  //private data = [];
 
   constructor(public http: Http) {}
 
@@ -21,7 +21,7 @@ export class SongHtmlProvider {
       // We're using Angular HTTP provider to request the data,
       // then on the response, it'll map the JSON data to a parsed JS object.
       // Next, we process the data and resolve the promise with the new data.
-      this.http.get('/assets/songdata/songs/html/' + id + '.html')
+      this.http.get('assets/songdata/songs/html/' + id + '.html')
         .map(res => res.text())
         .subscribe(data => {
           // we've got back the raw data, now generate the core schedule data

@@ -3,9 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SongHtmlProvider} from "../../providers/song-html/song-html";
 import {AppVersionProvider} from "../../providers/app-version/app-version";
 import {Insomnia} from "@ionic-native/insomnia";
-import { File } from '@ionic-native/file';
 import {NativeAudio} from "@ionic-native/native-audio";
-import {tryCatch} from "rxjs/util/tryCatch";
 
 /**
  * Generated class for the SongPage page.
@@ -51,7 +49,6 @@ export class SongPage {
       public songHtmlProvider: SongHtmlProvider,
       public appVersionProvider: AppVersionProvider,
       private insomnia: Insomnia,
-      private file: File,
       private nativeAudio: NativeAudio
   ) {
     this.song = this.navParams.data.song;

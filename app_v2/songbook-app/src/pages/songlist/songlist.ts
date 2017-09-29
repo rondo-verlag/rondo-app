@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NavController, Platform} from 'ionic-angular';
+import {NavController} from 'ionic-angular';
 import { AboutPage} from "../about/about";
 import {SongPage} from "../song/song";
 import {SongIndexProvider} from "../../providers/song-index/song-index";
