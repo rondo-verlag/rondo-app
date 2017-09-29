@@ -53,7 +53,7 @@ class SongIndex {
 				'chords' => $chords,
 				'alternative' => false,
 				'free' => $isFree,
-				'license' => ($song['copyrightInfo'] ?: '')
+				'license' => ($song['copyrightInfoApp'] ?: '')
 			];
 
 			// alternative titel
@@ -71,7 +71,7 @@ class SongIndex {
 						'chords' => $chords,
 						'alternative' => true,
 						'free' => $isFree,
-						'license' => ($song['copyrightInfo'] ?: '')
+						'license' => ($song['copyrightInfoApp'] ?: '')
 					];
 				}
 			}
