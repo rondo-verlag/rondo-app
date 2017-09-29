@@ -69,6 +69,7 @@ export class SongPage {
 
   ionViewDidLeave() {
     this.stopAutoScroll();
+    this.stopSong();
   }
 
   public generatePageNumbersHtml() {
@@ -94,41 +95,6 @@ export class SongPage {
 
   get app_version() {
     return this.appVersionProvider.getAppVersion();
-  }
-
-  // Chords Playback
-  // ------------------------
-
-  public playChord(chord: string) {
-    try {
-      let stopId = this.playingChordId;
-      if (stopId) {
-        this.nativeAudio.stop(stopId).then(
-            () => {
-              this.nativeAudio.unload(stopId);
-            },
-            () => {}
-        );
-      }
-    } catch(e) {
-      console.log(e);
-    }
-
-    let uniqueId = 'rondo_chord_'+chord;
-    this.nativeAudio.preloadComplex(uniqueId, 'assets/songdata/mp3-chords/' + chord + '.mp3', 1, 1, 0).then(
-        () => {
-          this.playingChordId = uniqueId;
-          this.nativeAudio.play(uniqueId, () => {
-             this.nativeAudio.unload(uniqueId);
-          }).then(
-              () => {},
-              (e) => {console.log('play error', uniqueId, e);}
-          );
-        },
-        () => {
-          console.log('preload error', uniqueId);
-        }
-    );
   }
 
 
@@ -207,12 +173,11 @@ export class SongPage {
       return;
     }
     if(!this.songInitialized || !this.playingSong){
-      console.log(getWindow().MidiPlayer.getPathFromAsset("assets/songdata/songs/midi/" + this.song.id + ".mid"));
       getWindow().MidiPlayer.setup(
         getWindow().MidiPlayer.getPathFromAsset("assets/songdata/songs/midi/" + this.song.id + ".mid"),
         ["1", "2", "3", "4", "5"],
         () => {
-          console.log('RONDO: Song initialized...');
+          //console.log('RONDO: Song initialized...');
           //$scope.$apply(() => {
             this.playingSong = true;
           //});
@@ -223,7 +188,7 @@ export class SongPage {
           this.playingSong = false;
         },
         (data) => {
-          console.log("RONDO: Status Updates: ", data);
+          //console.log("RONDO: Status Updates: ", data);
           if(data == 2){
             // 2: started playing
             this.songInitialized = true;
@@ -272,5 +237,40 @@ export class SongPage {
       this.playSong();
     }
   };
+
+  // Chords Playback
+  // ------------------------
+
+  public playChord(chord: string) {
+    try {
+      let stopId = this.playingChordId;
+      if (stopId) {
+        this.nativeAudio.stop(stopId).then(
+            () => {
+              this.nativeAudio.unload(stopId);
+            },
+            () => {}
+        );
+      }
+    } catch(e) {
+      console.log(e);
+    }
+
+    let uniqueId = 'rondo_chord_'+chord;
+    this.nativeAudio.preloadComplex(uniqueId, 'assets/songdata/mp3-chords/' + chord + '.mp3', 1, 1, 0).then(
+        () => {
+          this.playingChordId = uniqueId;
+          this.nativeAudio.play(uniqueId, () => {
+             this.nativeAudio.unload(uniqueId);
+          }).then(
+              () => {},
+              (e) => {console.log('play error', uniqueId, e);}
+          );
+        },
+        () => {
+          console.log('preload error', uniqueId);
+        }
+    );
+  }
 
 }

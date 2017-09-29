@@ -206,6 +206,14 @@ page-song {
   }
 }
 
+.platform-android {
+  page-song {
+    .scroll-content {
+      padding-top: 56px !important;
+    }
+  }
+}
+
 .browser-link {
   padding: 12px 0;
 }
