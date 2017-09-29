@@ -14,7 +14,8 @@ module rondo {
     pageRondoBlue?: string;
     pageRondoGreen?: string;
     pageRondo2017?: string;
-    copyrightInfo?: string;
+    copyrightInfoApp?: string;
+    copyrightInfoBook?: string;
     comments?: string;
     rawImageSize?: number;
     rawMidiSize?: number;
