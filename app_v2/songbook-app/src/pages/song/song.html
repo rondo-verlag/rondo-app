@@ -34,8 +34,8 @@
 
 
 <ion-content *ngIf="section == 'notes'" (click)="exitFullscreen()">
-  <ion-scroll class="has-header" zooming="true" delegate-handle="notesscroller" direction="xy" style="width: 100%; height: 100%">
-    <img id="page" [src]="'assets/songdata/songs/notes/'+song.id+'.png'" style="width: 100%">
+  <ion-scroll zoom="true" scrollX="true" scrollY="true" style="width: 100%; height: 100%">
+    <img id="page" [src]="'assets/songdata/songs/notes/'+song.id+'.png'" >
   </ion-scroll>
 </ion-content>
 

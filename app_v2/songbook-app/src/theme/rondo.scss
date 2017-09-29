@@ -196,6 +196,12 @@ page-song {
     padding-top: 44px !important;
     padding-bottom: 44px !important;
   }
+
+  ion-scroll {
+    .scroll-content {
+      background: white;
+    }
+  }
 }
 
 .platform-ios {
