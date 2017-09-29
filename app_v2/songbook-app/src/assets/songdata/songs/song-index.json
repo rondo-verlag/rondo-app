@@ -16,7 +16,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "3",
@@ -32,7 +33,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "4",
@@ -48,7 +50,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ALL SUMMER LONG\nText u. Musik: Edward C. King\/Leroy P. Marinelli\/Robert J. Ritchie\/Gary\nRobert Rossington\/Matthew L. Shafer\/Ronnie Van Zant\/Robert T. Wachtel\/Warren William Zevon\n\u00a9 Copyright by Leadsheet Land Music, SP: Ruminating Music (Wixen Music) MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich, Schweiz f\u00fcr 11,11% Copyright"
     },
     {
         "id": "23",
@@ -67,7 +70,8 @@
             "H7sus4"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1965 Universal\/MCA Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by John Phillips & Michelle Gilliam\n\u00a9 Copyright 1965 Universal MCA Music Publishing.\nUniversal\/MCA Music Limited.\nThis Arrangement \u00a9 Copyright 2016 Universal MCA Music Publishing.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "131",
@@ -86,7 +90,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words and Music by John Denver, Bill Danoff and Taffy Nivert Copyright \n\u00a9 1971; Renewed 1999 Cherry Lane Music Publishing Company, Inc. (ASCAP) and State One Songs America (ASCAP)"
     },
     {
         "id": "6",
@@ -103,7 +108,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Hofer \/ Ammann\nAus dem Polo Hofer Songbook"
     },
     {
         "id": "7",
@@ -111,7 +117,7 @@
         "pageRondoRed": "15",
         "pageRondoBlue": null,
         "pageRondoGreen": "16",
-        "pageRondo2017": null,
+        "pageRondo2017": "16",
         "interpret": "",
         "chords": [
             "A",
@@ -119,7 +125,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "8",
@@ -136,7 +143,8 @@
             "E7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "9",
@@ -153,7 +161,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "10",
@@ -170,7 +179,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Musik: amerikanische Volksweise Text: Jakob Leutert \/ Peter Jeger\n\u00a9 Edition Helbling AG, 8604 Volketswil"
     },
     {
         "id": "11",
@@ -189,7 +199,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ANGIE (Mick Jagger\/Keith Richards)\r \n\u00a9 Promopub B.V."
     },
     {
         "id": "12",
@@ -204,7 +215,8 @@
             "D"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "13",
@@ -227,7 +239,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Lyrics by JAMES RADO and GEROME RAGNI\nMusic by GALT MACDERMOT\n\u00a9 1966, 1967, 1968 JAMES RADO, GEROME RAGNI, GALT MACDERMOT, NAT SHAPIRO and EMI U CATALOG, INC."
     },
     {
         "id": "14",
@@ -243,7 +256,8 @@
             "E"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "15",
@@ -264,7 +278,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "117",
@@ -282,7 +297,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "25",
@@ -301,7 +317,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Mike Wilsh and Mike Deighan\nTranslated by Pierre Delanoe\n\u00a9 1969 Intersong Music Ltd\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved"
     },
     {
         "id": "16",
@@ -318,7 +335,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "17",
@@ -335,7 +353,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "18",
@@ -352,7 +371,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "37",
@@ -370,7 +390,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "157",
@@ -390,7 +411,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Musik \/ Text: Dieter Wiesman\n(C) Leuberg-Edition GmbH f\u00fcr Annabella, CH-8616 Riedikon"
     },
     {
         "id": "19",
@@ -408,7 +430,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1962 Special Rider Music, USA.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Bob Dylan\n\u00a9 Copyright 1962 Special Rider Music.\nThis Arrangement \u00a9 Copyright 2016 Special Rider Music.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "6",
@@ -425,7 +448,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Hofer \/ Ammann\nAus dem Polo Hofer Songbook"
     },
     {
         "id": "20",
@@ -446,7 +470,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "BOAT ON THE RIVER\nText u. Musik: Tommy Shaw\n\n\u00a9 Copyright by Stygian Songs.\nMELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich Schweiz.\n\nAbdruck erfolgt mit freundlicher Genehmigung von MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main"
     },
     {
         "id": "21",
@@ -464,7 +489,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "116",
@@ -482,7 +508,8 @@
             "Gm"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "23",
@@ -501,7 +528,8 @@
             "H7sus4"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1965 Universal\/MCA Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by John Phillips & Michelle Gilliam\n\u00a9 Copyright 1965 Universal MCA Music Publishing.\nUniversal\/MCA Music Limited.\nThis Arrangement \u00a9 Copyright 2016 Universal MCA Music Publishing.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "24",
@@ -516,7 +544,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "26",
@@ -533,7 +562,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "27",
@@ -549,7 +579,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 2008\nMusik: Nella Martinetti, Schneema Publishing\nText: Laetitia Corthay, Fabiano Gerosa, Sara Hermann, Dominic Sydler und Vera Trachsel"
     },
     {
         "id": "28",
@@ -567,7 +598,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": "Text und Musik: Peter Reber\nMit freundlicher Genehmigung Liton Musikverlag, Bern"
     },
     {
         "id": "138",
@@ -592,7 +624,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
     },
     {
         "id": "80",
@@ -611,7 +644,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
     },
     {
         "id": "110",
@@ -628,7 +662,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Alle Rechte liegen beim Urheber Andr\u00e9 St\u00fcrzinger."
     },
     {
         "id": "53",
@@ -643,7 +678,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": "Mit freundlicher Genehmigung von Scht\u00e4rnef\u00f6ifi \/ Musik: Scht\u00e4rnef\u00f6if \/ Text: Boni Koller"
     },
     {
         "id": "102",
@@ -661,7 +697,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": "Mit freundlicher Genehmigung von Jacob Stickelberger"
     },
     {
         "id": "29",
@@ -678,7 +715,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a91954 by Hamblen Music Co., Arcadia, California\nF\u00fcr Deutschland und \u00d6sterreich: Musikverlage Hans Gering KG, Bergisch Gladbach"
     },
     {
         "id": "30",
@@ -693,7 +731,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Musik und Text: William Attaway, Irving Burgie\n\u00a9 Cherry Lane Music Publishing Co. Inc., Lord Burgess Music Publishing Co., BMG Ruby Songs"
     },
     {
         "id": "31",
@@ -710,7 +749,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": "\u00a9 A. Steingruber"
     },
     {
         "id": "31",
@@ -727,7 +767,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": "\u00a9 A. Steingruber"
     },
     {
         "id": "32",
@@ -743,7 +784,8 @@
             "E"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "97",
@@ -762,7 +804,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "155",
@@ -778,7 +821,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "118",
@@ -799,7 +843,8 @@
             "Gsus4"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
     },
     {
         "id": "147",
@@ -817,7 +862,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Musik : Rudi Goguel\nText : Esser, Johann \/ Langhoff, Wolfgang\nMit freundlicher Genehmigung von: \uf0e3 C.F. Peters Ltd & Co. KG."
     },
     {
         "id": "33",
@@ -833,7 +879,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "29",
@@ -850,7 +897,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a91954 by Hamblen Music Co., Arcadia, California\nF\u00fcr Deutschland und \u00d6sterreich: Musikverlage Hans Gering KG, Bergisch Gladbach"
     },
     {
         "id": "34",
@@ -868,7 +916,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Yiddish Lyrics by AARON ZEITLIN\nEnglish lyrics by SHELDON SECUNDRA,\nARTHUR KEVESS and TEDDI SCHWARTZ\nMusic by SHOLOM SECUNDA\n\u00a9 1940, 1956 EMI MILLS MUSIC INC.\nRights outside the U.S.A. Administered by\nEMI MILLS MUSIC INC. and HARGAIL MUSIC PRESS All Rights Reserved Used by Permission"
     },
     {
         "id": "156",
@@ -884,7 +933,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "35",
@@ -900,7 +950,8 @@
             "E"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "36",
@@ -915,7 +966,8 @@
             "Em"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "37",
@@ -933,7 +985,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "158",
@@ -950,7 +1003,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text und Musik: Otto Wolf"
     },
     {
         "id": "14",
@@ -966,7 +1020,8 @@
             "E"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "111",
@@ -985,7 +1040,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": "Text und Musik: Peter Reber\nMit freundlicher Genehmigung Liton Musikverlag, Bern"
     },
     {
         "id": "113",
@@ -1003,7 +1059,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Aus: Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "38",
@@ -1020,7 +1077,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "39",
@@ -1040,7 +1098,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "40",
@@ -1056,7 +1115,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Eine Oma ging spazieren, Leni Timmermann"
     },
     {
         "id": "41",
@@ -1072,7 +1132,8 @@
             "E"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "15",
@@ -1093,7 +1154,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "42",
@@ -1108,7 +1170,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "103",
@@ -1124,7 +1187,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "43",
@@ -1142,7 +1206,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "48",
@@ -1159,7 +1224,8 @@
             "F"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Stan Jones | Translated by Ernst Verch \u00a9 1949 Edwin H Morris & Co Inc | Chappell Morris Ltd Reproduced by permission of Faber Music Ltd\nAll Rights Reserved."
     },
     {
         "id": "44",
@@ -1174,7 +1240,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "46",
@@ -1194,7 +1261,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1970 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Cat Stevens\n\u00a9 Copyright 1970 Cat Mussic Limited.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company.\nThis Arrangement \u00a9 Copyright 2016 Cat Music Limited.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "47",
@@ -1209,7 +1277,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "157",
@@ -1229,7 +1298,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Musik \/ Text: Dieter Wiesman\n(C) Leuberg-Edition GmbH f\u00fcr Annabella, CH-8616 Riedikon"
     },
     {
         "id": "48",
@@ -1246,7 +1316,8 @@
             "F"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Stan Jones | Translated by Ernst Verch \u00a9 1949 Edwin H Morris & Co Inc | Chappell Morris Ltd Reproduced by permission of Faber Music Ltd\nAll Rights Reserved."
     },
     {
         "id": "49",
@@ -1265,7 +1336,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "66",
@@ -1280,7 +1352,8 @@
             "Dm"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "128",
@@ -1300,7 +1373,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "THE STREETS OF LONDON (Ralph McTell)\n\u00a9 Westminster Music Ltd"
     },
     {
         "id": "52",
@@ -1318,7 +1392,8 @@
             "Gm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "M&T: Habegger, Lee, Leoni, Lynn, Meyer, von Rohr\n\u00a9 EMI Music Publishing Germany GmbH \/ Leeleo Publishing"
     },
     {
         "id": "27",
@@ -1334,7 +1409,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 2008\nMusik: Nella Martinetti, Schneema Publishing\nText: Laetitia Corthay, Fabiano Gerosa, Sara Hermann, Dominic Sydler und Vera Trachsel"
     },
     {
         "id": "53",
@@ -1349,7 +1425,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": "Mit freundlicher Genehmigung von Scht\u00e4rnef\u00f6ifi \/ Musik: Scht\u00e4rnef\u00f6if \/ Text: Boni Koller"
     },
     {
         "id": "54",
@@ -1367,7 +1444,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "55",
@@ -1383,7 +1461,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "169",
@@ -1400,7 +1479,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Aktive Musik Verlagsgesellschaft mbH, Dortmund (www.aktive-musik.de)"
     },
     {
         "id": "56",
@@ -1417,7 +1497,8 @@
             "Gm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "57",
@@ -1437,7 +1518,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "168",
@@ -1458,7 +1540,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text und Musik von Don Felder, Glenn Frey, Don Henley"
     },
     {
         "id": "59",
@@ -1476,7 +1559,8 @@
             "F"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "19",
@@ -1494,7 +1578,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1962 Special Rider Music, USA.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Bob Dylan\n\u00a9 Copyright 1962 Special Rider Music.\nThis Arrangement \u00a9 Copyright 2016 Special Rider Music.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "167",
@@ -1510,7 +1595,8 @@
             "Esus4"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text und Musik von John Lees"
     },
     {
         "id": "133",
@@ -1529,7 +1615,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Paul Simon.\nCopyright \u00a9 1986 Paul Simon (BMI)\nInternational Copyright Secured. All Rights Reserved."
     },
     {
         "id": "17",
@@ -1546,7 +1633,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "158",
@@ -1563,7 +1651,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Text und Musik: Otto Wolf"
     },
     {
         "id": "38",
@@ -1580,7 +1669,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "98",
@@ -1596,7 +1686,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "146",
@@ -1616,7 +1707,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1990 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Klaus Meine\n\u00a9 Copyright 1990 BMG Rights Management GMBH.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company.\nThis Arrangement \u00a9 Copyright 2016 BMG Rights Management GMBH.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "113",
@@ -1634,7 +1726,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Aus: Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "60",
@@ -1652,7 +1745,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text: Kuno Lauener \nMusik: Z\u00fcri West"
     },
     {
         "id": "79",
@@ -1660,7 +1754,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "104",
         "pageRondoGreen": "200",
-        "pageRondo2017": null,
+        "pageRondo2017": "200",
         "interpret": "Span",
         "chords": [
             "A",
@@ -1674,7 +1768,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Text & Musik: Georges M\u00fcller"
     },
     {
         "id": "88",
@@ -1694,7 +1789,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Cat Stevens\n\u00a9 Copyright 1971 Cat Music Limited.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company.\nThis Arrangement \u00a9 Copyright 2016 Cat Music Limited.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "156",
@@ -1710,7 +1806,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "75",
@@ -1732,7 +1829,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "M&T: Freudenthaler, Hinkel\n\u00a9 EMI MMC Musikverlag GmbH & Co. KG"
     },
     {
         "id": "9",
@@ -1749,7 +1847,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "62",
@@ -1764,7 +1863,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "61",
@@ -1782,7 +1882,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "1",
@@ -1801,7 +1902,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "161",
@@ -1822,7 +1924,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text und Musik von John Winston Lennon"
     },
     {
         "id": "55",
@@ -1838,7 +1941,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "64",
@@ -1853,7 +1957,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "134",
@@ -1869,7 +1974,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "The Lion Sleeps Tonight (Wimoweh)\nWords & Music by George David Weiss, Hugo Peretti, Luigi Creatore & Solomon Linda \u00a9 Copyright 1949 Abilene Music Incorporated, USA\/Luigi Creatore Music Imagem Music Limited. All Rights Reserved. International Copyright Secured."
     },
     {
         "id": "152",
@@ -1887,7 +1993,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "4",
@@ -1903,7 +2010,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ALL SUMMER LONG\nText u. Musik: Edward C. King\/Leroy P. Marinelli\/Robert J. Ritchie\/Gary\nRobert Rossington\/Matthew L. Shafer\/Ronnie Van Zant\/Robert T. Wachtel\/Warren William Zevon\n\u00a9 Copyright by Leadsheet Land Music, SP: Ruminating Music (Wixen Music) MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich, Schweiz f\u00fcr 11,11% Copyright"
     },
     {
         "id": "150",
@@ -1920,7 +2028,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Eric Clapton\n\u00a9 Copyright 1977, 1999 & 2004 Eric Clapton.\nThis Arrangement \u00a9 Copyright 2016 Eric Clapton.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "46",
@@ -1940,7 +2049,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1970 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Cat Stevens\n\u00a9 Copyright 1970 Cat Mussic Limited.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company.\nThis Arrangement \u00a9 Copyright 2016 Cat Music Limited.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "65",
@@ -1958,7 +2068,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "25",
@@ -1977,7 +2088,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Mike Wilsh and Mike Deighan\nTranslated by Pierre Delanoe\n\u00a9 1969 Intersong Music Ltd\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved"
     },
     {
         "id": "66",
@@ -1992,7 +2104,8 @@
             "Dm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "166",
@@ -2009,7 +2122,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Lyrics: L. H\u00e4berli, L. Oggier\nMusic: D. Jud\nPublishing Rights: Bakara Music Publishing"
     },
     {
         "id": "67",
@@ -2027,7 +2141,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "JUNGE\nM\/T: FARIN URLAUB \nV: PMS Musikverlag GmbH"
     },
     {
         "id": "68",
@@ -2042,7 +2157,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "36",
@@ -2057,7 +2173,8 @@
             "Em"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "69",
@@ -2075,7 +2192,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Polo Hofer\nAus dem Polo Hofer Songbook"
     },
     {
         "id": "70",
@@ -2092,7 +2210,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1973, 1974 Ram\u2019s Horn Music.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Bob Dylan\n\u00a9 Copyright 1973,1974 Ram's Horn Music.\nThis Arrangement \u00a9 Copyright 2016 Ram\u2019s Horn Music.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "71",
@@ -2111,7 +2230,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "72",
@@ -2126,7 +2246,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "74",
@@ -2141,7 +2262,8 @@
             "Em"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Von Kenneth William David Hensley\n\u00a9 Sydney Bron Music Co. Ltd.\nMit freundlicher Genehmigung von Chrysalis Music Holdings GmbH"
     },
     {
         "id": "73",
@@ -2165,7 +2287,8 @@
             "Hm7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "105",
@@ -2181,7 +2304,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Text und Musik von John Cameron Fogerty"
     },
     {
         "id": "75",
@@ -2203,7 +2327,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "M&T: Freudenthaler, Hinkel\n\u00a9 EMI MMC Musikverlag GmbH & Co. KG"
     },
     {
         "id": "76",
@@ -2220,7 +2345,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1970 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "77",
@@ -2238,7 +2364,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Musik: PFLEGER EWALD, GRASMUCK GUENTER, GRUBER PETER NIKLAS, PLISNIER KURT, TREMSCHNIG HERWIG\nText: PFLEGER EWALD\n\u00a9 by OPUS MUSIC PUBLISHING\nf\u00fcr CH: FLORA MUSIKVERLAG GMBH\nf\u00fcr D: ROLF BUDDE MUSIKVERLAG GMBH"
     },
     {
         "id": "78",
@@ -2256,7 +2383,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by William Berry, Peter Buck, Michael Mills and Michael Stipe \u00a9 1991 Night Garden Music"
     },
     {
         "id": "79",
@@ -2264,7 +2392,7 @@
         "pageRondoRed": null,
         "pageRondoBlue": "104",
         "pageRondoGreen": "200",
-        "pageRondo2017": null,
+        "pageRondo2017": "200",
         "interpret": "Span",
         "chords": [
             "A",
@@ -2278,7 +2406,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text & Musik: Georges M\u00fcller"
     },
     {
         "id": "80",
@@ -2297,7 +2426,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
     },
     {
         "id": "162",
@@ -2314,7 +2444,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "81",
@@ -2330,7 +2461,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "82",
@@ -2345,7 +2477,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "83",
@@ -2361,7 +2494,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Musik: Bruhn Christian, Drafi Deutscher\nText: Loose Rudolf G\u00fcnther\n\u00a9 by Nero Musikverlag GmbH\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
     },
     {
         "id": "84",
@@ -2381,7 +2515,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text: Sebastian Krumbiegel & Tobias K\u00fcnzel\nMusik: Sebastian Krumbiegel\n\u00a9 Lakeworth Music Publishing (administriert durch BMG Rights Management GmbH) \/ BMG Rights Management GmbH.\n\u00a9 SMPG Publishing (Germany) GmbH\nMit freundlicher Genehmigung von Sony\/ATV Music Publishing (Germany) GmbH"
     },
     {
         "id": "85",
@@ -2396,7 +2531,8 @@
             "D"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "86",
@@ -2412,7 +2548,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "87",
@@ -2428,7 +2565,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "89",
@@ -2445,7 +2583,8 @@
             "F"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words & Music by Mike Oldfield\n\u00a9 Copyright 1983 Oldfield Music Limited\/Stage Three Music (Catalogues) Limited.\nStage Three Music Publishing Limited, a BMG Chrysalis catalogue.\nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "88",
@@ -2465,7 +2604,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Cat Stevens\n\u00a9 Copyright 1971 Cat Music Limited.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company.\nThis Arrangement \u00a9 Copyright 2016 Cat Music Limited.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "90",
@@ -2489,7 +2629,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Nuno Bettencourt & Gary Cherone\n\u00a9 Copyright 1990 Color Me Blind Music, USA\nRondor Music International, Inc.\nThis Arrangement \u00a9 Copyright 2016 Color Me Blind Music, USA.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "91",
@@ -2510,7 +2651,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words by Eleanor Farjeon\nMusic by Cat Stevens\n\u00a9 Copyright 1971 Cat Music Limited.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company..\nThis Arrangement \u00a9 Copyright 2016 Cat Music Limited.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "92",
@@ -2532,7 +2674,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1968, 1970 Paul Simon (BMI).\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Paul Simon\n\u00a9 Copyright 1968, 1970 Paul Simon (BMI).\nThis Arrangement \u00a9 Copyright 2016 Paul Simon (BMI).\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "93",
@@ -2550,7 +2693,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "77",
@@ -2568,7 +2712,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Musik: PFLEGER EWALD, GRASMUCK GUENTER, GRUBER PETER NIKLAS, PLISNIER KURT, TREMSCHNIG HERWIG\nText: PFLEGER EWALD\n\u00a9 by OPUS MUSIC PUBLISHING\nf\u00fcr CH: FLORA MUSIKVERLAG GMBH\nf\u00fcr D: ROLF BUDDE MUSIKVERLAG GMBH"
     },
     {
         "id": "84",
@@ -2588,7 +2733,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Text: Sebastian Krumbiegel & Tobias K\u00fcnzel\nMusik: Sebastian Krumbiegel\n\u00a9 Lakeworth Music Publishing (administriert durch BMG Rights Management GmbH) \/ BMG Rights Management GmbH.\n\u00a9 SMPG Publishing (Germany) GmbH\nMit freundlicher Genehmigung von Sony\/ATV Music Publishing (Germany) GmbH"
     },
     {
         "id": "94",
@@ -2604,7 +2750,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "95",
@@ -2623,7 +2770,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "App: \u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by James Hetfield & Lars Ulrich\n\u00a9 Copyright 1991 Creeping Death Music.\nUniversal Music Publishing Limited.\nThis Arrangement \u00a9 Copyright 2016 Creeping Death Music.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "96",
@@ -2639,7 +2787,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "97",
@@ -2658,7 +2807,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "98",
@@ -2674,7 +2824,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "99",
@@ -2692,7 +2843,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "78",
@@ -2710,7 +2862,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words and Music by William Berry, Peter Buck, Michael Mills and Michael Stipe \u00a9 1991 Night Garden Music"
     },
     {
         "id": "100",
@@ -2726,7 +2879,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "34",
@@ -2744,7 +2898,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Yiddish Lyrics by AARON ZEITLIN\nEnglish lyrics by SHELDON SECUNDRA,\nARTHUR KEVESS and TEDDI SCHWARTZ\nMusic by SHOLOM SECUNDA\n\u00a9 1940, 1956 EMI MILLS MUSIC INC.\nRights outside the U.S.A. Administered by\nEMI MILLS MUSIC INC. and HARGAIL MUSIC PRESS All Rights Reserved Used by Permission"
     },
     {
         "id": "101",
@@ -2762,7 +2917,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ON MY HONOUR\nMusik: FALTERMEIER HUGO HAROLD, SUMMER DONNA,\nText: SUDANO BRUCE, SUMMER DONNA\n\u00a9 by SWEET SUMMER NIGHT MUSIC, EARBORNE MUSIC, BUDDE MUSIC INC, REVELATION MUSIC AG, STARRIN MUSIC;\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
     },
     {
         "id": "102",
@@ -2780,7 +2936,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": "Mit freundlicher Genehmigung von Jacob Stickelberger"
     },
     {
         "id": "103",
@@ -2796,7 +2953,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "104",
@@ -2821,7 +2979,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Terry Gilkyson\nTranslated by Heinrich Riethmueller\n\u00a9 1967 Wonderland Music Company Inc Warner\/Chappell Artemis Music Ltd"
     },
     {
         "id": "105",
@@ -2837,7 +2996,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text und Musik von John Cameron Fogerty"
     },
     {
         "id": "106",
@@ -2856,7 +3016,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Word and Music by Lenny Lipton and Peter Yarrow\nCopyright \u00a9 1963; Renewed 1991 Honalee Melodies (ASCAP) and Silver Dawn Music (ASCAP)"
     },
     {
         "id": "107",
@@ -2871,7 +3032,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "108",
@@ -2886,7 +3048,8 @@
             "Dm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "112",
@@ -2902,7 +3065,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "110",
@@ -2919,7 +3083,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Alle Rechte liegen beim Urheber Andr\u00e9 St\u00fcrzinger."
     },
     {
         "id": "54",
@@ -2937,7 +3102,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "35",
@@ -2953,7 +3119,8 @@
             "E"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge Verlag Oberhofen"
     },
     {
         "id": "114",
@@ -2970,7 +3137,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "SAG MIR WO DIE BLUMEN SIND (Pete Seeger, Max Colpet)\n\u00a9 Sanga Music Inc"
     },
     {
         "id": "115",
@@ -2989,7 +3157,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1972 Universal\/Island Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Gavin Sutherland\n\u00a9 Copyright 1972 Island Music Limited. Universal\/Island Music Limited.\nThis Arrangement \u00a9 Copyright 2016 Island Music Limited. All Rights Reserved. International Copyright Secured. Used by Permission of Music Sales Limited."
     },
     {
         "id": "116",
@@ -3007,7 +3176,8 @@
             "Gm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "90",
@@ -3031,7 +3201,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Nuno Bettencourt & Gary Cherone\n\u00a9 Copyright 1990 Color Me Blind Music, USA\nRondor Music International, Inc.\nThis Arrangement \u00a9 Copyright 2016 Color Me Blind Music, USA.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "117",
@@ -3049,7 +3220,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "118",
@@ -3070,7 +3242,8 @@
             "Gsus4"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
     },
     {
         "id": "16",
@@ -3087,7 +3260,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "119",
@@ -3105,7 +3279,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Text: G\u00d6L\u00c4\nMusik: G\u00d6L\u00c4, URS RETO FREI, THOMAS J. GYGER, RENE MAURER, ZLATKO PERICA"
     },
     {
         "id": "74",
@@ -3120,7 +3295,8 @@
             "Em"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Von Kenneth William David Hensley\n\u00a9 Sydney Bron Music Co. Ltd.\nMit freundlicher Genehmigung von Chrysalis Music Holdings GmbH"
     },
     {
         "id": "121",
@@ -3136,7 +3312,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "52",
@@ -3154,7 +3331,8 @@
             "Gm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "M&T: Habegger, Lee, Leoni, Lynn, Meyer, von Rohr\n\u00a9 EMI Music Publishing Germany GmbH \/ Leeleo Publishing"
     },
     {
         "id": "28",
@@ -3172,7 +3350,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": "Text und Musik: Peter Reber\nMit freundlicher Genehmigung Liton Musikverlag, Bern"
     },
     {
         "id": "120",
@@ -3180,7 +3359,7 @@
         "pageRondoRed": "32",
         "pageRondoBlue": "108",
         "pageRondoGreen": "32",
-        "pageRondo2017": null,
+        "pageRondo2017": "32",
         "interpret": "",
         "chords": [
             "A7",
@@ -3188,7 +3367,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "121",
@@ -3204,7 +3384,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "123",
@@ -3219,7 +3400,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Music by NACIO HERB BROWN\nLyrics by ARTHUR FREED\n\u00a9 1929 METRO-GOLDWYN-MAYER INC.\nAll Rights Controlled by EMI ROBBINS CATALOGE INC. (Publishing) and ALFRED MUSIC PUBLISHING CO., INC. (Print)"
     },
     {
         "id": "123",
@@ -3234,7 +3416,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Music by NACIO HERB BROWN\nLyrics by ARTHUR FREED\n\u00a9 1929 METRO-GOLDWYN-MAYER INC.\nAll Rights Controlled by EMI ROBBINS CATALOGE INC. (Publishing) and ALFRED MUSIC PUBLISHING CO., INC. (Print)"
     },
     {
         "id": "122",
@@ -3249,7 +3432,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": ""
     },
     {
         "id": "95",
@@ -3268,7 +3452,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "App: \u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by James Hetfield & Lars Ulrich\n\u00a9 Copyright 1991 Creeping Death Music.\nUniversal Music Publishing Limited.\nThis Arrangement \u00a9 Copyright 2016 Creeping Death Music.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "135",
@@ -3286,7 +3471,8 @@
             "H"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Amanda McBroom\n\u00a9 1979 Twentieth Century Music Corp Warner\/Chappell North America Ltd"
     },
     {
         "id": "127",
@@ -3304,7 +3490,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "129",
@@ -3320,7 +3507,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "126",
@@ -3335,7 +3523,8 @@
             "Dm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "20",
@@ -3356,7 +3545,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "BOAT ON THE RIVER\nText u. Musik: Tommy Shaw\n\n\u00a9 Copyright by Stygian Songs.\nMELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich Schweiz.\n\nAbdruck erfolgt mit freundlicher Genehmigung von MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main"
     },
     {
         "id": "131",
@@ -3375,7 +3565,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by John Denver, Bill Danoff and Taffy Nivert Copyright \n\u00a9 1971; Renewed 1999 Cherry Lane Music Publishing Company, Inc. (ASCAP) and State One Songs America (ASCAP)"
     },
     {
         "id": "132",
@@ -3401,7 +3592,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\n(12.5%)\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Eric Clapton & Will Jennings\n\u00a9 Copyright 1991 Blue Sky Rider Songs. E C Music\/Rondor International Inc.\nThis Arrangement \u00a9 Copyright 2016 Blue Sky Rider Songs. All Rights Reserved. International Copyright Secured. Used by Permission of Music Sales Limited."
     },
     {
         "id": "30",
@@ -3416,7 +3608,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Musik und Text: William Attaway, Irving Burgie\n\u00a9 Cherry Lane Music Publishing Co. Inc., Lord Burgess Music Publishing Co., BMG Ruby Songs"
     },
     {
         "id": "133",
@@ -3435,7 +3628,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Paul Simon.\nCopyright \u00a9 1986 Paul Simon (BMI)\nInternational Copyright Secured. All Rights Reserved."
     },
     {
         "id": "89",
@@ -3452,7 +3646,8 @@
             "F"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Words & Music by Mike Oldfield\n\u00a9 Copyright 1983 Oldfield Music Limited\/Stage Three Music (Catalogues) Limited.\nStage Three Music Publishing Limited, a BMG Chrysalis catalogue.\nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "134",
@@ -3468,7 +3663,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "The Lion Sleeps Tonight (Wimoweh)\nWords & Music by George David Weiss, Hugo Peretti, Luigi Creatore & Solomon Linda \u00a9 Copyright 1949 Abilene Music Incorporated, USA\/Luigi Creatore Music Imagem Music Limited. All Rights Reserved. International Copyright Secured."
     },
     {
         "id": "135",
@@ -3486,7 +3682,8 @@
             "H"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Words and Music by Amanda McBroom\n\u00a9 1979 Twentieth Century Music Corp Warner\/Chappell North America Ltd"
     },
     {
         "id": "163",
@@ -3504,7 +3701,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "THE SOUND OF SILENCE\nText u. Musik: Paul Simon\n\u00a9 1964 und 1965 by Eclectic Music Co., New York. Controlled for the world (excluding USA, Canada, Mexico and S. America) by Lorna Music Co. Ltd., London.Alleinige Rechte f\u00fcr Deutschland, \u00d6sterreich und Schweiz: Musikvertrieb AG, Z\u00fcrich. \nAbdruck erfolgt mit freundlicher Genehmigung von Musikvertrieb AG, Z\u00fcrich: MELODIE DER WELT GmbH & Co. KG, Musikverlag, Frankfurt\/Main, f\u00fcr Deutschland."
     },
     {
         "id": "128",
@@ -3524,7 +3722,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "THE STREETS OF LONDON (Ralph McTell)\n\u00a9 Westminster Music Ltd"
     },
     {
         "id": "59",
@@ -3542,7 +3741,8 @@
             "F"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "136",
@@ -3558,7 +3758,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "THIS LAND IS YOUR LAND (Woody Guthrie) \n\u00a9 Ludlow Music Inc"
     },
     {
         "id": "151",
@@ -3578,7 +3779,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "96",
@@ -3594,7 +3796,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "18",
@@ -3611,7 +3814,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "164",
@@ -3628,7 +3832,8 @@
             "Fism"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Extern Entertainment GmbH, Z\u00fcrich"
     },
     {
         "id": "138",
@@ -3653,7 +3858,8 @@
             "Hm"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
     },
     {
         "id": "83",
@@ -3669,7 +3875,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Musik: Bruhn Christian, Drafi Deutscher\nText: Loose Rudolf G\u00fcnther\n\u00a9 by Nero Musikverlag GmbH\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
     },
     {
         "id": "140",
@@ -3693,7 +3900,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "Franz Hohler, aus LP \u201eI glaub jetz hock i ab\u201c CBS, 1974"
     },
     {
         "id": "141",
@@ -3710,7 +3918,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "142",
@@ -3725,7 +3934,8 @@
             "Dm"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "149",
@@ -3747,7 +3957,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "76",
@@ -3764,7 +3975,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1970 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "49",
@@ -3783,7 +3995,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "159",
@@ -3807,7 +4020,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "13",
@@ -3830,7 +4044,8 @@
             "G7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Lyrics by JAMES RADO and GEROME RAGNI\nMusic by GALT MACDERMOT\n\u00a9 1966, 1967, 1968 JAMES RADO, GEROME RAGNI, GALT MACDERMOT, NAT SHAPIRO and EMI U CATALOG, INC."
     },
     {
         "id": "144",
@@ -3848,7 +4063,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "WHERE HAVE ALL THE FLOWERS GONE (Pete Seeger)\n\u00a9 Sanga Music Inc"
     },
     {
         "id": "137",
@@ -3866,7 +4082,8 @@
             "G"
         ],
         "alternative": true,
-        "free": true
+        "free": true,
+        "license": "Text und Musik Reinhard Mey\nMit freundlicher Genehmigung von Edition Reinhard Mey, Berlin"
     },
     {
         "id": "146",
@@ -3886,7 +4103,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1990 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Klaus Meine\n\u00a9 Copyright 1990 BMG Rights Management GMBH.\nBMG Rights Management (UK) Limited, a BMG Chrysalis Company.\nThis Arrangement \u00a9 Copyright 2016 BMG Rights Management GMBH.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "148",
@@ -3911,7 +4129,8 @@
             "Hsus4"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1995 Imagem London Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Teijo Agelii Leskela\n\u00a9 Copyright 1995 Imagem London Limited.\nThis Arrangement \u00a9 Copyright 2016 Imagem London Limited.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "149",
@@ -3933,7 +4152,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "147",
@@ -3951,7 +4171,8 @@
             "H7"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Musik : Rudi Goguel\nText : Esser, Johann \/ Langhoff, Wolfgang\nMit freundlicher Genehmigung von: \uf0e3 C.F. Peters Ltd & Co. KG."
     },
     {
         "id": "150",
@@ -3968,7 +4189,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Eric Clapton\n\u00a9 Copyright 1977, 1999 & 2004 Eric Clapton.\nThis Arrangement \u00a9 Copyright 2016 Eric Clapton.\nAll Rights Reserved. International Copyright Secured.\nUsed by Permission of Music Sales Limited."
     },
     {
         "id": "151",
@@ -3988,7 +4210,8 @@
             "H7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "132",
@@ -4014,7 +4237,8 @@
             "Hm"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "ACHTUNG: VERSCHIEDENE TEXTE APP\/PRINT\n\nApp: \u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\n(12.5%)\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured.\n\nPrint: Words & Music by Eric Clapton & Will Jennings\n\u00a9 Copyright 1991 Blue Sky Rider Songs. E C Music\/Rondor International Inc.\nThis Arrangement \u00a9 Copyright 2016 Blue Sky Rider Songs. All Rights Reserved. International Copyright Secured. Used by Permission of Music Sales Limited."
     },
     {
         "id": "152",
@@ -4032,7 +4256,8 @@
             "G"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "153",
@@ -4056,7 +4281,8 @@
             "Hm7"
         ],
         "alternative": false,
-        "free": false
+        "free": false,
+        "license": "\u00a9 Copyright 1965 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
     },
     {
         "id": "154",
@@ -4073,7 +4299,8 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "165",
@@ -4090,7 +4317,8 @@
             "G7"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": ""
     },
     {
         "id": "69",
@@ -4108,7 +4336,8 @@
             "G"
         ],
         "alternative": true,
-        "free": false
+        "free": false,
+        "license": "Polo Hofer\nAus dem Polo Hofer Songbook"
     },
     {
         "id": "137",
@@ -4126,6 +4355,7 @@
             "G"
         ],
         "alternative": false,
-        "free": true
+        "free": true,
+        "license": "Text und Musik Reinhard Mey\nMit freundlicher Genehmigung von Edition Reinhard Mey, Berlin"
     }
 ]

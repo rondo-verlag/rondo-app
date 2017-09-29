@@ -52,7 +52,8 @@ class SongIndex {
 				'interpret' => $song['interpret'],
 				'chords' => $chords,
 				'alternative' => false,
-				'free' => $isFree
+				'free' => $isFree,
+				'license' => ($song['copyrightInfo'] ?: '')
 			];
 
 			// alternative titel
@@ -69,7 +70,8 @@ class SongIndex {
 						'interpret' => $song['interpret'],
 						'chords' => $chords,
 						'alternative' => true,
-						'free' => $isFree
+						'free' => $isFree,
+						'license' => ($song['copyrightInfo'] ?: '')
 					];
 				}
 			}

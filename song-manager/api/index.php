@@ -390,7 +390,8 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 // export html files & images for app
 $app->get('/export/html', function () use ($app, &$DB) {
 	umask(0);
-	$path = '../../app/www/resources/songs/';
+	//$path = '../../app/www/resources/songs/';
+	$path = '../../app_v2/songbook-app/src/assets/songdata/songs/';
 
 	$songIndex = new SongIndex();
 	$songIds = $songIndex->getAppSongIds();
@@ -402,18 +403,22 @@ $app->get('/export/html', function () use ($app, &$DB) {
 		$html = $song->getHtml(true);
 		$filepath = $path.'html/'.$songId['id'].'.html';
 		file_put_contents($filepath, $html);
-		chmod($filepath, 0777);
+		//chmod($filepath, 0777);
 
 		// generate image
 		$data = $song->getData();
 		if ($data['rawImage']){
 			// convert to gif
 			ob_start();
-			imagegif(imagecreatefromstring($data['rawImage']));
-			$image = ob_get_clean();
-			$imagepath = $path.'images/'.$songId['id'].'.gif';
-			file_put_contents($imagepath, $image);
-			chmod($imagepath, 0777);
+			try {
+				imagegif(imagecreatefromstring($data['rawImage']));
+				$image = ob_get_clean();
+				$imagepath = $path.'images/'.$songId['id'].'.gif';
+				file_put_contents($imagepath, $image);
+			} catch (Exception $exception) {
+				var_dump('Image Problem with Song: ' . $songId['id'], $exception->getMessage());
+			}
+			//chmod($imagepath, 0777);
 		}
 	}
 	echo count($songIds)." Songs exportiert.";

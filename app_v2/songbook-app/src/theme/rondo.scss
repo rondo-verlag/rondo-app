@@ -218,12 +218,18 @@ page-song {
   padding: 12px 0;
 }
 
+.copyright {
+  font-size: 60%;
+  color: #444;
+  white-space: pre-wrap;
+}
+
 .report-error-link {
   color: #444;
   a {
     color: #444;
     text-decoration: none;
-    font-size: 90%;
+    font-size: 60%;
   }
 }
 

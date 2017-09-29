@@ -9,4 +9,5 @@ interface ISong {
     chords: string[];
     alternative: boolean;
     free: boolean;
+    license: string;
 }
