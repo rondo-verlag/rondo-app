@@ -8,4 +8,5 @@ interface ISong {
     interpret: string;
     chords: string[];
     alternative: boolean;
+    free: boolean;
 }

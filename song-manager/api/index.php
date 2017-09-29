@@ -306,14 +306,12 @@ $app->get('/import/png', function () use ($app, &$DB) {
 	}
 });
 
-// export json index for app
+// show used chords
 $app->get('/export/listchords', function () use ($app, &$DB) {
 	$app->contentType('text/html');
 	$chords = [];
 
-	$songs = $DB->fetchAll("SELECT id
-		FROM songs
-		WHERE status = 'DONE'");
+	$songs = $DB->fetchAll("SELECT id FROM songs WHERE releaseApp2017 = 1");
 
 	foreach($songs as $song_id){
 		$model = new Song($song_id['id']);
@@ -327,7 +325,7 @@ $app->get('/export/listchords', function () use ($app, &$DB) {
 
 // export json index for app
 $app->get('/export/index', function () use ($app, &$DB) {
-	$path = '../../app/www/resources/songs/song-index.json';
+	$path = '../../app_v2/songbook-app/src/assets/songdata/songs/song-index.json';
 	$songIndex = new SongIndex();
 	$index = $songIndex->getSongIndexForApp();
 

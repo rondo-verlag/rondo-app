@@ -23,9 +23,7 @@ class SongIndex {
 	public function getAppSongIds() {
 		return $this->DB->fetchAll("SELECT id
 			FROM songs
-			WHERE (license = 'FREE' OR license_type = 'FREE')
-			AND status = 'DONE'
-			AND releaseApp2017 = 1");
+			WHERE releaseApp2017 = 1");
 	}
 
 	public function getSongIndexForApp(){
@@ -42,6 +40,8 @@ class SongIndex {
 			// accords
 			$chords = $model->getClearedChordList();
 
+			$isFree = ($song['license'] == 'LICENSED' && $song['license_type'] != 'FREE' ? false : true);
+
 			$index[] = [
 				'id' => $song['id'],
 				'title' => $title_uc,
@@ -51,7 +51,8 @@ class SongIndex {
 				'pageRondo2017' => $song['pageRondo2017'],
 				'interpret' => $song['interpret'],
 				'chords' => $chords,
-				'alternative' => false
+				'alternative' => false,
+				'free' => $isFree
 			];
 
 			// alternative titel
@@ -67,7 +68,8 @@ class SongIndex {
 						'pageRondo2017' => $song['pageRondo2017'],
 						'interpret' => $song['interpret'],
 						'chords' => $chords,
-						'alternative' => true
+						'alternative' => true,
+						'free' => $isFree
 					];
 				}
 			}

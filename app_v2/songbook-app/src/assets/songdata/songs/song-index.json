@@ -15,7 +15,8 @@
             "G",
             "Hm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "3",
@@ -30,7 +31,79 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "4",
+        "title": "ALL SUMMER LONG",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "52",
+        "pageRondo2017": "52",
+        "interpret": "Kid Rock",
+        "chords": [
+            "C",
+            "D",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "23",
+        "title": "All the leaves are brown",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "210",
+        "pageRondo2017": "210",
+        "interpret": "The Mamas And The Papas",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G",
+            "H7",
+            "H7sus4"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "131",
+        "title": "Almost heaven, West Virginia",
+        "pageRondoRed": "170",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "170",
+        "pageRondo2017": "170",
+        "interpret": "",
+        "chords": [
+            "C",
+            "D",
+            "D7",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "6",
+        "title": "ALPEROSE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "38",
+        "pageRondoGreen": "52",
+        "pageRondo2017": "52",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "7",
@@ -45,7 +118,8 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "8",
@@ -61,7 +135,8 @@
             "E",
             "E7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "9",
@@ -77,7 +152,44 @@
             "F",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "10",
+        "title": "AN DEN UFERN DES MEXIKO RIVERS",
+        "pageRondoRed": "36",
+        "pageRondoBlue": "95",
+        "pageRondoGreen": "36",
+        "pageRondo2017": "36",
+        "interpret": "Jakob Leutert und Peter Jeger",
+        "chords": [
+            "A",
+            "E",
+            "E7",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "11",
+        "title": "ANGIE",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "88",
+        "pageRondo2017": "88",
+        "interpret": "Rolling Stones; Mick Jagger and Keith Richards",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E7",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "12",
@@ -91,7 +203,47 @@
             "A7",
             "D"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "13",
+        "title": "AQUARIUS",
+        "pageRondoRed": null,
+        "pageRondoBlue": "90",
+        "pageRondoGreen": "92",
+        "pageRondo2017": "92",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Dm",
+            "E7",
+            "Em",
+            "F",
+            "G",
+            "G\/H",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "14",
+        "title": "ARABISCH",
+        "pageRondoRed": null,
+        "pageRondoBlue": "50",
+        "pageRondoGreen": "50",
+        "pageRondo2017": "50",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "Dm",
+            "E"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "15",
@@ -111,7 +263,8 @@
             "Fm",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "117",
@@ -128,7 +281,27 @@
             "F",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "25",
+        "title": "AUX CHAMPS ELYS\u00c9ES",
+        "pageRondoRed": null,
+        "pageRondoBlue": "150",
+        "pageRondoGreen": "214",
+        "pageRondo2017": "214",
+        "interpret": "Joe Dassin",
+        "chords": [
+            "A",
+            "Cism",
+            "E",
+            "E7",
+            "Fis",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "16",
@@ -144,7 +317,8 @@
             "G",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "17",
@@ -160,7 +334,8 @@
             "F",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "18",
@@ -176,7 +351,102 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "37",
+        "title": "Bimne Parkingmeter ha ni",
+        "pageRondoRed": "26",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "26",
+        "pageRondo2017": "26",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "F",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "157",
+        "title": "BLOS E CHLIINI STADT",
+        "pageRondoRed": "180",
+        "pageRondoBlue": "100",
+        "pageRondoGreen": "180",
+        "pageRondo2017": "180",
+        "interpret": "Dieter Wiesman",
+        "chords": [
+            "Am",
+            "C",
+            "D7",
+            "Dm",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "19",
+        "title": "BLOWIN' IN THE WIND",
+        "pageRondoRed": "150",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "150",
+        "pageRondo2017": "150",
+        "interpret": "Bob Dylan",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "6",
+        "title": "Bl\u00fcemlisalp ire Summernacht",
+        "pageRondoRed": null,
+        "pageRondoBlue": "38",
+        "pageRondoGreen": "52",
+        "pageRondo2017": "52",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "20",
+        "title": "BOAT ON THE RIVER",
+        "pageRondoRed": null,
+        "pageRondoBlue": "106",
+        "pageRondoGreen": "106",
+        "pageRondo2017": "106",
+        "interpret": "Tommy Shaw",
+        "chords": [
+            "A",
+            "Am",
+            "D",
+            "Dm",
+            "E",
+            "E7",
+            "G",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "21",
@@ -193,7 +463,8 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "116",
@@ -210,7 +481,27 @@
             "F",
             "Gm"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "23",
+        "title": "CALIFORNIA DREAMIN'",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "210",
+        "pageRondo2017": "210",
+        "interpret": "The Mamas And The Papas",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G",
+            "H7",
+            "H7sus4"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "24",
@@ -224,7 +515,8 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "26",
@@ -240,7 +532,24 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "27",
+        "title": "CONTURA SONG",
+        "pageRondoRed": null,
+        "pageRondoBlue": "6",
+        "pageRondoGreen": "234",
+        "pageRondo2017": "234",
+        "interpret": "Nella Martinetti",
+        "chords": [
+            "C",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "28",
@@ -257,7 +566,134 @@
             "G",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "138",
+        "title": "d' W.Nuss vo B\u00fcmpliz",
+        "pageRondoRed": null,
+        "pageRondoBlue": "56",
+        "pageRondoGreen": "58",
+        "pageRondo2017": "58",
+        "interpret": "Patent Ochsner",
+        "chords": [
+            "A",
+            "A7",
+            "B",
+            "C",
+            "D",
+            "Dm",
+            "Em",
+            "Em6",
+            "Em7",
+            "F",
+            "Fism",
+            "Hm"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "80",
+        "title": "D'Miss Dolly Bird die heisst Ludmilla",
+        "pageRondoRed": null,
+        "pageRondoBlue": "146",
+        "pageRondoGreen": "240",
+        "pageRondo2017": "240",
+        "interpret": "Patent Ochsner",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "E7",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "110",
+        "title": "D'Nase platt \u00e4s F\u00e4nschter truckt",
+        "pageRondoRed": "228",
+        "pageRondoBlue": "66",
+        "pageRondoGreen": "228",
+        "pageRondo2017": "228",
+        "interpret": "Andr\u00e9 St\u00fcrzinger",
+        "chords": [
+            "A",
+            "D",
+            "Em",
+            "Hm"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "53",
+        "title": "D'Nora und d'Natascha",
+        "pageRondoRed": null,
+        "pageRondoBlue": "126",
+        "pageRondoGreen": "126",
+        "pageRondo2017": "126",
+        "interpret": "Scht\u00e4rnef\u00f6ifi",
+        "chords": [
+            "E",
+            "H7"
+        ],
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "102",
+        "title": "D'Pfadfinderei das isch",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "4",
+        "pageRondo2017": "4",
+        "interpret": "Jacob Stickelberger",
+        "chords": [
+            "A",
+            "E",
+            "E7",
+            "Fis",
+            "H7"
+        ],
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "29",
+        "title": "DAS ALTE HOUSE VON ROCKY-DOCKY (THIS OLE HOUSE)",
+        "pageRondoRed": "34",
+        "pageRondoBlue": "36",
+        "pageRondoGreen": "34",
+        "pageRondo2017": "34",
+        "interpret": "Stuart Hamblen",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "30",
+        "title": "DAY-O (THE BANANA BOAT SONG)",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "96",
+        "pageRondo2017": "96",
+        "interpret": "Harry Belafonte",
+        "chords": [
+            "C",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "31",
@@ -273,7 +709,8 @@
             "F",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "31",
@@ -289,7 +726,8 @@
             "F",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "32",
@@ -304,7 +742,27 @@
             "D",
             "E"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "97",
+        "title": "Desmond has his barrow",
+        "pageRondoRed": "258",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "258",
+        "pageRondo2017": "258",
+        "interpret": "The Beatles",
+        "chords": [
+            "Am",
+            "C",
+            "C7",
+            "Em",
+            "F",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "155",
@@ -319,7 +777,47 @@
             "F",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "118",
+        "title": "Die isch ja filmryf, die Szene",
+        "pageRondoRed": null,
+        "pageRondoBlue": "145",
+        "pageRondoGreen": "145",
+        "pageRondo2017": "144",
+        "interpret": "Patent Ochsner",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E7",
+            "Em",
+            "F",
+            "G",
+            "Gsus4"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "147",
+        "title": "DIE MOORSOLDATEN",
+        "pageRondoRed": "198",
+        "pageRondoBlue": "124",
+        "pageRondoGreen": "198",
+        "pageRondo2017": "198",
+        "interpret": "Musik : Rudi Goguel Text : Esser, Johann \/ Langhoff, Wolfgang",
+        "chords": [
+            "Am",
+            "D",
+            "Em",
+            "G",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "33",
@@ -334,7 +832,178 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "29",
+        "title": "Dieses Haus ist alt und h\u00e4sslich",
+        "pageRondoRed": "34",
+        "pageRondoBlue": "36",
+        "pageRondoGreen": "34",
+        "pageRondo2017": "34",
+        "interpret": "Stuart Hamblen",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "34",
+        "title": "DONNA DONNA",
+        "pageRondoRed": "174",
+        "pageRondoBlue": "80",
+        "pageRondoGreen": "174",
+        "pageRondo2017": "174",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "156",
+        "title": "DOWN BY THE RIVERSIDE",
+        "pageRondoRed": "112",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "112",
+        "pageRondo2017": "112",
+        "interpret": "",
+        "chords": [
+            "A",
+            "E",
+            "H7"
+        ],
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "35",
+        "title": "DR ALPEFLUG",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "31",
+        "pageRondo2017": "31",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "Dm",
+            "E"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "36",
+        "title": "DR ESKIMO",
+        "pageRondoRed": "138",
+        "pageRondoBlue": "48",
+        "pageRondoGreen": "138",
+        "pageRondo2017": "138",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "Em"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "37",
+        "title": "DR PARKINGMETER",
+        "pageRondoRed": "26",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "26",
+        "pageRondo2017": "26",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "158",
+        "title": "DR SCHACHER SEPPLI",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "128",
+        "pageRondo2017": "128",
+        "interpret": "Otto Wolf",
+        "chords": [
+            "C",
+            "Dm",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "14",
+        "title": "Dr Sidi Abdel Assar vo El Hama",
+        "pageRondoRed": null,
+        "pageRondoBlue": "50",
+        "pageRondoGreen": "50",
+        "pageRondo2017": "50",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "Dm",
+            "E"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "111",
+        "title": "DS HIPPIGSCHP\u00c4NGSCHTLI",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "272",
+        "pageRondo2017": "220",
+        "interpret": "Peter Reber",
+        "chords": [
+            "A",
+            "Am",
+            "D",
+            "D7",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "113",
+        "title": "DS Z\u00dcNDH\u00d6LZLI",
+        "pageRondoRed": "136",
+        "pageRondoBlue": "52",
+        "pageRondoGreen": "136",
+        "pageRondo2017": "136",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "C",
+            "E",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "38",
@@ -350,7 +1019,8 @@
             "E7",
             "H7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "39",
@@ -369,7 +1039,24 @@
             "Fism",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "40",
+        "title": "EINE OMA GING SPAZIEREN",
+        "pageRondoRed": "50",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "48",
+        "pageRondo2017": "48",
+        "interpret": "Leni Timmermann",
+        "chords": [
+            "C",
+            "D7",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "41",
@@ -384,7 +1071,8 @@
             "D",
             "E"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "15",
@@ -404,7 +1092,8 @@
             "Fm",
             "G7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "42",
@@ -418,7 +1107,8 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "103",
@@ -433,7 +1123,8 @@
             "E",
             "H7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "43",
@@ -450,7 +1141,25 @@
             "G",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "48",
+        "title": "Es war in einer Regennacht",
+        "pageRondoRed": "56",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "56",
+        "pageRondo2017": "56",
+        "interpret": "Stan Jones",
+        "chords": [
+            "Am",
+            "B",
+            "Dm",
+            "F"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "44",
@@ -464,7 +1173,28 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "46",
+        "title": "FATHER AND SON",
+        "pageRondoRed": "172",
+        "pageRondoBlue": "72",
+        "pageRondoGreen": "172",
+        "pageRondo2017": "172",
+        "interpret": "Cat Stevens",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "D",
+            "Em",
+            "G",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "47",
@@ -478,7 +1208,45 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "157",
+        "title": "Ganz z'usserscht usse",
+        "pageRondoRed": "180",
+        "pageRondoBlue": "100",
+        "pageRondoGreen": "180",
+        "pageRondo2017": "180",
+        "interpret": "Dieter Wiesman",
+        "chords": [
+            "Am",
+            "C",
+            "D7",
+            "Dm",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "48",
+        "title": "GEISTERREITER",
+        "pageRondoRed": "56",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "56",
+        "pageRondo2017": "56",
+        "interpret": "Stan Jones",
+        "chords": [
+            "Am",
+            "B",
+            "Dm",
+            "F"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "49",
@@ -496,7 +1264,8 @@
             "G",
             "Hm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "66",
@@ -510,7 +1279,95 @@
             "A7",
             "Dm"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "128",
+        "title": "Have you seen the old man",
+        "pageRondoRed": "146",
+        "pageRondoBlue": "88",
+        "pageRondoGreen": "146",
+        "pageRondo2017": "146",
+        "interpret": "Ralph McTell",
+        "chords": [
+            "Am",
+            "C",
+            "D7",
+            "Em",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "52",
+        "title": "HEAVEN",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "216",
+        "pageRondo2017": "216",
+        "interpret": "Gotthard",
+        "chords": [
+            "B",
+            "C",
+            "Dm",
+            "F",
+            "Gm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "27",
+        "title": "Hei battasendas",
+        "pageRondoRed": null,
+        "pageRondoBlue": "6",
+        "pageRondoGreen": "234",
+        "pageRondo2017": "234",
+        "interpret": "Nella Martinetti",
+        "chords": [
+            "C",
+            "F",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "53",
+        "title": "HEICHO - OHNI ZNACHT IS BETT",
+        "pageRondoRed": null,
+        "pageRondoBlue": "126",
+        "pageRondoGreen": "126",
+        "pageRondo2017": "126",
+        "interpret": "Scht\u00e4rnef\u00f6ifi",
+        "chords": [
+            "E",
+            "H7"
+        ],
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "54",
+        "title": "HEMMIGE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "136",
+        "pageRondoGreen": "142",
+        "pageRondo2017": "142",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E7",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "55",
@@ -525,7 +1382,25 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "169",
+        "title": "HEUTE HIER, MORGEN DORT",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "134",
+        "interpret": "Hannes Wader",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "56",
@@ -541,7 +1416,49 @@
             "Dm",
             "Gm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "57",
+        "title": "HEY JUDE",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "168",
+        "pageRondo2017": "168",
+        "interpret": "The Beatles",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "E",
+            "E7",
+            "G",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "168",
+        "title": "HOTEL CALIFORNIA",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "202",
+        "interpret": "The Eagles",
+        "chords": [
+            "A",
+            "D",
+            "E",
+            "Em",
+            "Fis",
+            "Fis7",
+            "G",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "59",
@@ -558,7 +1475,61 @@
             "E",
             "F"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "19",
+        "title": "How many roads",
+        "pageRondoRed": "150",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "150",
+        "pageRondo2017": "150",
+        "interpret": "Bob Dylan",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "167",
+        "title": "HYMN",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "46",
+        "interpret": "Barclay James Harvest",
+        "chords": [
+            "A",
+            "E",
+            "Esus4"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "133",
+        "title": "I am just a poor boy",
+        "pageRondoRed": "164",
+        "pageRondoBlue": "140",
+        "pageRondoGreen": "164",
+        "pageRondo2017": "164",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "Em",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "17",
@@ -574,7 +1545,25 @@
             "F",
             "G7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "158",
+        "title": "I be de Schacher Seppeli",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "128",
+        "pageRondo2017": "128",
+        "interpret": "Otto Wolf",
+        "chords": [
+            "C",
+            "Dm",
+            "F",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "38",
@@ -590,7 +1579,8 @@
             "E7",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "98",
@@ -605,7 +1595,144 @@
             "D",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "146",
+        "title": "I follow the Moskva",
+        "pageRondoRed": null,
+        "pageRondoBlue": "44",
+        "pageRondoGreen": "44",
+        "pageRondo2017": "44",
+        "interpret": "Scorpions",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E",
+            "E7",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "113",
+        "title": "I han es Z\u00fcndh\u00f6lzli az\u00fcndt",
+        "pageRondoRed": "136",
+        "pageRondoBlue": "52",
+        "pageRondoGreen": "136",
+        "pageRondo2017": "136",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "C",
+            "E",
+            "F",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "60",
+        "title": "I SCH\u00c4NKE DR MIS H\u00c4RZ",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "182",
+        "pageRondo2017": "182",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "79",
+        "title": "I weiss no guet, wo ir Sunn\u00e4 bi gs\u00e4ss\u00e4",
+        "pageRondoRed": null,
+        "pageRondoBlue": "104",
+        "pageRondoGreen": "200",
+        "pageRondo2017": null,
+        "interpret": "Span",
+        "chords": [
+            "A",
+            "Cism",
+            "D",
+            "E",
+            "Fism",
+            "Fism7",
+            "Gism",
+            "H",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "88",
+        "title": "I'm being followed by a moon shadow",
+        "pageRondoRed": "260",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "260",
+        "pageRondo2017": "260",
+        "interpret": "Cat Stevens",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "E",
+            "Em",
+            "G",
+            "Hm"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "156",
+        "title": "I'm gonna lay down",
+        "pageRondoRed": "112",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "112",
+        "pageRondo2017": "112",
+        "interpret": "",
+        "chords": [
+            "A",
+            "E",
+            "H7"
+        ],
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "75",
+        "title": "I'm sitting here in the boring room",
+        "pageRondoRed": null,
+        "pageRondoBlue": "154",
+        "pageRondoGreen": "154",
+        "pageRondo2017": "153",
+        "interpret": "Fools Garden",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Dm",
+            "E",
+            "Em",
+            "Em7",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "9",
@@ -621,7 +1748,8 @@
             "F",
             "G7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "62",
@@ -635,7 +1763,8 @@
             "C",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "61",
@@ -652,7 +1781,8 @@
             "G",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "1",
@@ -670,7 +1800,29 @@
             "G",
             "Hm"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "161",
+        "title": "IMAGINE",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "22",
+        "interpret": "John Lennon",
+        "chords": [
+            "Am7",
+            "C",
+            "C\/G",
+            "C\/H",
+            "D",
+            "D7",
+            "G",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "55",
@@ -685,7 +1837,8 @@
             "D7",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "64",
@@ -699,7 +1852,95 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "134",
+        "title": "In the jungle, the mighty jungle",
+        "pageRondoRed": null,
+        "pageRondoBlue": "77",
+        "pageRondoGreen": "77",
+        "pageRondo2017": "77",
+        "interpret": "",
+        "chords": [
+            "A",
+            "E",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "152",
+        "title": "In the town where I was born",
+        "pageRondoRed": "20",
+        "pageRondoBlue": "102",
+        "pageRondoGreen": "20",
+        "pageRondo2017": "20",
+        "interpret": "The Beatles",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "4",
+        "title": "It was 1989, my thoughts were short",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "52",
+        "pageRondo2017": "52",
+        "interpret": "Kid Rock",
+        "chords": [
+            "C",
+            "D",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "150",
+        "title": "It's late in the evening",
+        "pageRondoRed": "244",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "244",
+        "pageRondo2017": "244",
+        "interpret": "Eric Clapton",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "46",
+        "title": "It's not time to make a change",
+        "pageRondoRed": "172",
+        "pageRondoBlue": "72",
+        "pageRondoGreen": "172",
+        "pageRondo2017": "172",
+        "interpret": "Cat Stevens",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "D",
+            "Em",
+            "G",
+            "Hm"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "65",
@@ -716,7 +1957,27 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "25",
+        "title": "Je m'baladais sur l'avenue",
+        "pageRondoRed": null,
+        "pageRondoBlue": "150",
+        "pageRondoGreen": "214",
+        "pageRondo2017": "214",
+        "interpret": "Joe Dassin",
+        "chords": [
+            "A",
+            "Cism",
+            "E",
+            "E7",
+            "Fis",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "66",
@@ -730,7 +1991,43 @@
             "A7",
             "Dm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "166",
+        "title": "JUNG VERDAMMT",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "242",
+        "interpret": "Lo & Leduc",
+        "chords": [
+            "Am",
+            "Dm",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "67",
+        "title": "JUNGE",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "262",
+        "pageRondo2017": "262",
+        "interpret": "\u00c4rzte",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "68",
@@ -744,7 +2041,58 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "36",
+        "title": "Kennet dir das Gschichtli scho",
+        "pageRondoRed": "138",
+        "pageRondoBlue": "48",
+        "pageRondoGreen": "138",
+        "pageRondo2017": "138",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "Em"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "69",
+        "title": "KIOSK",
+        "pageRondoRed": null,
+        "pageRondoBlue": "116",
+        "pageRondoGreen": "116",
+        "pageRondo2017": "116",
+        "interpret": "",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "D7",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "70",
+        "title": "KNOCKIN' ON HEAVEN'S DOOR",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "196",
+        "pageRondo2017": "196",
+        "interpret": "Bob Dylan",
+        "chords": [
+            "Am7",
+            "C",
+            "D",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "71",
@@ -762,7 +2110,8 @@
             "G",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "72",
@@ -776,7 +2125,196 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "74",
+        "title": "LADY IN BLACK",
+        "pageRondoRed": null,
+        "pageRondoBlue": "46",
+        "pageRondoGreen": "206",
+        "pageRondo2017": "206",
+        "interpret": "Kenneth William David Hensley",
+        "chords": [
+            "D",
+            "Em"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "73",
+        "title": "LADY MADONNA",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "224",
+        "pageRondo2017": "224",
+        "interpret": "The Beatles",
+        "chords": [
+            "A",
+            "Am",
+            "C",
+            "D",
+            "Dm",
+            "E",
+            "Esus4",
+            "F",
+            "G",
+            "G7",
+            "Hm7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "105",
+        "title": "Left a good job in the city",
+        "pageRondoRed": "100",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "100",
+        "pageRondo2017": "100",
+        "interpret": "John Cameron Fogerty",
+        "chords": [
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "75",
+        "title": "LEMON TREE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "154",
+        "pageRondoGreen": "154",
+        "pageRondo2017": "153",
+        "interpret": "Fools Garden",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Dm",
+            "E",
+            "Em",
+            "Em7",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "76",
+        "title": "LET IT BE",
+        "pageRondoRed": "238",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "238",
+        "pageRondo2017": "238",
+        "interpret": "The Beatles",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "77",
+        "title": "LIVE IS LIFE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "148",
+        "pageRondoGreen": "148",
+        "pageRondo2017": "148",
+        "interpret": "Opus",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "78",
+        "title": "LOSING MY RELIGION",
+        "pageRondoRed": null,
+        "pageRondoBlue": "110",
+        "pageRondoGreen": "110",
+        "pageRondo2017": "110",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "Dm",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "79",
+        "title": "LOUENESEE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "104",
+        "pageRondoGreen": "200",
+        "pageRondo2017": null,
+        "interpret": "Span",
+        "chords": [
+            "A",
+            "Cism",
+            "D",
+            "E",
+            "Fism",
+            "Fism7",
+            "Gism",
+            "H",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "80",
+        "title": "LUDMILLA",
+        "pageRondoRed": null,
+        "pageRondoBlue": "146",
+        "pageRondoGreen": "240",
+        "pageRondo2017": "240",
+        "interpret": "Patent Ochsner",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "E7",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "162",
+        "title": "LUEGET VO BERG UND TAL",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "120",
+        "interpret": "Volkslied",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": true
     },
     {
         "id": "81",
@@ -791,7 +2329,8 @@
             "F",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "82",
@@ -805,7 +2344,44 @@
             "C",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "83",
+        "title": "MARMOR, STEIN UND EISEN BRICHT",
+        "pageRondoRed": "122",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "122",
+        "pageRondo2017": "122",
+        "interpret": "Musik: Christian Bruhn und Drafi Deutscher Text: G\u00fcnther Loose",
+        "chords": [
+            "A7",
+            "D",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "84",
+        "title": "MEIN FAHRRAD",
+        "pageRondoRed": null,
+        "pageRondoBlue": "42",
+        "pageRondoGreen": "42",
+        "pageRondo2017": "42",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "B",
+            "C",
+            "Dm",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "85",
@@ -819,7 +2395,8 @@
             "A7",
             "D"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "86",
@@ -834,7 +2411,8 @@
             "F",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "87",
@@ -849,7 +2427,112 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "89",
+        "title": "MOONLIGHT SHADOW",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "222",
+        "pageRondo2017": "222",
+        "interpret": "Mike Oldfield",
+        "chords": [
+            "B",
+            "C",
+            "Dm",
+            "F"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "88",
+        "title": "MOONSHADOW",
+        "pageRondoRed": "260",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "260",
+        "pageRondo2017": "260",
+        "interpret": "Cat Stevens",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "E",
+            "Em",
+            "G",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "90",
+        "title": "MORE THAN WORDS",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "250",
+        "pageRondo2017": "250",
+        "interpret": "Extreme",
+        "chords": [
+            "Am7",
+            "C",
+            "Cm",
+            "D",
+            "D\/Fis",
+            "D7",
+            "Em",
+            "Em7",
+            "G",
+            "G7",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "91",
+        "title": "MORNING HAS BROKEN",
+        "pageRondoRed": "176",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "176",
+        "pageRondo2017": "176",
+        "interpret": "Cat Stevens",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "D7",
+            "Dm",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "92",
+        "title": "MRS. ROBINSON",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "252",
+        "pageRondo2017": "252",
+        "interpret": "Simon & Garfunkel",
+        "chords": [
+            "A",
+            "A7",
+            "Am",
+            "C",
+            "D7",
+            "Dm",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "93",
@@ -866,7 +2549,46 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "77",
+        "title": "Nanananana",
+        "pageRondoRed": null,
+        "pageRondoBlue": "148",
+        "pageRondoGreen": "148",
+        "pageRondo2017": "148",
+        "interpret": "Opus",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "84",
+        "title": "Neulich bin ich mit hundertzwanzig",
+        "pageRondoRed": null,
+        "pageRondoBlue": "42",
+        "pageRondoGreen": "42",
+        "pageRondo2017": "42",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "B",
+            "C",
+            "Dm",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "94",
@@ -881,7 +2603,27 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "95",
+        "title": "NOTHING ELSE MATTERS",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "246",
+        "pageRondo2017": "246",
+        "interpret": "Metallica",
+        "chords": [
+            "A",
+            "C",
+            "D",
+            "Em",
+            "G",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "96",
@@ -896,7 +2638,27 @@
             "Em",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "97",
+        "title": "OB-LA-DI, OB-LA-DA",
+        "pageRondoRed": "258",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "258",
+        "pageRondo2017": "258",
+        "interpret": "The Beatles",
+        "chords": [
+            "Am",
+            "C",
+            "C7",
+            "Em",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "98",
@@ -911,7 +2673,8 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "99",
@@ -928,7 +2691,26 @@
             "E7",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "78",
+        "title": "Oh, life is bigger",
+        "pageRondoRed": null,
+        "pageRondoBlue": "110",
+        "pageRondoGreen": "110",
+        "pageRondo2017": "110",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "Dm",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "100",
@@ -943,7 +2725,62 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "34",
+        "title": "On a wagon, bound for market",
+        "pageRondoRed": "174",
+        "pageRondoBlue": "80",
+        "pageRondoGreen": "174",
+        "pageRondo2017": "174",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "101",
+        "title": "ON MY HONOUR",
+        "pageRondoRed": null,
+        "pageRondoBlue": "84",
+        "pageRondoGreen": "86",
+        "pageRondo2017": "86",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "102",
+        "title": "PFADFINDER",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "4",
+        "pageRondo2017": "4",
+        "interpret": "Jacob Stickelberger",
+        "chords": [
+            "A",
+            "E",
+            "E7",
+            "Fis",
+            "H7"
+        ],
+        "alternative": false,
+        "free": true
     },
     {
         "id": "103",
@@ -958,7 +2795,68 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "104",
+        "title": "PROBIER'S MAL MIT GEM\u00dcTLICHKEIT",
+        "pageRondoRed": null,
+        "pageRondoBlue": "156",
+        "pageRondoGreen": "256",
+        "pageRondo2017": "256",
+        "interpret": "",
+        "chords": [
+            "A7",
+            "Am",
+            "Am7",
+            "C",
+            "C7",
+            "D7",
+            "Dm",
+            "Dm7",
+            "F",
+            "F7",
+            "Fm",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "105",
+        "title": "PROUD MARY",
+        "pageRondoRed": "100",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "100",
+        "pageRondo2017": "100",
+        "interpret": "John Cameron Fogerty",
+        "chords": [
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "106",
+        "title": "PUFF THE MAGIC DRAGON",
+        "pageRondoRed": "140",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "140",
+        "pageRondo2017": "140",
+        "interpret": "",
+        "chords": [
+            "A",
+            "Cism",
+            "D",
+            "E7",
+            "Fism",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "107",
@@ -972,7 +2870,8 @@
             "C",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "108",
@@ -986,7 +2885,8 @@
             "A7",
             "Dm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "112",
@@ -1001,7 +2901,95 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "110",
+        "title": "S'ELLI",
+        "pageRondoRed": "228",
+        "pageRondoBlue": "66",
+        "pageRondoGreen": "228",
+        "pageRondo2017": "228",
+        "interpret": "Andr\u00e9 St\u00fcrzinger",
+        "chords": [
+            "A",
+            "D",
+            "Em",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "54",
+        "title": "S'git L\u00fct die w\u00fcrden alletw\u00e4ge nie",
+        "pageRondoRed": null,
+        "pageRondoBlue": "136",
+        "pageRondoGreen": "142",
+        "pageRondo2017": "142",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E7",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "35",
+        "title": "S'sy zwee Fr\u00fcnde",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "31",
+        "pageRondo2017": "31",
+        "interpret": "Mani Matter",
+        "chords": [
+            "Am",
+            "Dm",
+            "E"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "114",
+        "title": "SAG MIR WO DIE BLUMEN SIND",
+        "pageRondoRed": "156",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "156",
+        "pageRondo2017": "156",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "115",
+        "title": "SAILING",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "266",
+        "pageRondo2017": "266",
+        "interpret": "Rod Steward",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Dm",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "116",
@@ -1018,7 +3006,32 @@
             "F",
             "Gm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "90",
+        "title": "Saying I love you",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "250",
+        "pageRondo2017": "250",
+        "interpret": "Extreme",
+        "chords": [
+            "Am7",
+            "C",
+            "Cm",
+            "D",
+            "D\/Fis",
+            "D7",
+            "Em",
+            "Em7",
+            "G",
+            "G7",
+            "Hm"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "117",
@@ -1035,7 +3048,29 @@
             "F",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "118",
+        "title": "SCHARLACHROT",
+        "pageRondoRed": null,
+        "pageRondoBlue": "145",
+        "pageRondoGreen": "145",
+        "pageRondo2017": "144",
+        "interpret": "Patent Ochsner",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E7",
+            "Em",
+            "F",
+            "G",
+            "Gsus4"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "16",
@@ -1051,7 +3086,41 @@
             "G",
             "H7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "119",
+        "title": "SCHWAN",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "270",
+        "pageRondo2017": "270",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "74",
+        "title": "She came to me one morning",
+        "pageRondoRed": null,
+        "pageRondoBlue": "46",
+        "pageRondoGreen": "206",
+        "pageRondo2017": "206",
+        "interpret": "Kenneth William David Hensley",
+        "chords": [
+            "D",
+            "Em"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "121",
@@ -1066,7 +3135,26 @@
             "D7",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "52",
+        "title": "Show me the way to your heart",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "216",
+        "pageRondo2017": "216",
+        "interpret": "Gotthard",
+        "chords": [
+            "B",
+            "C",
+            "Dm",
+            "F",
+            "Gm"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "28",
@@ -1083,7 +3171,8 @@
             "G",
             "G7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "120",
@@ -1098,7 +3187,8 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "121",
@@ -1113,7 +3203,90 @@
             "D7",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "123",
+        "title": "SINGING IN THE RAIN",
+        "pageRondoRed": "230",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "230",
+        "pageRondo2017": "230",
+        "interpret": "Gene Kelly",
+        "chords": [
+            "E",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "123",
+        "title": "Singing In The Rain",
+        "pageRondoRed": "230",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "230",
+        "pageRondo2017": "230",
+        "interpret": "Gene Kelly",
+        "chords": [
+            "E",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "122",
+        "title": "SINGING IN THE RAIN VERSION 2",
+        "pageRondoRed": "231",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "231",
+        "pageRondo2017": "231",
+        "interpret": "",
+        "chords": [
+            "E",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "95",
+        "title": "So close no matter how far",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "246",
+        "pageRondo2017": "246",
+        "interpret": "Metallica",
+        "chords": [
+            "A",
+            "C",
+            "D",
+            "Em",
+            "G",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "135",
+        "title": "Some say love, it is a river",
+        "pageRondoRed": null,
+        "pageRondoBlue": "132",
+        "pageRondoGreen": "132",
+        "pageRondo2017": "132",
+        "interpret": "",
+        "chords": [
+            "A",
+            "Cism",
+            "E",
+            "Gism",
+            "H"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "127",
@@ -1130,7 +3303,8 @@
             "Em",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "129",
@@ -1145,7 +3319,8 @@
             "E",
             "H7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "126",
@@ -1159,7 +3334,197 @@
             "C",
             "Dm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "20",
+        "title": "Take me back to my boat on the river",
+        "pageRondoRed": null,
+        "pageRondoBlue": "106",
+        "pageRondoGreen": "106",
+        "pageRondo2017": "106",
+        "interpret": "Tommy Shaw",
+        "chords": [
+            "A",
+            "Am",
+            "D",
+            "Dm",
+            "E",
+            "E7",
+            "G",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "131",
+        "title": "TAKE ME HOME COUNTRY ROADS",
+        "pageRondoRed": "170",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "170",
+        "pageRondo2017": "170",
+        "interpret": "",
+        "chords": [
+            "C",
+            "D",
+            "D7",
+            "Em",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "132",
+        "title": "TEARS IN HEAVEN",
+        "pageRondoRed": null,
+        "pageRondoBlue": "98",
+        "pageRondoGreen": "98",
+        "pageRondo2017": "98",
+        "interpret": "Eric Clapton",
+        "chords": [
+            "A",
+            "A7",
+            "Am",
+            "Am6",
+            "C",
+            "D",
+            "Dm",
+            "Em",
+            "F",
+            "Fis",
+            "G",
+            "H",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "30",
+        "title": "The Banana Boat Song",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "96",
+        "pageRondo2017": "96",
+        "interpret": "Harry Belafonte",
+        "chords": [
+            "C",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "133",
+        "title": "THE BOXER",
+        "pageRondoRed": "164",
+        "pageRondoBlue": "140",
+        "pageRondoGreen": "164",
+        "pageRondo2017": "164",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "Em",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "89",
+        "title": "The last that ever she saw him",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "222",
+        "pageRondo2017": "222",
+        "interpret": "Mike Oldfield",
+        "chords": [
+            "B",
+            "C",
+            "Dm",
+            "F"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "134",
+        "title": "THE LION SLEEPS TONIGHT (WIMOWEH)",
+        "pageRondoRed": null,
+        "pageRondoBlue": "77",
+        "pageRondoGreen": "77",
+        "pageRondo2017": "77",
+        "interpret": "",
+        "chords": [
+            "A",
+            "E",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "135",
+        "title": "THE ROSE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "132",
+        "pageRondoGreen": "132",
+        "pageRondo2017": "132",
+        "interpret": "",
+        "chords": [
+            "A",
+            "Cism",
+            "E",
+            "Gism",
+            "H"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "163",
+        "title": "THE SOUND OF SILENCE",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "162",
+        "interpret": "Simon & Garfunkel",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "128",
+        "title": "THE STREETS OF LONDON",
+        "pageRondoRed": "146",
+        "pageRondoBlue": "88",
+        "pageRondoGreen": "146",
+        "pageRondo2017": "146",
+        "interpret": "Ralph McTell",
+        "chords": [
+            "Am",
+            "C",
+            "D7",
+            "Em",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "59",
@@ -1176,7 +3541,44 @@
             "E",
             "F"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "136",
+        "title": "THIS LAND IS YOUR LAND",
+        "pageRondoRed": "110",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "62",
+        "pageRondo2017": "62",
+        "interpret": "Woodie Guthrie",
+        "chords": [
+            "C",
+            "D",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "151",
+        "title": "Today is gonna be the day",
+        "pageRondoRed": null,
+        "pageRondoBlue": "114",
+        "pageRondoGreen": "114",
+        "pageRondo2017": "114",
+        "interpret": "Oasis",
+        "chords": [
+            "A",
+            "D",
+            "Dmaj7",
+            "E",
+            "Esus4",
+            "Fism",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "96",
@@ -1191,7 +3593,8 @@
             "Em",
             "H7"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
     },
     {
         "id": "18",
@@ -1207,7 +3610,90 @@
             "D",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "164",
+        "title": "UP IN THE SKY",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "73",
+        "interpret": "77 Bombay Street",
+        "chords": [
+            "A",
+            "D",
+            "E",
+            "Fism"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "138",
+        "title": "W.NUSS VO B\u00dcMPLIZ",
+        "pageRondoRed": null,
+        "pageRondoBlue": "56",
+        "pageRondoGreen": "58",
+        "pageRondo2017": "58",
+        "interpret": "Patent Ochsner",
+        "chords": [
+            "A",
+            "A7",
+            "B",
+            "C",
+            "D",
+            "Dm",
+            "Em",
+            "Em6",
+            "Em7",
+            "F",
+            "Fism",
+            "Hm"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "83",
+        "title": "Weine nicht wenn der Regen f\u00e4llt",
+        "pageRondoRed": "122",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "122",
+        "pageRondo2017": "122",
+        "interpret": "Musik: Christian Bruhn und Drafi Deutscher Text: G\u00fcnther Loose",
+        "chords": [
+            "A7",
+            "D",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "140",
+        "title": "WENI MOL ALT BI",
+        "pageRondoRed": "84",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "84",
+        "pageRondo2017": "84",
+        "interpret": "Franz Hohler",
+        "chords": [
+            "A7",
+            "Am",
+            "C",
+            "C7",
+            "D",
+            "Dm",
+            "E",
+            "F",
+            "Fm",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "141",
@@ -1223,7 +3709,8 @@
             "G",
             "G7"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     },
     {
         "id": "142",
@@ -1237,7 +3724,47 @@
             "C",
             "Dm"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "149",
+        "title": "What would you do if I sang out of tune",
+        "pageRondoRed": "190",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "190",
+        "pageRondo2017": "190",
+        "interpret": "John Lennon \/ Paul McCartney",
+        "chords": [
+            "A",
+            "C",
+            "Cism",
+            "D",
+            "E",
+            "Fis7",
+            "Fism",
+            "H",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "76",
+        "title": "When I find myself in times of trouble",
+        "pageRondoRed": "238",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "238",
+        "pageRondo2017": "238",
+        "interpret": "The Beatles",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "49",
@@ -1255,7 +3782,73 @@
             "G",
             "Hm"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "159",
+        "title": "WHEN I\u2019M SIXTY-FOUR",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": null,
+        "interpret": "The Beatles",
+        "chords": [
+            "A7",
+            "Am",
+            "C",
+            "C7",
+            "D",
+            "Dm",
+            "E",
+            "F",
+            "Fm",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "13",
+        "title": "When the moon",
+        "pageRondoRed": null,
+        "pageRondoBlue": "90",
+        "pageRondoGreen": "92",
+        "pageRondo2017": "92",
+        "interpret": "",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Dm",
+            "E7",
+            "Em",
+            "F",
+            "G",
+            "G\/H",
+            "G7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "144",
+        "title": "WHERE HAVE ALL THE FLOWERS GONE",
+        "pageRondoRed": "157",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "157",
+        "pageRondo2017": "157",
+        "interpret": "Pete Seeger",
+        "chords": [
+            "Am",
+            "C",
+            "F",
+            "G",
+            "G7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "137",
@@ -1272,7 +3865,198 @@
             "D",
             "G"
         ],
-        "alternative": true
+        "alternative": true,
+        "free": true
+    },
+    {
+        "id": "146",
+        "title": "WIND OF CHANGE",
+        "pageRondoRed": null,
+        "pageRondoBlue": "44",
+        "pageRondoGreen": "44",
+        "pageRondo2017": "44",
+        "interpret": "Scorpions",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "E",
+            "E7",
+            "F",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "148",
+        "title": "WISH YOU WERE HERE",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": "268",
+        "pageRondo2017": "268",
+        "interpret": "Leskela",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "D",
+            "E",
+            "E7",
+            "Em",
+            "F",
+            "G",
+            "H",
+            "H7",
+            "Hsus4"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "149",
+        "title": "WITH A LITTLE HELP FROM MY FRIENDS",
+        "pageRondoRed": "190",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "190",
+        "pageRondo2017": "190",
+        "interpret": "John Lennon \/ Paul McCartney",
+        "chords": [
+            "A",
+            "C",
+            "Cism",
+            "D",
+            "E",
+            "Fis7",
+            "Fism",
+            "H",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "147",
+        "title": "Wohin auch das Auge blicket",
+        "pageRondoRed": "198",
+        "pageRondoBlue": "124",
+        "pageRondoGreen": "198",
+        "pageRondo2017": "198",
+        "interpret": "Musik : Rudi Goguel Text : Esser, Johann \/ Langhoff, Wolfgang",
+        "chords": [
+            "Am",
+            "D",
+            "Em",
+            "G",
+            "H7"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "150",
+        "title": "WONDERFUL TONIGHT",
+        "pageRondoRed": "244",
+        "pageRondoBlue": null,
+        "pageRondoGreen": "244",
+        "pageRondo2017": "244",
+        "interpret": "Eric Clapton",
+        "chords": [
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "151",
+        "title": "WONDERWALL",
+        "pageRondoRed": null,
+        "pageRondoBlue": "114",
+        "pageRondoGreen": "114",
+        "pageRondo2017": "114",
+        "interpret": "Oasis",
+        "chords": [
+            "A",
+            "D",
+            "Dmaj7",
+            "E",
+            "Esus4",
+            "Fism",
+            "H7"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "132",
+        "title": "Would you know my name",
+        "pageRondoRed": null,
+        "pageRondoBlue": "98",
+        "pageRondoGreen": "98",
+        "pageRondo2017": "98",
+        "interpret": "Eric Clapton",
+        "chords": [
+            "A",
+            "A7",
+            "Am",
+            "Am6",
+            "C",
+            "D",
+            "Dm",
+            "Em",
+            "F",
+            "Fis",
+            "G",
+            "H",
+            "Hm"
+        ],
+        "alternative": true,
+        "free": false
+    },
+    {
+        "id": "152",
+        "title": "YELLOW SUBMARINE",
+        "pageRondoRed": "20",
+        "pageRondoBlue": "102",
+        "pageRondoGreen": "20",
+        "pageRondo2017": "20",
+        "interpret": "The Beatles",
+        "chords": [
+            "Am",
+            "C",
+            "D",
+            "Em",
+            "G"
+        ],
+        "alternative": false,
+        "free": false
+    },
+    {
+        "id": "153",
+        "title": "YESTERDAY",
+        "pageRondoRed": "178",
+        "pageRondoBlue": "76",
+        "pageRondoGreen": "178",
+        "pageRondo2017": "178",
+        "interpret": "The Beatles",
+        "chords": [
+            "Am",
+            "Am7",
+            "C",
+            "D7",
+            "Dm6",
+            "E7",
+            "E7sus4",
+            "F",
+            "G",
+            "G7",
+            "Hm7"
+        ],
+        "alternative": false,
+        "free": false
     },
     {
         "id": "154",
@@ -1288,7 +4072,43 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "165",
+        "title": "ZWEI CHLINI W\u00d6LF",
+        "pageRondoRed": null,
+        "pageRondoBlue": null,
+        "pageRondoGreen": null,
+        "pageRondo2017": "8",
+        "interpret": "Kinderlied",
+        "chords": [
+            "Am",
+            "C",
+            "Dm",
+            "G7"
+        ],
+        "alternative": false,
+        "free": true
+    },
+    {
+        "id": "69",
+        "title": "\u00c4r sammli f\u00fcr ne guete Zw\u00e4ck",
+        "pageRondoRed": null,
+        "pageRondoBlue": "116",
+        "pageRondoGreen": "116",
+        "pageRondo2017": "116",
+        "interpret": "",
+        "chords": [
+            "A",
+            "A7",
+            "D",
+            "D7",
+            "G"
+        ],
+        "alternative": true,
+        "free": false
     },
     {
         "id": "137",
@@ -1305,6 +4125,7 @@
             "D",
             "G"
         ],
-        "alternative": false
+        "alternative": false,
+        "free": true
     }
 ]
