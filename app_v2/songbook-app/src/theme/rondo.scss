@@ -157,8 +157,10 @@ a.invisible-link {
 
 .rondo-tabs {
   color: white;
+  display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
+  -webkit-justify-content: space-around;
 
   i {
     font-size: 28px;
@@ -193,6 +195,14 @@ page-song {
   .scroll-content {
     padding-top: 44px !important;
     padding-bottom: 44px !important;
+  }
+}
+
+.platform-ios {
+  page-song {
+    .scroll-content {
+      padding-top: 64px !important;
+    }
   }
 }
 
@@ -303,6 +313,8 @@ page-song {
       padding-left: 30px;
       padding-right: 30px;
       font-size: 16px;
+      border: none;
+      background: transparent;
     }
     input::-webkit-input-placeholder {
       color: #CCC;

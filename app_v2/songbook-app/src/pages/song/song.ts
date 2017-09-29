@@ -1,7 +1,11 @@
-import {ApplicationRef, Component, ElementRef, Injector} from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SongHtmlProvider} from "../../providers/song-html/song-html";
 import {AppVersionProvider} from "../../providers/app-version/app-version";
+import {Insomnia} from "@ionic-native/insomnia";
+import { File } from '@ionic-native/file';
+import {NativeAudio} from "@ionic-native/native-audio";
+import {tryCatch} from "rxjs/util/tryCatch";
 
 /**
  * Generated class for the SongPage page.
@@ -9,6 +13,14 @@ import {AppVersionProvider} from "../../providers/app-version/app-version";
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+
+function getWindow(): RondoWindow {
+  return window;
+}
+
+interface RondoWindow extends Window {
+  MidiPlayer?: any;
+}
 
 @IonicPage()
 @Component({
@@ -23,24 +35,28 @@ export class SongPage {
   private songtext: string = '';
   private pageNumbers: string = '';
 
-  private appElementRef: ElementRef;
-
   private scroll = false;
   private scrollTimer = null;
   private lastScrollPosition: number = -1;
+
+  private playingSong: boolean = false;
+  private songInitialized: boolean = false;
+  private songInitializeTriesLeft: number = 20;
+
+  private playingChordId: string = '';
 
   constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
       public songHtmlProvider: SongHtmlProvider,
       public appVersionProvider: AppVersionProvider,
-      private applicationRef: ApplicationRef,
-      private injector: Injector
+      private insomnia: Insomnia,
+      private file: File,
+      private nativeAudio: NativeAudio
   ) {
     this.song = this.navParams.data.song;
     this.loadSongtext();
     this.generatePageNumbersHtml();
-    this.appElementRef = injector.get(applicationRef.componentTypes[0]).elementRef;
   }
 
   loadSongtext(){
@@ -52,6 +68,10 @@ export class SongPage {
 
   ionViewDidLoad() {
     this.exitFullscreen();
+  }
+
+  ionViewDidLeave() {
+    this.stopAutoScroll();
   }
 
   public generatePageNumbersHtml() {
@@ -71,35 +91,52 @@ export class SongPage {
     this.pageNumbers = pages.join('&nbsp;|&nbsp;')
   }
 
-  public onScroll(event: any) {
-    if (event.directionY == 'up') {
-      this.exitFullscreen();
-    } else {
-      this.enterFullscreen();
-    }
-  }
-
-  public exitFullscreen(){
-    document.body.classList.remove('rondo-fullscreen');
-  };
-
-  public enterFullscreen(){
-    document.body.classList.add('rondo-fullscreen');
-  };
-
   public toggleChords(){
     document.body.classList.toggle('rondo-show-chords');
   };
-
-  public playMedia(chord: string) {
-    console.log('play' + chord);
-  }
 
   get app_version() {
     return this.appVersionProvider.getAppVersion();
   }
 
-  // document.querySelector('#rondo_scrollable > .scroll-content').scrollTop
+  // Chords Playback
+  // ------------------------
+
+  public playChord(chord: string) {
+    try {
+      let stopId = this.playingChordId;
+      if (stopId) {
+        this.nativeAudio.stop(stopId).then(
+            () => {
+              this.nativeAudio.unload(stopId);
+            },
+            () => {}
+        );
+      }
+    } catch(e) {
+      console.log(e);
+    }
+
+    let uniqueId = 'rondo_chord_'+chord;
+    this.nativeAudio.preloadComplex(uniqueId, 'assets/songdata/mp3-chords/' + chord + '.mp3', 1, 1, 0).then(
+        () => {
+          this.playingChordId = uniqueId;
+          this.nativeAudio.play(uniqueId, () => {
+             this.nativeAudio.unload(uniqueId);
+          }).then(
+              () => {},
+              (e) => {console.log('play error', uniqueId, e);}
+          );
+        },
+        () => {
+          console.log('preload error', uniqueId);
+        }
+    );
+  }
+
+
+  // Scrolling
+  // ------------------------
 
   private getScrollPosition() {
     let element = document.querySelector('#rondo_scrollable > .scroll-content');
@@ -126,9 +163,7 @@ export class SongPage {
   };
 
   public startAutoScroll(){
-    /*if(window.plugins !== undefined){
-      window.plugins.insomnia.keepAwake();
-    }*/
+    this.insomnia.keepAwake();
     this.scroll = true;
     this.scrollTimer = setInterval(() => {
       if(this.lastScrollPosition == this.getScrollPosition()){
@@ -141,12 +176,104 @@ export class SongPage {
   };
 
   public stopAutoScroll(){
-    /*if(window.plugins !== undefined) {
-      window.plugins.insomnia.allowSleepAgain();
-    }*/
+    this.insomnia.allowSleepAgain();
     this.scroll = false;
     clearInterval(this.scrollTimer);
     this.lastScrollPosition = -1;
+  };
+
+  public onScroll(event: any) {
+    if (event.directionY == 'up') {
+      this.exitFullscreen();
+    } else {
+      this.enterFullscreen();
+    }
+  }
+
+  public exitFullscreen(){
+    document.body.classList.remove('rondo-fullscreen');
+  };
+
+  public enterFullscreen(){
+    document.body.classList.add('rondo-fullscreen');
+  };
+
+  // MIDI
+  // ------------------------
+
+  // Ugly hack:
+  // songInitialized is needed for iOS, because it fails to play sometimes for unknown reason.
+  // if that happens, we just try to play again...
+  public playSong() {
+    // Abort if clicked in browser
+    if (!getWindow().MidiPlayer) {
+      return;
+    }
+    if(!this.songInitialized || !this.playingSong){
+      console.log(getWindow().MidiPlayer.getPathFromAsset("assets/songdata/songs/midi/" + this.song.id + ".mid"));
+      getWindow().MidiPlayer.setup(
+        getWindow().MidiPlayer.getPathFromAsset("assets/songdata/songs/midi/" + this.song.id + ".mid"),
+        ["1", "2", "3", "4", "5"],
+        () => {
+          console.log('RONDO: Song initialized...');
+          //$scope.$apply(() => {
+            this.playingSong = true;
+          //});
+          getWindow().MidiPlayer.play();
+        },
+        (data) => {
+          console.log("RONDO: Error occured:", data);
+          this.playingSong = false;
+        },
+        (data) => {
+          console.log("RONDO: Status Updates: ", data);
+          if(data == 2){
+            // 2: started playing
+            this.songInitialized = true;
+          }
+          if(data == 3){
+            // 3: stopped playing
+            this.stopSong();
+          }
+          if(data <= 0){
+            // 0: someting went wrong
+            if(!this.songInitialized){
+              // try again if we are not yet initialized
+              if(this.songInitializeTriesLeft > 0){
+                this.songInitializeTriesLeft--;
+                this.playSong();
+              }
+            } else {
+              // song stopped manually
+              this.songInitialized = false;
+              this.songInitializeTriesLeft = 20;
+              if(this.playingSong){
+                // song stopped because its at the end (ios only)
+                //$scope.$apply(() => {
+                  this.stopSong();
+                //});
+              }
+            }
+          }
+        }
+      );
+    }
+  };
+
+  public stopSong() {
+    this.playingSong = false;
+    if (getWindow().MidiPlayer) {
+      getWindow().MidiPlayer.stop();
+      getWindow().MidiPlayer.release();
+    }
+  };
+
+  public toggleSong() {
+    if(this.playingSong){
+      this.stopSong();
+    } else {
+      this.playSong();
+    }
   };
 
 }

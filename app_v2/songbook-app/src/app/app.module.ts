@@ -14,6 +14,9 @@ import { SongHtmlProvider } from '../providers/song-html/song-html';
 import { SongIndexProvider } from '../providers/song-index/song-index';
 import {BrowserlinkComponent} from "../components/browserlink/browserlink";
 import { AppVersionProvider } from '../providers/app-version/app-version';
+import {Insomnia} from "@ionic-native/insomnia";
+import { File } from '@ionic-native/file';
+import { NativeAudio } from '@ionic-native/native-audio';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { AppVersionProvider } from '../providers/app-version/app-version';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SongHtmlProvider,
     SongIndexProvider,
-    AppVersionProvider
+    AppVersionProvider,
+    Insomnia,
+    File,
+    NativeAudio
   ]
 })
 export class AppModule {}

@@ -41,7 +41,7 @@
 
 <ion-content *ngIf="section == 'chords'" padding (click)="exitFullscreen()">
     <div class="chord-list">
-      <i *ngFor="let chord of song.chords" class="rondo-icon-chord-{{chord}}" (click)="playMedia(chord)"></i>
+      <i *ngFor="let chord of song.chords" class="rondo-icon-chord-{{chord}}" (click)="playChord(chord)"></i>
     </div>
 </ion-content>
 
@@ -55,7 +55,7 @@
       <span (click)="section='text'"><i class="rondo-icon-search"></i></span>
       <span (click)="section='chords'"><i class="rondo-icon-library"></i></span>
       <span (click)="section='notes'"><i class="rondo-icon-notes"></i></span>
-      <span (click)="playMidi()"><i class="rondo-icon-midi"></i></span>
+      <span (click)="toggleSong()"><i class="rondo-icon-midi" [ngClass]="{'midi-playing': playingSong}"></i></span>
     </div>
   </ion-toolbar>
 </ion-footer>

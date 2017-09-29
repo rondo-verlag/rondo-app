@@ -3,7 +3,7 @@
     <div class="rondo-bar-search">
         <label class="rondo-bar-search__input">
             <i class="icon rondo-icon-search placeholder-icon"></i>
-            <input type="search" [(ngModel)]="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
+            <input type="text" [(ngModel)]="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
             <span class="clear-search" [hidden]="!query" (click)="clearSearch()">
                 <ion-icon name="close-circle"></ion-icon>
             </span>
