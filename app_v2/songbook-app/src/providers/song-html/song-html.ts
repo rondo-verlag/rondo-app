@@ -10,10 +10,11 @@ export class SongHtmlProvider {
   constructor(public http: Http) {}
 
   public load(id: string) {
-    if (this.data[id]) {
+    // TODO: fix load from cache
+    /*if (this.data[id]) {
       // already loaded data
       return Promise.resolve(this.data);
-    }
+    }*/
 
     // don't have the data yet
     return new Promise(resolve => {
@@ -25,7 +26,7 @@ export class SongHtmlProvider {
         .subscribe(data => {
           // we've got back the raw data, now generate the core schedule data
           // and save the data for later reference
-          this.data[id] = data;
+          //this.data[id] = data;
           resolve(data);
         });
     });

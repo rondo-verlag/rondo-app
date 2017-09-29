@@ -5,15 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { SonglistPage } from '../pages/songlist/songlist';
 
-let appVersion: any;
-let window: {
-  cordova: Cordova;
-};
-
-interface Cordova {
-  getAppVersion(callback: Function): Function;
-}
-
 @Component({
   templateUrl: 'app.html'
 })
@@ -26,13 +17,8 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-/*
-      if (window.cordova){
-        window.cordova.getAppVersion(function(version) {
-          appVersion = version;
-        });
-      }
-      */
+
+      // TODO: init app version
     });
   }
 }

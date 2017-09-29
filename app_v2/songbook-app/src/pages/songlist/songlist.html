@@ -1,13 +1,19 @@
 <ion-header>
-  <ion-navbar class="rondo-bar-search">
-    <label class="item-input-wrapper">
-          <i class="icon rondo-icon-search placeholder-icon"></i>
-          <input type="search" [(ngModel)]="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
+  <ion-navbar>
+    <div class="rondo-bar-search">
+        <label class="rondo-bar-search__input">
+            <i class="icon rondo-icon-search placeholder-icon"></i>
+            <input type="search" [(ngModel)]="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
+            <span class="clear-search" [hidden]="!query" (click)="clearSearch()">
+                <ion-icon name="close-circle"></ion-icon>
+            </span>
         </label>
-        <span class="clear-search" [hidden]="!query" (click)="clearSearch()"><ion-icon name="close-circle"></ion-icon></span>
-        <span class="about-icon" [navPush]="aboutPage">
-          <i class="rondo-icon-logo"></i>
-        </span>
+        <div class="rondo-bar-search__logo">
+            <span class="about-icon" [navPush]="aboutPage">
+                <i class="rondo-icon-logo"></i>
+            </span>
+        </div>
+    </div>
   </ion-navbar>
 </ion-header>
 

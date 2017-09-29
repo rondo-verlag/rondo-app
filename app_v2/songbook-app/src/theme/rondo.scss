@@ -32,11 +32,6 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
-::-webkit-input-placeholder {
-  color: #333;
-  font-size: 16px;
-}
-
 a {
   color: inherit;
   text-decoration: underline;
@@ -45,11 +40,6 @@ a {
 a.invisible-link {
   text-decoration: none;
   color: inherit;
-}
-
-.bar {
-  border-bottom: 1px solid transparent;
-  background: none;
 }
 
 .item-block {
@@ -165,63 +155,44 @@ a.invisible-link {
   }
 }
 
-.popover.chord-popover {
-  width: 80px;
-  height: 100px;
-  background: #dddddd;
-  color: #000000;
+.rondo-tabs {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
 
-  .content {
-    padding: 0.5em;
-    text-align: center;
-    font-size: 1.3em;
-
-    img {
-      margin-left: 5px;
-    }
+  i {
+    font-size: 28px;
   }
 }
 
 .rondo-fullscreen {
-  ion-header-bar {
+  ion-header {
     top: -80px;
   }
-  .tabs {
+  ion-footer {
     bottom: -80px;
   }
 }
 
-.header-placeholder {
-  height: 44px;
-}
-.tabs-placeholder {
-  height: 49px;
-}
-
-.bar .back-button span.back-text {
-  display: none;
-}
-
-.song-detail {
-  .nav-bar {
+page-song {
+  ion-header {
     -webkit-transition: top 0.5s;
     transition: top 0.5s;
   }
 
-  .tabs {
+  ion-footer {
     -webkit-transition: bottom 0.5s;
     transition: bottom 0.5s;
   }
 
-  .tab-item {
-    opacity: 1;
+  .scroll-content,
+  .fixed-content {
+    margin: 0 !important;
   }
 
-  .has-header {
-    top: 0;
-  }
-  .has-tabs {
-    bottom: 0;
+  .scroll-content {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
   }
 }
 
@@ -240,24 +211,6 @@ a.invisible-link {
 
 .rondo-back-button {
   font-size: 28px !important;
-}
-
-.bar-header {
-  background: black;
-}
-
-.platform-ios.platform-cordova:not(.fullscreen) .has-header-placeholder {
-  .has-header,
-  .has-subheader
-  .bar-header,
-  .bar-subheader {
-    top: 20px;
-    position: absolute;
-  }
-}
-
-.tabs.tabs-light {
-  background: black;
 }
 
 .chord-list {
@@ -299,9 +252,6 @@ a.invisible-link {
     color: orange;
   }
 }
-ion-content .page-numbers {
-  display: none;
-}
 
 .midi-playing {
   color: #555 !important;
@@ -313,6 +263,19 @@ ion-content .page-numbers {
 
 // Song List & Search
 .rondo-bar-search {
+  display: flex;
+  justify-content: space-between;
+
+  .rondo-bar-search__input {
+    flex: 1;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+
+  .rondo-bar-search__logo {
+    width: 50px;
+  }
+
   label {
     background: #4A4A4A;
     border: 0;
@@ -323,6 +286,9 @@ ion-content .page-numbers {
     .placeholder-icon {
       color: #CCC;
       font-size: 140%;
+      position: absolute;
+      margin-top: 6px;
+      margin-left: 6px;
     }
 
     .placeholder-icon:first-child {
@@ -332,9 +298,16 @@ ion-content .page-numbers {
     input {
       color: #FFF;
       letter-spacing: 1px;
+      width: 100%;
+      padding: 5px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 16px;
     }
     input::-webkit-input-placeholder {
       color: #CCC;
+      //font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
+      font-size: 16px;
     }
   }
 
@@ -343,7 +316,7 @@ ion-content .page-numbers {
     font-size: 140%;
     position: absolute;
     top: 7px;
-    right: 60px;
+    right: 56px;
     display: block;
     height: 30px;
     width: 30px;

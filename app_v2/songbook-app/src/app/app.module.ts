@@ -13,6 +13,7 @@ import {SongPage} from "../pages/song/song";
 import { SongHtmlProvider } from '../providers/song-html/song-html';
 import { SongIndexProvider } from '../providers/song-index/song-index';
 import {BrowserlinkComponent} from "../components/browserlink/browserlink";
+import { AppVersionProvider } from '../providers/app-version/app-version';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {BrowserlinkComponent} from "../components/browserlink/browserlink";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SongHtmlProvider,
-    SongIndexProvider
+    SongIndexProvider,
+    AppVersionProvider
   ]
 })
 export class AppModule {}

@@ -12,7 +12,7 @@
 </ion-header>
 
 
-<ion-content *ngIf="section == 'text'">
+<ion-content *ngIf="section == 'text'" id="rondo_scrollable" (ionScroll)="onScroll($event)" (click)="exitFullscreen()">
   <div>
     <img [src]="'/assets/songdata/songs/images/' + song.id + '.gif'" class="song-image"/>
     <div padding>
@@ -32,14 +32,14 @@
 </ion-content>
 
 
-<ion-content *ngIf="section == 'notes'" padding>
+<ion-content *ngIf="section == 'notes'" (click)="exitFullscreen()">
   <ion-scroll class="has-header" zooming="true" delegate-handle="notesscroller" direction="xy" style="width: 100%; height: 100%">
     <img id="page" [src]="'/assets/songdata/songs/notes/'+song.id+'.png'" style="width: 100%">
   </ion-scroll>
 </ion-content>
 
 
-<ion-content *ngIf="section == 'chords'" padding>
+<ion-content *ngIf="section == 'chords'" padding (click)="exitFullscreen()">
     <div class="chord-list">
       <i *ngFor="let chord of song.chords" class="rondo-icon-chord-{{chord}}" (click)="playMedia(chord)"></i>
     </div>
@@ -48,8 +48,14 @@
 
 <ion-footer>
   <ion-toolbar>
-    <a (click)="section='text'">Text</a>
-    <a (click)="section='chords'">Akkorde</a>
-    <a (click)="section='notes'">Noten</a>
+    <div class="rondo-tabs">
+      <span *ngIf="!scroll" (click)="startAutoScroll()"><i class="rondo-icon-play"></i></span>
+      <span *ngIf="scroll"  (click)="stopAutoScroll()"><i class="rondo-icon-stop"></i></span>
+      <span (click)="toggleChords()"><i class="rondo-icon-chords"></i></span>
+      <span (click)="section='text'"><i class="rondo-icon-search"></i></span>
+      <span (click)="section='chords'"><i class="rondo-icon-library"></i></span>
+      <span (click)="section='notes'"><i class="rondo-icon-notes"></i></span>
+      <span (click)="playMidi()"><i class="rondo-icon-midi"></i></span>
+    </div>
   </ion-toolbar>
 </ion-footer>
