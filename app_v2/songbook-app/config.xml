@@ -16,6 +16,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <access origin="*" />
+    <access launch-external="yes" origin="mailto:*" />
+    <access launch-external="yes" origin="http://*" />
+    <access launch-external="yes" origin="https://*" />
+    <allow-navigation href="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
