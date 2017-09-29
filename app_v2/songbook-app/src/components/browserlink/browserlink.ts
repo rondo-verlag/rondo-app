@@ -1,7 +1,9 @@
 import {Component, Input} from '@angular/core';
 import { Platform} from "ionic-angular";
 
-var cordova: any;
+function getWindow(): Window {
+  return window;
+}
 
 /**
  * Generated class for the BrowserlinkComponent component.
@@ -21,7 +23,7 @@ export class BrowserlinkComponent {
 
   public launchBrowser() {
     this.platform.ready().then(() => {
-        cordova.InAppBrowser.open(this.url, "_system", "location=true");
+        getWindow().open(this.url, '_system');
     });
   }
 
