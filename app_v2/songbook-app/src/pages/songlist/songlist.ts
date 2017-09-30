@@ -3,6 +3,7 @@ import {NavController} from 'ionic-angular';
 import { AboutPage} from "../about/about";
 import {SongPage} from "../song/song";
 import {SongIndexProvider} from "../../providers/song-index/song-index";
+import {AppStateProvider} from "../../providers/app-state/app-state";
 
 @Component({
   selector: 'page-songlist',
@@ -15,14 +16,21 @@ export class SonglistPage {
   private query: string = '';
   private aboutPage: any;
   private songPage: any;
+  private hasBought: boolean = false;
 
   constructor(
       public navCtrl: NavController,
-      public songIndexProvider: SongIndexProvider
+      public songIndexProvider: SongIndexProvider,
+      public appState: AppStateProvider
   ) {
     this.loadSongs();
     this.aboutPage = AboutPage;
     this.songPage = SongPage;
+
+    this.hasBought = this.appState.getHasBought();
+        this.appState.hasBought.subscribe((val) => {
+            this.hasBought = val;
+        })
   }
 
   loadSongs(){

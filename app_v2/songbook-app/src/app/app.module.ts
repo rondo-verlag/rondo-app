@@ -17,6 +17,12 @@ import { AppVersionProvider } from '../providers/app-version/app-version';
 import {Insomnia} from "@ionic-native/insomnia";
 import { File } from '@ionic-native/file';
 import { NativeAudio } from '@ionic-native/native-audio';
+import { InAppPurchase } from '@ionic-native/in-app-purchase';
+import { PurchaseProvider } from '../providers/purchase/purchase';
+import { NativeStorage } from '@ionic-native/native-storage';
+import { AppStateProvider } from '../providers/app-state/app-state';
+import {FreePipe} from "../pipes/free/free";
+
 
 @NgModule({
   declarations: [
@@ -25,6 +31,7 @@ import { NativeAudio } from '@ionic-native/native-audio';
     AboutPage,
     SongPage,
     SongSearchPipe,
+    FreePipe,
     BrowserlinkComponent
   ],
   imports: [
@@ -48,7 +55,11 @@ import { NativeAudio } from '@ionic-native/native-audio';
     AppVersionProvider,
     Insomnia,
     File,
-    NativeAudio
+    NativeAudio,
+    InAppPurchase,
+    PurchaseProvider,
+    NativeStorage,
+    AppStateProvider
   ]
 })
 export class AppModule {}

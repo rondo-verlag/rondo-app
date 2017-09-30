@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Rondo",
+  "short_name": "Rondo",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
@@ -8,6 +8,7 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "#4e8ef7",
-  "theme_color": "#4e8ef7"
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "play_store_key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApWfsxAHxpw4cxuXBsheSXEnwY47tVxWOwlkWAke2Zp2ik/ugZD+rrN+SdSAtOCcAIc78pFOxXzOA058k6R8UDZ0/2qFriKVdZixJ83TIpX3KKUHGd1FoYbPqw2TVUrPpRzvV4D8ATb/tJqTU0Fn68mbRMrra3C72sGq0sT/znKlpfsQ1W9tM+7JF3tdm42VJs2Rs+oRf6tduTFVWAfb4ni5ffdkGbsc1NLnIufG3bYIlz090dvjyvbBHP4lMQidYm/SrcUZEYbVSIjRPhEUsRURsIf/feJfeIsFg7/916oTsmvxeJ4gbiiJ0FLf2Khy12EEWNu08bZqKhzYsvygl8QIDAQAB"
 }

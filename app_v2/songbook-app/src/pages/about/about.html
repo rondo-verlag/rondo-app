@@ -16,8 +16,16 @@
   <div padding>
     <b>Das Rondo immer und überall dabei</b><br>
     <br>
-    In dieser App sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können zu einem späteren Zeitpunkt via In-App-Kauf dazugekauft werden.<br>
-    <br>
+    In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br>
+
+    <div *ngIf="!hasBought">
+      <span (click)="buyFullversion()" class="rondo-buy-button">Vollversion kaufen 5.00</span>
+    </div>
+    <div *ngIf="hasBought" class="rondo-has-bought">
+      <br>
+      Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!
+    </div>
+
     &mdash;<br>
     Der Rondo Verlag gibt seit den 1980er-Jahren das Schweizer Pfadi-Liederbuch „Rondo“ heraus, das inzwischen in mehreren Auflagen und nun als App vorliegt. Daneben unterstützt der Verein Projekte, die Musik von und mit Jugendlichen fördern, eine Breitenwirkung entfalten und den Grundsätzen der Pfadi entsprechen.
 
@@ -58,5 +66,13 @@
     &mdash;<br>
     &copy; 2017 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{app_version}}
     <br>
+
+    <div>
+      <br>
+      <b>DEBUG:</b><br>
+      <a (click)="purchaseProvider.hasBought()">Kauf wiederherstellen</a>
+      <a (click)="toggleHasBought()">gekauft: {{hasBought}}</a>
+    </div>
+
   </div>
 </ion-content>
