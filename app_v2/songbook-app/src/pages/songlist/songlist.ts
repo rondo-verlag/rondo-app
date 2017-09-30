@@ -26,7 +26,7 @@ export class SonglistPage {
   }
 
   loadSongs(){
-    this.songIndexProvider.load()
+    this.songIndexProvider.loadIndex()
     .then((data: ISong[]) => {
       this.songs = data;
     });

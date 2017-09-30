@@ -15,7 +15,7 @@ export class SongIndexProvider {
 
   constructor(public http: Http) {}
 
-  public load() {
+  public loadIndex(): Promise<ISong[]> {
     if (this.data) {
       // already loaded data
       return Promise.resolve(this.data);
@@ -36,5 +36,22 @@ export class SongIndexProvider {
         });
     });
   }
+
+  public loadSong(id: string): Promise<ISong> {
+    return new Promise(resolve => {
+      this.loadIndex().then((index) => {
+        // find song entry by id
+        index.some((song) => {
+          if (song.alternative == false && song.id == id) {
+            resolve(song);
+            return true;
+          }
+          return false;
+        });
+      })
+    })
+  }
+
+
 
 }

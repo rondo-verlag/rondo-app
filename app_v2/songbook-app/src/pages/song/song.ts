@@ -4,6 +4,7 @@ import {SongHtmlProvider} from "../../providers/song-html/song-html";
 import {AppVersionProvider} from "../../providers/app-version/app-version";
 import {Insomnia} from "@ionic-native/insomnia";
 import {NativeAudio} from "@ionic-native/native-audio";
+import {SongIndexProvider} from "../../providers/song-index/song-index";
 
 /**
  * Generated class for the SongPage page.
@@ -47,20 +48,29 @@ export class SongPage {
       public navCtrl: NavController,
       public navParams: NavParams,
       public songHtmlProvider: SongHtmlProvider,
+      public songIndexProvider: SongIndexProvider,
       public appVersionProvider: AppVersionProvider,
       private insomnia: Insomnia,
       private nativeAudio: NativeAudio
   ) {
     this.song = this.navParams.data.song;
     this.loadSongtext();
+    // load song info because maybe an alternative was clicked
+    this.loadSongInfo(this.song.id);
     this.generatePageNumbersHtml();
   }
 
-  loadSongtext(){
+  public loadSongtext(){
     this.songHtmlProvider.load(this.song.id)
     .then((data: any) => {
       this.songtext = data;
     });
+  }
+
+  public loadSongInfo(id: string) {
+    this.songIndexProvider.loadSong(id).then((song) => {
+      this.song = song;
+    })
   }
 
   ionViewDidLoad() {
@@ -70,6 +80,7 @@ export class SongPage {
   ionViewDidLeave() {
     this.stopAutoScroll();
     this.stopSong();
+    this.exitFullscreen();
   }
 
   public generatePageNumbersHtml() {
