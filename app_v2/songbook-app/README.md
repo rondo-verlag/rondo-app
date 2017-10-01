@@ -1,26 +1,56 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+songbook-app
+============
 
-## How to use this template
+## Workspace setup
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+Requirements: Node.JS with NPM, iOS SDK and Android SDK.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
+Install Ionic and Cordova globally:
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+npm install -g ionic
+npm install -g cordova
 ```
 
-Then, to run it, cd into `myBlank` and run:
-
+Install JavaScript Libraries:
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+npm install
 ```
 
-Substitute ios for android if not on a Mac.
+Now you can run the app in your browser:
+```bash
+ionic serve
+```
 
+
+## Useful commands
+
+Update Ionic:
+
+    sudo npm install -g ionic
+    ionic lib update
+    
+    sudo npm update -g ionic
+    sudo npm update -g cordova
+
+updates a project to use the latest version of cordova (3.4.0 to 3.4.1):
+
+    cordova platform update [platform] 
+
+Upload App to Ionic View:
+
+    ionic upload
+
+Building Android APK:
+
+    ionic cordova build android
+
+Generate Android Release Version:
+
+    npm run android-release
+
+Compile iOS App for Test Flight:
+
+    ionic cordova build ios
+    Then open Project in XCode (/platforms/ios/Rondo.xcodeproj)
+    XCode > Product > Archive and then upload the App
+    Manage Apps on https://itunesconnect.apple.com

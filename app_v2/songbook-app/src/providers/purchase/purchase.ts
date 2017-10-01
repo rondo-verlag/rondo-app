@@ -29,6 +29,7 @@ export class PurchaseProvider {
                         .then(() => {
                             console.log('RONDO product was successfully purchased!');
                             this.appState.setHasBought(true);
+                            resolve();
                         })
                         .catch((err) => {
                             console.log(JSON.stringify(err));
@@ -53,10 +54,12 @@ export class PurchaseProvider {
                 } else {
                     this.appState.setHasBought(false);
                 }
+                resolve();
             })
             .catch((err) => {
                 console.log(JSON.stringify(err));
-                this.appState.setHasBought(false);
+                //this.appState.setHasBought(false);
+                resolve();
             });
         });
     }

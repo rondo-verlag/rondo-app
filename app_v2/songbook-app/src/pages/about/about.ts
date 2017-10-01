@@ -40,7 +40,7 @@ export class AboutPage {
 
     public buyFullversion() {
         const loading = this.loadingCtrl.create({
-            content: 'Vollversion kaufen ...'
+            content: 'Vollversion kaufen'
         });
         loading.present();
 

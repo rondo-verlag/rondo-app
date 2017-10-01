@@ -30,6 +30,10 @@ plugins/ios.json
 www/
 $RECYCLE.BIN/
 
+keystore/*.keystore
+build/*.apk
+
+
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
