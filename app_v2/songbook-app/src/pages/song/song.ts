@@ -37,6 +37,8 @@ export class SongPage {
     private scroll = false;
     private scrollTimer = null;
     private lastScrollPosition: number = -1;
+    private autoScrollInQueue: boolean = false;
+    private sameLastScrollPositionCounter: number = 0;
 
     private playingSong: boolean = false;
     private songInitialized: boolean = false;
@@ -137,12 +139,20 @@ export class SongPage {
 
     public startAutoScroll() {
         this.insomnia.keepAwake();
+        this.enterFullscreen();
         this.scroll = true;
+        this.sameLastScrollPositionCounter = 10;
         this.scrollTimer = setInterval(() => {
-            if (this.lastScrollPosition == this.getScrollPosition()) {
+            if (this.sameLastScrollPositionCounter <= 0) {
                 this.stopAutoScroll();
             } else {
+                if (this.lastScrollPosition == this.getScrollPosition()) {
+                    this.sameLastScrollPositionCounter--;
+                } else {
+                    this.sameLastScrollPositionCounter = 10;
+                }
                 this.lastScrollPosition = this.getScrollPosition();
+                this.autoScrollInQueue = true;
                 this.scrollBy(1);
             }
         }, this.getScrollTimeout());
@@ -153,14 +163,18 @@ export class SongPage {
         this.scroll = false;
         clearInterval(this.scrollTimer);
         this.lastScrollPosition = -1;
+        this.exitFullscreen();
     };
 
     public onScroll(event: any) {
         if (event.directionY == 'up') {
             this.exitFullscreen();
         } else {
-            this.enterFullscreen();
+            if (!this.scroll || !this.autoScrollInQueue) {
+                this.enterFullscreen();
+            }
         }
+        this.autoScrollInQueue = false;
     }
 
     public exitFullscreen() {
