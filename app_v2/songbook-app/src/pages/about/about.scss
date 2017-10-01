@@ -1,3 +1,19 @@
 page-about {
+  .about-page {
+    line-height: 20px;
+  }
 
+  .rondo-buy-button {
+    background: darkorange;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 12px 0;
+    font-weight: bold;
+  }
+
+  .rondo-has-bought {
+    color: darkorange;
+  }
 }
