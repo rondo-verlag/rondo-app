@@ -1,6 +1,6 @@
 {
   "name": "songbook-app",
-  "app_id": "",
+  "app_id": "fff006c6",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
