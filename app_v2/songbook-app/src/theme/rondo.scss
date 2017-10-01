@@ -374,6 +374,18 @@ page-song {
   }
 }
 
+.platform-android {
+  .rondo-bar-search .clear-search {
+    padding-top: 9px;
+  }
+}
+
+.platform-ios {
+  .rondo-bar-search .clear-search {
+    padding-top: 25px;
+  }
+}
+
 .rondo-list {
   .item {
     border: none;
