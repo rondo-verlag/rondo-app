@@ -28,6 +28,7 @@ interface RondoWindow extends Window {
 })
 export class SongPage {
 
+    // tslint:disable-next-line
     private section: string = 'text';
 
     private song: ISong;

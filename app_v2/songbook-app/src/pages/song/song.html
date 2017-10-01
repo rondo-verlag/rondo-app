@@ -12,7 +12,7 @@
 </ion-header>
 
 
-<ion-content *ngIf="section == 'text'" id="rondo_scrollable" (ionScroll)="onScroll($event)" (click)="exitFullscreen()">
+<ion-content *ngIf="section == 'text'" id="rondo_scrollable" (ionScroll)="onScroll($event)" (click)="exitFullscreen()" [ngClass]="{'scrolling': scroll}">
   <div>
     <img [src]="'assets/songdata/songs/images/' + song.id + '.gif'" class="song-image"/>
     <div padding>

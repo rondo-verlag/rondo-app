@@ -102,6 +102,11 @@ page-song {
     }
   }
 
+  // disable momentum effect during auto scroll to prevent flickering
+  .scrolling .scroll-content {
+    -webkit-overflow-scrolling: auto;
+  }
+
   .copyright {
     font-size: 60%;
     color: #444;
