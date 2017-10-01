@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import 'rxjs/add/operator/map';
 import {InAppPurchase} from "@ionic-native/in-app-purchase";
 import {AppStateProvider} from "../app-state/app-state";
@@ -9,10 +9,9 @@ export class PurchaseProvider {
     //readonly productId = 'android.test.purchased';
     readonly productId = 'ch.rondo.songbookapp.fullversion';
 
-    constructor(
-        private inAppPurchase: InAppPurchase,
-        public appState: AppStateProvider
-    ) {}
+    constructor(private inAppPurchase: InAppPurchase,
+                public appState: AppStateProvider) {
+    }
 
     public buy() {
         return new Promise((resolve, reject) => {
@@ -35,7 +34,8 @@ export class PurchaseProvider {
                             console.log(JSON.stringify(err));
                             reject(err);
                         });
-                }).catch((err) => {
+                })
+                .catch((err) => {
                     console.log(JSON.stringify(err));
                     reject(err);
                 })
@@ -45,22 +45,24 @@ export class PurchaseProvider {
     public hasBought(): Promise<boolean> {
         return new Promise((resolve) => {
             this.inAppPurchase
-            .restorePurchases()
-            .then((data) => {
-                console.log('RONDO restore purchases:', data);
-                // check if there are any purchases with state == 0
-                if (data.length > 0 && data.some((val) => { return val.state == 0})) {
-                    this.appState.setHasBought(true);
-                } else {
-                    this.appState.setHasBought(false);
-                }
-                resolve();
-            })
-            .catch((err) => {
-                console.log(JSON.stringify(err));
-                //this.appState.setHasBought(false);
-                resolve();
-            });
+                .restorePurchases()
+                .then((data) => {
+                    console.log('RONDO restore purchases:', data);
+                    // check if there are any purchases with state == 0
+                    if (data.length > 0 && data.some((val) => {
+                            return val.state == 0
+                        })) {
+                        this.appState.setHasBought(true);
+                    } else {
+                        this.appState.setHasBought(false);
+                    }
+                    resolve();
+                })
+                .catch((err) => {
+                    console.log(JSON.stringify(err));
+                    //this.appState.setHasBought(false);
+                    resolve();
+                });
         });
     }
 }
