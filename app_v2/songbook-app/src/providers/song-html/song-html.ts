@@ -10,7 +10,7 @@ export class SongHtmlProvider {
     constructor(public http: Http) {
     }
 
-    public load(id: string) {
+    public load(id: number) {
         // TODO: fix load from cache
         /*if (this.data[id]) {
           // already loaded data

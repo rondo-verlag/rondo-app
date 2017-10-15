@@ -23,11 +23,14 @@ class SongIndex {
 	public function getAppSongIds() {
 		return $this->DB->fetchAll("SELECT id
 			FROM songs
-			WHERE releaseApp2017 = 1");
+			WHERE releaseApp2017 = 1
+			ORDER BY cast(pageRondo2017 as unsigned) ASC");
 	}
 
 	public function getSongIndexForApp(){
 		$index = [];
+		$slidesFree = [];
+		$slidesPaid = [];
 
 		$songs = $this->getAppSongIds();
 
@@ -75,6 +78,13 @@ class SongIndex {
 					];
 				}
 			}
+
+			// slides
+			$slidesPaid[] = $song['id'];
+			if ($isFree) {
+				$slidesFree[] = $song['id'];
+			}
+
 		}
 		usort($index, function($a, $b) {
 			if (strtoupper($a['title']) < strtoupper($b['title'])) {
@@ -83,6 +93,10 @@ class SongIndex {
 				return 1;
 			}
 		});
-		return $index;
+		return [
+			'slidesFree' => $slidesFree,
+			'slidesPaid' => $slidesPaid,
+			'list' => $index,
+		];
 	}
 }

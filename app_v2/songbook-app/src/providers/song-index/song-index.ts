@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SongIndexProvider {
 
-    private data: ISong[] = null;
+    private data: ISongindex = null;
 
     constructor(public http: Http) {
     }
@@ -13,9 +13,36 @@ export class SongIndexProvider {
     public loadIndex(): Promise<ISong[]> {
         if (this.data) {
             // already loaded data
-            return Promise.resolve(this.data);
+            return Promise.resolve(this.data.list);
         }
+        return new Promise(resolve => {
+            this._loadIndex().then(() => {
+                resolve(this.data.list);
+            })
+        });
+    }
 
+    public loadSlides(paid: boolean): Promise<number[]> {
+        if (this.data) {
+            // already loaded data
+            if (paid) {
+                return Promise.resolve(this.data.slidesPaid);
+            } else {
+                return Promise.resolve(this.data.slidesFree);
+            }
+        }
+        return new Promise(resolve => {
+            this._loadIndex().then(() => {
+                if (paid) {
+                    resolve(this.data.slidesPaid);
+                } else {
+                    resolve(this.data.slidesFree);
+                }
+            })
+        });
+    }
+
+    private _loadIndex(): Promise<ISongindex> {
         return new Promise(resolve => {
             this.http.get('assets/songdata/songs/song-index.json')
                 .map(res => res.json())
@@ -26,7 +53,7 @@ export class SongIndexProvider {
         });
     }
 
-    public loadSong(id: string): Promise<ISong> {
+    public loadSong(id: number): Promise<ISong> {
         return new Promise(resolve => {
             this.loadIndex().then((index) => {
                 // find song entry by id

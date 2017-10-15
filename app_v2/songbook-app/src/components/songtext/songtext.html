@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <img [src]="'assets/songdata/songs/images/' + id + '.gif'" *ngIf="id > 0" class="song-image"/>
+    <div padding>
+      <h3 class="song-title">{{song.title}}</h3>
+      <div class="songtext">
+        <div [innerHTML]="songtext"></div>
+        <br>
+        <div class="copyright" *ngIf="song.license">{{song.license}}</div>
+        <div class="report-error-link">
+          &mdash;<br>
+          <browserlink url="mailto:app@rondo-verlag.ch?subject=Feedback zum Lied {{song.title}} (Rondo App {{app_version}})">
+            Fehler gefunden?
+          </browserlink>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

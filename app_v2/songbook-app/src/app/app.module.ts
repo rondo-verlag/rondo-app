@@ -13,6 +13,7 @@ import {SongPage} from "../pages/song/song";
 import {SongHtmlProvider} from '../providers/song-html/song-html';
 import {SongIndexProvider} from '../providers/song-index/song-index';
 import {BrowserlinkComponent} from "../components/browserlink/browserlink";
+import {SongtextComponent} from "../components/songtext/songtext";
 import {AppVersionProvider} from '../providers/app-version/app-version';
 import {Insomnia} from "@ionic-native/insomnia";
 import {File} from '@ionic-native/file';
@@ -32,7 +33,8 @@ import {FreePipe} from "../pipes/free/free";
         SongPage,
         SongSearchPipe,
         FreePipe,
-        BrowserlinkComponent
+        BrowserlinkComponent,
+        SongtextComponent
     ],
     imports: [
         BrowserModule,

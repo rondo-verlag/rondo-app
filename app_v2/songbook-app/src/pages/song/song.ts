@@ -1,10 +1,10 @@
-import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {SongHtmlProvider} from "../../providers/song-html/song-html";
+import {Component, ViewChild} from '@angular/core';
+import {IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
 import {AppVersionProvider} from "../../providers/app-version/app-version";
 import {Insomnia} from "@ionic-native/insomnia";
 import {NativeAudio} from "@ionic-native/native-audio";
 import {SongIndexProvider} from "../../providers/song-index/song-index";
+import {AppStateProvider} from "../../providers/app-state/app-state";
 
 /**
  * Generated class for the SongPage page.
@@ -28,11 +28,12 @@ interface RondoWindow extends Window {
 })
 export class SongPage {
 
+    @ViewChild(Slides) slides: Slides;
+
     // tslint:disable-next-line
     private section: string = 'text';
 
     private song: ISong;
-    private songtext: string = '';
     private pageNumbers: string = '';
 
     private scroll = false;
@@ -47,32 +48,26 @@ export class SongPage {
 
     private playingChordId: string = '';
 
+    private readonly NUM_PAGES = 5;
+    private readonly MIDDLE_PAGE = 2;
+    private pages: number[] = [0,0,0,0,0];
+    private allPages: number[] = [];
+
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
-                public songHtmlProvider: SongHtmlProvider,
+                public appState: AppStateProvider,
                 public songIndexProvider: SongIndexProvider,
                 public appVersionProvider: AppVersionProvider,
                 private insomnia: Insomnia,
                 private nativeAudio: NativeAudio
     ) {
         this.song = this.navParams.data.song;
-        this.loadSongtext();
         // load song info because maybe an alternative was clicked
         this.loadSongInfo(this.song.id);
         this.generatePageNumbersHtml();
-    }
-
-    public loadSongtext() {
-        this.songHtmlProvider.load(this.song.id)
-            .then((data: any) => {
-                this.songtext = data;
-            });
-    }
-
-    public loadSongInfo(id: string) {
-        this.songIndexProvider.loadSong(id).then((song) => {
-            this.song = song;
-        })
+        this.loadPages();
+        // set visible slide id until other data is loaded
+        this.pages[this.MIDDLE_PAGE] = this.song.id;
     }
 
     ionViewDidLoad() {
@@ -110,6 +105,85 @@ export class SongPage {
         return this.appVersionProvider.getAppVersion();
     }
 
+    // Slides
+    // ------------------------
+
+    public loadPages() {
+        if (this.allPages.length == 0) {
+            this.songIndexProvider.loadSlides(this.appState.getHasBought()).then((ids: number[]) => {
+                this.allPages = ids;
+                this.initialVisiblePages()
+            });
+        } else {
+            this.initialVisiblePages()
+        }
+    }
+
+    public initialVisiblePages() {
+        let index = this.allPages.indexOf(this.song.id);
+        for (let i = 0; i < this.NUM_PAGES; i++) {
+            let allPagesIndex = index + (i - this.MIDDLE_PAGE);
+            // wrap around in the beginning
+            if (allPagesIndex < 0) {
+                allPagesIndex = this.allPages.length - allPagesIndex;
+            }
+            // wrap around in the end
+            if (allPagesIndex > this.allPages.length - 1) {
+                allPagesIndex = allPagesIndex - this.allPages.length;
+            }
+            this.pages[i] = this.allPages[allPagesIndex];
+        }
+    }
+
+    public pushPage() {
+        let index = this.allPages.indexOf(this.pages[this.NUM_PAGES - 1]);
+        if (this.allPages[index + 1] === undefined) {
+            this.pages.push(this.allPages[0]);
+        } else {
+            this.pages.push(this.allPages[index + 1]);
+        }
+        this.pages.shift();
+    }
+
+    public popPage() {
+        let index = this.allPages.indexOf(this.pages[0]);
+        if (index < 0) {
+            this.pages.unshift(this.allPages[this.allPages.length - 1]);
+        } else {
+            this.pages.unshift(this.allPages[index - 1]);
+        }
+        this.pages.pop();
+    }
+
+    public loadSongInfo(id: number) {
+        if (id > 0 && this.song.id != id) {
+            this.songIndexProvider.loadSong(id).then((song) => {
+                this.song = song;
+                this.generatePageNumbersHtml();
+            })
+        }
+    }
+
+    public slideChanged() {
+        let index = this.slides.getActiveIndex();
+        //console.log('slideChanged', index);
+        if (index > this.MIDDLE_PAGE) {
+            this.pushPage();
+            this.slides.slidePrev(0);
+        }
+        if (index < this.MIDDLE_PAGE) {
+            this.popPage();
+            this.slides.slideNext(0);
+        }
+        //console.log('current: ', this.slides.getActiveIndex());
+        if (this.slides.getActiveIndex() !== this.MIDDLE_PAGE) {
+            //console.log('readjust');
+            this.slideChanged();
+        } else {
+            this.loadSongInfo(this.pages[this.MIDDLE_PAGE]);
+        }
+        //console.log(this.pages);
+    }
 
     // Scrolling
     // ------------------------

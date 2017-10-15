@@ -1,10 +1,10 @@
 interface ISong {
-    id: string;
+    id: number;
     title: string;
-    pageRondoRed: string|null;
-    pageRondoBlue: string|null;
-    pageRondoGreen: string|null;
-    pageRondo2017: string|null;
+    pageRondoRed: number|null;
+    pageRondoBlue: number|null;
+    pageRondoGreen: number|null;
+    pageRondo2017: number|null;
     interpret: string;
     chords: string[];
     alternative: boolean;

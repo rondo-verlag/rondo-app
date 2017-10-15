@@ -329,7 +329,7 @@ $app->get('/export/index', function () use ($app, &$DB) {
 	$songIndex = new SongIndex();
 	$index = $songIndex->getSongIndexForApp();
 
-	$json = json_encode($index, JSON_PRETTY_PRINT);
+	$json = json_encode($index, JSON_PRETTY_PRINT + JSON_NUMERIC_CHECK);
 	umask(0);
 	file_put_contents($path, $json);
 	@chmod($path, 0777);
@@ -463,7 +463,7 @@ $app->get('/export/zip', function () use ($app, &$DB) {
 
 	// song index
 	$index = $songIndex->getSongIndexForApp();
-	$json = json_encode($index, JSON_PRETTY_PRINT);
+	$json = json_encode($index, JSON_PRETTY_PRINT + JSON_NUMERIC_CHECK);
 	$zip->addFile('song-index.json', $json);
 
 	# finish the zip stream

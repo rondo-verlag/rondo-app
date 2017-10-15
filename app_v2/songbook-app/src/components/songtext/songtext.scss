@@ -1,0 +1,40 @@
+songtext {
+
+  .songtext {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    .line {
+      line-height: 2.2em;
+      .word {
+        float: left;
+        height: 1.5em;
+      }
+      .bl {
+        float: left;
+        height: 1.5em;
+      }
+    }
+    .chord,
+    .empty-chord {
+      height: 0;
+      overflow: hidden;
+      display: block;
+      width: 0;
+      white-space: nowrap;
+    }
+    .chord ~ .empty-chord {
+      display: none;
+    }
+    .paragraph {
+      padding-bottom: 2.5em;
+      overflow: hidden;
+    }
+    .p_chorus {
+      font-style: italic;
+    }
+    .comment {
+      white-space: pre;
+      color: #BBB
+    }
+  }
+}
