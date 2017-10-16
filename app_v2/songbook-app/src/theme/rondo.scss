@@ -46,3 +46,7 @@ a {
 .rondo-back-button {
   font-size: 28px !important;
 }
+
+.header-md::after {
+  background-image: none !important;
+}

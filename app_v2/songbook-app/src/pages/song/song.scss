@@ -60,12 +60,13 @@ page-song {
     transition: bottom 0.5s;
   }
 
-  .scroll-content,
+  #rondo_scrollable .scroll-content,
   .fixed-content {
     margin: 0 !important;
   }
 
-  .scroll-content {
+  ion-content > .scroll-content,
+  .slide-zoom {
     padding-top: 44px !important;
     padding-bottom: 44px !important;
   }
@@ -77,7 +78,7 @@ page-song {
   }
 
   // disable momentum effect during auto scroll to prevent flickering
-  .scrolling .scroll-content {
+  .scrolling .slide-zoom {
     -webkit-overflow-scrolling: auto;
   }
 
@@ -98,6 +99,7 @@ page-song {
 
   .chord-list {
     font-size: 35vw;
+    padding-top: 20px;
 
     i {
       width: 33%;
@@ -185,16 +187,24 @@ page-song {
 
 .ios {
   page-song {
-    .scroll-content {
+    ion-content > .scroll-content,
+    .slide-zoom {
       padding-top: 64px !important;
+    }
+    #rondo_scrollable .scroll-content {
+      padding-top: 0 !important;
     }
   }
 }
 
 .md {
   page-song {
-    .scroll-content {
+    ion-content > .scroll-content,
+    .slide-zoom {
       padding-top: 56px !important;
+    }
+    #rondo_scrollable .scroll-content {
+      padding-top: 0 !important;
     }
   }
 }
