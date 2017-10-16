@@ -38,6 +38,7 @@ export class SongPage {
 
     private scroll = false;
     private scrollTimer = null;
+    private scrollElement: Element = null;
     private lastScrollPosition: number = -1;
     private autoScrollInQueue: boolean = false;
     private sameLastScrollPositionCounter: number = 0;
@@ -183,24 +184,23 @@ export class SongPage {
             this.loadSongInfo(this.pages[this.MIDDLE_PAGE]);
         }
         //console.log(this.pages);
+        this.stopAutoScroll();
     }
 
     // Scrolling
     // ------------------------
 
     private getScrollPosition() {
-        let element = document.querySelector('#rondo_scrollable > .scroll-content');
-        if (element) {
-            return document.querySelector('#rondo_scrollable > .scroll-content').scrollTop;
+        if (this.scrollElement) {
+            return this.scrollElement.scrollTop;
         } else {
             return 0;
         }
     }
 
     private scrollBy(y: number) {
-        let element = document.querySelector('#rondo_scrollable > .scroll-content');
-        if (element) {
-            document.querySelector('#rondo_scrollable > .scroll-content').scrollTop = this.getScrollPosition() + y;
+        if (this.scrollElement) {
+            this.scrollElement.scrollTop = this.getScrollPosition() + y;
         }
     }
 
@@ -217,6 +217,7 @@ export class SongPage {
         this.enterFullscreen();
         this.scroll = true;
         this.sameLastScrollPositionCounter = 10;
+        this.scrollElement = document.querySelector('#rondo_scrollable .swiper-slide-active .slide-zoom');
         this.scrollTimer = setInterval(() => {
             if (this.sameLastScrollPositionCounter <= 0) {
                 this.stopAutoScroll();
