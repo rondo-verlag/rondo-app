@@ -126,7 +126,7 @@ export class SongPage {
             let allPagesIndex = index + (i - this.MIDDLE_PAGE);
             // wrap around in the beginning
             if (allPagesIndex < 0) {
-                allPagesIndex = this.allPages.length - allPagesIndex;
+                allPagesIndex = this.allPages.length + allPagesIndex;
             }
             // wrap around in the end
             if (allPagesIndex > this.allPages.length - 1) {
@@ -148,7 +148,7 @@ export class SongPage {
 
     public popPage() {
         let index = this.allPages.indexOf(this.pages[0]);
-        if (index < 0) {
+        if (index == 0) {
             this.pages.unshift(this.allPages[this.allPages.length - 1]);
         } else {
             this.pages.unshift(this.allPages[index - 1]);
