@@ -53,15 +53,16 @@ export class PurchaseProvider {
                             return val.state == 0
                         })) {
                         this.appState.setHasBought(true);
+                        resolve(true);
                     } else {
                         this.appState.setHasBought(false);
+                        resolve(false);
                     }
-                    resolve();
                 })
                 .catch((err) => {
                     console.log(JSON.stringify(err));
                     //this.appState.setHasBought(false);
-                    resolve();
+                    resolve(false);
                 });
         });
     }
