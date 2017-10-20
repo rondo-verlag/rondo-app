@@ -26,11 +26,7 @@ ionic serve
 
 Update Ionic:
 
-    sudo npm install -g ionic
-    ionic lib update
-    
-    sudo npm update -g ionic
-    sudo npm update -g cordova
+    npm install ionic-angular@latest --save
 
 updates a project to use the latest version of cordova (3.4.0 to 3.4.1):
 
