@@ -24,6 +24,18 @@ ionic serve
 
 ## Useful commands
 
+Run in iOS Simulator:
+
+    ionic cordova emulate ios
+
+Run in iOS Simulator (specific device):
+
+    ionic cordova emulate ios --target="iPhone-6"
+
+List available devices
+
+    ionic cordova emulate ios --list
+
 Update Ionic:
 
     npm install ionic-angular@latest --save
