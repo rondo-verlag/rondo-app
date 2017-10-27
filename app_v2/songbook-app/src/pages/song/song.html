@@ -38,13 +38,13 @@
 <ion-footer>
   <ion-toolbar>
     <div class="rondo-tabs">
-      <span *ngIf="!scroll" (click)="startAutoScroll()"><i class="rondo-icon-play"></i></span>
-      <span *ngIf="scroll"  (click)="stopAutoScroll()"><i class="rondo-icon-stop"></i></span>
-      <span (click)="toggleChords()"><i class="rondo-icon-chords"></i></span>
-      <span (click)="section='text'"><i class="rondo-icon-search"></i></span>
+      <span (click)="section='text'"><i class="rondo-icon-text"></i></span>
       <span (click)="section='chords'"><i class="rondo-icon-library"></i></span>
       <span (click)="section='notes'"><i class="rondo-icon-notes"></i></span>
       <span (click)="toggleSong()"><i class="rondo-icon-midi" [ngClass]="{'midi-playing': playingSong}"></i></span>
+      <span (click)="toggleChords()"><i class="rondo-icon-chords"></i></span>
+      <span *ngIf="!scroll" (click)="startAutoScroll()"><i class="rondo-icon-play"></i></span>
+      <span *ngIf="scroll"  (click)="stopAutoScroll()"><i class="rondo-icon-stop"></i></span>
     </div>
   </ion-toolbar>
 </ion-footer>

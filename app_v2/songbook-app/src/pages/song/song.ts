@@ -97,7 +97,9 @@ export class SongPage {
     }
 
     public toggleChords() {
-        document.body.classList.toggle('rondo-show-chords');
+        if (this.section == 'text') {
+            document.body.classList.toggle('rondo-show-chords');
+        }
     };
 
     // Slides
@@ -216,6 +218,9 @@ export class SongPage {
     };
 
     public startAutoScroll() {
+        if (this.section != 'text') {
+            return;
+        }
         this.insomnia.keepAwake();
         this.enterFullscreen();
         this.scroll = true;
