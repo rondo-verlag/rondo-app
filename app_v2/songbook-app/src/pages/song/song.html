@@ -21,14 +21,14 @@
 </ion-content>
 
 
-<ion-content *ngIf="section == 'notes'" (click)="exitFullscreen()">
+<ion-content *ngIf="section == 'notes'" id="rondo_notes" (click)="exitFullscreen()">
   <ion-scroll zoom="true" scrollX="true" scrollY="true" style="width: 100%; height: 100%">
     <img id="page" [src]="'assets/songdata/songs/notes/'+song.id+'.png'" >
   </ion-scroll>
 </ion-content>
 
 
-<ion-content *ngIf="section == 'chords'" padding (click)="exitFullscreen()">
+<ion-content *ngIf="section == 'chords'" id="rondo_chords" padding (click)="exitFullscreen()">
     <div class="chord-list">
       <i *ngFor="let chord of song.chords" class="rondo-icon-chord-{{chord}}" (click)="playChord(chord)"></i>
     </div>
