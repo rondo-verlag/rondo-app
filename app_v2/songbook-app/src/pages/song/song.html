@@ -12,11 +12,11 @@
 </ion-header>
 
 
-<ion-content [hidden]="section != 'text'" id="rondo_scrollable" (ionScroll)="onScroll($event)" (click)="exitFullscreen()" [ngClass]="{'scrolling': scroll}">
+<ion-content [hidden]="section != 'text'" id="rondo_scrollable" (click)="exitFullscreen()" [ngClass]="{'scrolling': scroll}">
   <ion-slides zoom="false" (ionSlideDidChange)="slideChanged()" initialSlide="2">
-    <ion-slide *ngFor="let page of pages; let i = index">
+    <rondo-slide *ngFor="let page of pages; let i = index" (onScrollUp)="scrollUp()" (onScrollDown)="scrollDown()">
       <songtext id="{{page}}"></songtext>
-    </ion-slide>
+    </rondo-slide>
   </ion-slides>
 </ion-content>
 

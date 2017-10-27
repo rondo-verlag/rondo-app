@@ -1,12 +1,5 @@
 page-song {
 
-  // make slides scrollable
-  ion-slide .slide-zoom {
-    height: 100%;
-    overflow-y: scroll;
-    text-align: left;
-  }
-
   .swiper-slide {
     font-size: inherit;
   }
@@ -193,6 +186,7 @@ page-song {
     }
     #rondo_scrollable .scroll-content {
       padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
   }
 }
@@ -205,6 +199,7 @@ page-song {
     }
     #rondo_scrollable .scroll-content {
       padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
   }
 }

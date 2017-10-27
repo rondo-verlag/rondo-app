@@ -23,6 +23,7 @@ import {PurchaseProvider} from '../providers/purchase/purchase';
 import {NativeStorage} from '@ionic-native/native-storage';
 import {AppStateProvider} from '../providers/app-state/app-state';
 import {FreePipe} from "../pipes/free/free";
+import {RondoSlideComponent} from "../components/rondo-slide/rondo-slide";
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {FreePipe} from "../pipes/free/free";
         SongSearchPipe,
         FreePipe,
         BrowserlinkComponent,
-        SongtextComponent
+        SongtextComponent,
+        RondoSlideComponent
     ],
     imports: [
         BrowserModule,

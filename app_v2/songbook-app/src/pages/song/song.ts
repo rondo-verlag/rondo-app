@@ -190,6 +190,15 @@ export class SongPage {
     // Scrolling
     // ------------------------
 
+
+    private scrollUp() {
+        this.exitFullscreen();
+    }
+
+    private scrollDown() {
+        this.enterFullscreen();
+    }
+
     private getScrollPosition() {
         if (this.scrollElement) {
             return this.scrollElement.scrollTop;
@@ -241,17 +250,6 @@ export class SongPage {
         this.lastScrollPosition = -1;
         this.exitFullscreen();
     };
-
-    public onScroll(event: any) {
-        if (event.directionY == 'up') {
-            this.exitFullscreen();
-        } else {
-            if (!this.scroll || !this.autoScrollInQueue) {
-                this.enterFullscreen();
-            }
-        }
-        this.autoScrollInQueue = false;
-    }
 
     public exitFullscreen() {
         document.body.classList.remove('rondo-fullscreen');
