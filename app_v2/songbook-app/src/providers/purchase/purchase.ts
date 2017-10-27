@@ -32,7 +32,13 @@ export class PurchaseProvider {
                         })
                         .catch((err) => {
                             console.log(JSON.stringify(err));
-                            reject(err);
+
+                            // On Android you get an error if you have bought already, so we try to restore the purchases
+                            this.restore().then(() => {
+                                resolve();
+                            }).catch(() => {
+                               reject(err);
+                            });
                         });
                 })
                 .catch((err) => {
@@ -48,6 +54,8 @@ export class PurchaseProvider {
                 .restorePurchases()
                 .then((data) => {
                     console.log('RONDO restore purchases:', data);
+
+                    // iOS
                     // check if there are any purchases with state == 0 or 3
                     // 0 - ACTIVE, 1 - CANCELLED, 2 - REFUNDED, 3 - ?? TESTPURCHASE ??
                     if (data.length > 0 && data.some((val) => {
@@ -55,6 +63,16 @@ export class PurchaseProvider {
                         })) {
                         this.appState.setHasBought(true);
                         resolve(true);
+
+                    // Android
+                    // If state == undefined it's Android, then check for the product id
+                    } else if (data.length > 0 && data.some((val) => {
+                            return typeof val.state == 'undefined' && val.productId == this.productId
+                        })) {
+                        this.appState.setHasBought(true);
+                        resolve(true);
+
+                    // not purchased
                     } else {
                         this.appState.setHasBought(false);
                         resolve(false);
