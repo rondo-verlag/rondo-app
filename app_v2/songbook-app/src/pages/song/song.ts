@@ -1,6 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, Slides} from 'ionic-angular';
-import {AppVersionProvider} from "../../providers/app-version/app-version";
 import {Insomnia} from "@ionic-native/insomnia";
 import {NativeAudio} from "@ionic-native/native-audio";
 import {SongIndexProvider} from "../../providers/song-index/song-index";
@@ -58,7 +57,6 @@ export class SongPage {
                 public navParams: NavParams,
                 public appState: AppStateProvider,
                 public songIndexProvider: SongIndexProvider,
-                public appVersionProvider: AppVersionProvider,
                 private insomnia: Insomnia,
                 private nativeAudio: NativeAudio
     ) {
@@ -101,10 +99,6 @@ export class SongPage {
     public toggleChords() {
         document.body.classList.toggle('rondo-show-chords');
     };
-
-    get app_version() {
-        return this.appVersionProvider.getAppVersion();
-    }
 
     // Slides
     // ------------------------
@@ -191,11 +185,11 @@ export class SongPage {
     // ------------------------
 
 
-    private scrollUp() {
+    public scrollUp() {
         this.exitFullscreen();
     }
 
-    private scrollDown() {
+    public scrollDown() {
         this.enterFullscreen();
     }
 
