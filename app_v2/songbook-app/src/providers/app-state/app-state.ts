@@ -21,9 +21,10 @@ export class AppStateProvider {
                 },
                 (error) => {
                     // if item not set yet, set initial value
+                    console.log('hasBought was not set', JSON.stringify(error));
                     this.storage.setItem('hasBought', false).then(
                         () => {
-                            this._hasBought.next(false)
+                            this._hasBought.next(false);
                         }
                     )
                 });

@@ -42,15 +42,16 @@ export class PurchaseProvider {
         })
     }
 
-    public hasBought(): Promise<boolean> {
+    public restore(): Promise<boolean> {
         return new Promise((resolve) => {
             this.inAppPurchase
                 .restorePurchases()
                 .then((data) => {
                     console.log('RONDO restore purchases:', data);
-                    // check if there are any purchases with state == 0
+                    // check if there are any purchases with state == 0 or 3
+                    // 0 - ACTIVE, 1 - CANCELLED, 2 - REFUNDED, 3 - ?? TESTPURCHASE ??
                     if (data.length > 0 && data.some((val) => {
-                            return val.state == 0
+                            return val.state == 0 || val.state == 3
                         })) {
                         this.appState.setHasBought(true);
                         resolve(true);

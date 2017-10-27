@@ -56,6 +56,23 @@ export class AboutPage {
 
     }
 
+    public restorePurchases() {
+        const loading = this.loadingCtrl.create({
+            content: 'Kauf wiederherstellen'
+        });
+        loading.present();
+
+        this.purchaseProvider.restore()
+            .then(() => {
+                loading.dismiss();
+                console.log('purchase restored');
+            })
+            .catch((err) => {
+                loading.dismiss();
+                console.log(err);
+            });
+    }
+
     public toggleHasBought() {
         this.appState.setHasBought(!this.hasBought);
     }

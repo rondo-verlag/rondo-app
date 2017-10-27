@@ -4,7 +4,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 
 import {SonglistPage} from '../pages/songlist/songlist';
-import {PurchaseProvider} from "../providers/purchase/purchase";
+import {AppStateProvider} from "../providers/app-state/app-state";
 
 @Component({
     templateUrl: 'app.html'
@@ -15,7 +15,7 @@ export class MyApp {
     constructor(platform: Platform,
                 statusBar: StatusBar,
                 splashScreen: SplashScreen,
-                purchaseProvider: PurchaseProvider
+                appState: AppStateProvider
 ) {
         platform.ready().then(() => {
             // TODO: init app version
@@ -24,8 +24,8 @@ export class MyApp {
                 statusBar.styleDefault();
                 splashScreen.hide();
 
-                // restore purchases
-                purchaseProvider.hasBought();
+                // load settings from storage
+                appState.initState();
             }
         });
     }
