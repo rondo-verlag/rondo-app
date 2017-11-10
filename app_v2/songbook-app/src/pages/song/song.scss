@@ -43,6 +43,12 @@ page-song {
     }
   }
 
+  .rondo-tab--selected {
+    i {
+      //color: darkorange;
+    }
+  }
+
   ion-header {
     -webkit-transition: top 0.5s;
     transition: top 0.5s;
@@ -51,6 +57,10 @@ page-song {
   ion-footer {
     -webkit-transition: bottom 0.5s;
     transition: bottom 0.5s;
+  }
+
+  .rondo-header-buttons-right i.icon {
+    font-size: 28px;
   }
 
   #rondo_notes .scroll-content,
@@ -109,27 +119,7 @@ page-song {
     text-transform: uppercase;
     font-size: 140%;
     letter-spacing: 2px;
-  }
-
-  .page-numbers {
-    line-height: 32px;
-    font-size: 110%;
-    color: white;
-    span {
-      margin: 0 !important;
-    }
-    .rondo-red {
-      color: red;
-    }
-    .rondo-blue {
-      color: #0099ff;
-    }
-    .rondo-green {
-      color: #99FF99;
-    }
-    .rondo-orange {
-      color: orange;
-    }
+    margin-bottom: 2px;
   }
 
   .midi-playing {

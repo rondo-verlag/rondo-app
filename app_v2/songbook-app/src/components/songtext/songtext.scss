@@ -1,6 +1,40 @@
 songtext {
 
+  .page-numbers {
+    line-height: 32px;
+    font-size: 110%;
+    color: white;
+    span {
+      margin: 0 !important;
+    }
+    .rondo-red {
+      color: red;
+    }
+    .rondo-blue {
+      color: #0099ff;
+    }
+    .rondo-green {
+      color: #99FF99;
+    }
+    .rondo-orange {
+      color: orange;
+    }
+  }
+
+  .rondo-play-button {
+    text-align: right;
+    margin-top: -6px;
+    i {
+      font-size: 28px;
+    }
+  }
+
+  .col {
+    padding: 0;
+  }
+
   .songtext {
+    margin-top: 16px;
     font-size: 1.3em;
     letter-spacing: 1px;
     .line {

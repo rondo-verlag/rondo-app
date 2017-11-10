@@ -2,7 +2,21 @@
   <div>
     <img [src]="'assets/songdata/songs/images/' + id + '.gif'" *ngIf="id > 0" class="song-image"/>
     <div padding>
-      <h3 class="song-title">{{song.title}}</h3>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h3 class="song-title">{{song.title}}</h3>
+            <div class="page-numbers">
+              <span [innerHTML]="pageNumbers"></span>
+            </div>
+          </ion-col>
+          <ion-col col-2 class="rondo-play-button">
+            <span (click)="toggleSong()"><i class="rondo-icon-play" *ngIf="!isPlaying"></i></span>
+            <span (click)="midiPlayer.stopSong()"><i class="rondo-icon-stop" *ngIf="isPlaying"></i></span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
       <div class="songtext">
         <div [innerHTML]="songtext"></div>
         <br>

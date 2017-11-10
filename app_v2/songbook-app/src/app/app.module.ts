@@ -24,6 +24,7 @@ import {NativeStorage} from '@ionic-native/native-storage';
 import {AppStateProvider} from '../providers/app-state/app-state';
 import {FreePipe} from "../pipes/free/free";
 import {RondoSlideComponent} from "../components/rondo-slide/rondo-slide";
+import { MidiProvider } from '../providers/midi/midi';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import {RondoSlideComponent} from "../components/rondo-slide/rondo-slide";
         InAppPurchase,
         PurchaseProvider,
         NativeStorage,
-        AppStateProvider
+        AppStateProvider,
+        MidiProvider
     ]
 })
 export class AppModule {

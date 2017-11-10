@@ -4,6 +4,7 @@ import {Insomnia} from "@ionic-native/insomnia";
 import {NativeAudio} from "@ionic-native/native-audio";
 import {SongIndexProvider} from "../../providers/song-index/song-index";
 import {AppStateProvider} from "../../providers/app-state/app-state";
+import {MidiProvider} from "../../providers/midi/midi";
 
 /**
  * Generated class for the SongPage page.
@@ -11,14 +12,6 @@ import {AppStateProvider} from "../../providers/app-state/app-state";
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
-function getWindow(): RondoWindow {
-    return window;
-}
-
-interface RondoWindow extends Window {
-    MidiPlayer?: any;
-}
 
 @IonicPage()
 @Component({
@@ -33,7 +26,6 @@ export class SongPage {
     private section: string = 'text';
 
     private song: ISong;
-    private pageNumbers: string = '';
 
     private scroll = false;
     private scrollTimer = null;
@@ -41,10 +33,6 @@ export class SongPage {
     private lastScrollPosition: number = -1;
     private autoScrollInQueue: boolean = false;
     private sameLastScrollPositionCounter: number = 0;
-
-    private playingSong: boolean = false;
-    private songInitialized: boolean = false;
-    private songInitializeTriesLeft: number = 20;
 
     private playingChordId: string = '';
 
@@ -58,12 +46,12 @@ export class SongPage {
                 public appState: AppStateProvider,
                 public songIndexProvider: SongIndexProvider,
                 private insomnia: Insomnia,
-                private nativeAudio: NativeAudio
+                private nativeAudio: NativeAudio,
+                public midiPlayer: MidiProvider
     ) {
         this.song = this.navParams.data.song;
         // load song info because maybe an alternative was clicked
         this.loadSongInfo(this.song.id);
-        this.generatePageNumbersHtml();
         this.loadPages();
         // set visible slide id until other data is loaded
         this.pages[this.MIDDLE_PAGE] = this.song.id;
@@ -75,25 +63,8 @@ export class SongPage {
 
     ionViewDidLeave() {
         this.stopAutoScroll();
-        this.stopSong();
+        this.midiPlayer.stopSong();
         this.exitFullscreen();
-    }
-
-    public generatePageNumbersHtml() {
-        let pages = [];
-        if (this.song.pageRondo2017) {
-            pages.push('<span class="rondo-orange">' + this.song.pageRondo2017 + '</span>');
-        }
-        if (this.song.pageRondoGreen) {
-            pages.push('<span class="rondo-green">' + this.song.pageRondoGreen + '</span>');
-        }
-        if (this.song.pageRondoBlue) {
-            pages.push('<span class="rondo-blue">' + this.song.pageRondoBlue + '</span>');
-        }
-        if (this.song.pageRondoRed) {
-            pages.push('<span class="rondo-red">' + this.song.pageRondoRed + '</span>');
-        }
-        this.pageNumbers = pages.join('&nbsp;|&nbsp;')
     }
 
     public toggleChords() {
@@ -156,7 +127,6 @@ export class SongPage {
         if (id > 0 && this.song.id != id) {
             this.songIndexProvider.loadSong(id).then((song) => {
                 this.song = song;
-                this.generatePageNumbersHtml();
             })
         }
     }
@@ -181,6 +151,7 @@ export class SongPage {
         }
         //console.log(this.pages);
         this.stopAutoScroll();
+        this.midiPlayer.stopSong();
     }
 
     // Scrolling
@@ -258,82 +229,7 @@ export class SongPage {
         document.body.classList.add('rondo-fullscreen');
     };
 
-    // MIDI
-    // ------------------------
 
-    // Ugly hack:
-    // songInitialized is needed for iOS, because it fails to play sometimes for unknown reason.
-    // if that happens, we just try to play again...
-    public playSong() {
-        // Abort if clicked in browser
-        if (!getWindow().MidiPlayer) {
-            return;
-        }
-        if (!this.songInitialized || !this.playingSong) {
-            getWindow().MidiPlayer.setup(
-                getWindow().MidiPlayer.getPathFromAsset("assets/songdata/songs/midi/" + this.song.id + ".mid"),
-                ["1", "2", "3", "4", "5"],
-                () => {
-                    //console.log('RONDO: Song initialized...');
-                    //$scope.$apply(() => {
-                    this.playingSong = true;
-                    //});
-                    getWindow().MidiPlayer.play();
-                },
-                (data) => {
-                    console.log("RONDO: Error occured:", data);
-                    this.playingSong = false;
-                },
-                (data) => {
-                    //console.log("RONDO: Status Updates: ", data);
-                    if (data == 2) {
-                        // 2: started playing
-                        this.songInitialized = true;
-                    }
-                    if (data == 3) {
-                        // 3: stopped playing
-                        this.stopSong();
-                    }
-                    if (data <= 0) {
-                        // 0: someting went wrong
-                        if (!this.songInitialized) {
-                            // try again if we are not yet initialized
-                            if (this.songInitializeTriesLeft > 0) {
-                                this.songInitializeTriesLeft--;
-                                this.playSong();
-                            }
-                        } else {
-                            // song stopped manually
-                            this.songInitialized = false;
-                            this.songInitializeTriesLeft = 20;
-                            if (this.playingSong) {
-                                // song stopped because its at the end (ios only)
-                                //$scope.$apply(() => {
-                                this.stopSong();
-                                //});
-                            }
-                        }
-                    }
-                }
-            );
-        }
-    };
-
-    public stopSong() {
-        this.playingSong = false;
-        if (getWindow().MidiPlayer) {
-            getWindow().MidiPlayer.stop();
-            getWindow().MidiPlayer.release();
-        }
-    };
-
-    public toggleSong() {
-        if (this.playingSong) {
-            this.stopSong();
-        } else {
-            this.playSong();
-        }
-    };
 
     // Chords Playback
     // ------------------------
