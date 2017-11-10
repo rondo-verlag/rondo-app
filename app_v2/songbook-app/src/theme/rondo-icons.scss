@@ -1,16 +1,15 @@
 @font-face {
     font-family: 'rondo';
     src:
-        url('../assets/fonts/rondo/rondo.woff?yqenl3') format('woff'),
-        url('../assets/fonts/rondo/rondo.ttf?yqenl3') format('truetype');
+        url('../assets/fonts/rondo/rondo.woff?o8oomg') format('woff'),
+        url('../assets/fonts/rondo/rondo.ttf?o8oomg') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-._rondo_icon_base,
 [class^="rondo-icon-"], [class*=" rondo-icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'rondo', Vectora, Medien, "Helvetica Neue", Verdana, sans-serif !important;
+    font-family: 'rondo' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -63,7 +62,7 @@
     content: "\e915";
 }
 .rondo-icon-chord-F-bar:before {
-    content: "\e921";
+    content: "\e916";
 }
 .rondo-icon-chord-F:before {
     content: "\e917";
@@ -93,7 +92,7 @@
     content: "\e91f";
 }
 .rondo-icon-chord-Hm7:before {
-    content: "\e916";
+    content: "\e920";
 }
 .rondo-icon-notes:before {
     content: "\e900";
@@ -110,8 +109,11 @@
 .rondo-icon-stop:before {
     content: "\e904";
 }
-.rondo-icon-play:before {
+.rondo-icon-scroll:before {
     content: "\e905";
+}
+.rondo-icon-play:before {
+    content: "\e922";
 }
 .rondo-icon-logo:before {
     content: "\e906";

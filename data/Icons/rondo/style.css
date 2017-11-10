@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'rondo';
   src:
-    url('fonts/rondo.ttf?ecslhn') format('truetype'),
-    url('fonts/rondo.woff?ecslhn') format('woff'),
-    url('fonts/rondo.svg?ecslhn#rondo') format('svg');
+    url('fonts/rondo.ttf?o8oomg') format('truetype'),
+    url('fonts/rondo.woff?o8oomg') format('woff'),
+    url('fonts/rondo.svg?o8oomg#rondo') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -110,8 +110,11 @@
 .rondo-icon-stop:before {
   content: "\e904";
 }
-.rondo-icon-play:before {
+.rondo-icon-scroll:before {
   content: "\e905";
+}
+.rondo-icon-play:before {
+  content: "\e922";
 }
 .rondo-icon-logo:before {
   content: "\e906";
