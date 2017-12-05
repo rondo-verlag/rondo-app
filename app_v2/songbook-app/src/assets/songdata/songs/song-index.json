@@ -327,7 +327,7 @@
             "pageRondoBlue": 38,
             "pageRondoGreen": 52,
             "pageRondo2017": 52,
-            "interpret": "",
+            "interpret": "Polo Hofer",
             "chords": [
                 "Am",
                 "C",
@@ -667,7 +667,7 @@
             "pageRondoBlue": 38,
             "pageRondoGreen": 52,
             "pageRondo2017": 52,
-            "interpret": "",
+            "interpret": "Polo Hofer",
             "chords": [
                 "Am",
                 "C",
@@ -2246,7 +2246,7 @@
             "pageRondoRed": 244,
             "pageRondoBlue": null,
             "pageRondoGreen": 244,
-            "pageRondo2017": 244,
+            "pageRondo2017": 246,
             "interpret": "Eric Clapton",
             "chords": [
                 "C",
@@ -2410,7 +2410,7 @@
             "pageRondoBlue": 116,
             "pageRondoGreen": 116,
             "pageRondo2017": 116,
-            "interpret": "",
+            "interpret": "Polo Hofer",
             "chords": [
                 "A",
                 "A7",
@@ -2526,8 +2526,11 @@
             "pageRondo2017": 100,
             "interpret": "John Cameron Fogerty",
             "chords": [
+                "B",
+                "C",
                 "D",
                 "Em",
+                "F",
                 "G"
             ],
             "alternative": true,
@@ -2986,7 +2989,7 @@
             "pageRondoRed": null,
             "pageRondoBlue": null,
             "pageRondoGreen": 246,
-            "pageRondo2017": 246,
+            "pageRondo2017": 248,
             "interpret": "Metallica",
             "chords": [
                 "A",
@@ -3218,8 +3221,11 @@
             "pageRondo2017": 100,
             "interpret": "John Cameron Fogerty",
             "chords": [
+                "B",
+                "C",
                 "D",
                 "Em",
+                "F",
                 "G"
             ],
             "alternative": false,
@@ -3668,7 +3674,7 @@
             "pageRondoRed": null,
             "pageRondoBlue": null,
             "pageRondoGreen": 246,
-            "pageRondo2017": 246,
+            "pageRondo2017": 248,
             "interpret": "Metallica",
             "chords": [
                 "A",
@@ -4407,7 +4413,7 @@
             "pageRondoRed": 244,
             "pageRondoBlue": null,
             "pageRondoGreen": 244,
-            "pageRondo2017": 244,
+            "pageRondo2017": 246,
             "interpret": "Eric Clapton",
             "chords": [
                 "C",
@@ -4554,7 +4560,7 @@
             "pageRondoBlue": 116,
             "pageRondoGreen": 116,
             "pageRondo2017": 116,
-            "interpret": "",
+            "interpret": "Polo Hofer",
             "chords": [
                 "A",
                 "A7",
