@@ -325,7 +325,7 @@ $app->get('/export/listchords', function () use ($app, &$DB) {
 
 // export json index for app
 $app->get('/export/index', function () use ($app, &$DB) {
-	$path = '../../app_v2/songbook-app/src/assets/songdata/songs/song-index.json';
+	$path = '../../app/src/assets/songdata/songs/song-index.json';
 	$songIndex = new SongIndex();
 	$index = $songIndex->getSongIndexForApp();
 
@@ -391,7 +391,7 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 $app->get('/export/html', function () use ($app, &$DB) {
 	umask(0);
 	//$path = '../../app/www/resources/songs/';
-	$path = '../../app_v2/songbook-app/src/assets/songdata/songs/';
+	$path = '../../app/src/assets/songdata/songs/';
 
 	$songIndex = new SongIndex();
 	$songIds = $songIndex->getAppSongIds();
