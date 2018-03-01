@@ -10,10 +10,10 @@
         "cordova-plugin-app-version": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-console": {
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-device": {
+        "cordova-plugin-file": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "cordova-plugin-inappbrowser": {
@@ -22,16 +22,13 @@
         "cordova-plugin-insomnia": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-media": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
         "cordova-plugin-midi-player": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-queries-schemes": {
+        "cordova-plugin-nativeaudio": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
-        "cordova-plugin-screen-orientation": {
+        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         },
         "cordova-plugin-statusbar": {
@@ -42,13 +39,16 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-inapppurchase": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "ch.rondo.songbookapp"
         }
     }

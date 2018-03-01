@@ -24,13 +24,21 @@ ionic serve
 
 ## Useful commands
 
+Run in iOS Simulator:
+
+    ionic cordova emulate ios
+
+Run in iOS Simulator (specific device):
+
+    ionic cordova emulate ios --target="iPhone-6"
+
+List available devices
+
+    ionic cordova emulate ios --list
+
 Update Ionic:
 
-    sudo npm install -g ionic
-    ionic lib update
-    
-    sudo npm update -g ionic
-    sudo npm update -g cordova
+    npm install ionic-angular@latest --save
 
 updates a project to use the latest version of cordova (3.4.0 to 3.4.1):
 
@@ -39,18 +47,6 @@ updates a project to use the latest version of cordova (3.4.0 to 3.4.1):
 Upload App to Ionic View:
 
     ionic upload
-
-Building App TypeScript
-
-    npm run build-js
-
-Building App SCSS:
-
-    npm run build-app-css
-
-Building Ionic SCSS (e.g. apply dark theme):
-
-    scss --no-cache --update www/lib/ionic/scss/ionic.scss:www/lib/ionic/css/ionic.css
 
 Building Android APK:
 
