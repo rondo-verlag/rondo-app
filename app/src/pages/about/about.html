@@ -15,29 +15,32 @@
   </div>
   <div padding>
     <b>Das Rondo immer und überall dabei</b><br>
-    <br>
-    In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br>
-
-    <div *ngIf="!hasBought">
+    <div *ngIf="hasBought">
+      <br>
+      In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br>
       <span (click)="buyFullversion()" class="rondo-buy-button">Vollversion kaufen 5.00</span>
     </div>
-    <div *ngIf="hasBought" class="rondo-has-bought">
+    <div *ngIf="!hasBought">
       <br>
-      Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!
+      Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!<br><br>
     </div>
 
     &mdash;<br>
-    Der Rondo Verlag gibt seit den 1980er-Jahren das Schweizer Pfadi-Liederbuch „Rondo“ heraus, das inzwischen in mehreren Auflagen und nun als App vorliegt. Daneben unterstützt der Verein Projekte, die Musik von und mit Jugendlichen fördern, eine Breitenwirkung entfalten und den Grundsätzen der Pfadi entsprechen.
+    Der Rondo Verlag gibt seit den 1980er-Jahren das Schweizer Pfadi-Liederbuch &laquo;Rondo&raquo; heraus, das inzwischen in mehreren Auflagen und nun als App vorliegt. Daneben unterstützt der Verein Projekte, die Musik von und mit Jugendlichen fördern, eine Breitenwirkung entfalten und den Grundsätzen der Pfadi entsprechen.
 
     <br>
     <br>
     <browserlink url="https://www.facebook.com/rondoverlag">facebook.com/rondoverlag</browserlink><br>
     <br>
-    <browserlink url="https://www.hajk.ch/de/catalogsearch/result/?q=Rondo%20Liederbuch">Rondo Liederbuch kaufen</browserlink><br>
+    <browserlink url="https://www.hajk.ch/de/catalogsearch/result/?q=Rondo%20Liederbuch">Rondo Liederbuch kaufen (Hajk)</browserlink><br>
     <br>
 
+    Fragen, Wünsche, Lob oder Kritik zur App sind unter <browserlink url="mailto:app@rondo-verlag.ch?subject=Rondo App {{app_version}} Feedback">app@rondo-verlag.ch</browserlink> allzeit willkommen.
+
+    <br>
+    <br>
     &mdash;<br>
-    Team Rondo App 2017:<br>
+    Team Rondo:<br>
     <br>
     Chicco/Fiona Zellweger<br>
     Fabienne Klaas<br>
@@ -57,14 +60,13 @@
     Produktion: Fäger, uSystems GmbH<br>
     <br>
 
-    Akkorde Sounds mit freundlicher Genehmigung von Burkhard Mikolai (<browserlink url="http://www.bunte-noten.de">www.bunte-noten.de</browserlink>)<br>
-    <br>
-    Fragen, Wünsche, Lob oder Kritik zur App sind unter <browserlink url="mailto:app@rondo-verlag.ch?subject=Rondo App {{app_version}} Feedback">app@rondo-verlag.ch</browserlink> allzeit willkommen.
+    Akkorde Sounds mit freundlicher Genehmigung von Burkhard Mikolai<br>
+    <browserlink url="http://www.bunte-noten.de">www.bunte-noten.de</browserlink>
 
     <br>
     <br>
     &mdash;<br>
-    &copy; 2017 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{app_version}}
+    &copy; 2018 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{app_version}}
     <br>
 
     <!--
