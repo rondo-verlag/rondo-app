@@ -26,9 +26,13 @@ page-song {
       color: black;
     }
     .book-orange {
-      background: orange;
+      background: darkorange;
       color: black;
     }
+  }
+
+  .header .icon--active {
+    color: darkorange !important;
   }
 
   .rondo-tabs {
@@ -45,7 +49,7 @@ page-song {
 
   .rondo-tab--selected {
     i {
-      //color: darkorange;
+      color: darkorange;
     }
   }
 
@@ -193,4 +197,8 @@ page-song {
       padding-bottom: 0 !important;
     }
   }
+}
+
+.rondo-show-chords .rondo-header-buttons-right .icon.rondo-icon-chords {
+  color: darkorange !important;
 }

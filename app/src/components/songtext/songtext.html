@@ -10,10 +10,6 @@
               <span [innerHTML]="pageNumbers"></span>
             </div>
           </ion-col>
-          <ion-col col-2 class="rondo-play-button">
-            <span (click)="toggleSong()"><i class="rondo-icon-play" *ngIf="!isPlaying"></i></span>
-            <span (click)="midiPlayer.stopSong()"><i class="rondo-icon-stop" *ngIf="isPlaying"></i></span>
-          </ion-col>
         </ion-row>
       </ion-grid>
 

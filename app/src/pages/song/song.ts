@@ -41,6 +41,8 @@ export class SongPage {
     private pages: number[] = [0,0,0,0,0];
     private allPages: number[] = [];
 
+    private isPlaying: boolean = false;
+
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public appState: AppStateProvider,
@@ -55,6 +57,12 @@ export class SongPage {
         this.loadPages();
         // set visible slide id until other data is loaded
         this.pages[this.MIDDLE_PAGE] = this.song.id;
+
+        this.midiPlayer.playingSong.subscribe((val) => {
+            if (val == false) {
+                this.isPlaying = val;
+            }
+        })
     }
 
     ionViewDidLoad() {
@@ -65,6 +73,11 @@ export class SongPage {
         this.stopAutoScroll();
         this.midiPlayer.stopSong();
         this.exitFullscreen();
+    }
+
+    public toggleSong() {
+        this.isPlaying = true;
+        this.midiPlayer.toggleSong(this.song.id);
     }
 
     public toggleChords() {

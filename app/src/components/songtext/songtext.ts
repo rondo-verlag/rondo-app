@@ -2,7 +2,6 @@ import {Component, Input} from '@angular/core';
 import {SongHtmlProvider} from "../../providers/song-html/song-html";
 import {SongIndexProvider} from "../../providers/song-index/song-index";
 import {AppVersionProvider} from "../../providers/app-version/app-version";
-import {MidiProvider} from "../../providers/midi/midi";
 
 @Component({
     selector: 'songtext',
@@ -29,25 +28,11 @@ export class SongtextComponent {
 
     private pageNumbers: string = '';
 
-    private isPlaying: boolean = false;
-
     constructor(
         public songHtmlProvider: SongHtmlProvider,
         public songIndexProvider: SongIndexProvider,
-        public appVersionProvider: AppVersionProvider,
-        public midiPlayer: MidiProvider
-    ) {
-        this.midiPlayer.playingSong.subscribe((val) => {
-            if (val == false) {
-                this.isPlaying = val;
-            }
-        })
-    }
-
-    public toggleSong() {
-        this.isPlaying = true;
-        this.midiPlayer.toggleSong(this.id);
-    }
+        public appVersionProvider: AppVersionProvider
+    ) {}
 
     ngOnChanges() {
         if (this.id > 0) {
