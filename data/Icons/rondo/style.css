@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'rondo';
   src:
-    url('fonts/rondo.ttf?o8oomg') format('truetype'),
-    url('fonts/rondo.woff?o8oomg') format('woff'),
-    url('fonts/rondo.svg?o8oomg#rondo') format('svg');
+    url('fonts/rondo.ttf?4q3dhh') format('truetype'),
+    url('fonts/rondo.woff?4q3dhh') format('woff'),
+    url('fonts/rondo.svg?4q3dhh#rondo') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -110,7 +110,7 @@
 .rondo-icon-stop:before {
   content: "\e904";
 }
-.rondo-icon-scroll:before {
+.rondo-icon-scroll2:before {
   content: "\e905";
 }
 .rondo-icon-play:before {
@@ -124,6 +124,15 @@
 }
 .rondo-icon-search:before {
   content: "\e908";
+}
+.rondo-icon-listen:before {
+  content: "\e923";
+}
+.rondo-icon-show-chord:before {
+  content: "\e925";
+}
+.rondo-icon-scroll:before {
+  content: "\e924";
 }
 .rondo-icon-text:before {
   content: "\e921";

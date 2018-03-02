@@ -7,7 +7,7 @@
     </ion-buttons>
     <ion-buttons right class="rondo-header-buttons-right" *ngIf="section == 'text'">
       <button ion-button (click)="toggleChords()">
-        <i class="icon rondo-icon-chords"></i>
+        <i class="icon rondo-icon-show-chord"></i>
       </button>
       <button ion-button (click)="startAutoScroll()" *ngIf="!scroll">
         <i class="icon rondo-icon-scroll"></i>
@@ -18,10 +18,10 @@
     </ion-buttons>
     <ion-buttons right class="rondo-header-buttons-right" *ngIf="section == 'notes'">
       <button ion-button (click)="toggleSong()" *ngIf="!isPlaying">
-        <i class="icon rondo-icon-play"></i>
+        <i class="icon rondo-icon-listen"></i>
       </button>
       <button ion-button (click)="midiPlayer.stopSong()()" *ngIf="isPlaying">
-        <i class="icon rondo-icon-play icon--active"></i>
+        <i class="icon rondo-icon-listen icon--active"></i>
       </button>
     </ion-buttons>
   </ion-navbar>
