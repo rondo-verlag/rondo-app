@@ -15,12 +15,12 @@
   </div>
   <div padding>
     <b>Das Rondo immer und überall dabei</b><br>
-    <div *ngIf="hasBought">
+    <div *ngIf="!hasBought">
       <br>
       In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br>
       <span (click)="buyFullversion()" class="rondo-buy-button">Vollversion kaufen 5.00</span>
     </div>
-    <div *ngIf="!hasBought">
+    <div *ngIf="hasBought">
       <br>
       Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!<br><br>
     </div>
