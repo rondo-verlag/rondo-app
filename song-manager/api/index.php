@@ -315,7 +315,7 @@ $app->get('/export/listchords', function () use ($app, &$DB) {
 
 	foreach($songs as $song_id){
 		$model = new Song($song_id['id']);
-		$chords = array_merge($chords, $model->getChordList());
+		$chords = array_merge($chords, $model->getClearedChordList());
 	}
 	$chords = array_unique($chords);
 	sort($chords);

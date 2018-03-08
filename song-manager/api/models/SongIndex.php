@@ -87,6 +87,8 @@ class SongIndex {
 
 		}
 		usort($index, function($a, $b) {
+			$a['title'] = str_replace(['Ä','Ö','Ü'], ['A','O','U'], $a['title']);
+			$b['title'] = str_replace(['Ä','Ö','Ü'], ['A','O','U'], $b['title']);
 			if (strtoupper($a['title']) < strtoupper($b['title'])) {
 				return -1;
 			} else {
