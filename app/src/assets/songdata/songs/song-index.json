@@ -462,7 +462,7 @@
                 "Em",
                 "F",
                 "G",
-                "G\/H",
+                "G-H",
                 "G7"
             ],
             "alternative": false,
@@ -559,7 +559,7 @@
                 "Cism",
                 "E",
                 "E7",
-                "Fis",
+                "Fism",
                 "H7"
             ],
             "alternative": false,
@@ -2019,7 +2019,7 @@
         },
         {
             "id": 88,
-            "title": "I'm being followed by a moon shadow",
+            "title": "I'm being followed by a moonshadow",
             "pageRondoRed": 260,
             "pageRondoBlue": null,
             "pageRondoGreen": 260,
@@ -2162,8 +2162,8 @@
             "chords": [
                 "Am7",
                 "C",
-                "C\/G",
-                "C\/H",
+                "C-G",
+                "C-H",
                 "D",
                 "D7",
                 "G",
@@ -2330,7 +2330,7 @@
                 "Cism",
                 "E",
                 "E7",
-                "Fis",
+                "Fism",
                 "H7"
             ],
             "alternative": true,
@@ -2869,7 +2869,7 @@
                 "C",
                 "Cm",
                 "D",
-                "D\/Fis",
+                "D-Fis",
                 "D7",
                 "Em",
                 "Em7",
@@ -3444,7 +3444,7 @@
                 "C",
                 "Cm",
                 "D",
-                "D\/Fis",
+                "D-Fis",
                 "D7",
                 "Em",
                 "Em7",
@@ -4311,7 +4311,7 @@
                 "Em",
                 "F",
                 "G",
-                "G\/H",
+                "G-H",
                 "G7"
             ],
             "alternative": true,
