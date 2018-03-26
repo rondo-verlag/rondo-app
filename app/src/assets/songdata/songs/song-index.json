@@ -3641,22 +3641,6 @@
         },
         {
             "id": 123,
-            "title": "Singing In The Rain",
-            "pageRondoRed": 230,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 230,
-            "pageRondo2017": 230,
-            "interpret": "Gene Kelly",
-            "chords": [
-                "E",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music by NACIO HERB BROWN\nLyrics by ARTHUR FREED\n\u00a9 1929 METRO-GOLDWYN-MAYER INC.\nAll Rights Controlled by EMI ROBBINS CATALOGE INC. (Publishing) and ALFRED MUSIC PUBLISHING CO., INC. (Print)"
-        },
-        {
-            "id": 123,
             "title": "SINGING IN THE RAIN",
             "pageRondoRed": 230,
             "pageRondoBlue": null,
@@ -4100,6 +4084,7 @@
                 "A",
                 "D",
                 "E",
+                "E-Gis",
                 "Fism"
             ],
             "alternative": false,
