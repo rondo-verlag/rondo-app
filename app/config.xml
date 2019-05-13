@@ -96,8 +96,6 @@
     <allow-navigation href="http://10.0.0.121:8100" />
     <allow-navigation href="http://192.168.1.171:8101" />
     <allow-navigation href="http://192.168.1.171:8100" />
-    <engine name="android" spec="^6.3.0" />
-    <engine name="ios" spec="^4.5.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.1" />
     <plugin name="cordova-plugin-app-version" spec="^0.1.9" />
     <plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
@@ -111,4 +109,6 @@
     <plugin name="cordova-plugin-nativeaudio" spec="^3.0.9" />
     <plugin name="cordova-plugin-inapppurchase" spec="^1.1.0" />
     <plugin name="cordova-plugin-nativestorage" spec="^2.2.2" />
+    <engine name="android" spec="^6.4.0" />
+    <engine name="ios" spec="^4.5.5" />
 </widget>
