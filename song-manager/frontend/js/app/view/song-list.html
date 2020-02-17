@@ -17,6 +17,7 @@
         <th ng-click="orderBy = 'copyrightStatusBook'; orderReversed = !orderReversed">&copy; Buch</th>
         <th ng-click="orderBy = 'releaseBook2017'; orderReversed = !orderReversed">Buch2017</th>
         <th ng-click="orderBy = 'releaseApp2017'; orderReversed = !orderReversed">App2017</th>
+        <th ng-click="orderBy = 'releaseBook2021'; orderReversed = !orderReversed">Mova</th>
         <th>&nbsp;</th>
       </tr>
       <tr ng-repeat="song in filtered = (list | filter:search | orderBy : orderBy : orderReversed )" ng-dblclick="editSong(song.id)">
@@ -31,6 +32,7 @@
         <td><status status="song.copyrightStatusBook"></status></td>
         <td><yesno state="song.releaseBook2017"></yesno></td>
         <td><yesno state="song.releaseApp2017"></yesno></td>
+        <td><yesno state="song.releaseBook2021"></yesno></td>
         <td><button type="button" class="btn btn-xs btn-success" ng-click="editSong(song.id)">Bearbeiten</button></td>
       </tr>
     </table>
