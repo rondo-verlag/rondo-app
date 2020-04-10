@@ -50,6 +50,14 @@ $app->put('/songs/:songId', function ($songId) use ($app) {
 	return true;
 });
 
+$app->post('/songs', function () use ($app) {
+	$song = new Song();
+	$data = json_decode($app->request->getBody(), true);
+	$song->setTitle(trim($data['title']));
+	$song->setInterpret(trim($data['interpret']));
+	$song->save();
+	return $song->getId();
+});
 
 $app->get('/songs/:songId/html', function ($songId) use ($app) {
 	$app->contentType('text/html');

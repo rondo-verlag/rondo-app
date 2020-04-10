@@ -5,6 +5,7 @@
 /// <reference path="directives/licensetype.ts"/>
 /// <reference path="directives/status.ts"/>
 /// <reference path="directives/yesno.ts"/>
+/// <reference path="controller/SongAddController.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
 /// <reference path="app.ts"/>

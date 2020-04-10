@@ -64,6 +64,11 @@ class Song
 		return $this;
 	}
 
+	public function setInterpret($interpret){
+		$this->data['interpret'] = $interpret;
+		return $this;
+	}
+
 	public function getXML(){
 		$text = $this->crd2text($this->data['text']);
 

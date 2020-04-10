@@ -93,6 +93,41 @@ var rondo;
 var rondo;
 (function (rondo) {
     'use strict';
+    var SongAddCtrl = /** @class */ (function () {
+        function SongAddCtrl($scope, $http) {
+            this.$scope = $scope;
+            this.$http = $http;
+            $scope.song = {
+                title: '',
+                interpret: ''
+            };
+            $scope.showLoading = false;
+            $scope.add = function () {
+                if ($scope.song.title != '') {
+                    $scope.showLoading = true;
+                    $http.post("api/index.php/songs", $scope.song)
+                        .success(function (data, status, headers, config) {
+                        $scope.showLoading = false;
+                        $scope.song.title = '';
+                        $scope.song.interpret = '';
+                    })
+                        .error(function (data, status, headers, config) {
+                        console.log("AJAX failed!", data, status);
+                    });
+                }
+            };
+        }
+        SongAddCtrl.$inject = [
+            '$scope', '$http'
+        ];
+        return SongAddCtrl;
+    }());
+    rondo.SongAddCtrl = SongAddCtrl;
+})(rondo || (rondo = {}));
+/// <reference path="../references.ts" />
+var rondo;
+(function (rondo) {
+    'use strict';
     var SongDetailCtrl = /** @class */ (function () {
         function SongDetailCtrl($scope, $http, $routeParams, $location, $sce, FileUploader, $timeout) {
             this.$scope = $scope;
@@ -211,6 +246,7 @@ var rondo;
 /// <reference path="directives/licensetype.ts"/>
 /// <reference path="directives/status.ts"/>
 /// <reference path="directives/yesno.ts"/>
+/// <reference path="controller/SongAddController.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
 /// <reference path="app.ts"/>
@@ -224,6 +260,7 @@ var rondo;
 (function (rondo) {
     'use strict';
     var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload']);
+    RondoApp.controller('SongAddCtrl', rondo.SongAddCtrl);
     RondoApp.controller('SongDetailCtrl', rondo.SongDetailCtrl);
     RondoApp.controller('SongListCtrl', rondo.SongListCtrl);
     RondoApp.filter("yesno", rondo.filters.yesno);
@@ -241,6 +278,10 @@ var rondo;
                 when('/songs/:songId', {
                 templateUrl: 'frontend/js/app/view/song-detail.html',
                 controller: 'SongDetailCtrl'
+            }).
+                when('/add', {
+                templateUrl: 'frontend/js/app/view/song-add.html',
+                controller: 'SongAddCtrl'
             }).
                 otherwise({
                 redirectTo: '/songs'

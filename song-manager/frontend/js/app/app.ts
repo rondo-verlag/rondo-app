@@ -11,6 +11,7 @@ module rondo {
 
   var RondoApp = angular.module('RondoApp', ['ngRoute', 'angularFileUpload']);
 
+  RondoApp.controller('SongAddCtrl', SongAddCtrl);
   RondoApp.controller('SongDetailCtrl', SongDetailCtrl);
   RondoApp.controller('SongListCtrl', SongListCtrl);
   RondoApp.filter("yesno", rondo.filters.yesno);
@@ -29,6 +30,10 @@ module rondo {
         when('/songs/:songId', {
           templateUrl: 'frontend/js/app/view/song-detail.html',
           controller: 'SongDetailCtrl'
+        }).
+        when('/add', {
+          templateUrl: 'frontend/js/app/view/song-add.html',
+          controller: 'SongAddCtrl'
         }).
         otherwise({
           redirectTo: '/songs'
