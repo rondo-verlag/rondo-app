@@ -514,6 +514,26 @@ $app->get('/export/bookindex.csv', function () use ($app, &$DB) {
 	}
 });
 
+$app->get('/export/songs.csv', function () use ($app, &$DB) {
+
+	setlocale(LC_CTYPE, 'de_DE.UTF8');
+
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook, license, license_type, copyrightInfoApp, copyrightInfoBook, copyrightContact, comments FROM songs ORDER BY title ASC");
+
+	$app->response->headers->set('Content-Disposition', 'attachment; filename=songs.csv');
+	$app->response->headers->set('Content-Type', 'text/csv');
+
+	echo '"id","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch","Lizenz","Lizentyp","Copyright Info App","Copyright Info Buch","Copyright Kontakt","Kommentare"' . "\n";
+	foreach ($songs as $song) {
+		foreach ($song as $key => $value) {
+			$value = str_replace('"', '""', $value);
+			$value = str_replace("\n", ' ', $value);
+			echo '"'.$value.'",';
+		}
+		echo "\n";
+	}
+});
+
 $app->get('/validate', function () use ($app, &$DB) {
 	ini_set('max_execution_time', 300);
 	$app->contentType('text/html');
