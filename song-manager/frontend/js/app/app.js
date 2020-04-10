@@ -93,7 +93,7 @@ var rondo;
 var rondo;
 (function (rondo) {
     'use strict';
-    var SongDetailCtrl = (function () {
+    var SongDetailCtrl = /** @class */ (function () {
         function SongDetailCtrl($scope, $http, $routeParams, $location, $sce, FileUploader, $timeout) {
             this.$scope = $scope;
             this.$http = $http;
@@ -170,14 +170,14 @@ var rondo;
             '$scope', '$http', '$routeParams', '$location', '$sce', 'FileUploader', '$timeout'
         ];
         return SongDetailCtrl;
-    })();
+    }());
     rondo.SongDetailCtrl = SongDetailCtrl;
 })(rondo || (rondo = {}));
 /// <reference path="../references.ts" />
 var rondo;
 (function (rondo) {
     'use strict';
-    var SongListCtrl = (function () {
+    var SongListCtrl = /** @class */ (function () {
         function SongListCtrl($scope, $http, $location) {
             this.$scope = $scope;
             this.$http = $http;
@@ -201,7 +201,7 @@ var rondo;
             '$scope', '$http', '$location'
         ];
         return SongListCtrl;
-    })();
+    }());
     rondo.SongListCtrl = SongListCtrl;
 })(rondo || (rondo = {}));
 /// <reference path="../typings/tsd.d.ts" />
@@ -213,7 +213,7 @@ var rondo;
 /// <reference path="directives/yesno.ts"/>
 /// <reference path="controller/SongDetailController.ts"/>
 /// <reference path="controller/SongListController.ts"/>
-/// <reference path="app.ts"/> 
+/// <reference path="app.ts"/>
 /// <reference path="references.ts" />
 /**
  * The main RondoApp module.

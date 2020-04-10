@@ -1416,6 +1416,7 @@ declare module angular {
         statusText?: string;
     }
 
+    // @ts-ignore
     interface IHttpPromise<T> extends IPromise<IHttpPromiseCallbackArg<T>> {
         success(callback: IHttpPromiseCallback<T>): IHttpPromise<T>;
         error(callback: IHttpPromiseCallback<any>): IHttpPromise<T>;
