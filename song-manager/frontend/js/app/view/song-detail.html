@@ -211,16 +211,24 @@
             </div>
 
             <div class="form-group">
-              <label for="copyrightStatusBook2017" class="col-sm-3 control-label">Copyright Status Buch</label>
+              <label class="col-sm-3 control-label">Copyright Status Buch 2017</label>
 
               <div class="col-sm-9">
-                <select ng-model="song.copyrightStatusBook2017" id="copyrightStatusBook2017">
+                <status status="song.copyrightStatusBook2017"></status>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="copyrightStatusBook2021" class="col-sm-3 control-label">Copyright Status Buch 2021</label>
+
+              <div class="col-sm-9">
+                <select ng-model="song.copyrightStatusBook2021" id="copyrightStatusBook2021">
                   <option value="NEW">Neu</option>
                   <option value="INPROGRESS">In Arbeit</option>
                   <option value="DONE">Fertig</option>
                   <option value="NO_LICENSE">Fertig, keine Lizenz erhalten</option>
                 </select>
-                <status status="song.copyrightStatusBook2017"></status>
+                <status status="song.copyrightStatusBook2021"></status>
               </div>
             </div>
           </div>

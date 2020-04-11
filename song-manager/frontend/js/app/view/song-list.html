@@ -14,7 +14,7 @@
         <th ng-click="orderBy = 'hasNotesPDF'; orderReversed = !orderReversed">Noten</th>
         <th ng-click="orderBy = 'hasMidi'; orderReversed = !orderReversed">Midi</th>
         <th ng-click="orderBy = 'copyrightStatusApp'; orderReversed = !orderReversed">&copy; App</th>
-        <th ng-click="orderBy = 'copyrightStatusBook2017'; orderReversed = !orderReversed">&copy; Buch2017</th>
+        <th ng-click="orderBy = 'copyrightStatusBook2021'; orderReversed = !orderReversed">&copy; Buch2021</th>
         <th ng-click="orderBy = 'releaseBook2017'; orderReversed = !orderReversed">Buch2017</th>
         <th ng-click="orderBy = 'releaseApp2017'; orderReversed = !orderReversed">App</th>
         <th ng-click="orderBy = 'releaseBook2021'; orderReversed = !orderReversed">Mova</th>
@@ -28,8 +28,14 @@
         <td><yesno state="song.hasImage"></yesno></td>
         <td><yesno state="song.hasNotesPDF"></yesno></td>
         <td><yesno state="song.hasMidi"></yesno></td>
-        <td><status status="song.copyrightStatusApp"></status></td>
-        <td><status status="song.copyrightStatusBook2017"></status></td>
+        <td>
+          <status status="song.copyrightStatusApp" ng-show="song.license !== 'FREE'"></status>
+          <span ng-show="song.license === 'FREE'" style="color: green;">-</span>
+        </td>
+        <td>
+          <status status="song.copyrightStatusBook2021" ng-show="song.license !== 'FREE'"></status>
+          <span ng-show="song.license === 'FREE'" style="color: green;">-</span>
+        </td>
         <td><yesno state="song.releaseBook2017"></yesno></td>
         <td><yesno state="song.releaseApp2017"></yesno></td>
         <td><yesno state="song.releaseBook2021"></yesno></td>
