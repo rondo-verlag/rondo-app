@@ -221,7 +221,7 @@ var rondo;
             $scope.search = "";
             $scope.orderBy = 'title';
             $scope.orderReversed = false;
-            $scope.movaFilterActive = false;
+            $scope.movaFilterActive = true;
             $scope.movaFilter = function (item) {
                 if ($scope.movaFilterActive) {
                     return item.releaseBook2021 == 1;

@@ -27,7 +27,7 @@ module rondo {
       $scope.search = "";
       $scope.orderBy = 'title';
       $scope.orderReversed = false;
-      $scope.movaFilterActive = false;
+      $scope.movaFilterActive = true;
 
       $scope.movaFilter = function(item: ISong) {
         if ($scope.movaFilterActive) {
