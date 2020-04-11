@@ -221,6 +221,13 @@ var rondo;
             $scope.search = "";
             $scope.orderBy = 'title';
             $scope.orderReversed = false;
+            $scope.movaFilterActive = false;
+            $scope.movaFilter = function (item) {
+                if ($scope.movaFilterActive) {
+                    return item.releaseBook2021 == 1;
+                }
+                return true;
+            };
             $http.get("api/index.php/songs")
                 .success(function (data, status, headers, config) {
                 $scope.list = data;

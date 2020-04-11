@@ -6,6 +6,7 @@ module rondo {
   export interface ISong {
     id: string;
     title: string;
+    interpret: string;
     license: string;
     status: string;
     alternativeTitles?: string;
@@ -16,6 +17,12 @@ module rondo {
     pageRondo2017?: string;
     copyrightInfoApp?: string;
     copyrightInfoBook?: string;
+    copyrightStatusApp?: string;
+    copyrightStatusBook2017?: string;
+    copyrightStatusBook2021?: string;
+    releaseApp2017?: number;
+    releaseBook2017?: number;
+    releaseBook2021?: number;
     comments?: string;
     rawImageSize?: number;
     rawMidiSize?: number;

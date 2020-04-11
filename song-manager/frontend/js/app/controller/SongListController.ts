@@ -8,7 +8,9 @@ module rondo {
     search: String;
     orderBy: String;
     orderReversed: boolean;
+    movaFilterActive: boolean;
     editSong(int): void;
+    movaFilter(item: ISong): boolean;
   }
 
   export class SongListCtrl {
@@ -25,6 +27,14 @@ module rondo {
       $scope.search = "";
       $scope.orderBy = 'title';
       $scope.orderReversed = false;
+      $scope.movaFilterActive = false;
+
+      $scope.movaFilter = function(item: ISong) {
+        if ($scope.movaFilterActive) {
+          return item.releaseBook2021 == 1;
+        }
+        return true;
+      };
 
       $http.get("api/index.php/songs")
         .success(function(data: Array<ISong>, status, headers, config) {

@@ -4,10 +4,19 @@
     <div class="form-group">
       <input type="text" class="form-control" ng-model="search" placeholder="Suchen...">
     </div>
+    <form class="form-inline">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="movaFilterActive"> Nur <b>mova</b> Songs anzeigen
+        </label>
+      </div>
+    </form>
+    <br>
     <table class="table table-striped">
       <tr>
         <th ng-click="orderBy = 'id'; orderReversed = !orderReversed">ID</th>
         <th ng-click="orderBy = 'title'; orderReversed = !orderReversed">Titel</th>
+        <th ng-click="orderBy = 'interpret'; orderReversed = !orderReversed">Interpret</th>
         <th ng-click="orderBy = 'license'; orderReversed = !orderReversed">Lizenzfrei</th>
         <th ng-click="orderBy = 'status'; orderReversed = !orderReversed">Status</th>
         <th ng-click="orderBy = 'hasImage'; orderReversed = !orderReversed">Bild</th>
@@ -20,9 +29,10 @@
         <th ng-click="orderBy = 'releaseBook2021'; orderReversed = !orderReversed">Mova</th>
         <th>&nbsp;</th>
       </tr>
-      <tr ng-repeat="song in filtered = (list | filter:search | orderBy : orderBy : orderReversed )" ng-dblclick="editSong(song.id)">
+      <tr ng-repeat="song in filtered = (list | filter:movaFilter | filter:search | orderBy : orderBy : orderReversed )" ng-dblclick="editSong(song.id)">
         <td>{{song.id}}</td>
         <td>{{song.title}}</td>
+        <td>{{song.interpret}}</td>
         <td><license license="song.license"></license></td>
         <td><status status="song.status"></status></td>
         <td><yesno state="song.hasImage"></yesno></td>
