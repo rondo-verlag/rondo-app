@@ -9,6 +9,8 @@ require 'models/SongIndex.php';
 
 
 use Doctrine\DBAL\DriverManager;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 $DB = DriverManager::getConnection($SQL_CREDENTIALS, new \Doctrine\DBAL\Configuration());
 
@@ -518,12 +520,12 @@ $app->get('/export/songs.csv', function () use ($app, &$DB) {
 
 	setlocale(LC_CTYPE, 'de_DE.UTF8');
 
-	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type, copyrightInfoApp, copyrightInfoBook, copyrightContact, comments FROM songs ORDER BY title ASC");
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type FROM songs ORDER BY title ASC");
 
 	$app->response->headers->set('Content-Disposition', 'attachment; filename=songs.csv');
 	$app->response->headers->set('Content-Type', 'text/csv');
 
-	echo '"id","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp","Copyright Info App","Copyright Info Buch","Copyright Kontakt","Kommentare"' . "\n";
+	echo '"id","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp"' . "\n";
 	foreach ($songs as $song) {
 		foreach ($song as $key => $value) {
 			$value = str_replace('"', '""', $value);
@@ -532,6 +534,42 @@ $app->get('/export/songs.csv', function () use ($app, &$DB) {
 		}
 		echo "\n";
 	}
+});
+
+$app->get('/export/songs.xlsx', function () use ($app, &$DB) {
+
+	setlocale(LC_CTYPE, 'de_DE.UTF8');
+
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type, copyrightInfoApp, copyrightInfoBook, copyrightContact, comments FROM songs ORDER BY title ASC");
+	$titles = ["ID","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp","Copyright Info App","Copyright Info Buch","Copyright Kontakt","Kommentare"];
+
+	$data = [];
+	$data[] = $titles;
+	foreach ($songs as $song) {
+		$row = [];
+		foreach ($song as $key => $value) {
+			$row[] = $value;
+		}
+		$data[] = $row;
+	}
+
+	$spreadsheet = new Spreadsheet();
+	$sheet = $spreadsheet->getActiveSheet();
+	$sheet->fromArray($data);
+	$sheet->getColumnDimension('B')->setWidth(30);
+	$sheet->getColumnDimension('C')->setWidth(30);
+	$sheet->getColumnDimension('D')->setWidth(20);
+	$sheet->getColumnDimension('R')->setWidth(50);
+	$sheet->getColumnDimension('S')->setWidth(50);
+	$sheet->getColumnDimension('T')->setWidth(50);
+	$sheet->getColumnDimension('U')->setWidth(200);
+
+	header('Content-Type: application/vnd.ms-excel');
+	header('Content-Disposition: attachment;filename="Songs.xlsx"');
+	header('Cache-Control: max-age=0');
+
+	$writer = new Xlsx($spreadsheet);
+	$writer->save('php://output');
 });
 
 $app->get('/validate', function () use ($app, &$DB) {

@@ -9,6 +9,8 @@
         "ext-json": "*",
         "ext-intl": "*",
         "ext-gd": "*",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "ext-zip": "*",
+        "phpoffice/phpspreadsheet": "^1.11"
     }
 }
