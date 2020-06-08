@@ -143,6 +143,15 @@ var rondo;
             $scope.prevSongId = parseInt($routeParams.songId) - 1;
             $scope.nextSongId = parseInt($routeParams.songId) + 1;
             $scope.showSavedIcon = false;
+            $scope.langOptions = [
+                { id: 'de', value: 'Deutsch' },
+                { id: 'ch', value: 'Mundart' },
+                { id: 'fr', value: 'Französisch' },
+                { id: 'it', value: 'Italienisch' },
+                { id: 'en', value: 'Englisch' },
+                { id: 'other', value: 'Andere' },
+            ];
+            $scope.youtubeVideoId = null;
             this.loadData();
             $scope.uploader = new FileUploader({
                 url: 'api/index.php/songs/' + $routeParams.songId + '/musicxmlfiles'
@@ -189,6 +198,14 @@ var rondo;
             this.$http.get("api/index.php/songs/" + this.$routeParams.songId)
                 .success(function (data, status, headers, config) {
                 self.$scope.song = data;
+                var ytId = null;
+                if (data.youtubeLink) {
+                    var parts = data.youtubeLink.split('=');
+                    if (parts.length === 2) {
+                        ytId = parts[1];
+                    }
+                }
+                self.$scope.youtubeVideoId = ytId;
             })
                 .error(function (data, status, headers, config) {
                 console.log("AJAX failed!");

@@ -21,6 +21,13 @@
 	cursor: pointer;
 }
 
+.rondo-page-numbers input {
+    padding-left: 4px;
+    padding-right: 4px;
+    min-width: 40px;
+    margin-top: 1px;
+}
+
 .songtext {
   font-size: 1.3em;
   letter-spacing: 1px; }

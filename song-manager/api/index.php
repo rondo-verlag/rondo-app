@@ -349,7 +349,7 @@ $app->get('/export/index', function () use ($app, &$DB) {
 // export xml index for indesign
 $app->get('/export/indesign.xml', function () use ($app, &$DB) {
 	$xml = '';
-	$songs = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2017 = 1 ORDER BY pageRondoGreen ASC");
+	$songs = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2021 = 1 ORDER BY pageRondo2017 ASC");
 
 	foreach($songs as $song_id) {
 		$song = new Song($song_id['id']);
@@ -373,7 +373,7 @@ $app->get('/export/indesign.zip', function () use ($app, &$DB) {
 	# create a new zipstream object
 	$zip = new ZipStream\ZipStream('rondo_indesign_'.date('Y-m-d').'.zip');
 
-	$songIds = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2017 = 1 ORDER BY pageRondoGreen ASC");
+	$songIds = $DB->fetchAll("SELECT id FROM songs WHERE releaseBook2021 = 1 ORDER BY pageRondo2017 ASC");
 
 	foreach($songIds as $songId){
 		$song = new Song($songId['id']);
@@ -485,7 +485,7 @@ $app->get('/export/bookindex.csv', function () use ($app, &$DB) {
 	setlocale(LC_CTYPE, 'de_DE.UTF8');
 
 	$sortable = [];
-	$songs = $DB->fetchAll("SELECT title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017 FROM songs WHERE releaseBook2017 = 1");
+	$songs = $DB->fetchAll("SELECT title, alternativeTitles, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, pageRondo2021 FROM songs WHERE releaseBook2021 = 1");
 
 	foreach ($songs as $song) {
 
@@ -510,9 +510,9 @@ $app->get('/export/bookindex.csv', function () use ($app, &$DB) {
 	$app->response->headers->set('Content-Disposition', 'attachment; filename=bookindex.csv');
 	$app->response->headers->set('Content-Type', 'text/csv');
 
-	echo '"Liedtitel","Seite 2017","Seite Grün","Seite Blau","Seite Rot","Haupttitel"' . "\n";
+	echo '"Liedtitel","Seite 2021","Seite 2017","Seite Grün","Seite Blau","Seite Rot","Haupttitel"' . "\n";
 	foreach ($sortable as $title => $song) {
-		echo '"'.$title.'",'.$song['pageRondo2017'].','.$song['pageRondoGreen'].','.$song['pageRondoBlue'].','.$song['pageRondoRed'].','.($song['isMainTitle'] ? '"Ja"' : '"Nein"') . "\n";
+		echo '"'.$title.'",'.$song['pageRondo2021'].','.$song['pageRondo2017'].','.$song['pageRondoGreen'].','.$song['pageRondoBlue'].','.$song['pageRondoRed'].','.($song['isMainTitle'] ? '"Ja"' : '"Nein"') . "\n";
 	}
 });
 
@@ -520,12 +520,12 @@ $app->get('/export/songs.csv', function () use ($app, &$DB) {
 
 	setlocale(LC_CTYPE, 'de_DE.UTF8');
 
-	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type FROM songs ORDER BY title ASC");
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, pageRondo2021, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type FROM songs ORDER BY title ASC");
 
 	$app->response->headers->set('Content-Disposition', 'attachment; filename=songs.csv');
 	$app->response->headers->set('Content-Type', 'text/csv');
 
-	echo '"id","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp"' . "\n";
+	echo '"id","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","Seite Rondo 2021","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp"' . "\n";
 	foreach ($songs as $song) {
 		foreach ($song as $key => $value) {
 			$value = str_replace('"', '""', $value);
@@ -540,8 +540,8 @@ $app->get('/export/songs.xlsx', function () use ($app, &$DB) {
 
 	setlocale(LC_CTYPE, 'de_DE.UTF8');
 
-	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type, copyrightInfoApp, copyrightInfoBook, copyrightContact, comments FROM songs ORDER BY title ASC");
-	$titles = ["ID","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp","Copyright Info App","Copyright Info Buch","Copyright Kontakt","Kommentare"];
+	$songs = $DB->fetchAll("SELECT id, title, alternativeTitles, interpret, pageRondoRed, pageRondoBlue, pageRondoGreen, pageRondo2017, pageRondo2021, releaseApp2017, releaseBook2017, releaseBook2021, status, copyrightStatusApp, copyrightStatusBook2017, copyrightStatusBook2021, license, license_type, copyrightInfoApp, copyrightInfoBook, copyrightContact, comments FROM songs ORDER BY title ASC");
+	$titles = ["ID","Titel","Alternative Titel","Interpret","Seite Rondo Rot","Seite Rondo Blau","Seite Rondo Gruen","Seite Rondo 2017","Seite Rondo 2021","App","Buch 2017","Buch 2021","Status","Copyright Status App","Copyright Status Buch 2017","Copyright Status Buch 2021","Lizenz","Lizentyp","Copyright Info App","Copyright Info Buch","Copyright Kontakt","Kommentare"];
 
 	$data = [];
 	$data[] = $titles;
@@ -559,10 +559,10 @@ $app->get('/export/songs.xlsx', function () use ($app, &$DB) {
 	$sheet->getColumnDimension('B')->setWidth(30);
 	$sheet->getColumnDimension('C')->setWidth(30);
 	$sheet->getColumnDimension('D')->setWidth(20);
-	$sheet->getColumnDimension('R')->setWidth(50);
 	$sheet->getColumnDimension('S')->setWidth(50);
 	$sheet->getColumnDimension('T')->setWidth(50);
-	$sheet->getColumnDimension('U')->setWidth(200);
+	$sheet->getColumnDimension('U')->setWidth(50);
+	$sheet->getColumnDimension('V')->setWidth(200);
 
 	header('Content-Type: application/vnd.ms-excel');
 	header('Content-Disposition: attachment;filename="Songs.xlsx"');
@@ -603,8 +603,8 @@ $app->get('/validate', function () use ($app, &$DB) {
 		//}
 
 		// validate page number
-		if ($data['releaseBook2017'] && !$data['pageRondo2017']) {
-			invalid('Keine Seitenzahl für Buch 2017', $data);
+		if ($data['releaseBook2021'] && !$data['pageRondo2021']) {
+			invalid('Keine Seitenzahl für Buch 2021', $data);
 		}
 
 		// validate license status
