@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 export class AppVersionProvider {
 
     public getAppVersion() {
-        return '2.0.10'
+        return '2.1.0'
     }
 
 }
