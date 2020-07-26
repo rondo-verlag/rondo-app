@@ -1,55 +1,55 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     },
-    "installed_plugins": {
-        "cordova-plugin-app-version": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-insomnia": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-midi-player": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-nativeaudio": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-inapppurchase": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        },
-        "cordova-plugin-nativestorage": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        }
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "ch.rondo.songbookapp"
-        }
+    "cordova-plugin-inapppurchase": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-insomnia": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-midi-player": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-nativeaudio": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  }
 }

@@ -109,5 +109,4 @@
     <plugin name="cordova-plugin-nativeaudio" spec="^3.0.9" />
     <plugin name="cordova-plugin-inapppurchase" spec="^1.1.0" />
     <plugin name="cordova-plugin-nativestorage" spec="^2.2.2" />
-    <engine name="ios" spec="^4.5.5" />
 </widget>

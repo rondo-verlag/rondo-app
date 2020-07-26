@@ -4,7 +4,12 @@ The sourcecode for the Rondo app, created with Ionic and Angular.
 
 ## Workspace setup
 
-Requirements: Node.JS with NPM, iOS SDK and Android SDK.
+Requirements: 
+
+ * Node.JS (v12+) with NPM
+ * iOS SDK
+ * Android SDK
+ * Songdata Files (not available on github)
 
 Change to app source folder:
 ```bash
@@ -15,6 +20,8 @@ Install Ionic and Cordova globally:
 ```bash
 npm install -g ionic
 npm install -g cordova
+npm install -g native-run
+npm install -g cordova-res
 ```
 
 Install JavaScript Libraries:
