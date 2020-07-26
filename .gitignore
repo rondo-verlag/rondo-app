@@ -1,6 +1,5 @@
 .idea
 node_modules/
-/song-manager/api/_conf.php
 /data/sibelius_export
 /data/Backups
 /data/InDesign

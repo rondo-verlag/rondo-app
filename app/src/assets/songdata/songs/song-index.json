@@ -1,6 +1,60 @@
 {
     "slidesFree": [
         170,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        171,
         102,
         155,
         165,
@@ -73,7 +127,61 @@
     ],
     "slidesPaid": [
         170,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
         159,
+        171,
         102,
         155,
         165,
@@ -101,7 +209,6 @@
         64,
         24,
         6,
-        84,
         146,
         167,
         40,
@@ -143,7 +250,6 @@
         78,
         156,
         151,
-        69,
         107,
         56,
         162,
@@ -164,7 +270,6 @@
         128,
         77,
         19,
-        75,
         114,
         144,
         117,
@@ -196,7 +301,6 @@
         23,
         127,
         25,
-        52,
         137,
         111,
         89,
@@ -244,6 +348,19 @@
                 "G",
                 "Hm"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 213,
+            "title": "99 LUFTBALLONS",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Nena",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -300,7 +417,20 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1965 Universal\/MCA Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1965 Universal\/MCA Music Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 211,
+            "title": "ALLES NUR GEKLAUT",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Die Prinzen",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 131,
@@ -309,7 +439,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 170,
             "pageRondo2017": 170,
-            "interpret": "",
+            "interpret": "John Denver",
             "chords": [
                 "C",
                 "D",
@@ -328,7 +458,7 @@
             "pageRondoRed": null,
             "pageRondoBlue": 38,
             "pageRondoGreen": 40,
-            "pageRondo2017": 40,
+            "pageRondo2017": 42,
             "interpret": "Polo Hofer",
             "chords": [
                 "Am",
@@ -412,6 +542,19 @@
             "license": "Musik: amerikanische Volksweise Text: Jakob Leutert \/ Peter Jeger\n\u00a9 Edition Helbling AG, 8604 Volketswil"
         },
         {
+            "id": 204,
+            "title": "ANGELINA",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Dabu Fantastic",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 11,
             "title": "ANGIE",
             "pageRondoRed": null,
@@ -472,25 +615,6 @@
             "license": "Lyrics by JAMES RADO and GEROME RAGNI\nMusic by GALT MACDERMOT\n\u00a9 1966, 1967, 1968 JAMES RADO, GEROME RAGNI, GALT MACDERMOT, NAT SHAPIRO and EMI U CATALOG, INC."
         },
         {
-            "id": 69,
-            "title": "\u00c4r sammli f\u00fcr ne guete Zw\u00e4ck",
-            "pageRondoRed": null,
-            "pageRondoBlue": 116,
-            "pageRondoGreen": 116,
-            "pageRondo2017": 116,
-            "interpret": "Polo Hofer",
-            "chords": [
-                "A",
-                "A7",
-                "D",
-                "D7",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Polo Hofer\nAus dem Polo Hofer Songbook"
-        },
-        {
             "id": 14,
             "title": "ARABISCH",
             "pageRondoRed": null,
@@ -549,6 +673,19 @@
             "license": ""
         },
         {
+            "id": 215,
+            "title": "AUF UNS",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Andreas Bourani",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 25,
             "title": "AUX CHAMPS ELYS\u00c9ES",
             "pageRondoRed": null,
@@ -600,6 +737,19 @@
                 "F",
                 "G7"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 188,
+            "title": "BERCEUSE TCH\u00c8QUE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -679,7 +829,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1962 Special Rider Music, USA.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1962 Special Rider Music, USA.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 6,
@@ -687,7 +837,7 @@
             "pageRondoRed": null,
             "pageRondoBlue": 38,
             "pageRondoGreen": 40,
-            "pageRondo2017": 40,
+            "pageRondo2017": 42,
             "interpret": "Polo Hofer",
             "chords": [
                 "Am",
@@ -741,13 +891,26 @@
             "license": ""
         },
         {
+            "id": 218,
+            "title": "BOULEVARD OF BROKEN DREAMS",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Green Day",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 116,
             "title": "C'est un fameux trois-m\u00e2ts",
             "pageRondoRed": null,
             "pageRondoBlue": 144,
             "pageRondoGreen": 144,
             "pageRondo2017": 167,
-            "interpret": "",
+            "interpret": "Hugues Aufray",
             "chords": [
                 "Am",
                 "C",
@@ -777,7 +940,33 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1965 Universal\/MCA Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1965 Universal\/MCA Music Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 172,
+            "title": "CAMMINANDO",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Pippo Pollina",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 174,
+            "title": "CANTA E BALLA ALLA LUNA",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 24,
@@ -796,6 +985,19 @@
             "license": ""
         },
         {
+            "id": 202,
+            "title": "CHARLOTTA",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Hecht",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 26,
             "title": "CHEVALIERS DE LA TABLE RONDE",
             "pageRondoRed": 70,
@@ -809,6 +1011,19 @@
                 "D",
                 "G"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 207,
+            "title": "CHLINI H\u00c4ND",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Kunz",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -949,6 +1164,19 @@
             "license": "Mit freundlicher Genehmigung von Jacob Stickelberger"
         },
         {
+            "id": 180,
+            "title": "DA FRATELLO A FRATELLO",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 29,
             "title": "DAS ALTE HOUSE VON ROCKY-DOCKY (THIS OLE HOUSE)",
             "pageRondoRed": 34,
@@ -1036,6 +1264,32 @@
             "license": ""
         },
         {
+            "id": 184,
+            "title": "DEBOUT LES GARS",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Hugues Aufray",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 196,
+            "title": "DES QUE JE VENT SOUFFLERA",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Renaud",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 97,
             "title": "Desmond has his barrow",
             "pageRondoRed": 258,
@@ -1053,7 +1307,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 155,
@@ -1101,7 +1355,7 @@
             "pageRondoBlue": 124,
             "pageRondoGreen": 198,
             "pageRondo2017": 198,
-            "interpret": "Musik : Rudi Goguel Text : Esser, Johann \/ Langhoff, Wolfgang",
+            "interpret": "",
             "chords": [
                 "Am",
                 "D",
@@ -1147,6 +1401,19 @@
             "alternative": true,
             "free": false,
             "license": "\u00a91954 by Hamblen Music Co., Arcadia, California\nF\u00fcr Deutschland und \u00d6sterreich: Musikverlage Hans Gering KG, Bergisch Gladbach"
+        },
+        {
+            "id": 223,
+            "title": "DON'T LOOK BACK IN ANGER",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Oasis",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 34,
@@ -1492,6 +1759,32 @@
             "license": ""
         },
         {
+            "id": 205,
+            "title": "EWIGI LIEBI",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Mash",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 186,
+            "title": "FARAMAZ",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 46,
             "title": "FATHER AND SON",
             "pageRondoRed": 172,
@@ -1510,7 +1803,20 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1970 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1970 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 193,
+            "title": "FEMME LIB\u00c9R\u00c9E",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Cookie Dingler",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 47,
@@ -1568,6 +1874,32 @@
             "license": "Words and Music by Stan Jones | Translated by Ernst Verch \u00a9 1949 Edwin H Morris & Co Inc | Chappell Morris Ltd Reproduced by permission of Faber Music Ltd\nAll Rights Reserved."
         },
         {
+            "id": 171,
+            "title": "GENERALE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "De Gregori",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 183,
+            "title": "GLI ANNI",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": 883,
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 49,
             "title": "GO, TELL IT ON THE MOUNTAIN",
             "pageRondoRed": 116,
@@ -1604,6 +1936,19 @@
             "license": ""
         },
         {
+            "id": 216,
+            "title": "G\u00d6THE WAR GUT",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Rudi Carell",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 128,
             "title": "Have you seen the old man",
             "pageRondoRed": 146,
@@ -1623,25 +1968,6 @@
             "alternative": true,
             "free": false,
             "license": "THE STREETS OF LONDON (Ralph McTell)\n\u00a9 Westminster Music Ltd"
-        },
-        {
-            "id": 52,
-            "title": "HEAVEN",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 216,
-            "pageRondo2017": 216,
-            "interpret": "Gotthard",
-            "chords": [
-                "B",
-                "C",
-                "Dm",
-                "F",
-                "Gm"
-            ],
-            "alternative": false,
-            "free": false,
-            "license": "M&T: Habegger, Lee, Leoni, Lynn, Meyer, von Rohr\n\u00a9 EMI Music Publishing Germany GmbH \/ Leeleo Publishing"
         },
         {
             "id": 27,
@@ -1675,6 +2001,32 @@
             "alternative": false,
             "free": true,
             "license": "Mit freundlicher Genehmigung von Scht\u00e4rnef\u00f6ifi \/ Musik: Scht\u00e4rnef\u00f6if \/ Text: Boni Koller"
+        },
+        {
+            "id": 203,
+            "title": "HEIMWEH",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Pl\u00fcsch",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 208,
+            "title": "HEITEREFAHNE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Trauffer",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 54,
@@ -1767,7 +2119,33 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 224,
+            "title": "HEY THERE DELILAH",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Plain White T's",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 206,
+            "title": "HIPPIE-BUS",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Dodo",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 168,
@@ -1798,7 +2176,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 160,
             "pageRondo2017": 160,
-            "interpret": "",
+            "interpret": "The Animals",
             "chords": [
                 "Am",
                 "C",
@@ -1827,7 +2205,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1962 Special Rider Music, USA.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1962 Special Rider Music, USA.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 167,
@@ -1853,7 +2231,7 @@
             "pageRondoBlue": 140,
             "pageRondoGreen": 164,
             "pageRondo2017": 164,
-            "interpret": "",
+            "interpret": "Simon & Garfunkel",
             "chords": [
                 "Am",
                 "C",
@@ -1956,7 +2334,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1990 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1990 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 113,
@@ -2038,7 +2416,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 156,
@@ -2056,29 +2434,6 @@
             "alternative": true,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 75,
-            "title": "I'm sitting here in the boring room",
-            "pageRondoRed": null,
-            "pageRondoBlue": 154,
-            "pageRondoGreen": 154,
-            "pageRondo2017": 153,
-            "interpret": "Fools Garden",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Dm",
-                "E",
-                "Em",
-                "Em7",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "M&T: Freudenthaler, Hinkel\n\u00a9 EMI MMC Musikverlag GmbH & Co. KG"
         },
         {
             "id": 9,
@@ -2150,6 +2505,32 @@
                 "Hm"
             ],
             "alternative": true,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 197,
+            "title": "IL FAUT QUE JE M\u2019EN AILLE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Greame Allwright",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 178,
+            "title": "IL GATTO E LA VOLPE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Bennato",
+            "chords": [],
+            "alternative": false,
             "free": true,
             "license": ""
         },
@@ -2242,7 +2623,20 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 176,
+            "title": "IN UN MONDO DI MASCHERE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 4,
@@ -2277,7 +2671,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 46,
@@ -2298,7 +2692,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1970 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1970 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 65,
@@ -2380,7 +2774,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 262,
             "pageRondo2017": 262,
-            "interpret": "\u00c4rzte",
+            "interpret": "Die \u00c4rzte",
             "chords": [
                 "Am",
                 "C",
@@ -2425,25 +2819,6 @@
             "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
         },
         {
-            "id": 69,
-            "title": "KIOSK",
-            "pageRondoRed": null,
-            "pageRondoBlue": 116,
-            "pageRondoGreen": 116,
-            "pageRondo2017": 116,
-            "interpret": "Polo Hofer",
-            "chords": [
-                "A",
-                "A7",
-                "D",
-                "D7",
-                "G"
-            ],
-            "alternative": false,
-            "free": false,
-            "license": "Polo Hofer\nAus dem Polo Hofer Songbook"
-        },
-        {
             "id": 70,
             "title": "KNOCKIN' ON HEAVEN'S DOOR",
             "pageRondoRed": null,
@@ -2459,7 +2834,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1973, 1974 Ram\u2019s Horn Music.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1973, 1974 Ram\u2019s Horn Music.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 71,
@@ -2482,6 +2857,19 @@
             "license": ""
         },
         {
+            "id": 194,
+            "title": "L'HOMME DE CROMAGNON",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Les 4 Barbus",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 72,
             "title": "L'INVERNO \u00c8 PASSATO",
             "pageRondoRed": 66,
@@ -2493,6 +2881,58 @@
                 "D7",
                 "G"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 187,
+            "title": "LA BALLADE NORD IRLANDAISE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Renaud",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 179,
+            "title": "LA CANZONE DEL SOLE - LUCIO BATTISTI",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Lucio Battisti",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 198,
+            "title": "LA CIT\u00c9 DES \u00c9L\u00c9MENTS",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 177,
+            "title": "LA VERZASCHINA",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Trio di Gandria",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -2536,7 +2976,20 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 185,
+            "title": "LE L\u00c9GIONNAIRE - CHANT DES BATAILLONS D'AFRIQUE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 105,
@@ -2559,27 +3012,17 @@
             "license": "Text und Musik von John Cameron Fogerty"
         },
         {
-            "id": 75,
-            "title": "LEMON TREE",
+            "id": 221,
+            "title": "LET HER GO",
             "pageRondoRed": null,
-            "pageRondoBlue": 154,
-            "pageRondoGreen": 154,
-            "pageRondo2017": 153,
-            "interpret": "Fools Garden",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Dm",
-                "E",
-                "Em",
-                "Em7",
-                "F",
-                "G"
-            ],
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Passenger",
+            "chords": [],
             "alternative": false,
-            "free": false,
-            "license": "M&T: Freudenthaler, Hinkel\n\u00a9 EMI MMC Musikverlag GmbH & Co. KG"
+            "free": true,
+            "license": ""
         },
         {
             "id": 76,
@@ -2600,6 +3043,19 @@
             "license": "\u00a9 Copyright 1970 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
         },
         {
+            "id": 217,
+            "title": "LILA WOLKEN",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Marteria, Yasha Miss, Platnum",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 77,
             "title": "LIVE IS LIFE",
             "pageRondoRed": null,
@@ -2617,6 +3073,19 @@
             "alternative": false,
             "free": false,
             "license": "Musik: PFLEGER EWALD, GRASMUCK GUENTER, GRUBER PETER NIKLAS, PLISNIER KURT, TREMSCHNIG HERWIG\nText: PFLEGER EWALD\n\u00a9 by OPUS MUSIC PUBLISHING\nf\u00fcr CH: FLORA MUSIKVERLAG GMBH\nf\u00fcr D: ROLF BUDDE MUSIKVERLAG GMBH"
+        },
+        {
+            "id": 175,
+            "title": "LO SPAZZACAMINO",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 78,
@@ -2716,6 +3185,32 @@
             "license": ""
         },
         {
+            "id": 199,
+            "title": "MA LIBERT\u00c9",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "George Moustaki",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 200,
+            "title": "MA PRAIRIE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Yves Montand",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 82,
             "title": "MAN ST\u00dcRZTE SICH ZUR SONNTAGSZEIT",
             "pageRondoRed": 54,
@@ -2738,7 +3233,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 122,
             "pageRondo2017": 122,
-            "interpret": "Musik: Christian Bruhn und Drafi Deutscher Text: G\u00fcnther Loose",
+            "interpret": "Drafi Deutscher",
             "chords": [
                 "A7",
                 "D",
@@ -2747,27 +3242,6 @@
             "alternative": false,
             "free": false,
             "license": "Musik: Bruhn Christian, Drafi Deutscher\nText: Loose Rudolf G\u00fcnther\n\u00a9 by Nero Musikverlag GmbH\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
-        },
-        {
-            "id": 84,
-            "title": "MEIN FAHRRAD",
-            "pageRondoRed": null,
-            "pageRondoBlue": 42,
-            "pageRondoGreen": 42,
-            "pageRondo2017": 42,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "B",
-                "C",
-                "Dm",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": false,
-            "free": false,
-            "license": "Text: Sebastian Krumbiegel & Tobias K\u00fcnzel\nMusik: Sebastian Krumbiegel\n\u00a9 Lakeworth Music Publishing (administriert durch BMG Rights Management GmbH) \/ BMG Rights Management GmbH.\n\u00a9 SMPG Publishing (Germany) GmbH\nMit freundlicher Genehmigung von Sony\/ATV Music Publishing (Germany) GmbH"
         },
         {
             "id": 85,
@@ -2856,7 +3330,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 90,
@@ -2881,7 +3355,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 91,
@@ -2903,7 +3377,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 170,
@@ -2919,12 +3393,27 @@
                 "B",
                 "C",
                 "Dm7",
+                "Em7b5A7BbD7D7",
+                "Em7b5A7Dm7Dm7F",
                 "F",
                 "Gm7"
             ],
             "alternative": false,
             "free": true,
             "license": "PFF FFS 2019 \nFreunde des Dschungels"
+        },
+        {
+            "id": 201,
+            "title": "MOVA - ON Y VA!",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 92,
@@ -2947,7 +3436,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1968, 1970 Paul Simon (BMI).\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1968, 1970 Paul Simon (BMI).\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 93,
@@ -2988,25 +3477,17 @@
             "license": "Musik: PFLEGER EWALD, GRASMUCK GUENTER, GRUBER PETER NIKLAS, PLISNIER KURT, TREMSCHNIG HERWIG\nText: PFLEGER EWALD\n\u00a9 by OPUS MUSIC PUBLISHING\nf\u00fcr CH: FLORA MUSIKVERLAG GMBH\nf\u00fcr D: ROLF BUDDE MUSIKVERLAG GMBH"
         },
         {
-            "id": 84,
-            "title": "Neulich bin ich mit hundertzwanzig",
+            "id": 192,
+            "title": "NE SENS-TU PAS CLAQUER TES DOIGTS",
             "pageRondoRed": null,
-            "pageRondoBlue": 42,
-            "pageRondoGreen": 42,
-            "pageRondo2017": 42,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
             "interpret": "",
-            "chords": [
-                "Am",
-                "B",
-                "C",
-                "Dm",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text: Sebastian Krumbiegel & Tobias K\u00fcnzel\nMusik: Sebastian Krumbiegel\n\u00a9 Lakeworth Music Publishing (administriert durch BMG Rights Management GmbH) \/ BMG Rights Management GmbH.\n\u00a9 SMPG Publishing (Germany) GmbH\nMit freundlicher Genehmigung von Sony\/ATV Music Publishing (Germany) GmbH"
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 94,
@@ -3043,7 +3524,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 96,
@@ -3080,7 +3561,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 98,
@@ -3150,6 +3631,19 @@
                 "D7",
                 "G"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 182,
+            "title": "OLEANNA",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -3242,6 +3736,8 @@
                 "B",
                 "C",
                 "Dm7",
+                "Em7b5A7BbD7D7",
+                "Em7b5A7Dm7Dm7F",
                 "F",
                 "Gm7"
             ],
@@ -3316,6 +3812,19 @@
             "license": "Word and Music by Lenny Lipton and Peter Yarrow\nCopyright \u00a9 1963; Renewed 1991 Honalee Melodies (ASCAP) and Silver Dawn Music (ASCAP)"
         },
         {
+            "id": 219,
+            "title": "RIPTIDE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Vance Joy",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 107,
             "title": "ROCK-A MY SOUL",
             "pageRondoRed": 118,
@@ -3327,6 +3836,19 @@
                 "C",
                 "G7"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 209,
+            "title": "ROSALIE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Bligg",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -3360,6 +3882,19 @@
                 "D",
                 "G"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 210,
+            "title": "S'BR\u00dcEDERLI",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -3454,7 +3989,20 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1972 Universal\/Island Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1972 Universal\/Island Music Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 195,
+            "title": "SAN FRANCISCO",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Maxime Leforestier",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 116,
@@ -3463,7 +4011,7 @@
             "pageRondoBlue": 144,
             "pageRondoGreen": 144,
             "pageRondo2017": 167,
-            "interpret": "",
+            "interpret": "Hugues Aufray",
             "chords": [
                 "Am",
                 "C",
@@ -3498,7 +4046,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 117,
@@ -3566,7 +4114,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 270,
             "pageRondo2017": 270,
-            "interpret": "",
+            "interpret": "G\u00f6l\u00e4",
             "chords": [
                 "Am",
                 "C",
@@ -3612,25 +4160,6 @@
             "license": ""
         },
         {
-            "id": 52,
-            "title": "Show me the way to your heart",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 216,
-            "pageRondo2017": 216,
-            "interpret": "Gotthard",
-            "chords": [
-                "B",
-                "C",
-                "Dm",
-                "F",
-                "Gm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "M&T: Habegger, Lee, Leoni, Lynn, Meyer, von Rohr\n\u00a9 EMI Music Publishing Germany GmbH \/ Leeleo Publishing"
-        },
-        {
             "id": 28,
             "title": "Si hei Wind i de Haar",
             "pageRondoRed": null,
@@ -3662,6 +4191,19 @@
                 "D",
                 "G"
             ],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 190,
+            "title": "SIFFLER SUR LA COLLINE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Joe Dassin",
+            "chords": [],
             "alternative": false,
             "free": true,
             "license": ""
@@ -3716,6 +4258,19 @@
             "license": ""
         },
         {
+            "id": 212,
+            "title": "SKANDAL IM SPERRBEZIRK",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Spider Murphy Gang",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 95,
             "title": "So close no matter how far",
             "pageRondoRed": null,
@@ -3733,7 +4288,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 126,
@@ -3769,6 +4324,19 @@
             "alternative": true,
             "free": false,
             "license": "Words and Music by Amanda McBroom\n\u00a9 1979 Twentieth Century Music Corp Warner\/Chappell North America Ltd"
+        },
+        {
+            "id": 222,
+            "title": "SOMEWHERE OVER THE RAINBOW",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Israel Kamakawiwo\u02bbole",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 127,
@@ -3807,6 +4375,19 @@
             "license": ""
         },
         {
+            "id": 214,
+            "title": "TAGE WIE DIESE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Die Toten Hosen",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 20,
             "title": "Take me back to my boat on the river",
             "pageRondoRed": null,
@@ -3835,7 +4416,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 170,
             "pageRondo2017": 170,
-            "interpret": "",
+            "interpret": "John Denver",
             "chords": [
                 "C",
                 "D",
@@ -3873,7 +4454,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\n(12.5%)\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 30,
@@ -3898,7 +4479,7 @@
             "pageRondoBlue": 140,
             "pageRondoGreen": 164,
             "pageRondo2017": 164,
-            "interpret": "",
+            "interpret": "Simon & Garfunkel",
             "chords": [
                 "Am",
                 "C",
@@ -4012,7 +4593,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 160,
             "pageRondo2017": 160,
-            "interpret": "",
+            "interpret": "The Animals",
             "chords": [
                 "Am",
                 "C",
@@ -4060,7 +4641,20 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
+        },
+        {
+            "id": 191,
+            "title": "T\u00c9L\u00c9PHONE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "Cendrillon",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 137,
@@ -4080,6 +4674,19 @@
             "alternative": false,
             "free": true,
             "license": "Text und Musik Reinhard Mey\nMit freundlicher Genehmigung von Edition Reinhard Mey, Berlin"
+        },
+        {
+            "id": 173,
+            "title": "UN FAZZOLETTO AL COLLO",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
         },
         {
             "id": 96,
@@ -4136,6 +4743,32 @@
             "license": "\u00a9 Extern Entertainment GmbH, Z\u00fcrich"
         },
         {
+            "id": 189,
+            "title": "URSULE",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 181,
+            "title": "VALDER\u00cc VALDER\u00c0",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 138,
             "title": "W.NUSS VO B\u00dcMPLIZ",
             "pageRondoRed": null,
@@ -4162,13 +4795,26 @@
             "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
         },
         {
+            "id": 220,
+            "title": "WE ARE THE WORLD",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "interpret": "",
+            "chords": [],
+            "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
             "id": 83,
             "title": "Weine nicht wenn der Regen f\u00e4llt",
             "pageRondoRed": 122,
             "pageRondoBlue": null,
             "pageRondoGreen": 122,
             "pageRondo2017": 122,
-            "interpret": "Musik: Christian Bruhn und Drafi Deutscher Text: G\u00fcnther Loose",
+            "interpret": "Drafi Deutscher",
             "chords": [
                 "A7",
                 "D",
@@ -4258,7 +4904,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 76,
@@ -4321,7 +4967,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 13,
@@ -4404,7 +5050,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1990 BMG Rights Management (UK) Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1990 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 148,
@@ -4430,7 +5076,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1995 Imagem London Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1995 Imagem London Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 149,
@@ -4453,7 +5099,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 147,
@@ -4462,7 +5108,7 @@
             "pageRondoBlue": 124,
             "pageRondoGreen": 198,
             "pageRondo2017": 198,
-            "interpret": "Musik : Rudi Goguel Text : Esser, Johann \/ Langhoff, Wolfgang",
+            "interpret": "",
             "chords": [
                 "Am",
                 "D",
@@ -4490,7 +5136,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 151,
@@ -4511,7 +5157,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 132,
@@ -4538,7 +5184,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\n(12.5%)\nUsed by permission of Music Sales Ltd.\nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 152,
@@ -4557,7 +5203,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 153,
@@ -4582,7 +5228,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Copyright 1965 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
+            "license": "\u00a9 Copyright 1965 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 154,
