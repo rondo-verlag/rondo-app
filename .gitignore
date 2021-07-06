@@ -9,3 +9,8 @@ node_modules/
 /app/src/assets/songdata/songs/notes/*.png
 /app/src/assets/songdata/songs/pdfs/*.pdf
 /app/src/assets/songdata/songs/midi/*.mid
+/app-v3/public/assets/songdata/songs/html/*.html
+/app-v3/public/assets/songdata/songs/images/*.gif
+/app-v3/public/assets/songdata/songs/notes/*.png
+/app-v3/public/assets/songdata/songs/pdfs/*.pdf
+/app-v3/public/assets/songdata/songs/midi/*.mid
