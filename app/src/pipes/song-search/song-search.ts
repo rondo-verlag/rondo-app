@@ -16,6 +16,7 @@ export class SongSearchPipe implements PipeTransform {
     private isShown(row, query): boolean {
         return ((row.title.toLowerCase().indexOf(query.toLowerCase()) || '') !== -1 ||
             !row.alternative && (row.interpret.toLowerCase().indexOf(query.toLowerCase()) || '') !== -1 ||
+            !row.alternative && row.pageRondo2017 == query ||
             !row.alternative && row.pageRondoRed == query ||
             !row.alternative && row.pageRondoBlue == query ||
             !row.alternative && row.pageRondoGreen == query);
