@@ -18,7 +18,8 @@
     <div *ngIf="!hasBought">
       <br>
       In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br>
-      <span (click)="buyFullversion()" class="rondo-buy-button">Vollversion kaufen 5.00</span>
+      <span (click)="buyFullversion()" class="rondo-buy-button">Vollversion kaufen 5.00</span><br>
+      oder <a (click)="restorePurchases()">Kauf wiederherstellen</a><br><br>
     </div>
     <div *ngIf="hasBought">
       <br>
@@ -73,7 +74,6 @@
     <div>
       <br>
       <b>DEBUG:</b><br>
-      <a (click)="restorePurchases()">Kauf wiederherstellen</a>
       <a (click)="toggleHasBought()">gekauft: {{hasBought}}</a>
       <br><br>
     </div>
