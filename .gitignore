@@ -14,3 +14,4 @@ node_modules/
 /app-v3/public/assets/songdata/songs/notes/*.png
 /app-v3/public/assets/songdata/songs/pdfs/*.pdf
 /app-v3/public/assets/songdata/songs/midi/*.mid
+/app-v3/public/assets/fonts/Vectora/*.otf
