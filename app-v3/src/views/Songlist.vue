@@ -179,6 +179,14 @@ export default defineComponent({
     }
   }
 }
+.md {
+  .rondo-bar-search {
+    .clear-search {
+      top: 12px;
+    }
+  }
+}
+
 .rondo-list {
   .item {
     border: none;
