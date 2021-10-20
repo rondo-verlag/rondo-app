@@ -102,10 +102,10 @@ export default defineComponent({
 .rondo-bar-search {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .rondo-bar-search__input {
     flex: 1;
-    margin-top: 4px;
     margin-left: 4px;
   }
 
@@ -124,7 +124,7 @@ export default defineComponent({
       color: #CCC;
       font-size: 140%;
       position: absolute;
-      margin-top: 6px;
+      margin-top: 5px;
       margin-left: 6px;
     }
 
@@ -134,19 +134,20 @@ export default defineComponent({
 
     input {
       color: #FFF;
-      letter-spacing: 1px;
+      letter-spacing: initial;
       width: 100%;
       padding: 5px;
       padding-left: 30px;
       padding-right: 30px;
       font-size: 16px;
-      line-height: 25px;
+      line-height: 22px;
       border: none;
       background: transparent;
+      // vectora has a bad baseline, so we use another font for inputs
+      font-family: -apple-system, system-ui, Roboto, sans-serif;
     }
     input::-webkit-input-placeholder {
       color: #CCC;
-      //font-family: Vectora, "Helvetica Neue", Verdana, sans-serif;
       font-size: 16px;
     }
   }
@@ -156,10 +157,10 @@ export default defineComponent({
     font-size: 140%;
     position: absolute;
     top: 7px;
-    right: 56px;
+    right: 52px;
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 40px;
     text-align: center;
     padding-top: 5px;
   }
@@ -167,10 +168,11 @@ export default defineComponent({
   .about-icon {
     display: inline-block;
     padding-left: 10px;
-    padding-top: 7px;
     padding-right: 12px;
     margin-right: -12px;
     color: white;
+    position: relative;
+    top: 2px;
 
     i {
       font-size: 220%;
@@ -192,6 +194,7 @@ export default defineComponent({
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 30px;
   }
 
   .main-title {
