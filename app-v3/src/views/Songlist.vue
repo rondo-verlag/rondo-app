@@ -53,7 +53,7 @@
 import {IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
-import songdata from '../../public/assets/songdata/songs/song-index.json';
+import songdata from '../assets/songdata/songs/song-index.json';
 import ISong from "@/interfaces/ISong";
 
 const songFilter = (song: ISong, query: string): boolean => {
