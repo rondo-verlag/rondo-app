@@ -88,7 +88,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -98,7 +98,8 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-    IonButtons
+    IonButtons,
+    IonButton
   },
   data() {
     return {
