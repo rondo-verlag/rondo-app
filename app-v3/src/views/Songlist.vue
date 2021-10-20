@@ -106,7 +106,7 @@ export default defineComponent({
 
   .rondo-bar-search__input {
     flex: 1;
-    margin-left: 4px;
+    margin-left: 10px;
   }
 
   .rondo-bar-search__logo {
