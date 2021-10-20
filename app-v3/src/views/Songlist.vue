@@ -21,19 +21,36 @@
     
     <ion-content :fullscreen="true">
       <div id="container">
-        <ion-list class="rondo-list">
+        <ion-list class="rondo-list" v-if="hasBought">
           <ion-item v-for="song in filteredAllSongs" :key="song" lines="none">
             <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
             <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
           </ion-item>
         </ion-list>
+        <div v-else>
+          <ion-list class="rondo-list">
+            <ion-item v-for="song in filteredFreeSongs" :key="song" lines="none">
+              <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
+              <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
+            </ion-item>
+          </ion-list>
+          <ion-list class="rondo-list rondo-list--not-avaliable" v-if="filteredPaidSongs.length > 0">
+            <ion-list-header @click="$router.push('/about')">
+              In der&nbsp;<a>Vollversion</a>&nbsp;enthalten:
+            </ion-list-header>
+            <ion-item v-for="song in filteredPaidSongs" :key="song" lines="none">
+              <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
+              <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
+            </ion-item>
+          </ion-list>
+        </div>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import {IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem } from '@ionic/vue';
+import {IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 import songdata from '../../public/assets/songdata/songs/song-index.json';
@@ -60,11 +77,13 @@ export default defineComponent({
     IonToolbar,
     IonIcon,
     IonList,
-    IonItem
+    IonItem,
+    IonListHeader
   },
   data() {
     return {
-      query: ''
+      query: '',
+      hasBought: false // TODO
     }
   },
   computed: {
@@ -216,7 +235,7 @@ export default defineComponent({
 }
 
 .rondo-list--not-avaliable {
-  .list-header {
+  ion-list-header {
     color: white;
     a {
       color: darkorange;
@@ -224,7 +243,8 @@ export default defineComponent({
     }
   }
 
-  .item-block {
+  .alt-title,
+  .main-title {
     color: #555;
   }
 }
