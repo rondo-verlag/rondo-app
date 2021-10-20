@@ -29,12 +29,12 @@
         </ion-list>
         <div v-else>
           <ion-list class="rondo-list">
-            <ion-item v-for="song in filteredFreeSongs" :key="song" lines="none">
+            <ion-item v-for="song in filteredFreeSongs" :key="song" lines="none" @click="$router.push('/song')">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
           </ion-list>
-          <ion-list class="rondo-list rondo-list--not-avaliable" v-if="filteredPaidSongs.length > 0">
+          <ion-list class="rondo-list rondo-list--not-available" v-if="filteredPaidSongs.length > 0">
             <ion-list-header @click="$router.push('/about')">
               In der&nbsp;<a>Vollversion</a>&nbsp;enthalten:
             </ion-list-header>
@@ -234,7 +234,7 @@ export default defineComponent({
   }
 }
 
-.rondo-list--not-avaliable {
+.rondo-list--not-available {
   ion-list-header {
     color: white;
     a {
