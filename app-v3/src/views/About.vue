@@ -74,14 +74,12 @@
         &copy; 2018 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
         <br>
 
-        <!--
         <div>
           <br>
           <b>DEBUG:</b><br>
           <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>
           <br><br>
         </div>
-        -->
       </div>
     </ion-content>
   </ion-page>
@@ -90,6 +88,7 @@
 <script lang="ts">
 import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import AppState from "@/AppState";
 
 export default defineComponent({
   name: 'About',
@@ -103,8 +102,17 @@ export default defineComponent({
   },
   data() {
     return {
-      hasBought: false,
       appVersion: 'dev' // TODO
+    }
+  },
+  computed: {
+    hasBought: {
+      get() {
+        return AppState.hasBought;
+      },
+      set(val) {
+        AppState.hasBought = val;
+      }
     }
   },
   methods: {

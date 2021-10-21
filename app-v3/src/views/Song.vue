@@ -18,7 +18,7 @@
       :width="windowWidth"
       :virtual="true"
     >
-      <swiper-slide v-for="(song, index) in allSongs" :key="song" :virtualIndex="index">
+      <swiper-slide v-for="(song, index) in songs" :key="song" :virtualIndex="index">
         <img :src="require('@/assets/songdata/songs/images/'+song.id+'.gif')">
         Slide {{index}}<br> {{song.title}}
       </swiper-slide>
@@ -48,6 +48,7 @@ import 'swiper/swiper.scss';
 import ISong from '@/interfaces/ISong';
 
 import SwiperCore, { Virtual } from 'swiper';
+import AppState from "@/AppState";
 
 SwiperCore.use([Virtual]);
 
@@ -73,11 +74,18 @@ export default defineComponent({
     }
   },
   computed: {
+    hasBought(): boolean {
+      return AppState.hasBought;
+    },
     windowWidth() {
       return window.innerWidth;
     },
-    allSongs(): ISong[] {
-      return (songdata.list || []).filter((song) => !song.alternative);
+    songs(): ISong[] {
+      if (this.hasBought) {
+        return (songdata.list || []).filter((song) => !song.alternative);
+      } else {
+        return (songdata.list || []).filter((song) => !song.alternative && song.free);
+      }
     },
   },
   methods: {
