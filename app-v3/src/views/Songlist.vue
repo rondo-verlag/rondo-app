@@ -22,7 +22,7 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <ion-list class="rondo-list" v-if="hasBought">
-          <ion-item v-for="song in filteredAllSongs" :key="song" lines="none">
+          <ion-item v-for="song in filteredAllSongs" :key="song" lines="none" @click="$router.push('/song')">
             <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
             <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
           </ion-item>
@@ -55,6 +55,7 @@ import { defineComponent } from 'vue';
 
 import songdata from '../assets/songdata/songs/song-index.json';
 import ISong from "@/interfaces/ISong";
+import AppState from "@/AppState";
 
 const songFilter = (song: ISong, query: string): boolean => {
   if (query === '') {
@@ -83,10 +84,12 @@ export default defineComponent({
   data() {
     return {
       query: '',
-      hasBought: false // TODO
     }
   },
   computed: {
+    hasBought(): boolean {
+      return AppState.hasBought;
+    },
     allSongs(): ISong[] {
       return songdata.list || [];
     },
