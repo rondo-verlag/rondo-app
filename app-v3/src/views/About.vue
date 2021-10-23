@@ -32,14 +32,15 @@
 
         <br>
         <br>
-        <!--<browserlink url="https://www.facebook.com/rondoverlag">facebook.com/rondoverlag</browserlink><br>
+        <browserlink url="https://www.facebook.com/rondoverlag">facebook.com/rondoverlag</browserlink><br>
+        <br>
+        <browserlink url="https://www.instagram.com/rondoverlag">instagram.com/rondoverlag</browserlink><br>
         <br>
         <browserlink url="https://www.hajk.ch/de/catalogsearch/result/?q=Rondo%20Liederbuch">Rondo Liederbuch kaufen (Hajk)</browserlink><br>
         <br>
-        -->
 
         Fragen, Wünsche, Lob oder Kritik zur App sind unter
-        <!--<browserlink url="mailto:app@rondo-verlag.ch?subject=Rondo App {{app_version}} Feedback">app@rondo-verlag.ch</browserlink>-->
+        <browserlink :url="'mailto:app@rondo-verlag.ch?subject=Rondo App ' + app_version + ' Feedback'">app@rondo-verlag.ch</browserlink>
         allzeit willkommen.
 
         <br>
@@ -66,7 +67,7 @@
         <br>
 
         Akkorde Sounds mit freundlicher Genehmigung von Burkhard Mikolai<br>
-        <!--<browserlink url="http://www.bunte-noten.de">www.bunte-noten.de</browserlink>-->
+        <browserlink url="http://www.bunte-noten.de">www.bunte-noten.de</browserlink>
 
         <br>
         <br>
@@ -89,6 +90,7 @@
 import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
+import Browserlink from "@/views/Browserlink.vue";
 
 export default defineComponent({
   name: 'About',
@@ -98,7 +100,8 @@ export default defineComponent({
     IonPage,
     IonToolbar,
     IonButtons,
-    IonButton
+    IonButton,
+    Browserlink,
   },
   data() {
     return {

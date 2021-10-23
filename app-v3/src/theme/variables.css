@@ -110,6 +110,11 @@ http://ionicframework.com/docs/theming/ */
   --ion-item-background: #000000;
 
   --ion-card-background: #1c1c1d;
+
+  --ion-toolbar-background: #000;
+  --ion-toolbar-color: #FFF;
+  --ion-toolbar-color: #FFF;
+  --ion-toolbar-border-color: #000;
 }
 
 .ios ion-modal {
