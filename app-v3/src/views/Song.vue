@@ -41,7 +41,7 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import songdata from '../assets/songdata/songs/song-index.json';
+import songdata from '../../public/assets/songdata/songs/song-index.json';
 
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.scss';
