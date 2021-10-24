@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'ch.rondo.songbookapp',
   appName: 'songbook-app',
   webDir: 'dist',
   bundledWebRuntime: false

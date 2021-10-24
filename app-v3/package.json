@@ -1,6 +1,8 @@
 {
   "name": "songbook-app",
-  "version": "0.0.1",
+  "version": "3.0.0-alpha.1",
+  "author": "Rondo Verlag; Demian Holderegger",
+  "homepage": "http://rondo-verlag.ch",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -44,5 +46,5 @@
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
   },
-  "description": "An Ionic project"
+  "description": "A Scouting Songbook App",
 }
