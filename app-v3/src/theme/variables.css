@@ -113,7 +113,6 @@ http://ionicframework.com/docs/theming/ */
 
   --ion-toolbar-background: #000;
   --ion-toolbar-color: #FFF;
-  --ion-toolbar-color: #FFF;
   --ion-toolbar-border-color: #000;
 }
 
@@ -130,7 +129,7 @@ http://ionicframework.com/docs/theming/ */
  */
 
 .md body {
-  --ion-background-color: #121212;
+  --ion-background-color: #000000;
   --ion-background-color-rgb: 18,18,18;
 
   --ion-text-color: #ffffff;

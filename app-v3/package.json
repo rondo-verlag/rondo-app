@@ -19,6 +19,7 @@
     "@capacitor/status-bar": "1.0.2",
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
+    "@types/swiper": "^5.4.3",
     "core-js": "^3.6.5",
     "swiper": "^6.8.4",
     "vue": "^3.0.0-0",
