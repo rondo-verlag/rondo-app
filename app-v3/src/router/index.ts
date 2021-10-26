@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
     component: About
   },
   {
-    path: '/song',
+    path: '/song/:id',
     name: 'Song',
     component: Song
   }

@@ -22,14 +22,14 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <ion-list class="rondo-list" v-if="hasBought">
-          <ion-item v-for="song in filteredAllSongs" :key="song" lines="none" @click="$router.push('/song')">
+          <ion-item v-for="song in filteredAllSongs" :key="song" lines="none" @click="$router.push('/song/' + song.id)">
             <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
             <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
           </ion-item>
         </ion-list>
         <div v-else>
           <ion-list class="rondo-list">
-            <ion-item v-for="song in filteredFreeSongs" :key="song" lines="none" @click="$router.push('/song')">
+            <ion-item v-for="song in filteredFreeSongs" :key="song" lines="none" @click="$router.push('/song/' + song.id)">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>

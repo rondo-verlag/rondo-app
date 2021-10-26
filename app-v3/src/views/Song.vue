@@ -18,23 +18,23 @@
             <i class="icon rondo-icon-scroll icon--active"></i>
           </ion-button>
         </ion-buttons>
-<!--TODO        <ion-buttons right class="rondo-header-buttons-right" v-if="section === 'notes'">
+        <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'notes'">
           <ion-button ion-button @click="toggleSong()" v-if="!isPlaying">
             <i class="icon rondo-icon-listen"></i>
           </ion-button>
-          <ion-button ion-button @click="midiPlayer.stopSong()()" v-if="isPlaying">
+          <ion-button ion-button @click="stopSong()" v-if="isPlaying">
             <i class="icon rondo-icon-listen icon--active"></i>
           </ion-button>
-        </ion-buttons>-->
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" v-show="section === 'text'">
       <div class="content-wrapper">
         <swiper
           :slides-per-view="1"
           :space-between="0"
-          :initial-slide="2"
+          :initial-slide="initialIndex"
           @slideChange="slideChanged"
           @swiper="setSwiperInstance"
           :width="windowWidth"
@@ -47,6 +47,18 @@
           </swiper-slide>
         </swiper>
       </div>
+    </ion-content>
+
+    <ion-content :fullscreen="true" v-if="section === 'chords'">
+      <div class="chord-list">
+        <template v-for="chord in currentSong.chords" :key="chord">
+          <i :class="'rondo-icon-chord-'+chord" @click="playChord(chord)"></i>
+        </template>
+      </div>
+    </ion-content>
+
+    <ion-content :fullscreen="true" v-if="section === 'notes'">
+      <img id="page" :src="require('../../public/assets/songdata/songs/notes/'+currentSong.id+'.png')">
     </ion-content>
 
     <ion-footer>
@@ -83,7 +95,7 @@ import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.scss';
 import ISong from '@/interfaces/ISong';
 
-import SwiperCore, { Virtual } from 'swiper';
+import SwiperCore, { Virtual, Swiper as SwiperInstance } from 'swiper';
 import AppState from "@/AppState";
 import Songtext from "@/views/Songtext.vue";
 import ScrollableContent from "@/views/ScrollableContent.vue";
@@ -109,7 +121,19 @@ export default defineComponent({
     Swiper,
     SwiperSlide,
   },
-  data() {
+  data(): {
+    swiperInstance: SwiperInstance;
+    section: string;
+    isPlaying: boolean;
+    scrollElement: Element | null;
+    isScrolling: boolean;
+    scrollTimer: number | null;
+    lastScrollPosition: number;
+    sameLastScrollPositionCounter: number;
+    autoScrollInQueue: boolean;
+    currentSongId: number;
+    initialIndex: number;
+  } {
     return {
       swiperInstance: null,
       section: 'text',
@@ -120,6 +144,8 @@ export default defineComponent({
       lastScrollPosition: -1,
       sameLastScrollPositionCounter: 0,
       autoScrollInQueue: false,
+      currentSongId: 0,
+      initialIndex: 0,
     }
   },
   computed: {
@@ -136,10 +162,23 @@ export default defineComponent({
         return (songdata.list || []).filter((song) => !song.alternative && song.free);
       }
     },
+    currentSong(): ISong {
+      return this.songs.find(song => song.id == this.currentSongId);
+    },
+  },
+  mounted() {
+    this.currentSongId = parseInt(this.$route.params.id as string);
+    this.initialIndex = this.songs.findIndex(song => song.id == this.currentSongId);
+    if (this.swiperInstance) {
+      this.swiperInstance.slideTo(this.initialIndex, 0);
+    }
   },
   methods: {
     slideChanged: function() {
       if (this.swiperInstance) {
+        if (this.songs[this.swiperInstance.realIndex]) {
+          this.currentSongId = this.songs[this.swiperInstance.realIndex].id;
+        }
         this.stopAutoScroll();
         //this.midiPlayer.stopSong(); // TODO
       }
@@ -215,7 +254,19 @@ export default defineComponent({
     },
     enterFullscreen: function() {
         document.body.classList.add('rondo-fullscreen');
-    }
+    },
+
+    // Playback
+    playChord: function(chord: string) {
+      //TODO
+      console.log(chord)
+    },
+    toggleSong: function() {
+      // TODO
+    },
+    stopSong: function() {
+      // TODO
+    },
   }
 });
 </script>
@@ -285,4 +336,13 @@ ion-footer {
   color: darkorange !important;
 }
 
+.chord-list {
+  font-size: 35vw;
+  padding-top: 20px;
+
+  i {
+    width: 33%;
+    display: inline-block;
+  }
+}
 </style>

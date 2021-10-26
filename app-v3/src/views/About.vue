@@ -40,7 +40,7 @@
         <br>
 
         Fragen, Wünsche, Lob oder Kritik zur App sind unter
-        <browserlink :url="'mailto:app@rondo-verlag.ch?subject=Rondo App ' + app_version + ' Feedback'">app@rondo-verlag.ch</browserlink>
+        <browserlink :url="'mailto:app@rondo-verlag.ch?subject=Rondo App ' + appVersion + ' Feedback'">app@rondo-verlag.ch</browserlink>
         allzeit willkommen.
 
         <br>
