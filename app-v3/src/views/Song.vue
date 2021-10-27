@@ -167,6 +167,7 @@ export default defineComponent({
     },
   },
   mounted() {
+    this.section = 'text';
     this.currentSongId = parseInt(this.$route.params.id as string);
     this.initialIndex = this.songs.findIndex(song => song.id == this.currentSongId);
     if (this.swiperInstance) {
