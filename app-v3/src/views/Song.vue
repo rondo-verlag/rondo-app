@@ -133,6 +133,7 @@ export default defineComponent({
     autoScrollInQueue: boolean;
     currentSongId: number;
     initialIndex: number;
+    playingChord: HTMLAudioElement | null;
   } {
     return {
       swiperInstance: null,
@@ -146,6 +147,7 @@ export default defineComponent({
       autoScrollInQueue: false,
       currentSongId: 0,
       initialIndex: 0,
+      playingChord: null,
     }
   },
   computed: {
@@ -163,15 +165,21 @@ export default defineComponent({
       }
     },
     currentSong(): ISong {
-      return this.songs.find(song => song.id == this.currentSongId);
+      return this.songs.find((song: ISong) => song.id == this.currentSongId);
     },
   },
   mounted() {
     this.section = 'text';
     this.currentSongId = parseInt(this.$route.params.id as string);
-    this.initialIndex = this.songs.findIndex(song => song.id == this.currentSongId);
+    this.initialIndex = this.songs.findIndex((song: ISong) => song.id == this.currentSongId);
     if (this.swiperInstance) {
       this.swiperInstance.slideTo(this.initialIndex, 0);
+    }
+  },
+  unmounted() {
+    if (this.playingChord) {
+      this.playingChord.pause();
+      this.playingChord = null;
     }
   },
   methods: {
@@ -259,8 +267,11 @@ export default defineComponent({
 
     // Playback
     playChord: function(chord: string) {
-      //TODO
-      console.log(chord)
+      if (this.playingChord) {
+        this.playingChord.pause();
+      }
+      this.playingChord = new Audio('assets/songdata/mp3-chords/' + chord + '.mp3');
+      this.playingChord.play();
     },
     toggleSong: function() {
       // TODO
