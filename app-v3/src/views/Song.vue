@@ -57,7 +57,7 @@
       </div>
     </ion-content>
 
-    <ion-content :fullscreen="true" v-if="section === 'notes'">
+    <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page">
       <img id="page" :src="require('../../public/assets/songdata/songs/notes/'+currentSong.id+'.png')">
     </ion-content>
 
@@ -322,6 +322,10 @@ ion-footer {
   color: white;
 }
 
+.notes-page {
+  --background: white;
+}
+
 // -- classes outside of page
 
 .rondo-fullscreen {
@@ -344,6 +348,7 @@ ion-footer {
   i {
     width: 33%;
     display: inline-block;
+    text-align: center;
   }
 }
 </style>
