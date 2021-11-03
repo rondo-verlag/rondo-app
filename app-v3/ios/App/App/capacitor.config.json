@@ -1,0 +1,9 @@
+{
+	"appId": "ch.rondo.songbookapp",
+	"appName": "songbook-app",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"server": {
+		"url": "http://192.168.1.115:8100"
+	}
+}
