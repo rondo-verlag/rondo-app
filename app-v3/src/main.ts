@@ -27,9 +27,13 @@ import './theme/variables.css';
 import './theme/rondo-icons.css';
 import './theme/rondo.css';
 
+/* use package.json to read app version */
+import packageJson from '../package.json'
+
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .provide('appVersion', packageJson.version);
   
 router.isReady().then(() => {
   app.mount('#app');

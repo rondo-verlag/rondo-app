@@ -103,11 +103,7 @@ export default defineComponent({
     IonButton,
     Browserlink,
   },
-  data() {
-    return {
-      appVersion: 'dev' // TODO
-    }
-  },
+  inject: ['appVersion'],
   computed: {
     hasBought: {
       get() {
