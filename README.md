@@ -16,12 +16,9 @@ Change to app source folder:
 cd app
 ```
 
-Install Ionic and Cordova globally:
+Install Ionic globally:
 ```bash
-npm install -g ionic
-npm install -g cordova
-npm install -g native-run
-npm install -g cordova-res
+npm install -g @ionic/cli
 ```
 
 Install JavaScript Libraries:
@@ -34,8 +31,16 @@ Now you can run the app in your browser:
 ionic serve
 ```
 
+## Useful commands (OLD)
 
-## Useful commands
+Run in iOS Simulator:
+
+    ionic capacitor run ios
+
+XCode must be installed and started once for this to work.
+
+
+## Useful commands (OLD Cordova Stuff)
 
 Run in iOS Simulator:
 
