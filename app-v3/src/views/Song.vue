@@ -90,6 +90,8 @@ import {
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import songdata from '../../public/assets/songdata/songs/song-index.json';
+import { Insomnia } from '@ionic-native/insomnia';
+
 
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.scss';
@@ -181,6 +183,9 @@ export default defineComponent({
       this.playingChord.pause();
       this.playingChord = null;
     }
+    if (this.isScrolling) {
+        Insomnia.allowSleepAgain();
+    }
   },
   methods: {
     slideChanged: function() {
@@ -231,7 +236,7 @@ export default defineComponent({
         if (this.section != 'text') {
             return;
         }
-        //this.insomnia.keepAwake(); // TODO
+        Insomnia.keepAwake();
         this.enterFullscreen();
         this.isScrolling = true;
         this.sameLastScrollPositionCounter = 10;
@@ -252,7 +257,7 @@ export default defineComponent({
         }, this.getScrollTimeout());
     },
     stopAutoScroll: function() {
-        //this.insomnia.allowSleepAgain(); // TODO
+        Insomnia.allowSleepAgain();
         this.isScrolling = false;
         clearInterval(this.scrollTimer);
         this.lastScrollPosition = -1;
