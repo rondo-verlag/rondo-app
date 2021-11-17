@@ -31,7 +31,15 @@ Now you can run the app in your browser:
 ionic serve
 ```
 
-## Useful commands (OLD)
+For iOS we need to install cocoapods and its dependencies:
+```bash
+ionic cap sync
+```
+
+For Android we need to install Android Studio and the Java JDK.
+
+
+## Useful commands
 
 Run in iOS Simulator:
 
