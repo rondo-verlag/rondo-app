@@ -101,6 +101,7 @@ import SwiperCore, { Virtual, Swiper as SwiperInstance } from 'swiper';
 import AppState from "@/AppState";
 import Songtext from "@/views/Songtext.vue";
 import ScrollableContent from "@/views/ScrollableContent.vue";
+import { StatusBar } from '@capacitor/status-bar';
 
 SwiperCore.use([Virtual]);
 
@@ -185,6 +186,7 @@ export default defineComponent({
     }
     if (this.isScrolling) {
         Insomnia.allowSleepAgain();
+        this.exitFullscreen();
     }
   },
   methods: {
@@ -265,9 +267,11 @@ export default defineComponent({
     },
     exitFullscreen: function() {
         document.body.classList.remove('rondo-fullscreen');
+        StatusBar.show();
     },
     enterFullscreen: function() {
         document.body.classList.add('rondo-fullscreen');
+        StatusBar.hide();
     },
 
     // Playback
@@ -346,10 +350,10 @@ ion-footer {
 
 .rondo-fullscreen {
   ion-header {
-    top: -80px;
+    top: -100px;
   }
   ion-footer {
-    bottom: -80px;
+    bottom: -100px;
   }
 }
 

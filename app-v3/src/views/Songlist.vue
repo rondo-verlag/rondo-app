@@ -18,7 +18,7 @@
       </div>
       </ion-toolbar>
     </ion-header>
-    
+
     <ion-content :fullscreen="true">
       <div id="container">
         <ion-list class="rondo-list" v-if="hasBought">
