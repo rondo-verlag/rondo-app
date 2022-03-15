@@ -72,7 +72,7 @@
         <br>
         <br>
         &mdash;<br>
-        &copy; 2018 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
+        &copy; 2022 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
         <br>
 
         <div>
@@ -91,7 +91,6 @@ import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } fro
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
-import { Storage } from '@capacitor/storage';
 
 export default defineComponent({
   name: 'About',
@@ -111,8 +110,7 @@ export default defineComponent({
         return AppState.hasBought;
       },
       set(val: boolean): void {
-        AppState.hasBought = val;
-        Storage.set({ key: 'hasBought', value: val ? 'true' : 'false' });
+        AppState.setHasBought(val)
       }
     }
   },
