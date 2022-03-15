@@ -19,6 +19,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     'prefer-const': 'off',
+    'vue/multi-word-component-names': 'warn'
   },
   overrides: [
     {
