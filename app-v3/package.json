@@ -10,16 +10,18 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "ios": "ionic capacitor run"
+    "ios": "ionic capacitor run ios",
+    "serve-ios": "ionic capacitor run ios -l --external",
+    "android": "ionic capacitor run android"
   },
   "dependencies": {
-    "@capacitor/android": "3.3.1",
+    "@capacitor/android": "^3.4.3",
     "@capacitor/app": "^1.0.2",
     "@capacitor/core": "^3.0.2",
     "@capacitor/haptics": "^1.0.2",
-    "@capacitor/ios": "3.3.0",
+    "@capacitor/ios": "^3.4.3",
     "@capacitor/keyboard": "^1.0.2",
-    "@capacitor/status-bar": "^1.0.2",
+    "@capacitor/status-bar": "^1.0.8",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/insomnia": "^5.36.0",
     "@ionic/core": "^6.0.11",

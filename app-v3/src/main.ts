@@ -29,12 +29,15 @@ import './theme/rondo.css';
 
 /* use package.json to read app version */
 import packageJson from '../package.json'
+import { StatusBar, Style } from '@capacitor/status-bar';
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router)
   .provide('appVersion', packageJson.version);
-  
+
 router.isReady().then(() => {
   app.mount('#app');
 });
+
+StatusBar.setStyle({ style: Style.Dark })
