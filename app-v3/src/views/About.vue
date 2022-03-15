@@ -9,7 +9,7 @@
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
-    
+
     <ion-content :fullscreen="true">
       <div style="background: #ffffff">
         <img src="assets/songdata/images/about.png" style="width: 100%">
@@ -91,6 +91,7 @@ import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } fro
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
+import { Storage } from '@capacitor/storage';
 
 export default defineComponent({
   name: 'About',
@@ -106,11 +107,12 @@ export default defineComponent({
   inject: ['appVersion'],
   computed: {
     hasBought: {
-      get() {
+      get(): boolean {
         return AppState.hasBought;
       },
-      set(val) {
+      set(val: boolean): void {
         AppState.hasBought = val;
+        Storage.set({ key: 'hasBought', value: val ? 'true' : 'false' });
       }
     }
   },
