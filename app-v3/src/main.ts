@@ -30,6 +30,7 @@ import './theme/rondo.css';
 /* use package.json to read app version */
 import packageJson from '../package.json'
 import { StatusBar, Style } from '@capacitor/status-bar';
+import {PurchaseManager} from "@/PurchaseManager";
 
 const app = createApp(App)
   .use(IonicVue)
@@ -41,3 +42,5 @@ router.isReady().then(() => {
 });
 
 StatusBar.setStyle({ style: Style.Dark })
+
+PurchaseManager.initialize();

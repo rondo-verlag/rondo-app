@@ -75,12 +75,12 @@
         &copy; 2022 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
         <br>
 
-        <div>
-          <br>
-          <b>DEBUG:</b><br>
-          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>
-          <br><br>
-        </div>
+<!--        <div>-->
+<!--          <br>-->
+<!--          <b>DEBUG:</b><br>-->
+<!--          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>-->
+<!--          <br><br>-->
+<!--        </div>-->
       </div>
     </ion-content>
   </ion-page>
@@ -91,6 +91,7 @@ import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } fro
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
+import {PurchaseManager} from "@/PurchaseManager";
 
 export default defineComponent({
   name: 'About',
@@ -116,11 +117,10 @@ export default defineComponent({
   },
   methods: {
     buyFullversion() {
-      // TODO
-      this.hasBought = true;
+      PurchaseManager.buy();
     },
     restorePurchases() {
-      // TODO
+      PurchaseManager.restore();
     }
   }
 });
