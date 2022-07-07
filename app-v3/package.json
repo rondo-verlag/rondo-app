@@ -36,7 +36,8 @@
     "core-js": "^3.6.5",
     "swiper": "^6.8.4",
     "vue": "^3.0.0-0",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "web-midi-player": "^1.4.1"
   },
   "devDependencies": {
     "@capacitor/cli": "^3.0.2",

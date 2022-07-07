@@ -19,7 +19,7 @@
           </ion-button>
         </ion-buttons>
         <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'notes'">
-          <ion-button ion-button @click="toggleSong()" v-if="!isPlaying">
+          <ion-button ion-button @click="startSong()" v-if="!isPlaying">
             <i class="icon rondo-icon-listen"></i>
           </ion-button>
           <ion-button ion-button @click="stopSong()" v-if="isPlaying">
@@ -103,6 +103,8 @@ import Songtext from "@/views/Songtext.vue";
 import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
 
+import MidiPlayer from 'web-midi-player';
+
 SwiperCore.use([Virtual]);
 
 export default defineComponent({
@@ -137,6 +139,7 @@ export default defineComponent({
     currentSongId: number;
     initialIndex: number;
     playingChord: HTMLAudioElement | null;
+    midiPlayer: any;
   } {
     return {
       swiperInstance: null,
@@ -151,6 +154,7 @@ export default defineComponent({
       currentSongId: 0,
       initialIndex: 0,
       playingChord: null,
+      midiPlayer: null,
     }
   },
   computed: {
@@ -188,6 +192,7 @@ export default defineComponent({
         Insomnia.allowSleepAgain();
         this.exitFullscreen();
     }
+    this.stopSong();
   },
   methods: {
     slideChanged: function() {
@@ -196,7 +201,7 @@ export default defineComponent({
           this.currentSongId = this.songs[this.swiperInstance.realIndex].id;
         }
         this.stopAutoScroll();
-        //this.midiPlayer.stopSong(); // TODO
+        this.stopSong();
       }
     },
     setSwiperInstance: function (swiper: any) {
@@ -282,11 +287,24 @@ export default defineComponent({
       this.playingChord = new Audio('assets/songdata/mp3-chords/' + chord + '.mp3');
       this.playingChord.play();
     },
-    toggleSong: function() {
-      // TODO
+    startSong: function() {
+      this.stopSong();
+      this.midiPlayer = new MidiPlayer({ patchUrl: '/assets/midi-patches/' });
+      this.midiPlayer.play({ url: '/assets/songdata/songs/midi/' + this.currentSongId + '.mid' });
+      this.isPlaying = true;
+      const eventLogger = (payload: any) => {
+        if (payload.event === 'MIDI_END') {
+          this.stopSong();
+        }
+      }
+      this.midiPlayer.setLogger({ eventLogger });
     },
     stopSong: function() {
-      // TODO
+      if (this.midiPlayer !== null) {
+        this.midiPlayer.stop();
+        this.midiPlayer = null;
+      }
+      this.isPlaying = false;
     },
   }
 });
