@@ -9,3 +9,5 @@ declare module 'swiper/vue' {
   export class Swiper extends _Vue {}
   export class SwiperSlide extends _Vue {}
 }
+
+declare module 'web-midi-player';
