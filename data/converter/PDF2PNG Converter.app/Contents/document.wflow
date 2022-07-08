@@ -309,7 +309,7 @@
 					<key>replaceExisting</key>
 					<true/>
 					<key>toDirectory</key>
-					<string>~/projects/songbook-app/app/www/resources/songs/notes</string>
+					<string>~/projects/rondo-app/app/public/assets/songdata/songs/notes</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.MoveFiles</string>

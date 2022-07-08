@@ -12,8 +12,10 @@
     "lint": "vue-cli-service lint",
     "ios": "ionic capacitor run ios",
     "serve-ios": "ionic capacitor run ios --livereload --external",
+    "build-ios": "ionic capacitor build ios",
     "android": "ionic capacitor run android",
-    "serve-android": "ionic capacitor run android --livereload --external"
+    "serve-android": "ionic capacitor run android --livereload --external",
+    "build-android": "ionic capacitor build android"
   },
   "dependencies": {
     "@awesome-cordova-plugins/in-app-purchase-2": "^5.40.0",
