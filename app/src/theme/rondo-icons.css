@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'rondo';
+  src:
+    url('../assets/fonts/rondo/rondo.ttf?qthwo6') format('truetype'),
+    url('../assets/fonts/rondo/rondo.woff?qthwo6') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="rondo-icon-"], [class*=" rondo-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rondo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rondo-icon-chord-E-Gis:before {
+  content: "\e93c";
+}
+.rondo-icon-chord-A:before {
+  content: "\e909";
+}
+.rondo-icon-chord-A7:before {
+  content: "\e90a";
+}
+.rondo-icon-chord-Am:before {
+  content: "\e90b";
+}
+.rondo-icon-chord-Am6:before {
+  content: "\e90c";
+}
+.rondo-icon-chord-Am7:before {
+  content: "\e90d";
+}
+.rondo-icon-chord-B:before {
+  content: "\e90e";
+}
+.rondo-icon-chord-C-G:before {
+  content: "\e90f";
+}
+.rondo-icon-chord-C-H:before {
+  content: "\e910";
+}
+.rondo-icon-chord-C:before {
+  content: "\e911";
+}
+.rondo-icon-chord-C7:before {
+  content: "\e912";
+}
+.rondo-icon-chord-Cism:before {
+  content: "\e913";
+}
+.rondo-icon-chord-Cm:before {
+  content: "\e914";
+}
+.rondo-icon-chord-D:before {
+  content: "\e915";
+}
+.rondo-icon-chord-D-Fis:before {
+  content: "\e916";
+}
+.rondo-icon-chord-D7:before {
+  content: "\e917";
+}
+.rondo-icon-chord-Dm:before {
+  content: "\e918";
+}
+.rondo-icon-chord-Dm6:before {
+  content: "\e919";
+}
+.rondo-icon-chord-Dm7:before {
+  content: "\e91a";
+}
+.rondo-icon-chord-Dmaj7:before {
+  content: "\e91b";
+}
+.rondo-icon-chord-E:before {
+  content: "\e91c";
+}
+.rondo-icon-chord-E7:before {
+  content: "\e91d";
+}
+.rondo-icon-chord-E7sus4:before {
+  content: "\e91e";
+}
+.rondo-icon-chord-Em:before {
+  content: "\e91f";
+}
+.rondo-icon-chord-Em6:before {
+  content: "\e920";
+}
+.rondo-icon-chord-Em7:before {
+  content: "\e926";
+}
+.rondo-icon-chord-Esus4:before {
+  content: "\e927";
+}
+.rondo-icon-chord-F-bar:before {
+  content: "\e928";
+}
+.rondo-icon-chord-F:before {
+  content: "\e929";
+}
+.rondo-icon-chord-F7:before {
+  content: "\e92a";
+}
+.rondo-icon-chord-Fis:before {
+  content: "\e92b";
+}
+.rondo-icon-chord-Fis7:before {
+  content: "\e92c";
+}
+.rondo-icon-chord-Fism:before {
+  content: "\e92d";
+}
+.rondo-icon-chord-Fism7:before {
+  content: "\e92e";
+}
+.rondo-icon-chord-Fm:before {
+  content: "\e92f";
+}
+.rondo-icon-chord-G-H:before {
+  content: "\e930";
+}
+.rondo-icon-chord-G:before {
+  content: "\e931";
+}
+.rondo-icon-chord-G7:before {
+  content: "\e932";
+}
+.rondo-icon-chord-Gism:before {
+  content: "\e933";
+}
+.rondo-icon-chord-Gm:before {
+  content: "\e934";
+}
+.rondo-icon-chord-Gsus4:before {
+  content: "\e935";
+}
+.rondo-icon-chord-H:before {
+  content: "\e936";
+}
+.rondo-icon-chord-H7:before {
+  content: "\e937";
+}
+.rondo-icon-chord-H7sus4:before {
+  content: "\e938";
+}
+.rondo-icon-chord-Hm:before {
+  content: "\e939";
+}
+.rondo-icon-chord-Hm7:before {
+  content: "\e93a";
+}
+.rondo-icon-chord-Hsus4:before {
+  content: "\e93b";
+}
+.rondo-icon-notes:before {
+  content: "\e900";
+}
+.rondo-icon-midi:before {
+  content: "\e901";
+}
+.rondo-icon-chords:before {
+  content: "\e902";
+}
+.rondo-icon-library:before {
+  content: "\e903";
+}
+.rondo-icon-stop:before {
+  content: "\e904";
+}
+.rondo-icon-play:before {
+  content: "\e922";
+}
+.rondo-icon-logo:before {
+  content: "\e906";
+}
+.rondo-icon-arrow:before {
+  content: "\e907";
+}
+.rondo-icon-search:before {
+  content: "\e908";
+}
+.rondo-icon-listen:before {
+  content: "\e923";
+}
+.rondo-icon-show-chord:before {
+  content: "\e925";
+}
+.rondo-icon-scroll:before {
+  content: "\e924";
+}
+.rondo-icon-text:before {
+  content: "\e921";
+}

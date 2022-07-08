@@ -1,6 +1,6 @@
 # Rondo App
 
-The sourcecode for the Rondo app, created with Ionic and Angular.
+The sourcecode for the Rondo app, created with Ionic and Vue.
 
 ## Workspace setup
 
@@ -16,12 +16,9 @@ Change to app source folder:
 cd app
 ```
 
-Install Ionic and Cordova globally:
+Install Ionic globally:
 ```bash
-npm install -g ionic
-npm install -g cordova
-npm install -g native-run
-npm install -g cordova-res
+npm install -g @ionic/cli
 ```
 
 Install JavaScript Libraries:
@@ -34,44 +31,32 @@ Now you can run the app in your browser:
 ionic serve
 ```
 
+For iOS we need to install cocoapods and its dependencies:
+```bash
+ionic cap sync
+```
+
+For Android we need to install Android Studio and the Java JDK.
+
 
 ## Useful commands
 
 Run in iOS Simulator:
 
-    ionic cordova emulate ios
+    ionic capacitor run ios
 
-Run in iOS Simulator (specific device):
+XCode must be installed and started once for this to work.
 
-    ionic cordova emulate ios --target="iPhone-6"
 
-List available devices
-
-    ionic cordova emulate ios --list
-
-Update Ionic:
-
-    npm install ionic-angular@latest --save
-
-updates a project to use the latest version of cordova (3.4.0 to 3.4.1):
-
-    cordova platform update [platform] 
-
-Upload App to Ionic View:
-
-    ionic upload
+## Build
 
 Building Android APK:
 
-    ionic cordova build android
-
-Generate Android Release Version:
-
-    npm run android-release
+    ionic capacitor build android
 
 Compile iOS App for Test Flight:
 
-    ionic cordova build ios
+    ionic capacitor build ios
     Then open Project in XCode (/platforms/ios/Rondo.xcodeproj)
     XCode > Product > Archive and then upload the App
-    Manage Apps on https://itunesconnect.apple.com
+    Manage Apps on https://appstoreconnect.apple.com/

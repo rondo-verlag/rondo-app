@@ -4,8 +4,10 @@ node_modules/
 /data/Backups
 /data/InDesign
 /data/Dateien_ohne_Texte
-/app/src/assets/songdata/songs/html/*.html
-/app/src/assets/songdata/songs/images/*.gif
-/app/src/assets/songdata/songs/notes/*.png
-/app/src/assets/songdata/songs/pdfs/*.pdf
-/app/src/assets/songdata/songs/midi/*.mid
+/app-old
+/app/public/assets/songdata/songs/html/*.html
+/app/public/assets/songdata/songs/images/*.gif
+/app/public/assets/songdata/songs/notes/*.png
+/app/public/assets/songdata/songs/pdfs/*.pdf
+/app/public/assets/songdata/songs/midi/*.mid
+/app/public/assets/fonts/Vectora/*.otf

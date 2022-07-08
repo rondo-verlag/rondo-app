@@ -1,8 +1,8 @@
 {
   "name": "songbook-app",
   "integrations": {
-    "cordova": {}
+    "capacitor": {}
   },
-  "type": "ionic-angular",
+  "type": "vue",
   "id": "fff006c6"
 }
