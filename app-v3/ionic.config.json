@@ -1,8 +1,0 @@
-{
-  "name": "songbook-app",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue",
-  "id": "fff006c6"
-}

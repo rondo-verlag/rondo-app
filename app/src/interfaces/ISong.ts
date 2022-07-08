@@ -1,4 +1,4 @@
-interface ISong {
+export default interface ISong {
     id: number;
     title: string;
     pageRondoRed: number|null;
