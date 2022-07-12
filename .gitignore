@@ -11,3 +11,5 @@ node_modules/
 /app/public/assets/songdata/songs/pdfs/*.pdf
 /app/public/assets/songdata/songs/midi/*.mid
 /app/public/assets/fonts/Vectora/*.otf
+/app/keystore/*.keystore
+/app/android/app/release
