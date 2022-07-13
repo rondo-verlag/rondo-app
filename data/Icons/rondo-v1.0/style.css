@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'rondo';
   src:
-    url('fonts/rondo.ttf?c301u7') format('truetype'),
-    url('fonts/rondo.woff?c301u7') format('woff'),
-    url('fonts/rondo.svg?c301u7#rondo') format('svg');
+    url('fonts/rondo.ttf?omq8w8') format('truetype'),
+    url('fonts/rondo.woff?omq8w8') format('woff'),
+    url('fonts/rondo.svg?omq8w8#rondo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rondo-icon-chord-Asus4:before {
+  content: "\e943";
+}
+.rondo-icon-chord-Dsus4:before {
+  content: "\e948";
+}
 .rondo-icon-chord-Absus4-Db:before {
   content: "\e93d";
 }
@@ -42,16 +48,13 @@
 .rondo-icon-chord-Dbsus2:before {
   content: "\e942";
 }
-.rondo-icon-chord-D-F-hash:before {
-  content: "\e943";
-}
 .rondo-icon-chord-Asus2:before {
   content: "\e944";
 }
 .rondo-icon-chord-Eb:before {
   content: "\e945";
 }
-.rondo-icon-chord-G1:before {
+.rondo-icon-chord-Gplus:before {
   content: "\e946";
 }
 .rondo-icon-chord-Ab:before {
