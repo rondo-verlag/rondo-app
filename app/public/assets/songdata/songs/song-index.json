@@ -291,6 +291,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 80,
             "interpret": "(Lied aus Finnland)",
             "chords": [
                 "C",
@@ -308,6 +309,7 @@
             "pageRondoBlue": 103,
             "pageRondoGreen": 186,
             "pageRondo2017": 186,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -328,6 +330,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 270,
             "pageRondo2017": 270,
+            "pageRondo2021": 98,
             "interpret": "G\u00f6l\u00e4",
             "chords": [
                 "Am",
@@ -347,6 +350,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 103,
             "pageRondo2017": 102,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -364,6 +368,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 52,
             "pageRondo2017": 52,
+            "pageRondo2021": null,
             "interpret": "Kid Rock",
             "chords": [
                 "C",
@@ -381,6 +386,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 210,
             "pageRondo2017": 210,
+            "pageRondo2021": null,
             "interpret": "The Mamas And The Papas",
             "chords": [
                 "C",
@@ -401,6 +407,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 120,
             "interpret": "Die Prinzen",
             "chords": [
                 "C",
@@ -420,16 +427,14 @@
             "pageRondoBlue": 38,
             "pageRondoGreen": 40,
             "pageRondo2017": 42,
+            "pageRondo2021": 40,
             "interpret": "Polo Hofer",
             "chords": [
-                "",
                 "Am",
                 "C",
-                "Dur",
                 "E",
                 "F",
-                "G",
-                "Originnaltonart"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -442,6 +447,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 16,
             "pageRondo2017": 16,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -459,6 +465,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 233,
             "pageRondo2017": 233,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -477,6 +484,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 255,
             "pageRondo2017": 255,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -495,6 +503,7 @@
             "pageRondoBlue": 95,
             "pageRondoGreen": 36,
             "pageRondo2017": 36,
+            "pageRondo2021": 36,
             "interpret": "Jakob Leutert und Peter Jeger",
             "chords": [
                 "A",
@@ -513,9 +522,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 52,
             "interpret": "Die Toten Hosen",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "D",
@@ -534,9 +543,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 24,
             "interpret": "Dabu Fantastic",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "F",
@@ -553,6 +562,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 88,
             "pageRondo2017": 88,
+            "pageRondo2021": null,
             "interpret": "Rolling Stones; Mick Jagger and Keith Richards",
             "chords": [
                 "Am",
@@ -573,6 +583,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 68,
             "pageRondo2017": 68,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -589,6 +600,7 @@
             "pageRondoBlue": 90,
             "pageRondoGreen": 92,
             "pageRondo2017": 92,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -613,12 +625,12 @@
             "pageRondoBlue": 50,
             "pageRondoGreen": 50,
             "pageRondo2017": 50,
+            "pageRondo2021": 50,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
                 "Dm",
-                "E",
-                "VorschlagKapodasterim4oder5Bund"
+                "E"
             ],
             "alternative": false,
             "free": false,
@@ -631,6 +643,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 60,
             "pageRondo2017": 60,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -653,6 +666,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 158,
             "pageRondo2017": 158,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -672,6 +686,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 88,
             "interpret": "Andreas Bourani",
             "chords": [
                 "C",
@@ -691,9 +706,9 @@
             "pageRondoBlue": 158,
             "pageRondoGreen": 123,
             "pageRondo2017": 123,
+            "pageRondo2021": 123,
             "interpret": "Kinderlied",
             "chords": [
-                "",
                 "D",
                 "Em",
                 "G",
@@ -710,6 +725,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 254,
             "pageRondo2017": 254,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -728,13 +744,13 @@
             "pageRondoBlue": 70,
             "pageRondoGreen": 65,
             "pageRondo2017": 65,
+            "pageRondo2021": 65,
             "interpret": "Canzone popolare",
             "chords": [
                 "A",
                 "Am",
                 "Dm",
-                "E",
-                "PropostaCapotastoal2"
+                "E"
             ],
             "alternative": false,
             "free": true,
@@ -747,6 +763,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 72,
             "interpret": "Canzone popolare",
             "chords": [
                 "C",
@@ -754,8 +771,7 @@
                 "D7",
                 "F",
                 "G",
-                "G7",
-                "PropostaCapotastoal2oal3tasto"
+                "G7"
             ],
             "alternative": true,
             "free": true,
@@ -768,6 +784,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 135,
             "interpret": "Chanson scoute",
             "chords": [
                 "Am",
@@ -786,6 +803,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 63,
             "pageRondo2017": 63,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -804,6 +822,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 7,
             "interpret": "BLAY (Bligg & Marc Sway)",
             "chords": [
                 "A",
@@ -829,6 +848,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 62,
             "interpret": "Scout Song from Poland (Lied aus Polen)",
             "chords": [
                 "C",
@@ -847,6 +867,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 26,
             "pageRondo2017": 26,
+            "pageRondo2021": null,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
@@ -866,6 +887,7 @@
             "pageRondoBlue": 116,
             "pageRondoGreen": 116,
             "pageRondo2017": 116,
+            "pageRondo2021": 116,
             "interpret": "Polo Hofer",
             "chords": [
                 "A",
@@ -885,6 +907,7 @@
             "pageRondoBlue": 100,
             "pageRondoGreen": 180,
             "pageRondo2017": 180,
+            "pageRondo2021": null,
             "interpret": "Dieter Wiesman",
             "chords": [
                 "Am",
@@ -906,16 +929,14 @@
             "pageRondoBlue": 38,
             "pageRondoGreen": 40,
             "pageRondo2017": 42,
+            "pageRondo2021": 40,
             "interpret": "Polo Hofer",
             "chords": [
-                "",
                 "Am",
                 "C",
-                "Dur",
                 "E",
                 "F",
-                "G",
-                "Originnaltonart"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -928,6 +949,7 @@
             "pageRondoBlue": 106,
             "pageRondoGreen": 106,
             "pageRondo2017": 106,
+            "pageRondo2021": null,
             "interpret": "Tommy Shaw",
             "chords": [
                 "Am",
@@ -949,6 +971,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 48,
             "interpret": "Guido Zanzi",
             "chords": [
                 "C",
@@ -970,6 +993,7 @@
             "pageRondoBlue": 142,
             "pageRondoGreen": 14,
             "pageRondo2017": 14,
+            "pageRondo2021": 14,
             "interpret": "Volkslied",
             "chords": [
                 "A",
@@ -989,6 +1013,7 @@
             "pageRondoBlue": 142,
             "pageRondoGreen": 14,
             "pageRondo2017": 14,
+            "pageRondo2021": 14,
             "interpret": "Volkslied",
             "chords": [
                 "A",
@@ -1008,17 +1033,15 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 18,
             "interpret": "Green Day",
             "chords": [
-                "",
-                "2xIntro",
                 "A",
                 "C",
                 "D",
                 "Em",
                 "G",
-                "H7",
-                "VorschlagKapodasterim3oder4Bund"
+                "H7"
             ],
             "alternative": false,
             "free": false,
@@ -1031,6 +1054,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 76,
             "interpret": "Jarom\u00edr Nohavica (Lied aus Tschechien)",
             "chords": [
                 "C",
@@ -1048,6 +1072,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 22,
             "interpret": "Les Quatre Barbus",
             "chords": [
                 "A7",
@@ -1068,6 +1093,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 210,
             "pageRondo2017": 210,
+            "pageRondo2021": null,
             "interpret": "The Mamas And The Papas",
             "chords": [
                 "C",
@@ -1088,6 +1114,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 90,
             "interpret": "Pippo Pollina",
             "chords": [
                 "Am",
@@ -1107,6 +1134,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 20,
             "interpret": "Canzone scout",
             "chords": [
                 "Am",
@@ -1124,6 +1152,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 129,
             "interpret": "Canzone scout",
             "chords": [
                 "Am",
@@ -1144,6 +1173,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 48,
             "interpret": "Guido Zanzi",
             "chords": [
                 "C",
@@ -1165,6 +1195,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 30,
             "interpret": "Canzone popolare",
             "chords": [
                 "A",
@@ -1182,6 +1213,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 38,
             "pageRondo2017": 38,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "E",
@@ -1198,9 +1230,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 56,
             "interpret": "T\u00e9l\u00e9phone",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "D",
@@ -1218,15 +1250,14 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 168,
             "interpret": "Hecht",
             "chords": [
-                "",
                 "C",
                 "D",
                 "Dm",
                 "Em",
-                "G",
-                "Originaltonart"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -1239,6 +1270,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 70,
             "pageRondo2017": 70,
+            "pageRondo2021": 70,
             "interpret": "Chanson populaire",
             "chords": [
                 "A",
@@ -1257,6 +1289,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 28,
             "interpret": "Kunz",
             "chords": [
                 "A",
@@ -1276,6 +1309,7 @@
             "pageRondoBlue": 66,
             "pageRondoGreen": 228,
             "pageRondo2017": 228,
+            "pageRondo2021": 78,
             "interpret": "Andr\u00e9 St\u00fcrzinger",
             "chords": [
                 "A",
@@ -1294,6 +1328,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 64,
             "interpret": "Canzone popolare",
             "chords": [
                 "A7",
@@ -1310,6 +1345,7 @@
             "pageRondoBlue": 6,
             "pageRondoGreen": 234,
             "pageRondo2017": 234,
+            "pageRondo2021": null,
             "interpret": "Nella Martinetti",
             "chords": [
                 "C",
@@ -1327,6 +1363,7 @@
             "pageRondoBlue": 130,
             "pageRondoGreen": 130,
             "pageRondo2017": 130,
+            "pageRondo2021": 130,
             "interpret": "Peter Reber",
             "chords": [
                 "Am",
@@ -1346,6 +1383,7 @@
             "pageRondoBlue": 56,
             "pageRondoGreen": 58,
             "pageRondo2017": 58,
+            "pageRondo2021": 58,
             "interpret": "Patent Ochsner",
             "chords": [
                 "A",
@@ -1372,6 +1410,7 @@
             "pageRondoBlue": 146,
             "pageRondoGreen": 240,
             "pageRondo2017": 240,
+            "pageRondo2021": 96,
             "interpret": "Patent Ochsner",
             "chords": [
                 "A7",
@@ -1393,6 +1432,7 @@
             "pageRondoBlue": 126,
             "pageRondoGreen": 126,
             "pageRondo2017": 126,
+            "pageRondo2021": 126,
             "interpret": "Scht\u00e4rnef\u00f6ifi",
             "chords": [
                 "E",
@@ -1409,6 +1449,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 4,
             "pageRondo2017": 4,
+            "pageRondo2021": null,
             "interpret": "Jacob Stickelberger",
             "chords": [
                 "A",
@@ -1428,6 +1469,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 26,
             "interpret": "Franco Fasano",
             "chords": [
                 "Am",
@@ -1449,6 +1491,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 176,
             "interpret": "Tony Lagger",
             "chords": [
                 "C",
@@ -1466,6 +1509,7 @@
             "pageRondoBlue": 36,
             "pageRondoGreen": 34,
             "pageRondo2017": 34,
+            "pageRondo2021": 34,
             "interpret": "Stuart Hamblen",
             "chords": [
                 "A",
@@ -1484,6 +1528,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 32,
             "interpret": "Mash",
             "chords": [
                 "Am",
@@ -1504,6 +1549,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 96,
             "pageRondo2017": 96,
+            "pageRondo2021": null,
             "interpret": "Harry Belafonte",
             "chords": [
                 "C",
@@ -1520,6 +1566,7 @@
             "pageRondoBlue": 78,
             "pageRondoGreen": 208,
             "pageRondo2017": 208,
+            "pageRondo2021": 104,
             "interpret": "A. Steingruber",
             "chords": [
                 "Am",
@@ -1538,6 +1585,7 @@
             "pageRondoBlue": 78,
             "pageRondoGreen": 208,
             "pageRondo2017": 208,
+            "pageRondo2021": 104,
             "interpret": "A. Steingruber",
             "chords": [
                 "Am",
@@ -1556,6 +1604,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 30,
             "pageRondo2017": 30,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -1573,6 +1622,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 258,
             "pageRondo2017": 258,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "Am",
@@ -1593,6 +1643,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 6,
             "pageRondo2017": 6,
+            "pageRondo2021": 106,
             "interpret": "Kinderlied",
             "chords": [
                 "C",
@@ -1610,6 +1661,7 @@
             "pageRondoBlue": 145,
             "pageRondoGreen": 145,
             "pageRondo2017": 144,
+            "pageRondo2021": 144,
             "interpret": "Patent Ochsner",
             "chords": [
                 "Am",
@@ -1632,6 +1684,7 @@
             "pageRondoBlue": 124,
             "pageRondoGreen": 198,
             "pageRondo2017": 198,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -1651,6 +1704,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 11,
             "pageRondo2017": 11,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -1668,6 +1722,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 102,
             "interpret": "Bligg",
             "chords": [
                 "Am",
@@ -1685,6 +1740,7 @@
             "pageRondoBlue": 80,
             "pageRondoGreen": 174,
             "pageRondo2017": 174,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -1704,6 +1760,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 112,
             "pageRondo2017": 112,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -1721,12 +1778,12 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 31,
             "pageRondo2017": 31,
+            "pageRondo2021": 31,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
                 "Dm",
-                "E",
-                "VorschlagKapodasterim4oder5Bund"
+                "E"
             ],
             "alternative": false,
             "free": false,
@@ -1739,6 +1796,7 @@
             "pageRondoBlue": 48,
             "pageRondoGreen": 138,
             "pageRondo2017": 138,
+            "pageRondo2021": 138,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
@@ -1755,6 +1813,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 26,
             "pageRondo2017": 26,
+            "pageRondo2021": null,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
@@ -1774,6 +1833,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 128,
             "pageRondo2017": 128,
+            "pageRondo2021": null,
             "interpret": "Otto Wolf",
             "chords": [
                 "C",
@@ -1792,12 +1852,12 @@
             "pageRondoBlue": 50,
             "pageRondoGreen": 50,
             "pageRondo2017": 50,
+            "pageRondo2021": 50,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
                 "Dm",
-                "E",
-                "VorschlagKapodasterim4oder5Bund"
+                "E"
             ],
             "alternative": true,
             "free": false,
@@ -1810,6 +1870,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 272,
             "pageRondo2017": 220,
+            "pageRondo2021": null,
             "interpret": "Peter Reber",
             "chords": [
                 "A",
@@ -1830,6 +1891,7 @@
             "pageRondoBlue": 52,
             "pageRondoGreen": 136,
             "pageRondo2017": 136,
+            "pageRondo2021": 136,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
@@ -1849,6 +1911,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 64,
             "pageRondo2017": 64,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -1867,6 +1930,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 125,
             "pageRondo2017": 125,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -1888,9 +1952,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 4,
             "interpret": "BuLa CaF\u00e9 CaFe 2022",
             "chords": [
-                "",
                 "A",
                 "Asus2",
                 "Asus4",
@@ -1899,9 +1963,7 @@
                 "Dsus4",
                 "Em",
                 "G",
-                "beliebigwiederholen",
-                "ripetereapiacimento",
-                "rptervolont"
+                "G+"
             ],
             "alternative": true,
             "free": true,
@@ -1914,6 +1976,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 120,
             "interpret": "Die Prinzen",
             "chords": [
                 "C",
@@ -1933,6 +1996,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 88,
             "interpret": "Andreas Bourani",
             "chords": [
                 "C",
@@ -1952,6 +2016,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 48,
             "pageRondo2017": 48,
+            "pageRondo2021": null,
             "interpret": "Leni Timmermann",
             "chords": [
                 "C",
@@ -1969,6 +2034,7 @@
             "pageRondoBlue": 62,
             "pageRondoGreen": 10,
             "pageRondo2017": 10,
+            "pageRondo2021": 10,
             "interpret": "Volkslied",
             "chords": [
                 "A",
@@ -1986,6 +2052,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 60,
             "pageRondo2017": 60,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -2008,6 +2075,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 236,
             "pageRondo2017": 236,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "D7",
@@ -2024,9 +2092,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 56,
             "interpret": "T\u00e9l\u00e9phone",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "D",
@@ -2044,6 +2112,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 90,
             "pageRondo2017": 90,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -2061,14 +2130,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 111,
             "interpret": "Dodo",
             "chords": [
-                "",
                 "C",
                 "D",
                 "Em",
-                "G",
-                "OriginaltonartFDurFDmBC"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -2081,6 +2149,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 18,
             "pageRondo2017": 18,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2100,6 +2169,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 56,
             "pageRondo2017": 56,
+            "pageRondo2021": null,
             "interpret": "Stan Jones",
             "chords": [
                 "Am",
@@ -2118,6 +2188,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 19,
             "pageRondo2017": 19,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "D",
@@ -2134,6 +2205,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 32,
             "interpret": "Mash",
             "chords": [
                 "Am",
@@ -2154,6 +2226,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 167,
             "interpret": "",
             "chords": [
                 "Am",
@@ -2174,17 +2247,16 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 46,
             "interpret": "Cookie Dingler",
             "chords": [
-                "",
                 "Am",
                 "B",
                 "C",
                 "Eb",
                 "F",
                 "G",
-                "Gm",
-                "OriginaltonartGm"
+                "Gm"
             ],
             "alternative": false,
             "free": false,
@@ -2197,6 +2269,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 24,
             "pageRondo2017": 24,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "D",
@@ -2213,6 +2286,7 @@
             "pageRondoBlue": 100,
             "pageRondoGreen": 180,
             "pageRondo2017": 180,
+            "pageRondo2021": null,
             "interpret": "Dieter Wiesman",
             "chords": [
                 "Am",
@@ -2234,6 +2308,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 56,
             "pageRondo2017": 56,
+            "pageRondo2021": null,
             "interpret": "Stan Jones",
             "chords": [
                 "Am",
@@ -2252,6 +2327,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 141,
             "pageRondo2017": 184,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -2272,6 +2348,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 108,
             "pageRondo2017": 108,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -2288,6 +2365,7 @@
             "pageRondoBlue": 88,
             "pageRondoGreen": 146,
             "pageRondo2017": 146,
+            "pageRondo2021": 146,
             "interpret": "Ralph McTell",
             "chords": [
                 "Am",
@@ -2309,6 +2387,7 @@
             "pageRondoBlue": 6,
             "pageRondoGreen": 234,
             "pageRondo2017": 234,
+            "pageRondo2021": null,
             "interpret": "Nella Martinetti",
             "chords": [
                 "C",
@@ -2326,6 +2405,7 @@
             "pageRondoBlue": 126,
             "pageRondoGreen": 126,
             "pageRondo2017": 126,
+            "pageRondo2021": 126,
             "interpret": "Scht\u00e4rnef\u00f6ifi",
             "chords": [
                 "E",
@@ -2342,16 +2422,15 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 11,
             "interpret": "Pl\u00fcsch",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "Dm",
                 "Em",
                 "F",
-                "G",
-                "OriginaltonartEDur"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -2364,13 +2443,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 110,
             "interpret": "Trauffer",
             "chords": [
                 "C",
                 "D",
                 "Em",
-                "G",
-                "VorschlagKapodasterim1Bund"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -2383,14 +2462,14 @@
             "pageRondoBlue": 136,
             "pageRondoGreen": 142,
             "pageRondo2017": 142,
+            "pageRondo2021": 142,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
                 "C",
                 "Dm",
                 "E7",
-                "G7",
-                "VorschlagKapodasterim2oder3Bund"
+                "G7"
             ],
             "alternative": false,
             "free": false,
@@ -2403,6 +2482,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 265,
             "pageRondo2017": 265,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2420,14 +2500,14 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 134,
+            "pageRondo2021": 150,
             "interpret": "Hannes Wader",
             "chords": [
                 "Am",
                 "C",
                 "D",
                 "Em",
-                "G",
-                "VorschlagKapodasterim2oder3Bund"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -2440,6 +2520,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 119,
             "pageRondo2017": 119,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -2458,6 +2539,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 168,
             "pageRondo2017": 168,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "A",
@@ -2479,14 +2561,14 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 172,
             "interpret": "Plain White T's",
             "chords": [
                 "Am",
                 "C",
                 "Em",
                 "F",
-                "G",
-                "VorschlagKapodasterim2oder3Bund"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -2499,14 +2581,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 111,
             "interpret": "Dodo",
             "chords": [
-                "",
                 "C",
                 "D",
                 "Em",
-                "G",
-                "OriginaltonartFDurFDmBC"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -2519,6 +2600,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 202,
+            "pageRondo2021": null,
             "interpret": "The Eagles",
             "chords": [
                 "A",
@@ -2541,6 +2623,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 160,
             "pageRondo2017": 160,
+            "pageRondo2021": 160,
             "interpret": "",
             "chords": [
                 "Am",
@@ -2560,6 +2643,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 46,
+            "pageRondo2021": null,
             "interpret": "Barclay James Harvest",
             "chords": [
                 "A",
@@ -2577,6 +2661,7 @@
             "pageRondoBlue": 140,
             "pageRondoGreen": 164,
             "pageRondo2017": 164,
+            "pageRondo2021": 162,
             "interpret": "Simon & Garfunkel",
             "chords": [
                 "Am",
@@ -2597,6 +2682,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 254,
             "pageRondo2017": 254,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2615,6 +2701,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 128,
             "pageRondo2017": 128,
+            "pageRondo2021": null,
             "interpret": "Otto Wolf",
             "chords": [
                 "C",
@@ -2633,6 +2720,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 64,
             "pageRondo2017": 64,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -2651,6 +2739,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 82,
             "pageRondo2017": 82,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -2668,6 +2757,7 @@
             "pageRondoBlue": 44,
             "pageRondoGreen": 44,
             "pageRondo2017": 44,
+            "pageRondo2021": 44,
             "interpret": "Scorpions",
             "chords": [
                 "Am",
@@ -2689,6 +2779,7 @@
             "pageRondoBlue": 52,
             "pageRondoGreen": 136,
             "pageRondo2017": 136,
+            "pageRondo2021": 136,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
@@ -2708,6 +2799,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 182,
             "pageRondo2017": 182,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -2727,17 +2819,15 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 18,
             "interpret": "Green Day",
             "chords": [
-                "",
-                "2xIntro",
                 "A",
                 "C",
                 "D",
                 "Em",
                 "G",
-                "H7",
-                "VorschlagKapodasterim3oder4Bund"
+                "H7"
             ],
             "alternative": true,
             "free": false,
@@ -2750,6 +2840,7 @@
             "pageRondoBlue": 104,
             "pageRondoGreen": 200,
             "pageRondo2017": 200,
+            "pageRondo2021": null,
             "interpret": "Span",
             "chords": [
                 "A",
@@ -2773,6 +2864,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 260,
             "pageRondo2017": 260,
+            "pageRondo2021": null,
             "interpret": "Cat Stevens",
             "chords": [
                 "A",
@@ -2794,6 +2886,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 112,
             "pageRondo2017": 112,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -2811,6 +2904,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 255,
             "pageRondo2017": 255,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2829,6 +2923,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 195,
             "pageRondo2017": 195,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2845,6 +2940,7 @@
             "pageRondoBlue": 82,
             "pageRondoGreen": 80,
             "pageRondo2017": 80,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2864,6 +2960,7 @@
             "pageRondoBlue": 103,
             "pageRondoGreen": 186,
             "pageRondo2017": 186,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -2884,6 +2981,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 166,
             "interpret": "",
             "chords": [
                 "B",
@@ -2901,6 +2999,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 22,
+            "pageRondo2021": null,
             "interpret": "John Lennon",
             "chords": [
                 "Am7",
@@ -2923,6 +3022,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 265,
             "pageRondo2017": 265,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -2940,6 +3040,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 37,
             "pageRondo2017": 37,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "D7",
@@ -2956,6 +3057,7 @@
             "pageRondoBlue": 77,
             "pageRondoGreen": 77,
             "pageRondo2017": 77,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -2973,6 +3075,7 @@
             "pageRondoBlue": 102,
             "pageRondoGreen": 20,
             "pageRondo2017": 20,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "Am",
@@ -2992,6 +3095,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 129,
             "interpret": "Canzone scout",
             "chords": [
                 "Am",
@@ -3012,6 +3116,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 52,
             "pageRondo2017": 52,
+            "pageRondo2021": null,
             "interpret": "Kid Rock",
             "chords": [
                 "C",
@@ -3029,6 +3134,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 244,
             "pageRondo2017": 246,
+            "pageRondo2021": null,
             "interpret": "Eric Clapton",
             "chords": [
                 "C",
@@ -3047,6 +3153,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 119,
             "interpret": "",
             "chords": [
                 "A",
@@ -3063,6 +3170,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 28,
             "pageRondo2017": 28,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -3082,17 +3190,16 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 86,
             "interpret": "Joe Dassin",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "Dm",
                 "E7",
                 "F",
                 "G",
-                "G7",
-                "repeatandfadeout"
+                "G7"
             ],
             "alternative": true,
             "free": false,
@@ -3105,6 +3212,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 108,
             "pageRondo2017": 108,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -3121,6 +3229,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 242,
+            "pageRondo2021": null,
             "interpret": "Lo & Leduc",
             "chords": [
                 "Am",
@@ -3139,6 +3248,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 262,
             "pageRondo2017": 262,
+            "pageRondo2021": 114,
             "interpret": "Die \u00c4rzte",
             "chords": [
                 "Am",
@@ -3158,6 +3268,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 165,
             "interpret": "G\u00e4nsehaut",
             "chords": [
                 "A7",
@@ -3165,9 +3276,7 @@
                 "Dm",
                 "Em",
                 "G",
-                "H7",
-                "Outro",
-                "Refrain"
+                "H7"
             ],
             "alternative": false,
             "free": false,
@@ -3180,11 +3289,11 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 124,
             "pageRondo2017": 124,
+            "pageRondo2021": 124,
             "interpret": "Anton Wilhelm von Zuccalmaglio",
             "chords": [
                 "E",
-                "H7",
-                "VorschlagKapodasterim1oder2Bund"
+                "H7"
             ],
             "alternative": false,
             "free": false,
@@ -3197,6 +3306,7 @@
             "pageRondoBlue": 48,
             "pageRondoGreen": 138,
             "pageRondo2017": 138,
+            "pageRondo2021": 138,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
@@ -3213,6 +3323,7 @@
             "pageRondoBlue": 116,
             "pageRondoGreen": 116,
             "pageRondo2017": 116,
+            "pageRondo2021": 116,
             "interpret": "Polo Hofer",
             "chords": [
                 "A",
@@ -3232,6 +3343,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 196,
             "pageRondo2017": 196,
+            "pageRondo2021": null,
             "interpret": "Bob Dylan",
             "chords": [
                 "Am7",
@@ -3250,6 +3362,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 76,
             "interpret": "Jarom\u00edr Nohavica (Lied aus Tschechien)",
             "chords": [
                 "C",
@@ -3267,6 +3380,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 232,
             "pageRondo2017": 232,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -3287,6 +3401,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 26,
             "interpret": "Franco Fasano",
             "chords": [
                 "Am",
@@ -3308,6 +3423,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 22,
             "interpret": "Les Quatre Barbus",
             "chords": [
                 "A7",
@@ -3328,6 +3444,7 @@
             "pageRondoBlue": 94,
             "pageRondoGreen": 66,
             "pageRondo2017": 66,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "D7",
@@ -3344,13 +3461,12 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 132,
             "interpret": "Lucio Battisti",
             "chords": [
-                "",
                 "A",
                 "D",
-                "E",
-                "stop"
+                "E"
             ],
             "alternative": false,
             "free": false,
@@ -3363,6 +3479,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 72,
             "interpret": "Canzone popolare",
             "chords": [
                 "C",
@@ -3370,8 +3487,7 @@
                 "D7",
                 "F",
                 "G",
-                "G7",
-                "PropostaCapotastoal2oal3tasto"
+                "G7"
             ],
             "alternative": false,
             "free": true,
@@ -3384,6 +3500,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 224,
             "pageRondo2017": 224,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "A",
@@ -3409,13 +3526,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 84,
             "interpret": "Vance Joy",
             "chords": [
                 "Am",
                 "C",
                 "F",
-                "G",
-                "VorschlagKapodasterim3oder4Bund"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -3428,6 +3545,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 100,
             "interpret": "Hugues Aufray",
             "chords": [
                 "A",
@@ -3447,6 +3565,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 100,
             "interpret": "Hugues Aufray",
             "chords": [
                 "A",
@@ -3466,6 +3585,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 100,
             "pageRondo2017": 100,
+            "pageRondo2021": null,
             "interpret": "John Cameron Fogerty",
             "chords": [
                 "B",
@@ -3486,6 +3606,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 238,
             "pageRondo2017": 238,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "C",
@@ -3504,13 +3625,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 37,
             "interpret": "Marteria, Yasha, Miss Platnum",
             "chords": [
                 "Am",
                 "C",
                 "Dm",
-                "G",
-                "OriginaltonartKapoim1Bund"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -3523,6 +3644,7 @@
             "pageRondoBlue": 148,
             "pageRondoGreen": 148,
             "pageRondo2017": 148,
+            "pageRondo2021": null,
             "interpret": "Opus",
             "chords": [
                 "Am",
@@ -3542,6 +3664,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 118,
             "interpret": "Canzone popolare",
             "chords": [
                 "C",
@@ -3558,6 +3681,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 108,
             "interpret": "Georges Moustaki",
             "chords": [
                 "Am",
@@ -3580,6 +3704,7 @@
             "pageRondoBlue": 110,
             "pageRondoGreen": 110,
             "pageRondo2017": 110,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -3599,6 +3724,7 @@
             "pageRondoBlue": 104,
             "pageRondoGreen": 200,
             "pageRondo2017": 200,
+            "pageRondo2021": null,
             "interpret": "Span",
             "chords": [
                 "A",
@@ -3622,6 +3748,7 @@
             "pageRondoBlue": 146,
             "pageRondoGreen": 240,
             "pageRondo2017": 240,
+            "pageRondo2021": 96,
             "interpret": "Patent Ochsner",
             "chords": [
                 "A7",
@@ -3643,13 +3770,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 120,
+            "pageRondo2021": null,
             "interpret": "Volkslied",
             "chords": [
                 "Am",
                 "C",
                 "F",
-                "G7",
-                "VorschlagKapodasterim1oder2Bund"
+                "G7"
             ],
             "alternative": false,
             "free": true,
@@ -3662,6 +3789,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 12,
             "pageRondo2017": 12,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -3679,6 +3807,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 30,
             "interpret": "Canzone popolare",
             "chords": [
                 "A",
@@ -3696,6 +3825,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 108,
             "interpret": "Georges Moustaki",
             "chords": [
                 "Am",
@@ -3718,6 +3848,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 54,
             "pageRondo2017": 54,
+            "pageRondo2021": 54,
             "interpret": "",
             "chords": [
                 "C",
@@ -3734,6 +3865,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 122,
             "pageRondo2017": 122,
+            "pageRondo2021": null,
             "interpret": "Drafi Deutscher",
             "chords": [
                 "A7",
@@ -3751,6 +3883,7 @@
             "pageRondoBlue": 42,
             "pageRondoGreen": 42,
             "pageRondo2017": 42,
+            "pageRondo2021": 42,
             "interpret": "Die Prinzen",
             "chords": [
                 "Am",
@@ -3772,6 +3905,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 29,
             "pageRondo2017": 29,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -3788,6 +3922,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 188,
             "pageRondo2017": 188,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -3805,13 +3940,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 110,
             "interpret": "Trauffer",
             "chords": [
                 "C",
                 "D",
                 "Em",
-                "G",
-                "VorschlagKapodasterim1Bund"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -3824,6 +3959,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 94,
             "pageRondo2017": 94,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -3841,6 +3977,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 176,
             "interpret": "Tony Lagger",
             "chords": [
                 "C",
@@ -3858,6 +3995,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 222,
             "pageRondo2017": 222,
+            "pageRondo2021": null,
             "interpret": "Mike Oldfield",
             "chords": [
                 "B",
@@ -3876,6 +4014,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 260,
             "pageRondo2017": 260,
+            "pageRondo2021": null,
             "interpret": "Cat Stevens",
             "chords": [
                 "A",
@@ -3897,6 +4036,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 250,
             "pageRondo2017": 250,
+            "pageRondo2021": null,
             "interpret": "Extreme",
             "chords": [
                 "Am7",
@@ -3922,6 +4062,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 176,
             "pageRondo2017": 176,
+            "pageRondo2021": null,
             "interpret": "Cat Stevens",
             "chords": [
                 "Am",
@@ -3944,17 +4085,17 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": null,
             "interpret": "Freunde des Dschungels",
             "chords": [
                 "A7",
                 "Am7",
                 "B",
                 "C",
+                "D7",
                 "Dm7",
-                "Em7b5A7BbD7D7",
-                "Em7b5A7Dm7Dm7F",
-                "F",
-                "Gm7"
+                "Em7",
+                "F"
             ],
             "alternative": false,
             "free": true,
@@ -3967,9 +4108,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 4,
             "interpret": "BuLa CaF\u00e9 CaFe 2022",
             "chords": [
-                "",
                 "A",
                 "Asus2",
                 "Asus4",
@@ -3978,9 +4119,7 @@
                 "Dsus4",
                 "Em",
                 "G",
-                "beliebigwiederholen",
-                "ripetereapiacimento",
-                "rptervolont"
+                "G+"
             ],
             "alternative": false,
             "free": true,
@@ -3993,6 +4132,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 252,
             "pageRondo2017": 252,
+            "pageRondo2021": null,
             "interpret": "Simon & Garfunkel",
             "chords": [
                 "A",
@@ -4016,6 +4156,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 72,
             "pageRondo2017": 72,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -4035,6 +4176,7 @@
             "pageRondoBlue": 148,
             "pageRondoGreen": 148,
             "pageRondo2017": 148,
+            "pageRondo2021": null,
             "interpret": "Opus",
             "chords": [
                 "Am",
@@ -4054,17 +4196,16 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 46,
             "interpret": "Cookie Dingler",
             "chords": [
-                "",
                 "Am",
                 "B",
                 "C",
                 "Eb",
                 "F",
                 "G",
-                "Gm",
-                "OriginaltonartGm"
+                "Gm"
             ],
             "alternative": true,
             "free": false,
@@ -4077,6 +4218,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 82,
             "interpret": "Chanson populaire scoute",
             "chords": [
                 "A",
@@ -4095,6 +4237,7 @@
             "pageRondoBlue": 42,
             "pageRondoGreen": 42,
             "pageRondo2017": 42,
+            "pageRondo2021": 42,
             "interpret": "Die Prinzen",
             "chords": [
                 "Am",
@@ -4116,6 +4259,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 104,
             "pageRondo2017": 104,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -4133,6 +4277,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 246,
             "pageRondo2017": 248,
+            "pageRondo2021": null,
             "interpret": "Metallica",
             "chords": [
                 "A",
@@ -4153,6 +4298,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 258,
             "pageRondo2017": 258,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "Am",
@@ -4173,13 +4319,12 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 132,
             "interpret": "Lucio Battisti",
             "chords": [
-                "",
                 "A",
                 "D",
-                "E",
-                "stop"
+                "E"
             ],
             "alternative": true,
             "free": false,
@@ -4192,6 +4337,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 82,
             "pageRondo2017": 82,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -4209,6 +4355,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 76,
             "pageRondo2017": 76,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -4228,14 +4375,14 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 172,
             "interpret": "Plain White T's",
             "chords": [
                 "Am",
                 "C",
                 "Em",
                 "F",
-                "G",
-                "VorschlagKapodasterim2oder3Bund"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -4248,6 +4395,7 @@
             "pageRondoBlue": 110,
             "pageRondoGreen": 110,
             "pageRondo2017": 110,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -4267,6 +4415,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 79,
             "pageRondo2017": 79,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -4284,6 +4433,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 122,
             "interpret": "Canzone popolare",
             "chords": [
                 "A",
@@ -4301,6 +4451,7 @@
             "pageRondoBlue": 80,
             "pageRondoGreen": 174,
             "pageRondo2017": 174,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -4320,6 +4471,7 @@
             "pageRondoBlue": 84,
             "pageRondoGreen": 86,
             "pageRondo2017": 86,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -4339,6 +4491,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 125,
             "interpret": "Canzone popolare",
             "chords": [
                 "Am",
@@ -4360,6 +4513,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 4,
             "pageRondo2017": 4,
+            "pageRondo2021": null,
             "interpret": "Jacob Stickelberger",
             "chords": [
                 "A",
@@ -4379,6 +4533,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 90,
             "pageRondo2017": 90,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -4396,17 +4551,17 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": null,
             "interpret": "Freunde des Dschungels",
             "chords": [
                 "A7",
                 "Am7",
                 "B",
                 "C",
+                "D7",
                 "Dm7",
-                "Em7b5A7BbD7D7",
-                "Em7b5A7Dm7Dm7F",
-                "F",
-                "Gm7"
+                "Em7",
+                "F"
             ],
             "alternative": true,
             "free": true,
@@ -4419,6 +4574,7 @@
             "pageRondoBlue": 156,
             "pageRondoGreen": 256,
             "pageRondo2017": 256,
+            "pageRondo2021": 94,
             "interpret": "Terry Gilkyson",
             "chords": [
                 "A7",
@@ -4445,6 +4601,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 66,
             "interpret": "Canto Scout Italiano (Lied aus Italien)",
             "chords": [
                 "Am",
@@ -4463,6 +4620,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 100,
             "pageRondo2017": 100,
+            "pageRondo2021": null,
             "interpret": "John Cameron Fogerty",
             "chords": [
                 "B",
@@ -4483,6 +4641,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 60,
             "interpret": "Pierre Huwiler, Maxime Leforestier",
             "chords": [
                 "A",
@@ -4503,6 +4662,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 140,
             "pageRondo2017": 140,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -4523,13 +4683,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 84,
             "interpret": "Vance Joy",
             "chords": [
                 "Am",
                 "C",
                 "F",
-                "G",
-                "VorschlagKapodasterim3oder4Bund"
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -4542,6 +4702,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 118,
             "pageRondo2017": 118,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -4558,6 +4719,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 102,
             "interpret": "Bligg",
             "chords": [
                 "Am",
@@ -4575,6 +4737,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 187,
             "pageRondo2017": 187,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -4591,6 +4754,7 @@
             "pageRondoBlue": 156,
             "pageRondoGreen": 256,
             "pageRondo2017": 256,
+            "pageRondo2021": 94,
             "interpret": "Terry Gilkyson",
             "chords": [
                 "A7",
@@ -4617,6 +4781,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 33,
             "pageRondo2017": 33,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -4634,6 +4799,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 20,
             "interpret": "Canzone scout",
             "chords": [
                 "Am",
@@ -4651,6 +4817,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 92,
             "interpret": "",
             "chords": [
                 "C",
@@ -4670,6 +4837,7 @@
             "pageRondoBlue": 66,
             "pageRondoGreen": 228,
             "pageRondo2017": 228,
+            "pageRondo2021": 78,
             "interpret": "Andr\u00e9 St\u00fcrzinger",
             "chords": [
                 "A",
@@ -4688,14 +4856,14 @@
             "pageRondoBlue": 136,
             "pageRondoGreen": 142,
             "pageRondo2017": 142,
+            "pageRondo2021": 142,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
                 "C",
                 "Dm",
                 "E7",
-                "G7",
-                "VorschlagKapodasterim2oder3Bund"
+                "G7"
             ],
             "alternative": true,
             "free": false,
@@ -4708,12 +4876,12 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 31,
             "pageRondo2017": 31,
+            "pageRondo2021": 31,
             "interpret": "Mani Matter",
             "chords": [
                 "Am",
                 "Dm",
-                "E",
-                "VorschlagKapodasterim4oder5Bund"
+                "E"
             ],
             "alternative": true,
             "free": false,
@@ -4726,6 +4894,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 156,
             "pageRondo2017": 156,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -4744,6 +4913,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 266,
             "pageRondo2017": 266,
+            "pageRondo2021": null,
             "interpret": "Rod Steward",
             "chords": [
                 "Am",
@@ -4764,6 +4934,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 60,
             "interpret": "Pierre Huwiler, Maxime Leforestier",
             "chords": [
                 "A",
@@ -4784,6 +4955,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 250,
             "pageRondo2017": 250,
+            "pageRondo2021": null,
             "interpret": "Extreme",
             "chords": [
                 "Am7",
@@ -4809,6 +4981,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 158,
             "pageRondo2017": 158,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -4828,6 +5001,7 @@
             "pageRondoBlue": 145,
             "pageRondoGreen": 145,
             "pageRondo2017": 144,
+            "pageRondo2021": 144,
             "interpret": "Patent Ochsner",
             "chords": [
                 "Am",
@@ -4850,9 +5024,9 @@
             "pageRondoBlue": 158,
             "pageRondoGreen": 123,
             "pageRondo2017": 123,
+            "pageRondo2021": 123,
             "interpret": "Kinderlied",
             "chords": [
-                "",
                 "D",
                 "Em",
                 "G",
@@ -4869,6 +5043,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 28,
             "interpret": "Kunz",
             "chords": [
                 "A",
@@ -4888,6 +5063,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 270,
             "pageRondo2017": 270,
+            "pageRondo2021": 98,
             "interpret": "G\u00f6l\u00e4",
             "chords": [
                 "Am",
@@ -4907,6 +5083,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 54,
             "pageRondo2017": 54,
+            "pageRondo2021": 54,
             "interpret": "",
             "chords": [
                 "C",
@@ -4923,6 +5100,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 66,
             "interpret": "Canto Scout Italiano (Lied aus Italien)",
             "chords": [
                 "Am",
@@ -4941,6 +5119,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 125,
             "interpret": "Canzone popolare",
             "chords": [
                 "Am",
@@ -4962,6 +5141,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 78,
             "pageRondo2017": 78,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -4979,6 +5159,7 @@
             "pageRondoBlue": 130,
             "pageRondoGreen": 130,
             "pageRondo2017": 130,
+            "pageRondo2021": 130,
             "interpret": "Peter Reber",
             "chords": [
                 "Am",
@@ -4998,6 +5179,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 64,
             "interpret": "Canzone popolare",
             "chords": [
                 "A7",
@@ -5014,6 +5196,7 @@
             "pageRondoBlue": 108,
             "pageRondoGreen": 32,
             "pageRondo2017": 32,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -5031,6 +5214,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 80,
             "interpret": "(Lied aus Finnland)",
             "chords": [
                 "C",
@@ -5048,17 +5232,16 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 86,
             "interpret": "Joe Dassin",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "Dm",
                 "E7",
                 "F",
                 "G",
-                "G7",
-                "repeatandfadeout"
+                "G7"
             ],
             "alternative": false,
             "free": false,
@@ -5071,6 +5254,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 78,
             "pageRondo2017": 78,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -5088,6 +5272,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 230,
             "pageRondo2017": 230,
+            "pageRondo2021": null,
             "interpret": "Gene Kelly",
             "chords": [
                 "E",
@@ -5104,6 +5289,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 231,
             "pageRondo2017": 231,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "E",
@@ -5120,6 +5306,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 246,
             "pageRondo2017": 248,
+            "pageRondo2021": null,
             "interpret": "Metallica",
             "chords": [
                 "A",
@@ -5140,6 +5327,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 7,
             "interpret": "BLAY (Bligg & Marc Sway)",
             "chords": [
                 "A",
@@ -5165,6 +5353,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 25,
             "pageRondo2017": 25,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -5181,6 +5370,7 @@
             "pageRondoBlue": 132,
             "pageRondoGreen": 132,
             "pageRondo2017": 132,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -5200,6 +5390,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 118,
             "interpret": "Canzone popolare",
             "chords": [
                 "C",
@@ -5216,6 +5407,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 212,
             "pageRondo2017": 212,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -5235,6 +5427,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 192,
             "pageRondo2017": 192,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -5252,9 +5445,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 52,
             "interpret": "Die Toten Hosen",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "D",
@@ -5273,6 +5466,7 @@
             "pageRondoBlue": 106,
             "pageRondoGreen": 106,
             "pageRondo2017": 106,
+            "pageRondo2021": null,
             "interpret": "Tommy Shaw",
             "chords": [
                 "Am",
@@ -5294,6 +5488,7 @@
             "pageRondoBlue": 98,
             "pageRondoGreen": 98,
             "pageRondo2017": 98,
+            "pageRondo2021": null,
             "interpret": "Eric Clapton",
             "chords": [
                 "A",
@@ -5321,6 +5516,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 96,
             "pageRondo2017": 96,
+            "pageRondo2021": null,
             "interpret": "Harry Belafonte",
             "chords": [
                 "C",
@@ -5337,6 +5533,7 @@
             "pageRondoBlue": 140,
             "pageRondoGreen": 164,
             "pageRondo2017": 164,
+            "pageRondo2021": 162,
             "interpret": "Simon & Garfunkel",
             "chords": [
                 "Am",
@@ -5357,6 +5554,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 222,
             "pageRondo2017": 222,
+            "pageRondo2021": null,
             "interpret": "Mike Oldfield",
             "chords": [
                 "B",
@@ -5375,6 +5573,7 @@
             "pageRondoBlue": 77,
             "pageRondoGreen": 77,
             "pageRondo2017": 77,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -5392,6 +5591,7 @@
             "pageRondoBlue": 132,
             "pageRondoGreen": 132,
             "pageRondo2017": 132,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -5411,6 +5611,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 162,
+            "pageRondo2021": null,
             "interpret": "Simon & Garfunkel",
             "chords": [
                 "Am",
@@ -5430,6 +5631,7 @@
             "pageRondoBlue": 88,
             "pageRondoGreen": 146,
             "pageRondo2017": 146,
+            "pageRondo2021": 146,
             "interpret": "Ralph McTell",
             "chords": [
                 "Am",
@@ -5451,6 +5653,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 160,
             "pageRondo2017": 160,
+            "pageRondo2021": 160,
             "interpret": "",
             "chords": [
                 "Am",
@@ -5470,6 +5673,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 62,
             "pageRondo2017": 62,
+            "pageRondo2021": null,
             "interpret": "Woodie Guthrie",
             "chords": [
                 "C",
@@ -5487,6 +5691,7 @@
             "pageRondoBlue": 36,
             "pageRondoGreen": 34,
             "pageRondo2017": 34,
+            "pageRondo2021": 34,
             "interpret": "Stuart Hamblen",
             "chords": [
                 "A",
@@ -5505,6 +5710,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 165,
             "interpret": "G\u00e4nsehaut",
             "chords": [
                 "A7",
@@ -5512,9 +5718,7 @@
                 "Dm",
                 "Em",
                 "G",
-                "H7",
-                "Outro",
-                "Refrain"
+                "H7"
             ],
             "alternative": true,
             "free": false,
@@ -5527,11 +5731,11 @@
             "pageRondoBlue": 114,
             "pageRondoGreen": 114,
             "pageRondo2017": 114,
+            "pageRondo2021": null,
             "interpret": "Oasis",
             "chords": [
                 "A7",
                 "C",
-                "Cmaj7",
                 "D",
                 "Dsus4",
                 "Em",
@@ -5548,6 +5752,7 @@
             "pageRondoBlue": 64,
             "pageRondoGreen": 218,
             "pageRondo2017": 218,
+            "pageRondo2021": 148,
             "interpret": "Reinhard Mey",
             "chords": [
                 "Am",
@@ -5567,6 +5772,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 64,
             "interpret": "Canzone popolare",
             "chords": [
                 "A7",
@@ -5583,6 +5789,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 90,
             "interpret": "Pippo Pollina",
             "chords": [
                 "Am",
@@ -5602,16 +5809,15 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 11,
             "interpret": "Pl\u00fcsch",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "Dm",
                 "Em",
                 "F",
-                "G",
-                "OriginaltonartEDur"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -5624,13 +5830,13 @@
             "pageRondoBlue": 70,
             "pageRondoGreen": 65,
             "pageRondo2017": 65,
+            "pageRondo2021": 65,
             "interpret": "Canzone popolare",
             "chords": [
                 "A",
                 "Am",
                 "Dm",
-                "E",
-                "PropostaCapotastoal2"
+                "E"
             ],
             "alternative": true,
             "free": true,
@@ -5643,6 +5849,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 63,
             "pageRondo2017": 63,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A7",
@@ -5661,9 +5868,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 73,
+            "pageRondo2021": 73,
             "interpret": "77 Bombay Street",
             "chords": [
-                "",
                 "C",
                 "D",
                 "D-Fis",
@@ -5681,6 +5888,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 119,
             "interpret": "",
             "chords": [
                 "A",
@@ -5697,6 +5905,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 167,
             "interpret": "",
             "chords": [
                 "Am",
@@ -5717,6 +5926,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 122,
             "interpret": "Canzone popolare",
             "chords": [
                 "A",
@@ -5734,6 +5944,7 @@
             "pageRondoBlue": 56,
             "pageRondoGreen": 58,
             "pageRondo2017": 58,
+            "pageRondo2021": 58,
             "interpret": "Patent Ochsner",
             "chords": [
                 "A",
@@ -5760,15 +5971,14 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 168,
             "interpret": "Hecht",
             "chords": [
-                "",
                 "C",
                 "D",
                 "Dm",
                 "Em",
-                "G",
-                "Originaltonart"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -5781,6 +5991,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 122,
             "pageRondo2017": 122,
+            "pageRondo2021": null,
             "interpret": "Drafi Deutscher",
             "chords": [
                 "A7",
@@ -5798,6 +6009,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 84,
             "pageRondo2017": 84,
+            "pageRondo2021": null,
             "interpret": "Franz Hohler",
             "chords": [
                 "A7",
@@ -5823,6 +6035,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 226,
             "pageRondo2017": 226,
+            "pageRondo2021": 128,
             "interpret": "Die Bergvagabunden",
             "chords": [
                 "C",
@@ -5841,6 +6054,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 24,
             "pageRondo2017": 24,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "C",
@@ -5857,6 +6071,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 190,
             "pageRondo2017": 190,
+            "pageRondo2021": null,
             "interpret": "John Lennon \/ Paul McCartney",
             "chords": [
                 "A",
@@ -5880,6 +6095,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 238,
             "pageRondo2017": 238,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "C",
@@ -5898,6 +6114,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 141,
             "pageRondo2017": 184,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -5918,6 +6135,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "A7",
@@ -5943,6 +6161,7 @@
             "pageRondoBlue": 90,
             "pageRondoGreen": 92,
             "pageRondo2017": 92,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -5967,6 +6186,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 157,
             "pageRondo2017": 157,
+            "pageRondo2021": null,
             "interpret": "Pete Seeger",
             "chords": [
                 "Am",
@@ -5986,9 +6206,9 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 24,
             "interpret": "Dabu Fantastic",
             "chords": [
-                "",
                 "Am",
                 "C",
                 "F",
@@ -6005,6 +6225,7 @@
             "pageRondoBlue": 64,
             "pageRondoGreen": 218,
             "pageRondo2017": 218,
+            "pageRondo2021": 148,
             "interpret": "Reinhard Mey",
             "chords": [
                 "Am",
@@ -6024,6 +6245,7 @@
             "pageRondoBlue": 44,
             "pageRondoGreen": 44,
             "pageRondo2017": 44,
+            "pageRondo2021": 44,
             "interpret": "Scorpions",
             "chords": [
                 "Am",
@@ -6045,13 +6267,13 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 37,
             "interpret": "Marteria, Yasha, Miss Platnum",
             "chords": [
                 "Am",
                 "C",
                 "Dm",
-                "G",
-                "OriginaltonartKapoim1Bund"
+                "G"
             ],
             "alternative": true,
             "free": false,
@@ -6064,6 +6286,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 268,
             "pageRondo2017": 268,
+            "pageRondo2021": null,
             "interpret": "Leskela",
             "chords": [
                 "Am",
@@ -6090,6 +6313,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 190,
             "pageRondo2017": 190,
+            "pageRondo2021": null,
             "interpret": "John Lennon \/ Paul McCartney",
             "chords": [
                 "A",
@@ -6113,11 +6337,11 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 124,
             "pageRondo2017": 124,
+            "pageRondo2021": 124,
             "interpret": "Anton Wilhelm von Zuccalmaglio",
             "chords": [
                 "E",
-                "H7",
-                "VorschlagKapodasterim1oder2Bund"
+                "H7"
             ],
             "alternative": true,
             "free": false,
@@ -6130,6 +6354,7 @@
             "pageRondoBlue": 124,
             "pageRondoGreen": 198,
             "pageRondo2017": 198,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "Am",
@@ -6149,6 +6374,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 244,
             "pageRondo2017": 246,
+            "pageRondo2021": null,
             "interpret": "Eric Clapton",
             "chords": [
                 "C",
@@ -6167,11 +6393,11 @@
             "pageRondoBlue": 114,
             "pageRondoGreen": 114,
             "pageRondo2017": 114,
+            "pageRondo2021": null,
             "interpret": "Oasis",
             "chords": [
                 "A7",
                 "C",
-                "Cmaj7",
                 "D",
                 "Dsus4",
                 "Em",
@@ -6188,6 +6414,7 @@
             "pageRondoBlue": 98,
             "pageRondoGreen": 98,
             "pageRondo2017": 98,
+            "pageRondo2021": null,
             "interpret": "Eric Clapton",
             "chords": [
                 "A",
@@ -6215,6 +6442,7 @@
             "pageRondoBlue": 102,
             "pageRondoGreen": 20,
             "pageRondo2017": 20,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "Am",
@@ -6234,6 +6462,7 @@
             "pageRondoBlue": 76,
             "pageRondoGreen": 178,
             "pageRondo2017": 178,
+            "pageRondo2021": null,
             "interpret": "The Beatles",
             "chords": [
                 "Am",
@@ -6259,6 +6488,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": 49,
             "pageRondo2017": 49,
+            "pageRondo2021": null,
             "interpret": "",
             "chords": [
                 "A",
@@ -6277,6 +6507,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": 8,
+            "pageRondo2021": 16,
             "interpret": "Kinderlied",
             "chords": [
                 "Am",
@@ -6295,6 +6526,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 135,
             "interpret": "Chanson scoute",
             "chords": [
                 "Am",
@@ -6313,6 +6545,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 62,
             "interpret": "Scout Song from Poland (Lied aus Polen)",
             "chords": [
                 "C",
@@ -6331,6 +6564,7 @@
             "pageRondoBlue": null,
             "pageRondoGreen": null,
             "pageRondo2017": null,
+            "pageRondo2021": 77,
             "interpret": "Lutaju\u0107a srca (Lied aus Serbien)",
             "chords": [
                 "Am",
