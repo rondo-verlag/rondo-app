@@ -1,16 +1,17 @@
 @font-face {
   font-family: 'rondo';
   src:
-    url('../../public/assets/fonts/rondo/rondo.ttf?qthwo6') format('truetype'),
-    url('../../public/assets/fonts/rondo/rondo.woff?qthwo6') format('woff');
+    url('../../public/assets/fonts/rondo/rondo.ttf?omq8w8') format('truetype'),
+    url('../../public/assets/fonts/rondo/rondo.woff?omq8w8') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="rondo-icon-"], [class*=" rondo-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'rondo' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -22,6 +23,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rondo-icon-chord-Asus4:before {
+  content: "\e943";
+}
+.rondo-icon-chord-Dsus4:before {
+  content: "\e948";
+}
+.rondo-icon-chord-Absus4-Db:before {
+  content: "\e93d";
+}
+.rondo-icon-chord-Bm-Eb:before {
+  content: "\e93e";
+}
+.rondo-icon-chord-Bm:before {
+  content: "\e93f";
+}
+.rondo-icon-chord-Bm-Ab:before {
+  content: "\e940";
+}
+.rondo-icon-chord-Bm-Gb:before {
+  content: "\e941";
+}
+.rondo-icon-chord-Dbsus2:before {
+  content: "\e942";
+}
+.rondo-icon-chord-Asus2:before {
+  content: "\e944";
+}
+.rondo-icon-chord-Eb:before {
+  content: "\e945";
+}
+.rondo-icon-chord-Gplus:before {
+  content: "\e946";
+}
+.rondo-icon-chord-Ab:before {
+  content: "\e947";
+}
+.rondo-icon-chord-Db:before {
+  content: "\e905";
+}
 .rondo-icon-chord-E-Gis:before {
   content: "\e93c";
 }
@@ -180,6 +220,9 @@
 }
 .rondo-icon-play:before {
   content: "\e922";
+}
+.rondo-icon-close-circle:before {
+  content: "\e949";
 }
 .rondo-icon-logo:before {
   content: "\e906";

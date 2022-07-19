@@ -7,7 +7,7 @@
             <i class="icon rondo-icon-search placeholder-icon"></i>
             <input type="text" v-model="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
             <span class="clear-search" v-if="query" @click="clearSearch()">
-              <ion-icon name="close-circle"></ion-icon>
+              <i class="icon rondo-icon-close-circle"></i>
             </span>
           </label>
           <div class="rondo-bar-search__logo">
@@ -143,7 +143,7 @@ export default defineComponent({
     border-radius: 5px;
 
     .placeholder-icon {
-      color: #CCC;
+      color: #CCC !important;
       font-size: 140%;
       position: absolute;
       margin-top: 5px;
@@ -159,7 +159,7 @@ export default defineComponent({
       letter-spacing: initial;
       width: 100%;
       padding: 5px;
-      padding-left: 30px;
+      padding-left: 34px;
       padding-right: 30px;
       font-size: 16px;
       line-height: 22px;
@@ -175,7 +175,6 @@ export default defineComponent({
   }
 
   .clear-search {
-    color: #CCC;
     font-size: 140%;
     position: absolute;
     top: 7px;
@@ -185,6 +184,11 @@ export default defineComponent({
     width: 40px;
     text-align: center;
     padding-top: 5px;
+    padding-left: 10px;
+
+    i {
+      color: #CCC !important;
+    }
   }
 
   .about-icon {
