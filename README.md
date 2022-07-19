@@ -54,6 +54,8 @@ Change Version:
  - app/package.json:3
  - app/android/app/build.gradle:9
  - app/ios/App/App/Info.plist:22
+ - app/ios/App/App.xcodeproj/project.pbxproj:353
+ - app/ios/App/App.xcodeproj/project.pbxproj:373
 
 ### Build
 

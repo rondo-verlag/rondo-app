@@ -43,6 +43,7 @@
           <swiper-slide v-for="(song, index) in songs" :key="song" :virtualIndex="index">
             <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
               <Songtext :song="song"></Songtext>
+              <br>
             </ScrollableContent>
           </swiper-slide>
         </swiper>

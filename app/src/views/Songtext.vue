@@ -12,7 +12,7 @@
         <div class="copyright" v-if="song.license">{{song.license}}</div>
         <div class="report-error-link">
           &mdash;<br>
-          <browserlink :url="'mailto:app@rondo-verlag.ch?subject=Feedback zum Lied ' + song.title + ' (Rondo App ' + appVersion + ')'">
+          <browserlink :url="'mailto:app@rondo-verlag.ch?subject=Feedback zum Lied ' + encodeURIComponent(song.title) + ' (Rondo App ' + appVersion + ')'">
             Fehler gefunden?
           </browserlink>
         </div>
