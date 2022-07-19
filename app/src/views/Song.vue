@@ -3,7 +3,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-button @click="$router.back()" class="rondo-back-button">
+          <ion-button @click="goBack()" class="rondo-back-button">
             <i class="icon rondo-icon-arrow"></i>
           </ion-button>
         </ion-buttons>
@@ -211,6 +211,13 @@ export default defineComponent({
         if (this.section == 'text') {
             document.body.classList.toggle('rondo-show-chords');
         }
+    },
+    goBack: function() {
+      if (this.section === 'text') {
+        this.$router.back();
+      } else {
+        this.section = 'text'
+      }
     },
 
     // Scrolling
