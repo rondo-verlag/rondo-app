@@ -285,24 +285,6 @@
     ],
     "list": [
         {
-            "id": 230,
-            "title": "1, 2, 75, 6, 7, 75, 6, 7, 75, 6, 7",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 80,
-            "interpret": "(Lied aus Finnland)",
-            "chords": [
-                "C",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
             "id": 1,
             "title": "500 MILES",
             "pageRondoRed": null,
@@ -2195,6 +2177,24 @@
                 "G"
             ],
             "alternative": false,
+            "free": true,
+            "license": ""
+        },
+        {
+            "id": 230,
+            "title": "Ett, tv\u00e5, sjuttifem",
+            "pageRondoRed": null,
+            "pageRondoBlue": null,
+            "pageRondoGreen": null,
+            "pageRondo2017": null,
+            "pageRondo2021": 80,
+            "interpret": "(Lied aus Finnland)",
+            "chords": [
+                "C",
+                "F",
+                "G7"
+            ],
+            "alternative": true,
             "free": true,
             "license": ""
         },
