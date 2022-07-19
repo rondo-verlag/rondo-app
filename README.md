@@ -47,12 +47,22 @@ Run in iOS Simulator:
 
 XCode must be installed and started once for this to work.
 
+## Release
 
-## Build
+Change Version:
+
+ - app/package.json:3
+ - app/android/app/build.gradle:9
+ - app/ios/App/App/Info.plist:22
+
+### Build
 
 Building Android APK:
 
     ionic capacitor build android
+    Android Studio opens. Build > Generate Signed Bundle / APK
+    Find the .aab here: app/android/app/release/app-release.aab
+    Upload to https://play.google.com/console
 
 Compile iOS App for Test Flight:
 
