@@ -91,7 +91,7 @@ import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import songdata from '../../public/assets/songdata/songs/song-index.json';
 import { Insomnia } from '@ionic-native/insomnia';
-
+import { isPlatform } from '@ionic/vue';
 
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.scss';
@@ -272,11 +272,17 @@ export default defineComponent({
     },
     exitFullscreen: function() {
         document.body.classList.remove('rondo-fullscreen');
-        StatusBar.show();
+        if (isPlatform('ios')) {
+          // only for ios, there is a bug in android
+          StatusBar.show();
+        }
     },
     enterFullscreen: function() {
         document.body.classList.add('rondo-fullscreen');
-        StatusBar.hide();
+        if (isPlatform('ios')) {
+          // only for ios, there is a bug in android
+          StatusBar.hide();
+        }
     },
 
     // Playback
