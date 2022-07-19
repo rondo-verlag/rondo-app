@@ -57,15 +57,15 @@
         Lemi/Alfred Trechslin<br>
         Lennon/Tobias Tschopp<br>
         Lichee/Nina Boogen<br>
-        Linus/Roland Brunschweiler
+        Linus/Roland Brunschweiler<br>
         Marabu/Irene Stutz<br>
         Sancho/Claudio Pietra<br>
-        Sprudel/Sarah Wurm
+        Sprudel/Sarah Wurm<br>
         Stitch/Robin Keller<br>
         Tarka/Marie-Janka Stankowski<br>
-        Tristan/Raymond Wiedmer
-        Tschaggon/Gabriel Jetter
-        Zazu/Timon Mötteli
+        Tristan/Raymond Wiedmer<br>
+        Tschaggon/Gabriel Jetter<br>
+        Zazu/Timon Mötteli<br>
         <br>
         Gestaltung: Marabu, Signito GmbH<br>
         Produktion: Fäger, uSystems GmbH<br>
