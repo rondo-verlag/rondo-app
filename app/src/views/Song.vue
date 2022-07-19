@@ -52,7 +52,7 @@
     <ion-content :fullscreen="true" v-if="section === 'chords'">
       <div class="chord-list">
         <template v-for="chord in currentSong.chords" :key="chord">
-          <i :class="'rondo-icon-chord-'+chord" @click="playChord(chord)"></i>
+          <i :class="'rondo-icon-chord-' + chord.replace('+','plus')" @click="playChord(chord)"></i>
         </template>
       </div>
     </ion-content>
