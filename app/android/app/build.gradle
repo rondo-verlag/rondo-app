@@ -6,8 +6,8 @@ android {
         applicationId "ch.rondo.songbookapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 300001
-        versionName "3.0-alpha"
+        versionCode 300002
+        versionName "3.0-alpha.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
