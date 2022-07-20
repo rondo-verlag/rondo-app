@@ -105,6 +105,7 @@ import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
 
 import MidiPlayer from 'web-midi-player';
+import {App} from "@capacitor/app";
 
 SwiperCore.use([Virtual]);
 
@@ -183,6 +184,15 @@ export default defineComponent({
     if (this.swiperInstance) {
       this.swiperInstance.slideTo(this.initialIndex, 0);
     }
+
+    // stop song if user closes app
+    App.addListener('appStateChange', ({ isActive }) => {
+      if (!isActive) {
+        this.stopSong();
+        this.stopChords();
+        App.removeAllListeners();
+      }
+    });
   },
   unmounted() {
     if (this.playingChord) {
@@ -194,6 +204,8 @@ export default defineComponent({
         this.exitFullscreen();
     }
     this.stopSong();
+    this.stopChords();
+    App.removeAllListeners();
   },
   methods: {
     slideChanged: function() {
@@ -295,11 +307,14 @@ export default defineComponent({
 
     // Playback
     playChord: function(chord: string) {
+      this.stopChords();
+      this.playingChord = new Audio('assets/songdata/mp3-chords/' + chord + '.mp3');
+      this.playingChord.play();
+    },
+    stopChords: function () {
       if (this.playingChord) {
         this.playingChord.pause();
       }
-      this.playingChord = new Audio('assets/songdata/mp3-chords/' + chord + '.mp3');
-      this.playingChord.play();
     },
     startSong: function() {
       this.stopSong();
