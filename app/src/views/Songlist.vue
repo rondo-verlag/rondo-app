@@ -64,6 +64,7 @@ const songFilter = (song: ISong, query: string): boolean => {
   return (song.title.toLowerCase().includes(query.toLowerCase()) ||
         !song.alternative && (song.interpret.toLowerCase().includes(query.toLowerCase())) ||
         !song.alternative && song.pageRondo2017 == parseInt(query) ||
+        !song.alternative && song.pageRondo2021 == parseInt(query) ||
         !song.alternative && song.pageRondoRed == parseInt(query) ||
         !song.alternative && song.pageRondoBlue == parseInt(query) ||
         !song.alternative && song.pageRondoGreen == parseInt(query));

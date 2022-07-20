@@ -5,6 +5,7 @@ export default interface ISong {
     pageRondoBlue: number|null;
     pageRondoGreen: number|null;
     pageRondo2017: number|null;
+    pageRondo2021: number|null;
     interpret: string;
     chords: string[];
     alternative: boolean;
