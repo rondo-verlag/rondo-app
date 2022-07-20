@@ -28,7 +28,7 @@ export default defineComponent({
       } else {
         // autoscroll is always +1, don't emit events on that
         let diff = currentPosition - this.lastScrollPosition;
-        if (diff > 1) {
+        if (diff > 1 && currentPosition > 0) {
           this.$emit('onScrollDown');
         }
       }

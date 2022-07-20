@@ -50,7 +50,6 @@
         <br>
         Balu/Raphael Windlin
         Chicco/Fiona Zellweger<br>
-        Fabienne Klaas<br>
         Fäger/Demian Holderegger<br>
         Google/Lars Fischer<br>
         Jojo/Alexandra Wyss<br>
