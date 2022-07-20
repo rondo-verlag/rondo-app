@@ -48,7 +48,7 @@
         &mdash;<br>
         Team Rondo:<br>
         <br>
-        Balu/Raphael Windlin
+        Balu/Raphael Windlin<br>
         Chicco/Fiona Zellweger<br>
         Fäger/Demian Holderegger<br>
         Google/Lars Fischer<br>
