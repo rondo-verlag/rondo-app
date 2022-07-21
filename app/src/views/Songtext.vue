@@ -68,6 +68,11 @@ export default defineComponent({
 
 <style lang="scss">
 
+.orientation--landscape .ion-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .songtext {
   .page-numbers {
     line-height: 32px;

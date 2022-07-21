@@ -30,7 +30,7 @@
     </ion-header>
 
     <ion-content :fullscreen="true" v-show="section === 'text'">
-      <div class="content-wrapper">
+      <div class="content-wrapper" :class="'orientation--' + orientation">
         <swiper
           :slides-per-view="1"
           :space-between="0"
@@ -50,7 +50,7 @@
       </div>
     </ion-content>
 
-    <ion-content :fullscreen="true" v-if="section === 'chords'">
+    <ion-content :fullscreen="true" v-if="section === 'chords'" :class="'orientation--' + orientation">
       <div class="chord-list">
         <template v-for="chord in currentSong.chords" :key="chord">
           <i :class="'rondo-icon-chord-' + chord.replace('+','plus')" @click="playChord(chord)"></i>
@@ -58,7 +58,7 @@
       </div>
     </ion-content>
 
-    <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page">
+    <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page" :class="'orientation--' + orientation">
       <img id="page" :src="require('../../public/assets/songdata/songs/notes/'+currentSong.id+'.jpg')">
     </ion-content>
 
@@ -142,6 +142,8 @@ export default defineComponent({
     initialIndex: number;
     playingChord: HTMLAudioElement | null;
     midiPlayer: any;
+    windowWidth: number;
+    orientation: 'portrait' | 'landscape';
   } {
     return {
       swiperInstance: null,
@@ -157,14 +159,13 @@ export default defineComponent({
       initialIndex: 0,
       playingChord: null,
       midiPlayer: null,
+      windowWidth: 0,
+      orientation: 'portrait',
     }
   },
   computed: {
     hasBought(): boolean {
       return AppState.hasBought;
-    },
-    windowWidth() {
-      return window.innerWidth;
     },
     songs(): ISong[] {
       if (this.hasBought) {
@@ -179,6 +180,7 @@ export default defineComponent({
   },
   mounted() {
     this.section = 'text';
+    this.windowWidth = window.innerWidth;
     this.currentSongId = parseInt(this.$route.params.id as string);
     this.initialIndex = this.songs.findIndex((song: ISong) => song.id == this.currentSongId);
     if (this.swiperInstance) {
@@ -193,6 +195,10 @@ export default defineComponent({
         App.removeAllListeners();
       }
     });
+
+    // handle screen rotations
+    window.addEventListener('orientationchange', this.orientationChanged);
+    this.orientationChanged();
   },
   unmounted() {
     if (this.playingChord) {
@@ -206,8 +212,23 @@ export default defineComponent({
     this.stopSong();
     this.stopChords();
     App.removeAllListeners();
+    window.removeEventListener('orientationchange', this.orientationChanged);
   },
   methods: {
+    orientationChanged: function() {
+      if (screen.orientation.type === 'landscape-primary' || screen.orientation.type === 'landscape-secondary') {
+        this.orientation = 'landscape';
+      } else {
+        this.orientation = 'portrait';
+      }
+      this.windowWidth = window.innerWidth;
+      setTimeout(() => {
+        this.windowWidth = window.innerWidth;
+      }, 10)
+      setTimeout(() => {
+        this.windowWidth = window.innerWidth;
+      }, 500)
+    },
     slideChanged: function() {
       if (this.swiperInstance) {
         if (this.songs[this.swiperInstance.realIndex]) {
@@ -418,4 +439,12 @@ ion-footer {
     text-align: center;
   }
 }
+
+.orientation--landscape .chord-list {
+  font-size: 24vw;
+  i {
+    width: 20%;
+  }
+}
+
 </style>
