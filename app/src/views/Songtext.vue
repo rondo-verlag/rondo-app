@@ -170,6 +170,14 @@ export default defineComponent({
       width: auto;
     }
 
+    .chord {
+      padding-right: 5px;
+    }
+
+    .chord span+span {
+      padding-left: 8px;
+    }
+
     .song-html {
       color: #999;
 
