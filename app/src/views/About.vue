@@ -59,6 +59,7 @@
         Lichee/Nina Boogen<br>
         Linus/Roland Brunschweiler<br>
         Marabu/Irene Stutz<br>
+        Ragusa/Laura Moser<br>
         Sancho/Claudio Pietra<br>
         Sprudel/Sarah Wurm<br>
         Stitch/Robin Keller<br>
