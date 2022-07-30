@@ -18,18 +18,10 @@ export class PurchaseManager {
             });
 
             // setup listeners
-            InAppPurchase2.when(PRODUCT_ID).updated( (product: IAPProduct) => {
-                console.log('Updated' + JSON.stringify(product));
-                if (product.owned) {
-                    AppState.setHasBought(true);
-                }
-            });
-            InAppPurchase2.when(PRODUCT_ID).loaded( (product: IAPProduct) => {
-                console.log('Loaded' + JSON.stringify(product));
-                if (product.owned) {
-                    AppState.setHasBought(true);
-                }
-            });
+            InAppPurchase2.when(PRODUCT_ID).updated(this.productUpdated);
+            InAppPurchase2.when(PRODUCT_ID).loaded(this.productUpdated);
+            InAppPurchase2.when(PRODUCT_ID).owned(this.productUpdated);
+            InAppPurchase2.when(PRODUCT_ID).finished(this.productUpdated);
             // Handle the product deliverable
             InAppPurchase2.when(PRODUCT_ID).approved((product: IAPProduct) => {
                 console.log('Approved' + JSON.stringify(product));
@@ -38,6 +30,12 @@ export class PurchaseManager {
             })
         }
         InAppPurchase2.refresh();
+    }
+
+    private static async productUpdated(product: IAPProduct) {
+        if (product.owned) {
+            AppState.setHasBought(true);
+        }
     }
 
     public static async buy() {
@@ -50,6 +48,7 @@ export class PurchaseManager {
     }
 
     public static restore(): boolean {
+        InAppPurchase2.refresh();
         let product = InAppPurchase2.get(PRODUCT_ID)
         console.log('Restore' + JSON.stringify(product));
         if (product.owned) {
