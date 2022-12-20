@@ -14,6 +14,7 @@ dependencies {
     implementation project(':capacitor-keyboard')
     implementation project(':capacitor-status-bar')
     implementation project(':capacitor-storage')
+    implementation "com.google.android.gms:play-services-analytics:18.0.2"
     implementation "com.android.billingclient:billing:4.0.0"
 }
 
