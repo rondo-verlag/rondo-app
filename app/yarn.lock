@@ -1000,7 +1000,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@capacitor/android@^3.4.3":
+"@capacitor/android@^3.9.0":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-3.9.0.tgz#73032c49e0d6cdb4bdd1c01565e28f3913f25fee"
   integrity sha512-YTPyrh1NozEuYXWGtfqN27TLXUrLbZX9fggyd4JQ1yMaUZTmLPm5dCuznONhQ49aPkJnUJB02JfpHy/qGwa2Lw==
@@ -1165,7 +1165,7 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@6.4.1", "@ionic/core@^6.0.11":
+"@ionic/core@6.4.1", "@ionic/core@^6.4.1":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.4.1.tgz#9d94457bcaafe49d7ef1ca047beb61fe6268d0b2"
   integrity sha512-l1Z2sA9VjkO5rFhQMlNkqWQaSRyV1mcb6nYvLgi1cyDegcSDqLLJjZeyKVKYxTuc2qCaZhRlBe+c2155W8hmsw==
@@ -1249,14 +1249,14 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^6.0.11":
+"@ionic/vue-router@^6.4.1":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-6.4.1.tgz#7b2bc75c2ac91a8f5449d34b57abf732c6789555"
   integrity sha512-v4PDBeWosv5OaYnWY++B3OGIsFTIJ+dlCGdtXeuttlEZX0GrlkEq3DNG58FNxzj07JnBjqVpJWWPdSr6PuO3tA==
   dependencies:
     "@ionic/vue" "6.4.1"
 
-"@ionic/vue@6.4.1", "@ionic/vue@^6.0.11":
+"@ionic/vue@6.4.1", "@ionic/vue@^6.4.1":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-6.4.1.tgz#ae67440b28d2352edae94b4f644794a0f52416a3"
   integrity sha512-QbW3YzeFrD7ZLIEudH/Kv6tNslit7a0ec/jcdNdkCBs5MdOHGxAYKs0eGBRAJlqAZMBHPuuBXnRdxwMP0hp89w==
@@ -3574,10 +3574,10 @@ cordova-plugin-insomnia@^4.3.0:
   resolved "https://registry.yarnpkg.com/cordova-plugin-insomnia/-/cordova-plugin-insomnia-4.3.0.tgz#832a33f6d763f0b80273bdf761b35b678c43b957"
   integrity sha512-MdlRFsyfmf6Q/8+npDeVSTo487eyrp7vbuGO3SPbnqR94DXmFRJWLbZGwf34dMeH6GQL45baxozUwhLTPxrQwg==
 
-cordova-plugin-purchase@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-purchase/-/cordova-plugin-purchase-11.0.0.tgz#d49ddd0d521c4bae4022a5db3eec5bd22a6c7adb"
-  integrity sha512-FkgOyWBYS989dYpM6d3R36VrdsHweTbmp5y7ELa1GwMYq2AG+ImdB6DJcVpyU/se/zpTndBWH/zN9s3AFKfsLg==
+cordova-plugin-purchase@^13.1.4:
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-purchase/-/cordova-plugin-purchase-13.1.4.tgz#4427279a054b3e362340ea9ea6b8d65005ac7036"
+  integrity sha512-91zCwQ8U71R1Jk3p6xY/x189/HmHInPJYtAiJUVpJeeT7kK9wESactlyEYFmCYFLrgdyCDQHp3LbyavN6BQbJw==
 
 cordova-plugin-screen-orientation@^3.0.2:
   version "3.0.2"
@@ -3591,7 +3591,7 @@ core-js-compat@^3.25.1, core-js-compat@^3.8.3:
   dependencies:
     browserslist "^4.21.4"
 
-core-js@^3.6.5, core-js@^3.8.3:
+core-js@^3.26.1, core-js@^3.8.3:
   version "3.26.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
   integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
@@ -8804,7 +8804,7 @@ vue-loader@^17.0.0:
     hash-sum "^2.0.0"
     loader-utils "^2.0.0"
 
-vue-router@^4.0.3:
+vue-router@^4.1.6:
   version "4.1.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.6.tgz#b70303737e12b4814578d21d68d21618469375a1"
   integrity sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==
@@ -8824,7 +8824,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^3.0.0-0:
+vue@^3.2.45:
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"
   integrity sha512-9Nx/Mg2b2xWlXykmCwiTUCWHbWIj53bnkizBxKai1g61f2Xit700A1ljowpTIM11e3uipOeiPcSqnmBg6gyiaA==
