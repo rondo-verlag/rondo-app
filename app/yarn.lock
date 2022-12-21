@@ -1042,7 +1042,7 @@
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-3.9.0.tgz#5e31b88701fe355cacf0c9790b319731d8b85b04"
   integrity sha512-GezPCJIujRHnF4wbrKJx6Q/mgFz0f9rmh/steTTXQZI+nEl6mHk6NWh8235p7YbhonYi5WD0rFNirrjGg1EaGw==
 
-"@capacitor/keyboard@^1.0.2":
+"@capacitor/keyboard@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-1.2.3.tgz#8046d8256e1c72ed3a2dad6ff01dc37a0c415077"
   integrity sha512-KTSzJkMa6CrmDIDhWfswNPqS7gvYlL25E1gqXbY7w/EhyBjJhEdF0bc6QUFufS+ZVMlcPafc0/E5P+pTfLnKiA==
