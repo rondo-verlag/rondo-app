@@ -26,17 +26,17 @@
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/in-app-purchase-2@^5.40.0":
-  version "5.46.0"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/in-app-purchase-2/-/in-app-purchase-2-5.46.0.tgz#ee61340b1c168beb1303d17e202ab0c68f22bd1f"
-  integrity sha512-vpE338lvOuyTM0sTrELDpSk6klPXsO1Wm6v12Q1IGjS7YDXrAnf1Pv7zPgNOKqUsk8gPlksyPTvFRjVQSzyxeA==
+"@awesome-cordova-plugins/in-app-purchase-2@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/in-app-purchase-2/-/in-app-purchase-2-6.2.0.tgz#275b217c53430e3f379c3abe1f5100c32028d6ed"
+  integrity sha512-NibcQXiM0qUn6XIL56EaQiGeN5+Ytw9aZ7Tn64qGkBb2n8/EbIWbSQnAdXoU7FupRbqGsJfDWYEdOxJa+3rJSA==
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/screen-orientation@^5.44.0":
-  version "5.46.0"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-5.46.0.tgz#75da1f7a42e17c323c9b9c40b55d8f50ac00cde0"
-  integrity sha512-RaCEGQCChk8/R5aWsNbKJSDi3wh6tI0VFufWSyodxoaWuy8cjRmhhdH+Y1Nqq2h19oNoBGsXQOGOONUwDBaLyA==
+"@awesome-cordova-plugins/screen-orientation@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-6.2.0.tgz#35e4816657adc429012daed5295686ae6785cf63"
+  integrity sha512-o6v86pEwmzDcDgnnhkv2af/SH1q5Ahjx00tihTCqLy8XZLlKiuogePm7BF0if8L3erXQPHqefOZslpO02hE1Rg==
   dependencies:
     "@types/cordova" latest
 
@@ -1165,7 +1165,7 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@6.4.1", "@ionic/core@^6.4.1":
+"@ionic/core@6.4.1", "@ionic/core@^6.0.11":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.4.1.tgz#9d94457bcaafe49d7ef1ca047beb61fe6268d0b2"
   integrity sha512-l1Z2sA9VjkO5rFhQMlNkqWQaSRyV1mcb6nYvLgi1cyDegcSDqLLJjZeyKVKYxTuc2qCaZhRlBe+c2155W8hmsw==
@@ -1249,14 +1249,14 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^6.4.1":
+"@ionic/vue-router@^6.0.11":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-6.4.1.tgz#7b2bc75c2ac91a8f5449d34b57abf732c6789555"
   integrity sha512-v4PDBeWosv5OaYnWY++B3OGIsFTIJ+dlCGdtXeuttlEZX0GrlkEq3DNG58FNxzj07JnBjqVpJWWPdSr6PuO3tA==
   dependencies:
     "@ionic/vue" "6.4.1"
 
-"@ionic/vue@6.4.1", "@ionic/vue@^6.4.1":
+"@ionic/vue@6.4.1", "@ionic/vue@^6.0.11":
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-6.4.1.tgz#ae67440b28d2352edae94b4f644794a0f52416a3"
   integrity sha512-QbW3YzeFrD7ZLIEudH/Kv6tNslit7a0ec/jcdNdkCBs5MdOHGxAYKs0eGBRAJlqAZMBHPuuBXnRdxwMP0hp89w==
@@ -3204,9 +3204,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001426:
-  version "1.0.30001439"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001439.tgz#ab7371faeb4adff4b74dad1718a6fd122e45d9cb"
-  integrity sha512-1MgUzEkoMO6gKfXflStpYgZDlFM7M/ck/bgfVCACO5vnAf0fXoNVHdWtqGU+MYca+4bL9Z5bpOVmR33cWW9G2A==
+  version "1.0.30001441"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001441.tgz#987437b266260b640a23cd18fbddb509d7f69f3e"
+  integrity sha512-OyxRR4Vof59I3yGWXws6i908EtGbMzVUi3ganaZQHmydk1iwDhRnvaPG2WaR0KcqrDFKrxVZHULT396LEPhXfg==
 
 case-sensitive-paths-webpack-plugin@^2.3.0:
   version "2.4.0"
