@@ -1037,7 +1037,7 @@
   resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-1.1.4.tgz#80d5bc4776740a227a8cb83c85fac4db1316db8e"
   integrity sha512-+pJIb5X7xAcbrWj6rJaV+cwBlv8aFwB1/Ob6EV4atydThuuVSSsAL4hI4ZYlPNOxM6H5s+ZDLj7Pa2os4eFmtg==
 
-"@capacitor/ios@^3.4.3":
+"@capacitor/ios@^3.9.0":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-3.9.0.tgz#5e31b88701fe355cacf0c9790b319731d8b85b04"
   integrity sha512-GezPCJIujRHnF4wbrKJx6Q/mgFz0f9rmh/steTTXQZI+nEl6mHk6NWh8235p7YbhonYi5WD0rFNirrjGg1EaGw==
