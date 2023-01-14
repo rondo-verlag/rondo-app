@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@awesome-cordova-plugins/core": "^6.2.0",
-    "@awesome-cordova-plugins/in-app-purchase-2": "^6.2.0",
+    "@awesome-cordova-plugins/in-app-purchase-2": "^6.3.0",
     "@awesome-cordova-plugins/screen-orientation": "^6.2.0",
     "@capacitor/android": "^3.9.0",
     "@capacitor/app": "^1.1.1",
