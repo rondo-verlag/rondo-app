@@ -3835,10 +3835,10 @@ cordova-plugin-insomnia@^4.3.0:
   resolved "https://registry.yarnpkg.com/cordova-plugin-insomnia/-/cordova-plugin-insomnia-4.3.0.tgz#832a33f6d763f0b80273bdf761b35b678c43b957"
   integrity sha512-MdlRFsyfmf6Q/8+npDeVSTo487eyrp7vbuGO3SPbnqR94DXmFRJWLbZGwf34dMeH6GQL45baxozUwhLTPxrQwg==
 
-cordova-plugin-purchase@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-purchase/-/cordova-plugin-purchase-11.0.0.tgz#d49ddd0d521c4bae4022a5db3eec5bd22a6c7adb"
-  integrity sha512-FkgOyWBYS989dYpM6d3R36VrdsHweTbmp5y7ELa1GwMYq2AG+ImdB6DJcVpyU/se/zpTndBWH/zN9s3AFKfsLg==
+cordova-plugin-purchase@^13.1.6:
+  version "13.1.6"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-purchase/-/cordova-plugin-purchase-13.1.6.tgz#1b09e31ad174bfd93c91e208ee5434b2a46fc844"
+  integrity sha512-exIXLEk2wQlbYgxUh3uAp7shm/PzuDgouMfmvcQkMIDxjK/YODKnS+s/cUPXR0nECijEVPcBD1GzoLRX9KkIpQ==
 
 cordova-plugin-screen-orientation@^3.0.2:
   version "3.0.2"
