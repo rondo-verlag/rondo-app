@@ -1251,7 +1251,7 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^6.4.1":
+"@ionic/vue-router@^6.4.2":
   version "6.4.2"
   resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-6.4.2.tgz#2bdb42a91244f37733b51aafabffe37e3b8ba90c"
   integrity sha512-g8PNiIbkxDpX6H+U6aiWS/GiWmlgRLdq0KirBD9UQaqTjjaT3pCMd5DTcRps6SLSBfbW7Vg0gwsTYnpXRLYU5A==
