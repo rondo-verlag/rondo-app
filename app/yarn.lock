@@ -26,7 +26,7 @@
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/in-app-purchase-2@^6.2.0":
+"@awesome-cordova-plugins/in-app-purchase-2@^6.3.0":
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/in-app-purchase-2/-/in-app-purchase-2-6.3.0.tgz#bf1e5dab0e48f79508569d38874f8efd7ff069d8"
   integrity sha512-dvhdT50X99G85dNrWQ/pjparQc57u1R7Ls+FOlOlL+bKJO8/hjfTsE7LQc4w+RsaAmJ3qdk9bCPaoddRrrjvcg==
