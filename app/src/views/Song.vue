@@ -94,8 +94,8 @@ import songdata from '../../public/assets/songdata/songs/song-index.json';
 import { Insomnia } from '@ionic-native/insomnia';
 import { isPlatform } from '@ionic/vue';
 
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.scss';
+import 'swiper/css/bundle';
+import 'swiper/scss';
 import ISong from '@/interfaces/ISong';
 
 import SwiperCore, { Virtual, Swiper as SwiperInstance } from 'swiper';
