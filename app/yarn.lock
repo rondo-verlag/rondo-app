@@ -33,7 +33,7 @@
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/screen-orientation@^6.2.0":
+"@awesome-cordova-plugins/screen-orientation@^6.3.0":
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-6.3.0.tgz#0497d70611f8d8d291ee4cb284ba72e4ee263b67"
   integrity sha512-tfMXluqqqm/DfONiZAfYPIejF18bFXYxra6D+buVLdV5oJ+JENOxEe6y4F6bz6Xk/fCUlv/jEVaL6sed8MBhQw==
