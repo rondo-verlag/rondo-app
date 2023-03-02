@@ -3875,7 +3875,7 @@ cordova-plugin-purchase@^11.0.0:
   resolved "https://registry.yarnpkg.com/cordova-plugin-purchase/-/cordova-plugin-purchase-11.0.0.tgz#d49ddd0d521c4bae4022a5db3eec5bd22a6c7adb"
   integrity sha512-FkgOyWBYS989dYpM6d3R36VrdsHweTbmp5y7ELa1GwMYq2AG+ImdB6DJcVpyU/se/zpTndBWH/zN9s3AFKfsLg==
 
-cordova-plugin-screen-orientation@^3.0.2:
+cordova-plugin-screen-orientation@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-screen-orientation/-/cordova-plugin-screen-orientation-3.0.3.tgz#2df550d26eeef7e0328874b7aa280c757e8adb89"
   integrity sha512-Dt8lO8BECZfE/pKbYQZ72Wr811fYMScxw7c9v/gJ3etOPCBrgl8xIHOOZu4nY2ehRyxFPtZi3VeGvIG+3DZoZQ==
