@@ -1184,10 +1184,19 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@6.5.6", "@ionic/core@^6.5.0":
+"@ionic/core@6.5.6":
   version "6.5.6"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.5.6.tgz#fcac882a43c70e689cf89e3cf5ed85bcd439c07e"
   integrity sha512-Bi87GXW+pgeXijDWD/sLKLq9yQOxzQLg9+U5V684fZZoORv4KnV9Qosjq3LmRm+vH7VuQeU0OZ8ZU3OuDAlrDA==
+  dependencies:
+    "@stencil/core" "^2.18.0"
+    ionicons "^6.1.3"
+    tslib "^2.1.0"
+
+"@ionic/core@6.6.0", "@ionic/core@^6.5.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.6.0.tgz#a81c7df6101496496671e1bd068a6651dad7bfa3"
+  integrity sha512-1X0b2/ziKhCwSO665tSpG32FOuMyjhyGDLFTJUKoDfQB0j/gIBv1d2okUzAk6GKHdnAPUZQHZFhUHcSIclW9cg==
   dependencies:
     "@stencil/core" "^2.18.0"
     ionicons "^6.1.3"
@@ -1275,12 +1284,20 @@
   dependencies:
     "@ionic/vue" "6.5.6"
 
-"@ionic/vue@6.5.6", "@ionic/vue@^6.5.0":
+"@ionic/vue@6.5.6":
   version "6.5.6"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-6.5.6.tgz#d8c754b25267e6f3e4d80db289f04773c0b5c20b"
   integrity sha512-AY66JhWIgflkW4QaNx7BcV2LnZ5nruUR6P/NpLyYVRuUz0XpW3QOam0PZu9HlNsHR3NJvwMsaRejdjB63BSTKw==
   dependencies:
     "@ionic/core" "6.5.6"
+    ionicons "^6.1.3"
+
+"@ionic/vue@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-6.6.0.tgz#8e6b090d42b2427136d778d1cf0009835f4c8853"
+  integrity sha512-rn+yW+zpxZox8F7MuoTgOoTq1rn54Cn7PIQJpwlm7FlDa0fYIwE3x3OaaWHxcKfpl5CBaKfNVvGuc3XPNV5Z0Q==
+  dependencies:
+    "@ionic/core" "6.6.0"
     ionicons "^6.1.3"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
