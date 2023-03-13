@@ -1184,7 +1184,16 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@6.6.0", "@ionic/core@^6.5.0":
+"@ionic/core@6.6.1":
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.6.1.tgz#445b4e481bc7ac80737bfffd3ccc1e1a2fbf351d"
+  integrity sha512-+LMBk7kUX55rvYQ35AiAXPNzbNm3zNx9ginvuCzByguMjl+N63lpdPzIEfeRURkmq7NByD1VqpodMj5c6Oq2KQ==
+  dependencies:
+    "@stencil/core" "^2.18.0"
+    ionicons "^6.1.3"
+    tslib "^2.1.0"
+
+"@ionic/core@^6.5.0":
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.6.0.tgz#a81c7df6101496496671e1bd068a6651dad7bfa3"
   integrity sha512-1X0b2/ziKhCwSO665tSpG32FOuMyjhyGDLFTJUKoDfQB0j/gIBv1d2okUzAk6GKHdnAPUZQHZFhUHcSIclW9cg==
@@ -1268,19 +1277,19 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^6.6.0":
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-6.6.0.tgz#e19edcb82ca858fc7838969952535d52d8b782a8"
-  integrity sha512-arwb0Scz4edjZJfbsNQxPJPvboCuVUBF/3ihSIdqQc6CBUBhlO9aWL7873kWAwSfm+MY1tcSDZKW6IaKbzXXjA==
+"@ionic/vue-router@^6.6.1":
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-6.6.1.tgz#bed8db4f108f0baa0cf5d4a657fe005a6a8781de"
+  integrity sha512-GNyhM9jWZjqf8SOF8ZS6G2GOxVodTfISBe1IZ7X5WqC8TFpeZCCIj7AXwIuIXYt7/pOevDgVAG58aMICNvbrBw==
   dependencies:
-    "@ionic/vue" "6.6.0"
+    "@ionic/vue" "6.6.1"
 
-"@ionic/vue@6.6.0", "@ionic/vue@^6.6.0":
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-6.6.0.tgz#8e6b090d42b2427136d778d1cf0009835f4c8853"
-  integrity sha512-rn+yW+zpxZox8F7MuoTgOoTq1rn54Cn7PIQJpwlm7FlDa0fYIwE3x3OaaWHxcKfpl5CBaKfNVvGuc3XPNV5Z0Q==
+"@ionic/vue@6.6.1", "@ionic/vue@^6.6.0":
+  version "6.6.1"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-6.6.1.tgz#837e11cb3ae4d93ca8f47959d4521b78454c1294"
+  integrity sha512-1iBDGktEcdKbuN3UBeQw94agtYL6/yxV5/O3K1Xxxghrh4cHGb9hiekUqi+BWyeNQUt3HZegFOKWLUfvVs4WUg==
   dependencies:
-    "@ionic/core" "6.6.0"
+    "@ionic/core" "6.6.1"
     ionicons "^6.1.3"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
