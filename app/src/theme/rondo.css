@@ -38,6 +38,7 @@ a {
 ion-header .icon {
   color: white !important;
 }
+
 ion-header .icon.icon--active {
   color: darkorange !important;
 }
