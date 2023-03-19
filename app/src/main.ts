@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
@@ -28,7 +28,7 @@ import './theme/rondo-icons.css';
 import './theme/rondo.css';
 
 /* use package.json to read app version */
-import packageJson from '../package.json'
+import packageJson from '../package.json';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import {PurchaseManager} from "@/PurchaseManager";
 
@@ -41,6 +41,6 @@ router.isReady().then(() => {
   app.mount('#app');
 });
 
-StatusBar.setStyle({ style: Style.Dark })
+StatusBar.setStyle({ style: Style.Dark });
 
 PurchaseManager.initialize();
