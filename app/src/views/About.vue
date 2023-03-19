@@ -15,78 +15,78 @@
         <img src="assets/songdata/images/about.png" style="width: 100%">
       </div>
       <div class="about-container">
-        <b>Das Rondo immer und überall dabei</b><br>
+        <b>Das Rondo immer und überall dabei</b><br />
         <div v-if="!hasBought">
-          <br>
-          In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br>
-          <span @click="buyFullversion()" class="rondo-buy-button">Vollversion kaufen 5.00</span><br>
-          oder <a @click="restorePurchases()">Kauf wiederherstellen</a><br><br>
+          <br />
+          In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br />
+
         </div>
         <div v-else>
-          <br>
-          Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!<br><br>
+          <br />
+          Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!<br />
+          <br />
         </div>
 
-        &mdash;<br>
+        &mdash;<br />
         Der Rondo Verlag gibt seit den 1980er-Jahren das Schweizer Pfadi-Liederbuch &laquo;Rondo&raquo; heraus, das inzwischen in mehreren Auflagen und nun als App vorliegt. Daneben unterstützt der Verein Projekte, die Musik von und mit Jugendlichen fördern, eine Breitenwirkung entfalten und den Grundsätzen der Pfadi entsprechen.
 
-        <br>
-        <br>
-        <browserlink url="https://www.facebook.com/rondoverlag">facebook.com/rondoverlag</browserlink><br>
-        <br>
-        <browserlink url="https://www.instagram.com/rondoverlag">instagram.com/rondoverlag</browserlink><br>
-        <br>
-        <browserlink url="https://www.hajk.ch/de/catalogsearch/result/?q=Rondo%20Liederbuch">Rondo Liederbuch kaufen (Hajk)</browserlink><br>
-        <br>
+        <br />
+        <br />
+        <browserlink url="https://www.facebook.com/rondoverlag">facebook.com/rondoverlag</browserlink><br />
+        <br />
+        <browserlink url="https://www.instagram.com/rondoverlag">instagram.com/rondoverlag</browserlink><br />
+        <br />
+        <browserlink url="https://www.hajk.ch/de/catalogsearch/result/?q=Rondo%20Liederbuch">Rondo Liederbuch kaufen (Hajk)</browserlink><br />
+        <br />
 
         Fragen, Wünsche, Lob oder Kritik zur App sind unter
         <browserlink :url="'mailto:app@rondo-verlag.ch?subject=Rondo App ' + appVersion + ' Feedback'">app@rondo-verlag.ch</browserlink>
         allzeit willkommen.
 
-        <br>
-        <br>
-        &mdash;<br>
-        Team Rondo:<br>
-        <br>
-        Balu/Raphael Windlin<br>
-        Chicco/Fiona Zellweger<br>
-        Fäger/Demian Holderegger<br>
-        Google/Lars Fischer<br>
-        Jojo/Alexandra Wyss<br>
-        Krokus/Claudia Leuch<br>
-        Lemi/Alfred Trechslin<br>
-        Lennon/Tobias Tschopp<br>
-        Lichee/Nina Boogen<br>
-        Linus/Roland Brunschweiler<br>
-        Marabu/Irene Stutz<br>
-        Ragusa/Laura Moser<br>
-        Sancho/Claudio Pietra<br>
-        Sprudel/Sarah Wurm<br>
-        Stitch/Robin Keller<br>
-        Tarka/Marie-Janka Stankowski<br>
-        Tristan/Raymond Wiedmer<br>
-        Tschaggon/Gabriel Jetter<br>
-        Zazu/Timon Mötteli<br>
-        <br>
-        Gestaltung: Marabu, Signito GmbH<br>
-        Produktion: Fäger, uSystems GmbH<br>
-        <br>
+        <br />
+        <br />
+        &mdash;<br />
+        Team Rondo:<br />
+        <br />
+        Balu/Raphael Windlin<br />
+        Chicco/Fiona Zellweger<br />
+        Fäger/Demian Holderegger<br />
+        Google/Lars Fischer<br />
+        Jojo/Alexandra Wyss<br />
+        Krokus/Claudia Leuch<br />
+        Lemi/Alfred Trechslin<br />
+        Lennon/Tobias Tschopp<br />
+        Lichee/Nina Boogen<br />
+        Linus/Roland Brunschweiler<br />
+        Marabu/Irene Stutz<br />
+        Ragusa/Laura Moser<br />
+        Sancho/Claudio Pietra<br />
+        Sprudel/Sarah Wurm<br />
+        Stitch/Robin Keller<br />
+        Tarka/Marie-Janka Stankowski<br />
+        Tristan/Raymond Wiedmer<br />
+        Tschaggon/Gabriel Jetter<br />
+        Zazu/Timon Mötteli<br />
+        <br />
+        Gestaltung: Marabu, Signito GmbH<br />
+        Produktion: Fäger, uSystems GmbH<br />
+        <br />
 
-        Akkorde Sounds mit freundlicher Genehmigung von Burkhard Mikolai<br>
+        Akkorde Sounds mit freundlicher Genehmigung von Burkhard Mikolai<br />
         <browserlink url="http://www.bunte-noten.de">www.bunte-noten.de</browserlink>
 
-        <br>
-        <br>
-        &mdash;<br>
+        <br />
+        <br />
+        &mdash;<br />
         &copy; 2022 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
-        <br>
+        <br />
 
-<!--        <div>-->
-<!--          <br>-->
-<!--          <b>DEBUG:</b><br>-->
-<!--          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>-->
-<!--          <br><br>-->
-<!--        </div>-->
+        <!--        <div>-->
+        <!--          <br>-->
+        <!--          <b>DEBUG:</b><br>-->
+        <!--          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>-->
+        <!--          <br><br>-->
+        <!--        </div>-->
       </div>
     </ion-content>
   </ion-page>
@@ -97,7 +97,7 @@ import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } fro
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
-import {PurchaseManager} from "@/PurchaseManager";
+import { PurchaseManager } from "@/PurchaseManager";
 
 export default defineComponent({
   name: 'About',
@@ -117,7 +117,7 @@ export default defineComponent({
         return AppState.hasBought;
       },
       set(val: boolean): void {
-        AppState.setHasBought(val)
+        AppState.setHasBought(val);
       }
     }
   },
