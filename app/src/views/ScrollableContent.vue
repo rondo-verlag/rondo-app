@@ -18,7 +18,7 @@ export default defineComponent({
     addScrollHandler() {
       let element = this.$refs.scrollElement as HTMLDivElement;
       element.addEventListener("scroll", () => {
-        this.manualScrollHandler()
+        this.manualScrollHandler();
       });
     },
     manualScrollHandler() {
@@ -54,7 +54,7 @@ export default defineComponent({
   overflow: scroll;
   height: 100%;
 
-  &.scrolling  {
+  &.scrolling {
     // disable momentum effect during auto scroll to prevent flickering
     -webkit-overflow-scrolling: auto;
   }
