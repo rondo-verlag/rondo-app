@@ -41,7 +41,7 @@
     "cordova-plugin-screen-orientation": "^3.0.3",
     "core-js": "^3.30.2",
     "es6-promise-plugin": "^4.2.2",
-    "swiper": "^6.8.4",
+    "swiper": "^9.3.2",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6",
     "web-midi-player": "^1.4.1"
