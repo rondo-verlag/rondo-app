@@ -1051,10 +1051,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@capacitor/android@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.1.1.tgz#a53fdf0ac3525a6dd7f0294e7025786eebca0027"
-  integrity sha512-FaDg+Igjiz6ohH7yu5TpLHGCQbsjMMy+0a+idsyadTnz/IzRZwqlCyj4Jbqsb5J39j0hE8kqD3o1e5O5Ukbm2g==
+"@capacitor/android@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.2.2.tgz#9f2cfd5b81f96deecc22d77aee9a3161c14c70b4"
+  integrity sha512-2kx5C2lJ/DSwPWS7fKvextWhg4AK3SQvQnHgp8+WX6SDYgphBNlGUh45N/qBoMeVM7lqjANJFGQDCk0FjimlWQ==
 
 "@capacitor/app@^5.0.6":
   version "5.0.6"
@@ -1084,10 +1084,10 @@
     tslib "^2.4.0"
     xml2js "^0.5.0"
 
-"@capacitor/core@^5.0.4":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-5.1.0.tgz#fab9985a0e54f5636c1f7c3692ca04b2ecdc9e9d"
-  integrity sha512-lQDcQ0WKwyhFdtOXxyB+szxlTscGZeOk1tgNVrTg4glnF4k92RrC3uD4LQ27ITFwjBmTNPvOS3vyLz6B3I3JeA==
+"@capacitor/core@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-5.2.2.tgz#46fb818ac866b3f8dfe9fbe0de2722e2a008f40c"
+  integrity sha512-3jKECZC5+YD2rljMZm1e/K3AYyoxUmLDZCyofTPbRYPBSI0wJh5ZCkX+XIGzNM0o/Wokl3Voa1JB8xsLC0MPxA==
   dependencies:
     tslib "^2.1.0"
 
@@ -1096,10 +1096,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-5.0.6.tgz#c22fd6acbc62cbdff39279ded687c418f2c89a5a"
   integrity sha512-UrMcR7p2X10ql4VLlowUuH/VckTeu0lj+RQpekxox14uxDmu5AGIFDK/iDTi8W6QZkxTJRZK6sbCjgwYgNJ7Pw==
 
-"@capacitor/ios@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-5.1.1.tgz#1f6c7761620fc3b354d895a6235bebee40856b9c"
-  integrity sha512-Vk76qa1TDckcPNcUgEIgNdgFo4SqTDBNYqKaYVDMOgkZxg4aKe6PzZaqw1e9T3e4NKFSrDHnCDanA5UFB9tQ3w==
+"@capacitor/ios@^5.2.2":
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-5.2.2.tgz#209cc3b15199325f3f5515f7a208ff9830482f52"
+  integrity sha512-6nNhB+G9tamJFMdvPOIATEPIXlh3GNXMq8eeY3xrFO72bBTmQpXdbDQmMJeBbpVlkEnFoVUXiSxAu6O0E9x9Lw==
 
 "@capacitor/keyboard@^5.0.6":
   version "5.0.6"
@@ -8508,7 +8508,7 @@ safe-buffer@5.2.1, safe-buffer@>=5.1.0, safe-buffer@^5.0.1, safe-buffer@^5.1.0, 
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass-loader@^13.2.2:
+sass-loader@^13.3.2:
   version "13.3.2"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.3.2.tgz#460022de27aec772480f03de17f5ba88fa7e18c6"
   integrity sha512-CQbKl57kdEv+KDLquhC+gE3pXt74LEAzm+tzywcA0/aHZuub8wTErbjAoNI57rPUWRYRNC5WUnNl8eGJNbDdwg==
