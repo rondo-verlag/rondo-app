@@ -1101,10 +1101,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-5.1.1.tgz#1f6c7761620fc3b354d895a6235bebee40856b9c"
   integrity sha512-Vk76qa1TDckcPNcUgEIgNdgFo4SqTDBNYqKaYVDMOgkZxg4aKe6PzZaqw1e9T3e4NKFSrDHnCDanA5UFB9tQ3w==
 
-"@capacitor/keyboard@^5.0.2":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-5.0.5.tgz#4ce00f1a3dce5efec2d5b12dc551c2ede8d920df"
-  integrity sha512-pB2o15C8Cz3QqDcToU4H0B/i+LLXYPQVtShukywMlVEJZ6UUy+KSK8XCg/YPDZBY9E0lSprHw4+NBqH0HTYRKQ==
+"@capacitor/keyboard@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-5.0.6.tgz#04400e71b677abf9f1fc1ceaffd1211e7d864319"
+  integrity sha512-9GewAa/y2Hwkdw/Be8MTdiAjrFZ7TPDKpR44M0Y/0QMnK+mBbgzcoZ/UkuumWv6e2F1IAI+VY5eYVQHDeZcRoA==
 
 "@capacitor/preferences@^5.0.2":
   version "5.0.5"
