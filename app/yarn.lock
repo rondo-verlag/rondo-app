@@ -1051,10 +1051,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@capacitor/android@^5.0.4":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.1.0.tgz#abd50096bbff79e9b742052d0be07487bf1b46cc"
-  integrity sha512-gtJWhu+vFnYo4o4XxBYqaP0mPOgwjJucjlhpWovbKEtb4AgsKyPLrLaVM4U6j1QizIR23carA2hddUSNm/LSTA==
+"@capacitor/android@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.1.1.tgz#a53fdf0ac3525a6dd7f0294e7025786eebca0027"
+  integrity sha512-FaDg+Igjiz6ohH7yu5TpLHGCQbsjMMy+0a+idsyadTnz/IzRZwqlCyj4Jbqsb5J39j0hE8kqD3o1e5O5Ukbm2g==
 
 "@capacitor/app@^5.0.6":
   version "5.0.6"
