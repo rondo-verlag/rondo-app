@@ -1106,10 +1106,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-5.0.6.tgz#04400e71b677abf9f1fc1ceaffd1211e7d864319"
   integrity sha512-9GewAa/y2Hwkdw/Be8MTdiAjrFZ7TPDKpR44M0Y/0QMnK+mBbgzcoZ/UkuumWv6e2F1IAI+VY5eYVQHDeZcRoA==
 
-"@capacitor/preferences@^5.0.2":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.5.tgz#313490a4ed4f9e17f74181519f93b3f481717862"
-  integrity sha512-SPdmfsfKayWvQ0LV6F5c7v9G4iXD0LK0qeDMM/7rqIb+AD3JYdEd92JcXb/huG+SgD0iDGsvSOllEF+W2qQc7g==
+"@capacitor/preferences@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-5.0.6.tgz#96ce925001cc41272a93b6860160fb10d335cbe0"
+  integrity sha512-aDe4wGTVSAIue6XXdUFgyz7SGszxK/Ptt/iWTydMpzc1PlZXw1XTTnciM+S+SLLNZFzXlkpXT3wMnh9t0DojUA==
 
 "@capacitor/status-bar@^5.0.2":
   version "5.0.5"
