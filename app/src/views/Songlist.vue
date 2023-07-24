@@ -50,7 +50,7 @@
 </template>
 
 <script lang="ts">
-import {IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
+import { IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 import songdata from '../../public/assets/songdata/songs/song-index.json';
