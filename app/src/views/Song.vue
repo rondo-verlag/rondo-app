@@ -211,6 +211,7 @@ export default defineComponent({
     }
     this.stopSong();
     this.stopChords();
+    this.exitFullscreen();
     App.removeAllListeners();
     window.removeEventListener('orientationchange', this.orientationChanged);
   },
@@ -420,6 +421,7 @@ ion-footer {
   ion-header {
     top: -100px;
   }
+
   ion-footer {
     bottom: -100px;
   }
