@@ -1,7 +1,8 @@
-import ISong from './ISong'
+import ISong from "./ISong";
 
 export default interface ISongindex {
-    list: ISong[],
-    slidesFree: number[],
-    slidesPaid: number[]
+  list: ISong[],
+  slidesFree: number[],
+  slidesPaid: number[]
+
 }

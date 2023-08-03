@@ -75,10 +75,10 @@ http://ionicframework.com/docs/theming/ */
   --ion-font-family: Vectora, "Helvetica Neue", Verdana, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 }
 
-  /*
-   * iOS Dark Theme
-   * -------------------------------------------
-   */
+/*
+ * iOS Dark Theme
+ * -------------------------------------------
+ */
 
 .ios body {
   --ion-background-color: #000000;

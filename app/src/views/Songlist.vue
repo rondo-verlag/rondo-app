@@ -5,7 +5,7 @@
         <div class="rondo-bar-search">
           <label class="rondo-bar-search__input">
             <i class="icon rondo-icon-search placeholder-icon"></i>
-            <input type="text" v-model="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off"/>
+            <input type="text" v-model="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off" />
             <span class="clear-search" v-if="query" @click="clearSearch()">
               <i class="icon rondo-icon-close-circle"></i>
             </span>
@@ -15,7 +15,7 @@
               <i class="rondo-icon-logo"></i>
             </span>
           </div>
-      </div>
+        </div>
       </ion-toolbar>
     </ion-header>
 
@@ -50,7 +50,7 @@
 </template>
 
 <script lang="ts">
-import {IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
+import { IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 import songdata from '../../public/assets/songdata/songs/song-index.json';
@@ -114,7 +114,7 @@ export default defineComponent({
     clearSearch() {
       this.query = '';
       setTimeout(() => {
-          document.getElementById('song-search-input')!.focus();
+        document.getElementById('song-search-input')!.focus();
       }, 500);
     }
   }
@@ -169,6 +169,7 @@ export default defineComponent({
       // vectora has a bad baseline, so we use another font for inputs
       font-family: -apple-system, system-ui, Roboto, sans-serif;
     }
+
     input::-webkit-input-placeholder {
       color: #CCC;
       font-size: 16px;
@@ -206,6 +207,7 @@ export default defineComponent({
     }
   }
 }
+
 .md {
   .rondo-bar-search {
     .clear-search {
@@ -245,6 +247,7 @@ export default defineComponent({
 .rondo-list--not-available {
   ion-list-header {
     color: white;
+
     a {
       color: darkorange;
       text-decoration: none;
