@@ -86,7 +86,8 @@ import {
   IonListHeader,
   IonButton,
   IonButtons,
-  IonFooter
+  IonFooter,
+  useBackButton
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -163,6 +164,11 @@ export default defineComponent({
       orientation: 'portrait',
     }
   },
+  setup() {
+    useBackButton(10, () => {
+      console.log('Suppress default back button event');
+    });
+  },
   computed: {
     hasBought(): boolean {
       return AppState.hasBought;
@@ -186,6 +192,11 @@ export default defineComponent({
     if (this.swiperInstance) {
       this.swiperInstance.slideTo(this.initialIndex, 0);
     }
+
+    App.addListener('backButton', () => {
+      this.goBack();
+      App.removeAllListeners();
+    });
 
     // stop song if user closes app
     App.addListener('appStateChange', ({ isActive }) => {
