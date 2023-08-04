@@ -106,7 +106,7 @@ import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
 
 import MidiPlayer from 'web-midi-player';
-import {App} from "@capacitor/app";
+import { App } from "@capacitor/app";
 
 SwiperCore.use([Virtual]);
 

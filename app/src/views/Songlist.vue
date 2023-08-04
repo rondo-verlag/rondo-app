@@ -50,8 +50,20 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonIcon, IonPage, IonToolbar, IonList, IonItem, IonListHeader } from '@ionic/vue';
+import {
+    IonContent,
+    IonHeader,
+    IonIcon,
+    IonPage,
+    IonToolbar,
+    IonList,
+    IonItem,
+    IonListHeader,
+    useBackButton
+} from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { App } from "@capacitor/app";
+
 
 import songdata from '../../public/assets/songdata/songs/song-index.json';
 import ISong from "@/interfaces/ISong";
@@ -87,6 +99,11 @@ export default defineComponent({
       query: '',
     }
   },
+  setup() {
+      useBackButton(10, () => {
+          console.log('Suppress default back button event');
+      });
+  },
   computed: {
     hasBought(): boolean {
       return AppState.hasBought;
@@ -109,6 +126,12 @@ export default defineComponent({
     filteredPaidSongs(): ISong[] {
       return this.paidSongs.filter(song => songFilter(song, this.query));
     },
+  },
+  mounted() {
+    App.addListener('backButton', () => {
+      this.query = '';
+      document.getElementById('song-search-input').blur();
+    });
   },
   methods: {
     clearSearch() {
