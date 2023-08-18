@@ -1244,12 +1244,21 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@7.2.1", "@ionic/core@^7.2.1":
+"@ionic/core@7.2.1":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.2.1.tgz#8ccc3257446f36d9031a083e655fcd65eebae6cf"
   integrity sha512-7I3OIGHIhGCXxswphP3vfuyCCjXysAUg4cfKGB2QQ5e073DPsZkMSpVam19nAIjEDyfK2pQZC+SgSkZvvCc+2A==
   dependencies:
     "@stencil/core" "^3.4.0"
+    ionicons "7.1.0"
+    tslib "^2.1.0"
+
+"@ionic/core@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.3.0.tgz#8e5daaba7e3e6b9640d02ac34796bde6218d52a3"
+  integrity sha512-DPHG0U44O4WcknXa+x3JR/G/5ySxqCS5S8w65PZUQBYA657L4zkaGOvZpObP1MtiBLj9kG7c6Ae6xgJjrU7tyQ==
+  dependencies:
+    "@stencil/core" "^4.0.3"
     ionicons "7.1.0"
     tslib "^2.1.0"
 
@@ -1944,6 +1953,11 @@
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-3.4.1.tgz#b4a3d7579fa1ebb312aaed4c3d8f4bd6dece13f1"
   integrity sha512-7rjOmM0W9K5op2gtOQRLERGH1155rv2fm6ppxOzYqqG8ISct4m9skp5XgUBYPu+GSPsJFdRuCIQs0IuVsG/7+g==
+
+"@stencil/core@^4.0.3":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.0.5.tgz#3c242c1160eafde69952ed776d3c5c2180c17500"
+  integrity sha512-0nZRvvhjjOKsQFGX0pKiDtOS/5IiL7HRxtLqpIxHAxXKLs9ZcomTsdOwl12m/qjx2AtQReOfP8+x8jLOBNMOIQ==
 
 "@tootallnate/once@1":
   version "1.1.2"
