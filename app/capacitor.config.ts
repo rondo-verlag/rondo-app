@@ -4,8 +4,10 @@ const config: CapacitorConfig = {
   appId: 'ch.rondo.songbookapp',
   appName: 'songbook-app',
   webDir: 'dist',
-  bundledWebRuntime: false,
-  backgroundColor: "#000000"
+  backgroundColor: "#000000",
+  server: {
+    androidScheme: 'https'
+  }
 };
 
 export default config;
