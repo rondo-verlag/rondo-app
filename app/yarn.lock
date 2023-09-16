@@ -1662,15 +1662,6 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@7.3.3":
-  version "7.3.3"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.3.3.tgz#0d0b38f55728605489be7ae9f377ef4881bc6689"
-  integrity sha512-v/Zdx5otxRjfGrm9gJKmuLkEBcOk1aUUBYbgZ4xHNQiRCZzuuy3P55CFoUUZnBIJofiUh08whNndNuEkC8TOvg==
-  dependencies:
-    "@stencil/core" "^4.1.0"
-    ionicons "7.1.0"
-    tslib "^2.1.0"
-
 "@ionic/core@7.4.0", "@ionic/core@^7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.4.0.tgz#43fc741dfc845f17fc1d669b8c15cb6b475800d0"
@@ -1755,22 +1746,14 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^7.3.3":
-  version "7.3.3"
-  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-7.3.3.tgz#4f50830a6d2fc4657d62c6c7dacfde2a6abb6ceb"
-  integrity sha512-G+4nPAVJJa6DL8HXh+OlaMis+J/Rj18RvpoBj50Dw5Hda3G+DBTV7iXeVrfkzNOSELtdKo9vL158hW5YM+IExA==
+"@ionic/vue-router@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-7.4.0.tgz#51541e75e37941cbe9f943edcb85579077925ca0"
+  integrity sha512-o39HGFt+tsMcISMz3KS/eANZ5m88UA0FPPL/jRaasIF+ypHshTp/wxxoRtGs8X7yqZuQ2m9fleCwqMBIGYktow==
   dependencies:
-    "@ionic/vue" "7.3.3"
+    "@ionic/vue" "7.4.0"
 
-"@ionic/vue@7.3.3":
-  version "7.3.3"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.3.3.tgz#c7973f39fe57d2524c153198f94a6852c995e362"
-  integrity sha512-QAScy1XMBwqX/5t4Iw6PSTE1kJMohnTuXSCqxk2v/K3V+wgmNA/A8SfqCkvj4jnmNXJwEP/AF/FlUm3+Fp0HJg==
-  dependencies:
-    "@ionic/core" "7.3.3"
-    ionicons "^7.0.0"
-
-"@ionic/vue@^7.4.0":
+"@ionic/vue@7.4.0", "@ionic/vue@^7.4.0":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.4.0.tgz#712ab976fbc6732741625c7934501cf1e0784e4e"
   integrity sha512-ItNI4sn9uKVEXdzpcywAz93Pia7z0zF7+G65mTiAYz5IIzqrzynnGWEZwXLfQL7bo/PApN3JvxBnJFRomriW+Q==
@@ -2356,7 +2339,7 @@
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.22.3.tgz#83987e20bba855c450f6d6780e3a20192603f13f"
   integrity sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng==
 
-"@stencil/core@^4.1.0", "@stencil/core@^4.2.1":
+"@stencil/core@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.2.1.tgz#c60fa612f83d3380847d93d8b09097528a941576"
   integrity sha512-alYwqVwxfD0n6HKRVJqJoTzQNnf44n/sddvjNu3JMEn3sfY/Ag7rpmwUntYjtJmRut+or+9gPPgIJviCuKi4yQ==
