@@ -193,9 +193,9 @@ export default defineComponent({
       this.swiperInstance.slideTo(this.initialIndex, 0);
     }
 
-    App.addListener('backButton', () => {
+    App.addListener('backButton', async () => {
+      await App.removeAllListeners();
       this.goBack();
-      App.removeAllListeners();
     });
 
     // stop song if user closes app
@@ -223,7 +223,6 @@ export default defineComponent({
     this.stopSong();
     this.stopChords();
     this.exitFullscreen();
-    App.removeAllListeners();
     window.removeEventListener('orientationchange', this.orientationChanged);
   },
   methods: {

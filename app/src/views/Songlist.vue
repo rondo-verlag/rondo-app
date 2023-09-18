@@ -59,7 +59,6 @@ import {
     IonList,
     IonItem,
     IonListHeader,
-    useBackButton
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { App } from "@capacitor/app";
@@ -99,11 +98,6 @@ export default defineComponent({
       query: '',
     }
   },
-  setup() {
-      useBackButton(10, () => {
-          console.log('Suppress default back button event');
-      });
-  },
   computed: {
     hasBought(): boolean {
       return AppState.hasBought;
@@ -127,7 +121,7 @@ export default defineComponent({
       return this.paidSongs.filter(song => songFilter(song, this.query));
     },
   },
-  mounted() {
+  ionViewDidEnter() {
     App.addListener('backButton', () => {
       this.query = '';
       document.getElementById('song-search-input').blur();
