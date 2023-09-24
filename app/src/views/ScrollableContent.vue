@@ -62,15 +62,15 @@ export default defineComponent({
 
 .ios {
   .scrollable {
-    padding-top: 44px !important;
-    padding-bottom: 44px !important;
+    padding-top: var(--offset-top) !important;
+    padding-bottom: var(--offset-bottom) !important;
   }
 }
 
 .md {
   .scrollable {
-    padding-top: 56px !important;
-    padding-bottom: 56px !important;
+    padding-top: var(--offset-top) !important;
+    padding-bottom: var(--offset-bottom)  !important;
   }
 }
 </style>
