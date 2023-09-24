@@ -102,6 +102,7 @@ import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
 import { PurchaseManager } from "@/PurchaseManager";
+import {App} from "@capacitor/app";
 
 export default defineComponent({
   name: 'About',
@@ -124,6 +125,12 @@ export default defineComponent({
         AppState.setHasBought(val);
       }
     }
+  },
+  mounted() {
+    App.addListener('backButton', async () => {
+      await App.removeAllListeners();
+      this.$router.back();
+    })
   },
   methods: {
     buyFullversion() {
