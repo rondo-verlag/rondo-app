@@ -19,7 +19,9 @@
         <div v-if="!hasBought">
           <br />
           In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br />
-
+          <br />
+          <span @click="buyFullversion()" class="rondo-buy-button">Vollversion kaufen für 5.-</span><br>
+          oder <a @click="restorePurchases()">Kauf wiederherstellen</a><br><br>
         </div>
         <div v-else>
           <br />
@@ -60,12 +62,14 @@
         Linus/Roland Brunschweiler<br />
         Marabu/Irene Stutz<br />
         Ragusa/Laura Moser<br />
+        Rondo/Valerio Thrier<br />
         Sancho/Claudio Pietra<br />
         Sprudel/Sarah Wurm<br />
         Stitch/Robin Keller<br />
         Tarka/Marie-Janka Stankowski<br />
         Tristan/Raymond Wiedmer<br />
         Tschaggon/Gabriel Jetter<br />
+        Vento/Caspar Brenneisen<br />
         Zazu/Timon Mötteli<br />
         <br />
         Gestaltung: Marabu, Signito GmbH<br />
@@ -78,15 +82,15 @@
         <br />
         <br />
         &mdash;<br />
-        &copy; 2022 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
+        &copy; 2023 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
         <br />
 
-        <!--        <div>-->
-        <!--          <br>-->
-        <!--          <b>DEBUG:</b><br>-->
-        <!--          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>-->
-        <!--          <br><br>-->
-        <!--        </div>-->
+<!--        <div>-->
+<!--          <br>-->
+<!--          <b>DEBUG:</b><br>-->
+<!--          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>-->
+<!--          <br><br>-->
+<!--        </div>-->
       </div>
     </ion-content>
   </ion-page>
