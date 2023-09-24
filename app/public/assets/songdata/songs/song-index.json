@@ -1,25 +1,24 @@
 {
     "slidesFree": [
-        234,
-        170,
-        173,
-        174,
-        175,
-        176,
-        177,
-        181,
-        182,
-        186,
-        188,
-        189,
         201,
         210,
-        225,
-        226,
+        189,
+        188,
+        186,
+        170,
         230,
         231,
+        177,
+        175,
+        174,
+        173,
         233,
+        234,
         228,
+        226,
+        176,
+        182,
+        225,
         229,
         102,
         155,
@@ -31,8 +30,8 @@
         7,
         43,
         44,
-        47,
         142,
+        47,
         126,
         65,
         85,
@@ -78,7 +77,6 @@
         62,
         31,
         127,
-        111,
         71,
         8,
         42,
@@ -87,56 +85,56 @@
         55
     ],
     "slidesPaid": [
-        234,
-        170,
-        172,
-        173,
-        174,
-        175,
-        176,
-        177,
-        179,
-        180,
-        181,
-        182,
-        183,
-        185,
-        186,
-        188,
-        189,
-        190,
-        191,
-        192,
-        193,
-        194,
-        195,
-        199,
         201,
-        202,
-        203,
-        204,
-        205,
-        206,
-        207,
-        208,
-        209,
-        210,
-        211,
-        214,
         215,
         217,
         218,
         219,
         224,
+        191,
+        210,
+        190,
+        189,
+        188,
+        186,
         159,
-        225,
-        226,
+        214,
+        192,
+        211,
+        202,
+        203,
+        204,
+        199,
+        205,
+        206,
+        207,
+        208,
+        209,
+        195,
+        194,
+        193,
+        185,
+        170,
         227,
+        180,
         230,
         231,
+        179,
+        177,
+        175,
+        174,
+        173,
         232,
         233,
+        234,
+        172,
         228,
+        226,
+        181,
+        176,
+        182,
+        183,
+        225,
         229,
         102,
         155,
@@ -150,8 +148,8 @@
         44,
         152,
         161,
-        47,
         142,
+        47,
         126,
         37,
         65,
@@ -306,26 +304,6 @@
             "license": ""
         },
         {
-            "id": 119,
-            "title": "\u00c4 Schwan so wiis wie Schnee",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 270,
-            "pageRondo2017": 270,
-            "pageRondo2021": 98,
-            "interpret": "G\u00f6l\u00e4",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text: G\u00d6L\u00c4\nMusik: G\u00d6L\u00c4, URS RETO FREI, THOMAS J. GYGER, RENE MAURER, ZLATKO PERICA"
-        },
-        {
             "id": 3,
             "title": "ALL NIGHT, ALL DAY",
             "pageRondoRed": 103,
@@ -359,7 +337,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "ALL SUMMER LONG\nText u. Musik: Edward C. King\/Leroy P. Marinelli\/Robert J. Ritchie\/Gary\nRobert Rossington\/Matthew L. Shafer\/Ronnie Van Zant\/Robert T. Wachtel\/Warren William Zevon\n\u00a9 Copyright by Leadsheet Land Music, SP: Ruminating Music (Wixen Music) MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich, Schweiz f\u00fcr 11,11% Copyright"
+            "license": "ALL SUMMER LONG (11,12 % Copyright)\nMusik und Text: Matthew Shafer \/ Edward King \/ Gary Rossington \/ Waddy Wachtel \/ Ronnie Van Zant \/ Warren Zevon \/ Leroy Marinell \/ Robert Ritchie\n\u00a9 Copyright by Leadsheet Land Music \/ Wixen Music Publishing Inc. \u2013 Ruminating Music \/ \u2026.\nSub: MELODIE DER WELT GmbH & Co. KG, Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich und Schweiz. \/ \u2026.\n\nAbdruck erfolgt mit freundlicher Genehmigung"
         },
         {
             "id": 23,
@@ -408,7 +386,7 @@
             "pageRondoRed": null,
             "pageRondoBlue": 38,
             "pageRondoGreen": 40,
-            "pageRondo2017": 42,
+            "pageRondo2017": 40,
             "pageRondo2021": 40,
             "interpret": "Polo Hofer",
             "chords": [
@@ -498,27 +476,6 @@
             "license": "Musik: amerikanische Volksweise Text: Jakob Leutert \/ Peter Jeger\n\u00a9 Edition Helbling AG, 8604 Volketswil"
         },
         {
-            "id": 214,
-            "title": "An Tagen wie diesen, W\u00fcnscht man sich Unendlichkeit",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 52,
-            "interpret": "Die Toten Hosen",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "by Andreas Frege; Andreas von Holst & Birgit E. F. Minichmayr\n\u00a9 BMG Rights Management GmbH \/ PKM Patricks kleiner Musikverlag GmbH\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
-        },
-        {
             "id": 204,
             "title": "ANGELINA",
             "pageRondoRed": null,
@@ -556,7 +513,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "ANGIE (Mick Jagger\/Keith Richards)\n\u00a9 Promopub B.V."
+            "license": "ANGIE (Keith Richards\/Mick Jagger) \n\u00a9 Westminster Music Ltd\/Promopub BV"
         },
         {
             "id": 12,
@@ -583,7 +540,7 @@
             "pageRondoGreen": 92,
             "pageRondo2017": 92,
             "pageRondo2021": null,
-            "interpret": "",
+            "interpret": "The 5th Dimension",
             "chords": [
                 "Am",
                 "C",
@@ -630,34 +587,12 @@
             "chords": [
                 "Am",
                 "C",
-                "C7",
-                "D",
-                "Dm",
-                "F",
-                "Fm",
+                "D7",
+                "Em",
+                "G",
                 "G7"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 117,
-            "title": "Are you going to Scarborough Fair?",
-            "pageRondoRed": 158,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 158,
-            "pageRondo2017": 158,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "F",
-                "G"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
@@ -729,33 +664,12 @@
             "pageRondo2021": 65,
             "interpret": "Canzone popolare",
             "chords": [
-                "A",
                 "Am",
+                "Am7",
                 "Dm",
-                "E"
+                "E7"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 177,
-            "title": "Bella sei come un fiore",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 72,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "C",
-                "C7",
-                "D7",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
@@ -824,6 +738,25 @@
             "license": "\u00a9BLAY Ent. AG\n\nGemeinsam versetzen wir Berge - f\u00fcr eine bessere Zukunft.\nEine Zusammenarbeit von BLAY, Valais Wallis Promotion, Pfadibewegung Schweiz, mova und FMV."
         },
         {
+            "id": 141,
+            "title": "BERGVAGABUNDEN (WENN WIR ERKLIMMEN)",
+            "pageRondoRed": 226,
+            "pageRondoBlue": null,
+            "pageRondoGreen": 226,
+            "pageRondo2017": 226,
+            "pageRondo2021": 128,
+            "interpret": "Hans Kolesa, Hans Gasser, Erich Hartinger",
+            "chords": [
+                "C",
+                "D7",
+                "G",
+                "G7"
+            ],
+            "alternative": false,
+            "free": false,
+            "license": "Musik: Hans Kolesa & Hans Gasser\nText: Erich Hartinger\n\u00a9 1956 by EBERLE VERLAG, A-1190 Wien\nDer Abdruck erfolgt mit freundlicher Genehmigung."
+        },
+        {
             "id": 233,
             "title": "BIESZCZADZKI TRAKT",
             "pageRondoRed": null,
@@ -841,46 +774,6 @@
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 37,
-            "title": "Bimne Parkingmeter ha ni",
-            "pageRondoRed": 26,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 26,
-            "pageRondo2017": 26,
-            "pageRondo2021": null,
-            "interpret": "Mani Matter",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
-        },
-        {
-            "id": 69,
-            "title": "Bini Gottfried Stutz e Kiosk",
-            "pageRondoRed": null,
-            "pageRondoBlue": 116,
-            "pageRondoGreen": 116,
-            "pageRondo2017": 116,
-            "pageRondo2021": 116,
-            "interpret": "Polo Hofer",
-            "chords": [
-                "A",
-                "A7",
-                "D",
-                "D7",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Mit freundlicher Genehmigung XANGISCHXUNG"
         },
         {
             "id": 157,
@@ -905,26 +798,6 @@
             "license": "Musik \/ Text: Dieter Wiesman\n(C) Leuberg-Edition GmbH f\u00fcr Annabella, CH-8616 Riedikon"
         },
         {
-            "id": 6,
-            "title": "Bl\u00fcemlisalp ire Summernacht",
-            "pageRondoRed": null,
-            "pageRondoBlue": 38,
-            "pageRondoGreen": 40,
-            "pageRondo2017": 42,
-            "pageRondo2021": 40,
-            "interpret": "Polo Hofer",
-            "chords": [
-                "Am",
-                "C",
-                "E",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Mit freundlicher Genehmigung XANGISCHXUNG"
-        },
-        {
             "id": 20,
             "title": "BOAT ON THE RIVER",
             "pageRondoRed": null,
@@ -944,7 +817,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "BOAT ON THE RIVER\nText u. Musik: Tommy Shaw\n\n\u00a9 Copyright by Stygian Songs.\nMELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich Schweiz.\n\nAbdruck erfolgt mit freundlicher Genehmigung von MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main"
+            "license": "BOAT ON THE RIVER (100 % Copyright)\nMusik und Text: Tommy Shaw\n\u00a9 Copyright by Stygian Songs\nSub: MELODIE DER WELT GmbH & Co. KG, Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich und Schweiz.\n\nAbdruck erfolgt mit freundlicher Genehmigung"
         },
         {
             "id": 183,
@@ -989,26 +862,6 @@
             "license": ""
         },
         {
-            "id": 21,
-            "title": "Bolle reiste j\u00fcngst zu Pfingsten",
-            "pageRondoRed": 14,
-            "pageRondoBlue": 142,
-            "pageRondoGreen": 14,
-            "pageRondo2017": 14,
-            "pageRondo2021": 14,
-            "interpret": "Volkslied",
-            "chords": [
-                "A",
-                "A7",
-                "C",
-                "D7",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
             "id": 218,
             "title": "BOULEVARD OF BROKEN DREAMS",
             "pageRondoRed": null,
@@ -1046,27 +899,6 @@
             "alternative": true,
             "free": true,
             "license": "Words and Music by Jarom\u00edr Nohavica"
-        },
-        {
-            "id": 194,
-            "title": "C'\u00e9tait au temps de la pr\u00e9histoire",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 22,
-            "interpret": "Les Quatre Barbus",
-            "chords": [
-                "A7",
-                "C",
-                "Dm",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Les Quatre Barbus\n\nJacques Tritsch, Pierre Jamet, Georges Thibaut, Marcel Quinton"
         },
         {
             "id": 23,
@@ -1149,28 +981,6 @@
             "license": ""
         },
         {
-            "id": 183,
-            "title": "Canzone del boccalino",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 48,
-            "interpret": "Guido Zanzi",
-            "chords": [
-                "C",
-                "C7",
-                "D",
-                "D7",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Musik&Text: Guido Zanzi\nSchwaller Verlag"
-        },
-        {
             "id": 225,
             "title": "CARAMBA",
             "pageRondoRed": null,
@@ -1180,9 +990,8 @@
             "pageRondo2021": 30,
             "interpret": "Canzone popolare",
             "chords": [
-                "A",
-                "A7",
-                "D"
+                "D7",
+                "G"
             ],
             "alternative": false,
             "free": true,
@@ -1223,7 +1032,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Author: Louis Laurent Bertignac\nComposers: Louis Laurent Bertignac, Corine Marienneau, Richard Leon Raphael Kolinka, Jean-Louis Aubert\n\u00a9 1982 Universal Music Publishing (\u00c9ditions T\u00e9l\u00e9phone Musique)\nWith the kind authorization of Universal Music Publishing and T\u00e9l\u00e9phone Musique Publishing"
+            "license": "CENDRILLON\nLyrics: Louis BERTIGNAC\nMusic: Louis BERTIGNAC, Corine MARIENNEAU, Richard KOLINKA, Jean-Louis AUBERT\n\u00a9 1982 UNIVERSAL MUSIC PUBLISHING (\u00c9ditions T\u00e9l\u00e9phone Musique)\nWith the kind authorization of Universal Music Publishing"
         },
         {
             "id": 202,
@@ -1301,24 +1110,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "\u00a9 Alle Rechte liegen beim Urheber Andr\u00e9 St\u00fcrzinger."
-        },
-        {
-            "id": 173,
-            "title": "Col fazzoletto al collo",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 64,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "A7",
-                "D"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
+            "license": "Text und Musik andr\u00e9 st\u00fcrzinger all rights reserved c 1979 and 1981  \nNeu auf YouTube ein Video: andre sturzinger tschau tschau svizzera"
         },
         {
             "id": 27,
@@ -1331,12 +1123,12 @@
             "interpret": "Nella Martinetti",
             "chords": [
                 "C",
-                "F",
-                "G7"
+                "D7",
+                "G"
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 2008\nMusik: Nella Martinetti, Schneema Publishing\nText: Laetitia Corthay, Fabiano Gerosa, Sara Hermann, Dominic Sydler und Vera Trachsel"
+            "license": "\u00a9 2008\nMusik: Nella Martinetti\nText: Laetitia Corthay, Fabiano Gerosa, Sara Hermann, Dominic Sydler und Vera Trachsel"
         },
         {
             "id": 28,
@@ -1356,73 +1148,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Text und Musik: Peter Reber\nMit freundlicher Genehmigung Liton Musikverlag, Bern"
-        },
-        {
-            "id": 138,
-            "title": "d' W. Nuss vo B\u00fcmpliz",
-            "pageRondoRed": null,
-            "pageRondoBlue": 56,
-            "pageRondoGreen": 58,
-            "pageRondo2017": 58,
-            "pageRondo2021": 58,
-            "interpret": "Patent Ochsner",
-            "chords": [
-                "A",
-                "A7",
-                "B",
-                "C",
-                "D",
-                "Dm",
-                "Em",
-                "Em6",
-                "Em7",
-                "F",
-                "Fism",
-                "Hm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Stellenera Verlag, Bern"
-        },
-        {
-            "id": 80,
-            "title": "D'Miss Dolly Bird die heisst Ludmilla",
-            "pageRondoRed": null,
-            "pageRondoBlue": 146,
-            "pageRondoGreen": 240,
-            "pageRondo2017": 240,
-            "pageRondo2021": 96,
-            "interpret": "Patent Ochsner",
-            "chords": [
-                "A7",
-                "Am",
-                "C",
-                "D",
-                "Em",
-                "Em7",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Stellenera Verlag, Bern"
-        },
-        {
-            "id": 53,
-            "title": "D'Nora und d'Natascha",
-            "pageRondoRed": null,
-            "pageRondoBlue": 126,
-            "pageRondoGreen": 126,
-            "pageRondo2017": 126,
-            "pageRondo2021": 126,
-            "interpret": "Scht\u00e4rnef\u00f6ifi",
-            "chords": [
-                "E",
-                "H7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": "Mit freundlicher Genehmigung von Scht\u00e4rnef\u00f6ifi \/ Musik: Traditional\/ Text: Boni Koller"
+            "license": "\u00a9 Liton Musikverlag, 3007 Bern"
         },
         {
             "id": 102,
@@ -1464,7 +1190,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Music by GIANFRANCO FASANO\nWords by FABRIZIO BERLINCIONI"
+            "license": "Texte de Fabrizio Berlincioni\nMusique de Franco Fasano\n\u00a9 2011 EMI Songs Edizioni Musicali Srl \/ Sony Music Publishing (Italy) Srl \/ Triacorda Srl\nTous droits r\u00e9serv\u00e9s pour tous pays\nReproduit avec l\u2019aimable autorisation de Hal Leonard Europe BV (Italy)"
         },
         {
             "id": 226,
@@ -1501,28 +1227,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a91954 by Hamblen Music Co., Arcadia, California\nF\u00fcr Deutschland und \u00d6sterreich: Musikverlage Hans Gering KG, Bergisch Gladbach"
-        },
-        {
-            "id": 205,
-            "title": "Das w\u00fcnsch ich di\u00e4r",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 32,
-            "interpret": "Mash",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "D7",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Mash & Padi Bernhard"
+            "license": "Original: THIS OLE HOUSE\nM+T: Stuart Hamblen \/ dtsch. Text: Kurt Feltz\n\u00a9 1954 by Hamblen Music Co., Arcadia, California\nmit freundlicher Genehmigung\nROBA Music Verlag GmbH"
         },
         {
             "id": 30,
@@ -1561,25 +1266,6 @@
             "license": "\u00a9 A. Steingruber"
         },
         {
-            "id": 31,
-            "title": "De Summervogel seit zum Jumbojet",
-            "pageRondoRed": 208,
-            "pageRondoBlue": 78,
-            "pageRondoGreen": 208,
-            "pageRondo2017": 208,
-            "pageRondo2021": 104,
-            "interpret": "A. Steingruber",
-            "chords": [
-                "Am",
-                "C",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": "\u00a9 A. Steingruber"
-        },
-        {
             "id": 32,
             "title": "DE T\u00d6FF VOM POLIZISCHT",
             "pageRondoRed": 30,
@@ -1596,27 +1282,6 @@
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 97,
-            "title": "Desmond has his barrow",
-            "pageRondoRed": 258,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 258,
-            "pageRondo2017": 258,
-            "pageRondo2021": null,
-            "interpret": "The Beatles",
-            "chords": [
-                "Am",
-                "C",
-                "C7",
-                "Em",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 155,
@@ -1637,29 +1302,6 @@
             "license": ""
         },
         {
-            "id": 118,
-            "title": "Die isch ja filmryf, die Szene",
-            "pageRondoRed": null,
-            "pageRondoBlue": 145,
-            "pageRondoGreen": 145,
-            "pageRondo2017": 144,
-            "pageRondo2021": 144,
-            "interpret": "Patent Ochsner",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E7",
-                "Em",
-                "F",
-                "G",
-                "Gsus4"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
-        },
-        {
             "id": 147,
             "title": "DIE MOORSOLDATEN",
             "pageRondoRed": 198,
@@ -1677,7 +1319,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Musik : Rudi Goguel\nText : Esser, Johann \/ Langhoff, Wolfgang\nMit freundlicher Genehmigung von: \uf0e3 C.F. Peters Ltd & Co. KG."
+            "license": "Abdruck mit freundlicher Genehmigung von C.F. Peters Ltd & Co. KG Leipzig"
         },
         {
             "id": 33,
@@ -1696,24 +1338,6 @@
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 209,
-            "title": "Die Rose sind f\u00fcr dich Mi Amor",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 102,
-            "interpret": "Bligg",
-            "chords": [
-                "Am",
-                "Dm",
-                "E"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text: Bligg \/ Marco Bliggensdorfer \nMusik: Fred Herrmann \/ Roman Camenzind \/ Walter Alder\nVerlag: DreamStar Publishing"
         },
         {
             "id": 34,
@@ -1745,9 +1369,13 @@
             "pageRondo2021": null,
             "interpret": "",
             "chords": [
-                "A",
-                "E",
-                "H7"
+                "Am",
+                "C",
+                "D7",
+                "Em",
+                "Em7",
+                "G",
+                "G7"
             ],
             "alternative": false,
             "free": true,
@@ -1769,7 +1397,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge"
+            "license": "\"Dr Alpeflug\" aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge"
         },
         {
             "id": 36,
@@ -1786,7 +1414,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
+            "license": "\"Dr Eskimo\" aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
         },
         {
             "id": 37,
@@ -1806,7 +1434,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
+            "license": "\"Dr Parkingmeter\" aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge Verlag Oberhofen"
         },
         {
             "id": 158,
@@ -1816,7 +1444,7 @@
             "pageRondoGreen": 128,
             "pageRondo2017": 128,
             "pageRondo2021": null,
-            "interpret": "Otto Wolf",
+            "interpret": "Ruedi Rymann",
             "chords": [
                 "C",
                 "Dm",
@@ -1825,7 +1453,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Text und Musik: Otto Wolf"
+            "license": "Erben Otto Wolf (vertreten durch Irene Froelicher, Lommiswil)"
         },
         {
             "id": 14,
@@ -1863,7 +1491,7 @@
                 "G"
             ],
             "alternative": false,
-            "free": true,
+            "free": false,
             "license": "Text und Musik: Peter Reber\nMit freundlicher Genehmigung Liton Musikverlag, Bern"
         },
         {
@@ -1884,7 +1512,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
+            "license": "\"Ds Z\u00fcndh\u00f6lzli\" aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
         },
         {
             "id": 38,
@@ -1928,70 +1556,6 @@
             "license": ""
         },
         {
-            "id": 201,
-            "title": "D\u00e9placer les montagnes",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 4,
-            "interpret": "BuLa CaF\u00e9 CaFe 2022",
-            "chords": [
-                "A",
-                "Asus2",
-                "Asus4",
-                "C",
-                "D",
-                "Dsus4",
-                "Em",
-                "G",
-                "G+"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": "Roland Brunschweiler \u2013 Linus \/ Gaspard Vignon - Magot Rigolo \/ Victoria Mosca \u2013 Monchichi \/ Nadine Engel \u2013 Naura \/ Nicola Nesa \u2013 Nini \/ Chiara Regazzoni \u2013 Puma \/ Laura Moser \u2013 Ragusa \/ Samuel Hofmann \u2013 Sultan \/ Patrick Maire \u2013 Switsch \/ Laszlo Arato \u2013 Tornado \/ Gabriel Jetter \u2013 Tschaggon \/ Andrea Lustenberger \u2013 Twist \/ Salom\u00e9 Perret \u2013 Wicki \/ Martin Steiner \u2013 Wiesel \/ Andreas Kessler \/ Raymond Wiedmer \u2013 Tristan"
-        },
-        {
-            "id": 211,
-            "title": "Eh-oh, eh-oh",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 120,
-            "interpret": "Die Prinzen",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "by Tobias K\u00fcnzel\n\u00a9 BMG Rights Management GmbH \/ Satv Group Germany GmbH \/ Lakeworth Music Publishing \nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
-        },
-        {
-            "id": 215,
-            "title": "Ein Hoch auf das, was vor uns liegt",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 88,
-            "interpret": "Andreas Bourani",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G",
-                "G-H"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "by Andreas Bourani, Julius Hartog & Thomas Olbrich\n\u00a9 Edition Kassettendeck \/ Lucky Fool Studio Andreas Bourani \/ BMG Rights Management GmbH\nAll Rights Administered by BMG Rights Management GmbH.\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
-        },
-        {
             "id": 40,
             "title": "EINE OMA GING SPAZIEREN",
             "pageRondoRed": 50,
@@ -2028,29 +1592,6 @@
             "license": ""
         },
         {
-            "id": 15,
-            "title": "Eines Tages isch d\u00e4 Noah",
-            "pageRondoRed": 60,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 60,
-            "pageRondo2017": 60,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "C",
-                "C7",
-                "D",
-                "Dm",
-                "F",
-                "Fm",
-                "G7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
             "id": 42,
             "title": "EISGEK\u00dcHLTES COCA-COLA",
             "pageRondoRed": 236,
@@ -2066,63 +1607,6 @@
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 191,
-            "title": "Elle part, jolie petite histoire",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 56,
-            "interpret": "T\u00e9l\u00e9phone",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Author: Louis Laurent Bertignac\nComposers: Louis Laurent Bertignac, Corine Marienneau, Richard Leon Raphael Kolinka, Jean-Louis Aubert\n\u00a9 1982 Universal Music Publishing (\u00c9ditions T\u00e9l\u00e9phone Musique)\nWith the kind authorization of Universal Music Publishing and T\u00e9l\u00e9phone Musique Publishing"
-        },
-        {
-            "id": 103,
-            "title": "Er isch en flotte Pfadi gsi",
-            "pageRondoRed": 90,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 90,
-            "pageRondo2017": 90,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A",
-                "E",
-                "H7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 206,
-            "title": "Er pumpt das Volume",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 111,
-            "interpret": "Dodo",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Success Club"
         },
         {
             "id": 43,
@@ -2143,25 +1627,6 @@
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 48,
-            "title": "Es war in einer Regennacht",
-            "pageRondoRed": 56,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 56,
-            "pageRondo2017": 56,
-            "pageRondo2021": null,
-            "interpret": "Stan Jones",
-            "chords": [
-                "Am",
-                "B",
-                "Dm",
-                "F"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words and Music by Stan Jones | Translated by Ernst Verch \u00a9 1949 Edwin H Morris & Co Inc | Chappell Morris Ltd Reproduced by permission of Faber Music Ltd\nAll Rights Reserved."
         },
         {
             "id": 44,
@@ -2342,63 +1807,6 @@
             "license": ""
         },
         {
-            "id": 66,
-            "title": "Good morning sister Mary",
-            "pageRondoRed": 108,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 108,
-            "pageRondo2017": 108,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A7",
-                "Dm"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 128,
-            "title": "Have you seen the old man",
-            "pageRondoRed": 146,
-            "pageRondoBlue": 88,
-            "pageRondoGreen": 146,
-            "pageRondo2017": 146,
-            "pageRondo2021": 146,
-            "interpret": "Ralph McTell",
-            "chords": [
-                "Am",
-                "C",
-                "D7",
-                "Em",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "THE STREETS OF LONDON (Ralph McTell)\n\u00a9 Westminster Music Ltd"
-        },
-        {
-            "id": 27,
-            "title": "Hei battasendas",
-            "pageRondoRed": null,
-            "pageRondoBlue": 6,
-            "pageRondoGreen": 234,
-            "pageRondo2017": 234,
-            "pageRondo2021": null,
-            "interpret": "Nella Martinetti",
-            "chords": [
-                "C",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 2008\nMusik: Nella Martinetti, Schneema Publishing\nText: Laetitia Corthay, Fabiano Gerosa, Sara Hermann, Dominic Sydler und Vera Trachsel"
-        },
-        {
             "id": 53,
             "title": "HEICHO - OHNI ZNACHT IS BETT",
             "pageRondoRed": null,
@@ -2434,7 +1842,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Music & Words by:\nAndreas \u00abRitschi\u00bb Ritschard\nRoger \u00abR\u00f6schel\u00bb Meier\nSimon \u00abSimi\u00bb Ryf\nAndreas \u00abHunzi\u00bb Hunziker\nAlexander \u00abBali\u00bb Balajew"
+            "license": "Pl\u00fcsch"
         },
         {
             "id": 208,
@@ -2473,7 +1881,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
+            "license": "\"Hemmige\" aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
         },
         {
             "id": 55,
@@ -2511,7 +1919,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Words by: Hannes Wader\nMusic by: Gary Bolstad\n\u00a9 Westpark Music & Publishing, K\u00f6ln\n\u00a9 Aktive Musik Verlagsgesellschaft mbH, Dortmund"
+            "license": "Text: Hannes Wader, Melodie: Gary Bolstad\n\"mit freundl. Genehmigung Westpark Music & Publishing, K\u00f6ln\""
         },
         {
             "id": 56,
@@ -2644,7 +2052,7 @@
             "pageRondoGreen": null,
             "pageRondo2017": 46,
             "pageRondo2021": null,
-            "interpret": "Barclay James Harvest",
+            "interpret": "Barclay James Harvest, John Lees",
             "chords": [
                 "A",
                 "E",
@@ -2653,65 +2061,6 @@
             "alternative": false,
             "free": false,
             "license": "Text und Musik von John Lees"
-        },
-        {
-            "id": 133,
-            "title": "I am just a poor boy",
-            "pageRondoRed": 164,
-            "pageRondoBlue": 140,
-            "pageRondoGreen": 164,
-            "pageRondo2017": 164,
-            "pageRondo2021": 162,
-            "interpret": "Simon & Garfunkel",
-            "chords": [
-                "Am",
-                "C",
-                "Em",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words & Music by Paul Simon\n\u00a9 1968 Paul Simon (BMI)\nInternational Copyright Secured. All Rights Reserved. Used by Permission of Hal Leonard Europe Limited."
-        },
-        {
-            "id": 17,
-            "title": "I asked my love to take a walk",
-            "pageRondoRed": 153,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 254,
-            "pageRondo2017": 254,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "C",
-                "C7",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 158,
-            "title": "I be de Schacher Seppeli",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 128,
-            "pageRondo2017": 128,
-            "pageRondo2021": null,
-            "interpret": "Otto Wolf",
-            "chords": [
-                "C",
-                "Dm",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text und Musik: Otto Wolf"
         },
         {
             "id": 38,
@@ -2733,66 +2082,6 @@
             "license": ""
         },
         {
-            "id": 98,
-            "title": "I came from Alabama",
-            "pageRondoRed": 82,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 82,
-            "pageRondo2017": 82,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A7",
-                "D",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 146,
-            "title": "I follow the Moskva",
-            "pageRondoRed": null,
-            "pageRondoBlue": 44,
-            "pageRondoGreen": 44,
-            "pageRondo2017": 44,
-            "pageRondo2021": 44,
-            "interpret": "Scorpions",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E",
-                "E7",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "by Klaus Meine\n\u00a9 BMG Rights Management GmbH\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
-        },
-        {
-            "id": 113,
-            "title": "I han es Z\u00fcndh\u00f6lzli az\u00fcndt",
-            "pageRondoRed": 136,
-            "pageRondoBlue": 52,
-            "pageRondoGreen": 136,
-            "pageRondo2017": 136,
-            "pageRondo2021": 136,
-            "interpret": "Mani Matter",
-            "chords": [
-                "Am",
-                "C",
-                "E",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
-        },
-        {
             "id": 60,
             "title": "I SCH\u00c4NKE DR MIS H\u00c4RZ",
             "pageRondoRed": null,
@@ -2811,110 +2100,6 @@
             "alternative": false,
             "free": false,
             "license": "Text: Kuno Lauener \nMusik: Z\u00fcri West"
-        },
-        {
-            "id": 218,
-            "title": "I walk this empty street",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 18,
-            "interpret": "Green Day",
-            "chords": [
-                "A",
-                "C",
-                "D",
-                "Em",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words and Music by Billie Joe Armstrong, Frank E. Wright III and Michael Pritchard\n\u00a9 2004 WCM Music Corp and Green Daze Music\nWarner Chappell North America Ltd, London, W8 5DA\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved."
-        },
-        {
-            "id": 79,
-            "title": "I weiss no guet, wo ir Sunn\u00e4 bi gs\u00e4ss\u00e4",
-            "pageRondoRed": null,
-            "pageRondoBlue": 104,
-            "pageRondoGreen": 200,
-            "pageRondo2017": 200,
-            "pageRondo2021": null,
-            "interpret": "Span",
-            "chords": [
-                "A",
-                "Cism",
-                "D",
-                "E",
-                "Fism",
-                "Fism7",
-                "Gism",
-                "H",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text & Musik: Georges M\u00fcller"
-        },
-        {
-            "id": 88,
-            "title": "I'm being followed by a moonshadow",
-            "pageRondoRed": 260,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 260,
-            "pageRondo2017": 260,
-            "pageRondo2021": null,
-            "interpret": "Cat Stevens",
-            "chords": [
-                "A",
-                "A7",
-                "D",
-                "E",
-                "Em",
-                "G",
-                "Hm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1971 BMG Rights Management (UK) Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 156,
-            "title": "I'm gonna lay down",
-            "pageRondoRed": 112,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 112,
-            "pageRondo2017": 112,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A",
-                "E",
-                "H7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 9,
-            "title": "Ich fr\u00f6g min Schatz, chunsch echli mit",
-            "pageRondoRed": 123,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 255,
-            "pageRondo2017": 255,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "C",
-                "C7",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
         },
         {
             "id": 62,
@@ -2950,27 +2135,6 @@
                 "H7"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 1,
-            "title": "If you miss the train I'm on",
-            "pageRondoRed": null,
-            "pageRondoBlue": 103,
-            "pageRondoGreen": 186,
-            "pageRondo2017": 186,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A",
-                "D",
-                "Em",
-                "Fism",
-                "G",
-                "Hm"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
@@ -3016,24 +2180,6 @@
             "license": "Text und Musik von John Winston Lennon"
         },
         {
-            "id": 55,
-            "title": "In einen Hering jung und schlank",
-            "pageRondoRed": 9,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 265,
-            "pageRondo2017": 265,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "C",
-                "D7",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
             "id": 64,
             "title": "IN EINER BAR",
             "pageRondoRed": 37,
@@ -3047,65 +2193,6 @@
                 "G"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 134,
-            "title": "In the jungle, the mighty jungle",
-            "pageRondoRed": null,
-            "pageRondoBlue": 77,
-            "pageRondoGreen": 77,
-            "pageRondo2017": 77,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A",
-                "E",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "The Lion Sleeps Tonight (Wimoweh)\nWords & Music by George David Weiss, Hugo Peretti, Luigi Creatore & Solomon Linda \u00a9 Copyright 1949 Abilene Music Incorporated, USA\/Luigi Creatore Music Imagem Music Limited. All Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 152,
-            "title": "In the town where I was born",
-            "pageRondoRed": 20,
-            "pageRondoBlue": 102,
-            "pageRondoGreen": 20,
-            "pageRondo2017": 20,
-            "pageRondo2021": null,
-            "interpret": "The Beatles",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1966 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 176,
-            "title": "In un mondo di maschere",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 129,
-            "interpret": "Canzone scout",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
@@ -3125,43 +2212,7 @@
             ],
             "alternative": true,
             "free": false,
-            "license": "ALL SUMMER LONG\nText u. Musik: Edward C. King\/Leroy P. Marinelli\/Robert J. Ritchie\/Gary\nRobert Rossington\/Matthew L. Shafer\/Ronnie Van Zant\/Robert T. Wachtel\/Warren William Zevon\n\u00a9 Copyright by Leadsheet Land Music, SP: Ruminating Music (Wixen Music) MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich, Schweiz f\u00fcr 11,11% Copyright"
-        },
-        {
-            "id": 150,
-            "title": "It's late in the evening",
-            "pageRondoRed": 244,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 244,
-            "pageRondo2017": 246,
-            "pageRondo2021": null,
-            "interpret": "Eric Clapton",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1977, 1999, 2004 EC Music Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 189,
-            "title": "J'aime tes grands yeux",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 119,
-            "interpret": "",
-            "chords": [
-                "A",
-                "D"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
+            "license": "ALL SUMMER LONG (11,12 % Copyright)\nMusik und Text: Matthew Shafer \/ Edward King \/ Gary Rossington \/ Waddy Wachtel \/ Ronnie Van Zant \/ Warren Zevon \/ Leroy Marinell \/ Robert Ritchie\n\u00a9 Copyright by Leadsheet Land Music \/ Wixen Music Publishing Inc. \u2013 Ruminating Music \/ \u2026.\nSub: MELODIE DER WELT GmbH & Co. KG, Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich und Schweiz. \/ \u2026.\n\nAbdruck erfolgt mit freundlicher Genehmigung"
         },
         {
             "id": 65,
@@ -3182,28 +2233,6 @@
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 190,
-            "title": "Je l'ai vu pr\u00e8s d'un laurier",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 86,
-            "interpret": "Joe Dassin",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E7",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Siffler sur la colline (or. Uno tranquillo)\nTexte original de Daniele Pace et Lorenzo Pilat\nMusique de Mario Panzeri et Lorenzo Pilat\nAdaptation du texte fran\u00e7ais par Jean-Michel Rivat et Frank Thomas\n\u00a9 1967-68 Sugarmusic SpA\nSous-\u00e9diteur: Edition Sugarmusic France Sarl\nTous droits r\u00e9serv\u00e9s pour tous pays\nReproduit avec l\u2019aimable autorisation de Hal Leonard Europe BV (Italy)"
         },
         {
             "id": 66,
@@ -3259,7 +2288,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "JUNGE\nM\/T: FARIN URLAUB \nV: PMS Musikverlag GmbH"
+            "license": "M\/T: Farin Urlaub\nVerlag: Edition Fuhuru\/PMS Musikverlag GmbH"
         },
         {
             "id": 227,
@@ -3280,7 +2309,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a91983 by Dany Music Musikverlage Hans Gering KG, Bergisch Gladbach"
+            "license": "Musik: Gerald Dellmann, Dieter Roesberg\/Text: Gerald Dellmann\n\u00a9 1983 by Dany Music Musikverlage Hans Gerig & Co.\n\u00a9 1992 by Papagayo Musikverlage Hans Gerig oHG\nmit freundlicher Genehmigung\nROBA Music Verlag GmbH"
         },
         {
             "id": 68,
@@ -3298,23 +2327,6 @@
             "alternative": false,
             "free": false,
             "license": "Jegliche ungenehmigte Nutzung bzw. Vervielf\u00e4ltigung ist gesetzlich untersagt. Alle Rechte vorbehalten.\n\u00a9 -2022- Tonos Music Publishing oHG, Baden-Baden, Deutschland"
-        },
-        {
-            "id": 36,
-            "title": "Kennet dir das Gschichtli scho",
-            "pageRondoRed": 138,
-            "pageRondoBlue": 48,
-            "pageRondoGreen": 138,
-            "pageRondo2017": 138,
-            "pageRondo2021": 138,
-            "interpret": "Mani Matter",
-            "chords": [
-                "Am",
-                "Em"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
         },
         {
             "id": 69,
@@ -3395,28 +2407,6 @@
             "license": ""
         },
         {
-            "id": 180,
-            "title": "L'Africa non \u00e8 lontana",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 26,
-            "interpret": "Franco Fasano",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E",
-                "E7",
-                "Em",
-                "F"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music by GIANFRANCO FASANO\nWords by FABRIZIO BERLINCIONI"
-        },
-        {
             "id": 194,
             "title": "L'HOMME DE CRO-MAGNON",
             "pageRondoRed": null,
@@ -3470,7 +2460,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Music by LUCIO BATTISTI\nWords by MOGOL"
+            "license": "Texte de Giulio Rapetti Mogol\nMusique de Lucio Battisti\n\u00a9 1971 Edizioni Musicali Acqua Azzurra Srl\nTous droits r\u00e9serv\u00e9s pour tous pays\nReproduit avec l\u2019aimable autorisation de Hal Leonard Europe BV (Italy)"
         },
         {
             "id": 177,
@@ -3520,25 +2510,6 @@
             "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
-            "id": 219,
-            "title": "Lady, running down to the riptide",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 84,
-            "interpret": "Vance Joy",
-            "chords": [
-                "Am",
-                "C",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words and Music by James Keogh\n\u00a9 2014 WC Music Corp and Vance Joy ASCAP Pub Designee\nWarner Chappell North America Ltd, London, W8 5DA\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved."
-        },
-        {
             "id": 185,
             "title": "LE BON DIEU S'\u00c9NERVAIT",
             "pageRondoRed": null,
@@ -3556,48 +2527,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Paroles: Hugues AUFRAY -  Pierre DELANOE - Musique: Hugues AUFRAY\n\n\u00a9 1965 by Editions la compagnie assigned \u00a9 2002 to Garlick Music & Les Noucvelles Editions Meridian\nMit freundlicher Genehmigung durch Siebenpunkt Verlags GmbH"
-        },
-        {
-            "id": 185,
-            "title": "Le bon Dieu s'\u00e9nervait dans son atelier",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 100,
-            "interpret": "Hugues Aufray",
-            "chords": [
-                "A",
-                "Am",
-                "E",
-                "E7",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Paroles: Hugues AUFRAY -  Pierre DELANOE - Musique: Hugues AUFRAY\n\n\u00a9 1965 by Editions la compagnie assigned \u00a9 2002 to Garlick Music & Les Noucvelles Editions Meridian\nMit freundlicher Genehmigung durch Siebenpunkt Verlags GmbH"
-        },
-        {
-            "id": 105,
-            "title": "Left a good job in the city",
-            "pageRondoRed": 100,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 100,
-            "pageRondo2017": 100,
-            "pageRondo2021": null,
-            "interpret": "John Cameron Fogerty",
-            "chords": [
-                "B",
-                "C",
-                "D",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text und Musik von John Cameron Fogerty"
+            "license": "Musik: Hugues Auffray\nText: Pierre Delanoe, Hugues Auffray\nGarlick Music, Les Nouvelles Editiones Meridian\nMit freundlicher Genehmigung von \u00a9 Siebenpunkt Verlags GmbH & Peermusic (Germany)"
         },
         {
             "id": 76,
@@ -3675,29 +2605,6 @@
             "license": ""
         },
         {
-            "id": 199,
-            "title": "Longtemps je t'ai gard\u00e9",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 108,
-            "interpret": "Georges Moustaki",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E",
-                "E7",
-                "Em",
-                "F",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music & Words by GEORGES MOUSTAKI"
-        },
-        {
             "id": 78,
             "title": "LOSING MY RELIGION",
             "pageRondoRed": null,
@@ -3761,7 +2668,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Stellenera Verlag, Bern"
+            "license": "B\u00fcne Huber, Stellanera Bern"
         },
         {
             "id": 162,
@@ -3801,24 +2708,6 @@
             "license": ""
         },
         {
-            "id": 225,
-            "title": "L\u00e0 su in cima al Monte Nero",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 30,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "A",
-                "A7",
-                "D"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
             "id": 199,
             "title": "MA LIBERT\u00c9",
             "pageRondoRed": null,
@@ -3839,7 +2728,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Music & Words by GEORGES MOUSTAKI"
+            "license": "\u00a9Paille Musique"
         },
         {
             "id": 82,
@@ -3874,7 +2763,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Musik: Bruhn Christian, Drafi Deutscher\nText: Loose Rudolf G\u00fcnther\n\u00a9 by Nero Musikverlag GmbH\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
+            "license": "Musik: Christian Bruhn, Drafi Deutscher  \nText: G\u00fcnther Rudolf Loose \n\u00a9 by Nero Musikverlag GmbH \nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
         },
         {
             "id": 84,
@@ -3934,25 +2823,6 @@
             "license": ""
         },
         {
-            "id": 208,
-            "title": "Miis H\u00e4rz gh\u00f6rt da hi",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 110,
-            "interpret": "Trauffer",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Alpentainer GmbH"
-        },
-        {
             "id": 87,
             "title": "MINI FARB UND DIINI",
             "pageRondoRed": 94,
@@ -3998,10 +2868,10 @@
             "pageRondo2021": null,
             "interpret": "Mike Oldfield",
             "chords": [
-                "B",
                 "C",
-                "Dm",
-                "F"
+                "D",
+                "Em",
+                "G"
             ],
             "alternative": false,
             "free": false,
@@ -4170,48 +3040,6 @@
             "license": ""
         },
         {
-            "id": 77,
-            "title": "Nanananana",
-            "pageRondoRed": null,
-            "pageRondoBlue": 148,
-            "pageRondoGreen": 148,
-            "pageRondo2017": 148,
-            "pageRondo2021": null,
-            "interpret": "Opus",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Musik: PFLEGER EWALD, GRASMUCK GUENTER, GRUBER PETER NIKLAS, PLISNIER KURT, TREMSCHNIG HERWIG\nText: PFLEGER EWALD\n\u00a9 by OPUS MUSIC PUBLISHING\nf\u00fcr CH: FLORA MUSIKVERLAG GMBH\nf\u00fcr D: ROLF BUDDE MUSIKVERLAG GMBH"
-        },
-        {
-            "id": 193,
-            "title": "Ne la laisse pas tomber",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 46,
-            "interpret": "Cookie Dingler",
-            "chords": [
-                "Am",
-                "B",
-                "C",
-                "Eb",
-                "F",
-                "G",
-                "Gm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music by CHRISTIAN DINGLER \nWords by JOELLE BAHL"
-        },
-        {
             "id": 192,
             "title": "NE SENS-TU PAS CLAQUER TES DOIGTS",
             "pageRondoRed": null,
@@ -4229,28 +3057,6 @@
             "alternative": false,
             "free": false,
             "license": "Words an Music by PIERRE HUWILER"
-        },
-        {
-            "id": 84,
-            "title": "Neulich bin ich mit hundertzwanzig",
-            "pageRondoRed": null,
-            "pageRondoBlue": 42,
-            "pageRondoGreen": 42,
-            "pageRondo2017": 42,
-            "pageRondo2021": 42,
-            "interpret": "Die Prinzen",
-            "chords": [
-                "Am",
-                "B",
-                "C",
-                "Dm",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music by Sebastian Krumbiegel; Words by Tobias K\u00fcnzel & Sebastian Krumbiegel\n\u00a9 BMG Rights Management GmbH \n\u00a9 Lakeworth Music Publishing \n\u00a9 SMPG Publishing (Germany) GmbH\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
         },
         {
             "id": 94,
@@ -4313,24 +3119,6 @@
             "license": "\u00a9 Copyright 1968 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
-            "id": 179,
-            "title": "Oh mare nero",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 132,
-            "interpret": "Lucio Battisti",
-            "chords": [
-                "A",
-                "D",
-                "E"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music by LUCIO BATTISTI\nWords by MOGOL"
-        },
-        {
             "id": 98,
             "title": "OH SUSANNA",
             "pageRondoRed": 82,
@@ -4369,46 +3157,6 @@
             "license": ""
         },
         {
-            "id": 224,
-            "title": "Oh, it's what you do to me",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 172,
-            "interpret": "Plain White T's",
-            "chords": [
-                "Am",
-                "C",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words and Music by Tom Higgenson\n\u00a9 2005 WC Music Corp, Fear More Music and So Happy Publishing\nWarner Chappell North America Ltd, W8 5DA\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved."
-        },
-        {
-            "id": 78,
-            "title": "Oh, life is bigger",
-            "pageRondoRed": null,
-            "pageRondoBlue": 110,
-            "pageRondoGreen": 110,
-            "pageRondo2017": 110,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "Dm",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words and Music by William Berry, Peter Buck, Michael Mills and Michael Stipe \u00a9 1991 Night Garden Music"
-        },
-        {
             "id": 100,
             "title": "OLD MAC DONALD",
             "pageRondoRed": 79,
@@ -4445,26 +3193,6 @@
             "license": ""
         },
         {
-            "id": 34,
-            "title": "On a wagon, bound for market",
-            "pageRondoRed": 174,
-            "pageRondoBlue": 80,
-            "pageRondoGreen": 174,
-            "pageRondo2017": 174,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Yiddish Lyrics by AARON ZEITLIN\nEnglish lyrics by SHELDON SECUNDRA,\nARTHUR KEVESS and TEDDI SCHWARTZ\nMusic by SHOLOM SECUNDA\n\u00a9 1940, 1956 EMI MILLS MUSIC INC.\nRights outside the U.S.A. Administered by\nEMI MILLS MUSIC INC. and HARGAIL MUSIC PRESS All Rights Reserved Used by Permission"
-        },
-        {
             "id": 101,
             "title": "ON MY HONOUR",
             "pageRondoRed": null,
@@ -4482,29 +3210,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "ON MY HONOUR\nMusik: FALTERMEIER HUGO HAROLD, SUMMER DONNA,\nText: SUDANO BRUCE, SUMMER DONNA\n\u00a9 by SWEET SUMMER NIGHT MUSIC, EARBORNE MUSIC, BUDDE MUSIC INC, REVELATION MUSIC AG, STARRIN MUSIC;\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
-        },
-        {
-            "id": 181,
-            "title": "On \u00e9crit sur les murs",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 125,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "Am",
-                "C",
-                "C7",
-                "E7",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
+            "license": "Musik: Harold Faltermeier, Donna Summer, \nText: Bruce Sudano, Donna Summer \n\u00a9 by Sweet Summer Night Music, Earborne Music, Budde Music INC, \nRevelation Music AG, Starrin Music; \nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
         },
         {
             "id": 102,
@@ -4635,27 +3341,6 @@
             "license": "Text und Musik von John Cameron Fogerty"
         },
         {
-            "id": 195,
-            "title": "Psylvia, attendez-moi",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 60,
-            "interpret": "Pierre Huwiler, Maxime Leforestier",
-            "chords": [
-                "A",
-                "C",
-                "D",
-                "Em",
-                "G",
-                "Hm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Komponist: FORESTIER (LE) MAXIME\n\u00a9 COINCIDENCES\/ LES EDITIONS DU 22 DECEMBRE\/ ROYAL FLAME MUSIC GMBH"
-        },
-        {
             "id": 106,
             "title": "PUFF THE MAGIC DRAGON",
             "pageRondoRed": 140,
@@ -4728,7 +3413,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Text: Bligg \/ Marco Bliggensdorfer \nMusik: Fred Herrmann \/ Roman Camenzind \/ Walter Alder\nVerlag: DreamStar Publishing"
+            "license": "Text: Marco Bliggensdorfer \nMusik: Fred Herrmann \/ Roman Camenzind \/ Walter Alder\nVerlag: DreamStar Publishing"
         },
         {
             "id": 108,
@@ -4741,38 +3426,11 @@
             "interpret": "",
             "chords": [
                 "A7",
-                "Dm"
+                "D"
             ],
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 104,
-            "title": "Ruhe und Gem\u00fctlichkeit",
-            "pageRondoRed": null,
-            "pageRondoBlue": 156,
-            "pageRondoGreen": 256,
-            "pageRondo2017": 256,
-            "pageRondo2021": 94,
-            "interpret": "Terry Gilkyson",
-            "chords": [
-                "A7",
-                "Am",
-                "Am7",
-                "C",
-                "C7",
-                "Cm",
-                "D7",
-                "E7",
-                "Em",
-                "Em7",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words & Music by Terry Gilkyson; German Lyrics by Heinrich Riethmueller\n\u00a9 1964 Wonderland Music Company, Inc.\nCopyright Renewed.\nAll Rights Reserved. Used by Permission of Hal Leonard Europe Limited."
         },
         {
             "id": 112,
@@ -4789,24 +3447,6 @@
                 "G"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 174,
-            "title": "S'appressano alla piazza giocolieri e saltimbanchi",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 20,
-            "interpret": "Canzone scout",
-            "chords": [
-                "Am",
-                "C",
-                "G"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
@@ -4847,45 +3487,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "\u00a9 Alle Rechte liegen beim Urheber Andr\u00e9 St\u00fcrzinger."
-        },
-        {
-            "id": 54,
-            "title": "S'git L\u00fct die w\u00fcrden alletw\u00e4ge nie",
-            "pageRondoRed": null,
-            "pageRondoBlue": 136,
-            "pageRondoGreen": 142,
-            "pageRondo2017": 142,
-            "pageRondo2021": 142,
-            "interpret": "Mani Matter",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "E7",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte. \u00a92011 Zytglogge"
-        },
-        {
-            "id": 35,
-            "title": "S'sy zwee Fr\u00fcnde",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 31,
-            "pageRondo2017": 31,
-            "pageRondo2021": 31,
-            "interpret": "Mani Matter",
-            "chords": [
-                "Am",
-                "Dm",
-                "E"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "aus Mani Matter: Warum syt dir so truurig? \u00a92011 Zytglogge"
+            "license": "Text und Musik andr\u00e9 st\u00fcrzinger all rights reserved c 1979 and 1981  \nNeu auf YouTube ein Video: andre sturzinger tschau tschau svizzera"
         },
         {
             "id": 114,
@@ -4916,11 +3518,12 @@
             "pageRondo2021": null,
             "interpret": "Rod Steward",
             "chords": [
+                "A",
                 "Am",
                 "C",
                 "D",
-                "Dm",
-                "F",
+                "D7",
+                "Em",
                 "G"
             ],
             "alternative": false,
@@ -4949,32 +3552,6 @@
             "license": "Komponist: FORESTIER (LE) MAXIME\n\u00a9 COINCIDENCES\/ LES EDITIONS DU 22 DECEMBRE\/ ROYAL FLAME MUSIC GMBH"
         },
         {
-            "id": 90,
-            "title": "Saying I love you",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 250,
-            "pageRondo2017": 250,
-            "pageRondo2021": null,
-            "interpret": "Extreme",
-            "chords": [
-                "Am7",
-                "C",
-                "Cm",
-                "D",
-                "D-Fis",
-                "D7",
-                "Em",
-                "Em7",
-                "G",
-                "G7",
-                "Hm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1990 Rondor Music International, Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
             "id": 117,
             "title": "SCARBOROUGH FAIR",
             "pageRondoRed": 158,
@@ -4984,10 +3561,10 @@
             "pageRondo2021": null,
             "interpret": "",
             "chords": [
-                "Am",
-                "C",
+                "A",
                 "D",
-                "F",
+                "Em",
+                "Fism",
                 "G"
             ],
             "alternative": false,
@@ -5006,55 +3583,17 @@
             "chords": [
                 "Am",
                 "C",
-                "Dm",
-                "E7",
+                "D",
+                "D7",
+                "Dsus4",
                 "Em",
-                "F",
                 "G",
-                "Gsus4"
+                "H7",
+                "Hm"
             ],
             "alternative": false,
             "free": false,
-            "license": "von Patent Ochsner\nCopyright B\u00fcne Huber, Stellenera Verlag, Bern"
-        },
-        {
-            "id": 16,
-            "title": "Schlaf mein Kind",
-            "pageRondoRed": 124,
-            "pageRondoBlue": 158,
-            "pageRondoGreen": 123,
-            "pageRondo2017": 123,
-            "pageRondo2021": 123,
-            "interpret": "Kinderlied",
-            "chords": [
-                "D",
-                "Em",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 207,
-            "title": "Schrett f\u00f6r Schrett de B\u00e4rg doruf",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 28,
-            "interpret": "Kunz",
-            "chords": [
-                "A",
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Text & Musik: Marco Kunz\nBearbeitung \/ Arrangement: Manuel R\u00f6mer \/ Edis Kahrimanovic \/ Georg Schlunegger"
+            "license": "B\u00fcne Huber, Stellanera Bern"
         },
         {
             "id": 119,
@@ -5131,63 +3670,8 @@
                 "G"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 121,
-            "title": "She was eating Bircherm\u00fcesli",
-            "pageRondoRed": 87,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 78,
-            "pageRondo2017": 78,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "C",
-                "D7",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 28,
-            "title": "Si hei Wind i de Haar",
-            "pageRondoRed": null,
-            "pageRondoBlue": 130,
-            "pageRondoGreen": 130,
-            "pageRondo2017": 130,
-            "pageRondo2021": 130,
-            "interpret": "Peter Reber",
-            "chords": [
-                "Am",
-                "C",
-                "F",
-                "G",
-                "G7"
-            ],
-            "alternative": true,
             "free": false,
-            "license": "Text und Musik: Peter Reber\nMit freundlicher Genehmigung Liton Musikverlag, Bern"
-        },
-        {
-            "id": 173,
-            "title": "Siam sempre al verde",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 64,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "A7",
-                "D"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
+            "license": "Texte original de Jean-Marie P.M. Moreau\nMusique de Romano Musumarra\n\u00a9 2015 EMI Music Publishing France\nTous droits r\u00e9serv\u00e9s pour tous pays\nReproduit avec l\u2019aimable autorisation de Hal Leonard Europe BV (Italy)"
         },
         {
             "id": 120,
@@ -5199,8 +3683,11 @@
             "pageRondo2021": null,
             "interpret": "",
             "chords": [
-                "A7",
+                "Am",
+                "C",
                 "D",
+                "D7",
+                "Em",
                 "G"
             ],
             "alternative": false,
@@ -5245,7 +3732,7 @@
             ],
             "alternative": false,
             "free": false,
-            "license": "Siffler sur la colline (or. Uno tranquillo)\nTexte original de Daniele Pace et Lorenzo Pilat\nMusique de Mario Panzeri et Lorenzo Pilat\nAdaptation du texte fran\u00e7ais par Jean-Michel Rivat et Frank Thomas\n\u00a9 1967-68 Sugarmusic SpA\nSous-\u00e9diteur: Edition Sugarmusic France Sarl\nTous droits r\u00e9serv\u00e9s pour tous pays\nReproduit avec l\u2019aimable autorisation de Hal Leonard Europe BV (Italy)"
+            "license": "Texte original de Daniele Pace et Lorenzo Pilat\nMusique de Mario Panzeri et Lorenzo Pilat\nAdaptation du texte fran\u00e7ais par Jean-Michel Rivat et Frank Thomas\n\u00a9 1967-68 Sugarmusic SpA\nSous-\u00e9diteur: Edition Sugarmusic France Sarl\nTous droits r\u00e9serv\u00e9s pour tous pays\nReproduit avec l\u2019aimable autorisation de Hal Leonard Europe BV (Italy)"
         },
         {
             "id": 121,
@@ -5275,8 +3762,8 @@
             "pageRondo2021": null,
             "interpret": "Gene Kelly",
             "chords": [
-                "E",
-                "H7"
+                "A7",
+                "D"
             ],
             "alternative": false,
             "free": false,
@@ -5290,61 +3777,14 @@
             "pageRondoGreen": 231,
             "pageRondo2017": 231,
             "pageRondo2021": null,
-            "interpret": "",
+            "interpret": "Gene Kelly",
             "chords": [
-                "E",
-                "H7"
+                "A7",
+                "D"
             ],
             "alternative": false,
             "free": false,
-            "license": ""
-        },
-        {
-            "id": 95,
-            "title": "So close no matter how far",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 246,
-            "pageRondo2017": 248,
-            "pageRondo2021": null,
-            "interpret": "Metallica",
-            "chords": [
-                "A",
-                "C",
-                "D",
-                "Em",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1991 Universal Music Publishing Limited.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 234,
-            "title": "Solangs no Schatte git",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 7,
-            "interpret": "BLAY (Bligg & Marc Sway)",
-            "chords": [
-                "A",
-                "Ab",
-                "Absus4-Db",
-                "Bm",
-                "Bm-Ab",
-                "Bm-Eb",
-                "Bm-Gb",
-                "Db",
-                "Dbsus2",
-                "F",
-                "F7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": "\u00a9BLAY Ent. AG\n\nGemeinsam versetzen wir Berge - f\u00fcr eine bessere Zukunft.\nEine Zusammenarbeit von BLAY, Valais Wallis Promotion, Pfadibewegung Schweiz, mova und FMV."
+            "license": "Music by NACIO HERB BROWN\nLyrics by ARTHUR FREED\n\u00a9 1929 METRO-GOLDWYN-MAYER INC.\nAll Rights Controlled by EMI ROBBINS CATALOGE INC. (Publishing) and ALFRED MUSIC PUBLISHING CO., INC. (Print)"
         },
         {
             "id": 126,
@@ -5357,31 +3797,12 @@
             "interpret": "",
             "chords": [
                 "C",
-                "Dm"
+                "D",
+                "Em"
             ],
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 135,
-            "title": "Some say love, it is a river",
-            "pageRondoRed": null,
-            "pageRondoBlue": 132,
-            "pageRondoGreen": 132,
-            "pageRondo2017": 132,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A",
-                "Cism",
-                "E",
-                "Gism",
-                "H"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words and Music by Amanda McBroom\n\u00a9 1979 Twentieth Century Music Corp Warner\/Chappell North America Ltd"
         },
         {
             "id": 175,
@@ -5411,10 +3832,12 @@
             "interpret": "",
             "chords": [
                 "A",
-                "A7",
+                "Asus4",
                 "D",
+                "Dm",
                 "Em",
-                "G"
+                "G",
+                "Hm"
             ],
             "alternative": false,
             "free": true,
@@ -5430,9 +3853,9 @@
             "pageRondo2021": null,
             "interpret": "",
             "chords": [
-                "A",
-                "E",
-                "H7"
+                "Am",
+                "D7",
+                "G"
             ],
             "alternative": false,
             "free": true,
@@ -5448,38 +3871,16 @@
             "pageRondo2021": 52,
             "interpret": "Die Toten Hosen",
             "chords": [
-                "Am",
+                "A",
                 "C",
                 "D",
                 "Em",
-                "F",
-                "G"
+                "G",
+                "Hm"
             ],
             "alternative": false,
             "free": false,
             "license": "by Andreas Frege; Andreas von Holst & Birgit E. F. Minichmayr\n\u00a9 BMG Rights Management GmbH \/ PKM Patricks kleiner Musikverlag GmbH\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
-        },
-        {
-            "id": 20,
-            "title": "Take me back to my boat on the river",
-            "pageRondoRed": null,
-            "pageRondoBlue": 106,
-            "pageRondoGreen": 106,
-            "pageRondo2017": 106,
-            "pageRondo2021": null,
-            "interpret": "Tommy Shaw",
-            "chords": [
-                "Am",
-                "D",
-                "Dm",
-                "E",
-                "E7",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "BOAT ON THE RIVER\nText u. Musik: Tommy Shaw\n\n\u00a9 Copyright by Stygian Songs.\nMELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich Schweiz.\n\nAbdruck erfolgt mit freundlicher Genehmigung von MELODIE DER WELT GmbH & Co. KG Musikverlag, Frankfurt\/Main"
         },
         {
             "id": 132,
@@ -5494,37 +3895,20 @@
                 "A",
                 "A7",
                 "Am",
-                "Am6",
                 "C",
                 "D",
+                "D7",
                 "Dm",
-                "Em",
+                "Em7",
                 "F",
                 "Fis",
                 "G",
-                "H",
+                "H7",
                 "Hm"
             ],
             "alternative": false,
             "free": false,
             "license": "\u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 30,
-            "title": "The Banana Boat Song",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 96,
-            "pageRondo2017": 96,
-            "pageRondo2021": null,
-            "interpret": "Harry Belafonte",
-            "chords": [
-                "C",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Musik und Text: William Attaway, Irving Burgie\n\u00a9 Cherry Lane Music Publishing Co. Inc., Lord Burgess Music Publishing Co., BMG Ruby Songs"
         },
         {
             "id": 133,
@@ -5536,35 +3920,16 @@
             "pageRondo2021": 162,
             "interpret": "Simon & Garfunkel",
             "chords": [
-                "Am",
                 "C",
+                "D",
+                "D7",
                 "Em",
-                "F",
                 "G",
-                "G7"
+                "Hm"
             ],
             "alternative": false,
             "free": false,
             "license": "Words & Music by Paul Simon\n\u00a9 1968 Paul Simon (BMI)\nInternational Copyright Secured. All Rights Reserved. Used by Permission of Hal Leonard Europe Limited."
-        },
-        {
-            "id": 89,
-            "title": "The last that ever she saw him",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 222,
-            "pageRondo2017": 222,
-            "pageRondo2021": null,
-            "interpret": "Mike Oldfield",
-            "chords": [
-                "B",
-                "C",
-                "Dm",
-                "F"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words & Music by Mike Oldfield\n\u00a9 Copyright 1983 Oldfield Music Limited\/Stage Three Music (Catalogues) Limited.\nStage Three Music Publishing Limited, a BMG Chrysalis catalogue.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 134,
@@ -5577,7 +3942,10 @@
             "interpret": "",
             "chords": [
                 "A",
+                "C",
+                "D7",
                 "E",
+                "G",
                 "H7"
             ],
             "alternative": false,
@@ -5594,11 +3962,11 @@
             "pageRondo2021": null,
             "interpret": "",
             "chords": [
-                "A",
-                "Cism",
-                "E",
-                "Gism",
-                "H"
+                "C",
+                "D",
+                "Em",
+                "G",
+                "Hm"
             ],
             "alternative": false,
             "free": false,
@@ -5634,37 +4002,17 @@
             "pageRondo2021": 146,
             "interpret": "Ralph McTell",
             "chords": [
-                "Am",
+                "A",
                 "C",
+                "D",
                 "D7",
                 "Em",
-                "F",
                 "G",
-                "G7"
+                "Hm"
             ],
             "alternative": false,
             "free": false,
             "license": "THE STREETS OF LONDON (Ralph McTell)\n\u00a9 Westminster Music Ltd"
-        },
-        {
-            "id": 59,
-            "title": "There is a house in New Orleans",
-            "pageRondoRed": 160,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 160,
-            "pageRondo2017": 160,
-            "pageRondo2021": 160,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "E",
-                "F"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
         },
         {
             "id": 136,
@@ -5677,73 +4025,12 @@
             "interpret": "Woodie Guthrie",
             "chords": [
                 "C",
-                "D",
+                "D7",
                 "G"
             ],
             "alternative": false,
             "free": false,
             "license": "THIS LAND IS YOUR LAND (Woody Guthrie) \n\u00a9 Ludlow Music Inc"
-        },
-        {
-            "id": 29,
-            "title": "This Ole House",
-            "pageRondoRed": 34,
-            "pageRondoBlue": 36,
-            "pageRondoGreen": 34,
-            "pageRondo2017": 34,
-            "pageRondo2021": 34,
-            "interpret": "Stuart Hamblen",
-            "chords": [
-                "A",
-                "A7",
-                "D",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a91954 by Hamblen Music Co., Arcadia, California\nF\u00fcr Deutschland und \u00d6sterreich: Musikverlage Hans Gering KG, Bergisch Gladbach"
-        },
-        {
-            "id": 227,
-            "title": "Tief im Wald, zwischen Moos und Farn",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 165,
-            "interpret": "G\u00e4nsehaut",
-            "chords": [
-                "A7",
-                "D",
-                "Dm",
-                "Em",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a91983 by Dany Music Musikverlage Hans Gering KG, Bergisch Gladbach"
-        },
-        {
-            "id": 151,
-            "title": "Today is gonna be the day",
-            "pageRondoRed": null,
-            "pageRondoBlue": 114,
-            "pageRondoGreen": 114,
-            "pageRondo2017": 114,
-            "pageRondo2021": null,
-            "interpret": "Oasis",
-            "chords": [
-                "A7",
-                "C",
-                "D",
-                "Dsus4",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 137,
@@ -5756,14 +4043,14 @@
             "interpret": "Reinhard Mey",
             "chords": [
                 "Am",
-                "Am7",
                 "C",
                 "D",
+                "D7",
                 "G"
             ],
             "alternative": false,
             "free": false,
-            "license": "Musik & Text: Reinhard Mey (c) by edition reinhard mey GmbH"
+            "license": "Musik & Text: Reinhard Mey \u00a9 by edition reinhard mey GmbH"
         },
         {
             "id": 173,
@@ -5779,85 +4066,6 @@
                 "D"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 172,
-            "title": "Un giorno avr\u00f2 un veliero",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 90,
-            "interpret": "Pippo Pollina",
-            "chords": [
-                "Am",
-                "C",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Words & Music by POLLINA GIUSEPPE"
-        },
-        {
-            "id": 203,
-            "title": "Un i ha Heimweh nach de B\u00e4rge",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 11,
-            "interpret": "Pl\u00fcsch",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "Em",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Music & Words by:\nAndreas \u00abRitschi\u00bb Ritschard\nRoger \u00abR\u00f6schel\u00bb Meier\nSimon \u00abSimi\u00bb Ryf\nAndreas \u00abHunzi\u00bb Hunziker\nAlexander \u00abBali\u00bb Balajew"
-        },
-        {
-            "id": 96,
-            "title": "Una mattina mi son svegliata",
-            "pageRondoRed": 65,
-            "pageRondoBlue": 70,
-            "pageRondoGreen": 65,
-            "pageRondo2017": 65,
-            "pageRondo2021": 65,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "A",
-                "Am",
-                "Dm",
-                "E"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 18,
-            "title": "Unser Leben gleicht der Reise",
-            "pageRondoRed": 63,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 63,
-            "pageRondo2017": 63,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "A7",
-                "C",
-                "D",
-                "G"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
@@ -5899,45 +4107,6 @@
             "license": ""
         },
         {
-            "id": 186,
-            "title": "Va, cette f\u00eate est termin\u00e9e",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 167,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "D",
-                "D7",
-                "Em",
-                "G",
-                "H"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 182,
-            "title": "Vecchia terra del Far-West",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 122,
-            "interpret": "Canzone popolare",
-            "chords": [
-                "A",
-                "D",
-                "E7"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
             "id": 138,
             "title": "W. NUSS VO B\u00dcMPLIZ",
             "pageRondoRed": null,
@@ -5947,60 +4116,20 @@
             "pageRondo2021": 58,
             "interpret": "Patent Ochsner",
             "chords": [
-                "A",
-                "A7",
+                "Am",
                 "B",
                 "C",
-                "D",
+                "Cm",
                 "Dm",
+                "Dm6",
+                "Dm7",
                 "Em",
-                "Em6",
-                "Em7",
-                "F",
-                "Fism",
-                "Hm"
+                "G",
+                "G7"
             ],
             "alternative": false,
             "free": false,
-            "license": "Stellenera Verlag, Bern"
-        },
-        {
-            "id": 202,
-            "title": "Weg dir mach ich d'Auge n\u00fcmme zue bim K\u00fcsse",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 168,
-            "interpret": "Hecht",
-            "chords": [
-                "C",
-                "D",
-                "Dm",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u201cCharlotta\u201d - Hecht\nMusik und Text: Hecht\n\u00a9Gadget Records AG\/Capitano Music GmbH\nP Gadget Records AG"
-        },
-        {
-            "id": 83,
-            "title": "Weine nicht wenn der Regen f\u00e4llt",
-            "pageRondoRed": 122,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 122,
-            "pageRondo2017": 122,
-            "pageRondo2021": null,
-            "interpret": "Drafi Deutscher",
-            "chords": [
-                "A7",
-                "D",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Musik: Bruhn Christian, Drafi Deutscher\nText: Loose Rudolf G\u00fcnther\n\u00a9 by Nero Musikverlag GmbH\nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH"
+            "license": "B\u00fcne Huber, Stellanera Bern"
         },
         {
             "id": 140,
@@ -6015,37 +4144,17 @@
                 "A7",
                 "Am",
                 "C",
-                "C7",
                 "D",
-                "Dm",
-                "E",
-                "F",
-                "Fm",
+                "D7",
+                "E7",
+                "Em",
                 "G",
-                "G7"
+                "G7",
+                "H"
             ],
             "alternative": false,
             "free": false,
             "license": "Franz Hohler, aus LP \u201eI glaub jetz hock i ab\u201c CBS, 1974"
-        },
-        {
-            "id": 141,
-            "title": "WENN WIR ERKLIMMEN",
-            "pageRondoRed": 226,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 226,
-            "pageRondo2017": 226,
-            "pageRondo2021": 128,
-            "interpret": "Die Bergvagabunden",
-            "chords": [
-                "C",
-                "D7",
-                "G",
-                "G7"
-            ],
-            "alternative": false,
-            "free": false,
-            "license": "Musik: Hans Kolesa & Hans Gasser\nText: Erich Hartinger\n\u00a9 1956 by EBERLE VERLAG, A-1190 Wien\nDer Abdruck erfolgt mit freundlicher Genehmigung."
         },
         {
             "id": 142,
@@ -6057,55 +4166,12 @@
             "pageRondo2021": null,
             "interpret": "",
             "chords": [
-                "C",
-                "Dm"
+                "D",
+                "Em"
             ],
             "alternative": false,
             "free": true,
             "license": ""
-        },
-        {
-            "id": 149,
-            "title": "What would you do if I sang out of tune",
-            "pageRondoRed": 190,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 190,
-            "pageRondo2017": 190,
-            "pageRondo2021": null,
-            "interpret": "John Lennon \/ Paul McCartney",
-            "chords": [
-                "A",
-                "C",
-                "Cism",
-                "D",
-                "E",
-                "Fis7",
-                "Fism",
-                "H",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
-            "id": 76,
-            "title": "When I find myself in times of trouble",
-            "pageRondoRed": 238,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 238,
-            "pageRondo2017": 238,
-            "pageRondo2021": null,
-            "interpret": "The Beatles",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1970 Sony\/ATV Music Publishing.\nUsed by permission of Music Sales Ltd. \nAll Rights Reserved. International Copyright Secured."
         },
         {
             "id": 49,
@@ -6155,31 +4221,6 @@
             "license": "\u00a9 Copyright 1967 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
-            "id": 13,
-            "title": "When the moon",
-            "pageRondoRed": null,
-            "pageRondoBlue": 90,
-            "pageRondoGreen": 92,
-            "pageRondo2017": 92,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "C",
-                "D",
-                "Dm",
-                "E7",
-                "Em",
-                "F",
-                "G",
-                "G-H",
-                "G7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Lyrics by JAMES RADO and GEROME RAGNI\nMusic by GALT MACDERMOT\n\u00a9 1966, 1967, 1968 JAMES RADO, GEROME RAGNI, GALT MACDERMOT, NAT SHAPIRO and EMI U CATALOG, INC."
-        },
-        {
             "id": 144,
             "title": "WHERE HAVE ALL THE FLOWERS GONE",
             "pageRondoRed": 157,
@@ -6191,52 +4232,13 @@
             "chords": [
                 "Am",
                 "C",
-                "F",
-                "G",
-                "G7"
+                "D",
+                "Em",
+                "G"
             ],
             "alternative": false,
             "free": false,
             "license": "WHERE HAVE ALL THE FLOWERS GONE (Pete Seeger)\n\u00a9 Sanga Music Inc"
-        },
-        {
-            "id": 204,
-            "title": "Will mir h\u00e4nd so viel Liebi zge",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 24,
-            "interpret": "Dabu Fantastic",
-            "chords": [
-                "Am",
-                "C",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Mit freundlicher Genehmigung von Dabu Fantastic"
-        },
-        {
-            "id": 137,
-            "title": "Wind Nord-Ost Startbahn null drei",
-            "pageRondoRed": 218,
-            "pageRondoBlue": 64,
-            "pageRondoGreen": 218,
-            "pageRondo2017": 218,
-            "pageRondo2021": 148,
-            "interpret": "Reinhard Mey",
-            "chords": [
-                "Am",
-                "Am7",
-                "C",
-                "D",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Musik & Text: Reinhard Mey (c) by edition reinhard mey GmbH"
         },
         {
             "id": 146,
@@ -6252,32 +4254,12 @@
                 "C",
                 "Dm",
                 "E",
-                "E7",
                 "F",
                 "G"
             ],
             "alternative": false,
             "free": false,
             "license": "by Klaus Meine\n\u00a9 BMG Rights Management GmbH\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
-        },
-        {
-            "id": 217,
-            "title": "Wir bleiben wach, bis die Wolken wieder lila sind",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 37,
-            "interpret": "Marteria, Yasha, Miss Platnum",
-            "chords": [
-                "Am",
-                "C",
-                "Dm",
-                "G"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "by Marten Laciny, David Conen, Yasha Conen, Jose Antonio Garcia Soler, Dirk Heinz Berger,\nVincent Graf von Schlippenbach, Ruth-Maria Renner & Mario Wesser\n\u00a9 BMG Rights Management GmbH \/ Edition Nesola \/ Krautskitchen Publishing \/ Brotherloves Edition\nAll Rights for Edition Nesola Administered by Arabella Musikverlag GmbH.\nAll Rights Reserved. Used by permission of Hal Leonard Europe Limited."
         },
         {
             "id": 148,
@@ -6289,18 +4271,18 @@
             "pageRondo2021": null,
             "interpret": "Leskela",
             "chords": [
+                "A",
                 "Am",
-                "Am7",
+                "B",
                 "C",
-                "D",
+                "Dm",
+                "Dm7",
                 "E",
                 "E7",
-                "Em",
+                "Esus4",
                 "F",
                 "G",
-                "H",
-                "H7",
-                "Hsus4"
+                "H7"
             ],
             "alternative": false,
             "free": false,
@@ -6317,14 +4299,14 @@
             "interpret": "John Lennon \/ Paul McCartney",
             "chords": [
                 "A",
+                "A7",
                 "C",
-                "Cism",
                 "D",
-                "E",
-                "Fis7",
-                "Fism",
-                "H",
-                "H7"
+                "E7",
+                "Em",
+                "G",
+                "Hm",
+                "Hm7"
             ],
             "alternative": false,
             "free": false,
@@ -6346,26 +4328,6 @@
             "alternative": true,
             "free": false,
             "license": "Jegliche ungenehmigte Nutzung bzw. Vervielf\u00e4ltigung ist gesetzlich untersagt. Alle Rechte vorbehalten.\n\u00a9 -2022- Tonos Music Publishing oHG, Baden-Baden, Deutschland"
-        },
-        {
-            "id": 147,
-            "title": "Wohin auch das Auge blicket",
-            "pageRondoRed": 198,
-            "pageRondoBlue": 124,
-            "pageRondoGreen": 198,
-            "pageRondo2017": 198,
-            "pageRondo2021": null,
-            "interpret": "",
-            "chords": [
-                "Am",
-                "D",
-                "Em",
-                "G",
-                "H7"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "Musik : Rudi Goguel\nText : Esser, Johann \/ Langhoff, Wolfgang\nMit freundlicher Genehmigung von: \uf0e3 C.F. Peters Ltd & Co. KG."
         },
         {
             "id": 150,
@@ -6408,34 +4370,6 @@
             "license": "\u00a9 Copyright 1995 Sony\/ATV Music Publishing.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
         },
         {
-            "id": 132,
-            "title": "Would you know my name",
-            "pageRondoRed": null,
-            "pageRondoBlue": 98,
-            "pageRondoGreen": 98,
-            "pageRondo2017": 98,
-            "pageRondo2021": null,
-            "interpret": "Eric Clapton",
-            "chords": [
-                "A",
-                "A7",
-                "Am",
-                "Am6",
-                "C",
-                "D",
-                "Dm",
-                "Em",
-                "F",
-                "Fis",
-                "G",
-                "H",
-                "Hm"
-            ],
-            "alternative": true,
-            "free": false,
-            "license": "\u00a9 Copyright 1991 EC Music Limited (87.5%)\/ Rondor International Inc.\nUsed by Permission of Hal Leonard Europe Limited.\nAll Rights Reserved. International Copyright Secured."
-        },
-        {
             "id": 152,
             "title": "YELLOW SUBMARINE",
             "pageRondoRed": 20,
@@ -6466,12 +4400,11 @@
             "interpret": "The Beatles",
             "chords": [
                 "Am",
-                "Am7",
                 "C",
                 "D7",
                 "Dm6",
                 "E7",
-                "E7sus4",
+                "Esus4",
                 "F",
                 "G",
                 "G7",
@@ -6516,44 +4449,6 @@
                 "G7"
             ],
             "alternative": false,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 188,
-            "title": "\u00c9coute la pri\u00e8re",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 135,
-            "interpret": "Chanson scoute",
-            "chords": [
-                "Am",
-                "C",
-                "F",
-                "G"
-            ],
-            "alternative": true,
-            "free": true,
-            "license": ""
-        },
-        {
-            "id": 233,
-            "title": "\u015apiewajmy wszyscy",
-            "pageRondoRed": null,
-            "pageRondoBlue": null,
-            "pageRondoGreen": null,
-            "pageRondo2017": null,
-            "pageRondo2021": 62,
-            "interpret": "Scout Song from Poland (Lied aus Polen)",
-            "chords": [
-                "C",
-                "D",
-                "Em",
-                "G"
-            ],
-            "alternative": true,
             "free": true,
             "license": ""
         },
