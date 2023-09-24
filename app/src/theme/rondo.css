@@ -54,3 +54,8 @@ ion-header .icon.icon--active {
 .header-md::after {
   background-image: none !important;
 }
+
+.header-md {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
