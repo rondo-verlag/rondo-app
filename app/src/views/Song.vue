@@ -194,9 +194,8 @@ export default defineComponent({
     }
 
     App.addListener('backButton', async () => {
-      await App.removeAllListeners();
       this.goBack();
-    });
+    })
 
     // stop song if user closes app
     App.addListener('appStateChange', ({ isActive }) => {
@@ -257,12 +256,13 @@ export default defineComponent({
             document.body.classList.toggle('rondo-show-chords');
         }
     },
-    goBack: function() {
-      if (this.section === 'text') {
-        this.$router.back();
-      } else {
-        this.section = 'text'
-      }
+    goBack: async function () {
+        if (this.section === 'text') {
+            await App.removeAllListeners();
+            this.$router.back();
+        } else {
+            this.section = 'text'
+        }
     },
 
     // Scrolling
