@@ -8,6 +8,9 @@
           </ion-button>
         </ion-buttons>
         <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'text'">
+          <ion-button ion-button :href="currentSong.linkYoutube" v-if="currentSong.linkYoutube">
+            <i>YT</i>
+          </ion-button>
           <ion-button ion-button @click="toggleChords()">
             <i class="icon rondo-icon-show-chord"></i>
           </ion-button>
