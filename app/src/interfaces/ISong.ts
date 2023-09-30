@@ -11,4 +11,5 @@ export default interface ISong {
   alternative: boolean;
   free: boolean;
   license: string;
+  linkYoutube?: string|null;
 }
