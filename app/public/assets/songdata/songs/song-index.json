@@ -302,7 +302,9 @@
             "alternative": false,
             "free": true,
             "license": "",
-            "linkYoutube": "https://www.youtube.com/"
+            "links": {
+                "youtube": "https://www.youtube.com/"
+            }
         },
         {
             "id": 3,
@@ -321,7 +323,9 @@
             "alternative": false,
             "free": true,
             "license": "",
-            "linkYoutube": "https://www.youtube.com/"
+            "links": {
+                "youtube": "https://www.youtube.com/"
+            }
         },
         {
             "id": 4,
