@@ -1,3 +1,5 @@
+import ILink from "@/interfaces/ILink";
+
 export default interface ISong {
   id: number;
   title: string;
@@ -11,5 +13,5 @@ export default interface ISong {
   alternative: boolean;
   free: boolean;
   license: string;
-  linkYoutube?: string|null;
+  links?: ILink;
 }
