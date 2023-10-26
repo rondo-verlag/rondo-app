@@ -42,7 +42,7 @@
     "es6-promise-plugin": "^4.2.2",
     "swiper": "^6.8.4",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.4",
+    "vue-router": "^4.2.5",
     "web-midi-player": "^1.4.1"
   },
   "devDependencies": {
