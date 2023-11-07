@@ -1336,7 +1336,16 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@7.5.2", "@ionic/core@^7.5.2":
+"@ionic/core@7.5.3":
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.5.3.tgz#2930dc4da0a5765930bb1cf12a9aed2a2775b5e7"
+  integrity sha512-nd4NV6gSgohLvKHGmf+jAcgzI1387eKq3enjBfE574FK/ikl5CeIltv0MBVJr9lz0pNSL/y9m1tdaFg+syASuA==
+  dependencies:
+    "@stencil/core" "^4.6.0"
+    ionicons "^7.2.1"
+    tslib "^2.1.0"
+
+"@ionic/core@^7.5.2":
   version "7.5.2"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.5.2.tgz#139919f6a2ab2667c1fe6167b65dd5a037134616"
   integrity sha512-0O8YgaE7CzrhDLGpnNq2Ia4bR+qFE1uHJHafoNWhoTXkydNnqSMZlxMCvtSetfv9bwLic93lcXYNoZ8I8zV3XA==
@@ -1420,19 +1429,19 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^7.5.2":
-  version "7.5.2"
-  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-7.5.2.tgz#90841e6a1485ce599f3e4be7e137d5cba7a933d9"
-  integrity sha512-JK25DzqiEHk+u4rX+GlKoctTNNr7Ups8OBrX0XnBsmyHxNq0EI2B3MbhUbnEP6wF9MzAK7ReaV57Bf7CdfZoFA==
+"@ionic/vue-router@^7.5.3":
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-7.5.3.tgz#0c02a7365e797f67f3871846f7024acd1dd549a1"
+  integrity sha512-v4VLCj5jZPxP9COEpIrJVunnK1doL/t/MwK+6YVneRUkSdZ4+M00E1FRaVhdEh5zCFnfOxAqVl/aZwn8gBaeug==
   dependencies:
-    "@ionic/vue" "7.5.2"
+    "@ionic/vue" "7.5.3"
 
-"@ionic/vue@7.5.2", "@ionic/vue@^7.4.2":
-  version "7.5.2"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.5.2.tgz#7807376dc0bd7b692e2467321cd4d9470b6b2be8"
-  integrity sha512-U0JYDF6nSo0+j5S1BlVW0EEcpBGWzLV1jhZmda72E4D/ol5yYFJldcJJ1rw4wkK+Q1zifRD5GRJljfcxbXl+mA==
+"@ionic/vue@7.5.3", "@ionic/vue@^7.4.2":
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.5.3.tgz#19cbc277af78ffc94f6ed60567f03b01755a3a07"
+  integrity sha512-JR0YSutDuZFssfYIEqQ2L+YRVsug/bG0c//Cpytw2zS0Obhrap7dthYlicX4WmwtO2FXJQ3djExABCFR+aP0JQ==
   dependencies:
-    "@ionic/core" "7.5.2"
+    "@ionic/core" "7.5.3"
     ionicons "^7.0.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":

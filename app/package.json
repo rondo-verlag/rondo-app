@@ -33,7 +33,7 @@
     "@ionic-native/insomnia": "^5.36.0",
     "@ionic/core": "^7.5.2",
     "@ionic/vue": "^7.4.2",
-    "@ionic/vue-router": "^7.5.2",
+    "@ionic/vue-router": "^7.5.3",
     "@types/swiper": "^5.4.3",
     "cordova-plugin-insomnia": "^4.3.0",
     "cordova-plugin-purchase": "^11.0.0",
