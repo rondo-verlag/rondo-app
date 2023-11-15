@@ -8,8 +8,8 @@
           </ion-button>
         </ion-buttons>
         <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'text'">
-          <ion-button ion-button :href="currentSong.links.youtube" v-if="currentSong.links.youtube">
-            <i>YT</i>
+          <ion-button ion-button :href="currentSong.links.youtube" v-if="currentSong.links && currentSong.links.youtube">
+            <i class="icon rondo-icon-youtube"></i>
           </ion-button>
           <ion-button ion-button @click="toggleChords()">
             <i class="icon rondo-icon-show-chord"></i>
@@ -390,6 +390,7 @@ ion-footer {
 
 .rondo-header-buttons-right i.icon {
   font-size: 28px;
+    color: wheat;
 }
 
 .rondo-tabs {
