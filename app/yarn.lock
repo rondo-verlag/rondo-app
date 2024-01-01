@@ -1668,7 +1668,7 @@
     ionicons "^7.2.1"
     tslib "^2.1.0"
 
-"@ionic/core@^7.6.2":
+"@ionic/core@7.6.2", "@ionic/core@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.6.2.tgz#c76dce24b54054b0a2b4b36e24a76bcd4b60e734"
   integrity sha512-PEeCAjKrtKkc7PqCF7WlXn36PmowBbswnMADmoJ75ozyheRMe+v+GY2a75dGsBxB8nMZP9X9wYBXvZ3BgYUdLw==
@@ -1759,12 +1759,20 @@
   dependencies:
     "@ionic/vue" "7.5.7"
 
-"@ionic/vue@7.5.7", "@ionic/vue@^7.5.7":
+"@ionic/vue@7.5.7":
   version "7.5.7"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.5.7.tgz#7b95704f01889340239aa01f78ec6ca86cdfa55e"
   integrity sha512-C1CzWcyR1Sie/2g7UWJkKGAxmjBzMF6v89cZGhvPaVg7toahc/NvhOPRJ1zS+5t2xgHmaBeBvFn528HonVeWZw==
   dependencies:
     "@ionic/core" "7.5.7"
+    ionicons "^7.0.0"
+
+"@ionic/vue@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.6.2.tgz#6c81e242539fbc1903d1c2fb8ba1bb239a131f27"
+  integrity sha512-+qamnvbplyPN0RASemYvxMCPcwJ+lrJVJeDQ8Cw14OIuItVkMsidM2pF4hzZaxXyS+aHqCaVTewvLJ2/cUpzTw==
+  dependencies:
+    "@ionic/core" "7.6.2"
     ionicons "^7.0.0"
 
 "@isaacs/cliui@^8.0.2":
