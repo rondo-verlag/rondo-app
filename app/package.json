@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^5.5.1",
-    "@types/jest": "^29.5.10",
+    "@types/jest": "^29.5.11",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.16.0",
     "@vitejs/plugin-legacy": "^5.2.0",
