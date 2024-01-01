@@ -31,10 +31,10 @@
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/in-app-purchase-2@^6.4.0":
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/in-app-purchase-2/-/in-app-purchase-2-6.4.0.tgz#63c6474e45b64b1078abc2016512db36bd7b5866"
-  integrity sha512-lmugm6HhyLKmLBd6C7vFYMZAGfFrHBPyAe6lxMTdnA8aZO4bWZvlVh0TKnWTYSuz1M9XATg9vELXXRnjVO1LbQ==
+"@awesome-cordova-plugins/in-app-purchase-2@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/in-app-purchase-2/-/in-app-purchase-2-6.6.0.tgz#40dfe1a8c76a8068256accbbae6d76703c02c73a"
+  integrity sha512-tzWtnV6WEaywwWQcnRPpd6wSv7/uyqTTfFshV8ZAoKqeDpwLqyCOf47wYtASJ0DWbOLdEU68+pa6Tohzx5xCmQ==
   dependencies:
     "@types/cordova" latest
 
