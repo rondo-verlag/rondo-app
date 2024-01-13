@@ -1672,16 +1672,7 @@
     ionicons "^7.2.1"
     tslib "^2.1.0"
 
-"@ionic/core@7.6.2":
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.6.2.tgz#c76dce24b54054b0a2b4b36e24a76bcd4b60e734"
-  integrity sha512-PEeCAjKrtKkc7PqCF7WlXn36PmowBbswnMADmoJ75ozyheRMe+v+GY2a75dGsBxB8nMZP9X9wYBXvZ3BgYUdLw==
-  dependencies:
-    "@stencil/core" "^4.8.2"
-    ionicons "^7.2.1"
-    tslib "^2.1.0"
-
-"@ionic/core@^7.6.4":
+"@ionic/core@7.6.4", "@ionic/core@^7.6.4":
   version "7.6.4"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-7.6.4.tgz#b1ce9f8fa8565105c36b4d7496a5a7992cf9f6cf"
   integrity sha512-9BGksEmvA/upb5Oup+joOam7y4pSBGCxYekWnTx8PiYur04ZYjGSZ0Vz3dQRyqj7rF+MwUV9iUGd3qz/bslkSw==
@@ -1795,12 +1786,12 @@
     "@ionic/core" "7.5.7"
     ionicons "^7.0.0"
 
-"@ionic/vue@^7.6.2":
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.6.2.tgz#6c81e242539fbc1903d1c2fb8ba1bb239a131f27"
-  integrity sha512-+qamnvbplyPN0RASemYvxMCPcwJ+lrJVJeDQ8Cw14OIuItVkMsidM2pF4hzZaxXyS+aHqCaVTewvLJ2/cUpzTw==
+"@ionic/vue@^7.6.4":
+  version "7.6.4"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-7.6.4.tgz#093988fab60c1afe52a39f7dbfcec8bffbebb0c6"
+  integrity sha512-jlyu+J/bRnvpiKn4ZzNSb2eGJ8Tq97bfkC0zgPMAMH4wx3++o9grNQ+4jaMX0eAK1vhtpFFJWTyW1M6Jx2HJcg==
   dependencies:
-    "@ionic/core" "7.6.2"
+    "@ionic/core" "7.6.4"
     ionicons "^7.0.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -2451,7 +2442,7 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@stencil/core@^4.0.3", "@stencil/core@^4.7.2", "@stencil/core@^4.8.2", "@stencil/core@^4.9.1":
+"@stencil/core@^4.0.3", "@stencil/core@^4.7.2", "@stencil/core@^4.9.1":
   version "4.9.1"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.9.1.tgz#955451027e4aeb429ee8cddf95b62c9bf939c8a7"
   integrity sha512-FB3vQR2xbX8RkiKdvBRj6jAe2VunKgB4U5hWSbpdcg/GhZrwOhsEgkGUGa8hGm9bgEUpIu16in1zFqziPyBEFw==
