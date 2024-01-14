@@ -51,18 +51,17 @@
 
 <script lang="ts">
 import {
-    IonContent,
-    IonHeader,
-    IonIcon,
-    IonPage,
-    IonToolbar,
-    IonList,
-    IonItem,
-    IonListHeader,
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonItem,
+  IonList,
+  IonListHeader,
+  IonPage,
+  IonToolbar
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { App } from "@capacitor/app";
-
 
 import songdata from '../../public/assets/songdata/songs/song-index.json';
 import ISong from "@/interfaces/ISong";
@@ -72,13 +71,14 @@ const songFilter = (song: ISong, query: string): boolean => {
   if (query === '') {
     return true
   }
+
   return (song.title.toLowerCase().includes(query.toLowerCase()) ||
-        !song.alternative && (song.interpret.toLowerCase().includes(query.toLowerCase())) ||
-        !song.alternative && song.pageRondo2017 == parseInt(query) ||
-        !song.alternative && song.pageRondo2021 == parseInt(query) ||
-        !song.alternative && song.pageRondoRed == parseInt(query) ||
-        !song.alternative && song.pageRondoBlue == parseInt(query) ||
-        !song.alternative && song.pageRondoGreen == parseInt(query));
+    !song.alternative && (song.interpret.toLowerCase().includes(query.toLowerCase())) ||
+    !song.alternative && song.pageRondo2017 == parseInt(query) ||
+    !song.alternative && song.pageRondo2021 == parseInt(query) ||
+    !song.alternative && song.pageRondoRed == parseInt(query) ||
+    !song.alternative && song.pageRondoBlue == parseInt(query) ||
+    !song.alternative && song.pageRondoGreen == parseInt(query));
 }
 
 export default defineComponent({
