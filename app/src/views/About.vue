@@ -12,7 +12,7 @@
 
     <ion-content :fullscreen="true">
       <div style="background: #ffffff">
-        <img src="assets/songdata/images/about.png" style="width: 100%">
+        <img src="assets/songdata/images/about.png" style="width: 100%" />
       </div>
       <div class="about-container">
         <b>Das Rondo immer und überall dabei</b><br />
@@ -97,12 +97,19 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonToolbar, IonButtons, IonButton } from '@ionic/vue';
+import {
+  IonButton,
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonToolbar
+} from '@ionic/vue';
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
 import { PurchaseManager } from "@/PurchaseManager";
-import {App} from "@capacitor/app";
+import { App } from "@capacitor/app";
 
 export default defineComponent({
   name: 'About',
