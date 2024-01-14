@@ -8,7 +8,7 @@
           </ion-button>
         </ion-buttons>
         <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'text'">
-          <ion-button ion-button :href="currentSong.links.youtube" v-if="currentSong && currentSong.links && currentSong.links.youtube">
+          <ion-button ion-button :href="currentSong.links.youtube" v-if="currentSong && currentSong?.links?.youtube">
             <i class="icon rondo-icon-youtube"></i>
           </ion-button>
           <ion-button ion-button @click="toggleChords()">
@@ -244,8 +244,8 @@ export default defineComponent({
     },
     slideChanged: function() {
       if (this.swiperInstance) {
-        if (this.songs[this.swiperInstance.realIndex]) {
-          this.currentSongId = this.songs[this.swiperInstance.realIndex].id;
+        if (this.songs[this.swiperInstance.activeIndex]) {
+          this.currentSongId = this.songs[this.swiperInstance.activeIndex].id;
         }
         this.stopAutoScroll();
         this.stopSong();
@@ -375,7 +375,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-
 ion-header {
   top: 0;
   -webkit-transition: top 0.5s;
@@ -420,6 +419,7 @@ ion-footer {
 .swiper-container {
   height: 100%;
 }
+
 .swiper-slide {
   background: #000;
   color: white;
@@ -458,9 +458,9 @@ ion-footer {
 
 .orientation--landscape .chord-list {
   font-size: 24vw;
+
   i {
     width: 20%;
   }
 }
-
 </style>
