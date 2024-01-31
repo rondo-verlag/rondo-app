@@ -23,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rondo-icon-youtube:before {
+  content: "\e94a";
+}
 .rondo-icon-chord-Asus4:before {
   content: "\e943";
 }

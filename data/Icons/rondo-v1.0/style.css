@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'rondo';
   src:
-    url('fonts/rondo.ttf?fxus9q') format('truetype'),
-    url('fonts/rondo.woff?fxus9q') format('woff'),
-    url('fonts/rondo.svg?fxus9q#rondo') format('svg');
+    url('fonts/rondo.ttf?wov7sf') format('truetype'),
+    url('fonts/rondo.woff?wov7sf') format('woff'),
+    url('fonts/rondo.svg?wov7sf#rondo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rondo-icon-youtube .path1:before {
+  content: "\e94a";
+  color: rgb(0, 0, 0);
+}
+.rondo-icon-youtube .path2:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
 .rondo-icon-chord-Asus4:before {
   content: "\e943";
 }
