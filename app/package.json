@@ -28,7 +28,7 @@
     "@capacitor/ios": "^5.6.0",
     "@capacitor/keyboard": "^5.0.7",
     "@capacitor/preferences": "^5.0.7",
-    "@capacitor/status-bar": "^5.0.6",
+    "@capacitor/status-bar": "^5.0.7",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/insomnia": "^5.36.0",
     "@ionic/core": "^7.6.4",
