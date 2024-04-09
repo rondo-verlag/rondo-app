@@ -29,6 +29,11 @@
             <i class="icon rondo-icon-listen icon--active"></i>
           </ion-button>
         </ion-buttons>
+        <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'chords'">
+          <ion-button ion-button @click="console.log('test')">
+            <i>Ukulele</i>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
