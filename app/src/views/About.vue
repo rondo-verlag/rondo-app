@@ -34,6 +34,8 @@
 
         <br />
         <br />
+        <browserlink url="https://www.rondo-verlag.ch/">rondo-verlag.ch</browserlink><br />
+        <br />
         <browserlink url="https://www.facebook.com/rondoverlag">facebook.com/rondoverlag</browserlink><br />
         <br />
         <browserlink url="https://www.instagram.com/rondoverlag">instagram.com/rondoverlag</browserlink><br />
@@ -48,32 +50,49 @@
         <br />
         <br />
         &mdash;<br />
-        Team Rondo:<br />
+        <h2>Team Rondo:</h2>
+        <h4>Projektleitung:</h4>
+        <b>Tristan / Raymond Wiedmer</b><br />
         <br />
-        Balu/Raphael Windlin<br />
-        Chicco/Fiona Zellweger<br />
-        Fäger/Demian Holderegger<br />
-        Google/Lars Fischer<br />
-        Jojo/Alexandra Wyss<br />
-        Krokus/Claudia Leuch<br />
-        Lemi/Alfred Trechslin<br />
-        Lennon/Tobias Tschopp<br />
-        Lichee/Nina Boogen<br />
-        Linus/Roland Brunschweiler<br />
-        Marabu/Irene Stutz<br />
-        Ragusa/Laura Moser<br />
-        Rondo/Valerio Thrier<br />
-        Sancho/Claudio Pietra<br />
-        Sprudel/Sarah Wurm<br />
-        Stitch/Robin Keller<br />
-        Tarka/Marie-Janka Stankowski<br />
-        Tristan/Raymond Wiedmer<br />
-        Tschaggon/Gabriel Jetter<br />
-        Vento/Caspar Brenneisen<br />
-        Zazu/Timon Mötteli<br />
+
+        <h4>Musikalisches:</h4>
+        <b>Linus / Roland Brunschweiler</b><br />
+        Tschaggon / Gabriel Jetter<br />
+        Google / Lars Fischer<br />
+        Neura / Laura Münst<br />
+        Gaia / Sophie Reist<br />
+        <br />
+
+        <h4>Texte:</h4>
+        <b>Zazu / Timon Mötteli</b><br />
+        <br />
+
+        <h4>Copyrights:</h4>
+        <b>Tristan / Raymond Wiedmer</b><br />
+        Tetris / Martin Eliasson<br />
+        <br />
+
+        <h4>Gestaltung:</h4>
+        <b>Neytiri / Tamara Heger</b><br />
+        Alupa / Eva Brunschweiler<br />
+        <br />
+
+        <h4>Layout:</h4>
+        <b>Marabu / Irene Stutz</b><br />
+        Aramis / Liam Wirz<br />
+        <br />
+
+        <h4>App:</h4>
+        <b>Fäger / Demian Holderegger</b><br />
+        Vento / Caspar Brenneisen<br />
+        Rondo / Valerio Thrier<br />
+
         <br />
         Gestaltung: Marabu, Signito GmbH<br />
         Produktion: Fäger, uSystems GmbH<br />
+        <br />
+
+        Den Gestalterinnen und Gestaltern der einzelnen Seiten danken wir herzlich! <br />
         <br />
 
         Akkorde Sounds mit freundlicher Genehmigung von Burkhard Mikolai<br />
@@ -82,7 +101,8 @@
         <br />
         <br />
         &mdash;<br />
-        &copy; 2023 Verein Rondo Verlag. Alle Rechte vorbehalten. Version {{appVersion}}
+        &copy; Zürich 1992 - 2024 Verein Rondo Verlag. Alle Rechte vorbehalten. <br />
+        APP Version {{appVersion}}
         <br />
 
 <!--        <div>-->
