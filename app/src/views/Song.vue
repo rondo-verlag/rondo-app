@@ -62,7 +62,7 @@
     </ion-content>
 
     <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page" :class="'orientation--' + orientation">
-      <img id="page" :src="require('../../public/assets/songdata/songs/notes/'+currentSong.id+'.jpg')" />
+      <img id="page" :src="require('../../public/assets/songdata/songs/notes/'+currentSong.id+'.png')" />
     </ion-content>
 
     <ion-footer>
