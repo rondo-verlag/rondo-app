@@ -40,6 +40,9 @@ export default defineComponent({
   computed: {
     pageNumbers(): string {
       let pages = [];
+      if (this.song.pageRondo2024) {
+        pages.push('<span class="rondo-pink">' + this.song.pageRondo2024 + '</span>');
+      }
       if (this.song.pageRondo2021) {
         pages.push('<span class="rondo-yellow">' + this.song.pageRondo2021 + '</span>');
       }
@@ -100,6 +103,10 @@ export default defineComponent({
 
     .rondo-yellow {
       color: #FFEB00;
+    }
+
+    .rondo-pink {
+      color: #C74375
     }
   }
 
