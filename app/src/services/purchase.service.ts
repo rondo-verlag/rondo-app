@@ -70,7 +70,7 @@ class purchaseService {
         console.log(offer)
       }, (e: unknown) => {
         //Purchase error
-        console.error("Error on Buy " + e)
+        console.error("Error on Buy " + JSON.stringify(e))
       });
     }
   }
