@@ -43,4 +43,4 @@ router.isReady().then(() => {
 
 StatusBar.setStyle({ style: Style.Dark });
 
-PurchaseManager.initialize();
+StatusBar.setStyle({ style: Style.Dark });
