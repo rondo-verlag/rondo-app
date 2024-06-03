@@ -1,10 +1,11 @@
 import 'cordova-plugin-purchase'
 import 'cordova-plugin-purchase/www/store'
 import { Capacitor } from "@capacitor/core";
+import AppState from "@/AppState";
 
 const PRODUCT_ID = 'ch.rondo.songbookapp.fullversion';
 
-class InAppPurchaseService {
+class purchaseService {
   private store: CdvPurchase.Store
 
   constructor() {
@@ -13,9 +14,6 @@ class InAppPurchaseService {
 
   private initializeStore = () => {
     if (Capacitor.isNativePlatform()) {
-      this.store = CdvPurchase.store;
-      this.store.verbosity = CdvPurchase.LogLevel.DEBUG;
-
       this.store = CdvPurchase.store;
       this.store.verbosity = CdvPurchase.LogLevel.DEBUG;
 
@@ -36,11 +34,18 @@ class InAppPurchaseService {
   }
 
   private registerProducts() {
-    this.store.register({
-      id: PRODUCT_ID,
-      type: CdvPurchase.ProductType.NON_CONSUMABLE,
-      platform: CdvPurchase.Platform.GOOGLE_PLAY
-    });
+    this.store.register([
+      {
+        id: PRODUCT_ID,
+        type: CdvPurchase.ProductType.NON_CONSUMABLE,
+        platform: CdvPurchase.Platform.GOOGLE_PLAY
+      },
+      {
+        id: PRODUCT_ID,
+        type: CdvPurchase.ProductType.NON_CONSUMABLE,
+        platform: CdvPurchase.Platform.APPLE_APPSTORE
+      }
+    ]);
   }
 
   private registerListeners() {
@@ -52,7 +57,7 @@ class InAppPurchaseService {
   private setupVerification() {
     this.store.when().verified((receipt) => {
       if (receipt.id == PRODUCT_ID) {
-        //give users coins or do something
+        AppState.setHasBought(true)
       }
       receipt.finish();
     })
@@ -62,14 +67,20 @@ class InAppPurchaseService {
     const offer = this.store.get(PRODUCT_ID)?.getOffer();
     if (offer) {
       this.store.order(offer).then(() => {
-        //Purchase in progress
+        console.log(offer)
       }, (e: unknown) => {
         //Purchase error
         console.error("Error on Buy " + e)
       });
     }
   }
+
+  public restore() {
+    this.store.restorePurchases().then(() => {
+      AppState.setHasBought(true)
+    })
+  }
 }
 
-const inAppPurchaseService = new InAppPurchaseService();
-export default inAppPurchaseService;
+const PurchaseService = new purchaseService();
+export default PurchaseService;

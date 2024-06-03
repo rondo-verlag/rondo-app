@@ -21,7 +21,7 @@
           In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br />
           <br />
           <span @click="buyFullversion()" class="rondo-buy-button">Vollversion kaufen für 5.-</span><br>
-<!--          oder <a @click="restorePurchases()">Kauf wiederherstellen</a><br><br>-->
+          oder <a @click="restorePurchases()">Kauf wiederherstellen</a><br><br>
         </div>
         <div v-else>
           <br />
@@ -129,7 +129,7 @@ import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
 import { App } from "@capacitor/app";
-import inAppPurchaseService from "@/services/inAppPurchaseService";
+import PurchaseService from "@/services/purchase.service";
 
 export default defineComponent({
   name: 'About',
@@ -161,8 +161,11 @@ export default defineComponent({
   },
   methods: {
     buyFullversion() {
-      inAppPurchaseService.buy()
+      PurchaseService.buy()
     },
+    restorePurchases() {
+      PurchaseService.restore()
+    }
   }
 });
 </script>
