@@ -128,8 +128,8 @@ import {
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
 import Browserlink from "@/views/Browserlink.vue";
-import { PurchaseManager } from "@/PurchaseManager";
 import { App } from "@capacitor/app";
+import PurchaseService from "@/services/purchase.service";
 
 export default defineComponent({
   name: 'About',
@@ -161,10 +161,10 @@ export default defineComponent({
   },
   methods: {
     buyFullversion() {
-      PurchaseManager.buy();
+      PurchaseService.buy()
     },
     restorePurchases() {
-      PurchaseManager.restore();
+      PurchaseService.restore()
     }
   }
 });
