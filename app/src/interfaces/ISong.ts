@@ -8,6 +8,7 @@ export default interface ISong {
   pageRondoGreen: number|null;
   pageRondo2017: number|null;
   pageRondo2021: number|null;
+  pageRondo2024: number|null;
   interpret: string;
   chords: string[];
   alternative: boolean;
