@@ -1,38 +1,37 @@
 {
     "slidesFree": [
-        170,
         201,
-        210,
-        173,
-        174,
-        176,
-        177,
-        182,
-        186,
-        188,
-        189,
-        192,
-        231,
-        229,
-        228,
-        233,
-        234,
-        230,
-        226,
-        175,
         225,
+        226,
+        170,
+        174,
+        175,
+        230,
+        210,
+        231,
+        176,
+        173,
+        186,
+        229,
+        182,
+        189,
+        228,
+        188,
+        192,
+        177,
+        234,
+        233,
         102,
         155,
         165,
         41,
         33,
-        81,
         21,
         7,
         43,
         44,
-        47,
         142,
+        47,
         126,
         65,
         85,
@@ -87,72 +86,71 @@
         55
     ],
     "slidesPaid": [
-        170,
-        199,
-        201,
+        224,
         202,
+        201,
+        199,
+        225,
+        195,
+        226,
+        227,
+        170,
+        172,
+        174,
+        175,
+        230,
         203,
         204,
-        205,
-        206,
-        207,
-        208,
-        209,
-        210,
-        211,
-        215,
-        217,
-        218,
         219,
-        224,
-        194,
-        193,
-        172,
-        173,
-        174,
+        218,
+        217,
+        215,
+        159,
+        210,
+        209,
+        208,
+        207,
+        206,
+        211,
+        205,
+        231,
         176,
-        177,
-        179,
+        190,
+        173,
+        186,
         180,
         181,
+        229,
         182,
+        235,
         183,
         185,
-        186,
-        188,
         189,
-        190,
-        191,
-        192,
-        195,
-        231,
-        229,
-        236,
         228,
-        159,
-        233,
+        188,
+        194,
+        193,
+        192,
+        236,
+        191,
         232,
+        177,
         234,
-        230,
-        227,
-        226,
-        175,
-        225,
-        235,
+        179,
+        233,
         102,
         155,
         165,
         41,
         33,
-        81,
         21,
         7,
         43,
         44,
         152,
         161,
-        47,
         142,
+        47,
         126,
         37,
         65,
@@ -311,7 +309,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=B_K6z3HiRAs"
             }
         },
         {
@@ -333,7 +331,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=6sDSYqAXjp0"
             }
         },
         {
@@ -606,7 +604,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=wz5kHZzg8pk"
             }
         },
         {
@@ -751,7 +749,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=-LT5ZJGj5QA"
             }
         },
         {
@@ -822,7 +820,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=KxnpHd0DldI"
             }
         },
         {
@@ -924,7 +922,7 @@
             "free": false,
             "license": "Musik \/ Text: Dieter Wiesman\n(C) Leuberg-Edition GmbH f\u00fcr Annabella, CH-8616 Riedikon",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=4UkLCSdz34k"
             }
         },
         {
@@ -974,7 +972,7 @@
             "free": false,
             "license": "BOAT ON THE RIVER (100 % Copyright)\nMusik und Text: Tommy Shaw\n\u00a9 Copyright by Stygian Songs\nSub: MELODIE DER WELT GmbH & Co. KG, Musikverlag, Frankfurt\/Main f\u00fcr Deutschland, \u00d6sterreich und Schweiz.\n\nAbdruck erfolgt mit freundlicher Genehmigung",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=K9Qs8-BkiLw"
             }
         },
         {
@@ -1093,7 +1091,7 @@
             "free": false,
             "license": "Words and Music by John Phillips and Michelle Phillips \nCopyright \u00a9 1965 UNIVERSAL MUSIC CORP. Copyright Renewed \nAll Rights Reserved Used by permission of Hal Leonard Europe Limited",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=N-aK6JnyFmk"
             }
         },
         {
@@ -1150,7 +1148,7 @@
             "pageRondoGreen": null,
             "pageRondo2017": null,
             "pageRondo2021": 129,
-            "pageRondo2024": null,
+            "pageRondo2024": 279,
             "interpret": "Canzone scout",
             "chords": [
                 "A",
@@ -1165,27 +1163,6 @@
             "license": "",
             "links": {
                 "youtube": "https:\/\/www.youtube.com\/watch?v=L162lHam4h4"
-            }
-        },
-        {
-            "id": 24,
-            "title": "CARAMBA",
-            "pageRondoRed": 38,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 38,
-            "pageRondo2017": 38,
-            "pageRondo2021": null,
-            "pageRondo2024": 38,
-            "interpret": "",
-            "chords": [
-                "D7",
-                "G"
-            ],
-            "alternative": false,
-            "free": true,
-            "license": "",
-            "links": {
-                "youtube": ""
             }
         },
         {
@@ -1207,6 +1184,27 @@
             "license": "",
             "links": {
                 "youtube": "https:\/\/www.youtube.com\/watch?v=GWkfZ2vA_7A"
+            }
+        },
+        {
+            "id": 24,
+            "title": "CARAMBA",
+            "pageRondoRed": 38,
+            "pageRondoBlue": null,
+            "pageRondoGreen": 38,
+            "pageRondo2017": 38,
+            "pageRondo2021": null,
+            "pageRondo2024": 38,
+            "interpret": "",
+            "chords": [
+                "D7",
+                "G"
+            ],
+            "alternative": false,
+            "free": true,
+            "license": "",
+            "links": {
+                "youtube": ""
             }
         },
         {
@@ -1588,7 +1586,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=M6LzToyUnaE"
             }
         },
         {
@@ -1634,7 +1632,7 @@
             "free": false,
             "license": "Abdruck mit freundlicher Genehmigung von C.F. Peters Ltd & Co. KG Leipzig",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=-boCKJsDe5U"
             }
         },
         {
@@ -1656,7 +1654,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=HF7REO1YjYw"
             }
         },
         {
@@ -1706,7 +1704,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=2ih3kVkk5_Q"
             }
         },
         {
@@ -1773,7 +1771,7 @@
             "free": false,
             "license": "\"Dr Parkingmeter\" aus Mani Matter: Us emene l\u00e4\u00e4re Gygechaschte \u00a9 2011 Zytglogge",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=k8RqtnhIu1I"
             }
         },
         {
@@ -1796,7 +1794,7 @@
             "free": false,
             "license": "Erben Otto Wolf (vertreten durch Irene Froelicher, Lommiswil)",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=ApdlFiBJcBQ"
             }
         },
         {
@@ -1909,7 +1907,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=ygN8Whn5uQE"
             }
         },
         {
@@ -1931,7 +1929,7 @@
             "free": false,
             "license": "Eine Oma ging spazieren, Leni Timmermann",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=pvM9BE6_XRI"
             }
         },
         {
@@ -1974,7 +1972,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=Iix7EPdqtfg"
             }
         },
         {
@@ -1998,7 +1996,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=LCiRGyWaCms"
             }
         },
         {
@@ -2019,7 +2017,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=u7xrBHKHiCg"
             }
         },
         {
@@ -2204,7 +2202,7 @@
             "free": false,
             "license": "Words and Music by Stan Jones | Translated by Ernst Verch \u00a9 1949 Edwin H Morris & Co Inc | Chappell Morris Ltd",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=GkQEmsb6HwM"
             }
         },
         {
@@ -2229,7 +2227,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=HCDswefIGdQ"
             }
         },
         {
@@ -2391,7 +2389,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=4mr-6JHL8LU"
             }
         },
         {
@@ -2537,7 +2535,7 @@
             "free": false,
             "license": "Text und Musik von John Lees",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=ObWNrkMT5dc"
             }
         },
         {
@@ -2560,7 +2558,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=T82NgAA62aU"
             }
         },
         {
@@ -2605,7 +2603,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=K7ntBlI5hqg"
             }
         },
         {
@@ -2629,7 +2627,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=ncjyqD5YGyY"
             }
         },
         {
@@ -2676,7 +2674,7 @@
             "free": false,
             "license": "Music & Lyrics: John Lennon, Yoko Ono\n\u00a9 Lenono Music\nWith courtesy of Budde Music Publishing GmbH",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=VOgFZfRVaww"
             }
         },
         {
@@ -2697,7 +2695,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=PSvCGMjp8dU"
             }
         },
         {
@@ -2763,7 +2761,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=b17QLRThXLU"
             }
         },
         {
@@ -2784,7 +2782,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=MdQy2l8BegA"
             }
         },
         {
@@ -2971,7 +2969,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=1jjcxFGEysE"
             }
         },
         {
@@ -3017,7 +3015,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=9VjA6Zty84U"
             }
         },
         {
@@ -3234,7 +3232,7 @@
             "free": false,
             "license": "Music: Ewald Pfleger, Guenter Grasmuck, Peter Niklas Gruber, Kurt Plisnier, Herwig Tremschnig\nLyrics: Ewald Pfleger\n\u00a9 Opus Music Publishing\nWith courtesy of Budde Music Publishing GmbH\nf\u00fcr D: ROLF BUDDE MUSIKVERLAG GMBH",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=EGikhmjTSZI"
             }
         },
         {
@@ -3309,7 +3307,7 @@
             "free": false,
             "license": "Text & Musik: Georges M\u00fcller",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=AAmTdEgLY0Q"
             }
         },
         {
@@ -3358,29 +3356,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
-            }
-        },
-        {
-            "id": 81,
-            "title": "LUSTIG IST DAS ZIGEUNERLEBEN",
-            "pageRondoRed": 11,
-            "pageRondoBlue": null,
-            "pageRondoGreen": 12,
-            "pageRondo2017": 12,
-            "pageRondo2021": null,
-            "pageRondo2024": null,
-            "interpret": "",
-            "chords": [
-                "C",
-                "F",
-                "G7"
-            ],
-            "alternative": false,
-            "free": true,
-            "license": "",
-            "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=Hdshwr1hDX8"
             }
         },
         {
@@ -3450,7 +3426,7 @@
             "free": false,
             "license": "Musik: Christian Bruhn, Drafi Deutscher  \nText: G\u00fcnther Rudolf Loose \n\u00a9 by Nero Musikverlag GmbH \nMit freundlicher Genehmigung: Rudi Schedler Musikverlag GmbH",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=_74YzFnQbzg"
             }
         },
         {
@@ -3497,7 +3473,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=Q8ot6eAMUQs"
             }
         },
         {
@@ -3541,7 +3517,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=fb3vdTYnKGM"
             }
         },
         {
@@ -3666,7 +3642,7 @@
             "free": false,
             "license": "Morning Has Broken Words by Eleanor Farjeon Music by Cat Stevens Copyright \u00a9 1971 Cat Music Ltd. and BMG Rights Management (UK) Ltd. Copyright Renewed All Rights Administered by BMG Rights Management (US) LLC All Rights Reserved Used by permission of Hal Leonard Europe Limited",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=DmAOBosGlHY"
             }
         },
         {
@@ -3774,7 +3750,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=-sxkE2Gg74E"
             }
         },
         {
@@ -3819,7 +3795,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/youtu.be\/SVKKRzemX_w?t=10"
             }
         },
         {
@@ -3891,7 +3867,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=qSIj17xbAyk"
             }
         },
         {
@@ -3915,7 +3891,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=3DGp6QvH2Jc"
             }
         },
         {
@@ -3937,7 +3913,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/youtu.be\/_6HzoUcx3eo?t=7"
             }
         },
         {
@@ -3994,7 +3970,7 @@
             "pageRondoGreen": null,
             "pageRondo2017": null,
             "pageRondo2021": 125,
-            "pageRondo2024": null,
+            "pageRondo2024": 309,
             "interpret": "Canzone popolare",
             "chords": [
                 "Am",
@@ -4156,7 +4132,7 @@
             "free": false,
             "license": "Words and Music by John Fogerty\n\u00a9 1964 Jondora Music\nBurlington Music Co Ltd, London, W8 5DA\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved.",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=5hid10EgMXE"
             }
         },
         {
@@ -4205,7 +4181,7 @@
             "free": false,
             "license": "L\u00fcber\/Niklaus",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=NueQ1OH15zM"
             }
         },
         {
@@ -4249,7 +4225,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=vzNg0YBTgos"
             }
         },
         {
@@ -4292,7 +4268,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=7otAJa3jui8"
             }
         },
         {
@@ -4314,7 +4290,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=eXQoZ7rdEck"
             }
         },
         {
@@ -4483,7 +4459,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=-BakWVXHSug"
             }
         },
         {
@@ -4584,7 +4560,7 @@
             "pageRondoGreen": null,
             "pageRondo2017": null,
             "pageRondo2021": 125,
-            "pageRondo2024": null,
+            "pageRondo2024": 309,
             "interpret": "Canzone popolare",
             "chords": [
                 "Am",
@@ -4657,7 +4633,7 @@
             "pageRondoGreen": null,
             "pageRondo2017": null,
             "pageRondo2021": 86,
-            "pageRondo2024": null,
+            "pageRondo2024": 312,
             "interpret": "Joe Dassin",
             "chords": [
                 "Am",
@@ -4715,7 +4691,7 @@
             "free": false,
             "license": "Words by Arthur Freed Music by Nacio Herb Brown \nCopyright \u00a9 1929 EMI Robbins Catalog Inc. \nAll Rights Administered by EMI United Partnership Ltd. International Copyright Secured All Rights Reserved Used by permission of Hal Leonard Europe Limited",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=swloMVFALXw"
             }
         },
         {
@@ -4736,7 +4712,7 @@
             "free": true,
             "license": "Music by NACIO HERB BROWN\nLyrics by ARTHUR FREED\n\u00a9 1929 METRO-GOLDWYN-MAYER INC.\nAll Rights Controlled by EMI ROBBINS CATALOGE INC. (Publishing) and ALFRED MUSIC PUBLISHING CO., INC. (Print)",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=1p1FfhSEP5s"
             }
         },
         {
@@ -4802,7 +4778,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=o9IRxRWPeJA"
             }
         },
         {
@@ -4824,7 +4800,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=iLvVZny4HzQ"
             }
         },
         {
@@ -4931,7 +4907,7 @@
             "free": false,
             "license": "New Lyrics and Revised Music by George David Weiss, Luigi Creatore and Hugo Peretti \nCopyright \u00a9 1961 Abilene Music, Luigi Creatore Music, HJP Music and Hugo Peretti Music Copyright Renewed All Rights for Abilene Music and Luigi Creatore Music Administered by Concord Sounds c\/o Concord Music Publishing All Rights for HJP Music and Hugo Peretti Music Administered by Steve Peter Music \nAll Rights Reserved Used by permission of Hal Leonard Europe Limited",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=OQlByoPdG6c"
             }
         },
         {
@@ -4955,7 +4931,7 @@
             "free": false,
             "license": "Words and Music by Amanda McBroom\n\u00a9 1977 Third Story Music, Inc and Warner-Tamerlane Publishing Corp.\nWarner Chappell North America Ltd, London, W8 5DA\nReproduced by permission of Faber Music Ltd\nAll Rights Reserved.",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=zxSTzSEiZ2c"
             }
         },
         {
@@ -5027,7 +5003,7 @@
             "free": false,
             "license": "THIS LAND IS YOUR LAND (Woody Guthrie) \n\u00a9 Ludlow Music Inc",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=wxiMrvDbq3s"
             }
         },
         {
@@ -5179,7 +5155,7 @@
             "free": false,
             "license": "Franz Hohler, aus LP \u201eI glaub jetz hock i ab\u201c CBS, 1974",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=ilRJhbNIthk"
             }
         },
         {
@@ -5200,7 +5176,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=qGyPuey-1Jw"
             }
         },
         {
@@ -5276,7 +5252,7 @@
             "free": false,
             "license": "WHERE HAVE ALL THE FLOWERS GONE (Pete Seeger)\n\u00a9 Sanga Music Inc",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=bI3QVsW30j0"
             }
         },
         {
@@ -5503,7 +5479,7 @@
             "free": true,
             "license": "",
             "links": {
-                "youtube": null
+                "youtube": "https:\/\/www.youtube.com\/watch?v=UfGRl-pvoyw"
             }
         },
         {
