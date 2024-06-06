@@ -15,7 +15,7 @@ class purchaseService {
   private initializeStore = () => {
     if (Capacitor.isNativePlatform()) {
       this.store = CdvPurchase.store;
-      this.store.verbosity = CdvPurchase.LogLevel.DEBUG;
+      this.store.verbosity = CdvPurchase.LogLevel.QUIET;
 
       this.store.error((err: unknown) => {
         console.error('Store Error ' + JSON.stringify(err));
@@ -66,14 +66,19 @@ class purchaseService {
   }
 
   public buy() {
-    const offer = this.store.get(PRODUCT_ID)?.getOffer();
-    if (offer) {
-      this.store.order(offer).then(() => {
-        console.log(offer)
-      }, (e: unknown) => {
-        //Purchase error
-        console.error("Error on Buy " + JSON.stringify(e))
-      });
+    // Try restoring first
+    this.restore()
+
+    if (AppState.hasBought !== true) {
+      const offer = this.store.get(PRODUCT_ID)?.getOffer();
+      if (offer) {
+        this.store.order(offer).then(() => {
+          console.log(offer)
+        }, (e: unknown) => {
+          //Purchase error
+          console.error("Error on Buy " + JSON.stringify(e))
+        });
+      }
     }
   }
 
