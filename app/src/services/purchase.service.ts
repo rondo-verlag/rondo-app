@@ -27,7 +27,9 @@ class purchaseService {
 
       this.store.initialize().then(() => {
         this.store.update().then(() => {
-          this.store.restorePurchases();
+          this.store.restorePurchases().then(() => {
+            AppState.setHasBought(true)
+          });
         });
       });
     }
