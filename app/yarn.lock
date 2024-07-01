@@ -1359,12 +1359,21 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.2.1", "@ionic/core@^8.2.0":
+"@ionic/core@8.2.1":
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.2.1.tgz#3064a05e7d78ebb5a206ec6d40db330068ee97b6"
   integrity sha512-nIoCdjzogRmyCoD7UcKUV3LmzkiqDN+TxHhkCTRVeNPFQwC5zuTbYKb714caJ6ixKSDBlDiEaLRIb2zgr57ekw==
   dependencies:
     "@stencil/core" "^4.17.2"
+    ionicons "^7.2.2"
+    tslib "^2.1.0"
+
+"@ionic/core@8.2.4", "@ionic/core@^8.2.0":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.2.4.tgz#43f16c8d468f792127fe6ab2fc663feb20e9c76f"
+  integrity sha512-lCsPzSEVs/XQMF25/phHlwhDNUlz4gqotzY/fEbhq2PT6Z5w81NndRAPsLQ4JM2k4N2gjJNeUFZJi+W78z2qtA==
+  dependencies:
+    "@stencil/core" "^4.19.1"
     ionicons "^7.2.2"
     tslib "^2.1.0"
 
@@ -1495,12 +1504,20 @@
   dependencies:
     "@ionic/vue" "8.2.1"
 
-"@ionic/vue@8.2.1", "@ionic/vue@^8.2.0":
+"@ionic/vue@8.2.1":
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.2.1.tgz#a3a9e8d010b0e22295a125917b204121e99e2bb1"
   integrity sha512-rMg8LhWUgRYCFU7+tJOzP9Cfxm5k9YqE1pWPyuf8RtvZ8WnaTNx1D5TQK2/RV63kwukyS5zM3eM6M9iWkoHJQw==
   dependencies:
     "@ionic/core" "8.2.1"
+    ionicons "^7.0.0"
+
+"@ionic/vue@^8.2.4":
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.2.4.tgz#a5120f3f020a40690160712f6d7515c75583d6d1"
+  integrity sha512-0HVaV0temhEsxnaZTx2DibFEGe7QTy7COaL3dquT2/KapPpEcDkKXB/eyYjPbbxDbNmv5jFfmaV7YGJ7Ad2mmg==
+  dependencies:
+    "@ionic/core" "8.2.4"
     ionicons "^7.0.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -2175,6 +2192,11 @@
   version "4.18.3"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.18.3.tgz#8568ffe3db307ea36aaacf82813cfed9ae319388"
   integrity sha512-8yoG5AFQYEPocVtuoc5kvRS0Hku0MoDWDUpADRaXPVHsOFLmxR16LJENj25ucCz5GEfeTGQ/tCE8JAypPmr/fQ==
+
+"@stencil/core@^4.19.1":
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.19.1.tgz#f497a26f50b0429024783e1eddcbc8ba5d875fdb"
+  integrity sha512-fjSBctHrobeSL2+XcuX7GVk/eaUhZ/lvIu21RJmzHAPcNyueuSAEv7J/Isn4UlYNk70o+yOK72H0FTlNkUibvw==
 
 "@tootallnate/once@1":
   version "1.1.2"
