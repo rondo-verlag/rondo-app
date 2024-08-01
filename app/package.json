@@ -30,7 +30,7 @@
     "@capacitor/status-bar": "^6.0.0",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/insomnia": "^5.36.0",
-    "@ionic/core": "^8.2.0",
+    "@ionic/core": "^8.2.6",
     "@ionic/vue": "^8.2.0",
     "@ionic/vue-router": "^8.2.0",
     "@types/swiper": "^5.4.3",
