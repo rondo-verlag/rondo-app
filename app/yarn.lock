@@ -1084,10 +1084,10 @@
     tslib "^2.4.0"
     xml2js "^0.5.0"
 
-"@capacitor/core@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-6.1.1.tgz#7bdf19a28a9f345a2f31179264b6de2bd9de29cb"
-  integrity sha512-b1s4WDMy3Y1/owTG2/XNGCI6G5SDpF2NT1JMAgcShue13fiAuHA+Ans7Wfei6McvR0KdopAE6tMHmDAfL5PM8Q==
+"@capacitor/core@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-6.1.2.tgz#a072e78b46693a6a47047cfc90d5f7cc48299fe9"
+  integrity sha512-xFy1/4qLFLp5WCIzIhtwUuVNNoz36+V7/BzHmLqgVJcvotc4MMjswW/TshnPQaLLujEOaLkA4h8ZJ0uoK3ImGg==
   dependencies:
     tslib "^2.1.0"
 
