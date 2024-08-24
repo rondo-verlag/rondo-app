@@ -26,10 +26,10 @@
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/screen-orientation@^6.7.0":
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-6.7.0.tgz#9c2c41ce32cd89fc48f17181f63aaa6e18003e45"
-  integrity sha512-Ik1OkTqxXF9gjdhO58PAYecVNGp7FDNV8Frhksgm06VZIW2d1mzhwJWmYCLmJvKLT1hNEbI/aXYRkouxFGLHJg==
+"@awesome-cordova-plugins/screen-orientation@^6.8.0":
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-6.8.0.tgz#637c19239edff0b549487c85cf6f5e7d985e6f2e"
+  integrity sha512-ZShNdQEtY+MsOnsHjBLk3w8z/p+vnV1HqUoUq9lPzvRpPUAZ4BXUv3N9cEF1gPOR5JolEtrbNN2oV1yXztdSdw==
   dependencies:
     "@types/cordova" latest
 
