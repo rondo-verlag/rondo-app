@@ -18,7 +18,7 @@
     "build-android": "ionic capacitor build android"
   },
   "dependencies": {
-    "@awesome-cordova-plugins/core": "^6.8.0",
+    "@awesome-cordova-plugins/core": "^6.9.0",
     "@awesome-cordova-plugins/screen-orientation": "^6.8.0",
     "@capacitor/android": "^6.1.2",
     "@capacitor/app": "^6.0.1",
