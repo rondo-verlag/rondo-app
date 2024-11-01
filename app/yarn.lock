@@ -1366,10 +1366,19 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.3.2", "@ionic/core@^8.3.1":
+"@ionic/core@8.3.2":
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.3.2.tgz#e6389508e9fd6f03a82de74e48dd0edef47190cc"
   integrity sha512-ptiDXnn4131eKpY862lv7c9xxjly7vi4O+WWCES78E+hXHvTEAundcA5F8eQyb0MFIFvCnOxreTZjRJJnHqPYw==
+  dependencies:
+    "@stencil/core" "4.20.0"
+    ionicons "^7.2.2"
+    tslib "^2.1.0"
+
+"@ionic/core@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.3.4.tgz#6722ecf4bd346c8cbbbca1e75006a924aed7884e"
+  integrity sha512-MkgaQ9+oQwj3AK/i25MkLgKUUH3/nvNjd4YlmUyFjPG7l2IBHsrLlSmuFGCyniB+doI9Hynu3T9CZP7NS4RjRQ==
   dependencies:
     "@stencil/core" "4.20.0"
     ionicons "^7.2.2"
