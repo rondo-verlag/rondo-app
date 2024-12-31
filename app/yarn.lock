@@ -1618,7 +1618,7 @@
   dependencies:
     "@ionic/vue" "8.4.1"
 
-"@ionic/vue@8.4.1", "@ionic/vue@^8.3.4":
+"@ionic/vue@8.4.1", "@ionic/vue@^8.4.1":
   version "8.4.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.4.1.tgz#2fc6fbd1b5b461d41e917d9d2072c8e4c411a92f"
   integrity sha512-L2IyyK/74saLuRoyTHGsRDywe7ehQol2d8X5KJgEhajt2i0A1zZaqIxfJJra4k9a+ZwNVASotMbRGURK9RqCZA==
@@ -10724,7 +10724,7 @@ vite-node@2.1.8:
     pathe "^1.1.2"
     vite "^5.0.0"
 
-vite@^5.0.0, vite@^5.4.8:
+vite@^5.0.0, vite@^5.4.11:
   version "5.4.11"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.11.tgz#3b415cd4aed781a356c1de5a9ebafb837715f6e5"
   integrity sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==

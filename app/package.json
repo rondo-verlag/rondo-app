@@ -31,7 +31,7 @@
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/insomnia": "^5.36.0",
     "@ionic/core": "^8.4.1",
-    "@ionic/vue": "^8.3.4",
+    "@ionic/vue": "^8.4.1",
     "@ionic/vue-router": "^8.4.1",
     "@types/swiper": "^5.4.3",
     "cordova-plugin-insomnia": "^4.3.0",
@@ -72,7 +72,7 @@
     "sass-loader": "^16.0.4",
     "ts-jest": "^29.2.5",
     "typescript": "^5.4.5",
-    "vite": "^5.4.8",
+    "vite": "^5.4.11",
     "vitest": "^2.1.8",
     "vue-tsc": "^2.2.0"
   },
