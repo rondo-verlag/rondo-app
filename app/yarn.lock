@@ -19,10 +19,10 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@awesome-cordova-plugins/core@^6.12.0":
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/core/-/core-6.12.0.tgz#fda1e08df736599b83861ade863ba27822be15af"
-  integrity sha512-Kdc1I3up1QDBA1i6XecZtJ55bZFV9fbjVon7//xqUlZ4mdTSAM5JhLQypOjynMkT4LGdwenxVsxos6lPIMTL7w==
+"@awesome-cordova-plugins/core@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/core/-/core-6.13.0.tgz#50e476d5ba465927f0bafde313ec0f619a0aa1c7"
+  integrity sha512-iqa5TU8HcFns/ND18KFrDVo4rGD4d4Gr5bgACFPwfztNCNmCRp+qkhv/xRBstqZ72qYH2oAJnEE1PTUY+IfX7Q==
   dependencies:
     "@types/cordova" latest
 
