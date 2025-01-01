@@ -14,7 +14,7 @@ dependencies {
     implementation project(':capacitor-keyboard')
     implementation project(':capacitor-preferences')
     implementation project(':capacitor-status-bar')
-    implementation "com.android.billingclient:billing:7.0.0"
+    implementation "com.android.billingclient:billing:7.1.1"
 }
 
 
