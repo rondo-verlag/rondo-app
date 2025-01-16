@@ -5,9 +5,10 @@
   "description": "A Scouting Songbook App",
   "author": "Rondo Verlag; Demian Holderegger",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vite",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "preview": "vite preview",
+    "test:unit": "vitest",
     "test:e2e": "cypress run",
     "lint": "eslint .",
     "ios": "ionic capacitor run ios",
@@ -62,7 +63,7 @@
     "sass": "^1.83.4",
     "sass-loader": "^16.0.4",
     "terser": "^5.37.0",
-    "typescript": "^5.4.5",
+    "typescript": "~5.6.2",
     "vite": "^6.0.7",
     "vitest": "^2.1.8",
     "vue-tsc": "^2.2.0"
