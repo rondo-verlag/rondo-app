@@ -1326,10 +1326,19 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.4.3", "@ionic/core@^8.4.3":
+"@ionic/core@8.4.3":
   version "8.4.3"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.4.3.tgz#109868f5b44b178a46489c1de56f16f300684b6e"
   integrity sha512-U9HdZ32bre6OKA5akJVmQMxNB8Art3Nqdn3s7m2W83I5NhLg9Tehaf8ua8jxPZtxCa1nuN7tUbzHmMCkcdqDTw==
+  dependencies:
+    "@stencil/core" "4.20.0"
+    ionicons "^7.2.2"
+    tslib "^2.1.0"
+
+"@ionic/core@8.5.2", "@ionic/core@^8.4.3":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.5.2.tgz#f9033a2e2705cce3018fb86b5c7e714d62322c55"
+  integrity sha512-XTiZqyLv2gzPzU4l4EvegHc2nDv5TniVU102MAxT739Lw0tFywZV9R1bv590z7Ue7w43ndwGdnfLuOuBksSeRA==
   dependencies:
     "@stencil/core" "4.20.0"
     ionicons "^7.2.2"
@@ -1417,12 +1426,21 @@
   dependencies:
     "@ionic/vue" "8.4.3"
 
-"@ionic/vue@8.4.3", "@ionic/vue@^8.4.1":
+"@ionic/vue@8.4.3":
   version "8.4.3"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.4.3.tgz#c59d81e0639f28827ea289d4f2a81c5255cb7f15"
   integrity sha512-jg4zDRfSrk3jSx3jvYf618Nf4pwTngB2viNihsOcXd2o04JvNHytouEQ7zES40/u9+tctRd0Db98nRyDOqwrCw==
   dependencies:
     "@ionic/core" "8.4.3"
+    ionicons "^7.0.0"
+
+"@ionic/vue@^8.5.2":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.5.2.tgz#aec4e62aed68b1d79668c60dc13559c1ce2f51df"
+  integrity sha512-LnhYkgkd6VKXh+nMQ1yFlG/lecU7014ZpniHauCl03w41BI5O87xdJ/7igcQJDTUH3n/s2inSGo9r7LR+eHLKQ==
+  dependencies:
+    "@ionic/core" "8.5.2"
+    "@stencil/vue-output-target" "0.10.7"
     ionicons "^7.0.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -1995,6 +2013,11 @@
   version "4.25.1"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.25.1.tgz#95bb17bb3fb1503203f9ef46a3e3924b7559add3"
   integrity sha512-SJhAAN6nHj7l2n2F7H6NoOUFhXC5tYXSvOpAaNFi5As6c2jOvaDOvAH+om4OKmw8U2kHI9yihEqpZrtY1J20dQ==
+
+"@stencil/vue-output-target@0.10.7":
+  version "0.10.7"
+  resolved "https://registry.yarnpkg.com/@stencil/vue-output-target/-/vue-output-target-0.10.7.tgz#4087e6fc008338a107ee70277d6d04b3e8a59653"
+  integrity sha512-IYxDe+SLCkwhwsWRdynE31rTK1zN3hVwwojQ/V9lrN8Gnx4PTvrUQHiRno9jFo1dk+EaBZWX9gZSmXta0ZaZew==
 
 "@tootallnate/once@1":
   version "1.1.2"
