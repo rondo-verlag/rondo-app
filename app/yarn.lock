@@ -30,10 +30,10 @@
     "@csstools/css-tokenizer" "^3.0.3"
     lru-cache "^10.4.3"
 
-"@awesome-cordova-plugins/core@^6.14.0":
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/core/-/core-6.14.0.tgz#4aa4538d00a589d1d835d688d3aa2f10a26505b9"
-  integrity sha512-oJdmzR8DA/dyZnKlXBnjav0ZNTCacGMEWZOxnrnXqr3I7nVEK0Kr2EIJx7CtAIXxFCpEjQQTH7loFur86O3xpw==
+"@awesome-cordova-plugins/core@^6.16.0":
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/core/-/core-6.16.0.tgz#915411e9afb5048ce1f3495bad566c4266231318"
+  integrity sha512-ep+nkDY6CyFBfqS/HS03PE+MZWiQoJWb/nLMwfj2ndC14UgZeVO3ecmEFknYjJOBf04emTbs7hbLewFrVkazmg==
   dependencies:
     "@types/cordova" latest
 
