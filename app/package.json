@@ -46,7 +46,7 @@
     "web-midi-player": "^1.4.1"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.0.1",
+    "@capacitor/cli": "^7.2.0",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
     "@typescript-eslint/parser": "^8.22.0",
     "@vitejs/plugin-legacy": "^6.0.2",
