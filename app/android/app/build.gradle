@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "ch.rondo.songbookapp"
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "ch.rondo.songbookapp"
         minSdkVersion rootProject.ext.minSdkVersion
