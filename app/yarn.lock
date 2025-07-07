@@ -1351,15 +1351,6 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.4.3":
-  version "8.4.3"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.4.3.tgz#109868f5b44b178a46489c1de56f16f300684b6e"
-  integrity sha512-U9HdZ32bre6OKA5akJVmQMxNB8Art3Nqdn3s7m2W83I5NhLg9Tehaf8ua8jxPZtxCa1nuN7tUbzHmMCkcdqDTw==
-  dependencies:
-    "@stencil/core" "4.20.0"
-    ionicons "^7.2.2"
-    tslib "^2.1.0"
-
 "@ionic/core@8.6.3", "@ionic/core@^8.4.3":
   version "8.6.3"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.6.3.tgz#f03ecb0a5c464128db8cdf00687a43c5e9cbd333"
@@ -1444,22 +1435,14 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^8.4.3":
-  version "8.4.3"
-  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-8.4.3.tgz#91f7993dd3cd6549626e0d428b368e1c132b1813"
-  integrity sha512-KjOJrzrLMxJn0yYNs+8HMKjhVnCNTPrSiTBmfVUt8xOTFAbVJ1KOaC1SZIucpmoU9N1gaRjn9V5r3rk5ELfFtQ==
+"@ionic/vue-router@^8.6.3":
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-8.6.3.tgz#df0f3dede334a12cf2ebf162fe3f1e4c0559ab5d"
+  integrity sha512-WRGPfwCiBjX84Hi55pitRknmnXtOA4VnejU8SSz3tP4tnvFwfLnT7YZcpV9HSMEthb7epHoW9/R2GyZQA3puTA==
   dependencies:
-    "@ionic/vue" "8.4.3"
+    "@ionic/vue" "8.6.3"
 
-"@ionic/vue@8.4.3":
-  version "8.4.3"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.4.3.tgz#c59d81e0639f28827ea289d4f2a81c5255cb7f15"
-  integrity sha512-jg4zDRfSrk3jSx3jvYf618Nf4pwTngB2viNihsOcXd2o04JvNHytouEQ7zES40/u9+tctRd0Db98nRyDOqwrCw==
-  dependencies:
-    "@ionic/core" "8.4.3"
-    ionicons "^7.0.0"
-
-"@ionic/vue@^8.6.3":
+"@ionic/vue@8.6.3", "@ionic/vue@^8.6.3":
   version "8.6.3"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.6.3.tgz#4490417f2c7ff20db67a03dd0f204380bea91474"
   integrity sha512-vQb0lMs3TKbcEZQz1SF7E4TzZf0wRf3elJaIFd0PRa4+Shcn5zpliid8uCJTlPY5k943axIrPNxKaQPJFQXdrw==
@@ -2073,11 +2056,6 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
-
-"@stencil/core@4.20.0":
-  version "4.20.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.20.0.tgz#221f2b36ab999891560449b02d6915862c435f49"
-  integrity sha512-WPrTHFngvN081RY+dJPneKQLwnOFD60OMCOQGmmSHfCW0f4ujPMzzhwWU1gcSwXPWXz5O+8cBiiCaxAbJU7kAg==
 
 "@stencil/core@4.33.1":
   version "4.33.1"
