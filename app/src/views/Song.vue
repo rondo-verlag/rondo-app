@@ -138,7 +138,7 @@ export default defineComponent({
     isPlaying: boolean;
     scrollElement: Element | null;
     isScrolling: boolean;
-    scrollTimer: number | null;
+    scrollTimer: ReturnType<typeof setInterval> | null;
     lastScrollPosition: number;
     sameLastScrollPositionCounter: number;
     autoScrollInQueue: boolean;
