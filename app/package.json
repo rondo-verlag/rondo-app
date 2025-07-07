@@ -24,7 +24,7 @@
     "@capacitor/android": "^7.0.1",
     "@capacitor/app": "^7.0.0",
     "@capacitor/core": "^7.0.1",
-    "@capacitor/haptics": "^7.0.0",
+    "@capacitor/haptics": "^7.0.1",
     "@capacitor/ios": "^7.0.1",
     "@capacitor/keyboard": "^7.0.0",
     "@capacitor/preferences": "^7.0.1",
