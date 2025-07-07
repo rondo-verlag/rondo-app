@@ -1015,10 +1015,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/app/-/app-7.0.0.tgz#f216c6fdef2ed227b04786fb3c381ecc319d5135"
   integrity sha512-/UFwfPFsw/Jen6vjrV0lfTBOQWSaDDdmrYXKpYg4Xn8hwj0xrrRPXxC43j7VmPoj9AFMVPA+hx94ygqjChPASQ==
 
-"@capacitor/cli@^7.4.0":
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-7.4.0.tgz#1ff769d3ccb2298635eac6814d1a226c9afd07be"
-  integrity sha512-RXmsW067r9sz7K1qtXGNB12w2aJtt86J3Jc4vOvmvpA+GyVYkVY1UhAMRnuVrXHjGZEVlwBORHunwrmv30HoZg==
+"@capacitor/cli@^7.4.1":
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-7.4.1.tgz#5a197d4e93a4bf627787d28f7b305c5147d10fa9"
+  integrity sha512-pN5SCj5SAA54yHj8XKJNhRXjjHNKrSfUuSS7a8GKQl/+OeaG0aA2hNJmM5RQJMBQ5MtU0sQqSLWpTkSW9nd7YA==
   dependencies:
     "@ionic/cli-framework-output" "^2.2.8"
     "@ionic/utils-subprocess" "^3.0.1"
