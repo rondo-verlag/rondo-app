@@ -1215,15 +1215,6 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.6.3":
-  version "8.6.3"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.6.3.tgz#f03ecb0a5c464128db8cdf00687a43c5e9cbd333"
-  integrity sha512-N/mkw+sPecLEoO1lrnKDS0uZgl6PWSyFprCkkqoK1nHlfBkgFiHm5M9rvWlnGaFC/5xrhNGHdUtYHDFM+F8gRw==
-  dependencies:
-    "@stencil/core" "4.33.1"
-    ionicons "^7.2.2"
-    tslib "^2.1.0"
-
 "@ionic/core@8.7.1", "@ionic/core@^8.6.3":
   version "8.7.1"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.7.1.tgz#2260974e86e2b49f9bd392f67d91bfd029b9702d"
@@ -1308,23 +1299,14 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^8.6.3":
-  version "8.6.3"
-  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-8.6.3.tgz#df0f3dede334a12cf2ebf162fe3f1e4c0559ab5d"
-  integrity sha512-WRGPfwCiBjX84Hi55pitRknmnXtOA4VnejU8SSz3tP4tnvFwfLnT7YZcpV9HSMEthb7epHoW9/R2GyZQA3puTA==
+"@ionic/vue-router@^8.7.1":
+  version "8.7.1"
+  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-8.7.1.tgz#da4f189af3730be2476c2f33d2fe324b1e9b78cf"
+  integrity sha512-k+iku90EZ/VQswK0lFDq++Lq7GzDwIARMzp2e887ORsnfficaP7pBsIHB2BpLjzEtxClx0pyBMeqiFxvZiH/Gw==
   dependencies:
-    "@ionic/vue" "8.6.3"
+    "@ionic/vue" "8.7.1"
 
-"@ionic/vue@8.6.3":
-  version "8.6.3"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.6.3.tgz#4490417f2c7ff20db67a03dd0f204380bea91474"
-  integrity sha512-vQb0lMs3TKbcEZQz1SF7E4TzZf0wRf3elJaIFd0PRa4+Shcn5zpliid8uCJTlPY5k943axIrPNxKaQPJFQXdrw==
-  dependencies:
-    "@ionic/core" "8.6.3"
-    "@stencil/vue-output-target" "0.10.7"
-    ionicons "^7.0.0"
-
-"@ionic/vue@^8.7.1":
+"@ionic/vue@8.7.1", "@ionic/vue@^8.7.1":
   version "8.7.1"
   resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.7.1.tgz#ae1d19c57097a308cd989e1fda09fd718ffe4a5a"
   integrity sha512-b/wIsactN870z1t+jRWEemtCtO5QwBg5e49ycWiOjHYPYZd7UBU1lRWSrvzbtMNvBEYbTTWBHg/ewGFL7EFxBw==
@@ -1705,38 +1687,10 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@stencil/core@4.33.1":
-  version "4.33.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.33.1.tgz#5cc48b46cfd455d87833a6d72b7604323a2379a8"
-  integrity sha512-12k9xhAJBkpg598it+NRmaYIdEe6TSnsL/v6/KRXDcUyTK11VYwZQej2eHnMWtqot+znJ+GNTqb5YbiXi+5Low==
-  optionalDependencies:
-    "@rollup/rollup-darwin-arm64" "4.34.9"
-    "@rollup/rollup-darwin-x64" "4.34.9"
-    "@rollup/rollup-linux-arm64-gnu" "4.34.9"
-    "@rollup/rollup-linux-arm64-musl" "4.34.9"
-    "@rollup/rollup-linux-x64-gnu" "4.34.9"
-    "@rollup/rollup-linux-x64-musl" "4.34.9"
-    "@rollup/rollup-win32-arm64-msvc" "4.34.9"
-    "@rollup/rollup-win32-x64-msvc" "4.34.9"
-
 "@stencil/core@4.36.2", "@stencil/core@^4.35.3":
   version "4.36.2"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.36.2.tgz#b43cba342c5c5ceba7c09463fdba7edff792496e"
   integrity sha512-PRFSpxNzX9Oi0Wfh02asztN9Sgev/MacfZwmd+VVyE6ZxW+a/kEpAYZhzGAmE+/aKVOGYuug7R9SulanYGxiDQ==
-  optionalDependencies:
-    "@rollup/rollup-darwin-arm64" "4.34.9"
-    "@rollup/rollup-darwin-x64" "4.34.9"
-    "@rollup/rollup-linux-arm64-gnu" "4.34.9"
-    "@rollup/rollup-linux-arm64-musl" "4.34.9"
-    "@rollup/rollup-linux-x64-gnu" "4.34.9"
-    "@rollup/rollup-linux-x64-musl" "4.34.9"
-    "@rollup/rollup-win32-arm64-msvc" "4.34.9"
-    "@rollup/rollup-win32-x64-msvc" "4.34.9"
-
-"@stencil/core@^4.0.3":
-  version "4.35.3"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.35.3.tgz#fce0321122194b1dc3a020848ba8212fda95cbf1"
-  integrity sha512-RH5/I+amV31QI8TMXhXkAkjzs2eod6Y07jkUYTl9kMB+X7c5wUpv95Y/2LtcAx0Rqdhh4SHbJiwpr0ApBZmv0g==
   optionalDependencies:
     "@rollup/rollup-darwin-arm64" "4.34.9"
     "@rollup/rollup-darwin-x64" "4.34.9"
@@ -5203,13 +5157,6 @@ ini@^4.1.1:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/ini/-/ini-4.1.3.tgz#4c359675a6071a46985eb39b14e4a2c0ec98a795"
   integrity sha512-X7rqawQBvfdjS10YU1y1YVreA3SsLrW9dX2CewP2EbBJM4ypVNLDkO5y04gejPwKIY9lR+7r9gn3rFPt/kmWFg==
-
-ionicons@^7.0.0, ionicons@^7.2.2:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-7.4.0.tgz#9c285aaa8089befbd6c5a89ae13292d364cd9ace"
-  integrity sha512-ZK94MMqgzMCPPMhmk8Ouu6goyVHFIlw/ACP6oe3FrikcI0N7CX0xcwVaEbUc0G/v3W0shI93vo+9ve/KpvcNhQ==
-  dependencies:
-    "@stencil/core" "^4.0.3"
 
 ionicons@^8.0.13:
   version "8.0.13"
