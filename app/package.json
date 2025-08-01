@@ -41,7 +41,7 @@
     "core-js": "^3.44.0",
     "es6-promise-plugin": "^4.2.2",
     "swiper": "^6.8.4",
-    "vue": "^3.5.17",
+    "vue": "^3.5.18",
     "vue-router": "^4.5.1",
     "web-midi-player": "^1.4.1"
   },
