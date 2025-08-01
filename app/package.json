@@ -21,7 +21,7 @@
   "dependencies": {
     "@awesome-cordova-plugins/core": "^8.0.2",
     "@awesome-cordova-plugins/screen-orientation": "^8.0.2",
-    "@capacitor/android": "^7.4.1",
+    "@capacitor/android": "^7.4.2",
     "@capacitor/app": "^7.0.1",
     "@capacitor/core": "^7.4.1",
     "@capacitor/haptics": "^7.0.1",
