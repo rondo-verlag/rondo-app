@@ -50,7 +50,7 @@
     "@typescript-eslint/eslint-plugin": "^8.36.0",
     "@typescript-eslint/parser": "^8.36.0",
     "@vitejs/plugin-legacy": "^7.1.0",
-    "@vitejs/plugin-vue": "^6.0.0",
+    "@vitejs/plugin-vue": "^6.0.1",
     "@vue/cli-plugin-typescript": "~5.0.8",
     "@vue/cli-plugin-unit-jest": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
