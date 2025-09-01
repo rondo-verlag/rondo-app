@@ -27,7 +27,7 @@
     "@capacitor/haptics": "^7.0.1",
     "@capacitor/ios": "^7.4.1",
     "@capacitor/keyboard": "^7.0.1",
-    "@capacitor/preferences": "^7.0.1",
+    "@capacitor/preferences": "^7.0.2",
     "@capacitor/status-bar": "^7.0.1",
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/insomnia": "^5.36.0",

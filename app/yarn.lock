@@ -881,10 +881,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-7.0.1.tgz#edf212528cd1587494ceb1d260868c1a9540aed1"
   integrity sha512-Gi064vOARMac+x9/DmEFeywN9oAETMf3OYsMuYm9gA8SvdsDJ3QJqMoFnSEIORYXe21Jzt2SIEdLlpT65P/b2g==
 
-"@capacitor/preferences@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-7.0.1.tgz#d1791a94fba8018497839fb7bd0bfa8b636dad6d"
-  integrity sha512-XF9jOHzvoIBZLwZr/EX6aVaUO1d8Mx7TwBLQS33pYHOliCW5knT5KUkFOXNNYxh9qqODYesee9xuQIKNJpQBag==
+"@capacitor/preferences@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-7.0.2.tgz#9557bd817b2f4cde942d3ce1cdf5abdb1292357f"
+  integrity sha512-JVCy0/oc6RsRencLOZ8rMqjNxAlHs7awPJU/MXqangsJ48oO2PnYGHfCvci6WgIJlqyC0QhvWZaO1BR1lVkHWQ==
 
 "@capacitor/status-bar@^7.0.1":
   version "7.0.1"
