@@ -2125,10 +2125,10 @@
     "@typescript-eslint/types" "8.41.0"
     eslint-visitor-keys "^4.2.1"
 
-"@vitejs/plugin-legacy@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-legacy/-/plugin-legacy-7.1.0.tgz#f84ce4d7ed0b43225dbf5ec77abf9222f3a22d6c"
-  integrity sha512-dzpcfN7gWWgzUwSxv7/ntUTEvoA8BYQWsdrawZFfwDSbitsEOXj8oSLn7I8QHJ8ijDukmCxsuUcib42EyTEVMw==
+"@vitejs/plugin-legacy@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-legacy/-/plugin-legacy-7.2.1.tgz#7c6427f51ec3b17765aa6937ae65233b7f7b029b"
+  integrity sha512-CaXb/y0mlfu7jQRELEJJc2/5w2bX2m1JraARgFnvSB2yfvnCNJVWWlqAo6WjnKoepOwKx8gs0ugJThPLKCOXIg==
   dependencies:
     "@babel/core" "^7.28.0"
     "@babel/plugin-transform-dynamic-import" "^7.27.1"
@@ -2138,7 +2138,7 @@
     babel-plugin-polyfill-regenerator "^0.6.5"
     browserslist "^4.25.1"
     browserslist-to-esbuild "^2.1.1"
-    core-js "^3.44.0"
+    core-js "^3.45.0"
     magic-string "^0.30.17"
     regenerator-runtime "^0.14.1"
     systemjs "^6.15.1"
@@ -3497,10 +3497,10 @@ core-js-compat@^3.43.0:
   dependencies:
     browserslist "^4.25.1"
 
-core-js@^3.44.0:
-  version "3.44.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.44.0.tgz#db4fd4fa07933c1d6898c8b112a1119a9336e959"
-  integrity sha512-aFCtd4l6GvAXwVEh3XbbVqJGHDJt0OZRa+5ePGx3LLwi12WfexqQxcsohb2wgsa/92xtl19Hd66G/L+TaAxDMw==
+core-js@^3.44.0, core-js@^3.45.0:
+  version "3.45.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.45.1.tgz#5810e04a1b4e9bc5ddaa4dd12e702ff67300634d"
+  integrity sha512-L4NPsJlCfZsPeXukyzHFlg/i7IIVwHSItR0wg0FLNqYClJ4MQYTYLbC7EkjKYRLZF2iof2MUgN0EGy7MdQFChg==
 
 core-util-is@1.0.2:
   version "1.0.2"
