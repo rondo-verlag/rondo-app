@@ -831,10 +831,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-7.4.1.tgz#c9c85b8684319ddea495606ef0e8c9800fa89c34"
   integrity sha512-/LxreKsXt6oZnS7gOpHz2WvRuZzwaLpGOKqomvBTliISTQaKEwqLkX1k665fqZquuJjP8RKnkz8thO6UZJTfbg==
 
-"@capacitor/app@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/app/-/app-7.0.1.tgz#0d0709fb4dde5046c24853f2d6b77a7ea411f748"
-  integrity sha512-ArlVZAAla4MwQoKh26x2AaTDOBh5Vhp1VhMKR3RwqZSsZnazKTFGNrPbr9Ez5r1knnEDfApyjwp1uZnXK1WTYQ==
+"@capacitor/app@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/app/-/app-7.0.2.tgz#63cdcc097b137e8605ffe7b97144f68c014b7db9"
+  integrity sha512-kRWBF6Wc6OQxhL+N6rsegyfJY37Lj9/VJhtrmgmH+y+rdxQLQwUOpMyxXStym7cF+QzGeVpItyVxyUT9fE5ByQ==
 
 "@capacitor/cli@^7.4.2":
   version "7.4.2"
