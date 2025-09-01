@@ -38,7 +38,7 @@
     "cordova-plugin-insomnia": "^4.3.0",
     "cordova-plugin-purchase": "^13.12.1",
     "cordova-plugin-screen-orientation": "^3.0.4",
-    "core-js": "^3.44.0",
+    "core-js": "^3.45.1",
     "es6-promise-plugin": "^4.2.2",
     "swiper": "^6.8.4",
     "vue": "^3.5.18",
