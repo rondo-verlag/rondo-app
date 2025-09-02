@@ -30,17 +30,17 @@
     "@csstools/css-tokenizer" "^3.0.3"
     lru-cache "^10.4.3"
 
-"@awesome-cordova-plugins/core@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/core/-/core-8.0.2.tgz#503013a0118c8c820f4dbef21f6a3c1793d639d7"
-  integrity sha512-GeNyTai3srbzR2A3XggurRRzFtBKBAnmTFDi8zpgLEFnuLRTeaZwQD4ma+AcgkIX/VrMGaLj+KJNV4wagsWS0w==
+"@awesome-cordova-plugins/core@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/core/-/core-8.1.0.tgz#7fdc40b90b0edad93d2afd10b6d4b84cfb0f5912"
+  integrity sha512-7NkUC2FcXSlIuIH2xc1miIdN8/by2uewrIg5JBWauN1KCzCXLhCwZ39C8nBsWxCloAxCvec+MMU5SzJGGWfjTg==
   dependencies:
     "@types/cordova" latest
 
-"@awesome-cordova-plugins/screen-orientation@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-8.0.2.tgz#1f4090c07957712eeca1f7e9fd5e35bed94b26c7"
-  integrity sha512-xtNcrAoPBqcJsfvqz5M29QbV4pQPcsgrzY6MsdPP7InJjyZBTyYp+n7GxFXHIoA18E6v4KgX20TBieciCZQSlw==
+"@awesome-cordova-plugins/screen-orientation@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/screen-orientation/-/screen-orientation-8.1.0.tgz#a80466d17e164638b761de21e0a4db485f7cd401"
+  integrity sha512-8gJ817TIyLfi3AttDunSPXtOngGOdVWPszIZKZgxLCp0r0knwjI3ZDsel7zpw2iI5zxrwYafQyg1+NtexvGhfA==
   dependencies:
     "@types/cordova" latest
 
