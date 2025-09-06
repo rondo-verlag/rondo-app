@@ -886,10 +886,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/preferences/-/preferences-7.0.2.tgz#9557bd817b2f4cde942d3ce1cdf5abdb1292357f"
   integrity sha512-JVCy0/oc6RsRencLOZ8rMqjNxAlHs7awPJU/MXqangsJ48oO2PnYGHfCvci6WgIJlqyC0QhvWZaO1BR1lVkHWQ==
 
-"@capacitor/status-bar@^7.0.2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-7.0.2.tgz#e48d0b7d41f24efb0781c25aa25b1f94f6f224fc"
-  integrity sha512-fYYkkdzCbQV+MjZVnaQTFl5I4bddnFW8ZrPVxDjNoGVPTUG7H58Ij1+NcuNxHLXjJvZOoZeYJ3w3I16Wb2zssw==
+"@capacitor/status-bar@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-7.0.3.tgz#4e8c1ac49cf928576cfac1c78cc3f9886088ebfe"
+  integrity sha512-JyRpVnKwHij9hgPWolF6PK+HT3e2HSPjN11/h2OmKxq8GAdPGARFLv+97eZl0pvuvm0Kka/LpiLb5whXISBg7Q==
 
 "@csstools/color-helpers@^5.1.0":
   version "5.1.0"
