@@ -6,7 +6,7 @@ The sourcecode for the Rondo app, created with Ionic and Vue.
 
 Requirements: 
 
- * Node.JS (20+) with NPM
+ * Node.JS (22+) with NPM
  * iOS SDK
  * Android SDK
  * Songdata Files (not available on github)
