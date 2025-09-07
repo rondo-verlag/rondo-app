@@ -6,8 +6,6 @@
 import { defineComponent, onMounted, ref, watch } from 'vue';
 import { getDocument, type PDFDocumentProxy, GlobalWorkerOptions } from 'pdfjs-dist';
 
-// Module-Worker lokal erstellen (webpack 5)
-// Wichtig: bei pdf.js v5 den .mjs-Worker verwenden und type: 'module' setzen
 const pdfjsWorker = new Worker(
   new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url),
   { type: 'module' }
@@ -28,7 +26,6 @@ export default defineComponent({
       // Container zurücksetzen
       container.value.innerHTML = '';
 
-      // Kein CDN/workerSrc mehr nötig; workerPort ist gesetzt
       const task = getDocument({ url: props.src });
       const pdf: PDFDocumentProxy = await task.promise;
 
