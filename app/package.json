@@ -55,7 +55,7 @@
     "@vue/cli-service": "~5.0.9",
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/test-utils": "^2.4.6",
-    "cypress": "^15.1.0",
+    "cypress": "^15.2.0",
     "eslint": "^9.35.0",
     "eslint-plugin-vue": "^10.4.0",
     "jsdom": "^26.1.0",
