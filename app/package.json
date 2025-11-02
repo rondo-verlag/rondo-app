@@ -58,7 +58,7 @@
     "cypress": "^15.3.0",
     "eslint": "^9.39.0",
     "eslint-plugin-vue": "^10.5.1",
-    "jsdom": "^27.0.0",
+    "jsdom": "^27.1.0",
     "rxjs": "^6.5.0",
     "sass": "^1.93.3",
     "sass-loader": "^16.0.6",
