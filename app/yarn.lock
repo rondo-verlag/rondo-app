@@ -857,10 +857,10 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.27.1"
 
-"@capacitor/android@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-7.4.3.tgz#aedfd6351c559f6db72d328b9ff8376b6eaeb66e"
-  integrity sha512-VpjvnOcmYGPLgvXRhe3CGLs62Cg7sxOyp77NddCr+Y06qqgnoaj6OGeBVTc2DZlqZ6bSmh15JvFu82pkvmdgfQ==
+"@capacitor/android@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-7.4.4.tgz#a14a1e844bd5079982427e247fdd17555b5fbedd"
+  integrity sha512-y8knfV1JXNrd6XZZLZireGT+EBCN0lvOo+HZ/s7L8LkrPBu4nY5UZn0Wxz4yOezItEII9rqYJSHsS5fMJG9gdw==
 
 "@capacitor/app@^7.1.0":
   version "7.1.0"
