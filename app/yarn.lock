@@ -1253,7 +1253,16 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.7.8", "@ionic/core@^8.7.8":
+"@ionic/core@8.7.11":
+  version "8.7.11"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.7.11.tgz#5e7349edc8cabaddd51da0607564a7e516b6f748"
+  integrity sha512-9UX9IeEztWWXymi+xCUMEBnnY+TbaR8crZLOwFnxPUEq4FFWSUCSv5XeHHQBpgZjBO2MJuDGcNv0GCQumIjVcQ==
+  dependencies:
+    "@stencil/core" "4.38.0"
+    ionicons "^8.0.13"
+    tslib "^2.1.0"
+
+"@ionic/core@^8.7.8":
   version "8.7.8"
   resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.7.8.tgz#ad7661b80b108aead10f767c4dccc85daab11881"
   integrity sha512-GLWb/lz3kocpzTZTeQQ5xxoWz4CKHD6zpnbwJknTKsncebohAaw2KTe7uOw5toKQEDdohTseFuSGoDDBoRQ1Ug==
@@ -1337,19 +1346,19 @@
     untildify "^4.0.0"
     wrap-ansi "^7.0.0"
 
-"@ionic/vue-router@^8.7.8":
-  version "8.7.8"
-  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-8.7.8.tgz#72ad130f25fd5499a0a0fe12c3bce0c0bdc3ce33"
-  integrity sha512-/GKrlBwhGJfkQU+jhXz9ivrG5YcDUYDhmnDrrvQ1//GNpV8dAUIqjMQMQf+QGUw5ZZKrDutq2kPHppb5hI+YmQ==
+"@ionic/vue-router@^8.7.11":
+  version "8.7.11"
+  resolved "https://registry.yarnpkg.com/@ionic/vue-router/-/vue-router-8.7.11.tgz#bbf085594d25a65bd04ce9b2f1983253c52d8339"
+  integrity sha512-6k/bWLORJucLIPYqcrXnSs3KEI69qaWo6V4bGAEOSkt9dISdTy65gafi4gtFFyV+n81LIU00WnajJYLadDG3Cg==
   dependencies:
-    "@ionic/vue" "8.7.8"
+    "@ionic/vue" "8.7.11"
 
-"@ionic/vue@8.7.8", "@ionic/vue@^8.7.8":
-  version "8.7.8"
-  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.7.8.tgz#a26b18c323bd667c561aa940c2743b918aa2d792"
-  integrity sha512-vB8JBfIduHDD8+MnhGX8w3zXB/abNqjqwOjv+0SOrMx1sp9TvpPi2vYGjtSrFlg1PvOv8EGNzVYTbURmwgvcHA==
+"@ionic/vue@8.7.11", "@ionic/vue@^8.7.8":
+  version "8.7.11"
+  resolved "https://registry.yarnpkg.com/@ionic/vue/-/vue-8.7.11.tgz#6fad740f31e7983b82dc65943d68a90ae298425f"
+  integrity sha512-HDEcjhxWfimVQxvXfghrqlAWpXnJvcUDTIVE2Mvq8ul+s7gL/OZCpXTAODJOfFCBAGJ0o9QXyC7OPjyN4UbO8Q==
   dependencies:
-    "@ionic/core" "8.7.8"
+    "@ionic/core" "8.7.11"
     "@stencil/vue-output-target" "0.10.7"
     ionicons "^8.0.13"
 
