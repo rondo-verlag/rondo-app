@@ -62,7 +62,7 @@
     </ion-content>
 
     <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page" :class="'orientation--' + orientation">
-      <img id="page" :src="require('../../public/assets/songdata/songs/notes/'+currentSong.id+'.png')" />
+      <img id="page" :src="'/assets/songdata/songs/notes/'+currentSong.id+'.png'" />
     </ion-content>
 
     <ion-footer>
@@ -94,7 +94,7 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import songdata from '../../public/assets/songdata/songs/song-index.json';
+import songdata from 'assets/songdata/songs/song-index.json';
 import { Insomnia } from '@ionic-native/insomnia';
 import { isPlatform } from '@ionic/vue';
 

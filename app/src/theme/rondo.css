@@ -1,19 +1,19 @@
 /* Vectora Font */
 @font-face {
   font-family: Vectora;
-  src: url("../../public/assets/fonts/Vectora/VectoraLTStd-Roman.otf") format("opentype");
+  src: url("/assets/fonts/Vectora/VectoraLTStd-Roman.otf") format("opentype");
 }
 
 @font-face {
   font-family: Vectora;
   font-weight: bold;
-  src: url("../../public/assets/fonts/Vectora/VectoraLTStd-Bold.otf") format("opentype");
+  src: url("/assets/fonts/Vectora/VectoraLTStd-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: Vectora;
   font-style: italic;
-  src: url("../../public/assets/fonts/Vectora/VectoraLTStd-Italic.otf") format("opentype");
+  src: url("/assets/fonts/Vectora/VectoraLTStd-Italic.otf") format("opentype");
 }
 
 /* Some Basic Theme overrides */
