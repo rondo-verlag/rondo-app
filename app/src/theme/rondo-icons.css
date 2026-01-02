@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'rondo';
   src:
-    url('../../public/assets/fonts/rondo/rondo.ttf?k7woyk') format('truetype'),
-    url('../../public/assets/fonts/rondo/rondo.woff?k7woyk') format('woff');
+    url('/assets/fonts/rondo/rondo.ttf?k7woyk') format('truetype'),
+    url('/assets/fonts/rondo/rondo.woff?k7woyk') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;

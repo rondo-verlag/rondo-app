@@ -12,7 +12,7 @@
 
     <ion-content :fullscreen="true">
       <div style="background: #ffffff">
-        <img src="assets/songdata/images/about.png" style="width: 100%" />
+        <img src="/assets/songdata/images/about.png" style="width: 100%" />
       </div>
       <div class="about-container">
         <b>Das Rondo immer und überall dabei</b><br />

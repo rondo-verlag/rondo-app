@@ -11,9 +11,13 @@ export default defineConfig({
     vue(),
     legacy()
   ],
+  define: {
+    'process.env': {}
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      'assets': path.resolve(__dirname, './public/assets'),
     },
   },
   test: {
