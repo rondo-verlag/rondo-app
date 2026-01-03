@@ -888,10 +888,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@capacitor/haptics@^7.0.2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-7.0.2.tgz#cc253a75646f2d0647029f2cfd59b2b143843e75"
-  integrity sha512-vqfeEM6s2zMgLjpITCTUIy7P/hadq/Gr5E/RClFgMJPB41Y5FsqOKD+j85/uwh8N2cf/aWaPeXUmjnTzJbEB2g==
+"@capacitor/haptics@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-7.0.3.tgz#13623ff5d3873a3d8ee437f2e5620a9d09091ded"
+  integrity sha512-6O5W4jtYKPGrulqt3pEeXKH1vWT5deSUoiiN2sVj7F6UgrEOxCmm06XS07Eeum0lDXEmksKARwtA+iQwHPswtA==
 
 "@capacitor/ios@^7.4.4":
   version "7.4.4"
