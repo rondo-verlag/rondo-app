@@ -853,10 +853,10 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
-"@capacitor/android@^7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-7.4.4.tgz#a14a1e844bd5079982427e247fdd17555b5fbedd"
-  integrity sha512-y8knfV1JXNrd6XZZLZireGT+EBCN0lvOo+HZ/s7L8LkrPBu4nY5UZn0Wxz4yOezItEII9rqYJSHsS5fMJG9gdw==
+"@capacitor/android@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-8.0.0.tgz#8cd63ed432460c70db0770dccd9234700152f31a"
+  integrity sha512-FrBSvVAC5JuLaYHNyDnwQny0/SYnP+xDQbc/KA4wInmRkMXLDv22fkx9aBJIDrxjuUVd+jsRih4SAt8FgMEzCw==
 
 "@capacitor/app@^7.1.1":
   version "7.1.1"
@@ -886,10 +886,10 @@
     tslib "^2.8.1"
     xml2js "^0.6.2"
 
-"@capacitor/core@^7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-7.4.4.tgz#b752dd7a12141e40d1c8ce2e37a79571d9f83518"
-  integrity sha512-xzjxpr+d2zwTpCaN0k+C6wKSZzWFAb9OVEUtmO72ihjr/NEDoLvsGl4WLfjWPcCO2zOy0b2X52tfRWjECFUjtw==
+"@capacitor/core@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-8.0.0.tgz#8418bd04c759aeb6dc951291a3a8f2521823dfe7"
+  integrity sha512-250HTVd/W/KdMygoqaedisvNbHbpbQTN2Hy/8ZYGm1nAqE0Fx7sGss4l0nDg33STxEdDhtVRoL2fIaaiukKseA==
   dependencies:
     tslib "^2.1.0"
 
@@ -898,10 +898,10 @@
   resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-7.0.2.tgz#cc253a75646f2d0647029f2cfd59b2b143843e75"
   integrity sha512-vqfeEM6s2zMgLjpITCTUIy7P/hadq/Gr5E/RClFgMJPB41Y5FsqOKD+j85/uwh8N2cf/aWaPeXUmjnTzJbEB2g==
 
-"@capacitor/ios@^7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-7.4.4.tgz#051c37df4ffa878bd757b3849ce61668ac174083"
-  integrity sha512-Xp3bGWlSQAwsZGngRMWTdoD2agdMV12Whnm+/xsYPxfQSj+Tksbr7r/8Mso7VWkpnTKO4iMlx762g3PjW+wi4w==
+"@capacitor/ios@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-8.0.0.tgz#4a3d242693a08573742f0eddc1ba967b46f5a62b"
+  integrity sha512-gwSn6X4uHYNHlM8zZmVmM1zjEhexxbHpPSSnH1DZkp8o3zdK/RmH8tmDma+3zPZrhhTSrMC7sT24dKTOvV8www==
 
 "@capacitor/keyboard@^7.0.3":
   version "7.0.3"
