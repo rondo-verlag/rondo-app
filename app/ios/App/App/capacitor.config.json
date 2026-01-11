@@ -11,6 +11,7 @@
 		"HapticsPlugin",
 		"KeyboardPlugin",
 		"PreferencesPlugin",
+		"ScreenOrientationPlugin",
 		"StatusBarPlugin",
 		"CDVPlugin"
 	]
