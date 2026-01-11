@@ -56,15 +56,15 @@
     "cypress": "^15.8.2",
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "^10.6.2",
-    "jsdom": "^27.0.0",
+    "jsdom": "^27.4.0",
     "rxjs": "^6.5.0",
-    "sass": "^1.97.1",
-    "terser": "^5.44.0",
-    "typescript": "~5.6.3",
-    "vite": "^7.1.11",
+    "sass": "^1.97.2",
+    "terser": "^5.44.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
     "vitest": "^4.0.16",
     "vue-eslint-parser": "^10.2.0",
-    "vue-tsc": "^3.2.1"
+    "vue-tsc": "^3.2.2"
   },
   "homepage": "https://rondo-verlag.ch"
 }
