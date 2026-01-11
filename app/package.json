@@ -63,7 +63,7 @@
     "vite": "^7.1.11",
     "vitest": "^4.0.16",
     "vue-eslint-parser": "^10.2.0",
-    "vue-tsc": "^3.2.1"
+    "vue-tsc": "^3.2.2"
   },
   "homepage": "https://rondo-verlag.ch"
 }
