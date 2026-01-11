@@ -30,10 +30,21 @@ import './theme/rondo.css';
 /* use package.json to read app version */
 import packageJson from '../package.json';
 import { StatusBar, Style } from '@capacitor/status-bar';
+import VueMatomo from 'vue-matomo';
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router)
+  .use(VueMatomo, {
+    host: import.meta.env.VITE_MATOMO_HOST || 'https://matomo.example.com',
+    siteId: import.meta.env.VITE_MATOMO_SITE_ID || 1,
+    router: router,
+    enableLinkTracking: true,
+    requireConsent: false,
+    trackInitialView: true,
+    disableCookies: true,
+    enableHeartBeatTimer: true,
+  })
   .provide('appVersion', packageJson.version);
 
 router.isReady().then(() => {
