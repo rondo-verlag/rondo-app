@@ -15,7 +15,7 @@ dependencies {
     implementation project(':capacitor-preferences')
     implementation project(':capacitor-screen-orientation')
     implementation project(':capacitor-status-bar')
-    implementation "com.android.billingclient:billing:7.1.1"
+    implementation "com.android.billingclient:billing:8.3.0"
 }
 
 
