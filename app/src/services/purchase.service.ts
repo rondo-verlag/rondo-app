@@ -25,13 +25,13 @@ class purchaseService {
       this.registerListeners();
       this.setupVerification();
 
-      this.store.initialize().then(() => {
-        this.store.update().then(() => {
-          this.store.restorePurchases().then(() => {
-            AppState.setHasBought(true)
-          });
-        });
-      });
+      this.store.initialize()
+        .then(() => this.store.update())
+        .then(() => this.restore())
+        .catch(err => console.error('Store Initialization Error', err))
+    } else {
+      console.warn('Not running on native platform')
+      return;
     }
   }
 
@@ -73,7 +73,7 @@ class purchaseService {
       const offer = this.store.get(PRODUCT_ID)?.getOffer();
       if (offer) {
         this.store.order(offer).then(() => {
-          console.log(offer)
+          console.log('Offer' + offer)
         }, (e: unknown) => {
           //Purchase error
           console.error("Error on Buy " + JSON.stringify(e))
@@ -83,9 +83,24 @@ class purchaseService {
   }
 
   public restore() {
-    this.store.restorePurchases().then(() => {
+    this.restorePurchasesIOS();
+    this.restorePurchases();
+  }
+
+
+  private restorePurchasesIOS() {
+    this.store.restorePurchases()
+      .catch(err => console.error('Error restoring purchases', err))
+  }
+
+  private restorePurchases() {
+    let owned = this.store.owned(PRODUCT_ID);
+    console.log('Premium already buyed' + owned)
+    if (owned === true) {
       AppState.setHasBought(true)
-    })
+    } else {
+      AppState.setHasBought(false)
+    }
   }
 }
 
