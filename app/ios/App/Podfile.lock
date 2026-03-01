@@ -4,9 +4,9 @@ PODS:
   - CapacitorApp (8.0.1):
     - Capacitor
   - CapacitorCordova (8.1.0)
-  - CapacitorHaptics (8.0.0):
+  - CapacitorHaptics (8.0.1):
     - Capacitor
-  - CapacitorKeyboard (8.0.0):
+  - CapacitorKeyboard (8.0.1):
     - Capacitor
   - CapacitorPreferences (8.0.1):
     - Capacitor
@@ -52,8 +52,8 @@ SPEC CHECKSUMS:
   Capacitor: 47b825120c6b8b6d6f9f053e9350a8960d436710
   CapacitorApp: 942306cd1acf7774a00e89a3986af3a67c8cad7a
   CapacitorCordova: e8b76fd95fc1e157775abc484c59cc0de464095d
-  CapacitorHaptics: 2079d9fa04c5a71e18663b4722323c304c58245c
-  CapacitorKeyboard: d7868c079a4d5277a3deca27a10a488fcbbb8b69
+  CapacitorHaptics: 4df2c625445cef39b67ea635a21802bc92df3b82
+  CapacitorKeyboard: 867eb4b3c901d9bb5c3d0c93b546185d52484e19
   CapacitorPreferences: cca2021f386efb75947c850334447d9ff22b14f1
   CapacitorScreenOrientation: 6c3c84223ea1dd44aaa7184e2b416dd1192270d0
   CapacitorStatusBar: 32206abd53b14f339763da26f71286deaa891e16
