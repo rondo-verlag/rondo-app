@@ -107,6 +107,7 @@ import AppState from "@/AppState";
 import Songtext from "@/views/Songtext.vue";
 import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
+import { ScreenOrientation } from '@capacitor/screen-orientation';
 
 import MidiPlayer from 'web-midi-player';
 import { App } from "@capacitor/app";
@@ -210,7 +211,9 @@ export default defineComponent({
     });
 
     // handle screen rotations
-    window.addEventListener('orientationchange', this.orientationChanged);
+    ScreenOrientation.addListener('screenOrientationChange', (orientation) => {
+      this.orientationChanged(orientation.type);
+    });
     this.orientationChanged();
   },
   unmounted() {
@@ -225,11 +228,12 @@ export default defineComponent({
     this.stopSong();
     this.stopChords();
     this.exitFullscreen();
-    window.removeEventListener('orientationchange', this.orientationChanged);
+    ScreenOrientation.removeAllListeners();
   },
   methods: {
-    orientationChanged: function() {
-      if (screen.orientation.type === 'landscape-primary' || screen.orientation.type === 'landscape-secondary') {
+    orientationChanged: async function(type?: string) {
+      const orientationType = type || (await ScreenOrientation.orientation()).type;
+      if (orientationType === 'landscape-primary' || orientationType === 'landscape-secondary') {
         this.orientation = 'landscape';
       } else {
         this.orientation = 'portrait';
