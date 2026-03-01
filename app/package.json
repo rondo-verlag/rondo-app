@@ -52,7 +52,7 @@
     "@vue/eslint-config-typescript": "^14.7.0",
     "@vue/test-utils": "^2.4.6",
     "cypress": "^15.11.0",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.2",
     "eslint-plugin-vue": "^10.8.0",
     "jsdom": "^27.4.0",
     "rxjs": "^6.5.0",
