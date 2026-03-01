@@ -1214,10 +1214,19 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@8.7.17", "@ionic/core@^8.7.16":
+"@ionic/core@8.7.17":
   version "8.7.17"
   resolved "https://registry.npmjs.org/@ionic/core/-/core-8.7.17.tgz"
   integrity sha512-gp7PIEJX27NX/FkjiUlpjQUtJiFFE5W1lofRC5CfORQ8p4PrLh9wJO9EJH0YryCr2qZS0k47sYgRQP5FwiXlpg==
+  dependencies:
+    "@stencil/core" "4.38.0"
+    ionicons "^8.0.13"
+    tslib "^2.1.0"
+
+"@ionic/core@^8.7.18":
+  version "8.7.18"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-8.7.18.tgz#9436d87b3f412680c280edb122798bd935a97e0e"
+  integrity sha512-KUp91+XFTSAhOTLOIj7rY6j44guxI/gaR0S6bUZ/+65qZIuftRcETKb54yQ0COqn0lgAgQnkuYdWyH1uRPHsEA==
   dependencies:
     "@stencil/core" "4.38.0"
     ionicons "^8.0.13"
