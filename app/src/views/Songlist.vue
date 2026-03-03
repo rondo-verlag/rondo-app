@@ -5,7 +5,7 @@
         <div class="rondo-bar-search">
           <label class="rondo-bar-search__input">
             <i class="icon rondo-icon-search placeholder-icon"></i>
-            <input type="text" v-model="query" placeholder="Suchen..." id="song-search-input" autocorrect="off" autocapitalize="off" />
+            <input type="text" v-model="query" placeholder="Suchen..." id="song-search-input" autocomplete="off" autocapitalize="off" />
             <span class="clear-search" v-if="query" @click="clearSearch()">
               <i class="icon rondo-icon-close-circle"></i>
             </span>
@@ -22,14 +22,15 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <ion-list class="rondo-list" v-if="hasBought">
-          <ion-item v-for="song in filteredAllSongs" :key="song.id" lines="none" @click="$router.push('/song/' + song.id)">
+          <ion-item v-for="song in filteredAllSongs" lines="none" @click="$router.push('/song/' + song.id)">
             <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
             <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
           </ion-item>
         </ion-list>
+
         <div v-else>
           <ion-list class="rondo-list">
-            <ion-item v-for="song in filteredFreeSongs" :key="song.id" lines="none" @click="$router.push('/song/' + song.id)">
+            <ion-item v-for="song in filteredFreeSongs" lines="none" @click="$router.push('/song/' + song.id)">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
@@ -38,7 +39,7 @@
             <ion-list-header @click="$router.push('/about')">
               In der&nbsp;<a>Vollversion</a>&nbsp;enthalten:
             </ion-list-header>
-            <ion-item v-for="song in filteredPaidSongs" :key="song.id" lines="none">
+            <ion-item v-for="song in filteredPaidSongs" lines="none">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
