@@ -15,7 +15,7 @@ class purchaseService {
   private initializeStore = () => {
     if (Capacitor.isNativePlatform()) {
       this.store = CdvPurchase.store;
-      this.store.verbosity = CdvPurchase.LogLevel.QUIET;
+      this.store.verbosity = CdvPurchase.LogLevel.INFO;
 
       this.store.error((err: unknown) => {
         console.error('Store Error ' + JSON.stringify(err));
@@ -93,13 +93,18 @@ class purchaseService {
       .catch(err => console.error('Error restoring purchases', err))
   }
 
+  public isBought(): boolean {
+    if (Capacitor.isNativePlatform() && this.store) {
+      return this.store.owned(PRODUCT_ID);
+    }
+    return false;
+  }
+
   private restorePurchases() {
-    let owned = this.store.owned(PRODUCT_ID);
+    let owned = this.isBought();
     console.log('Premium already buyed' + owned)
-    if (owned === true) {
-      AppState.setHasBought(true)
-    } else {
-      AppState.setHasBought(false)
+    if (owned) {
+      AppState.setHasBought(true);
     }
   }
 }

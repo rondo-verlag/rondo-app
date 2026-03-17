@@ -29,6 +29,16 @@
           <br />
         </div>
 
+        <div class="purchase-info">
+          <h4>Deine Kaufstatus</h4>
+          <div class="localState">
+            <b>Lokaler Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
+          </div>
+          <div class="localState">
+            <b>APP Store Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
+          </div>
+        </div>
+
         &mdash;<br />
         Der Rondo Verlag gibt seit den 1980er-Jahren das Schweizer Pfadi-Liederbuch &laquo;Rondo&raquo; heraus, das inzwischen in mehreren Auflagen und nun als App vorliegt. Daneben unterstützt der Verein Projekte, die Musik von und mit Jugendlichen fördern, eine Breitenwirkung entfalten und den Grundsätzen der Pfadi entsprechen.
 
@@ -189,5 +199,13 @@ export default defineComponent({
 a {
   color: darkorange;
   text-decoration: none;
+}
+
+.purchase-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: 1px solid darkorange;
 }
 </style>
