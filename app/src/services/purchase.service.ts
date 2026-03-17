@@ -18,7 +18,7 @@ class purchaseService {
       this.store.verbosity = CdvPurchase.LogLevel.INFO;
 
       this.store.error((err: unknown) => {
-        console.error('Store Error ' + JSON.stringify(err));
+        AppState.addPurchaseLog('Store Error: ' + JSON.stringify(err));
       });
 
       this.registerProducts();
@@ -26,9 +26,17 @@ class purchaseService {
       this.setupVerification();
 
       this.store.initialize()
-        .then(() => this.store.update())
-        .then(() => this.restore())
-        .catch(err => console.error('Store Initialization Error', err))
+        .then(() => {
+          AppState.addPurchaseLog('Store Initialized');
+          return this.store.update();
+        })
+        .then(() => {
+          AppState.addPurchaseLog('Store Updated');
+          return this.restore();
+        })
+        .catch(err => {
+          AppState.addPurchaseLog('Store Initialization Error: ' + JSON.stringify(err));
+        })
     } else {
       console.warn('Not running on native platform')
       return;
@@ -52,12 +60,14 @@ class purchaseService {
 
   private registerListeners() {
     this.store.when().approved((transaction) => {
+      AppState.addPurchaseLog('Transaction Approved: ' + transaction.productID);
       transaction.verify();
     })
   }
 
   private setupVerification() {
     this.store.when().verified((receipt) => {
+      AppState.addPurchaseLog('Receipt Verified: ' + receipt.id);
       if (receipt.id == PRODUCT_ID) {
         AppState.setHasBought(true)
       }
@@ -70,14 +80,18 @@ class purchaseService {
     this.restore()
 
     if (AppState.hasBought !== true) {
-      const offer = this.store.get(PRODUCT_ID)?.getOffer();
+      const product = this.store.get(PRODUCT_ID);
+      const offer = product?.getOffer();
       if (offer) {
+        AppState.addPurchaseLog('Ordering Product: ' + PRODUCT_ID);
         this.store.order(offer).then(() => {
-          console.log('Offer' + offer)
+          AppState.addPurchaseLog('Order placed: ' + PRODUCT_ID);
         }, (e: unknown) => {
           //Purchase error
-          console.error("Error on Buy " + JSON.stringify(e))
+          AppState.addPurchaseLog("Error on Buy: " + JSON.stringify(e));
         });
+      } else {
+        AppState.addPurchaseLog('No offer found for: ' + PRODUCT_ID);
       }
     }
   }
@@ -89,8 +103,9 @@ class purchaseService {
 
 
   private restorePurchasesIOS() {
+    AppState.addPurchaseLog('Restoring purchases (iOS)...');
     this.store.restorePurchases()
-      .catch(err => console.error('Error restoring purchases', err))
+      .catch(err => AppState.addPurchaseLog('Error restoring purchases: ' + JSON.stringify(err)))
   }
 
   public isBought(): boolean {
@@ -102,7 +117,7 @@ class purchaseService {
 
   private restorePurchases() {
     let owned = this.isBought();
-    console.log('Premium already buyed' + owned)
+    AppState.addPurchaseLog('Premium already owned: ' + owned);
     if (owned) {
       AppState.setHasBought(true);
     }

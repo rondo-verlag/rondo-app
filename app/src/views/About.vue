@@ -37,6 +37,18 @@
           <div class="localState">
             <b>APP Store Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
           </div>
+
+          <div v-if="purchaseLogs.length > 0" class="purchase-logs-container">
+            <div @click="logsExpanded = !logsExpanded" class="logs-header">
+              <b>Logs:</b>
+              <span class="expand-icon">{{ logsExpanded ? '▼' : '◀' }}</span>
+            </div>
+            <div v-if="logsExpanded" class="purchase-logs">
+              <div v-for="(log, index) in purchaseLogs" :key="index" class="log-entry">
+                {{ log }}
+              </div>
+            </div>
+          </div>
         </div>
 
         &mdash;<br />
@@ -153,6 +165,11 @@ export default defineComponent({
     Browserlink,
   },
   inject: ['appVersion'],
+  data() {
+    return {
+      logsExpanded: false,
+    };
+  },
   computed: {
     hasBought: {
       get(): boolean {
@@ -161,6 +178,9 @@ export default defineComponent({
       set(val: boolean): void {
         AppState.setHasBought(val);
       }
+    },
+    purchaseLogs(): string[] {
+      return AppState.purchaseLogs;
     }
   },
   mounted() {
@@ -207,5 +227,29 @@ a {
   padding-left: 10px;
   padding-bottom: 10px;
   border: 1px solid darkorange;
+}
+
+.purchase-logs-container {
+  margin-top: 15px;
+  border-top: 1px dashed #ccc;
+}
+
+.logs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.purchase-logs {
+  font-family: monospace;
+  overflow-y: auto;
+  padding-top: 5px;
+}
+
+.log-entry {
+  white-space: pre-wrap;
+  margin-bottom: 2px;
 }
 </style>
