@@ -30,7 +30,7 @@
         </div>
 
         <div class="purchase-info">
-          <h4>Deine Kaufstatus</h4>
+          <h4>Dein Kaufstatus</h4>
           <div class="localState">
             <b>Lokaler Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
           </div>
