@@ -19,7 +19,7 @@
     "build-android": "ionic capacitor build android"
   },
   "dependencies": {
-    "@awesome-cordova-plugins/core": "^8.1.0",
+    "@awesome-cordova-plugins/core": "^9.1.2",
     "@capacitor-community/keep-awake": "^8.0.0",
     "@capacitor/android": "8.3.0",
     "@capacitor/app": "^8.1.0",
