@@ -35,15 +35,17 @@
     <ion-content :fullscreen="true" v-show="section === 'text'">
       <div class="content-wrapper" :class="'orientation--' + orientation">
         <swiper
+          v-if="songs.length > 0"
+          :modules="[VirtualModule]"
           :slides-per-view="1"
           :space-between="0"
           :initial-slide="initialIndex"
-          @slideChange="slideChanged"
+          @slide-change="slideChanged"
           @swiper="setSwiperInstance"
           :width="windowWidth"
           :virtual="true"
         >
-          <swiper-slide v-for="(song, index) in songs" :key="song" :virtualIndex="index">
+          <swiper-slide v-for="(song, index) in songs" :key="song.id" :virtualIndex="index">
             <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
               <Songtext :song="song"></Songtext>
               <br>
@@ -94,25 +96,27 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import songdata from '../../public/assets/songdata/songs/song-index.json';
+import songdata from 'assets/songdata/songs/song-index.json';
 import { Insomnia } from '@ionic-native/insomnia';
 import { isPlatform } from '@ionic/vue';
 
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.scss';
+import 'swiper/css';
+import 'swiper/css/virtual';
+
 import ISong from '@/interfaces/ISong';
 
-import SwiperCore, { Virtual, Swiper as SwiperInstance } from 'swiper';
+import { Swiper as SwiperInstance } from 'swiper';
+import { Virtual as VirtualModule } from 'swiper/modules';
 import AppState from "@/AppState";
 import Songtext from "@/views/Songtext.vue";
 import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
+import { ScreenOrientation } from '@capacitor/screen-orientation';
 
 import MidiPlayer from 'web-midi-player';
 import { App } from "@capacitor/app";
 import PdfViewer from "@/views/PdfViewerComponent.vue";
 
-SwiperCore.use([Virtual]);
 
 export default defineComponent({
   name: 'Song',
@@ -173,6 +177,9 @@ export default defineComponent({
     useBackButton(10, () => {
       console.log('Suppress default back button event');
     });
+    return {
+      VirtualModule
+    };
   },
   computed: {
     hasBought(): boolean {
@@ -212,7 +219,9 @@ export default defineComponent({
     });
 
     // handle screen rotations
-    window.addEventListener('orientationchange', this.orientationChanged);
+    ScreenOrientation.addListener('screenOrientationChange', (orientation) => {
+      this.orientationChanged(orientation.type);
+    });
     this.orientationChanged();
   },
   unmounted() {
@@ -227,11 +236,12 @@ export default defineComponent({
     this.stopSong();
     this.stopChords();
     this.exitFullscreen();
-    window.removeEventListener('orientationchange', this.orientationChanged);
+    ScreenOrientation.removeAllListeners();
   },
   methods: {
-    orientationChanged: function() {
-      if (screen.orientation.type === 'landscape-primary' || screen.orientation.type === 'landscape-secondary') {
+    orientationChanged: async function(type?: string) {
+      const orientationType = type || (await ScreenOrientation.orientation()).type;
+      if (orientationType === 'landscape-primary' || orientationType === 'landscape-secondary') {
         this.orientation = 'landscape';
       } else {
         this.orientation = 'portrait';

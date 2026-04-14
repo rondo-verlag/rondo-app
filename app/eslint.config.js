@@ -6,5 +6,10 @@ module.exports = defineConfig([
       semi: "error",
       "prefer-const": "error",
     },
+    ignores: [
+      'ios/**/*',
+      'android/**/*',
+      'dist/**/*'
+    ]
   },
 ]);

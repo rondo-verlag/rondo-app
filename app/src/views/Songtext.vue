@@ -1,6 +1,6 @@
 <template>
   <div class="songtext">
-    <img :src="require('../../public/assets/songdata/songs/images/'+song.id+'.gif')" class="song-image" />
+    <img :src="'/assets/songdata/songs/images/'+song.id+'.gif'" class="song-image" />
     <div class="ion-padding">
       <h3 class="song-title">{{song.title}}</h3>
       <div class="page-numbers">

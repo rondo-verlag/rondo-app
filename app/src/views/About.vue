@@ -12,7 +12,7 @@
 
     <ion-content :fullscreen="true">
       <div style="background: #ffffff">
-        <img src="assets/songdata/images/about.png" style="width: 100%" />
+        <img src="/assets/songdata/images/about.png" style="width: 100%" />
       </div>
       <div class="about-container">
         <b>Das Rondo immer und überall dabei</b><br />
@@ -27,6 +27,28 @@
           <br />
           Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!<br />
           <br />
+        </div>
+
+        <div class="purchase-info">
+          <h4>Dein Kaufstatus</h4>
+          <div class="localState">
+            <b>Lokaler Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
+          </div>
+          <div class="localState">
+            <b>APP Store Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
+          </div>
+
+          <div v-if="purchaseLogs.length > 0" class="purchase-logs-container">
+            <div @click="logsExpanded = !logsExpanded" class="logs-header">
+              <b>Logs:</b>
+              <span class="expand-icon">{{ logsExpanded ? '▼' : '◀' }}</span>
+            </div>
+            <div v-if="logsExpanded" class="purchase-logs">
+              <div v-for="(log, index) in purchaseLogs" :key="index" class="log-entry">
+                {{ log }}
+              </div>
+            </div>
+          </div>
         </div>
 
         &mdash;<br />
@@ -143,6 +165,11 @@ export default defineComponent({
     Browserlink,
   },
   inject: ['appVersion'],
+  data() {
+    return {
+      logsExpanded: false,
+    };
+  },
   computed: {
     hasBought: {
       get(): boolean {
@@ -151,6 +178,9 @@ export default defineComponent({
       set(val: boolean): void {
         AppState.setHasBought(val);
       }
+    },
+    purchaseLogs(): string[] {
+      return AppState.purchaseLogs;
     }
   },
   mounted() {
@@ -189,5 +219,37 @@ export default defineComponent({
 a {
   color: darkorange;
   text-decoration: none;
+}
+
+.purchase-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: 1px solid darkorange;
+}
+
+.purchase-logs-container {
+  margin-top: 15px;
+  border-top: 1px dashed #ccc;
+}
+
+.logs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.purchase-logs {
+  font-family: monospace;
+  overflow-y: auto;
+  padding-top: 5px;
+}
+
+.log-entry {
+  white-space: pre-wrap;
+  margin-bottom: 2px;
 }
 </style>
