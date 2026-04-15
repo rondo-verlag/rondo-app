@@ -97,8 +97,8 @@ import {
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import songdata from 'assets/songdata/songs/song-index.json';
-import { Insomnia } from '@ionic-native/insomnia';
 import { isPlatform } from '@ionic/vue';
+import { KeepAwake } from '@capacitor-community/keep-awake';
 
 import 'swiper/css';
 import 'swiper/css/virtual';
@@ -230,7 +230,7 @@ export default defineComponent({
       this.playingChord = null;
     }
     if (this.isScrolling) {
-        Insomnia.allowSleepAgain();
+        KeepAwake.allowSleep();
         this.exitFullscreen();
     }
     this.stopSong();
@@ -306,11 +306,11 @@ export default defineComponent({
             return 80;
         }
     },
-    startAutoScroll: function() {
+    startAutoScroll: async function() {
         if (this.section != 'text') {
             return;
         }
-        Insomnia.keepAwake();
+        await KeepAwake.keepAwake();
         this.enterFullscreen();
         this.isScrolling = true;
         this.sameLastScrollPositionCounter = 10;
@@ -331,7 +331,7 @@ export default defineComponent({
         }, this.getScrollTimeout());
     },
     stopAutoScroll: function() {
-        Insomnia.allowSleepAgain();
+        KeepAwake.allowSleep();
         this.isScrolling = false;
         clearInterval(this.scrollTimer);
         this.lastScrollPosition = -1;
@@ -428,7 +428,7 @@ ion-footer {
   position: absolute;
 }
 
-.swiper-container {
+.swiper {
   height: 100%;
 }
 
