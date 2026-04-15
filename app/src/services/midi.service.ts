@@ -1,7 +1,7 @@
 import MidiPlayer from 'midi-player-js';
-import Soundfont, { InstrumentName } from 'soundfont-player';
+import { Soundfont } from 'smplr';
 
-const GM_INSTRUMENT_NAMES: Record<number, InstrumentName> = {
+const GM_INSTRUMENT_NAMES: Record<number, string> = {
   0: 'acoustic_grand_piano',
   1: 'bright_acoustic_piano',
   25: 'acoustic_guitar_nylon',
@@ -10,9 +10,9 @@ const GM_INSTRUMENT_NAMES: Record<number, InstrumentName> = {
 class MidiService {
   private audioContext: AudioContext | null = null;
   private player: InstanceType<typeof MidiPlayer.Player> | null = null;
-  private instruments: Record<number, any> = {};
+  private instruments: Record<number, Soundfont> = {};
   private channelPrograms: Record<number, number> = {};
-  private activeNotes: Record<string, any> = {};
+  private activeNotes: Record<string, () => void> = {};
 
   async play(midiUrl: string, onEnd: () => void): Promise<void> {
     this.stop();
@@ -25,15 +25,9 @@ class MidiService {
     }
 
     if (Object.keys(this.instruments).length === 0) {
-      await Promise.all(
-        Object.entries(GM_INSTRUMENT_NAMES).map(async ([prog, name]) => {
-          this.instruments[Number(prog)] = await Soundfont.instrument(
-            this.audioContext!,
-            name,
-            { nameToUrl: (n: string) => `/assets/soundfonts/${n}-mp3.js` }
-          );
-        })
-      );
+      Object.entries(GM_INSTRUMENT_NAMES).forEach(([prog, name]) => {
+        this.instruments[Number(prog)] = new Soundfont(this.audioContext!, { instrument: name });
+      });
     }
 
     const response = await fetch(midiUrl);
@@ -56,8 +50,8 @@ class MidiService {
       this.player.stop();
       this.player = null;
     }
-    Object.values(this.activeNotes).forEach((note: any) => {
-      try { note.stop(); } catch (_) { /* ignore */ }
+    Object.values(this.instruments).forEach((instrument) => {
+      try { instrument.stop(); } catch (_) { /* ignore */ }
     });
     this.activeNotes = {};
   }
@@ -70,16 +64,16 @@ class MidiService {
 
     if (event.name === 'Note on' && event.velocity > 0) {
       const key = `${event.channel}-${event.noteNumber}`;
-      if (this.activeNotes[key]) this.activeNotes[key].stop();
-      this.activeNotes[key] = instrument.play(
-        String(event.noteNumber),
-        this.audioContext.currentTime,
-        { gain: event.velocity / 127 }
-      );
+      if (this.activeNotes[key]) this.activeNotes[key]();
+      this.activeNotes[key] = instrument.start({
+        note: event.noteNumber,
+        time: this.audioContext.currentTime,
+        velocity: event.velocity,
+      });
     } else if (event.name === 'Note off' || (event.name === 'Note on' && event.velocity === 0)) {
       const key = `${event.channel}-${event.noteNumber}`;
       if (this.activeNotes[key]) {
-        this.activeNotes[key].stop();
+        this.activeNotes[key]();
         delete this.activeNotes[key];
       }
     } else if (event.name === 'Program Change') {
