@@ -64,7 +64,7 @@
     </ion-content>
 
     <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page" :class="'orientation--' + orientation">
-      <img id="page" :src="'/assets/songdata/songs/notes/'+currentSong.id+'.png'" />
+      <PdfViewer :src="`/assets/songdata/songs/notes/${currentSong.id}.pdf`" />
     </ion-content>
 
     <ion-footer>
@@ -115,6 +115,7 @@ import { ScreenOrientation } from '@capacitor/screen-orientation';
 
 import MidiPlayer from 'web-midi-player';
 import { App } from "@capacitor/app";
+import PdfViewer from "@/views/PdfViewerComponent.vue";
 
 
 export default defineComponent({
@@ -135,6 +136,7 @@ export default defineComponent({
     IonFooter,
     Swiper,
     SwiperSlide,
+    PdfViewer,
   },
   data(): {
     swiperInstance: SwiperInstance;
