@@ -9,154 +9,156 @@ import { defineComponent, onMounted, onUnmounted, ref, computed, nextTick, watch
 import { getDocument, type PDFDocumentProxy, GlobalWorkerOptions } from 'pdfjs-dist';
 import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 
-const pdfjsWorker = new Worker(workerUrl, { type: 'module' });
-GlobalWorkerOptions.workerPort = pdfjsWorker;
+GlobalWorkerOptions.workerPort = new Worker(workerUrl, { type: 'module' });
 
 export default defineComponent({
   name: 'PdfViewer',
-  props: {
-    src: { type: String, required: true }
-  },
-  setup(props) {
+  props: { src: { type: String, required: true } },
+  emits: ['fullscreen'],
+  setup(props, { emit }) {
     const container = ref<HTMLDivElement | null>(null);
-    const inner = ref<HTMLDivElement | null>(null);
-
-    const zoom = ref(1);
-    const panX = ref(0);
+    const inner    = ref<HTMLDivElement | null>(null);
+    const zoom     = ref(1);
+    const panX     = ref(0);
     const naturalHeight = ref(0);
 
     const viewerStyle = computed(() => ({
       height: naturalHeight.value > 0 ? `${naturalHeight.value * zoom.value}px` : 'auto',
     }));
-
     const innerStyle = computed(() => ({
       transform: `translateX(${panX.value}px) scale(${zoom.value})`,
       transformOrigin: 'top left',
     }));
 
-    // --- PDF rendering ---
+    let prevFs = false;
+    watch(zoom, z => {
+      const fs = z > 1;
+      if (fs !== prevFs) { prevFs = fs; emit('fullscreen', fs); }
+    });
+
+    // --- Rendering ---
 
     let currentPdf: PDFDocumentProxy | null = null;
+    let renderGen = 0;
+
+    const renderPage = async (pdf: PDFDocumentProxy, num: number, cw: number, dpr: number) => {
+      const page = await pdf.getPage(num);
+      const base = page.getViewport({ scale: 1 });
+      const viewport = page.getViewport({ scale: (cw || base.width) / base.width * dpr * 2 });
+      const canvas = document.createElement('canvas');
+      canvas.width  = Math.floor(viewport.width);
+      canvas.height = Math.floor(viewport.height);
+      canvas.style.cssText = 'display:block;width:100%;height:auto';
+      await page.render({ canvasContext: canvas.getContext('2d')!, viewport, canvas }).promise;
+      return canvas;
+    };
 
     const renderPdf = async () => {
       if (!props.src || !inner.value) return;
-      inner.value.innerHTML = '';
+      const gen = ++renderGen;
+      const pdf = await getDocument({ url: props.src }).promise;
+      if (gen !== renderGen) { pdf.destroy(); return; }
 
-      currentPdf?.destroy();
-      currentPdf = null;
-
-      const task = getDocument({ url: props.src });
-      const pdf: PDFDocumentProxy = await task.promise;
-      currentPdf = pdf;
-
-      const containerWidth = container.value?.clientWidth ?? 0;
+      const cw  = container.value?.clientWidth ?? 0;
       const dpr = window.devicePixelRatio || 1;
+      const canvases = await Promise.all(
+        Array.from({ length: pdf.numPages }, (_, i) => renderPage(pdf, i + 1, cw, dpr))
+      );
+      if (gen !== renderGen || !inner.value) { pdf.destroy(); return; }
 
-      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-        const page = await pdf.getPage(pageNum);
-        const baseViewport = page.getViewport({ scale: 1 });
-        const cssScale = (containerWidth || baseViewport.width) / baseViewport.width;
-        const viewport = page.getViewport({ scale: cssScale * dpr * 2 });
-
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d')!;
-        canvas.width = Math.floor(viewport.width);
-        canvas.height = Math.floor(viewport.height);
-        canvas.style.display = 'block';
-        canvas.style.width = '100%';
-        canvas.style.height = 'auto';
-        inner.value.appendChild(canvas);
-
-        await page.render({ canvasContext: ctx, viewport, canvas }).promise;
-      }
+      const frag = document.createDocumentFragment();
+      canvases.forEach(c => frag.appendChild(c));
+      currentPdf?.destroy();
+      currentPdf = pdf;
+      inner.value.innerHTML = '';
+      inner.value.appendChild(frag);
 
       await nextTick();
       naturalHeight.value = inner.value?.scrollHeight ?? 0;
     };
 
-    // --- Touch / pinch handling ---
+    // --- Touch ---
 
-    let touchStartZoom = 1;
-    let touchStartPanX = 0;
-    let touchStartDist = 0;
-    let touchStartMidX = 0;
-
-    let singleStartX = 0;
-    let singleStartY = 0;
-    let singleStartPanX = 0;
-    let panDirection: 'horizontal' | 'vertical' | null = null;
-
-    function getTouchDist(t: TouchList) {
-      const dx = t[0].clientX - t[1].clientX;
-      const dy = t[0].clientY - t[1].clientY;
-      return Math.sqrt(dx * dx + dy * dy);
-    }
-
-    function clampPanX(px: number, z: number) {
+    const clamp = (px: number, z: number) => {
       const w = container.value?.clientWidth ?? 0;
       return Math.max(w * (1 - z), Math.min(0, px));
-    }
+    };
+
+    // pinch state
+    let tz = 1, tpx = 0, td = 0, tmx = 0;
+    // single-touch state (sx/sy also serve as tap-start)
+    let sx = 0, sy = 0, spx = 0;
+    let dir: 'h' | 'v' | null = null;
+    let lastTap = 0, isTap = false;
 
     function onTouchStart(e: TouchEvent) {
       if (e.touches.length === 2) {
-        touchStartZoom = zoom.value;
-        touchStartPanX = panX.value;
-        touchStartDist = getTouchDist(e.touches);
-        touchStartMidX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-        panDirection = null;
+        tz = zoom.value; tpx = panX.value;
+        td  = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+        tmx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        isTap = false; dir = null;
       } else if (e.touches.length === 1) {
-        singleStartX = e.touches[0].clientX;
-        singleStartY = e.touches[0].clientY;
-        singleStartPanX = panX.value;
-        panDirection = null;
+        sx = e.touches[0].clientX; sy = e.touches[0].clientY;
+        spx = panX.value; isTap = true; dir = null;
       }
     }
 
     function onTouchMove(e: TouchEvent) {
       if (e.touches.length === 2) {
-        e.preventDefault();
-        const currentDist = getTouchDist(e.touches);
-        const currentMidX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-
-        let newZoom = touchStartZoom * (currentDist / touchStartDist);
-        newZoom = Math.max(1, newZoom);
-
-        const midInContent = (touchStartMidX - touchStartPanX) / touchStartZoom;
-        zoom.value = newZoom;
-        panX.value = clampPanX(currentMidX - midInContent * newZoom, newZoom);
-      } else if (e.touches.length === 1 && zoom.value > 1) {
-        const dx = e.touches[0].clientX - singleStartX;
-        const dy = e.touches[0].clientY - singleStartY;
-
-        if (panDirection === null && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) {
-          panDirection = Math.abs(dx) > Math.abs(dy) ? 'horizontal' : 'vertical';
-        }
-
-        if (panDirection === 'horizontal') {
-          e.preventDefault();
-          panX.value = clampPanX(singleStartPanX + dx, zoom.value);
-        }
-        // vertical: no preventDefault → ion-content scrolls normally
+        isTap = false; e.preventDefault();
+        const d   = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
+        const mx  = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        const nz  = Math.max(1, tz * d / td);
+        zoom.value = nz;
+        panX.value = clamp(mx - (tmx - tpx) / tz * nz, nz);
+      } else if (e.touches.length === 1) {
+        const dx = e.touches[0].clientX - sx, dy = e.touches[0].clientY - sy;
+        if (Math.abs(dx) > 8 || Math.abs(dy) > 8) isTap = false;
+        if (!dir && (Math.abs(dx) > 4 || Math.abs(dy) > 4))
+          dir = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
+        if (dir === 'h' && zoom.value > 1) { e.preventDefault(); panX.value = clamp(spx + dx, zoom.value); }
       }
     }
 
+    function onTouchEnd(e: TouchEvent) {
+      if (e.changedTouches.length !== 1 || e.touches.length || !isTap) return;
+      const now = Date.now(), t = e.changedTouches[0];
+      if (now - lastTap < 300) {
+        if (zoom.value > 1) { zoom.value = 1; panX.value = 0; }
+        else { const cx = t.clientX; zoom.value = 2; panX.value = clamp(cx - cx * 2, 2); }
+        lastTap = 0;
+      } else { lastTap = now; }
+    }
+
+    // --- Resize ---
+
+    let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    let lastW = 0;
+    const ro = new ResizeObserver(([e]) => {
+      const w = Math.round(e.contentRect.width);
+      if (w === lastW) return;
+      lastW = w;
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(async () => { zoom.value = 1; panX.value = 0; await renderPdf(); }, 150);
+    });
+
     onMounted(async () => {
       await renderPdf();
-      container.value?.addEventListener('touchstart', onTouchStart, { passive: false });
-      container.value?.addEventListener('touchmove', onTouchMove, { passive: false });
+      lastW = container.value?.clientWidth ?? 0;
+      ro.observe(container.value!);
+      const el = container.value!;
+      el.addEventListener('touchstart', onTouchStart, { passive: false });
+      el.addEventListener('touchmove',  onTouchMove,  { passive: false });
+      el.addEventListener('touchend',   onTouchEnd,   { passive: true  });
     });
 
     onUnmounted(() => {
-      container.value?.removeEventListener('touchstart', onTouchStart);
-      container.value?.removeEventListener('touchmove', onTouchMove);
+      ro.disconnect();
+      if (resizeTimer) clearTimeout(resizeTimer);
       currentPdf?.destroy();
     });
 
-    watch(() => props.src, async () => {
-      zoom.value = 1;
-      panX.value = 0;
-      await renderPdf();
-    });
+    watch(() => props.src, async () => { zoom.value = 1; panX.value = 0; await renderPdf(); });
 
     return { container, inner, viewerStyle, innerStyle };
   }
@@ -167,12 +169,12 @@ export default defineComponent({
 .pdf-viewer {
   width: 100%;
   background: white;
-  overflow-x: hidden; /* clip horizontal overflow from zoom */
-  overflow-y: visible; /* let content grow downward so ion-content can scroll it */
+  overflow-x: hidden;
+  overflow-y: visible;
   touch-action: pan-y;
 }
-
 .pdf-inner {
   width: 100%;
+  will-change: transform;
 }
 </style>
