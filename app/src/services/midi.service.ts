@@ -26,7 +26,7 @@ class MidiService {
 
     if (Object.keys(this.instruments).length === 0) {
       Object.entries(GM_INSTRUMENT_NAMES).forEach(([prog, name]) => {
-        this.instruments[Number(prog)] = new Soundfont(this.audioContext!, { instrument: name });
+        this.instruments[Number(prog)] = new Soundfont(this.audioContext!, { instrument: name, volume: 126 });
       });
     }
 
