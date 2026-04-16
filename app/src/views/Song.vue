@@ -114,7 +114,7 @@ import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
 import { ScreenOrientation } from '@capacitor/screen-orientation';
 
-import MidiPlayer from 'web-midi-player';
+import midiService from '@/services/midi.service';
 import { App } from "@capacitor/app";
 import PdfViewer from "@/views/PdfViewerComponent.vue";
 
@@ -152,7 +152,6 @@ export default defineComponent({
     currentSongId: number;
     initialIndex: number;
     playingChord: HTMLAudioElement | null;
-    midiPlayer: any;
     windowWidth: number;
     orientation: 'portrait' | 'landscape';
     swiperKey: number;
@@ -170,7 +169,6 @@ export default defineComponent({
       currentSongId: 0,
       initialIndex: 0,
       playingChord: null,
-      midiPlayer: null,
       windowWidth: 0,
       orientation: 'portrait',
       swiperKey: 0,
@@ -374,23 +372,19 @@ export default defineComponent({
         this.playingChord.pause();
       }
     },
-    startSong: function() {
+    startSong: async function() {
       this.stopSong();
-      this.midiPlayer = new MidiPlayer({ patchUrl: '/assets/midi-patches/' });
-      this.midiPlayer.play({ url: '/assets/songdata/songs/midi/' + this.currentSongId + '.mid' });
       this.isPlaying = true;
-      const eventLogger = (payload: any) => {
-        if (payload.event === 'MIDI_END') {
-          this.stopSong();
-        }
+      try {
+        const midiUrl = '/assets/songdata/songs/midi/' + this.currentSongId + '.mid';
+        await midiService.play(midiUrl, () => this.stopSong());
+      } catch (e) {
+        console.error('Failed to start song', e);
+        this.isPlaying = false;
       }
-      this.midiPlayer.setLogger({ eventLogger });
     },
     stopSong: function() {
-      if (this.midiPlayer !== null) {
-        this.midiPlayer.stop();
-        this.midiPlayer = null;
-      }
+      midiService.stop();
       this.isPlaying = false;
     },
   }
