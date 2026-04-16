@@ -1,6 +1,6 @@
 {
   "name": "songbook-app",
-  "version": "4.1.3",
+  "version": "4.2.0",
   "private": true,
   "description": "A Scouting Songbook App",
   "author": "Rondo Verlag; Demian Holderegger",
@@ -34,6 +34,7 @@
     "cordova-plugin-purchase": "^13.12.1",
     "midi-player-js": "^2.0.17",
     "smplr": "^0.20.0",
+    "pdfjs-dist": "^5.6.205",
     "swiper": "^12.0.3",
     "vue": "^3.5.32",
     "vue-router": "^5.0.4"

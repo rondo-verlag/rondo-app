@@ -36,6 +36,7 @@
       <div class="content-wrapper" :class="'orientation--' + orientation">
         <swiper
           v-if="songs.length > 0"
+          :key="swiperKey"
           :modules="[VirtualModule]"
           :slides-per-view="1"
           :space-between="0"
@@ -64,7 +65,7 @@
     </ion-content>
 
     <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page" :class="'orientation--' + orientation">
-      <img id="page" :src="'/assets/songdata/songs/notes/'+currentSong.id+'.png'" />
+      <PdfViewer :src="`/assets/songdata/songs/notes/${currentSong.id}.pdf`" @fullscreen="onNotesFullscreen" />
     </ion-content>
 
     <ion-footer>
@@ -115,6 +116,7 @@ import { ScreenOrientation } from '@capacitor/screen-orientation';
 
 import midiService from '@/services/midi.service';
 import { App } from "@capacitor/app";
+import PdfViewer from "@/views/PdfViewerComponent.vue";
 
 
 export default defineComponent({
@@ -135,6 +137,7 @@ export default defineComponent({
     IonFooter,
     Swiper,
     SwiperSlide,
+    PdfViewer,
   },
   data(): {
     swiperInstance: SwiperInstance;
@@ -151,6 +154,7 @@ export default defineComponent({
     playingChord: HTMLAudioElement | null;
     windowWidth: number;
     orientation: 'portrait' | 'landscape';
+    swiperKey: number;
   } {
     return {
       swiperInstance: null,
@@ -167,6 +171,7 @@ export default defineComponent({
       playingChord: null,
       windowWidth: 0,
       orientation: 'portrait',
+      swiperKey: 0,
     }
   },
   setup() {
@@ -242,13 +247,14 @@ export default defineComponent({
       } else {
         this.orientation = 'portrait';
       }
-      this.windowWidth = window.innerWidth;
+      // Hide swiper during orientation animation, then update width once after layout settles
       setTimeout(() => {
         this.windowWidth = window.innerWidth;
-      }, 10)
-      setTimeout(() => {
-        this.windowWidth = window.innerWidth;
-      }, 500)
+        if (this.swiperInstance) {
+          this.initialIndex = this.swiperInstance.activeIndex;
+        }
+        this.swiperKey++;
+      }, 350);
     },
     slideChanged: function() {
       if (this.swiperInstance) {
@@ -339,6 +345,13 @@ export default defineComponent({
           // only for ios, there is a bug in android
           StatusBar.show();
         }
+    },
+    onNotesFullscreen: function(isFullscreen: boolean) {
+      if (isFullscreen) {
+        this.enterFullscreen();
+      } else {
+        this.exitFullscreen();
+      }
     },
     enterFullscreen: function() {
         document.body.classList.add('rondo-fullscreen');
