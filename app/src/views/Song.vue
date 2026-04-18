@@ -223,6 +223,7 @@ export default defineComponent({
     ScreenOrientation.addListener('screenOrientationChange', (orientation) => {
       this.orientationChanged(orientation.type);
     });
+    window.addEventListener('keydown', this.handleSongtextArrowScroll);
     this.orientationChanged();
   },
   unmounted() {
@@ -237,9 +238,35 @@ export default defineComponent({
     this.stopSong();
     this.stopChords();
     this.exitFullscreen();
+    window.removeEventListener('keydown', this.handleSongtextArrowScroll);
     ScreenOrientation.removeAllListeners();
   },
   methods: {
+    handleSongtextArrowScroll: function(event: KeyboardEvent) {
+      if (this.section !== 'text') {
+        return;
+      }
+
+      const target = event.target as HTMLElement | null;
+      if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)) {
+        return;
+      }
+
+      this.scrollElement = document.querySelector('.swiper-slide-active .scrollable');
+      if (!this.scrollElement) {
+        return;
+      }
+
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        this.scrollDown();
+        this.scrollBy(120);
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        this.scrollUp();
+        this.scrollBy(-120);
+      }
+    },
     orientationChanged: async function(type?: string) {
       const orientationType = type || (await ScreenOrientation.orientation()).type;
       if (orientationType === 'landscape-primary' || orientationType === 'landscape-secondary') {
