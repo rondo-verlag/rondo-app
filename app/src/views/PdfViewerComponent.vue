@@ -7,9 +7,9 @@
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, ref, computed, nextTick, watch } from 'vue';
 import { getDocument, type PDFDocumentProxy, GlobalWorkerOptions } from 'pdfjs-dist';
-import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+import PdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?worker';
 
-GlobalWorkerOptions.workerPort = new Worker(workerUrl, { type: 'module' });
+GlobalWorkerOptions.workerPort = new PdfjsWorker();
 
 export default defineComponent({
   name: 'PdfViewer',

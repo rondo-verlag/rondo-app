@@ -11,6 +11,9 @@ export default defineConfig({
     vue(),
     legacy()
   ],
+  worker: {
+    format: 'iife',
+  },
   define: {
     'process.env': {}
   },
