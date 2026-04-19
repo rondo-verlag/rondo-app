@@ -1,3 +1,17 @@
+// Polyfill for Map.prototype.getOrInsertComputed (used by pdfjs-dist 5.x, not yet in iOS WKWebView)
+if (!('getOrInsertComputed' in Map.prototype)) {
+  Object.defineProperty(Map.prototype, 'getOrInsertComputed', {
+    value: function<K, V>(this: Map<K, V>, key: K, callbackfn: (key: K) => V): V {
+      if (this.has(key)) return this.get(key) as V;
+      const value = callbackfn(key);
+      this.set(key, value);
+      return value;
+    },
+    writable: true,
+    configurable: true,
+  });
+}
+
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
