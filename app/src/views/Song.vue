@@ -14,6 +14,15 @@
           <ion-button ion-button @click="toggleChords()">
             <i class="icon rondo-icon-show-chord"></i>
           </ion-button>
+          <template v-if="chordsVisible">
+            <ion-button ion-button @click="adjustTranspose(-1)">
+              <span class="transpose-btn">−</span>
+            </ion-button>
+            <span class="transpose-indicator">{{transposeOffset > 0 ? '+' + transposeOffset : transposeOffset}}</span>
+            <ion-button ion-button @click="adjustTranspose(1)">
+              <span class="transpose-btn">+</span>
+            </ion-button>
+          </template>
           <ion-button ion-button @click="startAutoScroll()" v-if="!isScrolling">
             <i class="icon rondo-icon-scroll"></i>
           </ion-button>
@@ -48,7 +57,7 @@
         >
           <swiper-slide v-for="(song, index) in songs" :key="song.id" :virtualIndex="index">
             <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
-              <Songtext :song="song"></Songtext>
+              <Songtext :song="song" :transpose-offset="transposeOffset"></Songtext>
               <br>
             </ScrollableContent>
           </swiper-slide>
@@ -155,6 +164,8 @@ export default defineComponent({
     windowWidth: number;
     orientation: 'portrait' | 'landscape';
     swiperKey: number;
+    chordsVisible: boolean;
+    transposeOffset: number;
   } {
     return {
       swiperInstance: null,
@@ -172,6 +183,8 @@ export default defineComponent({
       windowWidth: 0,
       orientation: 'portrait',
       swiperKey: 0,
+      chordsVisible: false,
+      transposeOffset: 0,
     }
   },
   setup() {
@@ -298,7 +311,11 @@ export default defineComponent({
     toggleChords: function() {
         if (this.section == 'text') {
             document.body.classList.toggle('rondo-show-chords');
+            this.chordsVisible = document.body.classList.contains('rondo-show-chords');
         }
+    },
+    adjustTranspose: function(delta: number) {
+        this.transposeOffset = Math.max(-6, Math.min(6, this.transposeOffset + delta));
     },
     goBack: async function () {
         if (this.section === 'text') {
@@ -431,9 +448,10 @@ ion-footer {
   transition: bottom 0.5s;
 }
 
-.rondo-header-buttons-right i.icon {
+.rondo-header-buttons-right i.icon,
+.rondo-header-buttons-right .transpose-btn {
   font-size: 28px;
-    color: wheat;
+  color: wheat;
 }
 
 .rondo-tabs {
@@ -487,6 +505,12 @@ ion-footer {
 
 .rondo-show-chords .rondo-header-buttons-right .icon.rondo-icon-show-chord {
   color: darkorange !important;
+}
+
+.rondo-header-buttons-right .transpose-indicator {
+  color: darkorange;
+  font-size: 14px;
+  pointer-events: none;
 }
 
 .chord-list {

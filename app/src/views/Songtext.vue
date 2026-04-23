@@ -25,11 +25,55 @@
 import { defineComponent } from 'vue';
 import Browserlink from "@/views/Browserlink.vue";
 
+// Chord transposition utilities (German notation)
+// Roots ordered longest-first so the parser always matches the most specific root
+type ChordRoot = { name: string; semi: number };
+
+const ROOTS: ChordRoot[] = [
+  { name: 'Gis', semi: 8 },
+  { name: 'Fis', semi: 6 },
+  { name: 'Cis', semi: 1 },
+  { name: 'Dis', semi: 3 },
+  { name: 'Ais', semi: 10 },
+  { name: 'Es',  semi: 3 },
+  { name: 'As',  semi: 8 },
+  { name: 'Ab',  semi: 8 },
+  { name: 'Db',  semi: 1 },
+  { name: 'Eb',  semi: 3 },
+  { name: 'Hb',  semi: 10 },
+  { name: 'A',   semi: 9 },
+  { name: 'B',   semi: 10 },
+  { name: 'C',   semi: 0 },
+  { name: 'D',   semi: 2 },
+  { name: 'E',   semi: 4 },
+  { name: 'F',   semi: 5 },
+  { name: 'G',   semi: 7 },
+  { name: 'H',   semi: 11 },
+];
+
+// Preferred output name for each semitone (German notation)
+const SEMITONE_TO_ROOT = ['C', 'Cis', 'D', 'Es', 'E', 'F', 'Fis', 'G', 'Gis', 'A', 'B', 'H'];
+
+function transposeChord(chordName: string, offset: number): string {
+  if (offset === 0) return chordName;
+  for (const root of ROOTS) {
+    if (chordName.startsWith(root.name)) {
+      const newSemi = ((root.semi + offset) % 12 + 12) % 12;
+      return SEMITONE_TO_ROOT[newSemi] + chordName.slice(root.name.length);
+    }
+  }
+  return chordName;
+}
+
 export default defineComponent({
   name: 'Songtext',
   components: { Browserlink },
   props: {
-    song: Object
+    song: Object,
+    transposeOffset: {
+      type: Number,
+      default: 0,
+    },
   },
   data() {
     return {
@@ -61,11 +105,44 @@ export default defineComponent({
       return pages.join('&nbsp;|&nbsp;');
     }
   },
+  watch: {
+    html() {
+      this.$nextTick(() => {
+        this.initChordOriginals();
+        this.applyTranspose();
+      });
+    },
+    transposeOffset() {
+      this.applyTranspose();
+    },
+  },
   mounted: function() {
     fetch('/assets/songdata/songs/html/' + this.song.id + '.html')
       .then(response => response.text())
       .then(data => this.html = data);
-  }
+  },
+  methods: {
+    initChordOriginals() {
+      const container = (this.$el as HTMLElement)?.querySelector('.song-html');
+      if (!container) return;
+      container.querySelectorAll('.chord span').forEach((el) => {
+        const span = el as HTMLElement;
+        if (!span.dataset.original) {
+          span.dataset.original = span.textContent || '';
+        }
+      });
+    },
+    applyTranspose() {
+      const container = (this.$el as HTMLElement)?.querySelector('.song-html');
+      if (!container) return;
+      const offset = this.transposeOffset as number;
+      container.querySelectorAll('.chord span').forEach((el) => {
+        const span = el as HTMLElement;
+        const original = span.dataset.original || span.textContent || '';
+        span.textContent = transposeChord(original, offset);
+      });
+    },
+  },
 });
 </script>
 
