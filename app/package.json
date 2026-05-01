@@ -29,7 +29,7 @@
     "@capacitor/preferences": "^8.0.1",
     "@capacitor/screen-orientation": "^8.0.1",
     "@capacitor/status-bar": "^8.0.2",
-    "@ionic/vue": "^8.8.4",
+    "@ionic/vue": "^8.8.5",
     "@ionic/vue-router": "^8.8.4",
     "cordova-plugin-purchase": "^13.12.1",
     "midi-player-js": "^2.0.17",
