@@ -54,7 +54,7 @@
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
     "vitest": "^4.1.5",
-    "vue-tsc": "^3.2.7"
+    "vue-tsc": "^3.3.3"
   },
   "homepage": "https://rondo-verlag.ch"
 }
