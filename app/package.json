@@ -35,7 +35,7 @@
     "midi-player-js": "^2.0.17",
     "smplr": "^1.0.0",
     "pdfjs-dist": "^5.6.205",
-    "swiper": "^12.2.0",
+    "swiper": "^14.0.1",
     "vue": "^3.5.33",
     "vue-router": "^5.0.6"
   },
