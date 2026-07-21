@@ -29,8 +29,8 @@
     "@capacitor/preferences": "^8.0.1",
     "@capacitor/screen-orientation": "^8.0.1",
     "@capacitor/status-bar": "^8.0.2",
-    "@ionic/vue": "^8.8.11",
-    "@ionic/vue-router": "^8.8.11",
+    "@ionic/vue": "^8.8.12",
+    "@ionic/vue-router": "^8.8.12",
     "cordova-plugin-purchase": "^13.12.1",
     "midi-player-js": "^2.0.17",
     "smplr": "^1.0.0",
@@ -54,7 +54,7 @@
     "typescript": "~5.9.3",
     "vite": "^7.3.5",
     "vitest": "^4.1.9",
-    "vue-tsc": "^3.3.5"
+    "vue-tsc": "^3.3.6"
   },
   "homepage": "https://rondo-verlag.ch"
 }
