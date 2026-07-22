@@ -31,7 +31,7 @@
     "@capacitor/status-bar": "^8.0.3",
     "@ionic/vue": "^8.8.14",
     "@ionic/vue-router": "^8.8.14",
-    "cordova-plugin-purchase": "^13.12.1",
+    "cordova-plugin-purchase": "^13.13.1",
     "midi-player-js": "^2.0.17",
     "smplr": "^1.0.0",
     "pdfjs-dist": "^6.1.200",
@@ -52,7 +52,7 @@
     "sass": "^1.101.3",
     "terser": "^5.49.0",
     "typescript": "~5.9.3",
-    "vite": "^7.3.5",
+    "vite": "^7.3.6",
     "vitest": "^4.1.10",
     "vue-tsc": "^3.3.7"
   },

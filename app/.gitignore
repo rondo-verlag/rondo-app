@@ -24,9 +24,9 @@ npm-debug.log*
 /.versions
 /.vscode/*
 !/.vscode/extensions.json
-/coverage
-/dist
-/node_modules
-/platforms
-/plugins
-/www
+/app/coverage
+/app/dist
+/app/node_modules
+/app/platforms
+/app/plugins
+/app/www
