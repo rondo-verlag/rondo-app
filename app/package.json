@@ -34,7 +34,7 @@
     "cordova-plugin-purchase": "^13.13.1",
     "midi-player-js": "^2.0.17",
     "smplr": "^1.0.0",
-    "pdfjs-dist": "^6.1.200",
+    "pdfjs-dist": "^6.2.108",
     "swiper": "^14.0.7",
     "vue": "^3.5.33",
     "vue-router": "^5.0.6"
