@@ -36,7 +36,7 @@
     "smplr": "^1.0.0",
     "pdfjs-dist": "^6.2.108",
     "swiper": "^14.0.7",
-    "vue": "^3.5.33",
+    "vue": "^3.5.42",
     "vue-router": "^5.0.6"
   },
   "devDependencies": {
