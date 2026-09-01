@@ -44,7 +44,7 @@
     "@vitejs/plugin-legacy": "^7.2.1",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/eslint-config-typescript": "^14.9.0",
-    "@vue/test-utils": "^2.4.11",
+    "@vue/test-utils": "^2.5.0",
     "cypress": "^15.21.1",
     "eslint": "^10.8.0",
     "eslint-plugin-vue": "^10.10.0",
