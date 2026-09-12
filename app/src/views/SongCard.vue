@@ -49,7 +49,7 @@
           <swiper-slide v-for="(song, index) in songs" :key="song.id" :virtualIndex="index">
             <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
               <Songtext :song="song"></Songtext>
-              <br>
+              <br />
             </ScrollableContent>
           </swiper-slide>
         </swiper>
@@ -109,7 +109,7 @@ import ISong from '@/interfaces/ISong';
 import { Swiper as SwiperInstance } from 'swiper';
 import { Virtual as VirtualModule } from 'swiper/modules';
 import AppState from "@/AppState";
-import Songtext from "@/views/Songtext.vue";
+import SongText from "@/views/SongText.vue";
 import ScrollableContent from "@/views/ScrollableContent.vue";
 import { StatusBar } from '@capacitor/status-bar';
 import { ScreenOrientation } from '@capacitor/screen-orientation';
@@ -123,7 +123,7 @@ export default defineComponent({
   name: 'Song',
   components: {
     ScrollableContent,
-    Songtext,
+    Songtext: SongText,
     IonContent,
     IonHeader,
     IonPage,
