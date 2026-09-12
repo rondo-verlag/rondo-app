@@ -76,6 +76,9 @@ export default defineComponent({
     theme(): AppTheme {
       return AppState.theme;
     },
+    autoScrollSpeed(): number {
+      return AppState.autoScrollSpeed;
+    },
   },
   methods: {
     setTheme(theme: AppTheme) {

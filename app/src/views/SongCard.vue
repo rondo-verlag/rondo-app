@@ -400,11 +400,10 @@ export default defineComponent({
         }
     },
     getScrollTimeout: function() {
-        if (document.body.classList.contains('rondo-show-chords')) {
-            return 40
-        } else {
-            return 80;
-        }
+        const speed = AppState.autoScrollSpeed || 25;
+        console.log(speed)
+        const baseTimeout = document.body.classList.contains('rondo-show-chords') ? 40 : 80;
+        return Math.max(10, Math.round(baseTimeout * (5 / speed)));
     },
     startAutoScroll: async function() {
         if (this.section != 'text') {

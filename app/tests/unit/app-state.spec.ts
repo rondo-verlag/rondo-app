@@ -27,4 +27,26 @@ describe('AppState', () => {
     AppState.setTheme('system');
     expect(AppState.theme).toBe('system');
   });
+
+  it('updates autoScrollSpeed and clamps to range 1-10', () => {
+    AppState.setAutoScrollSpeed(7);
+    expect(AppState.autoScrollSpeed).toBe(7);
+
+    AppState.setAutoScrollSpeed(1);
+    expect(AppState.autoScrollSpeed).toBe(1);
+
+    AppState.setAutoScrollSpeed(10);
+    expect(AppState.autoScrollSpeed).toBe(10);
+
+    // Clamping values outside 1-10
+    AppState.setAutoScrollSpeed(0);
+    expect(AppState.autoScrollSpeed).toBe(1);
+
+    AppState.setAutoScrollSpeed(15);
+    expect(AppState.autoScrollSpeed).toBe(10);
+
+    // Fallback on NaN
+    AppState.setAutoScrollSpeed(NaN);
+    expect(AppState.autoScrollSpeed).toBe(5);
+  });
 });

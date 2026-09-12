@@ -51,7 +51,7 @@ describe('App Components', () => {
     expect(wrapper.text()).toContain('Über das Rondo');
   });
 
-  it('renders ViewSettingsCard with theme toggle buttons', () => {
+  it('renders ViewSettingsCard with theme toggle buttons and scroll speed controls', async () => {
     const wrapper = mount(ViewSettingsCard, {
       global: {
         stubs: {
@@ -69,6 +69,25 @@ describe('App Components', () => {
     expect(wrapper.text()).toContain('System');
     expect(wrapper.text()).toContain('Hell');
     expect(wrapper.text()).toContain('Dunkel');
+    expect(wrapper.text()).toContain('Automatische Scroll-Geschwindigkeit');
+
+    const slider = wrapper.find<HTMLInputElement>('input.speed-slider');
+    const input = wrapper.find<HTMLInputElement>('input.speed-input');
+
+    expect(slider.exists()).toBe(true);
+    expect(input.exists()).toBe(true);
+    expect(slider.attributes('min')).toBe('1');
+    expect(slider.attributes('max')).toBe('10');
+    expect(input.attributes('min')).toBe('1');
+    expect(input.attributes('max')).toBe('10');
+
+    // Test slider change
+    await slider.setValue('8');
+    expect(input.element.value).toBe('8');
+
+    // Test text input change
+    await input.setValue('3');
+    expect(slider.element.value).toBe('3');
   });
 
   it('renders BrowserLink correctly', () => {
