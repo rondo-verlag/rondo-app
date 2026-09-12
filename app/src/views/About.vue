@@ -104,7 +104,7 @@
         Aramis / Liam Wirz<br />
         <br />
 
-        <h4>App:</h4>
+        <h4>App & Software:</h4>
         <b>Fäger / Demian Holderegger</b><br />
         Vento / Caspar Brenneisen<br />
         Rondo / Valerio Thrier<br />
