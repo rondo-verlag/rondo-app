@@ -1,7 +1,7 @@
 {
   "name": "songbook-app",
   "private": true,
-  "version": "2026.07.1",
+  "version": "2026.09.1",
   "description": "A Scouting Songbook App",
   "author": "Rondo Verlag; Demian Holderegger",
   "scripts": {
