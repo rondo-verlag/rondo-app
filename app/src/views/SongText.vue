@@ -23,11 +23,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Browserlink from "@/views/Browserlink.vue";
+import BrowserLink from "@/views/BrowserLink.vue";
 
 export default defineComponent({
   name: 'Songtext',
-  components: { Browserlink },
+  components: { Browserlink: BrowserLink },
   props: {
     song: Object
   },
