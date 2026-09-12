@@ -1,6 +1,7 @@
 import { Preferences } from '@capacitor/preferences';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { SystemBars, SystemBarsStyle } from '@capacitor/core';
+import { App } from '@capacitor/app';
 
 export type AppTheme = 'dark' | 'light' | 'system';
 
@@ -14,6 +15,30 @@ class ThemeService {
         this.applyTheme('system');
       }
     });
+
+    // Re-apply theme when app resumes from background
+    App.addListener('appStateChange', ({ isActive }) => {
+      if (isActive) {
+        this.applyTheme();
+      }
+    });
+
+    // Also re-apply on visibility change or window focus
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          this.applyTheme();
+        }
+      });
+    }
+    if (typeof window !== 'undefined') {
+      window.addEventListener('focus', () => {
+        this.applyTheme();
+      });
+      window.addEventListener('pageshow', () => {
+        this.applyTheme();
+      });
+    }
   }
 
   public async init(): Promise<AppTheme> {
