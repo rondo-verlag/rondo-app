@@ -47,13 +47,13 @@ import packageJson from '../package.json';
 import themeService from './services/theme.service';
 
 // Initialize theme
-themeService.init();
+const themeInitPromise = themeService.init();
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router)
   .provide('appVersion', packageJson.version);
 
-router.isReady().then(() => {
+Promise.all([router.isReady(), themeInitPromise]).then(() => {
   app.mount('#app');
 });

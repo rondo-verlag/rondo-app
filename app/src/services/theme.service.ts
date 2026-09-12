@@ -10,6 +10,17 @@ class ThemeService {
   private mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   constructor() {
+    // Read synchronous cached theme from localStorage if available
+    try {
+      const stored = localStorage.getItem('app_theme');
+      if (stored === 'dark' || stored === 'light' || stored === 'system') {
+        this.currentTheme = stored;
+      }
+    } catch {
+      // Ignore
+    }
+    this.applyTheme(this.currentTheme);
+
     this.mediaQuery.addEventListener('change', () => {
       if (this.currentTheme === 'system') {
         this.applyTheme('system');
@@ -42,11 +53,20 @@ class ThemeService {
   }
 
   public async init(): Promise<AppTheme> {
-    const { value } = await Preferences.get({ key: 'app_theme' });
-    const theme: AppTheme = (value === 'dark' || value === 'light' || value === 'system') ? value : 'system';
-    this.currentTheme = theme;
-    this.applyTheme(theme);
-    return theme;
+    try {
+      const { value } = await Preferences.get({ key: 'app_theme' });
+      const theme: AppTheme = (value === 'dark' || value === 'light' || value === 'system') ? value : this.currentTheme;
+      this.currentTheme = theme;
+      try {
+        localStorage.setItem('app_theme', theme);
+      } catch {
+        // Ignore
+      }
+      this.applyTheme(theme);
+      return theme;
+    } catch {
+      return this.currentTheme;
+    }
   }
 
   public getTheme(): AppTheme {
@@ -65,6 +85,11 @@ class ThemeService {
 
   public async setTheme(theme: AppTheme): Promise<void> {
     this.currentTheme = theme;
+    try {
+      localStorage.setItem('app_theme', theme);
+    } catch {
+      // Ignore
+    }
     await Preferences.set({ key: 'app_theme', value: theme });
     this.applyTheme(theme);
   }

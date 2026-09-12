@@ -20,6 +20,41 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Ionic App" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('app_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = stored === 'dark' || ((!stored || stored === 'system') && prefersDark);
+          if (stored === 'light') {
+            isDark = false;
+          }
+          var root = document.documentElement;
+          if (isDark) {
+            root.classList.add('ion-palette-dark', 'dark');
+            root.classList.remove('light');
+          } else {
+            root.classList.add('light');
+            root.classList.remove('ion-palette-dark', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+      html.ion-palette-dark,
+      html.dark,
+      html.ion-palette-dark body,
+      html.dark body {
+        background-color: #121212 !important;
+        color: #ffffff;
+      }
+      html.light,
+      html.light body {
+        background-color: #f4f5f8 !important;
+        color: #000000;
+      }
+    </style>
   </head>
 
   <body>

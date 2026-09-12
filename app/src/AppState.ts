@@ -5,7 +5,7 @@ import ThemeService, { AppTheme } from "@/services/theme.service";
 let state = reactive({
   hasBought: false,
   purchaseLogs: [] as string[],
-  theme: 'system' as AppTheme,
+  theme: ThemeService.getTheme(),
   setHasBought: (val: boolean) => {
     state.hasBought = val;
     // save value in persistent storage
