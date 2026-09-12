@@ -1,6 +1,7 @@
-describe('My First Test', () => {
-  it('Visits the app root url', () => {
-    cy.visit('/')
-    cy.contains('ion-header', 'Inbox')
-  })
-})
+describe('Rondo Songbook App', () => {
+  it('Visits the app root url and redirects to songlist', () => {
+    cy.visit('/');
+    cy.url().should('include', '/songlist');
+    cy.get('#song-search-input').should('exist');
+  });
+});

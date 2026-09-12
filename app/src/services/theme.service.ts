@@ -7,7 +7,10 @@ export type AppTheme = 'dark' | 'light' | 'system';
 
 class ThemeService {
   private currentTheme: AppTheme = 'system';
-  private mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  private mediaQuery: MediaQueryList | { matches: boolean; addEventListener: (...args: any[]) => void } =
+    typeof window !== 'undefined' && typeof window.matchMedia === 'function'
+      ? window.matchMedia('(prefers-color-scheme: dark)')
+      : { matches: false, addEventListener: () => {} };
 
   constructor() {
     // Read synchronous cached theme from localStorage if available

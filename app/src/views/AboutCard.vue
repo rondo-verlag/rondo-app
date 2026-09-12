@@ -104,7 +104,7 @@ import {
   IonPage,
   IonToolbar
 } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { defineComponent, inject } from 'vue';
 import BrowserLink from "@/views/BrowserLink.vue";
 
 export default defineComponent({
@@ -118,8 +118,13 @@ export default defineComponent({
     IonButton,
     Browserlink: BrowserLink,
   },
-  inject: ['appVersion'],
-})
+  setup() {
+    const appVersion = inject<string>('appVersion', '');
+    return {
+      appVersion,
+    };
+  },
+});
 </script>
 
 <style scoped lang="scss">

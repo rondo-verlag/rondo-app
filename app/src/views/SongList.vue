@@ -22,7 +22,7 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <ion-list class="rondo-list" v-if="hasBought">
-          <ion-item v-for="song in filteredAllSongs" lines="none" @click="$router.push('/song/' + song.id)">
+          <ion-item v-for="song in filteredAllSongs" :key="song.id + (song.alternative ? '-alt' : '')" lines="none" @click="$router.push('/song/' + song.id)">
             <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
             <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
           </ion-item>
@@ -30,7 +30,7 @@
 
         <div v-else>
           <ion-list class="rondo-list">
-            <ion-item v-for="song in filteredFreeSongs" lines="none" @click="$router.push('/song/' + song.id)">
+            <ion-item v-for="song in filteredFreeSongs" :key="song.id + (song.alternative ? '-alt' : '')" lines="none" @click="$router.push('/song/' + song.id)">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
@@ -39,7 +39,7 @@
             <ion-list-header @click="$router.push('/about')">
               In der&nbsp;<a>Vollversion</a>&nbsp;enthalten:
             </ion-list-header>
-            <ion-item v-for="song in filteredPaidSongs" lines="none">
+            <ion-item v-for="song in filteredPaidSongs" :key="song.id + (song.alternative ? '-alt' : '')" lines="none">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
@@ -65,23 +65,30 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
-import songdata from '../../public/assets/songdata/songs/song-index.json';
+import songdata from 'assets/songdata/songs/song-index.json';
 import ISong from "@/interfaces/ISong";
 import AppState from "@/AppState";
 
 const songFilter = (song: ISong, query: string): boolean => {
   if (query === '') {
-    return true
+    return true;
   }
+  const q = query.toLowerCase();
+  const parsedPage = parseInt(query, 10);
 
-  return (song.title.toLowerCase().includes(query.toLowerCase()) ||
-    !song.alternative && (song.interpret.toLowerCase().includes(query.toLowerCase())) ||
-    !song.alternative && song.pageRondo2017 == parseInt(query) ||
-    !song.alternative && song.pageRondo2021 == parseInt(query) ||
-    !song.alternative && song.pageRondoRed == parseInt(query) ||
-    !song.alternative && song.pageRondoBlue == parseInt(query) ||
-    !song.alternative && song.pageRondoGreen == parseInt(query));
-}
+  return (
+    song.title.toLowerCase().includes(q) ||
+    (!song.alternative && (song.interpret?.toLowerCase().includes(q) ?? false)) ||
+    (!song.alternative && !isNaN(parsedPage) && (
+      song.pageRondo2024 === parsedPage ||
+      song.pageRondo2021 === parsedPage ||
+      song.pageRondo2017 === parsedPage ||
+      song.pageRondoRed === parsedPage ||
+      song.pageRondoBlue === parsedPage ||
+      song.pageRondoGreen === parsedPage
+    ))
+  );
+};
 
 export default defineComponent({
   name: 'Home',

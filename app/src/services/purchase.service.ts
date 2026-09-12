@@ -60,9 +60,10 @@ class purchaseService {
 
   private registerListeners() {
     this.store.when().approved((transaction) => {
-      AppState.addPurchaseLog('Transaction Approved: ' + transaction.productID);
+      const productIds = transaction.products ? transaction.products.map(p => p.id).join(', ') : 'unknown';
+      AppState.addPurchaseLog('Transaction Approved: ' + productIds);
       transaction.verify();
-    })
+    });
   }
 
   private setupVerification() {
@@ -116,7 +117,7 @@ class purchaseService {
   }
 
   private restorePurchases() {
-    let owned = this.isBought();
+    const owned = this.isBought();
     AppState.addPurchaseLog('Premium already owned: ' + owned);
     if (owned) {
       AppState.setHasBought(true);

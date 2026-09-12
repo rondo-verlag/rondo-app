@@ -39,6 +39,7 @@ export default defineComponent({
     // --- Rendering ---
 
     let currentPdf: PDFDocumentProxy | null = null;
+    let currentLoadingTask: ReturnType<typeof getDocument> | null = null;
     let renderGen = 0;
 
     const renderPage = async (pdf: PDFDocumentProxy, num: number, cw: number, dpr: number) => {
@@ -56,19 +57,43 @@ export default defineComponent({
     const renderPdf = async () => {
       if (!props.src || !inner.value) return;
       const gen = ++renderGen;
-      const pdf = await getDocument({ url: props.src }).promise;
-      if (gen !== renderGen) { pdf.destroy(); return; }
+
+      if (currentLoadingTask) {
+        try { await currentLoadingTask.destroy(); } catch { /* ignore */ }
+        currentLoadingTask = null;
+      }
+
+      const loadingTask = getDocument({ url: props.src });
+      currentLoadingTask = loadingTask;
+
+      let pdf: PDFDocumentProxy;
+      try {
+        pdf = await loadingTask.promise;
+      } catch (err) {
+        if (gen !== renderGen) return;
+        console.error('Error loading PDF:', err);
+        return;
+      }
+      if (gen !== renderGen) {
+        try { await loadingTask.destroy(); } catch { /* ignore */ }
+        return;
+      }
 
       const cw  = container.value?.clientWidth ?? 0;
       const dpr = window.devicePixelRatio || 1;
       const canvases = await Promise.all(
         Array.from({ length: pdf.numPages }, (_, i) => renderPage(pdf, i + 1, cw, dpr))
       );
-      if (gen !== renderGen || !inner.value) { pdf.destroy(); return; }
+      if (gen !== renderGen || !inner.value) {
+        try { await loadingTask.destroy(); } catch { /* ignore */ }
+        return;
+      }
 
       const frag = document.createDocumentFragment();
       canvases.forEach(c => frag.appendChild(c));
-      currentPdf?.destroy();
+      if (currentPdf) {
+        try { await currentPdf.cleanup(); } catch { /* ignore */ }
+      }
       currentPdf = pdf;
       inner.value.innerHTML = '';
       inner.value.appendChild(frag);
@@ -155,7 +180,14 @@ export default defineComponent({
     onUnmounted(() => {
       ro.disconnect();
       if (resizeTimer) clearTimeout(resizeTimer);
-      currentPdf?.destroy();
+      if (currentLoadingTask) {
+        try { currentLoadingTask.destroy(); } catch { /* ignore */ }
+        currentLoadingTask = null;
+      }
+      if (currentPdf) {
+        try { currentPdf.cleanup(); } catch { /* ignore */ }
+        currentPdf = null;
+      }
     });
 
     watch(() => props.src, async () => { zoom.value = 1; panX.value = 0; await renderPdf(); });

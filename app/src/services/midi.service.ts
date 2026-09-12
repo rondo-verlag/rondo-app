@@ -51,7 +51,7 @@ class MidiService {
       this.player = null;
     }
     Object.values(this.instruments).forEach((instrument) => {
-      try { instrument.stop(); } catch (_) { /* ignore */ }
+      try { instrument.stop(); } catch { /* ignore */ }
     });
     this.activeNotes = {};
   }

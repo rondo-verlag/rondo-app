@@ -2,7 +2,7 @@ import { reactive } from "vue";
 import { GetResult, Preferences } from '@capacitor/preferences';
 import ThemeService, { AppTheme } from "@/services/theme.service";
 
-let state = reactive({
+const state = reactive({
   hasBought: false,
   purchaseLogs: [] as string[],
   theme: ThemeService.getTheme(),

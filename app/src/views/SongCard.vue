@@ -8,24 +8,24 @@
           </ion-button>
         </ion-buttons>
         <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'text'">
-          <ion-button ion-button :href="currentSong.links.youtube" v-if="currentSong && currentSong?.links?.youtube">
+          <ion-button :href="currentSong?.links?.youtube" v-if="currentSong?.links?.youtube">
             <i class="icon rondo-icon-youtube"></i>
           </ion-button>
-          <ion-button ion-button @click="toggleChords()">
+          <ion-button @click="toggleChords()">
             <i class="icon rondo-icon-show-chord"></i>
           </ion-button>
-          <ion-button ion-button @click="startAutoScroll()" v-if="!isScrolling">
+          <ion-button @click="startAutoScroll()" v-if="!isScrolling">
             <i class="icon rondo-icon-scroll"></i>
           </ion-button>
-          <ion-button ion-button @click="stopAutoScroll()" v-if="isScrolling">
+          <ion-button @click="stopAutoScroll()" v-if="isScrolling">
             <i class="icon rondo-icon-scroll icon--active"></i>
           </ion-button>
         </ion-buttons>
         <ion-buttons slot="end" class="rondo-header-buttons-right" v-if="section === 'notes'">
-          <ion-button ion-button @click="startSong()" v-if="!isPlaying">
+          <ion-button @click="startSong()" v-if="!isPlaying">
             <i class="icon rondo-icon-listen"></i>
           </ion-button>
-          <ion-button ion-button @click="stopSong()" v-if="isPlaying">
+          <ion-button @click="stopSong()" v-if="isPlaying">
             <i class="icon rondo-icon-listen icon--active"></i>
           </ion-button>
         </ion-buttons>
@@ -44,7 +44,6 @@
           @slide-change="slideChanged"
           @swiper="setSwiperInstance"
           :width="windowWidth"
-          :virtual="true"
         >
           <swiper-slide v-for="(song, index) in songs" :key="song.id" :virtualIndex="index">
             <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
@@ -57,7 +56,7 @@
     </ion-content>
 
     <ion-content :fullscreen="true" v-if="section === 'chords'" :class="'orientation--' + orientation">
-      <div class="chord-list">
+      <div class="chord-list" v-if="currentSong?.chords">
         <template v-for="chord in currentSong.chords" :key="chord">
           <i :class="'rondo-icon-chord-' + chord.replace('+','plus')" @click="playChord(chord)"></i>
         </template>
@@ -65,7 +64,7 @@
     </ion-content>
 
     <ion-content :fullscreen="true" v-if="section === 'notes'" class="notes-page" :class="'orientation--' + orientation">
-      <PdfViewer :src="`/assets/songdata/songs/notes/${currentSong.id}.pdf`" @fullscreen="onNotesFullscreen" />
+      <PdfViewer v-if="currentSong" :src="`/assets/songdata/songs/notes/${currentSong.id}.pdf`" @fullscreen="onNotesFullscreen" />
     </ion-content>
 
     <ion-footer>
@@ -95,7 +94,7 @@ import {
   IonFooter,
   useBackButton
 } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { defineComponent, markRaw } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import songdata from 'assets/songdata/songs/song-index.json';
 import { isPlatform } from '@ionic/vue';
@@ -106,7 +105,6 @@ import 'swiper/css/virtual';
 
 import ISong from '@/interfaces/ISong';
 
-import { Swiper as SwiperInstance } from 'swiper';
 import { Virtual as VirtualModule } from 'swiper/modules';
 import AppState from "@/AppState";
 import SongText from "@/views/SongText.vue";
@@ -140,7 +138,7 @@ export default defineComponent({
     PdfViewer,
   },
   data(): {
-    swiperInstance: SwiperInstance | null;
+    swiperInstance: any;
     section: string;
     isPlaying: boolean;
     scrollElement: Element | null;
@@ -196,13 +194,14 @@ export default defineComponent({
       return AppState.hasBought;
     },
     songs(): ISong[] {
+      const list = (songdata.list || []) as ISong[];
       if (this.hasBought) {
-        return (songdata.list || []).filter((song) => !song.alternative);
+        return list.filter((song: ISong) => !song.alternative);
       } else {
-        return (songdata.list || []).filter((song) => !song.alternative && song.free);
+        return list.filter((song: ISong) => !song.alternative && song.free);
       }
     },
-    currentSong(): ISong {
+    currentSong(): ISong | undefined {
       return this.songs.find((song: ISong) => song.id == this.currentSongId);
     },
   },
@@ -366,7 +365,7 @@ export default defineComponent({
       }
     },
     setSwiperInstance: function (swiper: any) {
-      this.swiperInstance = swiper;
+      this.swiperInstance = markRaw(swiper);
     },
     toggleChords: function() {
         if (this.section == 'text') {

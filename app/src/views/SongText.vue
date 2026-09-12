@@ -22,24 +22,36 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, inject, PropType } from 'vue';
 import BrowserLink from "@/views/BrowserLink.vue";
+import ISong from "@/interfaces/ISong";
 
 export default defineComponent({
   name: 'Songtext',
   components: { Browserlink: BrowserLink },
   props: {
-    song: Object
-  },
-  data() {
-    return {
-      html: null
+    song: {
+      type: Object as PropType<ISong>,
+      required: true,
     }
   },
-  inject: ['appVersion'],
+  setup() {
+    const appVersion = inject<string>('appVersion', '');
+    return {
+      appVersion,
+    };
+  },
+  data(): {
+    html: string | null;
+  } {
+    return {
+      html: null
+    };
+  },
   computed: {
     pageNumbers(): string {
-      let pages = [];
+      if (!this.song) return '';
+      const pages: string[] = [];
       if (this.song.pageRondo2024) {
         pages.push('<span class="rondo-pink">' + this.song.pageRondo2024 + '</span>');
       }
@@ -61,10 +73,36 @@ export default defineComponent({
       return pages.join('&nbsp;|&nbsp;');
     }
   },
-  mounted: function() {
-    fetch('/assets/songdata/songs/html/' + this.song.id + '.html')
-      .then(response => response.text())
-      .then(data => this.html = data);
+  watch: {
+    'song.id': {
+      immediate: true,
+      handler(newId: number | undefined) {
+        if (newId) {
+          this.loadSongHtml(newId);
+        } else {
+          this.html = null;
+        }
+      }
+    }
+  },
+  methods: {
+    loadSongHtml(songId: number) {
+      fetch('/assets/songdata/songs/html/' + songId + '.html')
+        .then(response => {
+          if (!response.ok) throw new Error('Failed to load song html');
+          return response.text();
+        })
+        .then(data => {
+          if (this.song?.id === songId) {
+            this.html = data;
+          }
+        })
+        .catch(() => {
+          if (this.song?.id === songId) {
+            this.html = '<p>Liedtext konnte nicht geladen werden.</p>';
+          }
+        });
+    }
   }
 });
 </script>

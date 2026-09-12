@@ -1,15 +1,28 @@
-const { defineConfig } = require("eslint/config");
+import pluginVue from 'eslint-plugin-vue';
+import vueTs from '@vue/eslint-config-typescript';
 
-module.exports = defineConfig([
+export default [
+  {
+    ignores: [
+      '**/dist/**',
+      '**/android/**',
+      '**/ios/**',
+      '**/public/**',
+      '**/node_modules/**',
+      '**/.idea/**',
+    ],
+  },
+  ...pluginVue.configs['flat/essential'],
+  ...vueTs(),
   {
     rules: {
-      semi: "error",
-      "prefer-const": "error",
+      'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+      'vue/no-deprecated-slot-attribute': 'off',
+      'vue/no-unused-components': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      'vue/multi-word-component-names': 'off',
     },
-    ignores: [
-      'ios/**/*',
-      'android/**/*',
-      'dist/**/*'
-    ]
   },
-]);
+];

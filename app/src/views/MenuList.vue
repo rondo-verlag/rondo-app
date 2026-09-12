@@ -89,7 +89,7 @@ import {
   IonPage,
   IonToolbar,
 } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { defineComponent, inject } from 'vue';
 
 export default defineComponent({
   name: 'MenuList',
@@ -101,7 +101,12 @@ export default defineComponent({
     IonPage,
     IonToolbar,
   },
-  inject: ['appVersion'],
+  setup() {
+    const appVersion = inject<string>('appVersion', '');
+    return {
+      appVersion,
+    };
+  },
 });
 </script>
 
