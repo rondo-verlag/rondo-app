@@ -11,40 +11,71 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <div style="background: #fff">
-        <img src="/assets/songdata/images/about.png" style="width: 100%" />
+      <div class="menu-header-banner">
+        <img src="/assets/songdata/images/about.png" alt="Rondo" class="menu-header-img" />
       </div>
 
-      <br />
-      <br />
+      <div class="menu-container">
+        <div class="menu-list">
+          <div class="menu-item" @click="$router.push('/payment')">
+            <span class="menu-item__label">Vollversion freischalten</span>
+            <span class="menu-item__chevron">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </div>
+        </div>
 
-      <div class="">
-        <h3>Vollversion freischalten   >>></h3>
+        <br />
+        <br />
+
+        <div class="menu-list">
+          <div class="menu-item" @click="$router.push('/view-settings')">
+              <span class="menu-item__label">Anzeigeeinstellungen</span>
+              <span class="menu-item__chevron">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="menu-list">
+          <div class="menu-item" @click="$router.push('/song-settings')">
+              <span class="menu-item__label">Songeinstellungen</span>
+              <span class="menu-item__chevron">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="menu-list">
+          <div class="menu-item" @click="$router.push('/about')">
+            <span class="menu-item__label">Über das Rondo</span>
+            <span class="menu-item__chevron">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div class="menu-footer">
+          <p class="copyright">&copy; Zürich 1992 - 2024 Verein Rondo Verlag. Alle Rechte vorbehalten.</p>
+          <p class="version" v-if="appVersion">APP Version {{ appVersion }}</p>
+        </div>
       </div>
 
-      <br />
-      <br />
-
-      <div class="">
-        <h3>Anzeigeeinstellungen   >>></h3>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="">
-        <h3>Songeinstellungen   >>></h3>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="">
-        <h3>Über das Rondo   >>></h3>
-      </div>
-
-      <br />
-      <br />
+      <div class="ion-padding"></div>
     </ion-content>
   </ion-page>
 </template>
@@ -69,10 +100,104 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-  }
-})
+  },
+  inject: ['appVersion'],
+});
 </script>
 
 <style scoped lang="scss">
+.menu-header-banner {
+  background: #ffffff;
 
+  .menu-header-img {
+    width: 100%;
+  }
+}
+
+.menu-container {
+  padding: 24px 16px;
+}
+
+.menu-list {
+  background: #1c1c1e;
+  border-radius: 12px;
+  border: 1px solid #2c2c2e;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  min-height: 56px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  border-bottom: 1px solid #2a2a2c;
+  transition: background-color 0.15s ease;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:active {
+    background-color: #2c2c2e;
+
+    .menu-item__chevron svg {
+      color: darkorange;
+      transform: translateX(2px);
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: #242426;
+
+      .menu-item__chevron svg {
+        color: darkorange;
+      }
+    }
+  }
+
+  .menu-item__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    flex: 1;
+    margin: 0;
+  }
+
+  .menu-item__chevron {
+    display: flex;
+    align-items: center;
+    color: #8e8e93;
+    margin-left: 12px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+  }
+}
+
+.menu-footer {
+  margin-top: 36px;
+  text-align: center;
+  color: #888888;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 0 12px;
+
+  .copyright {
+    margin: 0 0 6px 0;
+  }
+
+  .version {
+    margin: 0;
+    color: #666666;
+    font-size: 11px;
+    font-family: monospace, sans-serif;
+  }
+}
 </style>
