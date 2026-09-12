@@ -60,10 +60,10 @@ import {
   IonList,
   IonListHeader,
   IonPage,
-  IonToolbar
+  IonToolbar,
+  useBackButton,
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { App } from "@capacitor/app";
 
 import songdata from '../../public/assets/songdata/songs/song-index.json';
 import ISong from "@/interfaces/ISong";
@@ -95,9 +95,13 @@ export default defineComponent({
     IonItem,
     IonListHeader
   },
-  data() {
+  data(): {
+    query: string;
+    backButtonHandler: { unregister: () => void } | null;
+  } {
     return {
       query: '',
+      backButtonHandler: null,
     }
   },
   computed: {
@@ -124,10 +128,33 @@ export default defineComponent({
     },
   },
   ionViewDidEnter() {
-    App.addListener('backButton', () => {
-      this.query = '';
-      document.getElementById('song-search-input').blur();
+    if (this.backButtonHandler) {
+      this.backButtonHandler.unregister();
+    }
+    this.backButtonHandler = useBackButton(10, (processNextHandler) => {
+      const searchInput = document.getElementById('song-search-input');
+      const isFocused = searchInput && document.activeElement === searchInput;
+      if (this.query || isFocused) {
+        this.query = '';
+        if (searchInput) {
+          searchInput.blur();
+        }
+      } else {
+        processNextHandler();
+      }
     });
+  },
+  ionViewWillLeave() {
+    if (this.backButtonHandler) {
+      this.backButtonHandler.unregister();
+      this.backButtonHandler = null;
+    }
+  },
+  unmounted() {
+    if (this.backButtonHandler) {
+      this.backButtonHandler.unregister();
+      this.backButtonHandler = null;
+    }
   },
   methods: {
     clearSearch() {

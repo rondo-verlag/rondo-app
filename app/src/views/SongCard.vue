@@ -140,7 +140,7 @@ export default defineComponent({
     PdfViewer,
   },
   data(): {
-    swiperInstance: SwiperInstance;
+    swiperInstance: SwiperInstance | null;
     section: string;
     isPlaying: boolean;
     scrollElement: Element | null;
@@ -155,7 +155,16 @@ export default defineComponent({
     windowWidth: number;
     orientation: 'portrait' | 'landscape';
     swiperKey: number;
+    backButtonHandler: { unregister: () => void } | null;
+    appStateListener: { remove: () => Promise<void> } | null;
+    screenOrientationListener: { remove: () => Promise<void> } | null;
   } {
+    const songId = parseInt(this.$route?.params?.id as string) || 0;
+    const songs = (songdata.list || []).filter((song: any) => !song.alternative && (AppState.hasBought || song.free));
+    const songIndex = songs.findIndex((song: ISong) => song.id === songId);
+    const initialIndex = songIndex >= 0 ? songIndex : 0;
+    const isLandscape = typeof window !== 'undefined' && window.innerWidth > window.innerHeight;
+
     return {
       swiperInstance: null,
       section: 'text',
@@ -166,18 +175,18 @@ export default defineComponent({
       lastScrollPosition: -1,
       sameLastScrollPositionCounter: 0,
       autoScrollInQueue: false,
-      currentSongId: 0,
-      initialIndex: 0,
+      currentSongId: songId,
+      initialIndex,
       playingChord: null,
-      windowWidth: 0,
-      orientation: 'portrait',
+      windowWidth: typeof window !== 'undefined' ? window.innerWidth : 0,
+      orientation: isLandscape ? 'landscape' : 'portrait',
       swiperKey: 0,
+      backButtonHandler: null,
+      appStateListener: null,
+      screenOrientationListener: null,
     }
   },
   setup() {
-    useBackButton(10, () => {
-      console.log('Suppress default back button event');
-    });
     return {
       VirtualModule
     };
@@ -197,36 +206,78 @@ export default defineComponent({
       return this.songs.find((song: ISong) => song.id == this.currentSongId);
     },
   },
+  ionViewWillEnter() {
+    this.section = 'text';
+    this.windowWidth = window.innerWidth;
+    const songId = parseInt(this.$route.params.id as string);
+    if (songId && songId !== this.currentSongId) {
+      this.currentSongId = songId;
+      const index = this.songs.findIndex((song: ISong) => song.id === this.currentSongId);
+      if (index >= 0) {
+        this.initialIndex = index;
+        if (this.swiperInstance && this.swiperInstance.activeIndex !== index) {
+          this.swiperInstance.slideTo(index, 0);
+        }
+      }
+    }
+  },
+  ionViewDidEnter() {
+    if (this.backButtonHandler) {
+      this.backButtonHandler.unregister();
+    }
+    this.backButtonHandler = useBackButton(10, (processNextHandler) => {
+      if (this.section !== 'text') {
+        this.section = 'text';
+      } else {
+        processNextHandler();
+      }
+    });
+  },
+  ionViewWillLeave() {
+    if (this.backButtonHandler) {
+      this.backButtonHandler.unregister();
+      this.backButtonHandler = null;
+    }
+  },
   mounted() {
     this.section = 'text';
     this.windowWidth = window.innerWidth;
-    this.currentSongId = parseInt(this.$route.params.id as string);
-    this.initialIndex = this.songs.findIndex((song: ISong) => song.id == this.currentSongId);
-    if (this.swiperInstance) {
+    const songId = parseInt(this.$route.params.id as string);
+    if (songId) {
+      this.currentSongId = songId;
+      const index = this.songs.findIndex((song: ISong) => song.id === this.currentSongId);
+      if (index >= 0) {
+        this.initialIndex = index;
+      }
+    }
+    if (this.swiperInstance && this.swiperInstance.activeIndex !== this.initialIndex) {
       this.swiperInstance.slideTo(this.initialIndex, 0);
     }
-
-    App.addListener('backButton', async () => {
-      this.goBack();
-    })
 
     // stop song if user closes app
     App.addListener('appStateChange', ({ isActive }) => {
       if (!isActive) {
         this.stopSong();
         this.stopChords();
-        App.removeAllListeners();
       }
+    }).then((listener) => {
+      this.appStateListener = listener;
     });
 
     // handle screen rotations
     ScreenOrientation.addListener('screenOrientationChange', (orientation) => {
       this.orientationChanged(orientation.type);
+    }).then((listener) => {
+      this.screenOrientationListener = listener;
     });
     window.addEventListener('keydown', this.handleSongtextArrowScroll);
-    this.orientationChanged();
+    this.initOrientation();
   },
   unmounted() {
+    if (this.backButtonHandler) {
+      this.backButtonHandler.unregister();
+      this.backButtonHandler = null;
+    }
     if (this.playingChord) {
       this.playingChord.pause();
       this.playingChord = null;
@@ -239,7 +290,14 @@ export default defineComponent({
     this.stopChords();
     this.exitFullscreen();
     window.removeEventListener('keydown', this.handleSongtextArrowScroll);
-    ScreenOrientation.removeAllListeners();
+    if (this.appStateListener) {
+      this.appStateListener.remove();
+      this.appStateListener = null;
+    }
+    if (this.screenOrientationListener) {
+      this.screenOrientationListener.remove();
+      this.screenOrientationListener = null;
+    }
   },
   methods: {
     handleSongtextArrowScroll: function(event: KeyboardEvent) {
@@ -267,18 +325,33 @@ export default defineComponent({
         this.scrollBy(-120);
       }
     },
-    orientationChanged: async function(type?: string) {
-      const orientationType = type || (await ScreenOrientation.orientation()).type;
-      if (orientationType === 'landscape-primary' || orientationType === 'landscape-secondary') {
-        this.orientation = 'landscape';
-      } else {
-        this.orientation = 'portrait';
+    initOrientation: async function() {
+      try {
+        const orientation = await ScreenOrientation.orientation();
+        const orientationType = orientation?.type;
+        if (orientationType === 'landscape-primary' || orientationType === 'landscape-secondary') {
+          this.orientation = 'landscape';
+        } else if (orientationType) {
+          this.orientation = 'portrait';
+        }
+      } catch {
+        // Fallback already handled in data/mounted
       }
-      // Hide swiper during orientation animation, then update width once after layout settles
+    },
+    orientationChanged: function(type?: string) {
+      if (type === 'landscape-primary' || type === 'landscape-secondary') {
+        this.orientation = 'landscape';
+      } else if (type) {
+        this.orientation = 'portrait';
+      } else if (typeof window !== 'undefined') {
+        this.orientation = window.innerWidth > window.innerHeight ? 'landscape' : 'portrait';
+      }
+      // Update dimensions after layout settles when rotating device
       setTimeout(() => {
         this.windowWidth = window.innerWidth;
         if (this.swiperInstance) {
           this.initialIndex = this.swiperInstance.activeIndex;
+          this.swiperInstance.update();
         }
         this.swiperKey++;
       }, 350);
@@ -300,12 +373,11 @@ export default defineComponent({
             document.body.classList.toggle('rondo-show-chords');
         }
     },
-    goBack: async function () {
+    goBack: function () {
         if (this.section === 'text') {
-            await App.removeAllListeners();
             this.$router.back();
         } else {
-            this.section = 'text'
+            this.section = 'text';
         }
     },
 
