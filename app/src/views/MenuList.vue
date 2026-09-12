@@ -15,7 +15,7 @@
         <img src="/assets/songdata/images/about.png" alt="Rondo" class="menu-header-img" />
       </div>
 
-      <div class="menu-container">
+      <div class="container">
         <div class="menu-list">
           <div class="menu-item" @click="$router.push('/payment')">
             <span class="menu-item__label">Vollversion freischalten</span>
@@ -119,9 +119,9 @@ export default defineComponent({
 }
 
 .menu-list {
-  background: #1c1c1e;
+  background: var(--rondo-menu-card-bg);
   border-radius: 12px;
-  border: 1px solid #2c2c2e;
+  border: 1px solid var(--rondo-menu-card-border);
 }
 
 .menu-item {
@@ -132,7 +132,7 @@ export default defineComponent({
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  border-bottom: 1px solid #2a2a2c;
+  border-bottom: 1px solid var(--rondo-menu-item-border);
   transition: background-color 0.15s ease;
 
   &:last-child {
@@ -140,7 +140,7 @@ export default defineComponent({
   }
 
   &:active {
-    background-color: #2c2c2e;
+    background-color: var(--rondo-menu-item-hover);
 
     .menu-item__chevron svg {
       color: darkorange;
@@ -150,7 +150,7 @@ export default defineComponent({
 
   @media (hover: hover) {
     &:hover {
-      background-color: #242426;
+      background-color: var(--rondo-menu-item-hover);
 
       .menu-item__chevron svg {
         color: darkorange;
@@ -161,7 +161,7 @@ export default defineComponent({
   .menu-item__label {
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--rondo-menu-item-text);
     letter-spacing: 0.5px;
     flex: 1;
     margin: 0;
@@ -170,7 +170,7 @@ export default defineComponent({
   .menu-item__chevron {
     display: flex;
     align-items: center;
-    color: #8e8e93;
+    color: var(--rondo-menu-chevron);
     margin-left: 12px;
 
     svg {
@@ -184,7 +184,7 @@ export default defineComponent({
 .menu-footer {
   margin-top: 36px;
   text-align: center;
-  color: #888888;
+  color: var(--rondo-menu-footer-text);
   font-size: 12px;
   line-height: 1.6;
   padding: 0 12px;
@@ -195,7 +195,7 @@ export default defineComponent({
 
   .version {
     margin: 0;
-    color: #666666;
+    color: var(--rondo-menu-version-text);
     font-size: 11px;
     font-family: monospace, sans-serif;
   }

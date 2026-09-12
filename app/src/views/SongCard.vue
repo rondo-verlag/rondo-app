@@ -433,15 +433,18 @@ ion-footer {
 
 .rondo-header-buttons-right i.icon {
   font-size: 28px;
-    color: wheat;
 }
 
 .rondo-tabs {
-  color: white;
+  color: var(--rondo-tab-icon-color, var(--rondo-header-icon-color, #000000));
   display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
   -webkit-justify-content: space-around;
+
+  span {
+    cursor: pointer;
+  }
 
   i {
     font-size: 28px;
@@ -450,7 +453,7 @@ ion-footer {
 
 .rondo-tab--selected {
   i {
-    color: darkorange;
+    color: var(--rondo-tab-icon-active, darkorange);
   }
 }
 
@@ -465,8 +468,8 @@ ion-footer {
 }
 
 .swiper-slide {
-  background: #000;
-  color: white;
+  background: var(--rondo-song-bg, var(--ion-background-color, #ffffff));
+  color: var(--rondo-song-text, var(--ion-text-color, #000000));
 }
 
 .notes-page {
@@ -492,11 +495,13 @@ ion-footer {
 .chord-list {
   font-size: 35vw;
   padding-top: 20px;
+  color: var(--rondo-song-text, var(--ion-text-color, #000000));
 
   i {
     width: 33%;
     display: inline-block;
     text-align: center;
+    cursor: pointer;
   }
 }
 

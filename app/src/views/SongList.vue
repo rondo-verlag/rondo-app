@@ -156,14 +156,14 @@ export default defineComponent({
   }
 
   label {
-    background: #4A4A4A;
+    background: var(--rondo-search-bg);
     border: 0;
     height: 32px;
     display: inline-block;
     border-radius: 5px;
 
     .placeholder-icon {
-      color: #CCC !important;
+      color: var(--rondo-search-placeholder) !important;
       font-size: 140%;
       position: absolute;
       margin-top: 5px;
@@ -175,7 +175,7 @@ export default defineComponent({
     }
 
     input {
-      color: #FFF;
+      color: var(--rondo-search-color);
       letter-spacing: initial;
       width: 100%;
       padding: 5px;
@@ -190,7 +190,7 @@ export default defineComponent({
     }
 
     input::-webkit-input-placeholder {
-      color: #CCC;
+      color: var(--rondo-search-placeholder);
       font-size: 16px;
     }
   }
@@ -208,7 +208,7 @@ export default defineComponent({
     padding-left: 10px;
 
     i {
-      color: #CCC !important;
+      color: var(--rondo-search-clear-color) !important;
     }
   }
 
@@ -217,7 +217,7 @@ export default defineComponent({
     padding-left: 10px;
     padding-right: 12px;
     margin-right: -12px;
-    color: white;
+    color: var(--rondo-header-icon-color);
     position: relative;
     top: 2px;
 

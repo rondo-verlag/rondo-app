@@ -79,7 +79,7 @@ export default defineComponent({
   .page-numbers {
     line-height: 32px;
     font-size: 110%;
-    color: white;
+    color: var(--rondo-song-page-pipe, #888888);
 
     span {
       margin: 0 !important;
@@ -94,7 +94,7 @@ export default defineComponent({
     }
 
     .rondo-green {
-      color: #99FF99;
+      color: var(--rondo-song-page-green, #99FF99);
     }
 
     .rondo-orange {
@@ -102,11 +102,11 @@ export default defineComponent({
     }
 
     .rondo-yellow {
-      color: #FFEB00;
+      color: var(--rondo-song-page-yellow, #FFEB00);
     }
 
     .rondo-pink {
-      color: #C74375
+      color: #C74375;
     }
   }
 
@@ -162,21 +162,21 @@ export default defineComponent({
 
     .comment {
       white-space: pre;
-      color: #BBB;
+      color: var(--rondo-song-comment, #888888);
     }
   }
 
   .copyright {
     font-size: 60%;
-    color: #444;
+    color: var(--rondo-song-meta, #888888);
     white-space: pre-wrap;
   }
 
   .report-error-link {
-    color: #444;
+    color: var(--rondo-song-meta, #888888);
 
     a {
-      color: #444;
+      color: var(--rondo-song-meta, #888888);
       text-decoration: none;
       font-size: 60%;
     }
@@ -201,9 +201,9 @@ export default defineComponent({
     }
 
     .song-html {
-      color: #999;
+      color: var(--rondo-song-chord-dimmed-text, #999999);
 
-      .line{
+      .line {
         .word,
         .bl {
           height: 2.5em;
@@ -211,7 +211,7 @@ export default defineComponent({
       }
 
       .chord {
-        color: #FFF;
+        color: var(--rondo-song-chord-color, #ffffff);
       }
 
       .paragraph {
