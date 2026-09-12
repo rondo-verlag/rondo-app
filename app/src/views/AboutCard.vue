@@ -106,7 +106,6 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import BrowserLink from "@/views/BrowserLink.vue";
-import { App } from "@capacitor/app";
 
 export default defineComponent({
   name: 'AboutCard',
@@ -120,12 +119,6 @@ export default defineComponent({
     Browserlink: BrowserLink,
   },
   inject: ['appVersion'],
-  mounted() {
-    App.addListener('backButton', async () => {
-      await App.removeAllListeners();
-      this.$router.back();
-    })
-  },
 })
 </script>
 
