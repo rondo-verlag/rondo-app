@@ -6,11 +6,9 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Browserlink',
+  name: 'BrowserLink',
   props: {
     url: String
   },
 });
 </script>
-
-<style scoped></style>
