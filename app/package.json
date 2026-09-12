@@ -33,8 +33,8 @@
     "@ionic/vue-router": "^9.0.3",
     "cordova-plugin-purchase": "^13.13.1",
     "midi-player-js": "^2.0.17",
-    "smplr": "^1.0.0",
     "pdfjs-dist": "^6.3.289",
+    "smplr": "^1.0.0",
     "swiper": "^14.2.0",
     "vue": "^3.5.42",
     "vue-router": "^5.3.1"
