@@ -76,7 +76,6 @@ import {
 } from "@ionic/vue";
 import { defineComponent } from "vue";
 import AppState from "@/AppState";
-import { App } from "@capacitor/app";
 import PurchaseService from "@/services/purchase.service";
 import BrowserLink from "@/views/BrowserLink.vue";
 
@@ -108,12 +107,6 @@ export default defineComponent({
     purchaseLogs(): string[] {
       return AppState.purchaseLogs;
     }
-  },
-  mounted() {
-    App.addListener('backButton', async () => {
-      await App.removeAllListeners();
-      this.$router.back();
-    })
   },
   methods: {
     buyFullversion() {
