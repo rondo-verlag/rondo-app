@@ -150,7 +150,7 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import AppState from "@/AppState";
-import Browserlink from "@/views/Browserlink.vue";
+import BrowserLink from "@/views/BrowserLink.vue";
 import { App } from "@capacitor/app";
 import PurchaseService from "@/services/purchase.service";
 
@@ -163,7 +163,7 @@ export default defineComponent({
     IonToolbar,
     IonButtons,
     IonButton,
-    Browserlink,
+    Browserlink: BrowserLink,
   },
   inject: ['appVersion'],
   data() {
