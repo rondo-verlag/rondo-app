@@ -48,7 +48,7 @@
           :virtual="true"
         >
           <swiper-slide v-for="(song, index) in songs" :key="song.id" :virtualIndex="index">
-            <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
+            <ScrollableContent @click="exitFullscreen()" :class="{'scrolling': isScrolling}" :auto-scrolling="isScrolling" @onScrollUp="scrollUp()" @onScrollDown="scrollDown()">
               <Songtext :song="song"></Songtext>
               <br>
             </ScrollableContent>
@@ -138,10 +138,11 @@ export default defineComponent({
     isPlaying: boolean;
     scrollElement: Element | null;
     isScrolling: boolean;
-    scrollTimer: ReturnType<typeof setInterval> | null;
+    scrollAnimationFrame: number | null;
+    scrollAnimationLastTime: number | null;
+    scrollRemainder: number;
     lastScrollPosition: number;
-    sameLastScrollPositionCounter: number;
-    autoScrollInQueue: boolean;
+    scrollStuckSince: number | null;
     currentSongId: number;
     initialIndex: number;
     playingChord: HTMLAudioElement | null;
@@ -155,10 +156,11 @@ export default defineComponent({
       isPlaying: false,
       scrollElement: null,
       isScrolling: false,
-      scrollTimer: null,
+      scrollAnimationFrame: null,
+      scrollAnimationLastTime: null,
+      scrollRemainder: 0,
       lastScrollPosition: -1,
-      sameLastScrollPositionCounter: 0,
-      autoScrollInQueue: false,
+      scrollStuckSince: null,
       currentSongId: 0,
       initialIndex: 0,
       playingChord: null,
@@ -188,6 +190,11 @@ export default defineComponent({
     },
     currentSong(): ISong {
       return this.songs.find((song: ISong) => song.id == this.currentSongId);
+    },
+    scrollSpeedFactor(): number {
+      // AppState.scrollSpeed is a 1-10 dial: speed 1 is the historical baseline
+      // (1px per tick), scaling linearly up to 10x at speed 10.
+      return AppState.scrollSpeed;
     },
   },
   mounted() {
@@ -225,8 +232,7 @@ export default defineComponent({
       this.playingChord = null;
     }
     if (this.isScrolling) {
-        KeepAwake.allowSleep();
-        this.exitFullscreen();
+        this.stopAutoScroll();
     }
     this.stopSong();
     this.stopChords();
@@ -321,12 +327,11 @@ export default defineComponent({
             this.scrollElement.scrollTop = this.getScrollPosition() + y;
         }
     },
-    getScrollTimeout: function() {
-        if (document.body.classList.contains('rondo-show-chords')) {
-            return 40;
-        } else {
-            return 80;
-        }
+    getScrollSpeedPxPerSecond: function() {
+        // Historically autoscroll moved 1px every 40ms (chords shown) or every
+        // 80ms (chords hidden); keep that as the baseline rate for speed 5/10.
+        const baseIntervalMs = document.body.classList.contains('rondo-show-chords') ? 40 : 80;
+        return (1000 / baseIntervalMs) * this.scrollSpeedFactor;
     },
     startAutoScroll: async function() {
         if (this.section != 'text') {
@@ -335,28 +340,62 @@ export default defineComponent({
         await KeepAwake.keepAwake();
         this.enterFullscreen();
         this.isScrolling = true;
-        this.sameLastScrollPositionCounter = 10;
+        this.scrollRemainder = 0;
+        this.scrollAnimationLastTime = null;
+        this.scrollStuckSince = null;
         this.scrollElement = document.querySelector('.swiper-slide-active .scrollable');
-        this.scrollTimer = setInterval(() => {
-            if (this.sameLastScrollPositionCounter <= 0) {
-                this.stopAutoScroll();
-            } else {
-                if (this.lastScrollPosition == this.getScrollPosition()) {
-                    this.sameLastScrollPositionCounter--;
-                } else {
-                    this.sameLastScrollPositionCounter = 10;
-                }
-                this.lastScrollPosition = this.getScrollPosition();
-                this.autoScrollInQueue = true;
-                this.scrollBy(1);
+        this.lastScrollPosition = this.getScrollPosition();
+
+        // Driven by requestAnimationFrame (synced to the display's own refresh
+        // rate) and by real elapsed time rather than a fixed setInterval tick,
+        // so the scroll speed stays constant and smooth even if a frame is
+        // delayed, instead of the jerky "stall, then jump" look a timer gives.
+        const step = (timestamp: number) => {
+            if (!this.isScrolling) {
+                return;
             }
-        }, this.getScrollTimeout());
+            if (this.scrollAnimationLastTime === null) {
+                this.scrollAnimationLastTime = timestamp;
+            }
+            const deltaMs = timestamp - this.scrollAnimationLastTime;
+            this.scrollAnimationLastTime = timestamp;
+
+            this.scrollRemainder += this.getScrollSpeedPxPerSecond() * deltaMs / 1000;
+            const pixels = Math.floor(this.scrollRemainder);
+            if (pixels > 0) {
+                this.scrollRemainder -= pixels;
+                this.scrollBy(pixels);
+            }
+
+            const currentPosition = this.getScrollPosition();
+            if (currentPosition === this.lastScrollPosition) {
+                if (this.scrollStuckSince === null) {
+                    this.scrollStuckSince = timestamp;
+                } else if (timestamp - this.scrollStuckSince > 500) {
+                    // reached the end of the scrollable content
+                    this.stopAutoScroll();
+                    return;
+                }
+            } else {
+                this.scrollStuckSince = null;
+                this.lastScrollPosition = currentPosition;
+            }
+
+            this.scrollAnimationFrame = requestAnimationFrame(step);
+        };
+        this.scrollAnimationFrame = requestAnimationFrame(step);
     },
     stopAutoScroll: function() {
         KeepAwake.allowSleep();
         this.isScrolling = false;
-        clearInterval(this.scrollTimer);
+        if (this.scrollAnimationFrame !== null) {
+            cancelAnimationFrame(this.scrollAnimationFrame);
+            this.scrollAnimationFrame = null;
+        }
+        this.scrollAnimationLastTime = null;
+        this.scrollStuckSince = null;
         this.lastScrollPosition = -1;
+        this.scrollRemainder = 0;
         this.exitFullscreen();
     },
     exitFullscreen: function() {

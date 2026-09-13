@@ -44,19 +44,19 @@
 <!--        <br />-->
 <!--        <br />-->
 
-<!--        <div class="menu-list">-->
-<!--          <div class="menu-item" @click="$router.push('/song-settings')">-->
-<!--            <span class="menu-item__label">Songeinstellungen</span>-->
-<!--            <span class="menu-item__chevron">-->
-<!--                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">-->
-<!--                  <polyline points="9 18 15 12 9 6"></polyline>-->
-<!--                </svg>-->
-<!--              </span>-->
-<!--          </div>-->
-<!--        </div>-->
+        <div class="menu-list">
+          <div class="menu-item" @click="$router.push('/song-settings')">
+            <span class="menu-item__label">Songeinstellungen</span>
+            <span class="menu-item__chevron">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
+          </div>
+        </div>
 
-<!--        <br />-->
-<!--        <br />-->
+        <br />
+        <br />
 
         <div class="menu-list">
           <div class="menu-item" @click="$router.push('/about')">

@@ -9,6 +9,12 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'ScrollableContent',
+  props: {
+    autoScrolling: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       lastScrollPosition: -1
@@ -25,8 +31,10 @@ export default defineComponent({
       const currentPosition = this.getScrollPosition();
       if (this.lastScrollPosition > currentPosition) {
         this.$emit('onScrollUp');
-      } else {
-        // autoscroll is always +1, don't emit events on that
+      } else if (!this.autoScrolling) {
+        // while autoscroll is running, its own forward movement must not be
+        // mistaken for a manual scroll-down (the step size varies with the
+        // configured scroll speed, so it can no longer be told apart by size)
         const diff = currentPosition - this.lastScrollPosition;
         if (diff > 1 && currentPosition > 0) {
           this.$emit('onScrollDown');

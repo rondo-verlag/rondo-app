@@ -5,6 +5,7 @@ import AboutCard from "@/views/AboutCard.vue";
 import SongCard from "@/views/SongCard.vue";
 import MenuList from "@/views/MenuList.vue";
 import PaymentCard from "@/views/PaymentCard.vue";
+import SongSettingsCard from "@/views/SongSettingsCard.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/payment',
     name: 'PaymentCard',
     component: PaymentCard
+  },
+  {
+    path: '/song-settings',
+    name: 'SongSettingsCard',
+    component: SongSettingsCard
   },
   {
     path: '/about',
