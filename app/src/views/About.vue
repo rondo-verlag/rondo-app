@@ -188,14 +188,14 @@ export default defineComponent({
     App.addListener('backButton', async () => {
       await App.removeAllListeners();
       this.$router.back();
-    })
+    });
   },
   methods: {
     buyFullversion() {
-      PurchaseService.buy()
+      PurchaseService.buy();
     },
     restorePurchases() {
-      PurchaseService.restore()
+      PurchaseService.restore();
     }
   }
 });

@@ -12,22 +12,22 @@ export default defineComponent({
   data() {
     return {
       lastScrollPosition: -1
-    }
+    };
   },
   methods: {
     addScrollHandler() {
-      let element = this.$refs.scrollElement as HTMLDivElement;
+      const element = this.$refs.scrollElement as HTMLDivElement;
       element.addEventListener("scroll", () => {
         this.manualScrollHandler();
       });
     },
     manualScrollHandler() {
-      let currentPosition = this.getScrollPosition();
+      const currentPosition = this.getScrollPosition();
       if (this.lastScrollPosition > currentPosition) {
         this.$emit('onScrollUp');
       } else {
         // autoscroll is always +1, don't emit events on that
-        let diff = currentPosition - this.lastScrollPosition;
+        const diff = currentPosition - this.lastScrollPosition;
         if (diff > 1 && currentPosition > 0) {
           this.$emit('onScrollDown');
         }
@@ -35,7 +35,7 @@ export default defineComponent({
       this.lastScrollPosition = currentPosition;
     },
     getScrollPosition(): number {
-      let element = this.$refs.scrollElement as HTMLDivElement;
+      const element = this.$refs.scrollElement as HTMLDivElement;
       if (element) {
         return element.scrollTop;
       } else {

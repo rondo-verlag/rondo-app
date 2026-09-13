@@ -1,12 +1,12 @@
-import 'cordova-plugin-purchase'
-import 'cordova-plugin-purchase/www/store'
+import 'cordova-plugin-purchase';
+import 'cordova-plugin-purchase/www/store';
 import { Capacitor } from "@capacitor/core";
 import AppState from "@/AppState";
 
 const PRODUCT_ID = 'ch.rondo.songbookapp.fullversion';
 
 class purchaseService {
-  private store: CdvPurchase.Store
+  private store: CdvPurchase.Store;
 
   constructor() {
     document.addEventListener('deviceready', this.initializeStore, false);
@@ -36,12 +36,12 @@ class purchaseService {
         })
         .catch(err => {
           AppState.addPurchaseLog('Store Initialization Error: ' + JSON.stringify(err));
-        })
+        });
     } else {
-      console.warn('Not running on native platform')
+      console.warn('Not running on native platform');
       return;
     }
-  }
+  };
 
   private registerProducts() {
     this.store.register([
@@ -60,24 +60,24 @@ class purchaseService {
 
   private registerListeners() {
     this.store.when().approved((transaction) => {
-      AppState.addPurchaseLog('Transaction Approved: ' + transaction.productID);
+      AppState.addPurchaseLog('Transaction Approved: ' + transaction.products.map(p => p.id).join(', '));
       transaction.verify();
-    })
+    });
   }
 
   private setupVerification() {
     this.store.when().verified((receipt) => {
       AppState.addPurchaseLog('Receipt Verified: ' + receipt.id);
       if (receipt.id == PRODUCT_ID) {
-        AppState.setHasBought(true)
+        AppState.setHasBought(true);
       }
       receipt.finish();
-    })
+    });
   }
 
   public buy() {
     // Try restoring first
-    this.restore()
+    this.restore();
 
     if (AppState.hasBought !== true) {
       const product = this.store.get(PRODUCT_ID);
@@ -105,7 +105,7 @@ class purchaseService {
   private restorePurchasesIOS() {
     AppState.addPurchaseLog('Restoring purchases (iOS)...');
     this.store.restorePurchases()
-      .catch(err => AppState.addPurchaseLog('Error restoring purchases: ' + JSON.stringify(err)))
+      .catch(err => AppState.addPurchaseLog('Error restoring purchases: ' + JSON.stringify(err)));
   }
 
   public isBought(): boolean {
@@ -116,7 +116,7 @@ class purchaseService {
   }
 
   private restorePurchases() {
-    let owned = this.isBought();
+    const owned = this.isBought();
     AppState.addPurchaseLog('Premium already owned: ' + owned);
     if (owned) {
       AppState.setHasBought(true);
