@@ -11,7 +11,7 @@
             </span>
           </label>
           <div class="rondo-bar-search__logo">
-            <span class="about-icon" @click="$router.push('/about')">
+            <span class="about-icon" @click="$router.push('/menu')">
               <i class="rondo-icon-logo"></i>
             </span>
           </div>

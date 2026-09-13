@@ -3,6 +3,8 @@ import { RouteRecordRaw } from 'vue-router';
 import SongList from "@/views/SongList.vue";
 import AboutCard from "@/views/AboutCard.vue";
 import SongCard from "@/views/SongCard.vue";
+import MenuList from "@/views/MenuList.vue";
+import PaymentCard from "@/views/PaymentCard.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,14 +17,24 @@ const routes: Array<RouteRecordRaw> = [
     component: SongList
   },
   {
-    path: '/about',
-    name: 'About',
-    component: AboutCard
-  },
-  {
     path: '/song/:id',
     name: 'Song',
     component: SongCard
+  },
+  {
+    path: '/menu',
+    name: 'MenuList',
+    component: MenuList
+  },
+  {
+    path: '/payment',
+    name: 'PaymentCard',
+    component: PaymentCard
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutCard
   }
 ];
 

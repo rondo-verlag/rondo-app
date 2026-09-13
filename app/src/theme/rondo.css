@@ -59,3 +59,7 @@ ion-header .icon.icon--active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+.container {
+  padding: 24px 16px;
+}

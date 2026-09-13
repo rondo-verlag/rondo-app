@@ -11,45 +11,8 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <div style="background: #ffffff">
-        <img src="/assets/songdata/images/about.png" style="width: 100%" />
-      </div>
-      <div class="about-container">
-        <b>Das Rondo immer und überall dabei</b><br />
-        <div v-if="!hasBought">
-          <br />
-          In der kostenlosen Version sind nur lizenzfreie Lieder enthalten. Lizenzpflichtige Lieder können via In-App-Kauf dazugekauft werden.<br />
-          <br />
-          <span @click="buyFullversion()" class="rondo-buy-button">Vollversion kaufen für 5.-</span><br>
-          oder <a @click="restorePurchases()">Kauf wiederherstellen</a><br><br>
-        </div>
-        <div v-else>
-          <br />
-          Vielen Dank, dass du die Vollversion gekauft hast. Wir wünschen dir viel Spass beim Singen!<br />
-          <br />
-        </div>
-
-        <div class="purchase-info">
-          <h4>Dein Kaufstatus</h4>
-          <div class="localState">
-            <b>Lokaler Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
-          </div>
-          <div class="localState">
-            <b>APP Store Kaufstatus: </b> {{ hasBought ? "Gekauft" : "Nicht Gekauft" }}
-          </div>
-
-          <div v-if="purchaseLogs.length > 0" class="purchase-logs-container">
-            <div @click="logsExpanded = !logsExpanded" class="logs-header">
-              <b>Logs:</b>
-              <span class="expand-icon">{{ logsExpanded ? '▼' : '◀' }}</span>
-            </div>
-            <div v-if="logsExpanded" class="purchase-logs">
-              <div v-for="(log, index) in purchaseLogs" :key="index" class="log-entry">
-                {{ log }}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="container">
+        <h1>Über das Rondo</h1>
 
         &mdash;<br />
         Der Rondo Verlag gibt seit den 1980er-Jahren das Schweizer Pfadi-Liederbuch &laquo;Rondo&raquo; heraus, das inzwischen in mehreren Auflagen und nun als App vorliegt. Daneben unterstützt der Verein Projekte, die Musik von und mit Jugendlichen fördern, eine Breitenwirkung entfalten und den Grundsätzen der Pfadi entsprechen.
@@ -126,13 +89,6 @@
         &copy; Zürich 1992 - 2024 Verein Rondo Verlag. Alle Rechte vorbehalten. <br />
         APP Version {{appVersion}}
         <br />
-
-<!--        <div>-->
-<!--          <br>-->
-<!--          <b>DEBUG:</b><br>-->
-<!--          <a @click="hasBought = !hasBought">gekauft: {{hasBought}}</a>-->
-<!--          <br><br>-->
-<!--        </div>-->
       </div>
       <div class="ion-padding"></div>
     </ion-content>
@@ -149,13 +105,10 @@ import {
   IonToolbar
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import AppState from "@/AppState";
 import BrowserLink from "@/views/BrowserLink.vue";
-import { App } from "@capacitor/app";
-import PurchaseService from "@/services/purchase.service";
 
 export default defineComponent({
-  name: 'About',
+  name: 'AboutCard',
   components: {
     IonContent,
     IonHeader,
@@ -166,91 +119,12 @@ export default defineComponent({
     Browserlink: BrowserLink,
   },
   inject: ['appVersion'],
-  data() {
-    return {
-      logsExpanded: false,
-    };
-  },
-  computed: {
-    hasBought: {
-      get(): boolean {
-        return AppState.hasBought;
-      },
-      set(val: boolean): void {
-        AppState.setHasBought(val);
-      }
-    },
-    purchaseLogs(): string[] {
-      return AppState.purchaseLogs;
-    }
-  },
-  mounted() {
-    App.addListener('backButton', async () => {
-      await App.removeAllListeners();
-      this.$router.back();
-    });
-  },
-  methods: {
-    buyFullversion() {
-      PurchaseService.buy();
-    },
-    restorePurchases() {
-      PurchaseService.restore();
-    }
-  }
 });
 </script>
 
 <style scoped>
-.about-container {
-  padding: 20px 10px;
-  line-height: 20px;
-}
-
-.rondo-buy-button {
-  background: darkorange;
-  color: white;
-  padding: 12px;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 12px 0;
-  font-weight: bold;
-}
-
 a {
   color: darkorange;
   text-decoration: none;
-}
-
-.purchase-info {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  border: 1px solid darkorange;
-}
-
-.purchase-logs-container {
-  margin-top: 15px;
-  border-top: 1px dashed #ccc;
-}
-
-.logs-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 0;
-  cursor: pointer;
-}
-
-.purchase-logs {
-  font-family: monospace;
-  overflow-y: auto;
-  padding-top: 5px;
-}
-
-.log-entry {
-  white-space: pre-wrap;
-  margin-bottom: 2px;
 }
 </style>
