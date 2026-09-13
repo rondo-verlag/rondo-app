@@ -34,6 +34,7 @@
 
     <ion-content :fullscreen="true" v-show="section === 'text'">
       <div class="content-wrapper" :class="'orientation--' + orientation">
+        <!-- @vue-expect-error swiper-vue's PropType typing for `virtual` incorrectly resolves to `undefined` -->
         <swiper
           v-if="songs.length > 0"
           :key="swiperKey"
@@ -84,12 +85,8 @@
 import {
   IonContent,
   IonHeader,
-  IonIcon,
   IonPage,
   IonToolbar,
-  IonList,
-  IonItem,
-  IonListHeader,
   IonButton,
   IonButtons,
   IonFooter,
@@ -97,7 +94,7 @@ import {
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import songdata from 'assets/songdata/songs/song-index.json';
+import songdata from '@/services/songdata';
 import { isPlatform } from '@ionic/vue';
 import { KeepAwake } from '@capacitor-community/keep-awake';
 
@@ -128,10 +125,6 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-    IonIcon,
-    IonList,
-    IonItem,
-    IonListHeader,
     IonButtons,
     IonButton,
     IonFooter,
@@ -172,7 +165,7 @@ export default defineComponent({
       windowWidth: 0,
       orientation: 'portrait',
       swiperKey: 0,
-    }
+    };
   },
   setup() {
     useBackButton(10, () => {
@@ -188,9 +181,9 @@ export default defineComponent({
     },
     songs(): ISong[] {
       if (this.hasBought) {
-        return (songdata.list || []).filter((song) => !song.alternative);
+        return (songdata.list || []).filter((song: ISong) => !song.alternative);
       } else {
-        return (songdata.list || []).filter((song) => !song.alternative && song.free);
+        return (songdata.list || []).filter((song: ISong) => !song.alternative && song.free);
       }
     },
     currentSong(): ISong {
@@ -208,7 +201,7 @@ export default defineComponent({
 
     App.addListener('backButton', async () => {
       this.goBack();
-    })
+    });
 
     // stop song if user closes app
     App.addListener('appStateChange', ({ isActive }) => {
@@ -305,7 +298,7 @@ export default defineComponent({
             await App.removeAllListeners();
             this.$router.back();
         } else {
-            this.section = 'text'
+            this.section = 'text';
         }
     },
 
@@ -330,7 +323,7 @@ export default defineComponent({
     },
     getScrollTimeout: function() {
         if (document.body.classList.contains('rondo-show-chords')) {
-            return 40
+            return 40;
         } else {
             return 80;
         }

@@ -22,7 +22,7 @@
     <ion-content :fullscreen="true">
       <div id="container">
         <ion-list class="rondo-list" v-if="hasBought">
-          <ion-item v-for="song in filteredAllSongs" lines="none" @click="$router.push('/song/' + song.id)">
+          <ion-item v-for="song in filteredAllSongs" :key="song.id + '-' + song.title" lines="none" @click="$router.push('/song/' + song.id)">
             <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
             <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
           </ion-item>
@@ -30,7 +30,7 @@
 
         <div v-else>
           <ion-list class="rondo-list">
-            <ion-item v-for="song in filteredFreeSongs" lines="none" @click="$router.push('/song/' + song.id)">
+            <ion-item v-for="song in filteredFreeSongs" :key="song.id + '-' + song.title" lines="none" @click="$router.push('/song/' + song.id)">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
@@ -39,7 +39,7 @@
             <ion-list-header @click="$router.push('/about')">
               In der&nbsp;<a>Vollversion</a>&nbsp;enthalten:
             </ion-list-header>
-            <ion-item v-for="song in filteredPaidSongs" lines="none">
+            <ion-item v-for="song in filteredPaidSongs" :key="song.id + '-' + song.title" lines="none">
               <span v-if="!song.alternative" class="main-title">{{song.title}}</span>
               <span v-if="song.alternative" class="alt-title">{{song.title}}</span>
             </ion-item>
@@ -55,7 +55,6 @@
 import {
   IonContent,
   IonHeader,
-  IonIcon,
   IonItem,
   IonList,
   IonListHeader,
@@ -65,13 +64,13 @@ import {
 import { defineComponent } from 'vue';
 import { App } from "@capacitor/app";
 
-import songdata from '../../public/assets/songdata/songs/song-index.json';
+import songdata from '@/services/songdata';
 import ISong from "@/interfaces/ISong";
 import AppState from "@/AppState";
 
 const songFilter = (song: ISong, query: string): boolean => {
   if (query === '') {
-    return true
+    return true;
   }
 
   return (song.title.toLowerCase().includes(query.toLowerCase()) ||
@@ -81,7 +80,7 @@ const songFilter = (song: ISong, query: string): boolean => {
     !song.alternative && song.pageRondoRed == parseInt(query) ||
     !song.alternative && song.pageRondoBlue == parseInt(query) ||
     !song.alternative && song.pageRondoGreen == parseInt(query));
-}
+};
 
 export default defineComponent({
   name: 'Home',
@@ -90,7 +89,6 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonToolbar,
-    IonIcon,
     IonList,
     IonItem,
     IonListHeader
@@ -98,7 +96,7 @@ export default defineComponent({
   data() {
     return {
       query: '',
-    }
+    };
   },
   computed: {
     hasBought(): boolean {

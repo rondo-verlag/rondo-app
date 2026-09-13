@@ -31,15 +31,15 @@ export default defineComponent({
   props: {
     song: Object
   },
-  data() {
+  data(): { html: string | null } {
     return {
       html: null
-    }
+    };
   },
   inject: ['appVersion'],
   computed: {
     pageNumbers(): string {
-      let pages = [];
+      const pages = [];
       if (this.song.pageRondo2024) {
         pages.push('<span class="rondo-pink">' + this.song.pageRondo2024 + '</span>');
       }

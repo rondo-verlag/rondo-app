@@ -57,18 +57,18 @@ export default defineComponent({
       if (!props.src || !inner.value) return;
       const gen = ++renderGen;
       const pdf = await getDocument({ url: props.src }).promise;
-      if (gen !== renderGen) { pdf.destroy(); return; }
+      if (gen !== renderGen) { pdf.loadingTask.destroy(); return; }
 
       const cw  = container.value?.clientWidth ?? 0;
       const dpr = window.devicePixelRatio || 1;
       const canvases = await Promise.all(
         Array.from({ length: pdf.numPages }, (_, i) => renderPage(pdf, i + 1, cw, dpr))
       );
-      if (gen !== renderGen || !inner.value) { pdf.destroy(); return; }
+      if (gen !== renderGen || !inner.value) { pdf.loadingTask.destroy(); return; }
 
       const frag = document.createDocumentFragment();
       canvases.forEach(c => frag.appendChild(c));
-      currentPdf?.destroy();
+      currentPdf?.loadingTask.destroy();
       currentPdf = pdf;
       inner.value.innerHTML = '';
       inner.value.appendChild(frag);
@@ -155,7 +155,7 @@ export default defineComponent({
     onUnmounted(() => {
       ro.disconnect();
       if (resizeTimer) clearTimeout(resizeTimer);
-      currentPdf?.destroy();
+      currentPdf?.loadingTask.destroy();
     });
 
     watch(() => props.src, async () => { zoom.value = 1; panX.value = 0; await renderPdf(); });
