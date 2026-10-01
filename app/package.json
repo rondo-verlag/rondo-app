@@ -46,7 +46,7 @@
     "@vue/test-utils": "^2.5.0",
     "cypress": "^16.0.0",
     "eslint": "^10.10.0",
-    "eslint-plugin-vue": "^10.11.0",
+    "eslint-plugin-vue": "^10.11.1",
     "jsdom": "^30.0.1",
     "sass": "^1.104.1",
     "typescript": "~5.9.3",
