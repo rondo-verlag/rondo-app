@@ -28,7 +28,7 @@
     "@capacitor/keyboard": "^8.0.5",
     "@capacitor/preferences": "^8.0.1",
     "@capacitor/screen-orientation": "^8.0.2",
-    "@capacitor/status-bar": "^8.0.3",
+    "@capacitor/status-bar": "^8.0.4",
     "@ionic/vue": "^9.0.5",
     "@ionic/vue-router": "^9.0.5",
     "cordova-plugin-purchase": "^13.13.1",
